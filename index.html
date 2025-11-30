@@ -404,7 +404,7 @@ let currentSingle = null;
 
 /* Render single question (shuffle choices) */
 function renderSingle(q){
-  qbox.textContent = `Câu #${q.id}: ${q.text}`;
+  qbox.textContent = `${q.text}`;
   choicesDiv.innerHTML = '';
   resultDiv.style.display = 'none';
   explainDiv.textContent = '';
