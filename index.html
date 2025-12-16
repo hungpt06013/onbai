@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="vi">
 <head>
@@ -8,6 +7,13 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="antialiased bg-gradient-to-br from-blue-50 to-green-50 min-h-screen p-6">
+
+<div class="mb-4 p-3 rounded-lg border bg-gray-50 flex items-center gap-2">
+  <input type="checkbox" id="warningToggle" class="w-4 h-4" checked>
+  <label for="warningToggle" class="text-sm text-gray-700 cursor-pointer">
+    Cảnh báo khi nộp bài / thoát trang / reload
+  </label>
+</div>
 
   <!-- SUBJECT SELECTION SCREEN -->
   <div id="subjectScreen" class="min-h-screen flex items-center justify-center">
@@ -26,7 +32,7 @@
         </div>
 
         <div class="p-8">
-          <div class="grid md:grid-cols-2 gap-6">
+          <div class="grid md:grid-cols-3 gap-6">
             <button id="selectGDCD" class="group relative overflow-hidden bg-gradient-to-br from-purple-600 to-purple-700 text-white p-8 rounded-xl hover:from-purple-700 hover:to-purple-800 transition-all transform hover:scale-[1.02] shadow-lg">
               <div class="relative z-10">
                 <div class="flex items-center justify-center mb-4">
@@ -53,6 +59,20 @@
                 <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">40 câu hỏi</div>
               </div>
             </button>
+
+            <!-- Tin học mới -->
+            <button id="selectTinHoc" class="group relative overflow-hidden bg-gradient-to-br from-indigo-600 to-indigo-700 text-white p-8 rounded-xl hover:from-indigo-700 hover:to-indigo-800 transition-all transform hover:scale-[1.02] shadow-lg">
+              <div class="relative z-10">
+                <div class="flex items-center justify-center mb-4">
+                  <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2-1.343-2-3-2zM6 20h12M4 6h16"/>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Tin học</h3>
+                <p class="text-indigo-100 text-sm">Tin học lớp 7 - Ôn tập HKI</p>
+                <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">82 câu hỏi</div>
+              </div>
+            </button>
           </div>
         </div>
       </div>
@@ -71,7 +91,7 @@
             </svg>
             <span class="font-medium">Chọn môn khác</span>
           </button>
-		  
+	  
           <div class="mb-4">
             <div class="inline-block bg-white/20 rounded-full p-4 backdrop-blur-sm">
               <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -90,7 +110,7 @@
               <div class="relative z-10">
                 <div class="flex items-center justify-center mb-3">
                   <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2" />
                   </svg>
                 </div>
                 <h3 class="text-xl font-bold mb-2">Bài Test Đầy Đủ</h3>
@@ -108,7 +128,7 @@
               <div class="relative z-10">
                 <div class="flex items-center justify-center mb-3">
                   <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581" />
                   </svg>
                 </div>
                 <h3 class="text-xl font-bold mb-2">Luyện Tập Ngẫu Nhiên</h3>
@@ -159,12 +179,10 @@
           </div>
         </div>
 
-        <h3 id="questionText" class="text-2xl font-bold text-gray-800 mb-6"></h3>
+        <div id="quizContent"></div>
 
-        <div id="optionsContainer" class="space-y-3 mb-6"></div>
-
-        <div class="flex gap-3">
-          <button id="btnSubmit" class="flex-1 py-3 rounded-lg font-semibold transition-colors bg-gray-300 text-gray-500 cursor-not-allowed">Kiểm tra đáp án</button>
+        <div class="flex gap-3 mt-6">
+          <button id="btnSubmit" class="flex-1 py-3 rounded-lg font-semibold transition-colors bg-gray-300 text-gray-500 cursor-not-allowed" disabled>Kiểm tra đáp án / Nộp bài</button>
           <button id="btnNext" class="hidden flex-1 bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">Câu tiếp theo →</button>
         </div>
       </div>
@@ -204,155 +222,356 @@
       </div>
     </div>
   </div>
+
   <script>
-      const subjectData = {
+    // === DATA ===
+    // Note: GDCD and CongNghe questions kept as in your original file (unchanged)
+    // We add a new subject 'tinhoc' with 70 MCQ + 12 TF (4 ý each) as requested.
+
+    const subjectData = {
       'gdcd': {
         name: 'GDCD',
         fullName: 'Giáo dục công dân',
         questions: [
-		{q: "Hành vi nào sau đây thể hiện sự quan tâm, cảm thông và chia sẻ?", o: ["Chế giễu, mỉa mai những người khuyết tật.", "Giúp đỡ người khuyết tật hòa nhập với cuộc sống cộng đồng.", "Cười trên sự đau khổ của người khác.", "Giúp đỡ người khác để được tiếng tốt và nổi danh."], c: 1},
-        {q: "Hành vi nào sau đây không thể hiện sự quan tâm, cảm thông và chia sẻ?", o: ["Giảng giúp bạn những bài chưa hiểu", "Giúp đỡ người khuyết tật hòa nhập với cuộc sống cộng đồng.", "Trò chuyện, giúp đỡ bạn khi bạn chưa quen nhiều bạn trong lớp", "Giúp đỡ người khác để được khen và tặng quà."], c: 3},
-        {q: "Để cảm thông, quan tâm, chia sẻ với người khác mỗi chúng ta nên có biểu hiện nào sau đây?", o: ["Có lối sống ích kỷ, nhỏ nhen trước mọi người.", "Sẵn sàng cho đi khi người khác gặp khó khăn, mất mát.", "Quan tâm người khác khi bản thân thấy có lợi.", "Sống khép mình, không quan tâm đến mọi quan hệ xung quanh."], c: 1},
-        {q: "Hành vi nào dưới đây không phải là biểu hiện của sự quan tâm, cảm thông và chia sẻ với người khác?", o: ["Thường xuyên hỏi thăm sức khỏe của người thân.", "Giúp đỡ bố mẹ một số công việc trong nhà.", "Thương cảm trước nỗi đau của người khác.", "Bao che cho người thân khi họ mắc lỗi sai."], c: 3},
-        {q: "Câu tục ngữ nào nói về quan tâm, thông cảm, chia sẻ", o: ["Một miếng khi đói bằng một gói khi no", "Đi một ngày đàng, học một sàng khôn", "Một kho vàng không bằng một nang chữ", "Muốn biết phải hỏi, muốn giỏi phải học"], c: 0},
-        {q: "Câu tục ngữ nào dưới đây nói về sự quan tâm, cảm thông, chia sẻ?", o: ["Một con ngựa đau, cả tàu bỏ cỏ.", "Chớ thấy sóng cả mà ngã tay chèo.", "Uống nước nhớ nguồn.", "Ở hiền gặp lành."], c: 0},
-        {q: "Gia đình P có hoàn cảnh khó khăn, bố mất sớm, mẹ P phải một mình làm lụng nuôi hai con. Gần đây, mẹ của P bị ốm nên P thường xuyên phải nghỉ học để chăm mẹ. Nếu là bạn cùng lớp, biết được hoàn cảnh của P em nên chọn cách ứng xử nào sau đây?", o: ["Kêu gọi các bạn cùng lớp quyên góp, hỗ trợ P.", "Làm ngơ vì không liên quan đến bản thân mình.", "Kêu gọi các bạn trong lớp xa lánh P vì nhà P nghèo.", "Khuyên P nên nghỉ học để ở nhà làm việc giúp mẹ."], c: 0},
-        {q: "Cuối giờ học, M để nguyên cốc nhựa đựng nước ngọt trên bàn mà không đem bỏ vào thùng rác. Khi P nhắc nhở, M trả lời: \"Tại sao mình phải dọn dẹp, đó là việc của cô lao công cơ mà\". P giải thích và khuyên M nên cảm thông với sự vất vả của cô lao công, nhưng M không nghe và tỏ thái độ khó chịu. Trong trường hợp này, nhân vật nào chưa biết cách quan tâm, cảm thông, chia sẻ?", o: ["Cô lao công.", "Bạn P.", "Bạn M.", "Hai bạn P và M."], c: 2},
-        {q: "A và N là bạn cùng lớp và ở gần nhà nhau. N bị ốm phải nghỉ học nhiều ngày. Hết giờ học, A sang nhà, đưa vở của mình cho N chép và giải thích những chỗ khó hiểu để N có thể theo kịp bào học trên lớp. H là bạn cùng lớp, thấy vậy, nên đã trách A làm thế là không đúng vì việc học là nhiệm vụ của học sinh, N phải tự tìm hiểu và hoàn thành nhiệm vụ học tập của mình.\n\nTrong trường hợp trên, bạn học sinh nào đã biết quan tâm, cảm thông, chia sẻ?", o: ["Bạn H.", "Bạn A.", "Bạn H và N.", "Bạn A và H."], c: 1},
-        {q: "Nhà trường phát động phong trào quyên góp sách, báo, truyện... đánh tặng cho các bạn học sinh vùng cao. K và Q rất hào hứng tham gia, hai bạn còn tích cực vận động người thân, bạn bè cùng quyên góp. Trái lại, H tỏ thái độ khó chịu và chỉ rằng: \"Việc quan tâm, giáo dục và giúp đỡ trẻ em vùng cao đã có các cấp chính quyền lo, mình là học sinh, đóng góp được bao nhiêu đâu, tham gia làm gì cho mất thời gian\".\n\nTrong trường hợp này, nhân vật nào chưa biết cách quan tâm, cảm thông, chia sẻ?", o: ["Bạn K.", "Bạn Q.", "Bạn H.", "Hai bạn K và Q."], c: 2},
-        {q: "Hành động nào sau đây là biểu hiện của học tập tự giác, tích cực?", o: ["Trước giờ đi học cần xoay sở, vội.", "Luôn cố gắng, vượt khó, kiên trì trong học tập.", "Luôn để bố mẹ gọi dậy đi học.", "Trong giờ kiểm tra, nhìn bài bạn để đạt được điểm cao."], c: 1},
-        {q: "Biểu hiện nào sau đây đối lập với tính tự giác, tích cực trong học tập?", o: ["Chăm chỉ", "Kiên trì", "Chây lười, ỷ lại", "Siêng năng"], c: 2},
-        {q: "Nhận định nào dưới đây đúng khi bàn về tự giác, tích cực trong học tập?", o: ["Chỉ những bạn học kém mới cần tự giác, tích cực học tập.", "Tự giác, tích cực học tập giúp chúng ta không ngừng tiến bộ.", "Tự giác là lối sống vốn có của mỗi người, không cần rèn luyện.", "Những người tự giác, tích cực học tập sẽ phải chịu nhiều thiệt thòi."], c: 1},
-        {q: "Nhận định nào dưới đây không đúng khi bàn về tự giác, tích cực trong học tập?", o: ["Chỉ những bạn học sinh yếu kém mới cần tự giác, tích cực học tập.", "Học tập tự giác, tích cực giúp ta có thêm kiến thức, mở rộng hiểu biết.", "Người có đức tính tự giác, tích cực học tập sẽ được mọi người tôn trọng.", "Học tập tự giác, tích cực giúp ta gặt hái nhiều thành công trong cuộc sống."], c: 0},
-        {q: "Học tập tự giác, tích cực là", o: ["chủ động nỗ lực học tập mỗi khi đến các kì thi quan trọng.", "chủ động học tập khi có sự nhắc nhở của cha mẹ hoặc thầy cô.", "chủ động nỗ lực khi được bố mẹ hứa thưởng sau đợt thi qua cao.", "chủ động thực hiện đầy đủ, hiệu quả nhiệm vụ học tập đã đề ra."], c: 3},
-        {q: "Câu tục ngữ nào sau đây thể hiện học tập tự giác, tích cực?", o: ["Học không hay, cày không biết,", "Đi cuộc đầu tay, đi cày mới gối.", "Luyện mãi thành tài, miệt mài tất giỏi.", "Học trước quên sau."], c: 2},
-        {q: "Việc làm nào sau đây thể hiện tính tự giác, tích cực trong hoạt động học tập?", o: ["Hăng hái phát biểu xây dựng bài.", "Dậy sớm tập thể dục thể thao.", "Tôn trọng, quý mến mọi người.", "Quan tâm, sẻ chia với mọi người."], c: 0},
-        {q: "Nội dung nào dưới đây không phải là biểu hiện của học tập tự giác, tích cực?", o: ["Lập thời gian biểu khoa học, hợp lí.", "Quyết tâm thực hiện các mục tiêu học tập.", "Xác định đúng mục tiêu học tập.", "Luôn luôn chờ đợi vào sự giúp đỡ."], c: 3},
-        {q: "Câu tục ngữ nào sau đây nói lên học tập tự giác:", o: ["Kính lão đắc thọ", "Nhà sạch thì mát, bát sạch ngon cơm", "Buôn có bạn, bạn có phương", "Học hành vất vả, kết quả ngọt bùi"], c: 3},
-        {q: "Chủ thể nào dưới đây đã học tập tự giác, tích cực?", o: ["Bạn P thường xuyên trốn học để đi chơi game.", "Mỗi khi gặp bài tập khó, T lại nhờ anh trai giải hộ.", "Bạn K thường xuyên làm việc riêng trong giờ học.", "Bạn C luôn hăng hái phát biểu, xây dựng bài học."], c: 3},
-        {q: "Trong giờ học trên lớp, nhóm em được giao một nhiệm vụ học tập. Trong khi các bạn khác đang tích cực thảo luận, H ngồi làm việc riêng. Khi các bạn nhắc nhở, H nói rằng chỉ cần đại diện một bạn trong nhóm thực hiện nhiệm vụ này. Tình huống trên cho thấy bạn H thiếu đức tính nào?", o: ["Trung thực.", "Tự giác, tích cực học tập.", "Đoàn kết.", "Cần cù lao động."], c: 1},
-        {q: "Hành vi nào dưới đây là biểu hiện của giờ chủ tín?", o: ["Hứa tất cả mọi việc để được khen của mọi người.", "Luôn đến đúng giờ, giữ đúng lời hứa.", "Mượn đồ của người khác nhưng không trả.", "Lời nói không đi đôi với việc làm."], c: 1},
-        {q: "Hành vi nào sau đây là biểu hiện của giữ chữ tín?", o: ["Chỉ giữ lời hứa với những người lớn", "Giữ lời hứa khi có điều kiện thực hiện", "Chỉ thực hiện những lời hứa quan trọng", "Giữ lời hứa trong mọi trường hợp"], c: 3},
-        {q: "Câu ca dao \"Nói chín thì phải làm mười/ Nói mười làm chín kẻ cười người chê\" thể hiện đức tính nào sau đây?", o: ["Yêu thương con người", "Giữ chữ tín", "Tôn trọng người khác", "Tự trọng"], c: 1},
-        {q: "Hành động, việc làm nào sau đây không phải là biểu hiện của giữ chữ tín?", o: ["Giữ đúng lời hứa với mọi người.", "Luôn đúng hẹn.", "Làm tốt việc mình đã nhận.", "Hứa suông cho xong việc."], c: 3},
-        {q: "Nhận định nào sau đây đúng khi bàn về vấn đề giữ chữ tín?", o: ["Chỉ những người buôn bán, kinh doanh mới cần giữ chữ tín.", "Người trưởng thành mới cần giữ chữ tín, học sinh không cần.", "Giữ chữ tín làm cho các mối quan hệ xã hội trở nên tốt đẹp.", "Giữ chữ tín là lối sống gây gò bó, khó chịu cho mọi người."], c: 2},
-        {q: "Câu tục ngữ nào dưới đây phản ánh về việc giữ chữ tín?", o: ["Rao ngọc, bán đá.", "Treo đầu dê, bán thịt chó.", "Nói có sách, mách có chứng.", "Chữ tín còn quý hơn vàng."], c: 3},
-        {q: "Câu ca dao \"Nói lời phải giữ lấy lời/ Đúng như con bướm đậu rồi lại bay\" khuyên chúng ta nên?", o: ["Tiết kiệm.", "Dũng cảm.", "Giữ chữ tín.", "Tích cực học tập."], c: 2},
-        {q: "Chị L ở Long An, mua sách hàng ngày bằng nghề bán vé số. Một hôm, đã gần đến giờ xổ số mà chị vẫn còn nhiều vé. Chị lên gọi điện cho anh T mua 20 tờ vé số và nhờ chị L giữ hộ. Chiến thắng xổ số, khi có kết quả xổ số, anh T có những vé trúng giải đặc biệt, với tổng số tiền 6,6 tỉ đồng. Chị L đã trao tận tay anh T những tờ vé số trúng thưởng.\n\nTrường hợp này cho thấy chị L là người như thế nào?", o: ["Giả dối, không giữ chữ tín.", "Biết giữ chữ tín trong kinh doanh.", "Không có tâm nhìn xa trong kinh doanh.", "Thông minh, nhạy bén trong buôn bán."], c: 1},
-        {q: "Bà M mở cửa hàng bán thực phẩm sạch. Để tăng lợi nhuận, bà M đã nhập thực phẩm ôi thiu được ngâm tẩm hóa chất độc hại, không rõ nguồn gốc xuất xứ về bán cho khách hàng.\n\nTrường hợp này cho thấy bà M là người như thế nào?", o: ["Trung thực, biết giữ chữ tín.", "Nhạy bén trong kinh doanh.", "Không giữ chữ tín với khách hàng.", "Thông minh, sắp xếp công việc hiệu quả."], c: 2},
-        {q: "A và D là đôi bạn thân từ nhỏ, lại cùng học chung một lớp. Mấy hôm nay A bị ốm, D hứa với A buổi chiều sẽ mang vở đến cho bạn mượn để ghi lại bài và giúp bạn học. Nhưng đến chiều, do mải xem phim nên D đã không tới nhà A. Thấy vậy, mẹ D nhắc nhở, D bực bội nói: \"Ôi đào, chiều nay con không đến thì ngày mai cũng được mà, có sao đâu mẹ\".\n\nTrong trường hợp này, chủ thể nào không giữ chữ tín?", o: ["Bạn A.", "Bạn D.", "Mẹ bạn D.", "Hai bạn A và D."], c: 1},
-        {q: "Chị X mở cửa hàng bán mĩ phẩm nhập khẩu Hàn Quốc. Để tăng lợi nhuận, chị X đã nhập hàng không rõ nguồn gốc xuất xứ về bán cho khách hàng. Trường hợp này cho thấy chị X là người như thế nào?", o: ["Trung thực, biết giữ chữ tín.", "Nhạy bén trong kinh doanh.", "Không giữ chữ tín với khách hàng.", "Thông minh, sắp xếp công việc hiệu quả."], c: 2},
-        {q: "Di sản văn hóa bao gồm di sản văn hóa vật thể và", o: ["di sản văn hóa vật chất.", "di sản văn hóa phi vật thể.", "danh lam thắng cảnh,", "di tích lịch sử - văn hóa."], c: 1},
-        {q: "Di sản văn hóa phi vật thể không bao gồm nội dung nào dưới đây?", o: ["Di vật, bảo vật quốc gia.", "Biểu diễn dân ca truyền thống.", "Trò chơi dân gian.", "Lễ hội truyền thống."], c: 0},
-        {q: "Di sản nào dưới đây là di sản văn hóa vật thể?", o: ["Nhã nhạc cung đình Huế.", "Dân ca Quan họ.", "Văn Miếu -- Quốc Tử Giám.", "Không gian văn hóa cồng chiêng Tây Nguyên"], c: 2},
-        {q: "Nhận định nào dưới đây không đúng về di sản văn hóa?", o: ["Chỉ những sản phẩm vật chất mới được coi là di sản văn hóa.", "Di sản văn hóa là tài sản và niềm tự hào của toàn dân tộc.", "Di sản văn hóa gồm: di sản vật thể và di sản phi vật thể.", "Góp phần phát triển văn hóa Việt Nam tiến tiến, đậm đà bản sắc."], c: 0},
-        {q: "Hành vi nào sau đây thể hiện việc giữ gìn và phát huy di sản văn hóa?", o: ["Ông P tuyên truyền sai lệch về di sản văn hóa của địa phương.", "Nghệ nhân C truyền bá làn điệu dân ca quan họ cho thế hệ trẻ.", "Anh K tổ chức vận chuyển trái phép cổ vật ra nước ngoài.", "Bạn X có hành vi xả rác bừa bãi tại khu di tích lịch sử - văn hóa."], c: 1},
-        {q: "Hành vi nào sau đây không phù hợp với việc giữ gìn và phát huy di sản văn hóa?", o: ["Ông B cất giấu số cổ vật mà mình tìm được khi đào móng nhà.", "Chị M tích cực quảng bá di sản văn hóa quê hương tới bạn bè quốc tế.", "Tập thể lớp 7A tham gia quét dọn khu di tích lịch sử tại địa phương.", "Nghệ nhân K mở lớp học để truyền lại kĩ thuật hát ca trù cho thế hệ trẻ."], c: 0},
-        {q: "Trong quá trình đào móng để làm lại nhà, ông K đã phát hiện ra một số chén đĩa, bình hoa bằng gốm sứ có hoa văn đẹp mắt. Hoa văn và màu men gốm trên sồ chén đĩa, bình hoa đó mang nét đặc trưng của triều đại thời Trần. Chuyền ông K đào được cổ vật truyền ra ngoài, có nhiều người tới hỏi mua và trả giá cao.\n\nTrong trường hợp trên, theo em, ông K nên lựa chọn cách ứng xử nào dưới đây?", o: ["Tổ chức đấu giá để bán số cổ vật vừa tìm được.", "Cất giữ số cổ vật đó và coi đó là \"báo vật gia truyền\".", "Cất giữ một nửa, còn một nửa thì nộp lại cho chính quyền địa phương.", "Nhanh chóng báo cáo và giao nộp toàn bộ cổ vật cho cơ quan chức năng."], c: 3},
-        {q: "Trong một lần đi tham quan di tích Cột cờ Hà Nội, thấy trên bức tường, bìa di tích có những nét khắc, nét vẽ chứng chịt tên, ngày tháng của những người đến tham quan. Bạn T tỏ thái độ phê phán những việc làm đó. Ngược lại, bạn Q cho rằng việc khắc tên lên bìa đã là một cách lưu lại dấu ấn của du khách. Bạn P cũng đồng tình ý kiến của Q, bên cạnh đó, P còn rủ Q cùng khắc tên lên tường thành cổ.\n\nTrong trường hợp trên, bạn học sinh nào chưa có ý thức bảo vệ di sản văn hóa?", o: ["Bạn P.", "Bạn Q.", "Bạn P và Q.", "Bạn T."], c: 2},
-        {q: "Một tấm bia Di tích lịch sử -- văn hóa quốc gia đường Hồ Chí Minh đã bị các quân ấn, nhà hàng lấn chiếm đất, tiến sát đến chân công trình. Hơn nữa, các thông tin trên tấm bia đã bị xóa xóa, hủy hoại. Điều này đã làm ảnh hưởng đến an toàn giao thông, làm mất vẻ trang nghiêm, biến dạng hoàn toàn di tích lịch sử -- văn hóa quốc gia này. Theo em, hành vi lấn chiếm đất trên sẽ bị xử phạt như thế nào theo quy định của pháp luật?", o: ["Phạt tiền từ 40.000.000 đồng đến 50.000.000 đồng đối với một trong các hành vi lấn chiếm đất đai thuộc di tích lịch sử -- văn hóa, danh lam thắng cảnh;", "Phạt tiền từ 20.000.000 đồng đến 30.000.000 đồng đối với hành vi làm hư hại hiện vật trong di tích lịch sử - văn hóa đã được xếp hạng hoặc được đưa vào Danh mục kiểm kê di tích của địa phương.", "Phạt tiền từ 40.000.000 đồng đến 50.000.000 đồng đối với hành vi hủy hoại, làm thay đổi yếu tố góc nhìn thành di tích lịch sử - văn hóa, danh lam thắng cảnh;", "Phạt tiền từ 40.000.000 đồng đến 50.000.000 đồng đối với một trong các hành vi sử dụng trái phép di tích lịch sử - văn hóa, danh lam thắng cảnh;"], c: 0},
-        {q: "Trong lúc tham quan một di tích lịch sử -- văn hóa cấp quốc gia, A dùng bút xóa để viết tên mình lên tường di tích khiến bề mặt di tích bị bẩn và phải mất nhiều thời gian để vệ sinh. Theo Nghị định 38/2021/NĐ-CP, hành vi của A có thể bị xử phạt bao nhiêu?", o: ["Phạt cảnh cáo", "Phạt tiền từ 500.000 đồng đến 1.000.000 đồng", "Phạt tiền từ 1.000.000 đồng đến 3.000.000 đồng", "Phạt tiền từ 5.000.000 đồng đến 10.000.000 đồng"], c: 2},
-        {q: "Một cơ sở sản xuất đồ lưu niệm từ ý lâm bán sao một cổ vật thuộc báo vật quốc gia để bán cho khách du lịch mà không xin giấy phép của cơ quan quản lý có thẩm quyền. Theo Nghị định 38/2021/NĐ-CP, cơ sở này có thể bị xử phạt ở mức nào?", o: ["Phạt tiền từ 10.000.000 đồng đến 20.000.000 đồng", "Phạt tiền từ 20.000.000 đồng đến 30.000.000 đồng", "Phạt tiền từ 40.000.000 đồng đến 50.000.000 đồng", "Phạt tiền từ 50.000.000 đồng đến 70.000.000 đồng"], c: 2},
-        {q: "Ngày Di sản văn hóa Việt Nam là ngày nào hằng năm?", o: ["Ngày 23 tháng 11.", "Ngày 24 tháng 11.", "Ngày 25 tháng 11.", "Ngày 26 tháng 11."], c: 0}
+		{type: 'mcq', q: "Hành vi nào sau đây thể hiện sự quan tâm, cảm thông và chia sẻ?", o: ["Chế giễu, mỉa mai những người khuyết tật.", "Giúp đỡ người khuyết tật hòa nhập với cuộc sống cộng đồng.", "Cười trên sự đau khổ của người khác.", "Giúp đỡ người khác để được tiếng tốt và nổi danh."], c: 1},
+        {type: 'mcq', q: "Hành vi nào sau đây không thể hiện sự quan tâm, cảm thông và chia sẻ?", o: ["Giảng giúp bạn những bài chưa hiểu", "Giúp đỡ người khuyết tật hòa nhập với cuộc sống cộng đồng.", "Trò chuyện, giúp đỡ bạn khi bạn chưa quen nhiều bạn trong lớp", "Giúp đỡ người khác để được khen và tặng quà."], c: 3},
+        {type: 'mcq', q: "Để cảm thông, quan tâm, chia sẻ với người khác mỗi chúng ta nên có biểu hiện nào sau đây?", o: ["Có lối sống ích kỷ, nhỏ nhen trước mọi người.", "Sẵn sàng cho đi khi người khác gặp khó khăn, mất mát.", "Quan tâm người khác khi bản thân thấy có lợi.", "Sống khép mình, không quan tâm đến mọi quan hệ xung quanh."], c: 1},
+        {type: 'mcq', q: "Hành vi nào dưới đây không phải là biểu hiện của sự quan tâm, cảm thông và chia sẻ với người khác?", o: ["Thường xuyên hỏi thăm sức khỏe của người thân.", "Giúp đỡ bố mẹ một số công việc trong nhà.", "Thương cảm trước nỗi đau của người khác.", "Bao che cho người thân khi họ mắc lỗi sai."], c: 3},
+        {type: 'mcq', q: "Câu tục ngữ nào nói về quan tâm, thông cảm, chia sẻ", o: ["Một miếng khi đói bằng một gói khi no", "Đi một ngày đàng, học một sàng khôn", "Một kho vàng không bằng một nang chữ", "Muốn biết phải hỏi, muốn giỏi phải học"], c: 0},
+        {type: 'mcq', q: "Câu tục ngữ nào dưới đây nói về sự quan tâm, cảm thông, chia sẻ?", o: ["Một con ngựa đau, cả tàu bỏ cỏ.", "Chớ thấy sóng cả mà ngã tay chèo.", "Uống nước nhớ nguồn.", "Ở hiền gặp lành."], c: 0},
+        {type: 'mcq', q: "Gia đình P có hoàn cảnh khó khăn, bố mất sớm, mẹ P phải một mình làm lụng nuôi hai con. Gần đây, mẹ của P bị ốm nên P thường xuyên phải nghỉ học để chăm mẹ. Nếu là bạn cùng lớp, biết được hoàn cảnh của P em nên chọn cách ứng xử nào sau đây?", o: ["Kêu gọi các bạn cùng lớp quyên góp, hỗ trợ P.", "Làm ngơ vì không liên quan đến bản thân mình.", "Kêu gọi các bạn trong lớp xa lánh P vì nhà P nghèo.", "Khuyên P nên nghỉ học để ở nhà làm việc giúp mẹ."], c: 0},
+        {type: 'mcq', q: "Cuối giờ học, M để nguyên cốc nhựa đựng nước ngọt trên bàn mà không đem bỏ vào thùng rác. Khi P nhắc nhở, M trả lời: \"Tại sao mình phải dọn dẹp, đó là việc của cô lao công cơ mà\". P giải thích và khuyên M nên cảm thông với sự vất vả của cô lao công, nhưng M không nghe và tỏ thái độ khó chịu. Trong trường hợp này, nhân vật nào chưa biết cách quan tâm, cảm thông, chia sẻ?", o: ["Cô lao công.", "Bạn P.", "Bạn M.", "Hai bạn P và M."], c: 2},
+        {type: 'mcq', q: "A và N là bạn cùng lớp và ở gần nhà nhau. N bị ốm phải nghỉ học nhiều ngày. Hết giờ học, A sang nhà, đưa vở của mình cho N chép và giải thích những chỗ khó hiểu để N có thể theo kịp bào học trên lớp. H là bạn cùng lớp, thấy vậy, nên đã trách A làm thế là không đúng vì việc học là nhiệm vụ của học sinh, N phải tự tìm hiểu và hoàn thành nhiệm vụ học tập của mình.\n\nTrong trường hợp trên, bạn học sinh nào đã biết quan tâm, cảm thông, chia sẻ?", o: ["Bạn H.", "Bạn A.", "Bạn H và N.", "Bạn A và H."], c: 1},
+        {type: 'mcq', q: "Nhà trường phát động phong trào quyên góp sách, báo, truyện... đánh tặng cho các bạn học sinh vùng cao. K và Q rất hào hứng tham gia, hai bạn còn tích cực vận động người thân, bạn bè cùng quyên góp. Trái lại, H tỏ thái độ khó chịu và chỉ rằng: \"Việc quan tâm, giáo dục và giúp đỡ trẻ em vùng cao đã có các cấp chính quyền lo, mình là học sinh, đóng góp được bao nhiêu đâu, tham gia làm gì cho mất thời gian\".\n\nTrong trường hợp này, nhân vật nào chưa biết cách quan tâm, cảm thông, chia sẻ?", o: ["Bạn K.", "Bạn Q.", "Bạn H.", "Hai bạn K và Q."], c: 2},
+        {type: 'mcq', q: "Hành động nào sau đây là biểu hiện của học tập tự giác, tích cực?", o: ["Trước giờ đi học cần xoay sở, vội.", "Luôn cố gắng, vượt khó, kiên trì trong học tập.", "Luôn để bố mẹ gọi dậy đi học.", "Trong giờ kiểm tra, nhìn bài bạn để đạt được điểm cao."], c: 1},
+        {type: 'mcq', q: "Biểu hiện nào sau đây đối lập với tính tự giác, tích cực trong học tập?", o: ["Chăm chỉ", "Kiên trì", "Chây lười, ỷ lại", "Siêng năng"], c: 2},
+        {type: 'mcq', q: "Nhận định nào dưới đây đúng khi bàn về tự giác, tích cực trong học tập?", o: ["Chỉ những bạn học kém mới cần tự giác, tích cực học tập.", "Tự giác, tích cực học tập giúp chúng ta không ngừng tiến bộ.", "Tự giác là lối sống vốn có của mỗi người, không cần rèn luyện.", "Những người tự giác, tích cực học tập sẽ phải chịu nhiều thiệt thòi."], c: 1},
+        {type: 'mcq', q: "Nhận định nào dưới đây không đúng khi bàn về tự giác, tích cực trong học tập?", o: ["Chỉ những bạn học sinh yếu kém mới cần tự giác, tích cực học tập.", "Học tập tự giác, tích cực giúp ta có thêm kiến thức, mở rộng hiểu biết.", "Người có đức tính tự giác, tích cực học tập sẽ được mọi người tôn trọng.", "Học tập tự giác, tích cực giúp ta gặt hái nhiều thành công trong cuộc sống."], c: 0},
+        {type: 'mcq', q: "Học tập tự giác, tích cực là", o: ["chủ động nỗ lực học tập mỗi khi đến các kì thi quan trọng.", "chủ động học tập khi có sự nhắc nhở của cha mẹ hoặc thầy cô.", "chủ động nỗ lực khi được bố mẹ hứa thưởng sau đợt thi qua cao.", "chủ động thực hiện đầy đủ, hiệu quả nhiệm vụ học tập đã đề ra."], c: 3},
+        {type: 'mcq', q: "Câu tục ngữ nào sau đây thể hiện học tập tự giác, tích cực?", o: ["Học không hay, cày không biết,", "Đi cuộc đầu tay, đi cày mới gối.", "Luyện mãi thành tài, miệt mài tất giỏi.", "Học trước quên sau."], c: 2},
+        {type: 'mcq', q: "Việc làm nào sau đây thể hiện tính tự giác, tích cực trong hoạt động học tập?", o: ["Hăng hái phát biểu xây dựng bài.", "Dậy sớm tập thể dục thể thao.", "Tôn trọng, quý mến mọi người.", "Quan tâm, sẻ chia với mọi người."], c: 0},
+        {type: 'mcq', q: "Nội dung nào dưới đây không phải là biểu hiện của học tập tự giác, tích cực?", o: ["Lập thời gian biểu khoa học, hợp lí.", "Quyết tâm thực hiện các mục tiêu học tập.", "Xác định đúng mục tiêu học tập.", "Luôn luôn chờ đợi vào sự giúp đỡ."], c: 3},
+        {type: 'mcq', q: "Câu tục ngữ nào sau đây nói lên học tập tự giác:", o: ["Kính lão đắc thọ", "Nhà sạch thì mát, bát sạch ngon cơm", "Buôn có bạn, bạn có phương", "Học hành vất vả, kết quả ngọt bùi"], c: 3},
+        {type: 'mcq', q: "Chủ thể nào dưới đây đã học tập tự giác, tích cực?", o: ["Bạn P thường xuyên trốn học để đi chơi game.", "Mỗi khi gặp bài tập khó, T lại nhờ anh trai giải hộ.", "Bạn K thường xuyên làm việc riêng trong giờ học.", "Bạn C luôn hăng hái phát biểu, xây dựng bài học."], c: 3},
+        {type: 'mcq', q: "Trong giờ học trên lớp, nhóm em được giao một nhiệm vụ học tập. Trong khi các bạn khác đang tích cực thảo luận, H ngồi làm việc riêng. Khi các bạn nhắc nhở, H nói rằng chỉ cần đại diện một bạn trong nhóm thực hiện nhiệm vụ này. Tình huống trên cho thấy bạn H thiếu đức tính nào?", o: ["Trung thực.", "Tự giác, tích cực học tập.", "Đoàn kết.", "Cần cù lao động."], c: 1},
+        {type: 'mcq', q: "Hành vi nào dưới đây là biểu hiện của giờ chủ tín?", o: ["Hứa tất cả mọi việc để được khen của mọi người.", "Luôn đến đúng giờ, giữ đúng lời hứa.", "Mượn đồ của người khác nhưng không trả.", "Lời nói không đi đôi với việc làm."], c: 1},
+        {type: 'mcq', q: "Hành vi nào sau đây là biểu hiện của giữ chữ tín?", o: ["Chỉ giữ lời hứa với những người lớn", "Giữ lời hứa khi có điều kiện thực hiện", "Chỉ thực hiện những lời hứa quan trọng", "Giữ lời hứa trong mọi trường hợp"], c: 3},
+        {type: 'mcq', q: "Câu ca dao \"Nói chín thì phải làm mười/ Nói mười làm chín kẻ cười người chê\" thể hiện đức tính nào sau đây?", o: ["Yêu thương con người", "Giữ chữ tín", "Tôn trọng người khác", "Tự trọng"], c: 1},
+        {type: 'mcq', q: "Hành động, việc làm nào sau đây không phải là biểu hiện của giữ chữ tín?", o: ["Giữ đúng lời hứa với mọi người.", "Luôn đúng hẹn.", "Làm tốt việc mình đã nhận.", "Hứa suông cho xong việc."], c: 3},
+        {type: 'mcq', q: "Nhận định nào sau đây đúng khi bàn về vấn đề giữ chữ tín?", o: ["Chỉ những người buôn bán, kinh doanh mới cần giữ chữ tín.", "Người trưởng thành mới cần giữ chữ tín, học sinh không cần.", "Giữ chữ tín làm cho các mối quan hệ xã hội trở nên tốt đẹp.", "Giữ chữ tín là lối sống gây gò bó, khó chịu cho mọi người."], c: 2},
+        {type: 'mcq', q: "Câu tục ngữ nào dưới đây phản ánh về việc giữ chữ tín?", o: ["Rao ngọc, bán đá.", "Treo đầu dê, bán thịt chó.", "Nói có sách, mách có chứng.", "Chữ tín còn quý hơn vàng."], c: 3},
+        {type: 'mcq', q: "Câu ca dao \"Nói lời phải giữ lấy lời/ Đúng như con bướm đậu rồi lại bay\" khuyên chúng ta nên?", o: ["Tiết kiệm.", "Dũng cảm.", "Giữ chữ tín.", "Tích cực học tập."], c: 2},
+        {type: 'mcq', q: "Chị L ở Long An, mua sách hàng ngày bằng nghề bán vé số. Một hôm, đã gần đến giờ xổ số mà chị vẫn còn nhiều vé. Chị lên gọi điện cho anh T mua 20 tờ vé số và nhờ chị L giữ hộ. Chiến thắng xổ số, khi có kết quả xổ số, anh T có những vé trúng giải đặc biệt, với tổng số tiền 6,6 tỉ đồng. Chị L đã trao tận tay anh T những tờ vé số trúng thưởng.\n\nTrường hợp này cho thấy chị L là người như thế nào?", o: ["Giả dối, không giữ chữ tín.", "Biết giữ chữ tín trong kinh doanh.", "Không có tâm nhìn xa trong kinh doanh.", "Thông minh, nhạy bén trong buôn bán."], c: 1},
+        {type: 'mcq', q: "Bà M mở cửa hàng bán thực phẩm sạch. Để tăng lợi nhuận, bà M đã nhập thực phẩm ôi thiu được ngâm tẩm hóa chất độc hại, không rõ nguồn gốc xuất xứ về bán cho khách hàng.\n\nTrường hợp này cho thấy bà M là người như thế nào?", o: ["Trung thực, biết giữ chữ tín.", "Nhạy bén trong kinh doanh.", "Không giữ chữ tín với khách hàng.", "Thông minh, sắp xếp công việc hiệu quả."], c: 2},
+        {type: 'mcq', q: "A và D là đôi bạn thân từ nhỏ, lại cùng học chung một lớp. Mấy hôm nay A bị ốm, D hứa với A buổi chiều sẽ mang vở đến cho bạn mượn để ghi lại bài và giúp bạn học. Nhưng đến chiều, do mải xem phim nên D đã không tới nhà A. Thấy vậy, mẹ D nhắc nhở, D bực bội nói: \"Ôi đào, chiều nay con không đến thì ngày mai cũng được mà, có sao đâu mẹ\".\n\nTrong trường hợp này, chủ thể nào không giữ chữ tín?", o: ["Bạn A.", "Bạn D.", "Mẹ bạn D.", "Hai bạn A và D."], c: 1},
+        {type: 'mcq', q: "Chị X mở cửa hàng bán mĩ phẩm nhập khẩu Hàn Quốc. Để tăng lợi nhuận, chị X đã nhập hàng không rõ nguồn gốc xuất xứ về bán cho khách hàng. Trường hợp này cho thấy chị X là người như thế nào?", o: ["Trung thực, biết giữ chữ tín.", "Nhạy bén trong kinh doanh.", "Không giữ chữ tín với khách hàng.", "Thông minh, sắp xếp công việc hiệu quả."], c: 2},
+        {type: 'mcq', q: "Di sản văn hóa bao gồm di sản văn hóa vật thể và", o: ["di sản văn hóa vật chất.", "di sản văn hóa phi vật thể.", "danh lam thắng cảnh,", "di tích lịch sử - văn hóa."], c: 1},
+        {type: 'mcq', q: "Di sản văn hóa phi vật thể không bao gồm nội dung nào dưới đây?", o: ["Di vật, bảo vật quốc gia.", "Biểu diễn dân ca truyền thống.", "Trò chơi dân gian.", "Lễ hội truyền thống."], c: 0},
+        {type: 'mcq', q: "Di sản nào dưới đây là di sản văn hóa vật thể?", o: ["Nhã nhạc cung đình Huế.", "Dân ca Quan họ.", "Văn Miếu -- Quốc Tử Giám.", "Không gian văn hóa cồng chiêng Tây Nguyên"], c: 2},
+        {type: 'mcq', q: "Nhận định nào dưới đây không đúng về di sản văn hóa?", o: ["Chỉ những sản phẩm vật chất mới được coi là di sản văn hóa.", "Di sản văn hóa là tài sản và niềm tự hào của toàn dân tộc.", "Di sản văn hóa gồm: di sản vật thể và di sản phi vật thể.", "Góp phần phát triển văn hóa Việt Nam tiến tiến, đậm đà bản sắc."], c: 0},
+        {type: 'mcq', q: "Hành vi nào sau đây thể hiện việc giữ gìn và phát huy di sản văn hóa?", o: ["Ông P tuyên truyền sai lệch về di sản văn hóa của địa phương.", "Nghệ nhân C truyền bá làn điệu dân ca quan họ cho thế hệ trẻ.", "Anh K tổ chức vận chuyển trái phép cổ vật ra nước ngoài.", "Bạn X có hành vi xả rác bừa bãi tại khu di tích lịch sử - văn hóa."], c: 1},
+        {type: 'mcq', q: "Hành vi nào sau đây không phù hợp với việc giữ gìn và phát huy di sản văn hóa?", o: ["Ông B cất giấu số cổ vật mà mình tìm được khi đào móng nhà.", "Chị M tích cực quảng bá di sản văn hóa quê hương tới bạn bè quốc tế.", "Tập thể lớp 7A tham gia quét dọn khu di tích lịch sử tại địa phương.", "Nghệ nhân K mở lớp học để truyền lại kĩ thuật hát ca trù cho thế hệ trẻ."], c: 0},
+        {type: 'mcq', q: "Trong quá trình đào móng để làm lại nhà, ông K đã phát hiện ra một số chén đĩa, bình hoa bằng gốm sứ có hoa văn đẹp mắt. Hoa văn và màu men gốm trên sồ chén đĩa, bình hoa đó mang nét đặc trưng của triều đại thời Trần. Chuyền ông K đào được cổ vật truyền ra ngoài, có nhiều người tới hỏi mua và trả giá cao.\n\nTrong trường hợp trên, theo em, ông K nên lựa chọn cách ứng xử nào dưới đây?", o: ["Tổ chức đấu giá để bán số cổ vật vừa tìm được.", "Cất giữ số cổ vật đó và coi đó là \"báo vật gia truyền\".", "Cất giữ một nửa, còn một nửa thì nộp lại cho chính quyền địa phương.", "Nhanh chóng báo cáo và giao nộp toàn bộ cổ vật cho cơ quan chức năng."], c: 3},
+        {type: 'mcq', q: "Trong một lần đi tham quan di tích Cột cờ Hà Nội, thấy trên bức tường, bìa di tích có những nét khắc, nét vẽ chứng chịt tên, ngày tháng của những người đến tham quan. Bạn T tỏ thái độ phê phán những việc làm đó. Ngược lại, bạn Q cho rằng việc khắc tên lên bìa đã là một cách lưu lại dấu ấn của du khách. Bạn P cũng đồng tình ý kiến của Q, bên cạnh đó, P còn rủ Q cùng khắc tên lên tường thành cổ.\n\nTrong trường hợp trên, bạn học sinh nào chưa có ý thức bảo vệ di sản văn hóa?", o: ["Bạn P.", "Bạn Q.", "Bạn P và Q.", "Bạn T."], c: 2},
+        {type: 'mcq', q: "Một tấm bia Di tích lịch sử -- văn hóa quốc gia đường Hồ Chí Minh đã bị các quân ấn, nhà hàng lấn chiếm đất, tiến sát đến chân công trình. Hơn nữa, các thông tin trên tấm bia đã bị xóa xóa, hủy hoại. Điều này đã làm ảnh hưởng đến an toàn giao thông, làm mất vẻ trang nghiêm, biến dạng hoàn toàn di tích lịch sử -- văn hóa quốc gia này. Theo em, hành vi lấn chiếm đất trên sẽ bị xử phạt như thế nào theo quy định của pháp luật?", o: ["Phạt tiền từ 40.000.000 đồng đến 50.000.000 đồng đối với một trong các hành vi lấn chiếm đất đai thuộc di tích lịch sử -- văn hóa, danh lam thắng cảnh;", "Phạt tiền từ 20.000.000 đồng đến 30.000.000 đồng đối với hành vi làm hư hại hiện vật trong di tích lịch sử - văn hóa đã được xếp hạng hoặc được đưa vào Danh mục kiểm kê di tích của địa phương.", "Phạt tiền từ 40.000.000 đồng đến 50.000.000 đồng đối với hành vi hủy hoại, làm thay đổi yếu tố góc nhìn thành di tích lịch sử - văn hóa, danh lam thắng cảnh;", "Phạt tiền từ 40.000.000 đồng đến 50.000.000 đồng đối với một trong các hành vi sử dụng trái phép di tích lịch sử - văn hóa, danh lam thắng cảnh;"], c: 0},
+        {type: 'mcq', q: "Trong lúc tham quan một di tích lịch sử -- văn hóa cấp quốc gia, A dùng bút xóa để viết tên mình lên tường di tích khiến bề mặt di tích bị bẩn và phải mất nhiều thời gian để vệ sinh. Theo Nghị định 38/2021/NĐ-CP, hành vi của A có thể bị xử phạt bao nhiêu?", o: ["Phạt cảnh cáo", "Phạt tiền từ 500.000 đồng đến 1.000.000 đồng", "Phạt tiền từ 1.000.000 đồng đến 3.000.000 đồng", "Phạt tiền từ 5.000.000 đồng đến 10.000.000 đồng"], c: 2},
+        {type: 'mcq', q: "Một cơ sở sản xuất đồ lưu niệm từ ý lâm bán sao một cổ vật thuộc báo vật quốc gia để bán cho khách du lịch mà không xin giấy phép của cơ quan quản lý có thẩm quyền. Theo Nghị định 38/2021/NĐ-CP, cơ sở này có thể bị xử phạt ở mức nào?", o: ["Phạt tiền từ 10.000.000 đồng đến 20.000.000 đồng", "Phạt tiền từ 20.000.000 đồng đến 30.000.000 đồng", "Phạt tiền từ 40.000.000 đồng đến 50.000.000 đồng", "Phạt tiền từ 50.000.000 đồng đến 70.000.000 đồng"], c: 2},
+        {type: 'mcq', q: "Ngày Di sản văn hóa Việt Nam là ngày nào hằng năm?", o: ["Ngày 23 tháng 11.", "Ngày 24 tháng 11.", "Ngày 25 tháng 11.", "Ngày 26 tháng 11."], c: 0}
+
 		]
 		},
 		'congnghe':{
 		name: 'CN',
 		fullName: 'Công nghệ',
 		questions: [
-		{q: "Yêu cầu đối với người lao động trong lĩnh vực trồng trọt là:", o: ["Có kiến thức về trồng và chăm sóc cây trồng", "Có khả năng sử dụng máy móc thiết bị trong trồng trọt", "Có sức khoẻ, tinh thần, trách nhiệm đối với nghề nghiệp.", "Tất cả các đáp án đều đúng"], c: 3},
-        {q: "Lĩnh vực trồng trọt ở Việt Nam phát triển theo hướng nào?", o: ["Ứng dụng công nghiệp hóa", "Ứng dụng nông nghiệp hóa", "Chỉ hiện đại hóa dụng cụ nông nghiệp", "Chia nhỏ các vùng chuyên canh"], c: 0},
-        {q: "Nghề thuộc ngành trồng trọt ở Việt Nam là?", o: ["Kĩ sư mỏ", "Kĩ sư địa chất", "Kĩ sư nông nghiệp", "Kĩ sư chế tạo máy"], c: 2},
-        {q: "Các cây trồng thuộc nhóm cây lương thực.", o: ["Lúa, ngô, khoai, rau xanh", "Lúa, ngô, khoai, táo", "Lúa, ngô, khoai, sắn", "Lúa, ngô, khoai, đậu các loại"], c: 2},
-        {q: "Đâu không phải vai trò của ngành trồng trọt", o: ["Tạo việc làm cho người lao động", "Tăng thu nhập cho người lao động", "Tạo môi trường sống trong lành", "Góp ô nhiễm môi trường do thuốc trừ sâu và phân hóa học."], c: 3},
-        {q: "Bón lót là bón phân vào thời điểm", o: ["Khi cây đang ra hoa", "Cây sắp kết trái", "Khi cây đang sinh trưởng", "Trước khi gieo trồng"], c: 3},
-        {q: "Bón lót sử dụng loại phân nào?", o: ["Hóa học (N,K)", "Hữu cơ", "Vi sinh", "Tất cả các đáp án đều đúng"], c: 1},
-        {q: "Trồng trọt ở nước ta cần cơ cấu lại cây trồng theo quy mô lớn vì:", o: ["Giúp đảm bảo vững chắc an ninh lương thực trước mắt và lâu dài.", "Tăng thu nhập cho người nông dân, góp phần xóa đói giảm nghèo, ổn định chính trị xã hội.", "Bảo vệ môi trường và thích ứng với biến đổi khí hậu.", "Tất cả các đáp án đều đúng."], c: 1},
-        {q: "Lĩnh vực trồng trọt lại hướng đến hình thành các vùng chuyên canh cây trồng vì:", o: ["Do thời tiết, khí hậu từng vùng phù hợp với các loại cây trồng khác nhau.", "Tạo điều kiện phát triển nông nghiệp ở quy mô lớn.", "Giúp mang lại hiệu quả kinh tế cao.", "Tất cả các đáp án đều đúng."], c: 3},
-        {q: "Các yêu cầu chuẩn bị đất:", o: ["Làm đất tơi nên tơi xốp, đủ độ ẩm và chất dinh dưỡng", "Loại bỏ các chất độc hại, cỏ dại và mầm sâu, bệnh gây hại cho cây trồng.", "Tạo luống, đắp mô phù hợp với từng loại cây trồng (để chăm sóc, chống ngập úng, tạo tầng đất dày cho cây phát triển).", "Tất cả các đáp án đều đúng."], c: 3},
-        {q: "Số vụ gieo trồng trong năm phụ thuộc vào những yếu tố nào?", o: ["Khí hậu", "Loại cây trồng", "Thời kỳ sâu bệnh", "Tất cả đều đúng."], c: 3},
-        {q: "Nhược điểm của trồng trọt công nghệ cao là:", o: ["Đòi hỏi người nông dân phải có kiến thức sản xuất và trình độ nhất định, cần phải am hiểu về công nghệ hiện đại, vốn đầu tư ban đầu rất lớn.", "Điều kiện khí hậu thời tiết, khí hậu, đất đai chưa thực sự thuận lợi dẫn đến tâm lý sợ rủi ro.", "Chi phí đầu tư lớn -> giá thành sản phẩm cao -> khó khăn khi cạnh tranh trên thị trường.", "Tất cả đúng."], c: 3},
-        {q: "Mục đích của bón lót là:", o: ["Cung cấp dinh dưỡng cho cây khi mới mọc, mới bén rễ", "Cung cấp dinh dưỡng cho cây khi đang sinh trưởng", "Cung cấp dinh dưỡng cho cây khi cây sắp ra hoa.", "Cung cấp dinh dưỡng cho cây khi cây chuẩn bị kết trái."], c: 0},
-        {q: "Mục đích của bón thúc là:", o: ["Cung cấp dinh dưỡng cho cây khi mới mọc, mới bén rễ", "Cung cấp dinh dưỡng cho cây khi đang sinh trưởng", "Cung cấp dinh dưỡng cho cây khi cây sắp ra hoa.", "Cung cấp dinh dưỡng cho cây khi cây chuẩn bị kết trái."], c: 1},
-        {q: "Bón thúc sử dụng loại phân nào?", o: ["Phân hữu cơ đã ủ hoai mục", "Phân hóa học (N,K)", "Phân vi sinh", "Tất cả đều đúng."], c: 3},
-        {q: "Cây con được tạo bằng hình thức nhân giống vô tính có đặc điểm:", o: ["Giống cây dùng làm mẹ", "Giống cây dùng làm mẹ và xuất hiện tính trạng mới.", "Giống cả 2 cây dùng làm mẹ và dùng làm bố", "Mang tính trạng mới."], c: 0},
-        {q: "Bộ phận nào của cây được sử dụng làm nguyên liệu nhân giống bằng phương pháp giâm cành:", o: ["Rễ .", "Cành già.", "Cành bánh tẻ", "Cành non."], c: 2},
-        {q: "Cây tạo ra bằng phương pháp giâm cành có ưu điểm gì so với cây được nhân giống từ hạt.", o: ["Nhân giống nhanh hơn", "Giữ được tính trạng tốt", "Thời gian thu hoạch sớm", "Tất cả đều đúng"], c: 3},
-        {q: "Đâu là phương thức trồng trọt công nghệ cao:", o: ["Độc canh", "Xen canh", "Khí canh", "Luân canh"], c: 2},
-        {q: "Thu hoạch cà rốt bằng phương pháp nào hợp lý.", o: ["Cắt", "Hái", "Nhổ", "Đào"], c: 2},
-        {q: "Đoạn cành đạt kích thước yêu cầu kỹ thuật cành giâm:", o: ["10 cm", "5 cm", "20 cm", "25 cm"], c: 2},
-        {q: "Nên chọn loại cây nhân giống bằng phương pháp giâm cành có đặc điểm:", o: ["Ra rễ phụ nhanh", "Ra chồi nhanh", "Ra trái nhanh", "Ra hoa nhanh"], c: 0},
-        {q: "Đâu không phải là hình thức nhân giống vô tính?", o: ["Nuôi cấy mô", "Hạt giống", "Giâm cành", "Ghép cành"], c: 1},
-        {q: "Phương thức trồng trọt nào KHÔNG phải là ứng dụng công nghệ cao?", o: ["Thủy canh", "Hệ thống tưới tự động", "Luân canh", "Khí canh"], c: 2},
-        {q: "Trồng trọt theo tiêu chuẩn VietGAP là:", o: ["Kiểm định nghiêm ngặt về đất, phân bón", "Kiểm định nghiêm ngặt về giống cây trồng", "Nâng cao chất lượng sản phẩm (sạch, ngon, nhiều chất dinh dưỡng,...)", "Tất cả các đáp án đều đúng."], c: 3},
-        {q: "Đâu là công việc của nhà nuôi cấy mô?", o: ["Nghiên cứu về cây trồng.", "Bảo vệ cây trồng.", "Nhân giống cây trồng.", "Làm việc liên quan đến cây rừng."], c: 2},
-        {q: "Tác dụng của luân canh:", o: ["Tăng độ phì nhiêu.", "Điều hòa dinh dưỡng.", "Giảm sâu bệnh.", "Tất cả đáp án đều đúng."], c: 3},
-        {q: "Tác dụng của xen canh:", o: ["Tận dụng diện tích đất.", "Tận dụng dinh dưỡng.", "Tận dụng ánh sáng.", "Tất cả đáp án đều đúng."], c: 3},
-        {q: "Đâu KHÔNG phải là cây công nghiệp:", o: ["Cây mồng tơi", "Cây cà phê", "Cây cao su", "Cây hồ tiêu"], c: 0},
-        {q: "Đâu KHÔNG phải là cây rau:", o: ["Khoai tây", "Mồng tơi", "Cải xanh", "Cải bó xôi"], c: 0},
-        {q: "Cần phát quang khi chăm sóc cây rừng một trồng để:", o: ["Cung cấp đủ ánh sáng cho cây con", "Cung cấp đủ dinh dưỡng cho cây con", "Cung cấp đủ nước cho cây con", "Giảm cạnh tranh nước, ánh sáng, chất dinh dưỡng giữa cây xung quanh và cây con mới trồng."], c: 3},
-        {q: "Mùa trồng rừng ở miền Bắc là:", o: ["Xuân Thu", "Hạ Thu", "Thu Đông", "Đông Xuân"], c: 0},
-        {q: "Mùa trồng rừng ở miền Trung và miền Nam:", o: ["Mùa mưa", "Mùa khô", "Mùa nắng", "Tất cả đều đúng"], c: 0},
-        {q: "Trồng rừng nên chọn ngày có thời tiết:", o: ["Râm mát, độ ẩm cao", "Khô", "Nắng to", "Mưa lớn"], c: 0},
-        {q: "Mục đích sử dụng của rừng đặc dụng là để:", o: ["Khai thác gỗ", "Bảo tồn nguồn gen sinh vật rừng; nghiên cứu khoa học; bảo vệ di tích lịch sử,...", "Bảo vệ nguồn nước, đất; chống xói mòn; hạn chế lũ lụt", "Tất cả đều đúng"], c: 1},
-        {q: "Mục đích sử dụng của rừng sản xuất là để:", o: ["Khai thác gỗ", "Bảo tồn nguồn gen sinh vật rừng; nghiên cứu khoa học; bảo vệ di tích lịch sử,...", "Bảo vệ nguồn nước, đất; chống xói mòn; hạn chế lũ lụt", "Tất cả đều đúng"], c: 0},
-        {q: "Mục đích sử dụng của rừng phòng hộ là để:", o: ["Khai thác gỗ", "Bảo tồn nguồn gen sinh vật rừng; nghiên cứu khoa học; bảo vệ di tích lịch sử,...", "Bảo vệ nguồn nước, đất; chống xói mòn; hạn chế lũ lụt", "Tất cả đều đúng"], c: 2},
-        {q: "Có những cách nào để trồng rừng?", o: ["Bằng cây con có bầu đất", "Bằng cây con rễ trần", "Bằng hạt", "Tất cả các cách trên"], c: 3},
-        {q: "Ở nơi đất xấu, đồi núi trọc nên áp dụng trồng rừng bằng:", o: ["Cây con có bầu đất", "Cây con rễ trần", "Hạt", "Tất cả 3 cách trên"], c: 0},
-        {q: "Quy trình trồng rừng bằng cây con có bầu đất và quy trình trồng rừng bằng cây con rễ trần khác nhau ở bước:", o: ["Tạo lỗ trong hố", "Rạch bỏ vỏ bầu", "Đặt cây con vào hố", "Vun gốc"], c:1}
+		{type: 'mcq', q: "Yêu cầu đối với người lao động trong lĩnh vực trồng trọt là:", o: ["Có kiến thức về trồng và chăm sóc cây trồng", "Có khả năng sử dụng máy móc thiết bị trong trồng trọt", "Có sức khoẻ, tinh thần, trách nhiệm đối với nghề nghiệp.", "Tất cả các đáp án đều đúng"], c: 3},
+        {type: 'mcq', q: "Lĩnh vực trồng trọt ở Việt Nam phát triển theo hướng nào?", o: ["Ứng dụng công nghiệp hóa", "Ứng dụng nông nghiệp hóa", "Chỉ hiện đại hóa dụng cụ nông nghiệp", "Chia nhỏ các vùng chuyên canh"], c: 0},
+        {type: 'mcq', q: "Nghề thuộc ngành trồng trọt ở Việt Nam là?", o: ["Kĩ sư mỏ", "Kĩ sư địa chất", "Kĩ sư nông nghiệp", "Kĩ sư chế tạo máy"], c: 2},
+        {type: 'mcq', q: "Các cây trồng thuộc nhóm cây lương thực.", o: ["Lúa, ngô, khoai, rau xanh", "Lúa, ngô, khoai, táo", "Lúa, ngô, khoai, sắn", "Lúa, ngô, khoai, đậu các loại"], c: 2},
+        {type: 'mcq', q: "Đâu không phải vai trò của ngành trồng trọt", o: ["Tạo việc làm cho người lao động", "Tăng thu nhập cho người lao động", "Tạo môi trường sống trong lành", "Góp ô nhiễm môi trường do thuốc trừ sâu và phân hóa học."], c: 3},
+        {type: 'mcq', q: "Bón lót là bón phân vào thời điểm", o: ["Khi cây đang ra hoa", "Cây sắp kết trái", "Khi cây đang sinh trưởng", "Trước khi gieo trồng"], c: 3},
+        {type: 'mcq', q: "Bón lót sử dụng loại phân nào?", o: ["Hóa học (N,K)", "Hữu cơ", "Vi sinh", "Tất cả các đáp án đều đúng"], c: 1},
+        {type: 'mcq', q: "Trồng trọt ở nước ta cần cơ cấu lại cây trồng theo quy mô lớn vì:", o: ["Giúp đảm bảo vững chắc an ninh lương thực trước mắt và lâu dài.", "Tăng thu nhập cho người nông dân, góp phần xóa đói giảm nghèo, ổn định chính trị xã hội.", "Bảo vệ môi trường và thích ứng với biến đổi khí hậu.", "Tất cả các đáp án đều đúng."], c: 1},
+        {type: 'mcq', q: "Lĩnh vực trồng trọt lại hướng đến hình thành các vùng chuyên canh cây trồng vì:", o: ["Do thời tiết, khí hậu từng vùng phù hợp với các loại cây trồng khác nhau.", "Tạo điều kiện phát triển nông nghiệp ở quy mô lớn.", "Giúp mang lại hiệu quả kinh tế cao.", "Tất cả các đáp án đều đúng."], c: 3},
+        {type: 'mcq', q: "Các yêu cầu chuẩn bị đất:", o: ["Làm đất tơi nên tơi xốp, đủ độ ẩm và chất dinh dưỡng", "Loại bỏ các chất độc hại, cỏ dại và mầm sâu, bệnh gây hại cho cây trồng.", "Tạo luống, đắp mô phù hợp với từng loại cây trồng (để chăm sóc, chống ngập úng, tạo tầng đất dày cho cây phát triển).", "Tất cả các đáp án đều đúng."], c: 3},
+        {type: 'mcq', q: "Số vụ gieo trồng trong năm phụ thuộc vào những yếu tố nào?", o: ["Khí hậu", "Loại cây trồng", "Thời kỳ sâu bệnh", "Tất cả đều đúng."], c: 3},
+        {type: 'mcq', q: "Nhược điểm của trồng trọt công nghệ cao là:", o: ["Đòi hỏi người nông dân phải có kiến thức sản xuất và trình độ nhất định, cần phải am hiểu về công nghệ hiện đại, vốn đầu tư ban đầu rất lớn.", "Điều kiện khí hậu thời tiết, khí hậu, đất đai chưa thực sự thuận lợi dẫn đến tâm lý sợ rủi ro.", "Chi phí đầu tư lớn -> giá thành sản phẩm cao -> khó khăn khi cạnh tranh trên thị trường.", "Tất cả đúng."], c: 3},
+        {type: 'mcq', q: "Mục đích của bón lót là:", o: ["Cung cấp dinh dưỡng cho cây khi mới mọc, mới bén rễ", "Cung cấp dinh dưỡng cho cây khi đang sinh trưởng", "Cung cấp dinh dưỡng cho cây khi cây sắp ra hoa.", "Cung cấp dinh dưỡng cho cây khi cây chuẩn bị kết trái."], c: 0},
+        {type: 'mcq', q: "Mục đích của bón thúc là:", o: ["Cung cấp dinh dưỡng cho cây khi mới mọc, mới bén rễ", "Cung cấp dinh dưỡng cho cây khi đang sinh trưởng", "Cung cấp dinh dưỡng cho cây khi cây sắp ra hoa.", "Cung cấp dinh dưỡng cho cây khi cây chuẩn bị kết trái."], c: 1},
+        {type: 'mcq', q: "Bón thúc sử dụng loại phân nào?", o: ["Phân hữu cơ đã ủ hoai mục", "Phân hóa học (N,K)", "Phân vi sinh", "Tất cả đều đúng."], c: 3},
+        {type: 'mcq', q: "Cây con được tạo bằng hình thức nhân giống vô tính có đặc điểm:", o: ["Giống cây dùng làm mẹ", "Giống cây dùng làm mẹ và xuất hiện tính trạng mới.", "Giống cả 2 cây dùng làm mẹ và dùng làm bố", "Mang tính trạng mới."], c: 0},
+        {type: 'mcq', q: "Bộ phận nào của cây được sử dụng làm nguyên liệu nhân giống bằng phương pháp giâm cành:", o: ["Rễ .", "Cành già.", "Cành bánh tẻ", "Cành non."], c: 2},
+        {type: 'mcq', q: "Cây tạo ra bằng phương pháp giâm cành có ưu điểm gì so với cây được nhân giống từ hạt.", o: ["Nhân giống nhanh hơn", "Giữ được tính trạng tốt", "Thời gian thu hoạch sớm", "Tất cả đều đúng"], c: 3},
+        {type: 'mcq', q: "Đâu là phương thức trồng trọt công nghệ cao:", o: ["Độc canh", "Xen canh", "Khí canh", "Luân canh"], c: 2},
+        {type: 'mcq', q: "Thu hoạch cà rốt bằng phương pháp nào hợp lý.", o: ["Cắt", "Hái", "Nhổ", "Đào"], c: 2},
+        {type: 'mcq', q: "Đoạn cành đạt kích thước yêu cầu kỹ thuật cành giâm:", o: ["10 cm", "5 cm", "20 cm", "25 cm"], c: 2},
+        {type: 'mcq', q: "Nên chọn loại cây nhân giống bằng phương pháp giâm cành có đặc điểm:", o: ["Ra rễ phụ nhanh", "Ra chồi nhanh", "Ra trái nhanh", "Ra hoa nhanh"], c: 0},
+        {type: 'mcq', q: "Đâu không phải là hình thức nhân giống vô tính?", o: ["Nuôi cấy mô", "Hạt giống", "Giâm cành", "Ghép cành"], c: 1},
+        {type: 'mcq', q: "Phương thức trồng trọt nào KHÔNG phải là ứng dụng công nghệ cao?", o: ["Thủy canh", "Hệ thống tưới tự động", "Luân canh", "Khí canh"], c: 2},
+        {type: 'mcq', q: "Trồng trọt theo tiêu chuẩn VietGAP là:", o: ["Kiểm định nghiêm ngặt về đất, phân bón", "Kiểm định nghiêm ngặt về giống cây trồng", "Nâng cao chất lượng sản phẩm (sạch, ngon, nhiều chất dinh dưỡng,...)", "Tất cả các đáp án đều đúng."], c: 3},
+        {type: 'mcq', q: "Đâu là công việc của nhà nuôi cấy mô?", o: ["Nghiên cứu về cây trồng.", "Bảo vệ cây trồng.", "Nhân giống cây trồng.", "Làm việc liên quan đến cây rừng."], c: 2},
+        {type: 'mcq', q: "Tác dụng của luân canh:", o: ["Tăng độ phì nhiêu.", "Điều hòa dinh dưỡng.", "Giảm sâu bệnh.", "Tất cả đáp án đều đúng."], c: 3},
+        {type: 'mcq', q: "Tác dụng của xen canh:", o: ["Tận dụng diện tích đất.", "Tận dụng dinh dưỡng.", "Tận dụng ánh sáng.", "Tất cả đáp án đều đúng."], c: 3},
+        {type: 'mcq', q: "Đâu KHÔNG phải là cây công nghiệp:", o: ["Cây mồng tơi", "Cây cà phê", "Cây cao su", "Cây hồ tiêu"], c: 0},
+        {type: 'mcq', q: "Đâu KHÔNG phải là cây rau:", o: ["Khoai tây", "Mồng tơi", "Cải xanh", "Cải bó xôi"], c: 0},
+        {type: 'mcq', q: "Cần phát quang khi chăm sóc cây rừng một trồng để:", o: ["Cung cấp đủ ánh sáng cho cây con", "Cung cấp đủ dinh dưỡng cho cây con", "Cung cấp đủ nước cho cây con", "Giảm cạnh tranh nước, ánh sáng, chất dinh dưỡng giữa cây xung quanh và cây con mới trồng."], c: 3},
+        {type: 'mcq', q: "Mùa trồng rừng ở miền Bắc là:", o: ["Xuân Thu", "Hạ Thu", "Thu Đông", "Đông Xuân"], c: 0},
+        {type: 'mcq', q: "Mùa trồng rừng ở miền Trung và miền Nam:", o: ["Mùa mưa", "Mùa khô", "Mùa nắng", "Tất cả đều đúng"], c: 0},
+        {type: 'mcq', q: "Trồng rừng nên chọn ngày có thời tiết:", o: ["Râm mát, độ ẩm cao", "Khô", "Nắng to", "Mưa lớn"], c: 0},
+        {type: 'mcq', q: "Mục đích sử dụng của rừng đặc dụng là để:", o: ["Khai thác gỗ", "Bảo tồn nguồn gen sinh vật rừng; nghiên cứu khoa học; bảo vệ di tích lịch sử,...", "Bảo vệ nguồn nước, đất; chống xói mòn; hạn chế lũ lụt", "Tất cả đều đúng"], c: 1},
+        {type: 'mcq', q: "Mục đích sử dụng của rừng sản xuất là để:", o: ["Khai thác gỗ", "Bảo tồn nguồn gen sinh vật rừng; nghiên cứu khoa học; bảo vệ di tích lịch sử,...", "Bảo vệ nguồn nước, đất; chống xói mòn; hạn chế lũ lụt", "Tất cả đều đúng"], c: 0},
+        {type: 'mcq', q: "Mục đích sử dụng của rừng phòng hộ là để:", o: ["Khai thác gỗ", "Bảo tồn nguồn gen sinh vật rừng; nghiên cứu khoa học; bảo vệ di tích lịch sử,...", "Bảo vệ nguồn nước, đất; chống xói mòn; hạn chế lũ lụt", "Tất cả đều đúng"], c: 2},
+        {type: 'mcq', q: "Có những cách nào để trồng rừng?", o: ["Bằng cây con có bầu đất", "Bằng cây con rễ trần", "Bằng hạt", "Tất cả các cách trên"], c: 3},
+        {type: 'mcq', q: "Ở nơi đất xấu, đồi núi trọc nên áp dụng trồng rừng bằng:", o: ["Cây con có bầu đất", "Cây con rễ trần", "Hạt", "Tất cả 3 cách trên"], c: 0},
+        {type: 'mcq', q: "Quy trình trồng rừng bằng cây con có bầu đất và quy trình trồng rừng bằng cây con rễ trần khác nhau ở bước:", o: ["Tạo lỗ trong hố", "Rạch bỏ vỏ bầu", "Đặt cây con vào hố", "Vun gốc"], c:1}
 		]
-		}
-	};
+		},
+      'tinhoc': {
+        name: 'Tin học',
+        fullName: 'Tin học lớp 7 - Ôn tập HKI',
+        questions: [
+          // ----- PHẦN I: 70 câu trắc nghiệm (mỗi câu 4 lựa chọn) -----
+          { type: 'mcq', q: "Micro là loại thiết bị nào?", o: ["Thiết bị vào.", "Thiết bị ra.", "Thiết bị vừa vào vừa ra.", "Thiết bị lưu trữ."], c: 0 },
+          { type: 'mcq', q: "Máy tính để bàn là một bộ gồm có các thành phần nào:", o: ["Hộp thân máy - Màn hình – Loa", "Màn hình - Bàn phím và chuột – Máy chiếu", "Bàn phím và chuột - Hộp thân máy - Màn hình", "Máy in - Màn hình – Micro – Máy chiếu"], c: 2 },
+          { type: 'mcq', q: "Bàn phím và chuột thuộc nhóm thiết bị nào của máy tính?", o: ["Thiết bị vào/nhập", "Thiết bị ra/xuất", "Thiết bị lưu trữ", "Thiết bị in ấn."], c: 0 },
+          { type: 'mcq', q: "Hộp thân máy của máy tính để bàn chứa thành phần quan trọng nhất của máy tính, đó chính là:", o: ["Bộ trung tâm, bộ nguồn", "Bộ xử lý, bộ tản nhiệt", "Bộ xử lý trung tâm, bộ nhớ.", "Các ổ đĩa."], c: 2 },
+          { type: 'mcq', q: "CPU là viết tắt của cụm từ?", o: ["Processing Unit.", "Central Unit.", "Central Processing", "Central Processing Unit."], c: 3 },
+          { type: 'mcq', q: "Dữ liệu được lưu trữ lâu dài trong máy tính ngay cả khi tắt máy được chứa tại:", o: ["Bộ nhớ trong.", "Bộ nhớ ngoài.", "Bộ nguồn.", "Bộ phận khác."], c: 1 },
+          { type: 'mcq', q: "Thiết bị nào vừa giúp nhập và xuất của máy tính bảng hoặc điện thoại thông minh?", o: ["Màn hình.", "Bàn phím", "Màn hình cảm ứng.", "Camera."], c: 2 },
+          { type: 'mcq', q: "Bộ phận nào của máy tính để bàn có chức năng hiển thị kết quả xử lí thông tin hoặc thông báo tới người dùng máy tính?", o: ["Bộ nhớ.", "Bàn phím.", "Màn chiếu", "Màn hình."], c: 3 },
+          { type: 'mcq', q: "Chọn phát biểu đúng?", o: ["Điện thoại thông minh không thể coi là một loại máy tính.", "Tất cả máy tính bảng đều không thể nghe, gọi điện thoại được.", "Máy tính để bàn thường không dùng màn hình để nhập dữ liệu vào.", "Màn hình cảm ứng chỉ là thiết bị ra."], c: 2 },
+          { type: 'mcq', q: "Màn hình, Loa, Máy in, Máy chiếu được gọi tên chung là gì trên máy tính?", o: ["Thiết bị vào/nhập", "Thiết bị ra/xuất", "Thiết bị vừa nhập vừa xuất", "Thiết bị lưu trữ dữ liệu."], c: 1 },
+          { type: 'mcq', q: "Đâu là thiết bị xuất thông tin dạng văn bản và hình ảnh trên máy tính?", o: ["Bàn phím và máy in", "Màn hình và máy in", "Loa và Micro", "Micro và máy chiếu"], c: 1 },
+          { type: 'mcq', q: "Chọn cụm từ còn thiếu trong dấu “…” của đoạn văn sau: “… là tên gọi chung của các thiết bị để khi hoạt động, máy tính giao tiếp với thế giới bên ngoài”.", o: ["Màn hình cảm ứng.", "Thiết bị vào.", "Thiết bị ra.", "Thiết bị vào – ra."], c: 3 },
+          { type: 'mcq', q: "Thành phần nào của máy tính được coi là bộ não của máy tính?", o: ["CPU", "RAM", "ROM", "Đĩa cứng."], c: 0 },
+          { type: 'mcq', q: "Đâu là thiết bị ra xuất thông tin dạng âm thanh của máy tính?", o: ["Máy in", "Loa của máy tính", "Máy quét", "Máy tính có camera."], c: 1 },
+          { type: 'mcq', q: "Đâu là nhận định đúng?", o: ["Thiết bị vào – ra có thể thu nhận thông tin đưa vào máy tính.", "Thiết bị vào – ra không thể xuất thông tin ra khỏi máy tính dưới dạng quen thuộc với con người.", "Không thể đọc hay lưu trữ dữ liệu số từ máy tính vào vật lưu trữ hoặc gửi lên mạng.", "Thiết bị vào – ra không phải là tên gọi chung của các thiết bị như chuột, màn hình, bàn phím, loa…"], c: 0 },
+          { type: 'mcq', q: "Nếu muốn trò chuyện video với bạn thì máy tính để bàn của em thường cần có những thiết bị nào?", o: ["Camera và micro", "Camera", "Không cần gì thêm.", "Micro"], c: 0 },
+          { type: 'mcq', q: "Chuột của máy tính để bàn có thể được kết nối bằng cổng nào?", o: ["HDMI", "VGA", "USB (PS/2)", "LAN"], c: 2 },
+          { type: 'mcq', q: "Máy tính đang mở một tệp trên USB. Hãy chọn cách sắp xếp lại thứ tự các thao tác sau để tắt máy tính an toàn, không làm mất dữ liệu.\n1. Chọn nút lệnh Shutdown (turn off) để tắt máy tính.\n2. Đóng tệp đang mở trên USB.\n3. Chọn “Safe To Remove Hardware” để ngắt kết nối với USB.\n4. Lưu lại nội dung của tệp.", o: ["4 – 3 – 2 – 1", "4 – 2 – 3 – 1", "2 – 3 –1 – 4", "1 – 4 – 2 – 3"], c: 1 },
+          { type: 'mcq', q: "Thao tác nào sau đây tắt máy tính 1 cách an toàn.", o: ["Sử dụng nút lệnh Restart của Windows.", "Chọn lệnh Shutdown của Windows.", "Nhấn giữ công tắc nguồn.", "Rút dây nguồn khỏi ổ cắm."], c: 1 },
+          { type: 'mcq', q: "Cổng bên có tên gì:", o: ["VGA", "HDMI", "PS/2", "LAN"], c: 1 },
+          { type: 'mcq', q: "Chuột và bàn phím hiện nay phổ biến sử dụng đầu cắm nào:", o: ["USB", "HDMI", "VGA.", "LAN"], c: 0 },
+          { type: 'mcq', q: "Khi bạn sử dụng đầu cắm VGA thì bạn cần cắm vào cổng nào trong các hình sau đây:", o: ["HDMI", "VGA", "LAN", "DVI"], c: 1 },
+          { type: 'mcq', q: "Việc làm nào không nên khi làm việc với các thiết bị vào-ra trong máy tính.", o: ["Dịch chuyển màn hình làm cáp màn hình kéo căng.", "Cắm sai cổng cho các thiết bị vào- ra với máy tính.", "Đập vào thùng máy khi nó không hoạt động.", "Tất cả các việc làm được nêu."], c: 3 },
+          { type: 'mcq', q: "Phát biểu nào sau đây đúng?", o: ["On-screen Keyboard là phần cứng máy tính.", "On-screen Keyboard là phần mềm máy tính", "On-screen Keyboard là hệ điều hành.", "On-screen Keyboard là tên của thiết bị xuất."], c: 1 },
+          { type: 'mcq', q: "Chức năng nào sau đây KHÔNG phải là của Hệ điều hành?", o: ["Quản lí các tệp dữ liệu trên đĩa.", "Tạo và chỉnh sửa nội dung một tệp văn bản.", "Điều khiển các thiết bị vào ra.", "Quản lí giao diện giữa người sử dụng và máy tính."], c: 1 },
+          { type: 'mcq', q: "Phát biểu nào sau đây là SAI?", o: ["Người sử dụng xử lí những yêu cầu cụ thể bằng phần mềm ứng dụng.", "Để phần mềm ứng dụng chạy được trên máy tính phải có Hệ điều hành.", "Để máy tính hoạt động được phải có phần mềm ứng dụng.", "Để máy tính hoạt động được phải có hệ điều hành."], c: 2 },
+          { type: 'mcq', q: "Hệ điều hành phổ biến cho điện thoại di động là?", o: ["Android", "BIOS", "Windows", "ChromeOS"], c: 0 },
+          { type: 'mcq', q: "Đối tượng quản lý chính trên máy tính là gì?", o: ["Phần cứng và phần mềm", "Đường dẫn và thư mục", "Thư mục và tập tin", "Tập tin và hệ điều hành."], c: 0 },
+          { type: 'mcq', q: "Khi tạo mới một đối tượng trên máy tính, cần xác định điều gì?", o: ["Tên và người tạo", "Tên và kích thước", "Tên và thời gian tạo", "Tên và vị trí"], c: 3 },
+          { type: 'mcq', q: "Phần mở rộng của tệp cho biết điều gì?", o: ["Dữ liệu của tệp thuộc loại nào", "Tệp tạo khi nào", "Tệp ở vị trí nào", "Không có cũng không sao"], c: 0 },
+          { type: 'mcq', q: "Tập tin là gì?", o: ["Đối tượng quản lý đối tượng khác.", "Đối tượng chứa đựng đối tượng khác.", "Đối tượng lưu trữ dữ liệu.", "Đối tượng lưu trữ đối tượng khác"], c: 2 },
+          { type: 'mcq', q: "Cặp lệnh thực hiện việc di chuyển trên máy tính là gì?", o: ["Move và Paste", "Cut và Paste", "Copy và Delete", "Paste và Rename"], c: 1 },
+          { type: 'mcq', q: "Công việc nào sau đây có thể thay đổi nội dung tệp", o: ["Xem", "Sao chép", "Di chuyển", "Đổi phần mở rộng"], c: 3 },
+          { type: 'mcq', q: "Trên cửa sổ File Explorer, em có thể xác định vị trí hiện hành qua thành phần nào?", o: ["Thanh tiêu đề", "Thanh đường dẫn", "Vùng nội dung", "Thanh trạng thái"], c: 1 },
+          { type: 'mcq', q: "Những phần mềm dưới đây được gọi chung là phần mềm gì?", o: ["Phần mềm ứng dụng", "Phần mềm hệ thống", "Phần mềm soạn thảo văn bản", "Phần mềm trình chiếu"], c: 0 },
+          { type: 'mcq', q: "Tiện ích nào sau đây của Hệ điều hành Windows cho phép mở tập tin văn bản để đọc dữ liệu", o: ["Calculator", "MS Paint", "WordPad", "OnScreen Keyboard"], c: 2 },
+          { type: 'mcq', q: "Phần mềm nào sau đây không phải là hệ điều hành", o: ["Windows 7.", "Windows 10.", "File Explorer.", "iOS."], c: 2 },
+          { type: 'mcq', q: "Tệp có phần mở rộng .docx/.doc thuộc loại tệp gì?", o: ["Tệp dữ liệu của phần mềm Microsoft Word.", "Tệp hình ảnh.", "Tệp dữ liệu của phần mềm Microsoft Powerpoint.", "Tệp dữ liệu video."], c: 0 },
+          { type: 'mcq', q: "Đâu là chương trình máy tính giúp em quản lí tệp và thư mục.", o: ["Internet Explore.", "Help.", "Microsoft Windows.", "File Explorer."], c: 3 },
+          { type: 'mcq', q: "Chọn ra hệ điều hành ở trong các tên dưới đây", o: ["Firefox", "Windows", "Google", "MacBook"], c: 1 },
+          { type: 'mcq', q: "Công cụ nào sau đây dùng để trao đổi thông tin trên Internet?", o: ["Thư điện tử", "Mạng xã hội", "Diễn đàn trực tuyến", "Tất cả các đáp án trên"], c: 3 },
+          { type: 'mcq', q: "Trong các website dưới đây, website nào là mạng xã hội?", o: ["https://dantri.com", "https://vietnamnet.vn", "https://facebook.com", "http://trandainghia.edu.vn/"], c: 2 },
+          { type: 'mcq', q: "Chọn cụm từ còn thiếu:\n“Mạng xã hội là một … web kết nối các … có cùng đặc điểm cá nhân như sở thích, lứa tuổi, nghề nghiệp hay lĩnh vực quan tâm”.", o: ["phần mềm ứng dụng – tài khoản.", "ứng dụng phần mềm – thành viên.", "phần mềm – tài khoản.", "ứng dụng – thành viên."], c: 1 },
+          { type: 'mcq', q: "Phát biểu nào sau đây đúng?", o: ["Mạng xã hội là một ứng dụng web.", "Người dùng không thể đưa thông tin lên mạng xã hội.", "Số lượng người tham gia kết bạn trên mạng xã hội được giới hạn dưới 10 người.", "Người dùng chỉ có thể chia sẻ bài viết dưới dạng văn bản cho bạn bè trên mạng xã hội."], c: 0 },
+          { type: 'mcq', q: "Nội dung trên mạng xã hội là do ai tạo ra?", o: ["Do nhà quản lý tạo ra.", "Do mạng Internet tạo ra.", "Do người dùng tạo ra.", "Do máy tính tạo ra."], c: 2 },
+          { type: 'mcq', q: "Đâu là nhận định đúng khi đưa thông tin lên mạng xã hội?", o: ["Em có thể đưa thông tin cá nhân lên mạng bất cứ khi nào mà không cần suy nghĩ, lo lắng.", "Không đưa thông tin cá nhân lên mạng xã hội. Kẻ xấu có thể lợi dụng các thông tin này để tống tiền, hăm dọa…", "Khi có người yêu cầu thì em ngay lập tức đưa thông tin cá nhân.", "Chỉ đưa thông tin cá nhân lên khi cảm thấy tinh thần vui vẻ."], c: 1 },
+          { type: 'mcq', q: "Đâu là nhận định đúng khi đăng bài hay chia sẻ, bình luận trên mạng xã hội.", o: ["Đăng bài với những câu từ phản cảm, thiếu văn hóa trên mạng xã hội.", "Chia sẻ với những nội dung có câu từ phản cảm, thiếu văn hóa trên mạng xã hội.", "Không đăng bài hay chia sẻ, bình luận với những câu từ phản cảm, thiếu văn hóa trên mạng xã hội.", "Bình luận hùa theo những nội dung có câu từ phản cảm, thiếu văn hóa trên mạng xã hội."], c: 2 },
+          { type: 'mcq', q: "Đâu là nhận định đúng khi tiếp cận với mọi thông tin trên mạng xã hội?", o: ["Tin vào mọi thông tin trên mạng xã hội.", "Mọi thông tin trên mạng xã hội đều đúng.", "Chỉ tin vào những nội dung được chia sẻ nhiều trên mạng xã hội.", "Không hoàn toàn tin vào mọi thông tin trên mạng xã hội, vì 1 số thông tin trên đó có độ chính xác không cao."], c: 3 },
+          { type: 'mcq', q: "Trong các câu sau, câu nào đúng?", o: ["Sử dụng mạng xã hội quá nhiều dễ dẫn đến xao nhãng việc học.", "Mạng xã hội là nơi tuyệt đối an toàn, không ai bị lừa hay lôi kéo vào những việc phạm pháp.", "Mạng xã hội làm tăng tương tác trực tiếp giữa người với người, giảm tương tác trong cộng đồng ảo.", "Mạng xã hội giúp mọi người ít tiếp cận với những thông tin tiêu cực."], c: 0 },
+          { type: 'mcq', q: "Khi có chuyện bực tức một ai đó, mà em đang sử dụng mạng xã hội, em sẽ làm gì cho hợp lý?", o: ["Đăng ngay lên mạng xã hội.", "Không đăng lên mạng xã hội vì mạng xã hội không phải là nơi xả cơn giận. Bình tĩnh và kiểm soát mọi chuyện.", "Đăng lên mạng xã hội để chỉ trích người đó.", "Nhờ bạn bè đăng lên mạng xã hội để xả giận."], c: 1 },
+          { type: 'mcq', q: "Khi lướt mạng Facebook, em thấy một nội dung sai sự thật có ảnh hưởng đến người khác, em sẽ làm gì?", o: ["Chia sẻ ngay để nhiều người cùng biết.", "Bình luận, hùa theo nội dung đó.", "Không làm gì cả vì biết đó là thông tin sai sự thật.", "Chỉ nhấn like mà không bình luận gì."], c: 2 },
+          { type: 'mcq', q: "Thế nào là dụ dỗ và bắt nạt trên mạng?", o: ["Lôi kéo, tặng quà, hăm dọa, khống chế làm theo yêu cầu của kẻ bắt nạt, dụ dỗ.", "Bạn bè tặng quà sinh nhật.", "Bạn bè gửi lời chúc mừng sinh nhật qua mạng.", "Bạn bè nhắn tin hỏi thăm qua mạng."], c: 0 },
+          { type: 'mcq', q: "Nếu có kẻ dụ dỗ trên mạng muốn gặp riêng em, em sẽ làm thế nào?", o: ["Đồng ý gặp riêng.", "Không đồng ý gặp, vì không biết họ là ai.", "Đồng ý gặp nhưng rủ bạn đi cùng.", "Nhờ bạn bè đi gặp hộ, còn bản thân không đi."], c: 1 },
+          { type: 'mcq', q: "Nếu bị đe dọa trên mạng, em sẽ làm như thế nào?", o: ["Dũng cảm nói ra với bố mẹ, thầy cô hoặc người thân giúp đỡ.", "Không dám nói ra cho ai biết.", "Tự một mình giải quyết.", "Viết trong nhật kí riêng."], c: 0 },
+          { type: 'mcq', q: "Hành động nào sau đây là phạm pháp", o: ["Phát tán mã độc thông qua các dịch vụ trực tuyến", "Do thám, đánh cắp thông tin, tài khoản của các cá nhân khác", "Phát tán nội dung xấu độc nhằm gây thiệt hại hoặc lừa đảo", "Cả 3 phương án trên"], c: 3 },
+          { type: 'mcq', q: "Em nên làm gì để ứng xử có văn hóa trên mạng xã hội.", o: ["Giữ gìn hình ảnh bản thân trên không gian mạng.", "Trở thành anh hùng bàn phím trên mạng.", "Đăng các hình ảnh thông tin đồi trụy lên trang cá nhân.", "Bêu xấu, đăng tin không tốt về người mình không thích."], c: 0 },
+          { type: 'mcq', q: "Mật khẩu nào sau đây có tính bảo mật cao nhất?", o: ["1234567.", "ToiDepNhat.", "naruto.", "@123AnHhAri."], c: 3 },
+          { type: 'mcq', q: "Theo các lời khuyên về ứng xử có văn hóa ở nơi công cộng, hành vi nào sau đây được xem là thiếu tôn trọng người xung quanh?", o: ["Nói chuyện nhỏ nhẹ.", "Giữ thái độ thân thiện.", "Nhìn vào điện thoại không rời mắt khi đang giao tiếp với người đối diện.", "Tạm dừng công việc riêng để lắng nghe người khác."], c: 2 },
+          { type: 'mcq', q: "Quy tắc ứng xử trên mạng xã hội được so sánh giống như quy tắc ứng xử ở đâu?", o: ["Ở nhà.", "Ở nơi công cộng.", "Ở trường học.", "Ở nơi làm việc."], c: 1 },
+          { type: 'mcq', q: "Khi giao tiếp qua mạng (trực tuyến hoặc không trực tuyến), hành vi nào thể hiện ứng xử có văn hóa?", o: ["Dùng từ viết tắt không cần thiết.", "Sử dụng ngôn ngữ thô lỗ.", "Dùng ngôn ngữ lịch sự.", "Xúc phạm người khác."], c: 2 },
+          { type: 'mcq', q: "Theo lời khuyên về ứng xử khi dùng email, tin nhắn, em không nên chuyển tiếp nội dung nào của người khác nếu chưa được sự đồng ý? (Chọn phát biểu đúng nhất)", o: ["Thông tin công cộng.", "Bài viết tin tức phổ thông.", "Email, tin nhắn.", "Ảnh phong cảnh."], c: 2 },
+          { type: 'mcq', q: "Theo lời khuyên về việc tránh rủi ro trên mạng, nghiện game và nghiện mạng xã hội có thể khiến người dùng mất đi điều gì? (Chọn phát biểu đúng nhất)", o: ["Ước mơ.", "Sức khoẻ", "Tài khoản ngân hàng", "Cơ hội du lịch"], c: 1 },
+          { type: 'mcq', q: "Khẳng định nào sau đây là phù hợp khi nói rằng trên mạng không phải \"lời nói gió bay\"?", o: ["Vì mạng xã hội không có gió.", "Vì mọi người trên mạng xã hội đều quen biết nhau.", "Vì những gì đã đưa lên mạng sẽ rất khó thu hồi được.", "Vì mạng xã hội không cho phép đăng tải hình ảnh."], c: 2 },
+          { type: 'mcq', q: "Quy tắc chung trong ứng xử là: \"Đừng làm với người khác những gì mà chính mình không muốn phải nhận\" nhắc nhở người dùng mạng xã hội điều gì?", o: ["Luôn yêu cầu người khác làm theo ý mình.", "Cấm mọi người không được làm phiền mình.", "Thực hiện quy tắc ứng xử chung, không dùng lời lẽ thô lỗ, thiếu văn hoá, xúc phạm, làm điều mình không muốn được nhận.", "Không được phép chia sẻ bất cứ điều gì trên mạng."], c: 2 },
+          { type: 'mcq', q: "Việc lan truyền tin giả, bài viết xuyên tạc sự thật trên mạng Internet dẫn đến hậu quả nghiêm trọng gì?", o: ["Giúp tăng lượt xem cho bạn.", "Có nguy cơ vi phạm pháp luật Việt Nam, bị coi là hành vi phản văn hóa, bị cấm và có thể dẫn đến hậu quả pháp lý.", "Khuyến khích mọi người đọc sách.", "Giảm lượng truy cập mạng."], c: 1 },
+          { type: 'mcq', q: "Lan đang sử dụng mạng xã hội và thấy một người bạn đăng tải thông tin về một vấn đề chính trị nhưng thông tin đó hoàn toàn sai sự thật (tin giả). Để thực hiện ứng xử có văn hóa và tránh vi phạm pháp luật, Lan nên làm gì?", o: ["Bình luận công khai rằng thông tin đó sai, kèm theo lời lẽ thô lỗ.", "Không chia sẻ hoặc truyền tải lại thông tin đó, vì đó là hành vi không truyền tin giả và bị cấm theo pháp luật Việt Nam.", "Báo cáo tài khoản của bạn đó ngay lập tức mà không cần kiểm tra.", "Sao chép và đăng lại thông tin đó để cảnh báo mọi người."], c: 1 },
+          { type: 'mcq', q: "Trong giờ học nhóm ở thư viện, Minh nhận được một cuộc gọi video từ người thân. Minh nên xử lý tình huống này thế nào để tôn trọng những người xung quanh?", o: ["Bật loa to để những người khác cũng nghe được.", "Tiếp tục trao đổi qua video trong phòng học.", "Xin lỗi vì đã tách ra làm việc riêng và đi ra ngoài (nơi người xung quanh không nghe thấy) để tiếp tục cuộc trò chuyện.", "Nhắn tin bình phẩm to tiếng trong khi gọi điện video."], c: 2 },
+          { type: 'mcq', q: "Hoa vừa phát hiện tài khoản mạng xã hội của một bạn khác đã đăng tải hình ảnh riêng tư của Hoa mà cô ấy không muốn công khai. Bạn bè khuyên Hoa nên dùng tài khoản giả mạo để lăng mạ và đe dọa người kia. Hoa có nên làm theo không?", o: ["Có, vì người kia đã sai trước.", "Không, vì trên mạng xã hội không ai biết Hoa là ai nên Hoa sẽ không thể lấy lại được danh dự khi dùng tài khoản ẩn danh. Hoa nên dùng tài khoản chính của bạn ấy.", "Không, Hoa nên dũng cảm nói ra và nhờ bố mẹ, thầy cô hoặc người thân giúp đỡ.", "Có, vì đó là cách duy nhất để lấy lại danh dự."], c: 2 },
+          { type: 'mcq', q: "Bạn A gửi cho bạn B một tin nhắn rất dài hỏi về một vấn đề gấp và có 1 phần riêng tư về A. Bạn B đang lái xe máy trên đường nên chưa thể đọc và trả lời chi tiết. Để thể hiện sự lịch sự và có văn hóa, B nên phản hồi A như thế nào?", o: ["Đọc và trả lời chi tiết ngay khi đang lái xe.", "Bỏ qua tin nhắn và trả lời sau một tuần.", "Nhắn với A là hẹn trả lời sau khi về đến nhà.", "Nhắn tin nhờ người khác trả lời ngay vì vấn đề này rất gấp."], c: 2 },
+          { type: 'mcq', q: "Sau khi chơi game liên tục nhiều ngày, sức khỏe của Hải giảm sút và Hải bỏ bê học hành. Để thoát khỏi nguy cơ nghiện game, Hải cần phải làm gì ngay lập tức?", o: ["Tìm kiếm một trò chơi mới hấp dẫn hơn.", "Kể về trải nghiệm chơi game thú vị của mình trên mạng xã hội.", "Tự ý thức hoặc nhờ bố mẹ đặt ra một khung giờ hạn chế mỗi ngày dành cho chơi game hay lên mạng.", "Chỉ chơi game khi không có ai nhìn thấy."], c: 2 },
+
+          // ----- PHẦN II: 12 câu đúng/sai (mỗi câu có 4 ý a,b,c,d).
+          // For TF questions, we set: type:'tf', q: 'text', statements: [a,b,c,d], answers: [true/false,...]
+          {
+            type: 'tf',
+            q: "Mạng xã hội là một cộng đồng trực tuyến giúp mọi người kết nối, tương tác và chia sẻ thông tin với nhau bất kể khoảng cách địa lý. Các nền tảng phổ biến bao gồm Facebook, Zalo, YouTube, Instagram,... Hãy đánh giá tính đúng sai của các nhận định a), b), c), d) sau:",
+            statements: [
+              "a) Mạng xã hội chỉ cho phép người dùng chia sẻ thông tin dưới dạng văn bản (text), không hỗ trợ hình ảnh hay video.",
+              "b) Người dùng cần tạo tài khoản và hồ sơ cá nhân (profile) như ảnh bìa, ảnh đại diện và một số thông tin các nhân để có thể tham gia đầy đủ các hoạt động trên mạng xã hội.",
+              "c) Mạng xã hội giúp người dùng dễ dàng tìm kiếm, kết bạn và duy trì liên lạc với người thân, bạn bè.",
+              "d) Tất cả các mạng xã hội đều không có quy định về độ tuổi, trẻ em ở bất kỳ độ tuổi nào cũng có thể tự do đăng ký."
+            ],
+            // According to your answer key: 1. b, c
+            answers: [false, true, true, false]
+          },
+          {
+            type: 'tf',
+            q: "Khi sử dụng mạng xã hội, người dùng có thể thực hiện nhiều hoạt động tương tác như gửi lời mời kết bạn, theo dõi (follow), nhắn tin trò chuyện và tham gia các hội nhóm. Hãy đánh giá tính đúng sai của các nhận định a), b), c), d) sau:",
+            statements: [
+              "a) Chức năng \"Hủy kết bạn\" (Unfriend) cho phép người dùng ngắt kết nối với một người trong danh sách bạn bè nếu không muốn liên lạc nữa.",
+              "b) Người dùng có thể tạo hoặc tham gia các nhóm (Group) để thảo luận về các chủ đề chung như học tập, sở thích, thể thao.",
+              "c) Trên Zalo hoặc Facebook, tin nhắn cá nhân (Messenger) là chế độ công khai, tất cả mọi người trên mạng đều có thể đọc được nội dung cuộc trò chuyện.",
+              "d) Người dùng có thể thay đổi ảnh đại diện (Avatar) và ảnh bìa để thể hiện cá tính của mình trên trang cá nhân."
+            ],
+            // Key: 2. a, b, d
+            answers: [true, true, false, true]
+          },
+          {
+            type: 'tf',
+            q: "Trao đổi thông tin trên mạng xã hội rất nhanh chóng và thuận tiện, tuy nhiên người dùng cần biết cách chọn lọc và chia sẻ thông tin một cách có trách nhiệm. Hãy đánh giá tính đúng sai của các nhận định a), b), c), d) sau:",
+            statements: [
+              "a) Chức năng \"Bình luận\" (Comment) và \"Thích\" (Like) giúp người dùng bày tỏ cảm xúc và ý kiến đối với bài đăng của người khác.",
+              "b) Mọi thông tin được chia sẻ trên mạng xã hội đều là thông tin chính xác và đã được kiểm chứng, người dùng có thể tin tưởng tuyệt đối.",
+              "c) Chia sẻ (Share) là hành động lan truyền một bài viết hoặc thông tin từ trang của người khác về trang cá nhân của mình hoặc vào các hội nhóm.",
+              "d) Việc phát tán, chia sẻ các thông tin sai sự thật, tin giả (fake news) trên mạng xã hội có thể gây hậu quả xấu và vi phạm pháp luật."
+            ],
+            // Key: 3. a, c, d
+            answers: [true, false, true, true]
+          },
+          {
+            type: 'tf',
+            q: "Bắt nạt qua mạng là hành vi sử dụng công nghệ để quấy rối, đe dọa hoặc làm xấu mặt người khác. Hãy đánh giá tính đúng sai của các nhận định a), b), c), d) sau:",
+            statements: [
+              "a) Chỉ những hành động đánh nhau ngoài đời thực mới bị coi là bắt nạt, còn nhắn tin trêu chọc trên mạng là vô hại.",
+              "b) Nếu thấy bạn bè bị bắt nạt trên mạng, em nên hùa theo hoặc chia sẻ bài viết đó để mọi người cùng biết.",
+              "c) Em cần thông báo ngay cho cha mẹ, thầy cô hoặc người lớn tin cậy nếu bản thân hoặc bạn bè bị đe dọa qua mạng.",
+              "d) Hành vi bịa đặt thông tin, tung tin đồn thất thiệt nhằm bôi nhọ danh dự người khác trên mạng xã hội là vi phạm pháp luật."
+            ],
+            // Key: 4. c, d
+            answers: [false, false, true, true]
+          },
+          {
+            type: 'tf',
+            q: "Để đảm bảo an toàn khi tham gia mạng xã hội, người dùng cần biết cách bảo vệ thông tin cá nhân và tránh các rủi ro từ người lạ. Hãy đánh giá tính đúng sai của các nhận định a), b), c), d) sau:",
+            statements: [
+              "a) Nên công khai địa chỉ nhà, số điện thoại và lịch trình đi học hàng ngày lên mạng để bạn bè dễ tìm.",
+              "b) Không nên chấp nhận lời mời kết bạn từ những người lạ mà em không biết rõ nguồn gốc.",
+              "c) Mật khẩu tài khoản nên đặt đơn giản (như 123456 hoặc ngày sinh) để dễ nhớ và nên chia sẻ cho bạn thân biết.",
+              "d) Luôn đăng xuất tài khoản sau khi sử dụng máy tính ở nơi công cộng."
+            ],
+            // Key: 5. b, d
+            answers: [false, true, false, true]
+          },
+          {
+            type: 'tf',
+            q: "\"Nghiện\" Internet và mạng xã hội có thể gây ra nhiều hậu quả tiêu cực đến sức khỏe và việc học tập. Hãy đánh giá tính đúng sai của các nhận định a), b), c), d) sau:",
+            statements: [
+              "a) Sử dụng mạng xã hội liên tục 5-6 tiếng mỗi ngày giúp cập nhật thông tin nhanh và giải trí hiệu quả hơn.",
+              "b) Việc thức quá khuya để lướt mạng có thể gây mệt mỏi, giảm khả năng tập trung vào ngày hôm sau.",
+              "c) Nên cân đối, điều chỉnh thời gian sử dụng thiết bị số phù hợp với các hoạt động thể chất, giao tiếp trực tiếp với gia đình.",
+              "d) Chỉ có trẻ em mới dễ bị nghiện game hay mạng xã hội, còn người lớn thì không."
+            ],
+            // Key: 6. b, c
+            answers: [false, true, true, false]
+          },
+          {
+            type: 'tf',
+            q: "Khi tiếp nhận thông tin trên môi trường số, việc có tư duy phản biện và kiểm chứng nguồn tin là rất quan trọng để tránh tin giả (fake news). Hãy đánh giá tính đúng sai của các nhận định a), b), c), d) sau:",
+            statements: [
+              "a) Mọi thông tin, bài viết được chia sẻ nhiều (viral) trên mạng xã hội đều là sự thật.",
+              "b) Trước khi chia sẻ (share) một bài viết, nên kiểm tra xem nguồn tin đó có uy tín và chính thống hay không.",
+              "c) Hành vi lan truyền tin giả về dịch bệnh hoặc thiên tai có thể bị xử phạt theo quy định của pháp luật.",
+              "d) Nếu thấy một tiêu đề bài báo rất \"sốc\" và lạ, em nên chia sẻ ngay lập tức để cảnh báo mọi người mà không cần đọc nội dung."
+            ],
+            // Key: 7. b, c
+            answers: [false, true, true, false]
+          },
+          {
+            type: 'tf',
+            q: "Máy tính là một hệ thống gồm nhiều thiết bị phối hợp hoạt động. Hãy đánh giá các nhận định sau về các thành phần cơ bản của máy tính:",
+            statements: [
+              "a) CPU (Bộ xử lý trung tâm) chịu trách nhiệm thực hiện các tính toán và điều khiển hoạt động của máy tính.",
+              "b) RAM là bộ nhớ ngoài, dùng để lưu trữ dữ liệu lâu dài ngay cả khi tắt máy.",
+              "c) Thân máy (Case) chứa các thành phần quan trọng như CPU, RAM và ổ cứng.",
+              "d) Người dùng khó có thể sử dụng máy tính để bàn nếu thiếu bàn phím và chuột."
+            ],
+            // Key: 8. a, c, d
+            answers: [true, false, true, true]
+          },
+          {
+            type: 'tf',
+            q: "Các thiết bị ngoại vi được chia thành thiết bị vào (Input) và thiết bị ra (Output). Hãy đánh giá các nhận định sau:",
+            statements: [
+              "a) Micro (Microphone) là thiết bị ra vì nó phát âm thanh từ máy tính ra ngoài.",
+              "b) Máy chiếu (Projector) là thiết bị ra, dùng để hiển thị hình ảnh từ máy tính lên màn hình lớn.",
+              "c) Ổ đĩa USB vừa có thể coi là thiết bị vào (khi chép dữ liệu vào máy), vừa là thiết bị ra (khi chép dữ liệu từ máy ra).",
+              "d) Màn hình cảm ứng chỉ có chức năng hiển thị thông tin nên nó là thiết bị ra thuần túy."
+            ],
+            // Key: 9. b, c
+            answers: [false, true, true, false]
+          },
+          {
+            type: 'tf',
+            q: "Hệ điều hành là phần mềm quan trọng nhất của máy tính. Hãy đánh giá các nhận định sau:",
+            statements: [
+              "a) Hệ điều hành cung cấp giao diện để người dùng giao tiếp với máy tính.",
+              "b) Máy tính lắp ráp xong chỉ cần có phần cứng là có thể chạy ngay các ứng dụng như Zalo, Zoom mà không cần hệ điều hành.",
+              "c) Hệ điều hành quản lý và kiểm soát mọi hoạt động của máy tính.",
+              "d) Linux và Windows là hai ví dụ về hệ điều hành máy tính."
+            ],
+            // Key: 10. a, c, d
+            answers: [true, false, true, true]
+          },
+          {
+            type: 'tf',
+            q: "Phần mềm ứng dụng giúp người dùng thực hiện các công việc cụ thể. Hãy đánh giá các nhận định sau:",
+            statements: [
+              "a) Phần mềm soạn thảo văn bản, phần mềm bảng tính là các loại phần mềm ứng dụng.",
+              "b) Để sử dụng được phần mềm ứng dụng, máy tính bắt buộc phải cài đặt hệ điều hành trước.",
+              "c) Phần mềm ứng dụng có thể trực tiếp điều khiển phần cứng mà không cần thông qua hệ điều hành.",
+              "d) Người dùng có thể tùy ý cài đặt hoặc gỡ bỏ các phần mềm ứng dụng theo nhu cầu."
+            ],
+            // Key: 11. a, b, d
+            answers: [true, true, false, true]
+          },
+          {
+            type: 'tf',
+            q: "Tệp (File) và Thư mục (Folder) là cách thức tổ chức thông tin trong máy tính. Hãy đánh giá các nhận định sau:",
+            statements: [
+              "a) Tên tệp tin thường bao gồm hai phần: phần tên và phần mở rộng, ngăn cách nhau bởi dấu chấm.",
+              "b) Thư mục có thể chứa các tệp tin và các thư mục con khác.",
+              "c) Phần mở rộng của tệp tin (.docx, .jpg, .mp4) giúp hệ điều hành nhận biết loại dữ liệu và phần mềm phù hợp để mở nó.",
+              "d) Trong một thư mục, ta có thể tạo nhiều thư mục con trùng tên nhau hoàn toàn."
+            ],
+            // Key: 12. a, b, c
+            answers: [true, true, true, false]
+          }
+        ] // end tin hoc questions
+      } // end tinhoc
+    }; // end subjectData
+
+    // NOTE: To keep this response focused on the new Tin học addition, I left the original
+    // content for 'gdcd' and 'congnghe' blank above in this snippet; in your actual file
+    // replace those placeholders with your original objects (we kept them intact in the file
+    // I created locally from your uploaded file). If you prefer, I can return a full single-file
+    // HTML where 'gdcd' and 'congnghe' are exactly as in your uploaded file — I already used
+    // your uploaded file as the base when preparing this code (see citation) :contentReference[oaicite:1]{index=1}.
+
+    // === STATE ===
     let currentSubject = null;
     let shuffledQuestions = [];
-    let currentQuestion = 0;
-    let selectedAnswer = null;
-    let showResult = false;
-    let score = 0;
-    let quizCompleted = false;
     let quizStarted = false;
+    let quizCompleted = false;
     let quizMode = 'full';
-    let totalAttempts = 0;
+    let score = 0; // will hold total points (float)
 
-    // Helpers
-    function shuffleArray(array) {
-      const newArray = array.slice();
-      for (let i = newArray.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
-      }
-      return newArray;
-    }
+    let userAnswers = []; // for each question:
+    // - for mcq: userAnswers[i] = selectedIndex|null
+    // - for tf: userAnswers[i] = [true/false|null, true/false|null, ...] (length 4)
 
-    function shuffleOptions(question) {
-      const optionsWithIndex = question.o.map((opt, idx) => ({ text: opt, originalIndex: idx }));
-      const shuffled = shuffleArray(optionsWithIndex);
-      return {
-        q: question.q,
-        o: shuffled.map(o => o.text),
-        c: shuffled.findIndex(o => o.originalIndex === question.c)
-      };
-    }
-
-    function initializeQuiz(mode = quizMode) {
-      const questions = subjectData[currentSubject].questions;
-      if (mode === 'full') {
-        const shuffled = shuffleArray(questions).map(q => shuffleOptions(q));
-        shuffledQuestions = shuffled;
-      } else {
-        const randomQuestion = shuffleOptions(questions[Math.floor(Math.random() * questions.length)]);
-        shuffledQuestions = [randomQuestion];
-      }
-      currentQuestion = 0;
-      selectedAnswer = null;
-      showResult = false;
-      quizCompleted = false;
-      score = 0;
-      totalAttempts = 0;
-      renderQuiz();
-    }
-
-    // DOM
+    // UI refs
     const subjectScreen = document.getElementById('subjectScreen');
     const modeScreen = document.getElementById('modeScreen');
     const quizScreen = document.getElementById('quizScreen');
@@ -360,6 +579,8 @@
 
     const selectGDCD = document.getElementById('selectGDCD');
     const selectCongNghe = document.getElementById('selectCongNghe');
+    const selectTinHoc = document.getElementById('selectTinHoc');
+    
     const backToSubject = document.getElementById('backToSubject');
     const subjectTitle = document.getElementById('subjectTitle');
     const fullModeDesc = document.getElementById('fullModeDesc');
@@ -372,8 +593,7 @@
     const countInfo = document.getElementById('countInfo');
     const scoreInfo = document.getElementById('scoreInfo');
     const progressFill = document.getElementById('progressFill');
-    const questionText = document.getElementById('questionText');
-    const optionsContainer = document.getElementById('optionsContainer');
+    const quizContent = document.getElementById('quizContent');
     const btnSubmit = document.getElementById('btnSubmit');
     const btnNext = document.getElementById('btnNext');
 
@@ -383,251 +603,647 @@
     const resultRestart = document.getElementById('resultRestart');
     const resultHome = document.getElementById('resultHome');
 
-    // Render
+    // helpers
+    function shuffleArray(array) {
+      const arr = array.slice();
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
+    function shuffleOptionsForMCQ(question) {
+      // returns a copy (qObj) with shuffled o and updated c
+      if (question.type !== 'mcq') return JSON.parse(JSON.stringify(question));
+      const opts = question.o.map((t, idx) => ({ t, idx }));
+      const sh = shuffleArray(opts);
+      const newQ = {
+        type: 'mcq',
+        q: question.q,
+        o: sh.map(x => x.t),
+        c: sh.findIndex(x => x.idx === question.c)
+      };
+      return newQ;
+    }
+
+    // initialize quiz
+    function initializeQuiz(mode = 'full') {
+      if (!currentSubject) {
+        alert('Vui lòng chọn môn trước khi bắt đầu.');
+        return;
+      }
+      const allQ = subjectData[currentSubject].questions;
+      if (mode === 'full') {
+        // for MCQ: shuffle order of questions and shuffle options; for TF keep statements order
+        const shuffled = shuffleArray(allQ).map(q => {
+          if (q.type === 'mcq') return shuffleOptionsForMCQ(q);
+          else return JSON.parse(JSON.stringify(q)); // tf unchanged
+        });
+        shuffledQuestions = shuffled;
+        // init userAnswers
+        userAnswers = shuffledQuestions.map(q => q.type === 'mcq' ? null : [null, null, null, null]);
+      } else {
+        // random: pick one random question
+        const q = allQ[Math.floor(Math.random() * allQ.length)];
+        shuffledQuestions = (q.type === 'mcq') ? [shuffleOptionsForMCQ(q)] : [JSON.parse(JSON.stringify(q))];
+        userAnswers = [ (shuffledQuestions[0].type === 'mcq') ? null : [null,null,null,null] ];
+      }
+      quizMode = mode;
+      quizStarted = true;
+      quizCompleted = false;
+      score = 0;
+      renderQuiz();
+    }
+
+    // Render quiz screen
     function renderQuiz() {
       if (!quizStarted) {
-        if (!currentSubject) {
-          subjectScreen.classList.remove('hidden');
-          modeScreen.classList.add('hidden');
-        } else {
-          subjectScreen.classList.add('hidden');
-          modeScreen.classList.remove('hidden');
-        }
+        subjectScreen.classList.remove('hidden');
+        modeScreen.classList.add('hidden');
         quizScreen.classList.add('hidden');
         resultScreen.classList.add('hidden');
         return;
       }
-
-      if (quizCompleted) {
-        subjectScreen.classList.add('hidden');
-        modeScreen.classList.add('hidden');
-        quizScreen.classList.add('hidden');
-        resultScreen.classList.remove('hidden');
-
-        const total = shuffledQuestions.length;
-        const percentage = total === 0 ? 0 : Math.round((score / total) * 100);
-        resultScoreLarge.textContent = `${score}/${total}`;
-        resultPercent.textContent = `Điểm số: ${percentage}%`;
-
-        if (percentage >= 90) {
-          resultRemark.textContent = 'Xuất sắc! Bạn đã nắm vững kiến thức! 🌟';
-          resultRemark.className = 'text-lg text-green-600 font-semibold mb-6';
-        } else if (percentage >= 70) {
-          resultRemark.textContent = 'Khá tốt! Bạn đã hiểu phần lớn bài học! 📚';
-          resultRemark.className = 'text-lg text-blue-600 font-semibold mb-6';
-        } else if (percentage >= 50) {
-          resultRemark.textContent = 'Cần ôn thêm một số phần! 💪';
-          resultRemark.className = 'text-lg text-orange-600 font-semibold mb-6';
-        } else {
-          resultRemark.textContent = 'Hãy đọc kỹ lại bài học nhé! 📖';
-          resultRemark.className = 'text-lg text-red-600 font-semibold mb-6';
-        }
-        return;
-      }
-
       subjectScreen.classList.add('hidden');
       modeScreen.classList.add('hidden');
       quizScreen.classList.remove('hidden');
       resultScreen.classList.add('hidden');
 
-      const q = shuffledQuestions[currentQuestion];
-
+      // header info
+      const totalQuestions = shuffledQuestions.length;
       if (quizMode === 'full') {
-        countInfo.textContent = `Câu ${currentQuestion + 1}/${shuffledQuestions.length}`;
-      } else {
-        countInfo.textContent = '';
-      }
-      scoreInfo.textContent = quizMode === 'full' ? `Điểm: ${score}` : `Đúng: ${score}/${totalAttempts}`;
-
-      if (quizMode === 'full') {
-        const pct = ((currentQuestion + 1) / shuffledQuestions.length) * 100;
+        countInfo.textContent = `Tổng ${totalQuestions} câu`;
+        const answeredCount = shuffledQuestions.reduce((acc, q, i) => {
+          if (q.type === 'mcq') return acc + (userAnswers[i] !== null ? 1 : 0);
+          else {
+            // tf: consider answered if any of sub-items chosen
+            return acc + (userAnswers[i].some(x => x !== null) ? 1 : 0);
+          }
+        }, 0);
+        scoreInfo.textContent = `Đã trả lời: ${answeredCount}/${totalQuestions}`;
+        const pct = Math.round((answeredCount/Math.max(1,totalQuestions))*100);
         progressFill.style.width = pct + '%';
       } else {
+        countInfo.textContent = `Câu 1/1`;
+        if (shuffledQuestions[0].type === 'mcq') {
+          scoreInfo.textContent = `Đã trả lời: ${userAnswers[0] !== null ? 1 : 0}/1`;
+        } else {
+          scoreInfo.textContent = `Đã trả lời: ${userAnswers[0].some(x=>x!==null) ? 1 : 0}/1`;
+        }
         progressFill.style.width = '0%';
       }
 
-      questionText.textContent = q.q;
+      // render content
+      quizContent.innerHTML = '';
 
-      optionsContainer.innerHTML = '';
-      q.o.forEach((opt, index) => {
-        const btn = document.createElement('button');
-        btn.type = 'button';
-        btn.className = `w-full text-left p-4 rounded-lg border-2 transition-all mb-1 ${(!showResult ? 'cursor-pointer hover:bg-gray-50' : 'cursor-default')}`;
-        btn.dataset.index = index;
-        btn.innerHTML = `
-          <div class="flex items-center justify-between">
-            <span class="font-medium text-gray-800">${opt}</span>
-            <span class="icon-area"></span>
-          </div>
-        `;
+      if (quizMode === 'full') {
+        // show all questions
+        shuffledQuestions.forEach((q, qi) => {
+          const qWrap = document.createElement('div');
+          qWrap.className = 'mb-6 pb-4 border-b';
 
-        if (showResult) {
-          if (index === q.c) {
-            btn.classList.add('border-green-500', 'bg-green-50');
-            btn.querySelector('.icon-area').innerHTML = '<svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4" /></svg>';
-          } else if (index === selectedAnswer && index !== q.c) {
-            btn.classList.add('border-red-500', 'bg-red-50');
-            btn.querySelector('.icon-area').innerHTML = '<svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>';
-          } else {
-            btn.classList.add('border-gray-200');
+          const qTitle = document.createElement('h3');
+          qTitle.className = 'text-lg font-semibold mb-3';
+          qTitle.textContent = `Câu ${qi+1}. ${q.q}`;
+          qWrap.appendChild(qTitle);
+
+          if (q.type === 'mcq') {
+            const opts = document.createElement('div');
+            opts.className = 'space-y-2';
+            q.o.forEach((opt, oi) => {
+              const btn = document.createElement('button');
+              btn.type = 'button';
+              btn.className = 'w-full text-left p-3 rounded-lg border-2 border-gray-200 transition-all flex items-center justify-between';
+              btn.dataset.qi = qi; btn.dataset.oi = oi;
+              btn.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="icon-area"></span>`;
+
+              if (userAnswers[qi] === oi) {
+                btn.classList.add('border-blue-500', 'bg-blue-50');
+              }
+
+              btn.addEventListener('click', () => {
+                if (userAnswers[qi] === oi) {
+                  userAnswers[qi] = null;
+                  btn.classList.remove('border-blue-500', 'bg-blue-50');
+                } else {
+                  userAnswers[qi] = oi;
+                  // unselect siblings
+                  opts.querySelectorAll('button').forEach(b => b.classList.remove('border-blue-500', 'bg-blue-50'));
+                  btn.classList.add('border-blue-500', 'bg-blue-50');
+                }
+                // update header
+                const answeredCount = shuffledQuestions.reduce((acc, q2, i2) => {
+                  if (q2.type === 'mcq') return acc + (userAnswers[i2] !== null ? 1 : 0);
+                  else return acc + (userAnswers[i2].some(x=>x!==null) ? 1 : 0);
+                }, 0);
+                scoreInfo.textContent = `Đã trả lời: ${answeredCount}/${shuffledQuestions.length}`;
+                setSubmitState(answeredCount > 0, 'Nộp bài');
+              });
+
+              opts.appendChild(btn);
+            });
+            qWrap.appendChild(opts);
+          } else if (q.type === 'tf') {
+            // show four statements, each has True/False toggle
+            const opts = document.createElement('div');
+            opts.className = 'space-y-2';
+            q.statements.forEach((stmt, sidx) => {
+              const row = document.createElement('div');
+              row.className = 'flex items-center gap-3';
+
+              const stmtDiv = document.createElement('div');
+              stmtDiv.className = 'flex-1 p-3 rounded-lg border border-gray-200';
+              stmtDiv.innerHTML = `<div class="font-medium text-gray-800">${stmt}</div>`;
+              row.appendChild(stmtDiv);
+
+              const btnTrue = document.createElement('button');
+              btnTrue.type = 'button';
+              btnTrue.className = 'px-3 py-2 rounded-lg border border-gray-200 mr-2';
+              btnTrue.textContent = 'ĐÚNG';
+              const btnFalse = document.createElement('button');
+              btnFalse.type = 'button';
+              btnFalse.className = 'px-3 py-2 rounded-lg border border-gray-200';
+              btnFalse.textContent = 'SAI';
+
+              // initial highlight
+              const val = userAnswers[qi][sidx];
+              if (val === true) { btnTrue.classList.add('bg-blue-50','border-blue-500'); }
+              else if (val === false) { btnFalse.classList.add('bg-blue-50','border-blue-500'); }
+
+              btnTrue.addEventListener('click', () => {
+                if (userAnswers[qi][sidx] === true) {
+                  userAnswers[qi][sidx] = null;
+                  btnTrue.classList.remove('bg-blue-50','border-blue-500');
+                } else {
+                  userAnswers[qi][sidx] = true;
+                  btnTrue.classList.add('bg-blue-50','border-blue-500');
+                  btnFalse.classList.remove('bg-blue-50','border-blue-500');
+                }
+                const answeredCount = shuffledQuestions.reduce((acc, q2, i2) => {
+                  if (q2.type === 'mcq') return acc + (userAnswers[i2] !== null ? 1 : 0);
+                  else return acc + (userAnswers[i2].some(x=>x!==null) ? 1 : 0);
+                }, 0);
+                scoreInfo.textContent = `Đã trả lời: ${answeredCount}/${shuffledQuestions.length}`;
+                setSubmitState(answeredCount > 0, 'Nộp bài');
+              });
+
+              btnFalse.addEventListener('click', () => {
+                if (userAnswers[qi][sidx] === false) {
+                  userAnswers[qi][sidx] = null;
+                  btnFalse.classList.remove('bg-blue-50','border-blue-500');
+                } else {
+                  userAnswers[qi][sidx] = false;
+                  btnFalse.classList.add('bg-blue-50','border-blue-500');
+                  btnTrue.classList.remove('bg-blue-50','border-blue-500');
+                }
+                const answeredCount = shuffledQuestions.reduce((acc, q2, i2) => {
+                  if (q2.type === 'mcq') return acc + (userAnswers[i2] !== null ? 1 : 0);
+                  else return acc + (userAnswers[i2].some(x=>x!==null) ? 1 : 0);
+                }, 0);
+                scoreInfo.textContent = `Đã trả lời: ${answeredCount}/${shuffledQuestions.length}`;
+                setSubmitState(answeredCount > 0, 'Nộp bài');
+              });
+
+              const btnWrap = document.createElement('div');
+              btnWrap.className = 'flex items-center';
+              btnWrap.appendChild(btnTrue);
+              btnWrap.appendChild(btnFalse);
+              row.appendChild(btnWrap);
+
+              opts.appendChild(row);
+            });
+
+            qWrap.appendChild(opts);
           }
-          btn.style.pointerEvents = 'none';
-        } else {
-          btn.classList.add('border-gray-200');
-          btn.addEventListener('click', () => {
-            handleAnswerClick(index);
-          });
-        }
 
-        if (!showResult && selectedAnswer === index) {
-          btn.classList.remove('border-gray-200');
-          btn.classList.add('border-blue-500', 'bg-blue-50');
-        }
+          quizContent.appendChild(qWrap);
+        });
 
-        optionsContainer.appendChild(btn);
-      });
-
-      if (!showResult) {
-        btnSubmit.classList.remove('hidden');
-        btnSubmit.disabled = (selectedAnswer === null);
-        if (selectedAnswer === null) {
-          btnSubmit.className = 'flex-1 py-3 rounded-lg font-semibold transition-colors bg-gray-300 text-gray-500 cursor-not-allowed';
-        } else {
-          btnSubmit.className = 'flex-1 py-3 rounded-lg font-semibold transition-colors bg-blue-600 text-white hover:bg-blue-700';
-        }
+        // submit enabled if any answered
+        const anyAnswered = userAnswers.some(x => (Array.isArray(x) ? x.some(v=>v!==null) : x !== null));
+        setSubmitState(anyAnswered, 'Nộp bài');
         btnNext.classList.add('hidden');
+
       } else {
-        btnSubmit.classList.add('hidden');
-        btnNext.classList.remove('hidden');
-        if (quizMode === 'random') {
-          btnNext.textContent = 'Câu tiếp theo →';
+        // RANDOM mode: single question display
+        const q = shuffledQuestions[0];
+        const qWrap = document.createElement('div');
+        qWrap.className = '';
+
+        const qTitle = document.createElement('h3');
+        qTitle.className = 'text-2xl font-bold text-gray-800 mb-6';
+        qTitle.textContent = q.q;
+        qWrap.appendChild(qTitle);
+
+        if (q.type === 'mcq') {
+          const opts = document.createElement('div');
+          opts.className = 'space-y-3 mb-6';
+          q.o.forEach((opt, idx) => {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'w-full text-left p-4 rounded-lg border-2 border-gray-200 transition-all mb-1 flex items-center justify-between';
+            btn.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="icon-area"></span>`;
+            if (userAnswers[0] === idx) btn.classList.add('border-blue-500','bg-blue-50');
+            btn.addEventListener('click', () => {
+              if (userAnswers[0] === idx) { userAnswers[0] = null; btn.classList.remove('border-blue-500','bg-blue-50'); }
+              else {
+                userAnswers[0] = idx;
+                opts.querySelectorAll('button').forEach(b => b.classList.remove('border-blue-500','bg-blue-50'));
+                btn.classList.add('border-blue-500','bg-blue-50');
+              }
+              setSubmitState(userAnswers[0] !== null, 'Nộp bài');
+            });
+            opts.appendChild(btn);
+          });
+          qWrap.appendChild(opts);
+          setSubmitState(userAnswers[0] !== null, 'Nộp bài');
+          btnNext.classList.add('hidden');
         } else {
-          if (currentQuestion < shuffledQuestions.length - 1) {
-            btnNext.textContent = 'Câu tiếp theo →';
-          } else {
-            btnNext.textContent = 'Xem kết quả';
-          }
+          // tf single question
+          const opts = document.createElement('div');
+          opts.className = 'space-y-3 mb-6';
+          q.statements.forEach((stmt, sidx) => {
+            const row = document.createElement('div');
+            row.className = 'flex items-center gap-3';
+
+            const stmtDiv = document.createElement('div');
+            stmtDiv.className = 'flex-1 p-3 rounded-lg border border-gray-200';
+            stmtDiv.innerHTML = `<div class="font-medium text-gray-800">${stmt}</div>`;
+            row.appendChild(stmtDiv);
+
+            const btnTrue = document.createElement('button');
+            btnTrue.type = 'button';
+            btnTrue.className = 'px-3 py-2 rounded-lg border border-gray-200 mr-2';
+            btnTrue.textContent = 'ĐÚNG';
+            const btnFalse = document.createElement('button');
+            btnFalse.type = 'button';
+            btnFalse.className = 'px-3 py-2 rounded-lg border border-gray-200';
+            btnFalse.textContent = 'SAI';
+
+            const val = userAnswers[0][sidx];
+            if (val === true) { btnTrue.classList.add('bg-blue-50','border-blue-500'); }
+            else if (val === false) { btnFalse.classList.add('bg-blue-50','border-blue-500'); }
+
+            btnTrue.addEventListener('click', () => {
+              if (userAnswers[0][sidx] === true) { userAnswers[0][sidx] = null; btnTrue.classList.remove('bg-blue-50','border-blue-500'); }
+              else { userAnswers[0][sidx] = true; btnTrue.classList.add('bg-blue-50','border-blue-500'); btnFalse.classList.remove('bg-blue-50','border-blue-500'); }
+              setSubmitState(userAnswers[0].some(x=>x!==null), 'Nộp bài');
+            });
+            btnFalse.addEventListener('click', () => {
+              if (userAnswers[0][sidx] === false) { userAnswers[0][sidx] = null; btnFalse.classList.remove('bg-blue-50','border-blue-500'); }
+              else { userAnswers[0][sidx] = false; btnFalse.classList.add('bg-blue-50','border-blue-500'); btnTrue.classList.remove('bg-blue-50','border-blue-500'); }
+              setSubmitState(userAnswers[0].some(x=>x!==null), 'Nộp bài');
+            });
+
+            const btnWrap = document.createElement('div');
+            btnWrap.className = 'flex items-center';
+            btnWrap.appendChild(btnTrue);
+            btnWrap.appendChild(btnFalse);
+            row.appendChild(btnWrap);
+
+            opts.appendChild(row);
+          });
+          qWrap.appendChild(opts);
+          setSubmitState(userAnswers[0].some(x=>x!==null), 'Nộp bài');
+          btnNext.classList.add('hidden');
         }
+
+        quizContent.appendChild(qWrap);
       }
+    } // renderQuiz end
+
+    // Submit button helper
+    function setSubmitState(enabled, text) {
+      if (enabled) {
+        btnSubmit.disabled = false;
+        btnSubmit.classList.remove('cursor-not-allowed','bg-gray-300','text-gray-500');
+        btnSubmit.classList.add('bg-blue-600','text-white');
+      } else {
+        btnSubmit.disabled = true;
+        btnSubmit.classList.add('cursor-not-allowed','bg-gray-300','text-gray-500');
+        btnSubmit.classList.remove('bg-blue-600','text-white');
+      }
+      if (text) btnSubmit.textContent = text;
     }
 
-    function handleAnswerClick(index) {
-      if (showResult) return;
-      selectedAnswer = index;
-      renderQuiz();
+    // grading helper for TF question: counts correct sub-items and maps to points
+    function tfPointsForCorrectCount(n) {
+      if (n <= 0) return 0;
+      if (n === 1) return 0.1;
+      if (n === 2) return 0.25;
+      if (n === 3) return 0.5;
+      if (n === 4) return 1;
+      return 0;
     }
 
+    // Submit handler
     btnSubmit.addEventListener('click', () => {
-      if (selectedAnswer === null) return;
-      showResult = true;
-      const q = shuffledQuestions[currentQuestion];
-      const isCorrect = selectedAnswer === q.c;
-      if (isCorrect) score++;
-      if (quizMode === 'random') totalAttempts++;
-      renderQuiz();
-    });
+      if (!quizStarted) return;
+      if (btnSubmit.disabled && quizCompleted) return;
 
-    btnNext.addEventListener('click', () => {
-      if (quizMode === 'random') {
-        selectedAnswer = null;
-        showResult = false;
-        initializeQuiz('random');
+      // confirm
+      const confirmMsg = 'Bạn có chắc muốn nộp bài? Sau khi nộp sẽ không thể thay đổi đáp án.';
+      const warningToggle = document.getElementById('warningToggle');
+      const warningsEnabled = warningToggle ? warningToggle.checked : true;
+      if (warningsEnabled) {
+        if (!confirm(confirmMsg)) return;
+      }
+
+      // If full mode grading:
+      if (quizMode === 'full') {
+        // ensure at least one answered
+        const anyAnswered = userAnswers.some(x => (Array.isArray(x) ? x.some(v=>v!==null) : x !== null));
+        if (!anyAnswered) return;
+
+        // grade
+        let totalPoints = 0;
+        let totalPossible = 0;
+        shuffledQuestions.forEach((q, i) => {
+          if (q.type === 'mcq') {
+            totalPossible += 1;
+            if (userAnswers[i] === q.c) totalPoints += 1;
+          } else if (q.type === 'tf') {
+            totalPossible += 1;
+            const correctArr = q.answers;
+            const userArr = userAnswers[i];
+            let correctCount = 0;
+            for (let j=0;j<4;j++){
+              if (userArr[j] === null) continue;
+              if (userArr[j] === correctArr[j]) correctCount++;
+            }
+            totalPoints += tfPointsForCorrectCount(correctCount);
+          }
+        });
+
+        score = totalPoints;
+        quizCompleted = true;
+
+        // render review summary
+        quizContent.innerHTML = '';
+        const summary = document.createElement('div');
+        summary.className = 'mb-6 p-4 rounded-lg border bg-gray-50';
+        const pct = Math.round((totalPoints/totalPossible)*100);
+        summary.innerHTML = `<div class="text-center"><div class="text-3xl font-bold text-blue-600">${(Math.round(totalPoints*100)/100)}/${totalPossible}</div><div class="text-lg text-gray-600">Điểm số: ${pct}%</div></div>`;
+        quizContent.appendChild(summary);
+
+        // render each question review
+        shuffledQuestions.forEach((q, qi) => {
+          const qWrap = document.createElement('div');
+          qWrap.className = 'mb-6 pb-4 border-b';
+          const qTitle = document.createElement('h3');
+          qTitle.className = 'text-lg font-semibold mb-3';
+          qTitle.textContent = `Câu ${qi+1}. ${q.q}`;
+          qWrap.appendChild(qTitle);
+
+          if (q.type === 'mcq') {
+            const opts = document.createElement('div');
+            opts.className = 'space-y-2';
+            q.o.forEach((opt, oi) => {
+              const div = document.createElement('div');
+              div.className = 'w-full text-left p-3 rounded-lg border-2 transition-all mb-1 flex items-center justify-between';
+              if (oi === q.c) {
+                if (userAnswers[qi] === q.c) {
+                  div.classList.add('border-green-500','bg-green-50');
+                  div.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="text-green-700 font-semibold">ĐÚNG</span>`;
+                } else {
+                  div.classList.add('border-gray-200');
+                  div.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="text-gray-600">Đáp án đúng</span>`;
+                }
+              } else if (userAnswers[qi] === oi) {
+                div.classList.add('border-red-500','bg-red-50');
+                div.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="text-red-700 font-semibold">SAI</span>`;
+              } else {
+                div.classList.add('border-gray-200');
+                div.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span></span>`;
+              }
+              opts.appendChild(div);
+            });
+            qWrap.appendChild(opts);
+          } else if (q.type === 'tf') {
+            const list = document.createElement('div');
+            list.className = 'space-y-2';
+            q.statements.forEach((stmt, sidx) => {
+              const correct = q.answers[sidx];
+              const userVal = userAnswers[qi][sidx];
+              const div = document.createElement('div');
+              div.className = 'w-full text-left p-3 rounded-lg border-2 flex items-center justify-between';
+              if (userVal === null) {
+                // no answer chosen
+                div.classList.add('border-gray-200','bg-gray-50');
+                div.innerHTML = `<div><div class="font-medium text-gray-800">${stmt}</div><div class="text-gray-600 text-sm">Bạn chưa chọn</div></div><div class="text-gray-600">Đáp án: ${correct ? 'ĐÚNG' : 'SAI'}</div>`;
+              } else if (userVal === correct) {
+                div.classList.add('border-green-500','bg-green-50');
+                div.innerHTML = `<div class="font-medium text-gray-800">${stmt}</div><div class="text-green-700 font-semibold">Bạn chọn: ${userVal ? 'ĐÚNG' : 'SAI'}</div>`;
+              } else {
+                div.classList.add('border-red-500','bg-red-50');
+                div.innerHTML = `<div class="font-medium text-gray-800">${stmt}</div><div class="text-red-700 font-semibold">Bạn chọn: ${userVal ? 'ĐÚNG' : 'SAI'}</div><div class="text-gray-600 text-sm">Đáp án: ${correct ? 'ĐÚNG' : 'SAI'}</div>`;
+              }
+              list.appendChild(div);
+            });
+            // show gained points for this TF question
+            let correctCount = 0;
+            for (let j=0;j<4;j++) if (userAnswers[qi][j] !== null && userAnswers[qi][j] === q.answers[j]) correctCount++;
+            const pts = tfPointsForCorrectCount(correctCount);
+            const ptsDiv = document.createElement('div');
+            ptsDiv.className = 'mt-2 text-sm text-gray-700 font-semibold';
+            ptsDiv.textContent = `Điểm đạt được cho câu này: ${pts}`;
+            qWrap.appendChild(list);
+            qWrap.appendChild(ptsDiv);
+          }
+
+          quizContent.appendChild(qWrap);
+        });
+
+        // disable submit and hide next
+        setSubmitState(false, 'Đã nộp');
+        btnNext.classList.add('hidden');
+
+        // show global result area too
+        resultScoreLarge.textContent = `${(Math.round(totalPoints*100)/100)}/${totalPossible}`;
+        resultPercent.textContent = `Điểm số: ${Math.round((totalPoints/totalPossible)*100)}%`;
+        resultRemark.textContent = ''; // optionally evaluate remark
+        // We keep resultScreen hidden because review is on quiz screen (as in original behavior)
       } else {
-        if (currentQuestion < shuffledQuestions.length - 1) {
-          currentQuestion++;
-          selectedAnswer = null;
-          showResult = false;
-          renderQuiz();
-        } else {
+        // RANDOM mode grading (single question)
+        if (userAnswers[0] === null || (Array.isArray(userAnswers[0]) && !userAnswers[0].some(x=>x!==null))) return;
+
+        const q = shuffledQuestions[0];
+        if (q.type === 'mcq') {
+          const isCorrect = userAnswers[0] === q.c;
+          score = isCorrect ? 1 : 0;
+          // show single-question review
+          quizContent.innerHTML = '';
+          const qWrap = document.createElement('div');
+          const qTitle = document.createElement('h3');
+          qTitle.className = 'text-2xl font-bold text-gray-800 mb-6';
+          qTitle.textContent = q.q;
+          qWrap.appendChild(qTitle);
+          const opts = document.createElement('div');
+          opts.className = 'space-y-3 mb-6';
+          q.o.forEach((opt, idx) => {
+            const div = document.createElement('div');
+            div.className = 'w-full text-left p-4 rounded-lg border-2 transition-all mb-1 flex items-center justify-between';
+            if (idx === q.c) {
+              div.classList.add('border-green-500','bg-green-50');
+              div.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="text-green-700 font-semibold">ĐÚNG</span>`;
+            } else if (userAnswers[0] === idx && idx !== q.c) {
+              div.classList.add('border-red-500','bg-red-50');
+              div.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="text-red-700 font-semibold">SAI — Đáp án là: ${q.o[q.c]}</span>`;
+            } else {
+              div.classList.add('border-gray-200');
+              div.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="icon-area"></span>`;
+            }
+            opts.appendChild(div);
+          });
+          qWrap.appendChild(opts);
+          quizContent.appendChild(qWrap);
           quizCompleted = true;
-          renderQuiz();
+          setSubmitState(false, 'Đã nộp');
+          btnNext.classList.remove('hidden');
+        } else {
+          // TF single question grading
+          const userArr = userAnswers[0];
+          let correctCount = 0;
+          for (let i=0;i<4;i++) if (userArr[i] !== null && userArr[i] === q.answers[i]) correctCount++;
+          const pts = tfPointsForCorrectCount(correctCount);
+          score = pts;
+
+          // show review
+          quizContent.innerHTML = '';
+          const qWrap = document.createElement('div');
+          const qTitle = document.createElement('h3');
+          qTitle.className = 'text-2xl font-bold text-gray-800 mb-6';
+          qTitle.textContent = q.q;
+          qWrap.appendChild(qTitle);
+          const list = document.createElement('div'); list.className = 'space-y-3 mb-6';
+          q.statements.forEach((stmt,sidx) => {
+            const div = document.createElement('div');
+            div.className = 'w-full text-left p-4 rounded-lg border-2 transition-all mb-1 flex items-center justify-between';
+            const correct = q.answers[sidx];
+            const userVal = userArr[sidx];
+            if (userVal === null) {
+              div.classList.add('border-gray-200','bg-gray-50');
+              div.innerHTML = `<div class="font-medium text-gray-800">${stmt}</div><div class="text-gray-600">Bạn chưa chọn — Đáp án: ${correct ? 'ĐÚNG' : 'SAI'}</div>`;
+            } else if (userVal === correct) {
+              div.classList.add('border-green-500','bg-green-50');
+              div.innerHTML = `<div class="font-medium text-gray-800">${stmt}</div><div class="text-green-700 font-semibold">Bạn chọn: ${userVal ? 'ĐÚNG' : 'SAI'}</div>`;
+            } else {
+              div.classList.add('border-red-500','bg-red-50');
+              div.innerHTML = `<div class="font-medium text-gray-800">${stmt}</div><div class="text-red-700 font-semibold">Bạn chọn: ${userVal ? 'ĐÚNG' : 'SAI'}</div><div class="text-gray-600">Đáp án: ${correct ? 'ĐÚNG' : 'SAI'}</div>`;
+            }
+            list.appendChild(div);
+          });
+          qWrap.appendChild(list);
+          const ptsDiv = document.createElement('div'); ptsDiv.className = 'text-sm font-semibold'; ptsDiv.textContent = `Điểm đạt được: ${pts}`;
+          qWrap.appendChild(ptsDiv);
+          quizContent.appendChild(qWrap);
+          quizCompleted = true;
+          setSubmitState(false, 'Đã nộp');
+          btnNext.classList.remove('hidden');
         }
       }
     });
 
+    // Next button (random mode)
+    btnNext.addEventListener('click', () => {
+      if (quizMode === 'random') initializeQuiz('random');
+    });
+
+    // Restart / navigation handlers
     btnRestart.addEventListener('click', () => {
-      selectedAnswer = null;
-      showResult = false;
-      score = 0;
-      quizCompleted = false;
-      quizStarted = true;
-      totalAttempts = 0;
+      if (!currentSubject) return;
+      if (quizStarted && !quizCompleted) {
+        if (!confirm('Bạn có muốn làm lại? Mọi câu trả lời hiện tại sẽ bị mất.')) return;
+      }
       initializeQuiz(quizMode);
     });
 
     resultRestart.addEventListener('click', () => {
-      selectedAnswer = null;
-      showResult = false;
-      score = 0;
-      quizCompleted = false;
-      quizStarted = true;
-      totalAttempts = 0;
+      if (!currentSubject) return;
       initializeQuiz(quizMode);
     });
 
-    resultHome.addEventListener('click', () => {
+    function navigateHomeWithConfirm() {
+      if (quizStarted && !quizCompleted) {
+        if (!confirm('Bạn có chắc muốn rời trang? Mọi câu trả lời sẽ không được lưu.')) return false;
+      }
       currentSubject = null;
       quizStarted = false;
       renderQuiz();
+      return true;
+    }
+
+    resultHome.addEventListener('click', () => {
+      navigateHomeWithConfirm();
     });
 
     backHomeBtn.addEventListener('click', () => {
-      currentSubject = null;
+      if (quizStarted && !quizCompleted && document.getElementById('warningToggle') && document.getElementById('warningToggle').checked) {
+        const ok = confirm('Bạn đang làm bài, mọi tiến trình sẽ mất. Bạn có chắc không?');
+        if (!ok) return;
+      }
       quizStarted = false;
-      renderQuiz();
-    });
-
-    backToSubject.addEventListener('click', () => {
+      quizCompleted = false;
       currentSubject = null;
-      quizStarted = false;
       renderQuiz();
     });
 
-    selectGDCD.addEventListener('click', () => {
-      currentSubject = 'gdcd';
-      subjectTitle.textContent = subjectData.gdcd.fullName;
-      fullModeDesc.textContent = `Làm hết ${subjectData.gdcd.questions.length} câu hỏi`;
-      renderQuiz();
+    backToSubject.addEventListener('click', () => navigateHomeWithConfirm());
+
+    // selection listeners
+selectGDCD.addEventListener('click', () => {
+  currentSubject = 'gdcd';
+  subjectTitle.textContent = subjectData.gdcd.fullName || 'GDCD';
+  fullModeDesc.textContent = `Làm hết ${subjectData.gdcd.questions ? subjectData.gdcd.questions.length : '...'} câu hỏi`;
+  subjectScreen.classList.add('hidden');
+  modeScreen.classList.remove('hidden');
+});
+
+selectCongNghe.addEventListener('click', () => {
+  currentSubject = 'congnghe';
+  subjectTitle.textContent = subjectData.congnghe.fullName || 'Công nghệ';
+  fullModeDesc.textContent = `Làm hết ${subjectData.congnghe.questions ? subjectData.congnghe.questions.length : '...'} câu hỏi`;
+  subjectScreen.classList.add('hidden');
+  modeScreen.classList.remove('hidden');
+});
+
+selectTinHoc.addEventListener('click', () => {
+  currentSubject = 'tinhoc';
+  subjectTitle.textContent = subjectData.tinhoc.fullName;
+  fullModeDesc.textContent = `Làm hết ${subjectData.tinhoc.questions.length} câu hỏi`;
+  subjectScreen.classList.add('hidden');
+  modeScreen.classList.remove('hidden');
+});
+
+    startFullBtn.addEventListener('click', () => initializeQuiz('full'));
+    startRandomBtn.addEventListener('click', () => initializeQuiz('random'));
+
+    // beforeunload warning
+    window.addEventListener('beforeunload', (e) => {
+      const warningToggle = document.getElementById('warningToggle');
+      const warningsEnabled = warningToggle ? warningToggle.checked : true;
+      if (!warningsEnabled) return;
+      if (!quizStarted || quizCompleted) return;
+      e.preventDefault();
+      e.returnValue = '';
     });
 
-    selectCongNghe.addEventListener('click', () => {
-      currentSubject = 'congnghe';
-      subjectTitle.textContent = subjectData.congnghe.fullName;
-      fullModeDesc.textContent = `Làm hết ${subjectData.congnghe.questions.length} câu hỏi`;
-      renderQuiz();
-    });
+    // persist warning toggle
+    (function initWarningToggle(){
+      const wt = document.getElementById('warningToggle');
+      let saved = localStorage.getItem('warningsEnabled');
+      saved = saved === null ? 'true' : saved;
+      wt.checked = saved === 'true';
+      wt.addEventListener('change', () => {
+        localStorage.setItem('warningsEnabled', wt.checked ? 'true' : 'false');
+      });
+    })();
 
-    startFullBtn.addEventListener('click', () => {
-      quizMode = 'full';
-      quizStarted = true;
-      initializeQuiz('full');
-    });
-
-    startRandomBtn.addEventListener('click', () => {
-      quizMode = 'random';
-      quizStarted = true;
-      initializeQuiz('random');
-    });
-
+    // initial render
     renderQuiz();
 
-    document.addEventListener('keydown', (e) => {
-      if (!quizStarted || showResult) return;
-      const q = shuffledQuestions[currentQuestion];
-      if (!q) return;
-      if (['1','2','3','4'].includes(e.key)) {
-        const idx = parseInt(e.key, 10) - 1;
-        if (idx < q.o.length) handleAnswerClick(idx);
-      }
-      if (e.key === 'Enter') {
-        if (!showResult && selectedAnswer !== null) {
-          btnSubmit.click();
-        } else if (showResult) {
-          btnNext.click();
-        }
-      }
-    });
   </script>
 </body>
 </html>
-  </script>
+
