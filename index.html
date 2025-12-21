@@ -1035,13 +1035,6 @@
       score = 0;
       renderQuiz();
     }
-// --- Thêm hàm này trước renderQuiz()
-function htmlDecode(input) {
-  if (!input) return '';
-  const d = document.createElement('div');
-  d.innerHTML = input;
-  return d.innerHTML;
-}
 
     // Render quiz screen
     function renderQuiz() {
@@ -1093,7 +1086,7 @@ btnRestart.textContent = (quizMode === 'random') ? 'Câu khác' : 'Làm lại';
 
           const qTitle = document.createElement('h3');
           qTitle.className = 'text-lg font-semibold mb-3';
-          qTitle.innerHTML = `Câu ${qi+1}. ${htmlDecode(q.q)}`;
+          qTitle.innerHTML = `Câu ${qi+1}. ${q.q}`;
 
           qWrap.appendChild(qTitle);
 
@@ -1105,7 +1098,7 @@ btnRestart.textContent = (quizMode === 'random') ? 'Câu khác' : 'Làm lại';
               btn.type = 'button';
               btn.className = 'w-full text-left p-3 rounded-lg border-2 border-gray-200 transition-all flex items-center justify-between';
               btn.dataset.qi = qi; btn.dataset.oi = oi;
-              btn.innerHTML = `<span class="font-medium text-gray-800">${htmlDecode(opt)}</span><span class="icon-area"></span>`;
+              btn.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="icon-area"></span>`;
 
 
               if (userAnswers[qi] === oi) {
@@ -1144,7 +1137,7 @@ btnRestart.textContent = (quizMode === 'random') ? 'Câu khác' : 'Làm lại';
 
               const stmtDiv = document.createElement('div');
               stmtDiv.className = 'flex-1 p-3 rounded-lg border border-gray-200';
-              stmtDiv.innerHTML = `<div class="font-medium text-gray-800">${htmlDecode(stmt)}</div>`;
+              stmtDiv.innerHTML = `<div class="font-medium text-gray-800">${stmt}</div>`;
 
               row.appendChild(stmtDiv);
 
@@ -1234,7 +1227,7 @@ btnRestart.textContent = (quizMode === 'random') ? 'Câu khác' : 'Làm lại';
             const btn = document.createElement('button');
             btn.type = 'button';
             btn.className = 'w-full text-left p-4 rounded-lg border-2 border-gray-200 transition-all mb-1 flex items-center justify-between';
-            btn.innerHTML = `<span class="font-medium text-gray-800">${htmlDecode(opt)}</span><span class="icon-area"></span>`;
+            btn.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="icon-area"></span>`;
 
             if (userAnswers[0] === idx) btn.classList.add('border-blue-500','bg-blue-50');
             btn.addEventListener('click', () => {
@@ -1261,7 +1254,7 @@ btnRestart.textContent = (quizMode === 'random') ? 'Câu khác' : 'Làm lại';
 
             const stmtDiv = document.createElement('div');
             stmtDiv.className = 'flex-1 p-3 rounded-lg border border-gray-200';
-            stmtDiv.innerHTML = `<div class="font-medium text-gray-800">${htmlDecode(stmt)}</div>`;
+            stmtDiv.innerHTML = `<div class="font-medium text-gray-800">${stmt}</div>`;
 
             row.appendChild(stmtDiv);
 
@@ -1386,7 +1379,7 @@ btnRestart.textContent = (quizMode === 'random') ? 'Câu khác' : 'Làm lại';
           qWrap.className = 'mb-6 pb-4 border-b';
           const qTitle = document.createElement('h3');
           qTitle.className = 'text-lg font-semibold mb-3';
-          qTitle.innerHTML = `Câu ${qi+1}. ${htmlDecode(q.q)}`;
+          qTitle.innerHTML = `Câu ${qi+1}. ${q.q}`;
 
           qWrap.appendChild(qTitle);
 
