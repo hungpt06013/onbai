@@ -1040,7 +1040,7 @@ function htmlDecode(input) {
   const d = document.createElement('div');
   d.innerHTML = input;
   // trả lại chuỗi đã giải mã (an toàn nếu input là chuỗi)
-  return d.textContent || d.innerText || '';
+  return d.innerHTML;
 }
 
     // Render quiz screen
