@@ -5,123 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Bài Kiểm Tra Cuối Kì 1 - Đa Môn</title>
   <script src="https://cdn.tailwindcss.com"></script>
-	<!-- Firebase SDK -->
-<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
-
-<script>
-// Cấu hình Firebase (thay bằng config của bạn)
-const firebaseConfig = {
-  apiKey: "AIzaSyB0cL2gvBQHfz6oxrOVWDOR0h2xb822HDM",
-  authDomain: "bruh-68680.firebaseapp.com",
-databaseURL: "https://bruh-68680-default-rtdb.firebaseio.com",
-  projectId: "bruh-68680",
-  storageBucket: "bruh-68680.firebasestorage.app",
-  messagingSenderId: "322108184836",
-  appId: "1:322108184836:web:f3a60b8fbd50ac1387d851"
-};
-
-// Khởi tạo Firebase
-// Khởi tạo Firebase
-firebase.initializeApp(firebaseConfig);
-const database = firebase.database();
-const presenceRef = database.ref('presence');
-
-// Tạo ID duy nhất cho TRÌNH DUYỆT (không phải tab)
-let browserId = localStorage.getItem('browserId');
-if (!browserId) {
-  browserId = 'browser_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
-  localStorage.setItem('browserId', browserId);
-}
-
-// Thêm tab ID để quản lý nhiều tab
-const tabId = 'tab_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
-
-// Lưu danh sách các tab đang mở
-const tabsKey = 'activeTabs_' + browserId;
-let activeTabs = JSON.parse(localStorage.getItem(tabsKey) || '[]');
-activeTabs.push(tabId);
-localStorage.setItem(tabsKey, JSON.stringify(activeTabs));
-
-const myPresenceRef = presenceRef.child(browserId);
-
-// Chỉ set online nếu đây là tab đầu tiên
-if (activeTabs.length === 1) {
-  myPresenceRef.set({
-    online: true,
-    timestamp: Date.now()
-  });
-}
-
-// Đánh dấu offline khi rời trang
-myPresenceRef.onDisconnect().remove();
-
-// Lắng nghe số người online
-presenceRef.on('value', (snapshot) => {
-  const onlineUsers = snapshot.numChildren();
-  document.getElementById('onlineCount').textContent = onlineUsers;
-});
-
-// Cleanup khi tắt tab
-window.addEventListener('beforeunload', () => {
-  // Xóa tab này khỏi danh sách
-  let tabs = JSON.parse(localStorage.getItem(tabsKey) || '[]');
-  tabs = tabs.filter(id => id !== tabId);
-  localStorage.setItem(tabsKey, JSON.stringify(tabs));
-  
-  // Chỉ remove presence nếu không còn tab nào
-  if (tabs.length === 0) {
-    myPresenceRef.remove();
-    localStorage.removeItem('browserId');
-    localStorage.removeItem(tabsKey);
-  }
-});
-
-// Heartbeat để cleanup các tab zombie (tab bị crash không cleanup)
-setInterval(() => {
-  let tabs = JSON.parse(localStorage.getItem(tabsKey) || '[]');
-  // Giữ tab hiện tại trong danh sách
-  if (!tabs.includes(tabId)) {
-    tabs.push(tabId);
-    localStorage.setItem(tabsKey, JSON.stringify(tabs));
-  }
-}, 5000);
-
-// Xử lý khi tab bị ẩn
-document.addEventListener('visibilitychange', () => {
-  if (!document.hidden) {
-    // Khi quay lại tab, đảm bảo presence vẫn còn
-    myPresenceRef.set({
-      online: true,
-      timestamp: Date.now()
-    });
-  }
-});
-
-// Function để reset số người online (có thể gọi từ Console)
-window.resetOnlineCount = function() {
-  firebase.database().ref('presence').remove().then(() => {
-    console.log('Bước 1: Đã xóa toàn bộ presence data.');
-    
-    // Đợi 1 giây để UI cập nhật về 0
-    setTimeout(() => {
-      const browserId = localStorage.getItem('browserId');
-      if (browserId) {
-        const myPresenceRef = firebase.database().ref('presence').child(browserId);
-        myPresenceRef.set({
-          online: true,
-          timestamp: Date.now()
-        }).then(() => {
-          console.log('Bước 2: Đã đăng ký lại. Số người online sẽ hiển thị 1 sau vài giây.');
-        });
-      }
-    }, 1000);
-  }).catch(error => {
-    console.error('Lỗi:', error);
-  });
-};
-resetOnlineCount();
-console.log('💡 Để reset số người online, gõ: resetOnlineCount()');
 </script>
 </script>
 </head>
@@ -1795,6 +1678,110 @@ selectLy.addEventListener('click', () => {
     // initial render
     renderQuiz();
 
+  </script>
+	  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+
+  <script>
+  // Cấu hình Firebase
+  const firebaseConfig = {
+    apiKey: "AIzaSyB0cL2gvBQHfz6oxrOVWDOR0h2xb822HDM",
+    authDomain: "bruh-68680.firebaseapp.com",
+    databaseURL: "https://bruh-68680-default-rtdb.firebaseio.com",
+    projectId: "bruh-68680",
+    storageBucket: "bruh-68680.firebasestorage.app",
+    messagingSenderId: "322108184836",
+    appId: "1:322108184836:web:f3a60b8fbd50ac1387d851"
+  };
+
+  // Khởi tạo Firebase
+  firebase.initializeApp(firebaseConfig);
+  const database = firebase.database();
+  const presenceRef = database.ref('presence');
+
+  // Tạo ID duy nhất cho TRÌNH DUYỆT
+  let browserId = localStorage.getItem('browserId');
+  if (!browserId) {
+    browserId = 'browser_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    localStorage.setItem('browserId', browserId);
+  }
+
+  const tabId = 'tab_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+  const tabsKey = 'activeTabs_' + browserId;
+  let activeTabs = JSON.parse(localStorage.getItem(tabsKey) || '[]');
+  activeTabs.push(tabId);
+  localStorage.setItem(tabsKey, JSON.stringify(activeTabs));
+
+  const myPresenceRef = presenceRef.child(browserId);
+
+  if (activeTabs.length === 1) {
+    myPresenceRef.set({
+      online: true,
+      timestamp: Date.now()
+    });
+  }
+
+  myPresenceRef.onDisconnect().remove();
+
+  presenceRef.on('value', (snapshot) => {
+    const onlineUsers = snapshot.numChildren();
+    document.getElementById('onlineCount').textContent = onlineUsers;
+  });
+
+  window.addEventListener('beforeunload', () => {
+    let tabs = JSON.parse(localStorage.getItem(tabsKey) || '[]');
+    tabs = tabs.filter(id => id !== tabId);
+    localStorage.setItem(tabsKey, JSON.stringify(tabs));
+    
+    if (tabs.length === 0) {
+      myPresenceRef.remove();
+      localStorage.removeItem('browserId');
+      localStorage.removeItem(tabsKey);
+    }
+  });
+
+  setInterval(() => {
+    let tabs = JSON.parse(localStorage.getItem(tabsKey) || '[]');
+    if (!tabs.includes(tabId)) {
+      tabs.push(tabId);
+      localStorage.setItem(tabsKey, JSON.stringify(tabs));
+    }
+  }, 5000);
+
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) {
+      myPresenceRef.set({
+        online: true,
+        timestamp: Date.now()
+      });
+    }
+  });
+
+  window.resetOnlineCount = function() {
+    firebase.database().ref('presence').remove().then(() => {
+      console.log('Bước 1: Đã xóa toàn bộ presence data.');
+      
+      setTimeout(() => {
+        const browserId = localStorage.getItem('browserId');
+        if (browserId) {
+          const myPresenceRef = firebase.database().ref('presence').child(browserId);
+          myPresenceRef.set({
+            online: true,
+            timestamp: Date.now()
+          }).then(() => {
+            console.log('Bước 2: Đã đăng ký lại. Số người online sẽ hiển thị 1 sau vài giây.');
+          });
+        }
+      }, 1000);
+    }).catch(error => {
+      console.error('Lỗi:', error);
+    });
+  };
+
+  // Tự động reset khi tải trang
+  resetOnlineCount();
+  
+  console.log('💡 Để reset số người online, gõ: resetOnlineCount()');
   </script>
 </body>
 </html>
