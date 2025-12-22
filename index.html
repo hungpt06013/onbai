@@ -22,24 +22,36 @@ databaseURL: "https://bruh-68680-default-rtdb.firebaseio.com",
 };
 
 // Khởi tạo Firebase
+// Khởi tạo Firebase
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
 const presenceRef = database.ref('presence');
 
-// Tạo hoặc lấy ID cho session này (dùng sessionStorage thay vì tạo mới mỗi lần)
-let userId = sessionStorage.getItem('userId');
-if (!userId) {
-  userId = 'user_' + Math.random().toString(36).substr(2, 9);
-  sessionStorage.setItem('userId', userId);
+// Tạo ID duy nhất cho TRÌNH DUYỆT (không phải tab)
+let browserId = localStorage.getItem('browserId');
+if (!browserId) {
+  browserId = 'browser_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+  localStorage.setItem('browserId', browserId);
 }
 
-const myPresenceRef = presenceRef.child(userId);
+// Thêm tab ID để quản lý nhiều tab
+const tabId = 'tab_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
 
-// Đánh dấu online khi vào trang
-myPresenceRef.set({
-  online: true,
-  timestamp: Date.now()
-});
+// Lưu danh sách các tab đang mở
+const tabsKey = 'activeTabs_' + browserId;
+let activeTabs = JSON.parse(localStorage.getItem(tabsKey) || '[]');
+activeTabs.push(tabId);
+localStorage.setItem(tabsKey, JSON.stringify(activeTabs));
+
+const myPresenceRef = presenceRef.child(browserId);
+
+// Chỉ set online nếu đây là tab đầu tiên
+if (activeTabs.length === 1) {
+  myPresenceRef.set({
+    online: true,
+    timestamp: Date.now()
+  });
+}
 
 // Đánh dấu offline khi rời trang
 myPresenceRef.onDisconnect().remove();
@@ -50,16 +62,35 @@ presenceRef.on('value', (snapshot) => {
   document.getElementById('onlineCount').textContent = onlineUsers;
 });
 
-// Cleanup khi tắt tab/trình duyệt
+// Cleanup khi tắt tab
 window.addEventListener('beforeunload', () => {
-  myPresenceRef.remove();
+  // Xóa tab này khỏi danh sách
+  let tabs = JSON.parse(localStorage.getItem(tabsKey) || '[]');
+  tabs = tabs.filter(id => id !== tabId);
+  localStorage.setItem(tabsKey, JSON.stringify(tabs));
+  
+  // Chỉ remove presence nếu không còn tab nào
+  if (tabs.length === 0) {
+    myPresenceRef.remove();
+    localStorage.removeItem('browserId');
+    localStorage.removeItem(tabsKey);
+  }
 });
 
-// Xử lý khi tab bị ẩn (người dùng chuyển sang tab khác)
+// Heartbeat để cleanup các tab zombie (tab bị crash không cleanup)
+setInterval(() => {
+  let tabs = JSON.parse(localStorage.getItem(tabsKey) || '[]');
+  // Giữ tab hiện tại trong danh sách
+  if (!tabs.includes(tabId)) {
+    tabs.push(tabId);
+    localStorage.setItem(tabsKey, JSON.stringify(tabs));
+  }
+}, 5000);
+
+// Xử lý khi tab bị ẩn
 document.addEventListener('visibilitychange', () => {
-  if (document.hidden) {
-    myPresenceRef.update({ lastSeen: Date.now() });
-  } else {
+  if (!document.hidden) {
+    // Khi quay lại tab, đảm bảo presence vẫn còn
     myPresenceRef.set({
       online: true,
       timestamp: Date.now()
