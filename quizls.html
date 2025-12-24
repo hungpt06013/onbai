@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ôn Tập Lịch Sử</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+        
+        .slide-in {
+            animation: slideIn 0.5s ease-out;
+        }
+        
+        .option-card {
+            transition: all 0.3s ease;
+        }
+        
+        .option-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-success {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-success:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(132, 250, 176, 0.4);
+        }
+        
+        .lesson-checkbox {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #667eea;
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .lesson-checkbox:checked {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .lesson-checkbox:checked::after {
+            content: '✓';
+            position: absolute;
+            color: white;
+            font-size: 14px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .score-badge {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .correct-answer {
+            background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+            border-color: #48bb78;
+        }
+        
+        .wrong-answer {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            border-color: #f56565;
+        }
+        
+        .header-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-shadow {
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-purple-100 via-blue-100 to-pink-100">
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+	
+        <!-- Header Card -->
+        <div class="bg-white rounded-2xl card-shadow p-8 mb-8 fade-in">
+		
+            <div class="header-bg rounded-xl p-6 mb-6">
+                <!-- Container cho nút và tiêu đề -->
+                <div class="relative">
+                    <!-- Nút Quay lại (bên trái) -->
+                    <button id="backToMainBtn" class="absolute left-0 top-1/2 -translate-y-1/2 flex items-center gap-2 px-4 py-2 bg-white/20 hover:bg-white/30 rounded-lg transition-colors text-white backdrop-blur-sm">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                        </svg>
+                        <span class="font-medium">Quay lại</span>
+                    </button>
+                    
+                    <!-- Tiêu đề (ở giữa) -->
+                    <div class="text-center">
+                        <h1 class="text-4xl font-bold text-white mb-2">
+                            🎓 Ôn Tập Lịch Sử
+                        </h1>
+                        <p class="text-purple-100 text-lg">
+                            Trắc nghiệm Đúng/Sai - Lớp 7
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Score Display -->
+            <div class="flex justify-center gap-6 mb-6">
+                <div class="score-badge bg-gradient-to-br from-green-400 to-blue-500 rounded-xl p-4 text-white text-center min-w-[120px]">
+                    <div class="text-3xl font-bold" id="correctScore">0</div>
+                    <div class="text-sm opacity-90">Đúng</div>
+                </div>
+                <div class="score-badge bg-gradient-to-br from-purple-400 to-pink-500 rounded-xl p-4 text-white text-center min-w-[120px]">
+                    <div class="text-3xl font-bold" id="totalScore">0</div>
+                    <div class="text-sm opacity-90">Tổng câu</div>
+                </div>
+                <div class="score-badge bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl p-4 text-white text-center min-w-[120px]">
+                    <div class="text-3xl font-bold" id="percentScore">0%</div>
+                    <div class="text-sm opacity-90">Tỷ lệ</div>
+                </div>
+            </div>
+<label class="flex items-center space-x-3 mt-4 mb-2 cursor-pointer">
+  <input id="showLessonCheckbox" type="checkbox" onchange="toggleShowLesson(this.checked)">
+  <span class="text-sm font-medium text-gray-700">Gợi ý bài của câu hỏi</span>
+</label>
+            <!-- Lesson Selection -->
+            <div class="border-t-2 border-purple-200 pt-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                    <span class="text-2xl mr-2">📚</span>
+                    Chọn bài ôn tập:
+                </h2>
+                <div class="grid grid-cols-3 md:grid-cols-5 gap-3" id="lessonSelector"></div>
+            </div>
+        </div>
+
+        <!-- Quiz Card -->
+        <div class="bg-white rounded-2xl card-shadow p-8 slide-in" id="quizCard">
+            <div class="mb-8">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full text-sm font-semibold" id="lessonBadge"></span>
+                    <span class="text-gray-500 text-sm" id="questionNumber"></span>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800 leading-relaxed" id="questionText"></h2>
+            </div>
+
+            <div class="space-y-4" id="optionsContainer"></div>
+
+            <div class="mt-8 flex justify-center gap-4" id="actionButtons"></div>
+        </div>
+    </div>
+
+    <script>
+let state = {
+    selectedLessons: {
+        "Bài 6": true, "Bài 7": true, "Bài 8": true, "Bài 9": true, "Bài 10": true,
+        "Bài 11": true, "Bài 12": true, "Bài 13": true, "Bài 14": true
+    },
+    currentQuestion: null,
+    userAnswers: {},
+    showResult: false,
+    score: { correct: 0, total: 0 },
+    questionCount: 0,
+	showLessonHint: false
+};
+
+const quizData = {
+    "Bài 6": [
+        {"question":"Trung Quốc từ thế kỉ VII đến giữa thế kỉ XIX - Hãy xác định các câu sau đây đúng hoặc sai về nội dung lịch sử.","options":["Hình thành một số đô thị với nhiều ngành thủ công truyền thống.","Kinh tế không phát triển do bị các chính sách của nhà nước kìm hãm.","Công thương nghiệp phát triển, xuất hiện mầm mống kinh tế tư bản chủ nghĩa.","Các xưởng thủ công lớn xuất hiện ở nhiều nơi."],"answers":["Đ","S","Đ","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về thương nghiệp Trung Quốc thời Minh Thanh:","options":["Xuất hiện nhiều xưởng thủ công với hàng chục người làm việc","Nhiều kĩ thuật canh tác mới được áp dụng.","Nhiều thành thị sầm uất, như: Bắc Kinh, Nam Kinh...","Có quan hệ buôn bán với nhiều quốc gia trên thế giới."],"answers":["S","S","Đ","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về nông nghiệp Trung Quốc dưới thời Đường:","options":["Nông nghiệp có bước phát triển.","Tô thuế nặng nề.","Áp dụng nhiều kĩ thuật canh tác mới.","Xuất hiện nhiều xưởng thủ công với hàng chục người làm việc."],"answers":["Đ","S","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về thương nghiệp Trung Quốc thời Đường:","options":["Xuất hiện nhiều thành thị lớn như Trường An, Lạc Dương, ...","Hình thành \"con đường tơ lụa\".","Xuất hiện nhiều xưởng thủ công với hàng chục người làm việc","Nhiều kĩ thuật canh tác mới được áp dụng."],"answers":["Đ","S","S","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về chính trị của Trung Quốc dưới thời Đường:","options":["Củng cố và hoàn thiện bộ máy nhà nước từ trung ương đến địa phương.","Mở nhiều khoa thi để tuyển chọn nhân tài.","Quyền lực của hoàng đế chưa thực sự được nâng cao.","Tổ chức các kì thi: Hội, hương, đình để tuyển chọn nhân tài."],"answers":["Đ","Đ","S","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi không phản ánh với biểu hiện của sự phát triển thịnh vượng dưới thời Đường:","options":["Thương nghiệp bị hạn chế, cấm buôn bán bằng đường biển.","Bộ máy nhà nước được củng cố, hoàn thiện, lãnh thổ mở rộng.","Nhà nước không mở rộng khoa cử để tuyển chọn nhân tài.","Con đường tơ lụa trở thành tuyến đường buôn bán quốc tế."],"answers":["Đ","S","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về biểu hiện của sự phát triển thủ công nghiệp dưới thời Minh -- Thanh:","options":["Nhiều nghề thủ công nổi tiếng như: dệt tơ lụa, làm đồ sứ, đóng thuyền, làm giấy.","Các xưởng thủ công xuất hiện khắp nơi, tập trung chủ yếu ở nông thôn.","Những khu vực chuyên môn hóa được hình thành với đông đảo người làm thuê.","Con đường tơ lụa hình thành và dần trở thành tuyến đường buôn bán quốc tế."],"answers":["S","Đ","S","Đ"]}
+    ],
+    "Bài 7": [
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về tư tưởng tôn giáo của Trung Quốc từ thế kỷ VII đến thế kỷ XIX:","options":["Nho giáo trở thành hệ tư tưởng chính thống của chế độ phong kiến Trung Quốc.","Bà La môn giáo ngày càng được phổ biến.","Phật giáo phát triển, thịnh hành nhất dưới thời Đường.","Phật giáo và Đạo giáo có vị thế quan trọng nhất trong hệ thống tư tưởng tôn giáo."],"answers":["Đ","S","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về văn học Trung Quốc từ thế kỷ VII đến thế kỷ XIX:","options":["Phát triển đa dạng về thể loại.","Cơ quan chép sử được thành lập từ thời nhà Đường.","Thơ phát triển mạnh dưới thời Đường với nhiều nhà thơ nổi tiếng.","Văn học tập trung vào việc lên án chế độ phong kiến Trung Quốc."],"answers":["Đ","Đ","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về nội dung phản ánh không đúng tư tưởng tôn giáo của Trung Quốc từ thế kỷ VII đến thế kỷ XIX:","options":["Nho giáo trở thành hệ tư tưởng chính thống của chế độ phong kiến Trung Quốc.","Bà La môn giáo ngày càng được phổ biến.","Phật giáo phát triển, thịnh hành nhất dưới thời Đường.","Phật giáo và Đạo giáo có vị thế quan trọng nhất trong hệ thống tư tưởng tôn giáo."],"answers":["S","Đ","S","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về phản ánh thành tựu của điêu khắc, kiến trúc, hội họa của Trung Quốc thời phong kiến:","options":["Đạt đến trình độ cao nhưng phong cách còn thiếu đa dạng, độc đáo.","Hội họa nổi tiếng với tranh thư pháp, họa pháp và tranh thủy mặc.","Nghệ thuật điêu khắc phong phú về đề tài và chất liệu.","Kiến trúc tôn giáo ảnh hưởng nhiều từ Hindu Ấn Độ."],"answers":["S","Đ","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về nội dung cơ bản của Nho giáo:","options":["Chủ trương dùng đạo đức để cai trị và duy trì tôn ti trật tự xã hội.","Nho giáo cấm chủ chương Tam cương, Ngũ thường.","Phụ nữ phải tuân theo Tam tòng, Tứ đức.","Chủ trương dùng pháp luật để cai trị và duy trì tôn ti trật tự xã hội."],"answers":["Đ","S","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về các nhà thơ tiêu biểu của thơ Đường:","options":["Đỗ Phủ.","Lý Bạch.","Lỗ Tấn.","Đặng Tiểu Bình."],"answers":["Đ","Đ","S","S"]}
+    ],
+    "Bài 8": [
+        {"question":"Vương triều Gúp-ta - Hãy xác định các câu sau đây đúng hoặc sai về nội dung lịch sử.","options":["Ấn Độ được ví như một tiểu lục địa.","Địa hình Ấn Độ thuận lợi trong giao thương, buôn bán.","Vùng đồng bằng sông Hằng thiếu phù sa màu mỡ.","Lãnh thổ phía nam Ấn Độ là vùng cao nguyên Đề-can."],"answers":["Đ","Đ","S","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về điều kiện tự nhiên của Ấn Độ:","options":["Phía Nam Ấn Độ giáp với các sa mạc rộng lớn ngăn cách với các khu vực khác.","Ba mặt giáp biển tạo thuận lợi cho giao thương và buôn bán.","Đồng bằng sông Hằng và sông Ấn cung cấp phù sa màu mỡ, thuận lợi cho nông nghiệp.","Vùng cao nguyên Đê-can phía Nam chủ yếu sinh sống bằng nghề luyện kim."],"answers":["S","Đ","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về vương triều Gúp-ta ở Ấn Độ:","options":["Vương triều Gúp-ta được thành lập vào năm 320.","Vương triều Gúp-ta chấm dứt vào năm 535 do sự suy yếu và chia cắt.","Hoàng đế A-Sô-Ca là người sáng lập vương triều Gúp-ta.","Người Hung Nô và các tộc người Trung Á xâm lược vào thế kỉ IV khiến vương triều Gúp-ta sụp đổ."],"answers":["Đ","Đ","S","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi phản ánh không đúng về điều kiện tự nhiên của Ấn Độ:","options":["Phía Nam Ấn Độ giáp với các sa mạc rộng lớn ngăn cách với các khu vực khác.","Ba mặt giáp biển tạo thuận lợi cho giao thương và buôn bán.","Đồng bằng sông Hằng và sông Ấn cung cấp phù sa màu mỡ, thuận lợi cho nông nghiệp.","Vùng cao nguyên Đê-can phía Nam chủ yếu sinh sống bằng nghề luyện kim."],"answers":["Đ","S","S","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về đặc điểm kinh tế của Ấn Độ thời kỳ Gúp-ta:","options":["Thương mại phát triển mạnh ở thành thị.","Phần lớn người dân sống bằng nghề săn bắt và hái lượm.","Nghề luyện kim, đặc biệt luyện sắt, đạt đến đỉnh cao.","Nông nghiệp bị bỏ quên, tập trung hoàn toàn vào công nghiệp và thương mại."],"answers":["Đ","S","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi phản ánh không đúng về đặc điểm tôn giáo nổi bật dưới thời kỳ Gúp-ta:","options":["Hin-đu giáo là tôn giáo chính ở Ấn Độ.","Phật giáo chưa được coi trọng.","Thiên văn học chưa được chú trọng, tập trung chủ yếu vào văn học và triết học.","Trường đại học Na-lan-đa trở thành trung tâm giáo dục bậc cao nhất thời kỳ này."],"answers":["S","Đ","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về thành tựu của y học thời kỳ Gúp-ta:","options":["Người Ấn Độ chưa biết khử trùng vết thương nên tỷ lệ tử vong cao.","Y học bắt đầu phát triển sau thế kỉ XIX.","Biết phẫu thuật và khử trùng vết thương.","Biết làm vắc-xin trên cơ sở tạo ra lây nhiễm ở dạng bệnh nhẹ để người đó không bị bệnh ở dạng nặng hơn."],"answers":["S","S","Đ","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về thành tựu kiến trúc dưới thời kỳ Gúp-ta:","options":["Phong cách nghệ thuật Gúp-ta hình thành, mang dấu ấn đặc trưng.","Đền Taj Mahal là công trình kiến trúc nổi tiếng của thời kỳ này.","Các công trình chỉ tập trung vào đền Hin-đu giáo, không có chùa Phật giáo.","Công trình kiến trúc điêu khắc nổi tiếng tiêu biểu như chùa hang A-gian-ta, bảo tháp San-chi, ..."],"answers":["Đ","S","S","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về thành tựu của thiên văn học của người Ấn Độ dưới thời kỳ Gúp-ta:","options":["Đưa ra giả thuyết Trái Đất hình tròn và tự quay quanh trục.","Người Ấn Độ đã quan sát được hiện tượng nguyệt thực, bóng Trái Đất có hình tròn phủ trên Mặt trăng.","Đưa ra giả thuyết Mặt trời quay quanh trái đất.","Thiên văn học chưa được chú trọng."],"answers":["Đ","Đ","S","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về đặc điểm xã hội của Ấn Độ thời kỳ Gúp-ta:","options":["Chế độ đẳng cấp được duy trì, quyết định vị trí xã hội và nghề nghiệp của mỗi người.","Tất cả người dân đều được đối xử bình đẳng về quyền lợi và trách nhiệm.","Đẳng cấp Bà-la-môn giữ vị trí cao nhất trong xã hội.","Giai cấp nông dân có quyền tự do chuyển đổi đẳng cấp nếu đủ điều kiện."],"answers":["Đ","S","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về vị trí địa lí của Ấn Độ:","options":["Ở miền Bắc là đồng bằng Ấn - Hằng.","Ở miền Tây Nam là cao nguyên Đê-can rộng lớn.","Ở miền Nam là đồng bằng Ấn - Hằng.","Ở miền Nam là cao nguyên Đê-can rộng lớn."],"answers":["Đ","Đ","S","S"]}
+    ],
+    "Bài 9": [
+        {"question":"Vương triều Hồi giáo Đê-li - Hãy xác định các câu sau đây đúng hoặc sai về nội dung lịch sử.","options":["Năm 1206, người Hồi giáo gốc Mông Cổ, chiếm miền Bắc Ấn Độ, lập nên vương triều Hồi giáo đầu tiên, lấy Đê-li làm kinh đô.","Sang đầu thế kỉ XVI, vương triều sụp đổ trước sự tấn công liên tục của một bộ phận người Mông Cổ đến từ Trung Á.","Vương triều Đê-li đã truyền bá, áp đặt đạo Hồi vào Ấn Độ.","Văn hoá Ấn Độ có thêm yếu tố văn hoá mới -- văn hoá Hồi giáo."],"answers":["S","Đ","Đ","Đ"]},
+        {"question":"Vương triều Hồi giáo Đê-li - Hãy xác định các câu sau đây đúng hoặc sai về nội dung lịch sử.","options":["Nhiều công trình kiến trúc theo kiểu Hồi giáo được xây dựng, với đặc trưng rất dễ nhận biết bởi các tháp cao, mái vòm, cửa vòm, sân rộng và hoạ tiết trang trí bằng hình ảnh các vị thần.","Chữ Ba Tư đã du nhập vào Ấn Độ thời kì này và là ngôn ngữ chính thức của triều đình Đê-li.","Vào cuối thời kì Đê-li, xuất hiện nhà văn hoá, nhà thơ lớn của dân tộc Ấn Độ -- Ka-bi (Kabir) (1440 -- 1518).","Tác phẩm \"Những bài hát của Ka-bi\" viết bằng ngôn ngữ Hin-đi (Hindi) ngợi ca vẻ đẹp của người phụ nữ."],"answers":["S","Đ","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về nội dung phản ánh không đúng tình hình chính trị của Ấn Độ dưới vương triều Đê-li:","options":["Nhà vua có quyền lực cao nhất.","Lãnh thổ Ấn Độ bị chia cắt thành 3 khu vực.","Đầu thế kỉ V, phần lớn bán đảo Ấn Độ đã được thống nhất.","Nhà vua Hồi giáo còn tiến hành xâm chiếm các tiểu quốc ở Nam Ấn với hi vọng thành lập đế quốc Hồi giáo."],"answers":["S","Đ","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về về tình hình kinh tế của Ấn Độ dưới vương triều Đê-li:","options":["Nghề nông trồng lúa vẫn giữ vai trò quan trọng và được nhà nước khuyến khích phát triển.","Nhiều thành thị mới xuất hiện, nhiều hải cảng được xây dựng.","Ấn Độ trở thành chạm trung chuyển giữa các nước lớn.","Anh, Pháp là 2 nước có quan hệ buôn bán nhiều nhất với Ấn Độ."],"answers":["Đ","Đ","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về tình xã hội của Ấn Độ dưới vương triều Đê-li:","options":["Sự phân biệt sắc tộc và tôn giáo đã làm bùng nổ những bất bình trong nhân dân.","Đời sống nhân dân được ổn định và sung túc hơn tất cả các thời kỳ trước đó.","Bùng nổ các cuộc đấu tranh của nhân dân chống lại triều đình.","Nhà vua Phật giáo còn tiến hành xâm chiếm các tiểu quốc ở Nam Ấn với hi vọng thành lập đế quốc Phật giáo."],"answers":["Đ","S","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về nội không phản ánh đúng đặc điểm của các công trình kiến trúc Hồi giáo được xây dựng ở Ấn Độ:","options":["Trang trí bằng nhiều tranh, tượng, hoa văn.","Tháp cao, mái vòm, cửa vòm.","Họa tiết trang trí bằng chữ A-rập cổ.","Sử dụng các khung nhà làm từ cột gỗ, xà, sử dụng dầm nhà."],"answers":["Đ","S","S","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về đặc trưng của Vương triều Hồi giáo Đê-li:","options":["Nông nghiệp phát triển mạnh mẽ nhờ hệ thống kênh và hồ chứa nước được mở rộng.","Vương triều phát triển thương mại bằng cách độc quyền buôn bán tơ lụa với châu Âu.","Thủ công nghiệp phát triển, tạo điều kiện cho giao thương mở rộng.","Thủ công nghiệp chưa được chú trọng."],"answers":["Đ","S","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về văn hóa của Vương triều Hồi giáo Đê-li:","options":["Đạo Hồi được truyền bá và áp đặt vào Ấn Độ.","Hồi giáo chưa được coi trọng.","Chữ Phạn được du nhập.","Chữ Ba Tư được du nhập."],"answers":["Đ","S","S","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về đặc trưng của các công trình kiến trúc thời Vương triều Hồi giáo Đê-li:","options":["Có các tháp cao, mái vòm và sân rộng.","Họa tiết trang trí chủ yếu là chữ A-rập cổ.","Họa tiết trang trí chủ yếu là chữ Hindi.","Kiến trúc chịu ảnh hưởng từ thiên chúa giáo."],"answers":["Đ","Đ","S","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về vương triều Gúp-ta và Vương triều Đê-li đều","options":["do một bộ phận người Hồi giáo dốc Mông cổ lập nên ở miền Bắc Ấn Độ.","được thành lập sau khi thống nhất miền Bắc Ấn Độ khỏi tình trạng phân liệt.","là những vương triều do tộc người Hồi giáo gốc Thổ Nhĩ Kì lập nên.","là những vương triều phong kiến bản địa ở miền Bắc Ấn Độ."],"answers":["S","Đ","S","S"]}
+    ],
+    "Bài 10": [
+        {"question":"Đế quốc Mô-gôn - Hãy xác định các câu sau đây đúng hoặc sai về nội dung lịch sử.","options":["Đầu thế kỉ XVI, một bộ phận người Mông Cổ ở Tây Tạng đã tấn công Ấn Độ, lật đổ vương triều Đê-li và lập nên vương triều Hồi giáo Mô-gôn.","Năm 1556, Hoàng đế A-cơ-ba (1542 - 1605) lên nắm quyền, nỗ lực thống nhất lãnh thổ bằng các cuộc chinh phạt, đưa đế quốc Mô-gôn bước vào giai đoạn thịnh trị nhất.","Các con của A-Cơ-ba đã thực hiện một loạt cải cách trên các lĩnh vực: chính trị, kinh tế, xã hội. Sản phẩm nông nghiệp đa dạng.","Hoàng đế đích thân bổ nhiệm tất cả quan chức, kể cả những vùng xa xôi, hẻo lánh"],"answers":["S","Đ","S","Đ"]},
+        {"question":"Đế quốc Mô-gôn - Hãy xác định các câu sau đây đúng hoặc sai về nội dung lịch sử.","options":["Xây dựng luật pháp nghiêm minh, tham khảo luật cổ truyền của Ba Tư.","Thống nhất hệ thống cân đong, đo lường và tiền tệ, ngôn ngữ, tập tục, đo đạc lại ruộng đất.","Khuyến khích quý tộc bên ngoài lãnh thổ kết thân với người Ấn.","Bãi bỏ thuế thân đánh vào người theo Hồi giáo. Thực hiện hoà hợp tôn giáo."],"answers":["S","Đ","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về những yếu tố giúp xã hội thời A-cơ-ba ổn định:","options":["Dung hòa giữa các tôn giáo và tộc người.","Áp dụng chế độ quân chủ lập hiến.","Xây dựng luật pháp nghiêm minh.","Đưa Nho giáo trở thành tôn giáo bắt buộc."],"answers":["Đ","S","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về nội dung nào dưới đây không phải là điểm tích cực trong các chính sách xã hội thời vương triều Mô-gôn:","options":["Xây dựng khối hoà hợp dân tộc.","Cấm các hoạt động sáng tạo nghệ thuật.","Hạn chế sự biệt về sắc tộc và tôn giáo.","Các chức vụ cao chỉ cho người theo đạo Hồi nắm giữ."],"answers":["S","Đ","S","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về điểm tích cực trong các chính sách xã hội thời vương triều Mô-gôn:","options":["Xây dựng khối hoà hợp dân tộc.","Cấm các hoạt động sáng tạo nghệ thuật.","Hạn chế sự biệt về sắc tộc và tôn giáo.","Các chức vụ cao chỉ cho người theo đạo Hồi nắm giữ."],"answers":["Đ","S","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về nội dung phản ánh đúng chính sách cải cách của vua A-cơ-ba trên lĩnh vực chính trị:","options":["Luật pháp chưa được xây dựng.","Tham khảo các bộ luật cổ truyền của Ấn Độ.","Nhà vua trao quyền tự trị cho các địa phương.","Hoàng đế đích thân bổ nhiệm tất cả các quan chức."],"answers":["S","Đ","S","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về thành tựu văn học dưới thời Hoàng đế A-cơ-ba bao gồm:","options":["Thời A-cơ-ba là thời kì phát triển văn hào và thơ ca.","Thành lập thư viện khổng lồ với 24.000 cuốn sách.","Truyện truyền kì phát triển.","Các tác phẩm văn học Nho học phát triển."],"answers":["Đ","Đ","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về hội họa thời Mô-gôn có những đặc điểm:","options":["Miêu tả cuộc sống cung đình và tầng lớp quý tộc.","Khắc họa các chủ đề về thiên nhiên hoang dã.","Hội họa miêu tả con người được khuyến khích trong Hoàng tộc.","Phát triển hội họa trừu tượng."],"answers":["Đ","S","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về không phải là thành tựu của cư dân Ấn Độ thời Mô-gôn?","options":["Lăng Ta-giơ Ma-han.","Chùa hang A-gian-ta.","Thành Đỏ ở A-gar.","Ăng-co-vat."],"answers":["S","Đ","S","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về những yếu tố ảnh hưởng đến sự phát triển kinh tế dưới thời Mô-gôn:","options":["Đo đạc lại ruộng đất.","Thực thi hệ thống thuế cao nhằm tăng nguồn thu quốc gia.","Thực hiện chính sách bế quan tỏa cảng.","Tập trung vào thương mại biển với các nước châu Âu."],"answers":["Đ","S","S","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về các chính sách xã hội trong thời kỳ Hoàng đế A-cơ-ba:","options":["Thực hiện hòa hợp giữa các tôn giáo và tộc người.","Tăng thuế thân đối với người không theo Hồi giáo.","Khuyến khích quý tộc Mông Cổ kết hôn với người Ấn.","Áp dụng luật lệ nghiêm ngặt dựa hoàn toàn vào Hồi giáo."],"answers":["Đ","S","Đ","S"]}
+    ],
+    "Bài 11": [
+        {"question":"Khái quát về Đông Nam Á từ nửa sau thế kỉ X đến đầu thế kỉ XVI - Hãy xác định các câu sau đây đúng hoặc sai về nội dung lịch sử.","options":["Phật giáo phát triển mạnh mẽ ở các vương quốc vùng hải đảo.","Các quần thể kiến trúc tiêu biểu ở Đông Nam Á thời kì này là Thăng Long, Ăng-co, Pa-gan.","Lào nổi tiếng nhất với điều khắc trên đá.","Nhiều vương quốc vùng hải đảo lấy Hồi giáo làm quốc giáo."],"answers":["S","Đ","S","Đ"]},
+        {"question":"Khái quát về Đông Nam Á từ nửa sau thế kỉ X đến đầu thế kỉ XVI - Hãy xác định các câu sau đây đúng hoặc sai về nội dung lịch sử.","options":["Thế kỉ X, lịch sử khu vực Đông Nam Á mở đầu với sự kiện nhà nước Cam-pu-chia ra đời.","Từ thế kỉ XIII đến thế kỉ XV, các quốc gia phong kiến bước vào thời kì suy yếu.","Hồi giáo phát triển mạnh mẽ ở các vương quốc vùng hải đảo.","Chữ viết xuất hiện sớm ở các quốc gia Đông Nam Á."],"answers":["S","S","Đ","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về nội dung không phải là điểm giống nhau giữa các vương quốc Đông Nam Á:","options":["Kinh tế nông nghiệp trồng lúa nước là chính.","Buôn bán trao đổi thương mại đường biển phát triển.","Nhà nước theo chế độ quân chủ lập hiến.","Tất cả các vương quốc đều theo đạo Phật."],"answers":["S","S","Đ","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về những lý do chính khiến Đông Nam Á chịu ảnh hưởng sâu sắc từ văn hóa Ấn Độ và Trung Hoa:","options":["Vị trí địa lý gần gũi với Ấn Độ và Trung Hoa.","Hoạt động giao thương và giao lưu văn hóa liên tục qua các thế kỉ.","Sự truyền bá trực tiếp của các nhà truyền giáo phương Tây.","Hệ thống chính trị phong kiến có nhiều nét khác biệt với các quốc gia này."],"answers":["Đ","Đ","S","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về vai trò kinh tế của eo biển Ma-lắc-ca trong thế kỉ XV?","options":["Là nơi tập trung 1/4 lượng giao thông hàng hải thế giới.","Là trung tâm xuất khẩu lúa gạo lớn nhất Đông Nam Á.","Là nơi trung chuyển hàng hóa giữa Thái Bình Dương và Ấn Độ Dương.","Là trung tâm sản xuất công nghiệp phát triển nhất khu vực."],"answers":["S","S","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về những thành tựu kiến trúc nổi bật của các vương quốc phong kiến Đông Nam Á:","options":["Khu đền Ăng-co ở Cam-pu-chia.","Chùa Vàng ở Mi-an-ma.","Vườn treo Babylon.","Khải Hoàn Môn."],"answers":["Đ","Đ","S","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về nhận xét đúng về tín ngưỡng và tôn giáo ở Đông Nam Á từ thế kỉ XIII?","options":["Phật giáo Tiểu thừa được truyền bá rộng rãi tại các nước như Mi-an-ma, Lào, Thái Lan.","Hồi giáo trở thành tôn giáo chính tại Đông Dương từ thế kỉ XII.","Nhiều ngôi chùa được xây dựng và trở thành trung tâm văn hóa lớn.","Cơ đốc giáo giữ vai trò trung tâm trong đời sống văn hóa Đông Nam Á."],"answers":["Đ","S","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về vai trò của Vương quốc Ma-lắc-ca trong thế kỉ XV?","options":["Là trung tâm thương mại hàng đầu Đông Nam Á, kết nối Thái Bình Dương và Ấn Độ Dương.","Là nơi giao lưu văn hóa giữa các nước Đông Nam Á và Mỹ Latinh.","Là chỗ dừng chân chiến lược cho thuyền buôn quốc tế.","Là quốc gia kiểm soát toàn bộ tuyến giao thông đường bộ qua bán đảo Mã Lai."],"answers":["Đ","S","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về điều kiện tự nhiên thuận lợi của khu vực Đông Nam Á để phát triển nền nông nghiệp:","options":["Khí hậu nóng ẩm, hệ đất trồng phong phú.","Vùng biển rộng lớn giàu tiềm năng, tài nguyên biển giàu có khoáng sản.","Hoạt động của gió mùa với một mùa đông lạnh, khí hậu phân hóa đa dạng.","Mạng lưới sông ngòi dày đặc."],"answers":["Đ","S","S","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về điểm nổi bật về văn học Đông Nam Á thời phong kiến?","options":["Sự hình thành dòng văn học dân gian phong phú.","Văn học viết xuất hiện sớm nhất khu vực châu Á.","Văn học chịu ảnh hưởng mạnh mẽ nhất từ Hồi giáo và Cơ Đốc giáo.","Nhiều tác phẩm văn học nổi tiếng như Truyện sử Mã Lai và Sách của các ông vua ra đời."],"answers":["Đ","S","S","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về nhận xét đúng về sự sáng tạo chữ viết ở các quốc gia Đông Nam Á thời phong kiến?","options":["Chữ Lào ra đời vào khoảng thế kỉ XIV.","Chữ Thái hình thành dựa trên chữ Phạn của Ấn Độ.","Chữ viết của Đông Nam Á chịu ảnh hưởng lớn từ Hán tự của Ấn Độ.","Chữ Nôm của người Việt dựa trên chữ Khmer cổ."],"answers":["Đ","Đ","S","S"]}
+    ],
+    "Bài 12": [
+        {"question":"Vương quốc Campuchia - Hãy xác định các câu sau đây đúng hoặc sai về nội dung lịch sử.","options":["Thời kì phát triển huy hoàng của vương quốc Cam-pu-chia là thời kì hậu Ăng-co.","Vành cung thịnh vượng thời Ăng-co nằm ở phía Tây Biển Hồ.","Từ đầu TK XIV, Ăng-co liên tục bị người Thái tấn công và cướp phá.","Từ TK XV trở đi, chữ Khơ-me dần thay thế chữ Phạn."],"answers":["S","S","S","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về tín ngưồng và tôn giáo của người Khơ-me?","options":["Hin-đu giáo và Phật giáo phát triển mạnh mẽ trong thời kỳ này.","Tín ngưỡng của người Khơ-me không bị ảnh hưởng từ Ấn Độ.","Người Khơ-me chỉ tin vào tín ngưỡng phồn thực.","Người Khơ-me có nhiều tín ngưỡng dân gian như cầu mưa, tín ngưỡng phồn thực."],"answers":["Đ","S","S","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về chữ viết và văn học Cam-pu-chia:","options":["Chữ Khơ-me được hoàn chỉnh hơn qua các thời kỳ.","Văn học dân gian bị mai một trong thời kỳ Ăng-co.","Văn học viết phát triển với các thể loại như thần thoại, truyện thơ.","Văn học Cam-pu-chia không có ảnh hưởng từ văn hóa Ấn Độ."],"answers":["Đ","S","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về nghệ thuật kiến trúc và điêu khắc của Cam-pu-chia?","options":["Quần thể đền Ăng-co Vát là công trình tiêu biểu.","Nghệ thuật chạm khắc đạt trình độ cao trong các đền tháp.","Kiến trúc Ăng-co chịu ảnh hưởng từ văn hóa Trung Quốc.","Ăng-co Thom là trung tâm thương mại lớn nhất Đông Nam Á thời bấy giờ."],"answers":["Đ","Đ","S","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về sự phát triển nông nghiệp của Cam-pu-chia thời kỳ Ăng-co:","options":["Nhà nước xây dựng các hệ thống hồ và kênh lớn như hồ Ba-ra để trữ và điều phối nước tưới.","Nông nghiệp phát triển dựa chủ yếu vào công cụ bằng đồng.","Cam-pu-chia đạt nhiều thành tựu trong canh tác lúa nước.","Việc điều phối nước tưới chủ yếu do các địa phương tự quản lý, không có sự chỉ đạo của nhà nước."],"answers":["Đ","S","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về việc so với vương quốc Lan Xang, vương quốc Cam-pu-chia ở thời kì Ăng-co có điểm khác biệt là","options":["Kinh tế nông nghiệp trồng lúa nước là chính.","Thường xuyên gây chiến tranh để mở rộng lãnh thổ.","Tổ chức nhà nước theo chế độ quân chủ chuyên chế.","Đường lối ngoại giao thân thiện hơn, luôn giữ mối quan hệ hòa hảo với các nước láng giềng)."],"answers":["S","Đ","S","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về chính trị Cam-pu-chia thời Ăng-co:","options":["Chính quyền được củng cố, đất nước thống nhất và ổn định.","Cam-pu-chia không tiến hành các cuộc tấn công quân sự ra bên ngoài.","Cam-pu-chia từng thực hiện nhiều cuộc chinh phạt mở rộng lãnh thổ.","Chính trị thời kỳ này chịu ảnh hưởng lớn từ người Pháp."],"answers":["Đ","S","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về văn hóa Cam-pu-chia thời kỳ Ăng-co?","options":["Các truyền thuyết và thần thoại Cam-pu-chia thường chịu ảnh hưởng sâu sắc từ Ấn Độ.","Chữ viết Khơ-me hoàn chỉnh hơn nhờ sự du nhập văn hóa Mã Lai.","Các truyện thơ và văn học dân gian phản ánh rõ nét đời sống và tín ngưỡng của người Khơ-me.","Văn hóa Cam-pu-chia không chịu ảnh hưởng từ các yếu tố tôn giáo bên ngoài."],"answers":["Đ","S","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về sự suy yếu của Vương quốc Cam-pu-chia từ thế kỷ XV:","options":["Người Thái liên tục tấn công, buộc Cam-pu-chia phải chuyển kinh đô.","Vương quốc không còn khả năng tự phòng thủ, trở thành thuộc địa của người Trung Quốc.","Các cuộc xung đột nội bộ làm Cam-pu-chia suy yếu.","Cam-pu-chia chỉ phụ thuộc hoàn toàn vào thương mại để phát triển kinh tế."],"answers":["Đ","S","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về kinh tế Cam-pu-chia thời Ăng-co:","options":["Nông nghiệp phát triển nhờ các hệ thống hồ, kênh tưới tiêu lớn.","Thủ công nghiệp chỉ tập trung vào nghề làm đồ trang sức.","Nghề chạm khắc trên đá đạt trình độ cao.","Nền kinh tế chủ yếu phụ thuộc vào thương mại đường biển."],"answers":["Đ","S","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về sự hình thành và phát triển của Vương quốc Cam-pu-chia:","options":["Vua Giay-a-vác-man II thống nhất lãnh thổ vào năm 802 và đặt tên nước là Cam-pu-chia.","Thời kỳ Ăng-co kéo dài từ thế kỷ VIII đến thế kỷ XV.","Vương quốc Cam-pu-chia bị suy yếu từ thế kỷ XV và phải chuyển kinh đô về phía Nam Biển Hồ.","Năm 802, Cam-pu-chia trở thành trung tâm văn hóa lớn của Trung Quốc."],"answers":["Đ","S","Đ","S"]}
+    ],
+    "Bài 13": [
+        {"question":"Vương quốc Lào - Hãy xác định các câu sau đây đúng hoặc sai về nội dung lịch sử.","options":["Dưới thời phong kiến, người Lào đã sử dụng được một nền văn hóa riêng của mình.","Người Lào đã sáng tạo ra hệ thống chữ viết riêng trên cơ sở văn dụng các nét chữ cong của người Chăm-pa.","Người Lào đã sáng tạo ra những điệu múa vui tươi, cởi mở.","Nhiều công trình kiến trúc Ấn Độ giáo được xây dựng, tiêu biểu là Thạt Luổng."],"answers":["Đ","S","Đ","Đ"]},
+        {"question":"Vương quốc Lào - Hãy xác định các câu sau đây đúng hoặc sai về nội dung lịch sử.","options":["Kinh đô ban đầu ở Viêng Chăn, sau chuyển về Mường Xoa.","Họ thường xuyên gây chiến tranh với các nước láng giềng (như Cam-pu-chia, Đại Việt).","Văn hoá vương quốc Lào chịu ảnh hưởng sâu đậm của Hin-đu giáo","Vương quốc Lan Xang được chia thành các mường, có quan đứng đầu."],"answers":["S","S","S","Đ"]},
+        {"question":"Vương quốc Lào - Hãy xác định các câu sau đây đúng hoặc sai về nội dung lịch sử.","options":["Dân cư làm nông nghiệp, chủ yếu trồng lúa nếp và phát triển các nghề thủ công truyền thống.","Thế kỉ XVI, họ đã đánh bại cuộc xâm lược của Miến Điện, bảo vệ được lãnh thổ và nền độc lập.","Vương quốc Lan Xang được thành lập vào thế kỉ XIV.","Vương quốc Lan Xang đạt sự thịnh vượng nhất là ở thế kỉ XV."],"answers":["Đ","Đ","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về đặc điểm kinh tế nổi bật của Lan Xang trong thời kỳ thịnh vượng?","options":["Buôn bán nô lệ là hoạt động kinh tế chính.","Xây dựng nền kinh tế tự cung tự cấp dựa trên nông nghiệp và thủ công nghiệp.","Giao thương mạnh mẽ với các nước châu Âu.","Xuất khẩu sản vật quý đến các nước Đông Nam Á."],"answers":["S","Đ","S","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về đời sống văn hóa của người Lào?","options":["Điệu múa Lăm Vông thể hiện sự gắn kết và vui vẻ của người dân Lào.","Người Lào tổ chức nhiều lễ hội theo tín ngưỡng đạo Phật và Hindu.","Các lễ hội chủ yếu chỉ dành cho giới quý tộc, không phổ biến trong cộng đồng.","Lễ hội của người Lào mang phong cách chủ yếu của Thiên Chúa giáo."],"answers":["Đ","S","S","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về quá trình hình thành của Vương quốc Lào:","options":["Đầu thế kỉ XIII, một nhóm người nói tiếng Thái di cư đến đất Lào và hòa nhập với người Lào Thơng.","Pha Ngừm là người đã thống nhất các mường Lào và lập nên Vương quốc Lan Xang vào năm 1353.","Vương quốc Lan Xang được thành lập từ thế kỉ XV và do một vua người Khmer sáng lập.","Người Lào Thơng là nhóm duy nhất hình thành nên dân tộc Lào hiện nay."],"answers":["Đ","Đ","S","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về ý nghĩa của điệu múa Lăm Vông trong văn hóa Lào:","options":["Là biểu tượng cho sự đoàn kết cộng đồng và niềm vui trong các lễ hội.","Là điệu múa chỉ dành riêng cho tầng lớp quý tộc trong vương quốc.","Là điệu múa truyền thống của người Khmer được người Lào tiếp thu.","Là nét đặc trưng tiêu biểu trong đời sống văn hóa hồn nhiên của người Lào."],"answers":["Đ","S","S","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về nội dung dưới đây phản ánh đúng sự phát triển kinh tế của Lào trong các thế kỉ XV -- XVII:","options":["Sản xuất nông nghiệp, thủ công nghiệp khá phát triển.","Phát triển mạnh về buôn bán, trao đổi qua đường biển.","Việc khai thác các sản vật quý được chú trọng.","Cấm trao đổi, buôn bán vượt ra ngoài biên giới."],"answers":["Đ","S","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về vai trò kinh tế của Vương quốc Lan Xang:","options":["Lan Xang là quốc gia xuất khẩu các sản vật quý như voi, chiêng đồng và sáp trắng.","Kinh tế Lan Xang phụ thuộc hoàn toàn vào giao thương đường biển.","Người Lào chủ yếu sống dựa vào hoạt động ngoại thương.","Nền kinh tế phát triển đã góp phần xây dựng một xã hội ổn định và thịnh vượng."],"answers":["Đ","S","S","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về nội dung dưới đây không phản ánh đúng sự phát triển kinh tế của Lào trong các thế kỉ XV -- XVII:","options":["Sản xuất nông nghiệp, thủ công nghiệp khá phát triển.","Phát triển mạnh về buôn bán, trao đổi qua đường biển.","Việc khai thác các sản vật quý được chú trọng.","Cấm trao đổi, buôn bán vượt ra ngoài biên giới."],"answers":["S","Đ","S","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về nội dung phản ánh không đúng về chữ viết của người Lào được hình thành trên cơ sở:","options":["Học hỏi chữ Phạn từ Ấn Độ và phát triển thành chữ riêng của dân tộc Lào.","Dựa trên chữ viết của Campuchia và Mi-an-ma.","Do Sonexay Siphandone sáng tạo nên trong thời kỳ lập quốc.","Chữ viết của người Lào phát triển độc lập, không chịu ảnh hưởng của bất kỳ nền"],"answers":["S","S","Đ","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về yếu tố giúp kinh tế Vương quốc Lan Xang phát triển thịnh đạt trong các thế kỉ XV-XVII:","options":["Phát triển mạnh mẽ sản xuất nông nghiệp, thủ công nghiệp và chăn nuôi gia súc.","Tập trung khai thác các sản vật quý để xuất khẩu như voi, sáp trắng, vải bông, chiêng đồng.","Là trung tâm giao thương lớn nhất của vùng Đông Nam Á với nhiều cảng biển lớn.","Xây dựng hệ thống đường bộ duy nhất kết nối trực tiếp với các nước xung quanh."],"answers":["Đ","Đ","S","S"]}
+    ],
+    "Bài 14": [
+        {"question":"Ngô Quyền dựng nền độc lập - Hãy xác định các câu sau đây đúng hoặc sai về nội dung lịch sử.","options":["Chính quyền trung ương dưới thời Ngô do vua đứng đầu. Nhà vua có quyền quyết định mọi việc ở trung ương.","Thời Ngô, dưới vua có các quan văn, võ.","Thời Ngô, tổ chức chính quyền từ trung ương đến địa phương được xây dựng hoàn chỉnh.","Thời Ngô, đất nước được yên bình, văn hóa dân tộc được chú ý khôi phục."],"answers":["Đ","Đ","S","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về nội dung không đúng khi nhận xét về tổ chức nhà nước thời Ngô:","options":["Thể hiện ý thức độc lập, tự chủ.","Thiết lập chế độ Thái Thượng hoàng.","Tổ chức nhà nước theo chế độ quân chủ lập hiến.","Đặt cơ sở cho sự phát triển trong giai đoạn sau."],"answers":["Đ","S","S","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về văn hóa thời Ngô:","options":["Chú trọng khôi phục các giá trị văn hóa dân tộc.","Phát triển Phật giáo làm quốc giáo.","Quy định lễ nghi triều đình và trang phục quan lại.","Xây dựng các công trình lớn như chùa Một Cột."],"answers":["Đ","S","Đ","S"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về việc Ngô Quyền xây dựng chính quyền:","options":["Lập kinh đô tại Cổ Loa để củng cố quốc phòng.","Bổ nhiệm chức Tiết độ sứ để cai quản nước ta.","Áp dụng hệ thống luật pháp từ nhà Đường.","Giao tướng lĩnh cai quản các vùng trọng yếu."],"answers":["Đ","S","S","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về tình hình xã hội nước ta sau khi Ngô Quyền mất:","options":["Chính quyền nhà Ngô suy yếu nhanh chóng.","Pháp lăm le xâm lược nước ta.","Nhân dân tiếp tục hưởng thụ hòa bình dài lâu.","Xuất hiện các hào trưởng chiếm cứ từng vùng lãnh thổ."],"answers":["Đ","Đ","S","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về chính quyền thời Ngô:","options":["Chính quyền tập trung quyền lực vào tay vua và quan lại thân cận.","Bỏ chức tiết độ sứ, thiết lập chính quyền độc lập.","Thiết lập các tỉnh thành theo mô hình phương Bắc.","Các tướng lĩnh được giao quản lý các châu quan trọng."],"answers":["Đ","Đ","S","Đ"]},
+        {"question":"Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về vai trò của Ngô Quyền trong lịch sử Việt Nam:","options":["Giành lại độc lập dân tộc, chấm dứt thời kì Bắc thuộc hơn 1000 năm.","Lập kinh đô tại Hoa Lư và xây dựng nhà nước độc lập.","Đánh bại quân Nam Hán tại sông Bạch Đằng năm 938.","Thiết lập các quan hệ ngoại giao với nhà Tống."],"answers":["Đ","S","Đ","S"]}
+    ],
+    "Bài 6+7": [
+        {"question":"Trung Quốc thời phong kiến - Hãy xác định các câu sau đây đúng hoặc sai về nội dung lịch sử.","options":["Các triều đại phong kiến Trung Quốc đã tiến hành nhiều cuộc chiến tranh xâm lược nhằm thôn tính các dân tộc nhỏ yếu hơn.","Thời Minh -- Thanh, nền kinh tế tư bản chủ nghĩa tuy đã xuất hiện nhưng chưa đủ sức chi phối mạnh mẽ kinh tế - xã hội Trung Quốc.","Tơ lụa là mặt hàng được giao thương chính và đầu tiên trên con đường tơ lụa thời phong kiến của Trung Quốc.","Bộ Sử kí của Tư Mã Thiên là tác phẩm nổi tiếng ở thời Đường."],"answers":["Đ","Đ","Đ","S"]}
+    ],
+    "Bài 8+9+10": [
+        {"question":"Ấn Độ thời phong kiến - Hãy xác định các câu sau đây đúng hoặc sai về nội dung lịch sử.","options":["Vương triều Đê-li thực hiện chính sách cấm đoán khắc nghiệt Hin-đu giáo.","Vị vua kiệt xuất của Vương triều Mô-gôn lf A-cơ-ba.","Vua A-cơ-ba đã xây dựng khối hòa hợp dân tộc trên cơ sở duy trì và phát triển Hồi giáo.","Chữ Phạn là nguồn gốc của chữ viết Hin-đi thông dụng của người Ấn Độ hiện nay."],"answers":["Đ","Đ","Đ","Đ"]}
+    ]
+};
+
+// ---------- helper ----------
+function shuffleArray(arr) {
+    const indices = arr.map((_, i) => i);
+    for (let i = indices.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [indices[i], indices[j]] = [indices[j], indices[i]];
+    }
+    return indices;
+}
+
+function getRandomQuestion() {
+    const activeLessons = Object.keys(state.selectedLessons).filter(l => state.selectedLessons[l]);
+    if (activeLessons.length === 0) return null;
+
+    let availableLessons = [...activeLessons];
+
+    if (state.selectedLessons["Bài 6"] && state.selectedLessons["Bài 7"]) {
+        availableLessons.push("Bài 6+7");
+    }
+    if (state.selectedLessons["Bài 8"] && state.selectedLessons["Bài 9"] && state.selectedLessons["Bài 10"]) {
+        availableLessons.push("Bài 8+9+10");
+    }
+
+    let tries = 0;
+    while (tries < 20) {
+        const randomLesson = availableLessons[Math.floor(Math.random() * availableLessons.length)];
+        const questions = quizData[randomLesson];
+        if (questions && questions.length > 0) {
+            const randomQuestion = questions[Math.floor(Math.random() * questions.length)];
+            const indices = shuffleArray([0,1,2,3]);
+            const shuffledOptions = indices.map(i => randomQuestion.options[i]);
+            const shuffledAnswers = indices.map(i => randomQuestion.answers[i]);
+            return {
+                ...randomQuestion,
+                options: shuffledOptions,
+                answers: shuffledAnswers,
+                lesson: randomLesson
+            };
+        }
+        tries++;
+    }
+    return null;
+}
+
+// ---------- UI rendering ----------
+function renderLessonSelector() {
+    const container = document.getElementById('lessonSelector');
+    if(!container) return;
+    container.innerHTML = Object.keys(state.selectedLessons).map(lesson => `
+        <label class="flex items-center space-x-2 cursor-pointer hover:bg-purple-50 p-3 rounded-lg transition">
+            <input type="checkbox" class="lesson-checkbox" ${state.selectedLessons[lesson] ? 'checked' : ''} 
+                   onchange="toggleLesson('${lesson}')">
+            <span class="text-sm font-medium text-gray-700">${lesson}</span>
+        </label>
+    `).join('');
+}
+
+function toggleLesson(lesson) {
+    const activeCount = Object.values(state.selectedLessons).filter(v => v).length;
+    if (state.selectedLessons[lesson] && activeCount <= 1) {
+        alert('Phải có ít nhất 1 bài được chọn!');
+        renderLessonSelector();
+        return;
+    }
+    state.selectedLessons[lesson] = !state.selectedLessons[lesson];
+    renderLessonSelector();
+
+    if (state.currentQuestion && !isLessonAvailable(state.currentQuestion.lesson)) {
+        nextQuestion();
+    }
+}
+
+function isLessonAvailable(lessonName) {
+    if (quizData[lessonName]) return !!Object.keys(state.selectedLessons).some(l => state.selectedLessons[l] && l === lessonName);
+    if (lessonName === "Bài 6+7") return state.selectedLessons["Bài 6"] && state.selectedLessons["Bài 7"];
+    if (lessonName === "Bài 8+9+10") return state.selectedLessons["Bài 8"] && state.selectedLessons["Bài 9"] && state.selectedLessons["Bài 10"];
+    return false;
+}
+
+function updateScoreDisplay() {
+    const correctEl = document.getElementById('correctScore');
+    const totalEl = document.getElementById('totalScore');
+    const percentEl = document.getElementById('percentScore');
+    if (correctEl) correctEl.textContent = state.score.correct;
+    if (totalEl) totalEl.textContent = state.score.total;
+    if (percentEl) {
+        const percent = state.score.total > 0 ? Math.round((state.score.correct / state.score.total) * 100) : 0;
+        percentEl.textContent = percent + '%';
+    }
+}
+
+function renderQuestion() {
+    const quizCard = document.getElementById('quizCard');
+    if (!quizCard) return;
+
+    if (!state.currentQuestion) {
+        quizCard.innerHTML = `
+            <div class="text-center py-12">
+                <p class="text-xl text-gray-600">Vui lòng chọn ít nhất 1 bài để bắt đầu!</p>
+            </div>
+        `;
+        return;
+    }
+
+    // lesson badge: chỉ hiện khi state.showLessonHint === true
+    const lessonBadgeEl = document.getElementById('lessonBadge');
+    if (lessonBadgeEl) {
+        lessonBadgeEl.textContent = state.currentQuestion.lesson || '';
+        lessonBadgeEl.style.display = state.showLessonHint ? 'inline-block' : 'none';
+    }
+
+    const questionNumberEl = document.getElementById('questionNumber');
+    if (questionNumberEl) questionNumberEl.textContent = `Câu hỏi #${state.questionCount}`;
+
+    const questionTextEl = document.getElementById('questionText');
+    if (questionTextEl) questionTextEl.textContent = state.currentQuestion.question;
+
+    const optionsHtml = state.currentQuestion.options.map((opt, idx) => {
+        const userSel = state.userAnswers[idx];
+        const isCorrect = (userSel === state.currentQuestion.answers[idx]);
+        return `
+            <div class="option-card p-5 border-2 rounded-xl ${
+                state.showResult 
+                    ? (isCorrect ? 'correct-answer border-green-500' : 'wrong-answer border-red-500')
+                    : 'border-gray-300 hover:border-purple-400 bg-white'
+            } mb-3">
+                <div class="flex items-start justify-between mb-3">
+                    <p class="text-gray-800 flex-1 font-medium">${opt}</p>
+                    ${state.showResult ? `
+                        <div class="ml-4">${isCorrect ? '<span class="text-green-600 text-2xl">✓</span>' : '<span class="text-red-600 text-2xl">✗</span>'}</div>
+                    ` : ''}
+                </div>
+                
+                ${!state.showResult ? `
+                    <div class="flex space-x-6">
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                            <input type="radio" name="q${idx}" value="Đ" ${userSel === 'Đ' ? 'checked' : ''}
+                                   onchange="setAnswer(${idx}, 'Đ')" class="w-5 h-5 text-green-600 cursor-pointer">
+                            <span class="text-green-700 font-bold text-lg">Đúng</span>
+                        </label>
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                            <input type="radio" name="q${idx}" value="S" ${userSel === 'S' ? 'checked' : ''}
+                                   onchange="setAnswer(${idx}, 'S')" class="w-5 h-5 text-red-600 cursor-pointer">
+                            <span class="text-red-700 font-bold text-lg">Sai</span>
+                        </label>
+                    </div>
+                ` : `
+                    <div class="mt-2 text-lg">
+                        <span class="font-bold text-gray-700">Bạn chọn: </span>
+                        <span class="${userSel === 'Đ' ? 'text-green-600' : 'text-red-600'} font-bold">
+                            ${userSel === 'Đ' ? 'Đúng' : 'Sai'}
+                        </span>
+                        ${!isCorrect ? `
+                            <span class="ml-4 text-gray-700">→ Đáp án đúng: </span>
+                            <span class="${state.currentQuestion.answers[idx] === 'Đ' ? 'text-green-600' : 'text-red-600'} font-bold">
+                                ${state.currentQuestion.answers[idx] === 'Đ' ? 'Đúng' : 'Sai'}
+                            </span>
+                        ` : ''}
+                    </div>
+                `}
+            </div>
+        `;
+    }).join('');
+
+    const optionsContainer = document.getElementById('optionsContainer');
+    if (optionsContainer) optionsContainer.innerHTML = optionsHtml;
+
+    const actionButtons = document.getElementById('actionButtons');
+    if (actionButtons) {
+        const buttonsHtml = !state.showResult ? `
+            <button onclick="submitAnswer()" 
+                    class="btn-primary text-white font-bold py-4 px-10 rounded-xl shadow-lg text-lg">
+                ✓ Nộp bài
+            </button>
+            <button onclick="skipQuestion()" 
+                    class="bg-gradient-to-r from-gray-500 to-gray-600 hover:from-gray-600 hover:to-gray-700 text-white font-bold py-4 px-10 rounded-xl shadow-lg text-lg transition-all">
+                → Câu hỏi khác
+            </button>
+        ` : `
+            <button onclick="nextQuestion()" 
+                    class="btn-success text-gray-800 font-bold py-4 px-10 rounded-xl shadow-lg text-lg flex items-center gap-3">
+                <span>🔄</span>
+                <span>Câu tiếp theo</span>
+            </button>
+        `;
+        actionButtons.innerHTML = buttonsHtml;
+    }
+}
+
+// ---------- actions ----------
+function toggleShowLesson(value) {
+    state.showLessonHint = !!value;
+    // cập nhật UI ngay
+    renderQuestion();
+}
+
+function setAnswer(idx, value) {
+    state.userAnswers[idx] = value;
+}
+
+function submitAnswer() {
+    const required = state.currentQuestion.options.length;
+    for (let i = 0; i < required; i++) {
+        if (!state.userAnswers.hasOwnProperty(i) || (state.userAnswers[i] !== 'Đ' && state.userAnswers[i] !== 'S')) {
+            alert(`⚠️ Vui lòng trả lời đủ ${required} câu!`);
+            return;
+        }
+    }
+
+    let correct = 0;
+    state.currentQuestion.answers.forEach((answer, idx) => {
+        if (state.userAnswers[idx] === answer) correct++;
+    });
+
+    state.score.correct += correct;
+    state.score.total += state.currentQuestion.options.length;
+    state.showResult = true;
+
+    updateScoreDisplay();
+    renderQuestion();
+}
+
+function nextQuestion() {
+    const q = getRandomQuestion();
+    state.currentQuestion = q;
+    state.userAnswers = {};
+    state.showResult = false;
+    if (q) {
+        state.questionCount += 1;
+    } else {
+        state.questionCount = 0;
+    }
+    renderQuestion();
+}
+
+function skipQuestion() {
+    nextQuestion();
+}
+
+// ---------- initialize ----------
+renderLessonSelector();
+state.currentQuestion = getRandomQuestion();
+if (state.currentQuestion) {
+    state.questionCount = 1;
+} else {
+    state.questionCount = 0;
+}
+renderQuestion();
+updateScoreDisplay();
+
+// ensure checkbox initial state is unchecked in UI
+const cb = document.getElementById('showLessonCheckbox');
+if (cb) cb.checked = false;
+
+    </script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const backBtn = document.getElementById('backToMainBtn');
+  if (!backBtn) return;
+
+  backBtn.addEventListener('click', (e) => {
+    // Khi cần, điều kiện "đang làm bài" có thể điều chỉnh:
+    // ở đây coi là "đang làm" khi đã có câu hỏi đang hiển thị, chưa xem kết quả,
+    // và có ít nhất 1 câu trả lời tạm thời.
+    const s = window.state || {};
+    const hasAnswers = s.userAnswers && Object.keys(s.userAnswers).length > 0;
+    const quizStarted = (s.questionCount > 0) && (!s.showResult) && hasAnswers;
+
+    if (quizStarted) {
+      const confirmLeave = confirm('Bạn có chắc muốn quay lại? Tiến trình hiện tại sẽ không được lưu.');
+      if (!confirmLeave) return;
+    }
+
+    // chuyển hướng về trang chính
+    window.location.href = 'index.html';
+  });
+});
+</script>
+
+</body>
+</html>
