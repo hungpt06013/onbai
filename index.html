@@ -43,12 +43,29 @@
             </div>
           </div>
           <h1 class="text-4xl font-bold mb-3">Ôn Tập Bài Học</h1>
-          <p class="text-xl text-blue-100">Bắt đầu ôn tập ngay</p>
+          <p class="text-xl text-blue-100">Chọn môn học để bắt đầu</p>
         </div>
 
         <div class="p-8">
           <div class="grid md:grid-cols-3 gap-6">
-            <!-- Removed all subject buttons as per request: no subjects -->
+            <button id="selectOnSinh29126" class="group relative overflow-hidden bg-gradient-to-br from-emerald-600 to-emerald-700 text-white p-8 rounded-xl hover:from-emerald-700 hover:to-emerald-800 transition-all transform hover:scale-[1.02] shadow-lg">
+              <div class="relative z-10">
+                <div class="flex items-center justify-center mb-4">
+                  <!-- DNA icon -->
+                  <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                      d="M9 3v1m6-1v1M9 19v1m6-1v1M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6m-6 6h6"/>
+                    <circle cx="9" cy="9" r="1" fill="currentColor"/>
+                    <circle cx="15" cy="9" r="1" fill="currentColor"/>
+                    <circle cx="9" cy="15" r="1" fill="currentColor"/>
+                    <circle cx="15" cy="15" r="1" fill="currentColor"/>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Ôn Sinh 29.1.26</h3>
+                <p class="text-emerald-100 text-sm">Ôn Sinh 29.1.26</p>
+                <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">17 câu hỏi</div>
+              </div>
+            </button>
           </div>
         </div>
       </div>
@@ -65,7 +82,7 @@
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
-            <span class="font-medium">Trang chủ</span>
+            <span class="font-medium">Chọn môn khác</span>
           </button>
 	  
           <div class="mb-4">
@@ -76,8 +93,8 @@
             </div>
           </div>
 
-          <h1 class="text-4xl font-bold mb-3" id="subjectTitle">Ôn Tập</h1>
-          <p class="text-xl text-blue-100">Chọn chế độ ôn tập</p>
+          <h1 class="text-4xl font-bold mb-3" id="subjectTitle"></h1>
+          <p class="text-xl text-blue-100">Chọn chế độ làm bài</p>
         </div>
 
         <div class="p-8">
@@ -89,8 +106,8 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2" />
                   </svg>
                 </div>
-                <h3 class="text-xl font-bold mb-2">Ôn Tập Đầy Đủ</h3>
-                <p class="text-blue-100 text-sm mb-3" id="fullModeDesc">Ôn tập tất cả nội dung</p>
+                <h3 class="text-xl font-bold mb-2">Bài Test Đầy Đủ</h3>
+                <p class="text-blue-100 text-sm mb-3" id="fullModeDesc"></p>
                 <div class="flex items-center justify-center gap-2 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">
                   <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -136,7 +153,7 @@
           </button>
 
           <div class="flex items-center gap-3">
-            <button id="btnRestart" class="flex items-center gap-2 px-4 py-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors border border-blue-200" title="Làm lại bài ôn">
+            <button id="btnRestart" class="flex items-center gap-2 px-4 py-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors border border-blue-200" title="Làm lại bài test">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12a9 9 0 0114.32-6.32L21 6m0 0v-4m0 4h-4"/>
               </svg>
@@ -174,7 +191,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 21h8M12 3v4m5 0a5 5 0 01-10 0"/>
           </svg>
         </div>
-        <h2 class="text-3xl font-bold text-gray-800 mb-4">Hoàn thành ôn tập! 🎉</h2>
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Hoàn thành bài kiểm tra! 🎉</h2>
         <div id="resultScoreLarge" class="text-6xl font-bold text-blue-600 mb-2">0/0</div>
         <p id="resultPercent" class="text-xl text-gray-600 mb-6">Điểm số: 0%</p>
 
@@ -185,7 +202,7 @@
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h4V6m0 0a9 9 0 1118 0M21 14v6h-6"/>
             </svg>
-            Làm lại ôn tập
+            Làm lại bài kiểm tra
           </button>
 
           <button id="resultHome" class="flex items-center justify-center gap-2 w-full bg-gray-600 text-white px-8 py-4 rounded-lg hover:bg-gray-700 transition-colors font-semibold text-lg">
@@ -201,10 +218,202 @@
 
   <script>
     // === DATA ===
-    // Removed all subject data as per request: no subjects
-    const subjectData = {};
+    const subjectData = {
+      onsinh29126: {
+        fullName: 'Ôn Sinh 29.1.26',
+        questions: [
+          {
+            type: 'mcq',
+            q: 'Câu 1. Sinh trưởng là',
+            o: [
+              'A. sự tăng lên về kích thước cơ thể do tăng lên về kích thước tế bào.',
+              'B. sự tăng lên về khối lượng cơ thể do tăng lên về số lượng tế bào.',
+              'C. sự tăng lên về kích thước và khối lượng cơ thể do tăng lên về kích thước tế bào.',
+              'D. sự tăng lên về kích thước và khối lượng cơ thể do tăng lên về số lượng và kích thước tế bào.'
+            ],
+            c: 3
+          },
+          {
+            type: 'mcq',
+            q: 'Câu 2. Phát triển là',
+            o: [
+              'A. những biến đổi của cơ thể sinh vật bao gồm ba quá trình liên quan mật thiết với nhau là sinh trưởng, phân hóa tế bào và phát sinh hình thái các cơ quan của cơ thể.',
+              'B. sự tăng lên về kích thước và khối lượng cơ thể do tăng lên về số lượng và kích thước tế bào.',
+              'C. những biến đổi của cơ thể sinh vật dưới tác động trực tiếp của môi trường sống mà không liên quan đến biến đổi vật chất di truyền.',
+              'D. những biến đổi đột ngột của cơ thể sinh vật do biến đổi vật chất di truyền mà không liên quan đến biến đổi điều kiện môi trường sống.'
+            ],
+            c: 0
+          },
+          {
+            type: 'mcq',
+            q: 'Câu 3. Cho bảng thông tin sau:<br>Quá trình<br>(1) Sinh trưởng<br>(2) Phát triển<br>Biểu hiện<br>(a) Thể trọng lợn con từ 5kg tăng 8kg.<br>(b) Kích thước lá tăng lên.<br>(c) Hạt giống nảy mầm.<br>(d) Cây bưởi ra lá non.<br>(e) Trứng gà nở thành gà con.<br>Cách ghép nối phù hợp là',
+            o: [
+              'A. 1-a,b; 2-c,d,e.',
+              'B. 1-a,c; 2-b,d,e.',
+              'C. 1-a,d; 2-b,c,e.',
+              'D. 1-a,e; 2-b,c,d.'
+            ],
+            c: 0
+          },
+          {
+            type: 'mcq',
+            q: 'Câu 4. Phát biểu nào sau đây là đúng khi nói về mối quan hệ giữa sinh trưởng và phát triển?',
+            o: [
+              'A. Sinh trưởng và phát triển là hai quá trình có mối quan hệ độc lập với nhau; sinh trưởng luôn diễn ra trước phát triển.',
+              'B. Sinh trưởng và phát triển là hai quá trình có mối quan hệ độc lập với nhau; phát triển luôn diễn ra trước sinh trưởng.',
+              'C. Sinh trưởng và phát triển là hai quá trình có mối quan hệ mật thiết với nhau; sinh trưởng tạo tiền đề cho phát triển còn phát triển sẽ thúc đẩy sinh trưởng.',
+              'D. Sinh trưởng và phát triển là hai quá trình có mối quan hệ mật thiết với nhau; phát triển tạo tiền đề cho sinh trưởng còn sinh trưởng sẽ thúc đẩy phát triển.'
+            ],
+            c: 2
+          },
+          {
+            type: 'mcq',
+            q: 'Câu 5. Cơ sở cho sự sinh trưởng của thực vật là sự phân chia của các tế bào thuộc',
+            o: [
+              'A. mô mềm.',
+              'B. mô xốp.',
+              'C. mô dẫn.',
+              'D. mô phân sinh.'
+            ],
+            c: 3
+          },
+          {
+            type: 'mcq',
+            q: 'Câu 6. Mô phân sinh là',
+            o: [
+              'A. nhóm các tế bào có khả năng phân chia, giúp cho thực vật tăng trưởng về kích thước.',
+              'B. nhóm các tế bào có khả năng cảm ứng, giúp cho thực vật tăng trưởng về kích thước.',
+              'C. nhóm các tế bào có khả năng biệt hóa, giúp cho thực vật tăng trưởng về kích thước.',
+              'D. nhóm các tế bào có khả năng phản biệt hóa, giúp cho thực vật tăng trưởng về kích thước.'
+            ],
+            c: 0
+          },
+          {
+            type: 'mcq',
+            q: 'Câu 7. Cây Một lá mầm không có khả năng tăng kích thước đường kính thân liên tục như cây Hai lá mầm là do cây Một lá mầm không có',
+            o: [
+              'A. mô phân sinh.',
+              'B. mô phân sinh đỉnh.',
+              'C. mô phân sinh lóng.',
+              'D. mô phân sinh bên.'
+            ],
+            c: 3
+          },
+          {
+            type: 'mcq',
+            q: 'Câu 8. Mỗi sinh vật trong quá trình sống đều trải qua các giai đoạn sinh trưởng và phát triển khác nhau gọi là',
+            o: [
+              'A. vòng đời.',
+              'B. quá trình sinh trưởng.',
+              'C. quá trình phát triển.',
+              'D. quá trình biến đổi.'
+            ],
+            c: 0
+          },
+          {
+            type: 'mcq',
+            q: 'Câu 9. Vòng đời của ếch trải qua các giai đoạn lần lượt là',
+            o: [
+              'A. phôi → trứng → nòng nọc → nòng nọc 2 chân → nòng nọc 4 chân → ếch con → ếch trưởng thành.',
+              'B. trứng → phôi → nòng nọc → nòng nọc 2 chân → nòng nọc 4 chân → ếch con → ếch trưởng thành.',
+              'C. phôi → trứng → nòng nọc → nòng nọc 4 chân → nòng nọc 2 chân → ếch con → ếch trưởng thành.',
+              'D. trứng → phôi → nòng nọc → nòng nọc 4 chân → nòng nọc 2 chân → ếch con → ếch trưởng thành.'
+            ],
+            c: 1
+          },
+          {
+            type: 'mcq',
+            q: 'Câu 10. Quan sát vòng đời của ếch và của gà dưới đây: // Chèn link image1.png ở đây (vòng đời ếch) // Chèn link image2.png ở đây (vòng đời gà)<br>Điểm khác nhau cơ bản trong vòng đời của gà so với ếch là',
+            o: [
+              'A. xảy ra nhiều sự biến đổi đột ngột về hình thái.',
+              'B. không xảy ra nhiều biến đổi đột ngột về hình thái.',
+              'C. có giai đoạn hợp tử phát triển thành phôi diễn ra trong trứng đã thụ tinh.',
+              'D. không có giai đoạn hợp tử phát triển thành phôi diễn ra trong trứng đã thụ tinh.'
+            ],
+            c: 1
+          },
+          {
+            type: 'mcq',
+            q: 'Câu 11. Vòng đời của bướm trải qua các giai đoạn lần lượt là',
+            o: [
+              'A. trứng → sâu bướm → kén → bướm trưởng thành',
+              'B. trứng → kén → sâu bướm → bướm trưởng thành',
+              'C. kén → trứng → sâu bướm → bướm trưởng thành',
+              'D. kén → sâu bướm → trứng → bướm trưởng thành'
+            ],
+            c: 0
+          },
+          {
+            type: 'mcq',
+            q: 'Câu 12. Sinh trưởng hay phát triển quan trọng hơn',
+            o: [
+              'A. Sinh trưởng',
+              'B. Phát triển',
+              'C. Cả 2 đều quan trọng như nhau',
+              'D. Cả 2 đều không quan trọng'
+            ],
+            c: 2
+          },
+          {
+            type: 'mcq',
+            q: 'Câu 13. Cho bảng thông tin sau:<br>Quá trình<br>(1) Sinh trưởng<br>(2) Phát triển<br>Biểu hiện<br>(a) Sau một năm, em học sinh lớp 1 cao thêm 10 cm.<br>(b) Hạt đậu ngâm nước lâu nở to hơn lúc đầu.<br>(c) Hạt đỗ nảy mầm.<br>(d) Cây bưởi ra hoa.<br>(e) Trứng gà nở thành gà con.<br>Cách ghép nối phù hợp là',
+            o: [
+              'A. 1-a,b; 2-c,d,e.',
+              'B. 1-a,c; 2-b,d,e.',
+              'C. 1-a,d; 2-b,c,e.',
+              'D. 1-a,e; 2-b,c,d.'
+            ],
+            c: 0
+          },
+          {
+            type: 'mcq',
+            q: 'Câu 14. Mô phân sinh đỉnh nằm ở vị trí đỉnh của..., có chức năng...?',
+            o: [
+              'A. rễ và thân - giúp cây sinh trưởng về chiều cao',
+              'B. lá và hoa - giúp cây sinh trưởng về chiều ngang',
+              'C. thân và cành - giúp cây phát triển thêm lá',
+              'D. rễ và lá - giúp cây hấp thụ dinh dưỡng'
+            ],
+            c: 0
+          },
+          {
+            type: 'mcq',
+            q: 'Câu 15. Mô phân sinh bên phân bố ..., có chức năng ...',
+            o: [
+              'A. ở vùng đỉnh của thân và rễ tạo thành các mô phân sinh ngọn - làm tăng chiều dài của thân và rễ thông qua sinh trưởng chiều dọc liên tục',
+              'B. theo hình trụ và hướng ra phía ngoài của thân - làm tăng độ dày của thân, rễ, cành.',
+              'C. ở các mắt chồi bên và chồi ngọn dọc theo thân - tạo ra các cơ quan mới như lá, hoa, quả và phân nhánh cho cây',
+              'D. giữa mô gỗ và mô rây theo chiều xuyên tâm của thân - vận chuyển nước, chất khoáng và sản phẩm quang hợp giữa các bộ phận của cây'
+            ],
+            c: 1
+          },
+          {
+            type: 'mcq',
+            q: 'Câu 16. Ở cây Hai lá mầm, mô phân sinh gồm có gì?',
+            o: [
+              'A. mô phân sinh đỉnh và mô phân sinh giữa',
+              'B. mô phân sinh đỉnh và mô phân sinh rễ',
+              'C. mô phân sinh đỉnh và mô phân sinh bên',
+              'D. mô phân sinh thứ bên và mô phân sinh giữa'
+            ],
+            c: 2
+          },
+          {
+            type: 'mcq',
+            q: 'Câu 17. Cho các bộ phận sau:<br>(1) Đỉnh rễ<br>(2) Thân<br>(3) Chồi nách<br>(4) Chồi đỉnh<br>(5) Hoa<br>(6) Lá<br>Mô phân sinh đỉnh không có ở',
+            o: [
+              'A. (1), (2), (3).',
+              'B. (2), (3), (4).',
+              'C. (3), (4), (5).',
+              'D. (2), (5), (6).'
+            ],
+            c: 3
+          }
+        ]
+      }
+    };
 
-    let currentSubject = null; // No subject
+    let currentSubject = null;
     let quizMode = null;
     let quizStarted = false;
     let quizCompleted = false;
@@ -269,8 +478,7 @@
 
     // initialize quiz
     function initializeQuiz(mode = 'full') {
-      // No subjects, so use empty or placeholder questions
-      const allQ = []; // Empty as no subjects
+      const allQ = subjectData[currentSubject].questions;
       if (mode === 'full') {
         const shuffled = shuffleArray(allQ).map(q => {
           if (q.type === 'mcq') return shuffleOptionsForMCQ(q);
@@ -280,7 +488,7 @@
         userAnswers = shuffledQuestions.map(q => q.type === 'mcq' ? null : [null, null, null, null]);
       } else {
         if (allQ.length === 0) {
-          alert('Không có nội dung ôn tập.');
+          alert('Không có câu hỏi.');
           return;
         }
         const q = allQ[Math.floor(Math.random() * allQ.length)];
@@ -296,9 +504,16 @@
 
     // Render quiz screen
     function renderQuiz() {
-      if (!quizStarted) {
+      if (!currentSubject) {
         subjectScreen.classList.remove('hidden');
         modeScreen.classList.add('hidden');
+        quizScreen.classList.add('hidden');
+        resultScreen.classList.add('hidden');
+        return;
+      }
+      if (!quizStarted) {
+        subjectScreen.classList.add('hidden');
+        modeScreen.classList.remove('hidden');
         quizScreen.classList.add('hidden');
         resultScreen.classList.add('hidden');
         return;
@@ -767,14 +982,26 @@
     });
 
     // Restart / navigation handlers
-    btnRestart.addEventListener('click', () => {
-      if (quizStarted && !quizCompleted) {
-        if (!confirm('Bạn có muốn làm lại? Mọi câu trả lời hiện tại sẽ bị mất.')) return;
-      }
-      initializeQuiz(quizMode);
-    });
+btnRestart.addEventListener('click', () => {
+  if (!currentSubject) return;
+
+  // Nếu đang ở chế độ random: ngay lập tức lấy câu random khác,
+  // KHÔNG hỏi confirm dù toggle cảnh báo đang bật hay tắt.
+  if (quizMode === 'random') {
+    initializeQuiz('random');
+    return;
+  }
+
+  // Chế độ full (cũ): giữ hành vi confirm như trước
+  if (quizStarted && !quizCompleted) {
+    if (!confirm('Bạn có muốn làm lại? Mọi câu trả lời hiện tại sẽ bị mất.')) return;
+  }
+  initializeQuiz(quizMode);
+});
+
 
     resultRestart.addEventListener('click', () => {
+      if (!currentSubject) return;
       initializeQuiz(quizMode);
     });
 
@@ -782,7 +1009,9 @@
       if (quizStarted && !quizCompleted) {
         if (!confirm('Bạn có chắc muốn rời trang? Mọi câu trả lời sẽ không được lưu.')) return false;
       }
+      currentSubject = null;
       quizStarted = false;
+      renderQuiz();
       return true;
     }
 
@@ -797,12 +1026,21 @@
       }
       quizStarted = false;
       quizCompleted = false;
+      currentSubject = null;
       renderQuiz();
     });
 
     backToSubject.addEventListener('click', () => navigateHomeWithConfirm());
 
-    // Mode listeners (since no subjects, directly start modes)
+    // selection listeners
+    selectOnSinh29126.addEventListener('click', () => {
+      currentSubject = 'onsinh29126';
+      subjectTitle.textContent = subjectData.onsinh29126.fullName || 'Ôn Sinh 29.1.26';
+      fullModeDesc.textContent = `Làm hết ${subjectData.onsinh29126.questions ? subjectData.onsinh29126.questions.length : '...'} câu hỏi`;
+      subjectScreen.classList.add('hidden');
+      modeScreen.classList.remove('hidden');
+    });
+
     startFullBtn.addEventListener('click', () => initializeQuiz('full'));
     startRandomBtn.addEventListener('click', () => initializeQuiz('random'));
 
@@ -831,7 +1069,7 @@
     renderQuiz();
 
   </script>
-<!-- Firebase SDK -->
+<!-- Firebase SDK - Di chuyển xuống đây -->
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
 
@@ -987,7 +1225,23 @@ console.log('💡 Lệnh hữu ích:');
 console.log('   - cleanupOldPresence() : Xóa presence data cũ hơn 1 phút');
 console.log('   - resetOnlineCount() : Reset toàn bộ (cẩn thận!)');
 </script>
-<!-- Removed embedded history as no subjects -->
+<!-- Container để nhúng nội dung quizls.html -->
+<div id="embeddedHistoryWrap" class="fixed inset-0 z-50 bg-white/90 hidden overflow-auto p-6">
+  <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl p-6 relative">
+    <button id="closeHistoryBtn" class="absolute top-4 right-4 bg-gray-100 px-3 py-2 rounded-lg shadow hover:bg-gray-200">Đóng ✕</button>
+    <div id="embeddedHistory" class="prose"></div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const openHistoryBtn = document.getElementById('openHistoryBtn');
+  if (openHistoryBtn) {
+    openHistoryBtn.addEventListener('click', () => {
+      window.location.href = 'quizls.html';
+    });
+  }
+});
+</script>
 
 </body>
 </html>
