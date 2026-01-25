@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="antialiased bg-gradient-to-br from-blue-50 to-green-50 min-h-screen p-6">
-<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX2vYju3i0lNX?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX2vYju3i0lNX?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 <div style="position:fixed;top:10px;right:10px;z-index:9999;background:rgba(0,0,0,0.8);color:white;padding:10px 20px;border-radius:20px;display:flex;align-items:center;gap:8px;box-shadow:0 4px 12px rgba(0,0,0,0.3);">
   <svg width="12" height="12" style="animation:blink 1.5s infinite;">
     <circle cx="6" cy="6" r="6" fill="#22c55e"/>
@@ -1188,7 +1188,7 @@ window.cleanupOldPresence = function() {
     
     console.log('✅ Đã dọn dẹp presence data cũ');
   });
-};
+}
 
 // Function reset toàn bộ (CHỈ dùng khi cần thiết)
 window.resetOnlineCount = function() {
@@ -1214,7 +1214,7 @@ window.resetOnlineCount = function() {
   }).catch(error => {
     console.error('Lỗi:', error);
   });
-};
+}
 
 // Tự động cleanup presence data cũ khi tải trang (thay vì reset toàn bộ)
 setTimeout(() => {
