@@ -1130,7 +1130,7 @@ const firebaseConfig = {
 };
 
 // Khai báo biến ở global scope
-let database, presenceRef;
+let database, presenceRef, myPresenceRef;
 
 // Khởi tạo Firebase với error handling
 try {
@@ -1144,8 +1144,6 @@ try {
   console.log('   1. Firebase Database Rules (phải allow read/write)');
   console.log('   2. Database URL đúng chưa');
   console.log('   3. Project ID đúng chưa');
-  // Tạo fallback để tránh crash
-  presenceRef = null;
 }
 
 // Tạo ID duy nhất cho TRÌNH DUYỆT
@@ -1164,9 +1162,12 @@ localStorage.setItem(tabsKey, JSON.stringify(activeTabs));
 // Kiểm tra presenceRef có khả dụng không
 if (!presenceRef) {
   console.error('❌ presenceRef không khả dụng. Firebase chưa được khởi tạo đúng.');
-  document.getElementById('onlineCount').textContent = '?';
+  const onlineCountEl = document.getElementById('onlineCount');
+  if (onlineCountEl) {
+    onlineCountEl.textContent = '?';
+  }
 } else {
-  const myPresenceRef = presenceRef.child(browserId);
+  myPresenceRef = presenceRef.child(browserId);
   
   // Chỉ set online nếu đây là tab đầu tiên
   if (activeTabs.length === 1) {
@@ -1290,7 +1291,7 @@ if (!presenceRef) {
       
       console.log('✅ Đã dọn dẹp presence data cũ');
     });
-  }
+  };
 
   // Function reset toàn bộ (CHỈ dùng khi cần thiết)
   window.resetOnlineCount = function() {
@@ -1320,11 +1321,13 @@ if (!presenceRef) {
     }).catch(error => {
       console.error('Lỗi:', error);
     });
-  }
+  };
 
   // Tự động cleanup presence data cũ khi tải trang
   setTimeout(() => {
-    cleanupOldPresence();
+    if (window.cleanupOldPresence) {
+      window.cleanupOldPresence();
+    }
   }, 2000);
 }
 
