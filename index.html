@@ -63,7 +63,7 @@
                 </div>
                 <h3 class="text-2xl font-bold mb-2">Ôn Sinh 29.1.26</h3>
                 <p class="text-emerald-100 text-sm">Ôn Sinh 29.1.26</p>
-                <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">21 câu hỏi</div>
+                <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">17 câu hỏi</div>
               </div>
             </button>
           </div>
@@ -1129,10 +1129,19 @@ const firebaseConfig = {
   appId: "1:322108184836:web:f3a60b8fbd50ac1387d851"
 };
 
-// Khởi tạo Firebase
-firebase.initializeApp(firebaseConfig);
-const database = firebase.database();
-const presenceRef = database.ref('presence');
+// Khởi tạo Firebase với error handling
+try {
+  firebase.initializeApp(firebaseConfig);
+  const database = firebase.database();
+  const presenceRef = database.ref('presence');
+  console.log('✅ Firebase đã khởi tạo thành công');
+} catch (error) {
+  console.error('❌ Lỗi khởi tạo Firebase:', error);
+  console.log('📌 Vui lòng kiểm tra:');
+  console.log('   1. Firebase Database Rules (phải allow read/write)');
+  console.log('   2. Database URL đúng chưa');
+  console.log('   3. Project ID đúng chưa');
+}
 
 // Tạo ID duy nhất cho TRÌNH DUYỆT
 let browserId = localStorage.getItem('browserId');
@@ -1154,18 +1163,51 @@ if (activeTabs.length === 1) {
   myPresenceRef.set({
     online: true,
     timestamp: Date.now()
+  }).then(() => {
+    console.log('✅ Đã đăng ký online thành công');
+  }).catch(error => {
+    console.error('❌ Lỗi khi set presence:', error);
+    if (error.code === 'PERMISSION_DENIED') {
+      console.error('🚨 LỖI: Firebase Database Rules chưa cho phép write!');
+      console.log('📝 Hướng dẫn sửa:');
+      console.log('   1. Vào https://console.firebase.google.com');
+      console.log('   2. Chọn project "bruh-68680"');
+      console.log('   3. Vào Realtime Database > Rules');
+      console.log('   4. Đổi rules thành:');
+      console.log('      {');
+      console.log('        "rules": {');
+      console.log('          ".read": true,');
+      console.log('          ".write": true');
+      console.log('        }');
+      console.log('      }');
+      console.log('   5. Nhấn Publish');
+    }
   });
 }
 
 // Đánh dấu offline khi rời trang
 myPresenceRef.onDisconnect().remove();
 
-// Lắng nghe số người online
+// Lắng nghe số người online với error handling
 presenceRef.on('value', (snapshot) => {
   const onlineUsers = snapshot.numChildren();
   const onlineCountEl = document.getElementById('onlineCount');
   if (onlineCountEl) {
     onlineCountEl.textContent = onlineUsers;
+  }
+  console.log('👥 Số người online:', onlineUsers);
+}, (error) => {
+  console.error('❌ Lỗi khi đọc presence data:', error);
+  if (error.code === 'PERMISSION_DENIED') {
+    console.error('🚨 LỖI: Firebase Database Rules chưa cho phép read!');
+    console.log('📝 Xem hướng dẫn sửa lỗi bên trên');
+    
+    // Hiển thị thông báo lỗi cho user
+    const onlineCountEl = document.getElementById('onlineCount');
+    if (onlineCountEl) {
+      onlineCountEl.textContent = '?';
+      onlineCountEl.parentElement.title = 'Lỗi kết nối Firebase. Vui lòng kiểm tra Database Rules.';
+    }
   }
 });
 
