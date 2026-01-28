@@ -323,7 +323,7 @@ const subjectData = {
       },
       {
         type: 'mcq',
-        q: 'Quan sát vòng đời của ếch và của gà dưới đây: https://postimg.cc/G8cQTHjt<br>Điểm khác nhau cơ bản trong vòng đời của gà so với ếch là',
+        q: 'Quan sát vòng đời của ếch và của gà dưới đây: https://i.postimg.cc/7bvY3zqC/image.png<br>Điểm khác nhau cơ bản trong vòng đời của gà so với ếch là',
         o: [
           'xảy ra nhiều sự biến đổi đột ngột về hình thái.',
           'không xảy ra nhiều biến đổi đột ngột về hình thái.',
@@ -497,6 +497,17 @@ const subjectData = {
     const resultHome = document.getElementById('resultHome');
 
     // helpers
+    // Function để chuyển link hình trong câu hỏi thành thẻ img
+    function processQuestionText(text) {
+      // Tìm tất cả các URL hình ảnh (http:// hoặc https://)
+      // Hỗ trợ các định dạng: .jpg, .jpeg, .png, .gif, .webp, .svg
+      const imageUrlPattern = /(https?:\/\/[^\s<>"]+?\.(jpg|jpeg|png|gif|webp|svg|bmp))/gi;
+      
+      return text.replace(imageUrlPattern, (url) => {
+        return `<br><img src="${url}" alt="Hình minh họa" class="max-w-full h-auto rounded-lg shadow-md my-3 mx-auto block" style="max-height: 400px;" />`;
+      });
+    }
+    
     function shuffleArray(array) {
       const arr = array.slice();
       for (let i = arr.length - 1; i > 0; i--) {
@@ -601,7 +612,7 @@ const subjectData = {
 
           const qTitle = document.createElement('h3');
           qTitle.className = 'text-lg font-semibold mb-3';
-          qTitle.innerHTML = `Câu ${qi+1}. ${q.q}`;
+          qTitle.innerHTML = `Câu ${qi+1}. ${processQuestionText(q.q)}`;
 
           qWrap.appendChild(qTitle);
 
@@ -725,7 +736,7 @@ const subjectData = {
 
         const qTitle = document.createElement('h3');
         qTitle.className = 'text-2xl font-bold text-gray-800 mb-6';
-        qTitle.innerHTML = q.q;
+        qTitle.innerHTML = processQuestionText(q.q);
         qWrap.appendChild(qTitle);
 
         if (q.type === 'mcq') {
@@ -880,7 +891,7 @@ const subjectData = {
           qWrap.className = 'mb-6 pb-4 border-b';
           const qTitle = document.createElement('h3');
           qTitle.className = 'text-lg font-semibold mb-3';
-          qTitle.innerHTML = `Câu ${qi+1}. ${q.q}`;
+          qTitle.innerHTML = `Câu ${qi+1}. ${processQuestionText(q.q)}`;
 
           qWrap.appendChild(qTitle);
 
@@ -954,7 +965,7 @@ const subjectData = {
           const qWrap = document.createElement('div');
           const qTitle = document.createElement('h3');
           qTitle.className = 'text-2xl font-bold text-gray-800 mb-6';
-          qTitle.innerHTML = q.q;
+          qTitle.innerHTML = processQuestionText(q.q);
           qWrap.appendChild(qTitle);
           const opts = document.createElement('div');
           opts.className = 'space-y-3 mb-6';
@@ -989,7 +1000,7 @@ const subjectData = {
           const qWrap = document.createElement('div');
           const qTitle = document.createElement('h3');
           qTitle.className = 'text-2xl font-bold text-gray-800 mb-6';
-          qTitle.innerHTML = q.q;
+          qTitle.innerHTML = processQuestionText(q.q);
           qWrap.appendChild(qTitle);
           const list = document.createElement('div'); list.className = 'space-y-3 mb-6';
           q.statements.forEach((stmt,sidx) => {
