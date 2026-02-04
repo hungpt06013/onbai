@@ -162,7 +162,7 @@
   <div id="quizScreen" class="hidden min-h-screen flex items-start justify-center pt-12">
     <div class="max-w-3xl mx-auto w-full">
       <div class="bg-white rounded-2xl shadow-xl p-8">
-        <div class="flex flex-wrap items-center gap-3 mb-6">
+        <div id="quizHeader" class="flex justify-between items-center gap-3 mb-6">
           <button id="backHome" class="flex items-center gap-2 text-gray-600 hover:text-gray-800 transition-colors">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -191,7 +191,7 @@
 
           <div id="countInfo" class="text-sm font-semibold text-gray-500 whitespace-nowrap"></div>
           
-          <div id="scoreInfo" class="text-lg font-bold text-blue-600 whitespace-nowrap"></div>
+          <div id="scoreInfo" class="ml-auto text-lg font-bold text-blue-600 whitespace-nowrap"></div>
         </div>
 
         <div id="progressWrap" class="mb-6">
@@ -885,7 +885,7 @@ const subjectData = {
                   "type": "mcq",
                   "q": "Nguyên tử kim loại nhường electron sẽ trở thành",
                   "o": [
-                        "ion duong.",
+                        "ion dương.",
                         "ion âm.",
                         "khí hiếm.",
                         "ion dương hoặc ion âm."
@@ -1167,6 +1167,12 @@ const subjectData = {
     let shuffledQuestions = [];
     let score = 0; // will hold total points (float)
     let lastValidQuestionCount = 10; // Lưu số câu hợp lệ cuối cùng
+    
+    // Biến theo dõi cho mode random
+    let randomModeStats = {
+      totalAnswered: 0,  // Tổng số câu đã trả lời
+      totalCorrect: 0    // Tổng số câu trả lời đúng
+    };
 
     let userAnswers = []; // for each question:
     // - for mcq: userAnswers[i] = selectedIndex|null
@@ -1293,14 +1299,25 @@ const subjectData = {
       quizScreen.classList.remove('hidden');
       resultScreen.classList.add('hidden');
 
-      // Hiển thị input số câu nếu là mode full
+      // Hiển thị/ẩn input số câu và nút áp dụng nếu là mode full
       const customQuestionInput = document.getElementById('customQuestionInput');
+      const applyCustomCountBtn = document.getElementById('applyCustomCount');
+      const quizHeader = document.getElementById('quizHeader');
+      
       if (quizMode === 'full') {
         customQuestionInput.classList.remove('hidden');
         customQuestionInput.classList.add('flex');
+        applyCustomCountBtn.classList.remove('hidden');
+        // Mode full: flex-wrap để các phần tử tự xuống dòng
+        quizHeader.classList.remove('justify-between');
+        quizHeader.classList.add('flex-wrap');
       } else {
         customQuestionInput.classList.add('hidden');
         customQuestionInput.classList.remove('flex');
+        applyCustomCountBtn.classList.add('hidden');
+        // Mode random: justify-between để giãn đều
+        quizHeader.classList.remove('flex-wrap');
+        quizHeader.classList.add('justify-between');
       }
 
       // header info
@@ -1317,11 +1334,9 @@ const subjectData = {
         const pct = Math.round((answeredCount/Math.max(1,totalQuestions))*100);
         progressFill.style.width = pct + '%';
       } else {
-        if (shuffledQuestions[0].type === 'mcq') {
-          scoreInfo.textContent = `Đã trả lời: ${userAnswers[0] !== null ? 1 : 0}/1`;
-        } else {
-          scoreInfo.textContent = `Đã trả lời: ${userAnswers[0].some(x=>x!==null) ? 1 : 0}/1`;
-        }
+        // Mode random: không hiển thị countInfo, chỉ hiển thị số câu đúng/tổng đã trả lời
+        countInfo.textContent = '';
+        scoreInfo.textContent = `Đúng: ${randomModeStats.totalCorrect}/${randomModeStats.totalAnswered}`;
         progressFill.style.width = '0%';
       }
 
@@ -1686,6 +1701,11 @@ const subjectData = {
         if (q.type === 'mcq') {
           const isCorrect = userAnswers[0] === q.c;
           score = isCorrect ? 1 : 0;
+          
+          // Cập nhật stats cho mode random
+          randomModeStats.totalAnswered++;
+          if (isCorrect) randomModeStats.totalCorrect++;
+          
           quizContent.innerHTML = '';
           const qWrap = document.createElement('div');
           const qTitle = document.createElement('h3');
@@ -1714,12 +1734,19 @@ const subjectData = {
           quizCompleted = true;
           setSubmitState(false, 'Đã nộp');
           btnNext.classList.remove('hidden');
+          
+          // Cập nhật hiển thị scoreInfo
+          scoreInfo.textContent = `Đúng: ${randomModeStats.totalCorrect}/${randomModeStats.totalAnswered}`;
         } else {
           const userArr = userAnswers[0];
           let correctCount = 0;
           for (let i=0;i<4;i++) if (userArr[i] !== null && userArr[i] === q.answers[i]) correctCount++;
           const pts = tfPointsForCorrectCount(correctCount);
           score = pts;
+          
+          // Cập nhật stats cho mode random (xem câu TF đúng hoàn toàn mới tính là đúng)
+          randomModeStats.totalAnswered++;
+          if (pts === 1) randomModeStats.totalCorrect++;
 
           quizContent.innerHTML = '';
           const qWrap = document.createElement('div');
@@ -1752,6 +1779,9 @@ const subjectData = {
           quizCompleted = true;
           setSubmitState(false, 'Đã nộp');
           btnNext.classList.remove('hidden');
+          
+          // Cập nhật hiển thị scoreInfo
+          scoreInfo.textContent = `Đúng: ${randomModeStats.totalCorrect}/${randomModeStats.totalAnswered}`;
         }
       }
     });
@@ -1791,6 +1821,7 @@ btnRestart.addEventListener('click', () => {
       }
       currentSubject = null;
       quizStarted = false;
+      randomModeStats = { totalAnswered: 0, totalCorrect: 0 }; // Reset stats
       renderQuiz();
       return true;
     }
@@ -1807,6 +1838,7 @@ btnRestart.addEventListener('click', () => {
       quizStarted = false;
       quizCompleted = false;
       currentSubject = null;
+      randomModeStats = { totalAnswered: 0, totalCorrect: 0 }; // Reset stats
       renderQuiz();
     });
 
@@ -1820,6 +1852,9 @@ btnRestart.addEventListener('click', () => {
       const totalQuestions = subjectData.onsinh29126.questions ? subjectData.onsinh29126.questions.length : 0;
       subjectTitle.textContent = subjectData.onsinh29126.fullName || 'Ôn Sinh 29.1.26';
       fullModeDesc.textContent = `Chọn từ 1 đến ${totalQuestions} câu hỏi`;
+      
+      // Reset stats khi chọn subject mới
+      randomModeStats = { totalAnswered: 0, totalCorrect: 0 };
       
       // Cập nhật input và lưu giá trị hợp lệ
       const customInput = document.getElementById('customQuestionCount');
@@ -1837,6 +1872,9 @@ btnRestart.addEventListener('click', () => {
       const totalQuestions = subjectData.onhoa6226.questions ? subjectData.onhoa6226.questions.length : 0;
       subjectTitle.textContent = subjectData.onhoa6226.fullName || 'Ôn Hóa 6.2.26';
       fullModeDesc.textContent = `Chọn từ 1 đến ${totalQuestions} câu hỏi`;
+      
+      // Reset stats khi chọn subject mới
+      randomModeStats = { totalAnswered: 0, totalCorrect: 0 };
       
       // Cập nhật input và lưu giá trị hợp lệ
       const customInput = document.getElementById('customQuestionCount');
