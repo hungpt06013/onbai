@@ -124,7 +124,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2" />
                   </svg>
                 </div>
-                <h3 class="text-xl font-bold mb-2">Bài Test Đầy Đủ</h3>
+                <h3 class="text-xl font-bold mb-2">Bài Test Tùy Chỉnh</h3>
                 <p class="text-blue-100 text-sm mb-3" id="fullModeDesc"></p>
                 <div class="flex items-center justify-center gap-2 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">
                   <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -169,6 +169,17 @@
             </svg>
             <span class="font-medium">Trang chủ</span>
           </button>
+
+          <!-- Input số câu hỏi cho custom mode -->
+          <div id="customQuestionInput" class="hidden items-center gap-2 bg-blue-50 px-4 py-2 rounded-lg border border-blue-200">
+            <label class="text-sm font-medium text-gray-700">Số câu:</label>
+            <input type="number" id="customQuestionCount" 
+              class="w-16 px-2 py-1 rounded border border-gray-300 text-center font-semibold"
+              min="1" value="10" />
+            <button id="applyCustomCount" class="bg-blue-600 text-white px-3 py-1 rounded text-sm font-medium hover:bg-blue-700 transition-colors">
+              Áp dụng
+            </button>
+          </div>
 
           <div class="flex items-center gap-3">
             <button id="btnRestart" class="flex items-center gap-2 px-4 py-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors border border-blue-200" title="Làm lại bài test">
@@ -1156,6 +1167,7 @@ const subjectData = {
     let quizCompleted = false;
     let shuffledQuestions = [];
     let score = 0; // will hold total points (float)
+    let lastValidQuestionCount = 10; // Lưu số câu hợp lệ cuối cùng
 
     let userAnswers = []; // for each question:
     // - for mcq: userAnswers[i] = selectedIndex|null
@@ -1225,10 +1237,21 @@ const subjectData = {
     }
 
     // initialize quiz
-    function initializeQuiz(mode = 'full') {
+    function initializeQuiz(mode = 'full', customCount = null) {
       const allQ = subjectData[currentSubject].questions;
       if (mode === 'full') {
-        const shuffled = shuffleArray(allQ).map(q => {
+        // Nếu có customCount thì dùng, không thì lấy tất cả
+        let questionCount = customCount || allQ.length;
+        
+        // Validate số câu hỏi
+        if (questionCount < 1) questionCount = 1;
+        if (questionCount > allQ.length) questionCount = allQ.length;
+        
+        // Lưu số câu hợp lệ
+        lastValidQuestionCount = questionCount;
+        
+        // Shuffle và lấy số câu hỏi theo yêu cầu
+        const shuffled = shuffleArray(allQ).slice(0, questionCount).map(q => {
           if (q.type === 'mcq') return shuffleOptionsForMCQ(q);
           else return JSON.parse(JSON.stringify(q)); // tf unchanged
         });
@@ -1270,6 +1293,16 @@ const subjectData = {
       modeScreen.classList.add('hidden');
       quizScreen.classList.remove('hidden');
       resultScreen.classList.add('hidden');
+
+      // Hiển thị input số câu nếu là mode full
+      const customQuestionInput = document.getElementById('customQuestionInput');
+      if (quizMode === 'full') {
+        customQuestionInput.classList.remove('hidden');
+        customQuestionInput.classList.add('flex');
+      } else {
+        customQuestionInput.classList.add('hidden');
+        customQuestionInput.classList.remove('flex');
+      }
 
       // header info
       const totalQuestions = shuffledQuestions.length;
@@ -1785,21 +1818,69 @@ btnRestart.addEventListener('click', () => {
     
     selectOnSinh29126.addEventListener('click', () => {
       currentSubject = 'onsinh29126';
+      const totalQuestions = subjectData.onsinh29126.questions ? subjectData.onsinh29126.questions.length : 0;
       subjectTitle.textContent = subjectData.onsinh29126.fullName || 'Ôn Sinh 29.1.26';
-      fullModeDesc.textContent = `Làm hết ${subjectData.onsinh29126.questions ? subjectData.onsinh29126.questions.length : '...'} câu hỏi`;
+      fullModeDesc.textContent = `Chọn từ 1 đến ${totalQuestions} câu hỏi`;
+      
+      // Cập nhật input và lưu giá trị hợp lệ
+      const customInput = document.getElementById('customQuestionCount');
+      customInput.max = totalQuestions;
+      const defaultValue = Math.min(10, totalQuestions);
+      customInput.value = defaultValue;
+      lastValidQuestionCount = defaultValue;
+      
       subjectScreen.classList.add('hidden');
       modeScreen.classList.remove('hidden');
     });
 
     selectOnHoa6226.addEventListener('click', () => {
       currentSubject = 'onhoa6226';
+      const totalQuestions = subjectData.onhoa6226.questions ? subjectData.onhoa6226.questions.length : 0;
       subjectTitle.textContent = subjectData.onhoa6226.fullName || 'Ôn Hóa 6.2.26';
-      fullModeDesc.textContent = `Làm hết ${subjectData.onhoa6226.questions ? subjectData.onhoa6226.questions.length : '...'} câu hỏi`;
+      fullModeDesc.textContent = `Chọn từ 1 đến ${totalQuestions} câu hỏi`;
+      
+      // Cập nhật input và lưu giá trị hợp lệ
+      const customInput = document.getElementById('customQuestionCount');
+      customInput.max = totalQuestions;
+      const defaultValue = Math.min(10, totalQuestions);
+      customInput.value = defaultValue;
+      lastValidQuestionCount = defaultValue;
+      
       subjectScreen.classList.add('hidden');
       modeScreen.classList.remove('hidden');
     });
 
-    startFullBtn.addEventListener('click', () => initializeQuiz('full'));
+    startFullBtn.addEventListener('click', () => {
+      // Khi click vào nút "Bài Test Tùy Chỉnh", chuyển sang màn quiz với input số câu
+      const customInput = document.getElementById('customQuestionCount');
+      const totalQuestions = subjectData[currentSubject].questions.length;
+      customInput.max = totalQuestions;
+      customInput.value = Math.min(10, totalQuestions);
+      initializeQuiz('full', parseInt(customInput.value));
+    });
+    
+    // Handler cho nút "Áp dụng" số câu hỏi
+    const applyCustomCountBtn = document.getElementById('applyCustomCount');
+    applyCustomCountBtn.addEventListener('click', () => {
+      if (quizStarted && !quizCompleted) {
+        const ok = confirm('Thay đổi số câu sẽ làm mới bài test. Bạn có chắc không?');
+        if (!ok) return;
+      }
+      const customInput = document.getElementById('customQuestionCount');
+      const newCount = parseInt(customInput.value);
+      const totalQuestions = subjectData[currentSubject].questions.length;
+      
+      // Validate
+      if (newCount < 1 || newCount > totalQuestions) {
+        alert(`Số câu phải từ 1 đến ${totalQuestions}`);
+        // Khôi phục giá trị hợp lệ trước đó
+        customInput.value = lastValidQuestionCount;
+        return;
+      }
+      
+      initializeQuiz('full', newCount);
+    });
+    
     startRandomBtn.addEventListener('click', () => initializeQuiz('random'));
 
     // beforeunload warning
