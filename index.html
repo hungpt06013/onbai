@@ -84,6 +84,19 @@
                 <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">60 câu hỏi</div>
               </div>
             </button>
+
+            <button id="selectOnDia6326" class="group relative overflow-hidden bg-gradient-to-br from-orange-500 to-amber-600 text-white p-8 rounded-xl hover:from-orange-600 hover:to-amber-700 transition-all transform hover:scale-[1.02] shadow-lg">
+              <div class="relative z-10">
+                <div class="flex items-center justify-center mb-4">
+                  <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Ôn Địa 6.3.26</h3>
+                <p class="text-orange-100 text-sm">ĐGTX</p>
+                <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">20 câu hỏi</div>
+              </div>
+            </button>
           </div>
         </div>
       </div>
@@ -191,6 +204,10 @@
 
           <div id="countInfo" class="text-sm font-semibold text-gray-500 whitespace-nowrap"></div>
           
+          <button id="btnHint" class="hidden items-center gap-1 px-3 py-2 bg-yellow-400 hover:bg-yellow-500 text-yellow-900 rounded-lg border border-yellow-500 font-medium text-sm whitespace-nowrap transition-colors">
+            💡 <span id="btnHintLabel">Gợi ý</span>
+          </button>
+
           <div id="scoreInfo" class="ml-auto text-lg font-bold text-blue-600 whitespace-nowrap"></div>
         </div>
 
@@ -1161,13 +1178,42 @@ const subjectData = {
   }
 };
 
+const diaQuestions = [
+  { type:'mcq', q:'Đặc điểm phân bố chung của các môi trường tự nhiên ở Châu Phi là gì?', o:['Tập trung chủ yếu ở phía Bắc.','Tập trung chủ yếu ở phía Nam.','Đối xứng qua đường Xích đạo.','Phân bố không theo quy luật.'], c:2, hint:'Chú ý đến quy luật phân bố của các đới khí hậu từ Xích đạo về hai cực.', explain:'Các môi trường tự nhiên ở Châu Phi đối xứng qua Xích đạo, tương ứng với các đới khí hậu phân bố từ xích đạo ra hai cực.' },
+  { type:'mcq', q:'Vấn đề môi trường nào đang được quan tâm hàng đầu tại các môi trường tự nhiên Châu Phi hiện nay?', o:['Ô nhiễm tiếng ồn đô thị.','Suy giảm tài nguyên rừng, săn bắt và buôn bán động vật hoang dã.','Rác thải nhựa đại dương.','Khai thác khoáng sản quá mức.'], c:1, hint:'Đây là vấn đề chung được nêu cho tất cả các môi trường ở Châu Phi.', explain:'Suy giảm tài nguyên rừng, săn bắt và buôn bán động vật hoang dã là vấn đề môi trường chung được quan tâm hàng đầu ở Châu Phi.' },
+  { type:'mcq', q:'Môi trường Xích đạo ở Châu Phi bao gồm những khu vực nào?', o:['Bồn địa Công gô và vùng vịnh Ghi nê.','Hoang mạc Sa-ha-ra.','Dãy núi Át-lát.','Vùng cực Nam Châu Phi.'], c:0, hint:'Tìm các khu vực nằm ngay trên hoặc sát đường vĩ độ 0 độ.', explain:'Môi trường Xích đạo phân bố ở bồn địa Công gô và vùng vịnh Ghi nê — là những vùng nằm sát đường xích đạo.' },
+  { type:'mcq', q:'Kiểu khí hậu đặc trưng của môi trường Xích đạo là gì?', o:['Khô hạn quanh năm.','Mùa hạ nóng khô, mùa đông nóng ẩm.','Khí hậu xích đạo và cận xích đạo.','Khí hậu ôn đới hải dương.'], c:2, hint:'Tên môi trường thường được đặt theo kiểu khí hậu chính của nó.', explain:'Khí hậu của môi trường Xích đạo là khí hậu xích đạo và cận xích đạo — nóng ẩm và mưa nhiều quanh năm.' },
+  { type:'mcq', q:'Đặc điểm sông ngòi ở môi trường Xích đạo Châu Phi như thế nào?', o:['Sông ít nước, thường xuyên cạn kiệt.','Mạng lưới sông dày đặc, nhiều nước quanh năm.','Sông chỉ có nước vào mùa mưa.','Không có hệ thống sông lớn.'], c:1, hint:'Lượng mưa lớn ở vùng vĩ độ thấp cung cấp nguồn nước dồi dào cho sông.', explain:'Môi trường Xích đạo có lượng mưa lớn quanh năm nên sông ngòi dày đặc và nhiều nước quanh năm.' },
+  { type:'mcq', q:'Loại đất nào ở môi trường Xích đạo màu mỡ, thích hợp cho hoạt động sản xuất và trồng trọt?', o:['Đất xám hoang mạc.','Đất cát ven biển.','Đất đỏ vàng (Feralit).','Đất màu mỡ đặc trưng của vùng.'], c:3, hint:'Môi trường Xích đạo có điều kiện nhiệt ẩm lý tưởng tạo nên loại đất rất tốt cho cây trồng.', explain:'Đất ở môi trường Xích đạo màu mỡ và đặc trưng của vùng, rất thích hợp cho hoạt động sản xuất và trồng trọt nhờ điều kiện nhiệt ẩm lý tưởng.' },
+  { type:'mcq', q:'Môi trường Nhiệt đới nằm ở vị trí nào so với môi trường Xích đạo?', o:['Chỉ nằm ở phía Bắc.','Chỉ nằm ở phía Nam.','Nằm ở hai bên môi trường Xích đạo.','Nằm xen kẽ trong các hoang mạc.'], c:2, hint:'Môi trường này bao quanh khu vực bồn địa Công gô và vịnh Ghi nê.', explain:'Môi trường Nhiệt đới nằm ở hai bên (Bắc và Nam) môi trường Xích đạo, bao quanh vùng trung tâm xích đạo.' },
+  { type:'mcq', q:'Khí hậu của môi trường Nhiệt đới có đặc điểm gì nổi bật?', o:['Lạnh giá quanh năm.','Nóng.','Ôn hòa, mát mẻ.','Khô lạnh.'], c:1, hint:'Đây là đặc trưng chung của đới khí hậu nằm giữa chí tuyến và xích đạo.', explain:'Đặc điểm khí hậu nổi bật nhất của môi trường Nhiệt đới là nóng, với nhiệt độ cao quanh năm.' },
+  { type:'mcq', q:'Chế độ nước của sông ngòi ở môi trường Nhiệt đới có đặc điểm gì?', o:['Nhiều nước quanh năm.','Khá lớn, thay đổi theo mùa.','Không có dòng chảy thường xuyên.','Đóng băng vào mùa đông.'], c:1, hint:'Sự phân mùa mưa - khô rõ rệt ảnh hưởng trực tiếp đến mực nước sông.', explain:'Sông ở môi trường Nhiệt đới có lượng nước khá lớn nhưng thay đổi theo mùa do sự phân mùa mưa - khô rõ rệt.' },
+  { type:'mcq', q:'Loại đất nào đặc trưng của môi trường Nhiệt đới, thuận lợi cho phát triển nông nghiệp?', o:['Đất đen.','Đất đỏ vàng.','Đất phù sa sông.','Đất nghèo dinh dưỡng.'], c:1, hint:'Loại đất này có màu sắc đặc trưng do quá trình tích tụ oxit sắt và nhôm.', explain:'Đất đỏ vàng (Feralit) là loại đất đặc trưng của môi trường Nhiệt đới, hình thành do tích tụ oxit sắt và nhôm, thuận lợi cho nông nghiệp.' },
+  { type:'mcq', q:'Môi trường nào chiếm diện tích lớn nhất ở Châu Phi?', o:['Môi trường Xích đạo.','Môi trường Nhiệt đới.','Môi trường Hoang mạc.','Môi trường Cận nhiệt.'], c:2, hint:'Châu Phi nổi tiếng với những hoang mạc khổng lồ như Sa-ha-ra hay Na-míp.', explain:'Môi trường Hoang mạc chiếm diện tích lớn nhất ở Châu Phi, với Sa-ha-ra là hoang mạc lớn nhất thế giới.' },
+  { type:'mcq', q:'Khí hậu môi trường Hoang mạc Châu Phi có tính chất gì?', o:['Nóng ẩm.','Khô, nóng.','Lạnh khô.','Mát mẻ quanh năm.'], c:1, hint:'Hãy nhớ đến đặc tính của các vùng nội địa và vùng có dòng biển lạnh đi qua.', explain:'Khí hậu môi trường Hoang mạc đặc trưng bởi tính chất khô và nóng — lượng mưa cực ít, nhiệt độ ban ngày rất cao.' },
+  { type:'mcq', q:'Sinh vật ở môi trường Hoang mạc có đặc điểm như thế nào?', o:['Phát triển rậm rạp.','Nhiều loài động vật lớn.','Kém phát triển, nghèo nàn.','Đa dạng bậc nhất châu lục.'], c:2, hint:'Điều kiện cực kỳ thiếu nước sẽ hạn chế sự sống của các loài thực, động vật.', explain:'Do khí hậu khắc nghiệt và thiếu nước trầm trọng, sinh vật ở hoang mạc kém phát triển và nghèo nàn về số lượng loài.' },
+  { type:'mcq', q:'Sông ngòi ở vùng Hoang mạc Châu Phi có đặc điểm gì?', o:['Kém phát triển.','Mạng lưới dày đặc.','Chảy quanh năm với lưu lượng lớn.','Có nhiều phụ lưu lớn.'], c:0, hint:'Sông ngòi cần nguồn cung cấp từ mưa, mà ở đây mưa rất ít.', explain:'Hệ thống sông ngòi ở hoang mạc kém phát triển do lượng mưa cực thấp, không đủ nguồn nước nuôi dưỡng sông.' },
+  { type:'mcq', q:'Môi trường Cận nhiệt phân bố ở khu vực nào của Châu Phi?', o:['Toàn bộ phía Tây.','Một phần nhỏ lãnh thổ phía bắc và nam.','Trung tâm Châu Phi.','Ven vịnh Ghi nê.'], c:1, hint:'Đây là những vùng nằm ở rìa phía Bắc (giáp Địa Trung Hải) và cực Nam.', explain:'Môi trường Cận nhiệt phân bố ở phần nhỏ lãnh thổ phía Bắc (ven Địa Trung Hải) và cực Nam Châu Phi.' },
+  { type:'mcq', q:'Đặc điểm khí hậu mùa hạ của môi trường Cận nhiệt Châu Phi là:', o:['Nóng ẩm, mưa nhiều.','Nóng khô.','Mát mẻ, có tuyết.','Lạnh giá.'], c:1, hint:'Đặc điểm này làm cho các cây rừng ở đây phải có lá cứng để chống thoát hơi nước.', explain:'Mùa hạ ở môi trường Cận nhiệt có đặc điểm nóng và khô, khiến thực vật phải thích nghi bằng lá cứng giữ nước.' },
+  { type:'mcq', q:'Hệ sinh thái rừng đặc trưng của môi trường Cận nhiệt là gì?', o:['Rừng rậm nhiệt đới.','Xavan cây bụi.','Rừng lá cứng Địa trung Hải.','Rừng lá kim.'], c:2, hint:'Hệ thực vật này mang tên của vùng biển ngăn cách Châu Âu và Châu Phi.', explain:'Rừng lá cứng Địa Trung Hải là sinh vật đặc trưng của môi trường Cận nhiệt — thực vật có lá cứng chống thoát hơi nước mùa khô.' },
+  { type:'mcq', q:'Sông ngòi ở môi trường Cận nhiệt được đánh giá như thế nào?', o:['Rất phát triển.','Ít phát triển.','Nhiều nước quanh năm.','Có mạng lưới dày đặc nhất.'], c:1, hint:'Diện tích hẹp và lượng mưa không quá lớn khiến mạng lưới sông ở đây không dày.', explain:'Sông ngòi ở vùng Cận nhiệt Châu Phi ít phát triển do diện tích hẹp và lượng mưa không đủ lớn.' },
+  { type:'mcq', q:'Sự khác biệt về sông ngòi giữa môi trường Xích đạo và môi trường Hoang mạc là:', o:['Hoang mạc nhiều nước hơn Xích đạo.','Xích đạo dày đặc, Hoang mạc kém phát triển.','Cả hai đều kém phát triển như nhau.','Xích đạo ít nước, Hoang mạc nhiều nước.'], c:1, hint:'Hãy so sánh lượng mưa giữa vùng mưa nhiều nhất và vùng gần như không mưa.', explain:'Môi trường Xích đạo có sông dày đặc nhờ mưa lớn quanh năm, trong khi hoang mạc gần như không mưa nên sông kém phát triển.' },
+  { type:'mcq', q:'Môi trường Nhiệt đới có hệ sinh thái đặc trưng là:', o:['Hoang mạc cát.','Rừng.','Rừng lá cứng.','Băng tuyết.'], c:1, hint:'Trong bảng tóm tắt, sinh vật của môi trường nhiệt đới được ghi rõ là gì?', explain:'Hệ sinh thái đặc trưng của môi trường Nhiệt đới là rừng, đặc biệt là xavan và rừng thưa nhiệt đới.' }
+];
+
+subjectData.ondia6326 = { fullName: 'Ôn Địa 6.3.26', questions: diaQuestions };
+
     let currentSubject = null;
     let quizMode = null;
     let quizStarted = false;
     let quizCompleted = false;
     let shuffledQuestions = [];
-    let score = 0; // will hold total points (float)
-    let lastValidQuestionCount = 10; // Lưu số câu hợp lệ cuối cùng
+    let score = 0;
+    let lastValidQuestionCount = 10;
+    
+    // Hint state
+    let hintsUsed = {};       // { qi: true } for full mode
+    let randomHintUsed = false; // for random mode
     
     // Biến theo dõi cho mode random
     let randomModeStats = {
@@ -1237,7 +1283,9 @@ const subjectData = {
         type: 'mcq',
         q: question.q,
         o: sh.map(x => x.t),
-        c: sh.findIndex(x => x.idx === question.c)
+        c: sh.findIndex(x => x.idx === question.c),
+        hint: question.hint || null,
+        explain: question.explain || null
       };
       return newQ;
     }
@@ -1276,6 +1324,8 @@ const subjectData = {
       quizStarted = true;
       quizCompleted = false;
       score = 0;
+      hintsUsed = {};
+      randomHintUsed = false;
       renderQuiz();
     }
 
@@ -1309,16 +1359,26 @@ const subjectData = {
         customQuestionInput.classList.remove('hidden');
         customQuestionInput.classList.add('flex');
         applyCustomCountBtn.classList.remove('hidden');
-        // Mode full: flex-wrap để các phần tử tự xuống dòng
         quizHeader.classList.remove('justify-between');
         quizHeader.classList.add('flex-wrap');
       } else {
         customQuestionInput.classList.add('hidden');
         customQuestionInput.classList.remove('flex');
         applyCustomCountBtn.classList.add('hidden');
-        // Mode random: justify-between để giãn đều
         quizHeader.classList.remove('flex-wrap');
         quizHeader.classList.add('justify-between');
+      }
+
+      // Hiện/ẩn nút Gợi ý (chỉ với môn có hint, và chưa completed)
+      const btnHintEl = document.getElementById('btnHint');
+      const hasHints = shuffledQuestions.length > 0 && !!shuffledQuestions[0].hint;
+      if (hasHints && !quizCompleted) {
+        btnHintEl.style.display = (quizMode === 'random') ? 'flex' : 'none';
+        if (quizMode === 'random') {
+          document.getElementById('btnHintLabel').textContent = randomHintUsed ? 'Ẩn gợi ý' : 'Gợi ý';
+        }
+      } else {
+        btnHintEl.style.display = 'none';
       }
 
       // header info
@@ -1354,8 +1414,34 @@ const subjectData = {
           const qTitle = document.createElement('h3');
           qTitle.className = 'text-lg font-semibold mb-3';
           qTitle.innerHTML = `Câu ${qi+1}. ${processQuestionText(q.q)}`;
-
           qWrap.appendChild(qTitle);
+
+          // Per-question hint (full mode)
+          if (q.hint) {
+            const hintBox = document.createElement('div');
+            hintBox.id = 'hintbox-' + qi;
+            hintBox.style.display = hintsUsed[qi] ? 'block' : 'none';
+            hintBox.className = 'mb-2 p-3 bg-yellow-50 border border-yellow-300 rounded-lg text-sm text-yellow-900';
+            hintBox.innerHTML = `💡 <strong>Gợi ý:</strong> ${q.hint} &nbsp;<span style="color:red;font-size:11px">(câu này không tính điểm)</span>`;
+            qWrap.appendChild(hintBox);
+
+            const hintBtn = document.createElement('button');
+            hintBtn.type = 'button';
+            hintBtn.className = 'mb-3 text-xs px-3 py-1 rounded-full border border-yellow-400 text-yellow-800 bg-yellow-50 hover:bg-yellow-100 transition-colors font-medium';
+            hintBtn.textContent = hintsUsed[qi] ? 'Ẩn gợi ý' : '💡 Xem gợi ý (mất điểm câu này)';
+            hintBtn.addEventListener('click', () => {
+              if (!hintsUsed[qi]) {
+                hintsUsed[qi] = true;
+                hintBox.style.display = 'block';
+                hintBtn.textContent = 'Ẩn gợi ý';
+              } else {
+                const showing = hintBox.style.display !== 'none';
+                hintBox.style.display = showing ? 'none' : 'block';
+                hintBtn.textContent = showing ? '💡 Xem gợi ý (mất điểm câu này)' : 'Ẩn gợi ý';
+              }
+            });
+            qWrap.appendChild(hintBtn);
+          }
 
           if (q.type === 'mcq') {
             const opts = document.createElement('div');
@@ -1380,6 +1466,7 @@ const subjectData = {
                   opts.querySelectorAll('button').forEach(b => b.classList.remove('border-blue-500', 'bg-blue-50'));
                   btn.classList.add('border-blue-500', 'bg-blue-50');
                 }
+
                 const answeredCount = shuffledQuestions.reduce((acc, q2, i2) => {
                   if (q2.type === 'mcq') return acc + (userAnswers[i2] !== null ? 1 : 0);
                   else return acc + (userAnswers[i2].some(x=>x!==null) ? 1 : 0);
@@ -1479,6 +1566,16 @@ const subjectData = {
         qTitle.className = 'text-2xl font-bold text-gray-800 mb-6';
         qTitle.innerHTML = processQuestionText(q.q);
         qWrap.appendChild(qTitle);
+
+        // Random mode hint panel (controlled by header btn)
+        if (q.hint) {
+          const hintBox = document.createElement('div');
+          hintBox.id = 'random-hint-box';
+          hintBox.style.display = randomHintUsed ? 'block' : 'none';
+          hintBox.className = 'mb-4 p-3 bg-yellow-50 border border-yellow-300 rounded-lg text-sm text-yellow-900';
+          hintBox.innerHTML = `💡 <strong>Gợi ý:</strong> ${q.hint} &nbsp;<span style="color:red;font-size:11px">(câu này không tính điểm)</span>`;
+          qWrap.appendChild(hintBox);
+        }
 
         if (q.type === 'mcq') {
           const opts = document.createElement('div');
@@ -1601,6 +1698,7 @@ const subjectData = {
         let totalPoints = 0;
         let totalPossible = 0;
         shuffledQuestions.forEach((q, i) => {
+          if (hintsUsed[i]) return; // skip hinted questions
           if (q.type === 'mcq') {
             totalPossible += 1;
             if (userAnswers[i] === q.c) totalPoints += 1;
@@ -1619,12 +1717,19 @@ const subjectData = {
 
         score = totalPoints;
         quizCompleted = true;
+        // hide hint button
+        document.getElementById('btnHint').style.display = 'none';
 
         quizContent.innerHTML = '';
         const summary = document.createElement('div');
         summary.className = 'mb-6 p-4 rounded-lg border bg-gray-50';
-        const pct = Math.round((totalPoints/totalPossible)*100);
-        summary.innerHTML = `<div class="text-center"><div class="text-3xl font-bold text-blue-600">${(Math.round(totalPoints*100)/100)}/${totalPossible}</div><div class="text-lg text-gray-600">Điểm số: ${pct}%</div></div>`;
+        const pct = totalPossible > 0 ? Math.round((totalPoints/totalPossible)*100) : 0;
+        const hintedCount = Object.keys(hintsUsed).length;
+        summary.innerHTML = `<div class="text-center">
+          <div class="text-3xl font-bold text-blue-600">${Math.round(totalPoints*100)/100}/${totalPossible}</div>
+          <div class="text-lg text-gray-600">Điểm số: ${pct}%</div>
+          ${hintedCount > 0 ? `<div class="text-sm text-red-500 mt-1">⚠️ ${hintedCount} câu đã dùng gợi ý (không tính điểm)</div>` : ''}
+        </div>`;
         quizContent.appendChild(summary);
 
         shuffledQuestions.forEach((q, qi) => {
@@ -1633,8 +1738,15 @@ const subjectData = {
           const qTitle = document.createElement('h3');
           qTitle.className = 'text-lg font-semibold mb-3';
           qTitle.innerHTML = `Câu ${qi+1}. ${processQuestionText(q.q)}`;
-
           qWrap.appendChild(qTitle);
+
+          // Show hint-used notice
+          if (hintsUsed[qi]) {
+            const hw = document.createElement('div');
+            hw.className = 'mb-2 text-xs text-red-500 font-semibold';
+            hw.textContent = '⚠️ Câu này đã dùng gợi ý — không tính điểm.';
+            qWrap.appendChild(hw);
+          }
 
           if (q.type === 'mcq') {
             const opts = document.createElement('div');
@@ -1645,14 +1757,14 @@ const subjectData = {
               if (oi === q.c) {
                 if (userAnswers[qi] === q.c) {
                   div.classList.add('border-green-500','bg-green-50');
-                  div.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="text-green-700 font-semibold">ĐÚNG</span>`;
+                  div.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="text-green-700 font-semibold">✓ ĐÚNG</span>`;
                 } else {
-                  div.classList.add('border-gray-200');
-                  div.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="text-gray-600">Đáp án đúng</span>`;
+                  div.classList.add('border-green-300','bg-green-50');
+                  div.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="text-green-600">Đáp án đúng</span>`;
                 }
               } else if (userAnswers[qi] === oi) {
                 div.classList.add('border-red-500','bg-red-50');
-                div.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="text-red-700 font-semibold">SAI</span>`;
+                div.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="text-red-700 font-semibold">✗ SAI</span>`;
               } else {
                 div.classList.add('border-gray-200');
                 div.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span></span>`;
@@ -1690,23 +1802,30 @@ const subjectData = {
             qWrap.appendChild(ptsDiv);
           }
 
+          // Explanation block
+          if (q.explain) {
+            const exDiv = document.createElement('div');
+            exDiv.className = 'mt-3 p-3 bg-blue-50 border border-blue-200 rounded-lg text-sm text-blue-900';
+            exDiv.innerHTML = `📝 <strong>Giải thích:</strong> ${q.explain}`;
+            qWrap.appendChild(exDiv);
+          }
+
           quizContent.appendChild(qWrap);
         });
 
         setSubmitState(false, 'Đã nộp');
         btnNext.classList.add('hidden');
       } else {
+        // ===== RANDOM MODE =====
         if (userAnswers[0] === null || (Array.isArray(userAnswers[0]) && !userAnswers[0].some(x=>x!==null))) return;
 
         const q = shuffledQuestions[0];
         if (q.type === 'mcq') {
           const isCorrect = userAnswers[0] === q.c;
           score = isCorrect ? 1 : 0;
-          
-          // Cập nhật stats cho mode random
           randomModeStats.totalAnswered++;
-          if (isCorrect) randomModeStats.totalCorrect++;
-          
+          if (isCorrect && !randomHintUsed) randomModeStats.totalCorrect++;
+
           quizContent.innerHTML = '';
           const qWrap = document.createElement('div');
           const qTitle = document.createElement('h3');
@@ -1714,16 +1833,16 @@ const subjectData = {
           qTitle.innerHTML = processQuestionText(q.q);
           qWrap.appendChild(qTitle);
           const opts = document.createElement('div');
-          opts.className = 'space-y-3 mb-6';
+          opts.className = 'space-y-3 mb-4';
           q.o.forEach((opt, idx) => {
             const div = document.createElement('div');
             div.className = 'w-full text-left p-4 rounded-lg border-2 transition-all mb-1 flex items-center justify-between';
             if (idx === q.c) {
               div.classList.add('border-green-500','bg-green-50');
-              div.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="text-green-700 font-semibold">ĐÚNG</span>`;
+              div.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="text-green-700 font-semibold">✓ ĐÚNG</span>`;
             } else if (userAnswers[0] === idx && idx !== q.c) {
               div.classList.add('border-red-500','bg-red-50');
-              div.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="text-red-700 font-semibold">SAI — Đáp án là: ${q.o[q.c]}</span>`;
+              div.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="text-red-700 font-semibold">✗ SAI</span>`;
             } else {
               div.classList.add('border-gray-200');
               div.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="icon-area"></span>`;
@@ -1731,12 +1850,23 @@ const subjectData = {
             opts.appendChild(div);
           });
           qWrap.appendChild(opts);
+          if (randomHintUsed) {
+            const hw = document.createElement('div');
+            hw.className = 'mb-3 text-xs text-red-500 font-semibold';
+            hw.textContent = '⚠️ Câu này đã dùng gợi ý — không tính điểm.';
+            qWrap.appendChild(hw);
+          }
+          if (q.explain) {
+            const exDiv = document.createElement('div');
+            exDiv.className = 'mt-2 p-3 bg-blue-50 border border-blue-200 rounded-lg text-sm text-blue-900';
+            exDiv.innerHTML = `📝 <strong>Giải thích:</strong> ${q.explain}`;
+            qWrap.appendChild(exDiv);
+          }
           quizContent.appendChild(qWrap);
           quizCompleted = true;
+          document.getElementById('btnHint').style.display = 'none';
           setSubmitState(false, 'Đã nộp');
           btnNext.classList.remove('hidden');
-          
-          // Cập nhật hiển thị scoreInfo
           scoreInfo.textContent = `Đúng: ${randomModeStats.totalCorrect}/${randomModeStats.totalAnswered}`;
         } else {
           const userArr = userAnswers[0];
@@ -1744,10 +1874,8 @@ const subjectData = {
           for (let i=0;i<4;i++) if (userArr[i] !== null && userArr[i] === q.answers[i]) correctCount++;
           const pts = tfPointsForCorrectCount(correctCount);
           score = pts;
-          
-          // Cập nhật stats cho mode random (xem câu TF đúng hoàn toàn mới tính là đúng)
           randomModeStats.totalAnswered++;
-          if (pts === 1) randomModeStats.totalCorrect++;
+          if (pts === 1 && !randomHintUsed) randomModeStats.totalCorrect++;
 
           quizContent.innerHTML = '';
           const qWrap = document.createElement('div');
@@ -1755,7 +1883,7 @@ const subjectData = {
           qTitle.className = 'text-2xl font-bold text-gray-800 mb-6';
           qTitle.innerHTML = processQuestionText(q.q);
           qWrap.appendChild(qTitle);
-          const list = document.createElement('div'); list.className = 'space-y-3 mb-6';
+          const list = document.createElement('div'); list.className = 'space-y-3 mb-4';
           q.statements.forEach((stmt,sidx) => {
             const div = document.createElement('div');
             div.className = 'w-full text-left p-4 rounded-lg border-2 transition-all mb-1 flex items-center justify-between';
@@ -1774,14 +1902,25 @@ const subjectData = {
             list.appendChild(div);
           });
           qWrap.appendChild(list);
-          const ptsDiv = document.createElement('div'); ptsDiv.className = 'text-sm font-semibold'; ptsDiv.textContent = `Điểm đạt được: ${pts}`;
+          const ptsDiv = document.createElement('div'); ptsDiv.className = 'text-sm font-semibold mb-3'; ptsDiv.textContent = `Điểm đạt được: ${pts}`;
           qWrap.appendChild(ptsDiv);
+          if (randomHintUsed) {
+            const hw = document.createElement('div');
+            hw.className = 'mb-3 text-xs text-red-500 font-semibold';
+            hw.textContent = '⚠️ Câu này đã dùng gợi ý — không tính điểm.';
+            qWrap.appendChild(hw);
+          }
+          if (q.explain) {
+            const exDiv = document.createElement('div');
+            exDiv.className = 'mt-2 p-3 bg-blue-50 border border-blue-200 rounded-lg text-sm text-blue-900';
+            exDiv.innerHTML = `📝 <strong>Giải thích:</strong> ${q.explain}`;
+            qWrap.appendChild(exDiv);
+          }
           quizContent.appendChild(qWrap);
           quizCompleted = true;
+          document.getElementById('btnHint').style.display = 'none';
           setSubmitState(false, 'Đã nộp');
           btnNext.classList.remove('hidden');
-          
-          // Cập nhật hiển thị scoreInfo
           scoreInfo.textContent = `Đúng: ${randomModeStats.totalCorrect}/${randomModeStats.totalAnswered}`;
         }
       }
@@ -1790,6 +1929,22 @@ const subjectData = {
     // Next button (random mode)
     btnNext.addEventListener('click', () => {
       if (quizMode === 'random') initializeQuiz('random');
+    });
+
+    // Hint button (header) — controls random mode hint panel
+    document.getElementById('btnHint').addEventListener('click', () => {
+      if (quizMode !== 'random') return;
+      const hintBox = document.getElementById('random-hint-box');
+      if (!hintBox) return;
+      if (!randomHintUsed) {
+        randomHintUsed = true;
+        hintBox.style.display = 'block';
+        document.getElementById('btnHintLabel').textContent = 'Ẩn gợi ý';
+      } else {
+        const showing = hintBox.style.display !== 'none';
+        hintBox.style.display = showing ? 'none' : 'block';
+        document.getElementById('btnHintLabel').textContent = showing ? 'Gợi ý' : 'Ẩn gợi ý';
+      }
     });
 
     // Restart / navigation handlers
@@ -1873,17 +2028,27 @@ btnRestart.addEventListener('click', () => {
       const totalQuestions = subjectData.onhoa6226.questions ? subjectData.onhoa6226.questions.length : 0;
       subjectTitle.textContent = subjectData.onhoa6226.fullName || 'Ôn Hóa 5.2.26';
       fullModeDesc.textContent = `Chọn từ 1 đến ${totalQuestions} câu hỏi`;
-      
-      // Reset stats khi chọn subject mới
       randomModeStats = { totalAnswered: 0, totalCorrect: 0 };
-      
-      // Cập nhật input và lưu giá trị hợp lệ
       const customInput = document.getElementById('customQuestionCount');
       customInput.max = totalQuestions;
       const defaultValue = Math.min(10, totalQuestions);
       customInput.value = defaultValue;
       lastValidQuestionCount = defaultValue;
-      
+      subjectScreen.classList.add('hidden');
+      modeScreen.classList.remove('hidden');
+    });
+
+    document.getElementById('selectOnDia6326').addEventListener('click', () => {
+      currentSubject = 'ondia6326';
+      const totalQuestions = subjectData.ondia6326.questions.length;
+      subjectTitle.textContent = subjectData.ondia6326.fullName;
+      fullModeDesc.textContent = `Chọn từ 1 đến ${totalQuestions} câu hỏi`;
+      randomModeStats = { totalAnswered: 0, totalCorrect: 0 };
+      const customInput = document.getElementById('customQuestionCount');
+      customInput.max = totalQuestions;
+      const defaultValue = Math.min(10, totalQuestions);
+      customInput.value = defaultValue;
+      lastValidQuestionCount = defaultValue;
       subjectScreen.classList.add('hidden');
       modeScreen.classList.remove('hidden');
     });
