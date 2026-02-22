@@ -7,13 +7,19 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="antialiased bg-gradient-to-br from-blue-50 to-green-50 min-h-screen p-6">
-<div style="position:fixed;top:10px;right:10px;z-index:9999;background:rgba(0,0,0,0.8);color:white;padding:10px 20px;border-radius:20px;display:flex;align-items:center;gap:8px;box-shadow:0 4px 12px rgba(0,0,0,0.3);">
-  <svg width="12" height="12" style="animation:blink 1.5s infinite;">
-    <circle cx="6" cy="6" r="6" fill="#22c55e"/>
-  </svg>
-  <span style="font-size:14px;font-weight:600;">
-    <span id="onlineCount">0</span> người đang online
-  </span>
+<div style="position:fixed;top:10px;right:10px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:8px;">
+  <div style="background:rgba(0,0,0,0.8);color:white;padding:10px 20px;border-radius:20px;display:flex;align-items:center;gap:8px;box-shadow:0 4px 12px rgba(0,0,0,0.3);">
+    <svg width="12" height="12" style="animation:blink 1.5s infinite;">
+      <circle cx="6" cy="6" r="6" fill="#22c55e"/>
+    </svg>
+    <span style="font-size:14px;font-weight:600;">
+      <span id="onlineCount">0</span> người đang online
+    </span>
+  </div>
+  <button id="darkModeToggle" onclick="toggleDarkMode()" style="background:rgba(0,0,0,0.8);color:white;padding:8px 16px;border-radius:20px;border:none;cursor:pointer;font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px;box-shadow:0 4px 12px rgba(0,0,0,0.3);">
+    <span id="darkModeIcon">🌙</span>
+    <span id="darkModeLabel">Dark Mode</span>
+  </button>
 </div>
 
 <style>
@@ -21,17 +27,105 @@
   0%, 100% { opacity: 1; }
   50% { opacity: 0.3; }
 }
+
+/* Dark mode styles */
+body.dark {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%) !important;
+  color: #e2e8f0;
+}
+body.dark .bg-white { background-color: #1e2535 !important; }
+body.dark .bg-gray-50 { background-color: #252d3d !important; }
+body.dark .bg-blue-50 { background-color: #1e3a5f !important; }
+body.dark .bg-green-50 { background-color: #1a3a2a !important; }
+body.dark .bg-red-50 { background-color: #3a1a1a !important; }
+body.dark .bg-yellow-50 { background-color: #3a2e0a !important; }
+body.dark .border-yellow-300 { border-color: #854d0e !important; }
+body.dark .text-yellow-900 { color: #fef08a !important; }
+body.dark .text-yellow-800 { color: #fde047 !important; }
+body.dark .border-yellow-400 { border-color: #854d0e !important; }
+body.dark .text-yellow-700 { color: #fde047 !important; }
+/* Explain boxes in dark mode */
+body.dark .bg-blue-50 { background-color: #1e3a5f !important; }
+body.dark .border-blue-200 { border-color: #1d4ed8 !important; }
+body.dark .text-blue-900 { color: #93c5fd !important; }
+
+/* Hint button light mode */
+.hint-btn {
+  background: #fef3c7;
+  color: #92400e;
+  border-color: #f59e0b;
+}
+.hint-btn:hover {
+  background: #fde68a;
+}
+/* Hint button dark mode */
+body.dark .hint-btn {
+  background: #3a2e0a !important;
+  color: #fde68a !important;
+  border-color: #b45309 !important;
+}
+body.dark .hint-btn:hover {
+  background: #4a3a10 !important;
+}
+
+/* Hint box base (light mode) */
+.hint-box {
+  background-color: #fffbeb;
+  border: 1px solid #f59e0b;
+  color: #92400e;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+/* Hint box dark mode */
+body.dark .hint-box {
+  background-color: #3a2e0a !important;
+  border-color: #b45309 !important;
+  color: #fde68a !important;
+}
+/* Explain box base (light mode) */
+.explain-box {
+  background-color: #f0f9ff;
+  border: 1px solid #7dd3fc;
+  color: #0369a1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-top: 10px;
+}
+/* Explain box dark mode */
+body.dark .explain-box {
+  background-color: #0f2942 !important;
+  border-color: #3b82f6 !important;
+  color: #e0f2fe !important;
+}
+body.dark .text-gray-800 { color: #e2e8f0 !important; }
+body.dark .text-gray-700 { color: #cbd5e1 !important; }
+body.dark .text-gray-600 { color: #94a3b8 !important; }
+body.dark .text-gray-500 { color: #64748b !important; }
+body.dark .border-gray-200 { border-color: #334155 !important; }
+body.dark .border-b { border-color: #334155 !important; }
+body.dark .border { border-color: #334155 !important; }
+body.dark .shadow-xl, body.dark .shadow-2xl, body.dark .shadow-lg { box-shadow: 0 4px 24px rgba(0,0,0,0.5) !important; }
+body.dark .rounded-3xl, body.dark .rounded-2xl { background-color: #1e2535; }
+body.dark input[type="number"] { background: #252d3d; color: #e2e8f0; border-color: #334155; }
+body.dark .bg-gray-300 { background-color: #374151 !important; }
+body.dark .text-gray-500 { color: #9ca3af !important; }
+body.dark .bg-blue-600 { background-color: #2563eb !important; }
 </style>
 
   <!-- SUBJECT SELECTION SCREEN -->
   <div id="subjectScreen" class="min-h-screen flex items-center justify-center">
     <div class="max-w-4xl mx-auto">
       <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
-	  <div class="relative z-50 p-3 rounded-lg border bg-white shadow-lg flex items-center gap-2">
-  <input type="checkbox" id="warningToggle" class="w-4 h-4" checked>
-  <label for="warningToggle" class="text-sm text-gray-700 cursor-pointer font-bold">
-    Cảnh báo khi nộp bài / thoát trang / reload
-  </label>
+	  <div class="relative z-50 p-3 rounded-lg border bg-white shadow-lg flex items-center gap-4 flex-wrap">
+  <div class="flex items-center gap-2">
+    <input type="checkbox" id="warningToggle" class="w-4 h-4" checked>
+    <label for="warningToggle" class="text-sm text-gray-700 cursor-pointer font-bold">
+      Cảnh báo khi nộp bài / thoát trang / reload
+    </label>
+  </div>
 </div>
         <!-- Spotify Player -->
         <div class="p-3">
@@ -204,17 +298,11 @@
 
           <div id="countInfo" class="text-sm font-semibold text-gray-500 whitespace-nowrap"></div>
           
-          <button id="btnHint" class="hidden items-center gap-1 px-3 py-2 bg-yellow-400 hover:bg-yellow-500 text-yellow-900 rounded-lg border border-yellow-500 font-medium text-sm whitespace-nowrap transition-colors">
+          <button id="btnHint" class="hint-btn hidden items-center gap-1 px-3 py-2 rounded-lg border font-medium text-sm whitespace-nowrap transition-colors">
             💡 <span id="btnHintLabel">Gợi ý</span>
           </button>
 
           <div id="scoreInfo" class="ml-auto text-lg font-bold text-blue-600 whitespace-nowrap"></div>
-        </div>
-
-        <div id="progressWrap" class="mb-6">
-          <div id="progressBar" class="w-full bg-gray-200 rounded-full h-2">
-            <div id="progressFill" class="bg-blue-600 h-2 rounded-full transition-all duration-300" style="width:0%"></div>
-          </div>
         </div>
 
         <div id="quizContent"></div>
@@ -1242,7 +1330,7 @@ subjectData.ondia6326 = { fullName: 'Ôn Địa 6.3.26', questions: diaQuestions
     const btnRestart = document.getElementById('btnRestart');
     const countInfo = document.getElementById('countInfo');
     const scoreInfo = document.getElementById('scoreInfo');
-    const progressFill = document.getElementById('progressFill');
+    const progressFill = { style: { width: '' } }; // removed progress bar
     const quizContent = document.getElementById('quizContent');
     const btnSubmit = document.getElementById('btnSubmit');
     const btnNext = document.getElementById('btnNext');
@@ -1421,7 +1509,7 @@ subjectData.ondia6326 = { fullName: 'Ôn Địa 6.3.26', questions: diaQuestions
             const hintBox = document.createElement('div');
             hintBox.id = 'hintbox-' + qi;
             hintBox.style.display = hintsUsed[qi] ? 'block' : 'none';
-            hintBox.className = 'mb-2 p-3 bg-yellow-50 border border-yellow-300 rounded-lg text-sm text-yellow-900';
+            hintBox.className = 'hint-box';
             hintBox.innerHTML = `💡 <strong>Gợi ý:</strong> ${q.hint} &nbsp;<span style="color:red;font-size:11px">(câu này không tính điểm)</span>`;
             qWrap.appendChild(hintBox);
 
@@ -1572,7 +1660,7 @@ subjectData.ondia6326 = { fullName: 'Ôn Địa 6.3.26', questions: diaQuestions
           const hintBox = document.createElement('div');
           hintBox.id = 'random-hint-box';
           hintBox.style.display = randomHintUsed ? 'block' : 'none';
-          hintBox.className = 'mb-4 p-3 bg-yellow-50 border border-yellow-300 rounded-lg text-sm text-yellow-900';
+          hintBox.className = 'hint-box';
           hintBox.innerHTML = `💡 <strong>Gợi ý:</strong> ${q.hint} &nbsp;<span style="color:red;font-size:11px">(câu này không tính điểm)</span>`;
           qWrap.appendChild(hintBox);
         }
@@ -1805,7 +1893,7 @@ subjectData.ondia6326 = { fullName: 'Ôn Địa 6.3.26', questions: diaQuestions
           // Explanation block
           if (q.explain) {
             const exDiv = document.createElement('div');
-            exDiv.className = 'mt-3 p-3 bg-blue-50 border border-blue-200 rounded-lg text-sm text-blue-900';
+            exDiv.className = 'explain-box';
             exDiv.innerHTML = `📝 <strong>Giải thích:</strong> ${q.explain}`;
             qWrap.appendChild(exDiv);
           }
@@ -1858,7 +1946,7 @@ subjectData.ondia6326 = { fullName: 'Ôn Địa 6.3.26', questions: diaQuestions
           }
           if (q.explain) {
             const exDiv = document.createElement('div');
-            exDiv.className = 'mt-2 p-3 bg-blue-50 border border-blue-200 rounded-lg text-sm text-blue-900';
+            exDiv.className = 'explain-box';
             exDiv.innerHTML = `📝 <strong>Giải thích:</strong> ${q.explain}`;
             qWrap.appendChild(exDiv);
           }
@@ -1912,7 +2000,7 @@ subjectData.ondia6326 = { fullName: 'Ôn Địa 6.3.26', questions: diaQuestions
           }
           if (q.explain) {
             const exDiv = document.createElement('div');
-            exDiv.className = 'mt-2 p-3 bg-blue-50 border border-blue-200 rounded-lg text-sm text-blue-900';
+            exDiv.className = 'explain-box';
             exDiv.innerHTML = `📝 <strong>Giải thích:</strong> ${q.explain}`;
             qWrap.appendChild(exDiv);
           }
@@ -2351,5 +2439,26 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
+<script>
+function toggleDarkMode() {
+  const isDark = document.body.classList.toggle('dark');
+  document.getElementById('darkModeIcon').textContent = isDark ? '☀️' : '🌙';
+  document.getElementById('darkModeLabel').textContent = isDark ? 'Light Mode' : 'Dark Mode';
+  // Also update the toggle bar background
+  const toggleBar = document.querySelector('.relative.z-50.p-3');
+  if (toggleBar) {
+    toggleBar.style.backgroundColor = isDark ? '#1e2535' : '';
+    toggleBar.style.borderColor = isDark ? '#334155' : '';
+  }
+  localStorage.setItem('darkMode', isDark ? '1' : '0');
+}
+
+// Apply saved preference on load
+document.addEventListener('DOMContentLoaded', () => {
+  if (localStorage.getItem('darkMode') === '1') {
+    toggleDarkMode();
+  }
+});
+</script>
 </body>
 </html>
