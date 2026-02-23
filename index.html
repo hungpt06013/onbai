@@ -49,25 +49,6 @@ body.dark .bg-blue-50 { background-color: #1e3a5f !important; }
 body.dark .border-blue-200 { border-color: #1d4ed8 !important; }
 body.dark .text-blue-900 { color: #93c5fd !important; }
 
-/* Hint button light mode */
-.hint-btn {
-  background: #fef3c7;
-  color: #92400e;
-  border-color: #f59e0b;
-}
-.hint-btn:hover {
-  background: #fde68a;
-}
-/* Hint button dark mode */
-body.dark .hint-btn {
-  background: #3a2e0a !important;
-  color: #fde68a !important;
-  border-color: #b45309 !important;
-}
-body.dark .hint-btn:hover {
-  background: #4a3a10 !important;
-}
-
 /* Hint box base (light mode) */
 .hint-box {
   background-color: #fffbeb;
@@ -188,7 +169,7 @@ body.dark .bg-blue-600 { background-color: #2563eb !important; }
                 </div>
                 <h3 class="text-2xl font-bold mb-2">Ôn Địa 6.3.26</h3>
                 <p class="text-orange-100 text-sm">ĐGTX</p>
-                <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">20 câu hỏi</div>
+                <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">35 câu hỏi</div>
               </div>
             </button>
           </div>
@@ -298,7 +279,7 @@ body.dark .bg-blue-600 { background-color: #2563eb !important; }
 
           <div id="countInfo" class="text-sm font-semibold text-gray-500 whitespace-nowrap"></div>
           
-          <button id="btnHint" class="hint-btn hidden items-center gap-1 px-3 py-2 rounded-lg border font-medium text-sm whitespace-nowrap transition-colors">
+          <button id="btnHint" class="hidden items-center gap-1 px-3 py-2 rounded-lg border font-medium text-sm whitespace-nowrap transition-colors" style="background:#854d0e;color:#fef08a;border-color:#713f12;">
             💡 <span id="btnHintLabel">Gợi ý</span>
           </button>
 
@@ -1286,7 +1267,22 @@ const diaQuestions = [
   { type:'mcq', q:'Hệ sinh thái rừng đặc trưng của môi trường Cận nhiệt là gì?', o:['Rừng rậm nhiệt đới.','Xavan cây bụi.','Rừng lá cứng Địa trung Hải.','Rừng lá kim.'], c:2, hint:'Hệ thực vật này mang tên của vùng biển ngăn cách Châu Âu và Châu Phi.', explain:'Rừng lá cứng Địa Trung Hải là sinh vật đặc trưng của môi trường Cận nhiệt — thực vật có lá cứng chống thoát hơi nước mùa khô.' },
   { type:'mcq', q:'Sông ngòi ở môi trường Cận nhiệt được đánh giá như thế nào?', o:['Rất phát triển.','Ít phát triển.','Nhiều nước quanh năm.','Có mạng lưới dày đặc nhất.'], c:1, hint:'Diện tích hẹp và lượng mưa không quá lớn khiến mạng lưới sông ở đây không dày.', explain:'Sông ngòi ở vùng Cận nhiệt Châu Phi ít phát triển do diện tích hẹp và lượng mưa không đủ lớn.' },
   { type:'mcq', q:'Sự khác biệt về sông ngòi giữa môi trường Xích đạo và môi trường Hoang mạc là:', o:['Hoang mạc nhiều nước hơn Xích đạo.','Xích đạo dày đặc, Hoang mạc kém phát triển.','Cả hai đều kém phát triển như nhau.','Xích đạo ít nước, Hoang mạc nhiều nước.'], c:1, hint:'Hãy so sánh lượng mưa giữa vùng mưa nhiều nhất và vùng gần như không mưa.', explain:'Môi trường Xích đạo có sông dày đặc nhờ mưa lớn quanh năm, trong khi hoang mạc gần như không mưa nên sông kém phát triển.' },
-  { type:'mcq', q:'Môi trường Nhiệt đới có hệ sinh thái đặc trưng là:', o:['Hoang mạc cát.','Rừng.','Rừng lá cứng.','Băng tuyết.'], c:1, hint:'Trong bảng tóm tắt, sinh vật của môi trường nhiệt đới được ghi rõ là gì?', explain:'Hệ sinh thái đặc trưng của môi trường Nhiệt đới là rừng, đặc biệt là xavan và rừng thưa nhiệt đới.' }
+  { type:'mcq', q:'Môi trường Nhiệt đới có hệ sinh thái đặc trưng là:', o:['Hoang mạc cát.','Rừng.','Rừng lá cứng.','Băng tuyết.'], c:1, hint:'Môi trường Nhiệt đới nằm giữa chí tuyến và Xích đạo, điều kiện đó đặc trưng cho loại thảm thực vật nào?', explain:'Môi trường Nhiệt đới có khí hậu nóng với lượng mưa theo mùa đủ để hình thành thảm rừng nhiệt đới đặc trưng.' },
+  { type:'mcq', q:'Đặc điểm khí hậu mùa đông của môi trường Cận nhiệt Châu Phi là gì?', o:['Lạnh giá, có tuyết.','Mát mẻ, nhiều gió.','Nóng ẩm.','Khô lạnh.'], c:2, hint:'Khí hậu Địa Trung Hải nổi tiếng với mùa đông ấm áp và có mưa — đây cũng là nét đặc trưng của môi trường Cận nhiệt Châu Phi.', explain:'Khí hậu Địa Trung Hải đặc trưng bởi mùa đông ấm áp có mưa và mùa hè nóng khô — đây cũng là đặc điểm khí hậu của môi trường Cận nhiệt Châu Phi.' },
+  { type:'mcq', q:'Đặc điểm sinh vật của môi trường Xích đạo Châu Phi được mô tả như thế nào?', o:['Kém phát triển, nghèo nàn.','Phát triển.','Chỉ có thực vật chịu hạn.','Rừng lá cứng chiếm ưu thế.'], c:1, hint:'Nơi có lượng mưa và nhiệt độ cao quanh năm tạo điều kiện lý tưởng nhất cho sinh vật phát triển.', explain:'Môi trường Xích đạo có nhiệt độ và lượng mưa cao quanh năm, tạo điều kiện lý tưởng cho sinh vật phát triển mạnh mẽ.' },
+  { type:'mcq', q:'Sự khác biệt về sông ngòi giữa môi trường Nhiệt đới và môi trường Cận nhiệt là gì?', o:['Cả hai đều có sông kém phát triển.','Nhiệt đới có sông khá lớn thay đổi theo mùa, Cận nhiệt có sông ít phát triển.','Cận nhiệt có sông dày đặc hơn Nhiệt đới.','Cả hai đều có sông dày đặc, nhiều nước quanh năm.'], c:1, hint:'Sự phân mùa mưa - khô ảnh hưởng đến lưu lượng sông, còn diện tích nhỏ hẹp thì hạn chế mạng lưới sông phát triển.', explain:'Sông ở Nhiệt đới có lượng nước khá lớn nhưng dao động rõ rệt theo mùa mưa và khô, còn Cận nhiệt có diện tích hẹp và lượng mưa hạn chế nên sông ít phát triển.' },
+  { type:'mcq', q:'Môi trường Hoang mạc ở Châu Phi phân bố tập trung ở khu vực địa lý nào?', o:['Vùng sát đường Xích đạo.','Khu vực chí tuyến.','Vùng ven biển phía tây.','Cực bắc và cực nam lục địa.'], c:1, hint:'Các hoang mạc lớn nhất thế giới thường nằm ở vĩ độ khoảng 20–30 độ Bắc và Nam, gần đường chí tuyến.', explain:'Khu vực chí tuyến có áp cao thống trị quanh năm, gần như không có mưa, tạo điều kiện hình thành các hoang mạc rộng lớn như Sa-ha-ra.' },
+  { type:'mcq', q:'Điều kiện đất và khí hậu của môi trường Xích đạo thuận lợi cho hoạt động gì?', o:['Chăn nuôi gia súc trên đồng cỏ khô.','Khai thác khoáng sản sa mạc.','Hoạt động sản xuất và trồng trọt.','Nuôi trồng thủy sản nước lạnh.'], c:2, hint:'Đất màu mỡ kết hợp với khí hậu nóng ẩm quanh năm là điều kiện lý tưởng cho canh tác nông nghiệp.', explain:'Đất ở môi trường Xích đạo rất màu mỡ nhờ điều kiện nhiệt ẩm cao, thích hợp cho các hoạt động sản xuất và trồng trọt.' },
+  { type:'mcq', q:'Điểm khác biệt rõ nhất về hệ sinh thái giữa môi trường Nhiệt đới và môi trường Cận nhiệt là gì?', o:['Cả hai đều có xavan cây bụi.','Nhiệt đới có rừng, Cận nhiệt có rừng lá cứng Địa Trung Hải.','Nhiệt đới có rừng lá cứng, Cận nhiệt có rừng rậm.','Cả hai đều kém phát triển.'], c:1, hint:'Một môi trường có mưa theo mùa, môi trường kia nóng khô vào mùa hạ — điều kiện khác nhau tạo ra kiểu rừng rất khác nhau.', explain:'Môi trường Nhiệt đới có mưa theo mùa tạo điều kiện thuận lợi cho rừng phát triển, còn Cận nhiệt chịu mùa hạ khô nóng nên chỉ hình thành được rừng lá cứng Địa Trung Hải.' },
+  { type:'mcq', q:'Phát biểu nào sau đây về sông ngòi ở Châu Phi là KHÔNG chính xác?', o:['Môi trường Xích đạo có mạng lưới sông dày đặc, nhiều nước quanh năm.','Sông ở môi trường Nhiệt đới thay đổi theo mùa.','Sông ở môi trường Hoang mạc phát triển mạnh và có nhiều nước.','Sông ở môi trường Cận nhiệt ít phát triển.'], c:2, hint:'Lượng mưa ở hoang mạc gần như bằng không — đây là yếu tố quyết định đến sự phát triển hay suy kiệt của sông ngòi.', explain:'Hoang mạc gần như không có mưa nên thiếu nguồn nước cung cấp, khiến sông kém phát triển — hoàn toàn trái ngược với nhận định phát triển mạnh và nhiều nước.' },
+  { type:'mcq', q:'So sánh sinh vật giữa môi trường Hoang mạc và môi trường Cận nhiệt, phát biểu nào đúng?', o:['Cả hai đều có sinh vật kém phát triển như nhau.','Hoang mạc phong phú hơn Cận nhiệt.','Hoang mạc kém phát triển nghèo nàn, Cận nhiệt có rừng lá cứng Địa Trung Hải.','Cả hai đều có hệ sinh thái rừng nhiệt đới.'], c:2, hint:'Điều kiện khô hạn cực đoan và điều kiện khí hậu Địa Trung Hải tạo ra hai kiểu hệ sinh thái hoàn toàn khác nhau.', explain:'Khí hậu khô nóng cực đoan của Hoang mạc khiến sinh vật kém phát triển và nghèo nàn, trong khi Cận nhiệt đủ điều kiện để hình thành rừng lá cứng Địa Trung Hải đặc trưng.' },
+  { type:'mcq', q:'Giữa môi trường Cận nhiệt và Hoang mạc, sự khác biệt về sông ngòi được thể hiện như thế nào?', o:['Cả hai đều có sông dày đặc như nhau.','Cận nhiệt có sông kém phát triển hơn Hoang mạc.','Cận nhiệt có sông ít phát triển, Hoang mạc có sông kém phát triển hơn.','Hoang mạc có sông phát triển mạnh hơn Cận nhiệt.'], c:2, hint:'Mức độ khô hạn càng cao thì sông ngòi càng thiếu nguồn nước — hãy so sánh mức độ khô hạn giữa hai môi trường này.', explain:'Cận nhiệt có diện tích hẹp và lượng mưa vừa phải nên sông ít phát triển, còn Hoang mạc gần như không có mưa nên sông kém phát triển ở mức độ nghiêm trọng hơn.' },
+  { type:'mcq', q:'Đặc điểm nào sau đây KHÔNG thuộc về môi trường Hoang mạc Châu Phi?', o:['Khí hậu khô, nóng.','Sinh vật kém phát triển, nghèo nàn.','Sông ngòi kém phát triển.','Mạng lưới sông dày đặc, nhiều nước quanh năm.'], c:3, hint:'Chỉ nơi có lượng mưa dồi dào quanh năm mới có thể hình thành mạng lưới sông dày đặc và nhiều nước.', explain:'Mạng lưới sông dày đặc, nhiều nước quanh năm là đặc trưng của môi trường Xích đạo nhờ lượng mưa lớn — hoàn toàn trái ngược với Hoang mạc khô cằn.' },
+  { type:'mcq', q:'Muốn quan sát hệ sinh thái rừng lá cứng Địa Trung Hải tại Châu Phi, du khách cần đến khu vực nào?', o:['Bồn địa Công-gô ở trung tâm lục địa.','Vùng chí tuyến rộng lớn giữa châu lục.','Phần lãnh thổ phía bắc hoặc cực nam Châu Phi.','Khu vực ven vịnh Ghi-nê.'], c:2, hint:'Hệ thực vật này mang tên vùng biển ngăn cách Châu Âu và Châu Phi, phát triển ở các rìa lục địa phía bắc và cực nam.', explain:'Rừng lá cứng Địa Trung Hải là đặc trưng của môi trường Cận nhiệt, phân bố trên phần nhỏ lãnh thổ phía bắc giáp biển Địa Trung Hải và vùng cực nam Châu Phi.' },
+  { type:'mcq', q:'Qua các môi trường ở Châu Phi, mối liên hệ giữa lượng mưa và sự phát triển sông ngòi là gì?', o:['Lượng mưa càng ít, sông càng phát triển.','Lượng mưa và sông ngòi không có liên hệ.','Lượng mưa càng nhiều, sông ngòi càng phát triển.','Chỉ có tuyết tan mới ảnh hưởng đến sông ngòi.'], c:2, hint:'Nguồn cung cấp nước chính cho sông ngòi nhiệt đới là lượng mưa — mưa nhiều hay ít quyết định sông phát triển hay suy kiệt.', explain:'Lượng mưa là nguồn cung cấp nước chủ yếu cho sông ngòi ở Châu Phi — nơi mưa nhiều thì sông phát triển mạnh, nơi mưa ít hoặc gần như không có thì sông kém phát triển.' },
+  { type:'mcq', q:'Điểm CHUNG về khí hậu giữa môi trường Xích đạo và môi trường Nhiệt đới là gì?', o:['Cả hai đều có mùa đông lạnh giá.','Cả hai đều có khí hậu nóng.','Cả hai đều có khí hậu khô hạn.','Cả hai đều có mưa phân bố đều quanh năm.'], c:1, hint:'Cả hai môi trường đều nằm trong vành đai gần đường Xích đạo — điều đó ảnh hưởng như thế nào đến nhiệt độ?', explain:'Cả Xích đạo và Nhiệt đới đều nằm trong vành đai nhiệt đới gần đường Xích đạo, nên khí hậu nóng là điểm chung của cả hai môi trường này.' },
+  { type:'mcq', q:'Môi trường nào ở Châu Phi có cả hai đặc điểm: sinh vật kém phát triển VÀ sông ngòi kém phát triển?', o:['Xích đạo.','Nhiệt đới.','Cận nhiệt.','Hoang mạc.'], c:3, hint:'Khí hậu khắc nghiệt nhất Châu Phi tác động đồng thời lên cả sinh vật lẫn sông ngòi theo cùng một chiều hướng.', explain:'Khí hậu khô và nóng khắc nghiệt của Hoang mạc tác động đồng thời — thiếu nước làm sông kém phát triển và điều kiện cực đoan khiến sinh vật cũng kém phát triển, nghèo nàn.' },
+  { type:'mcq', q:'Trong bốn môi trường tự nhiên ở Châu Phi, đặc điểm "sông ngòi khá lớn, thay đổi theo mùa" chỉ đặc trưng riêng cho môi trường nào?', o:['Xích đạo.','Hoang mạc.','Nhiệt đới.','Cận nhiệt.'], c:2, hint:'Chỉ nơi có mùa mưa và mùa khô tương phản rõ rệt mới làm cho lưu lượng sông dao động mạnh trong năm.', explain:'Môi trường Nhiệt đới có mùa mưa và mùa khô tương phản rõ rệt, khiến lưu lượng sông dao động lớn trong năm — đây là nét đặc trưng riêng của sông ngòi Nhiệt đới.' }
 ];
 
 subjectData.ondia6326 = { fullName: 'Ôn Địa 6.3.26', questions: diaQuestions };
