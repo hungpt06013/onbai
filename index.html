@@ -126,7 +126,7 @@ body.dark .bg-blue-600 { background-color: #2563eb !important; }
         </div>
 
         <div class="p-8">
-          <div class="grid md:grid-cols-3 gap-6">
+          <div class="grid md:grid-cols-4 gap-6">
             <button id="selectOnSinh29126" class="group relative overflow-hidden bg-gradient-to-br from-emerald-600 to-emerald-700 text-white p-8 rounded-xl hover:from-emerald-700 hover:to-emerald-800 transition-all transform hover:scale-[1.02] shadow-lg">
               <div class="relative z-10">
                 <div class="flex items-center justify-center mb-4">
@@ -170,6 +170,19 @@ body.dark .bg-blue-600 { background-color: #2563eb !important; }
                 <h3 class="text-2xl font-bold mb-2">Ôn Địa 6.3.26</h3>
                 <p class="text-orange-100 text-sm">ĐGTX</p>
                 <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">58 câu hỏi</div>
+              </div>
+            </button>
+
+            <button id="selectOnLy12326" class="group relative overflow-hidden bg-gradient-to-br from-cyan-600 to-blue-700 text-white p-8 rounded-xl hover:from-cyan-700 hover:to-blue-800 transition-all transform hover:scale-[1.02] shadow-lg">
+              <div class="relative z-10">
+                <div class="flex items-center justify-center mb-4">
+                  <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Ôn Lý 12.3.26</h3>
+                <p class="text-cyan-100 text-sm">ĐGTX</p>
+                <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">82 câu hỏi</div>
               </div>
             </button>
           </div>
@@ -1310,6 +1323,94 @@ const diaQuestions = [
 
 subjectData.ondia6326 = { fullName: 'Ôn Địa 6.3.26', questions: diaQuestions };
 
+subjectData.only12326 = {
+  fullName: 'Ôn Lý 12.3.26',
+  questions: [
+    { type:'mcq', q:'Tần số là', o:['khoảng thời gian vật thực hiện được một dao động.','số dao động trong một giây.','số dao động trong một phút.','khoảng thời gian vật thực hiện được 60 dao động.'], c:1 },
+    { type:'mcq', q:'………… là số dao động trong một giây.', o:['Vận tốc','Biên độ','Chu kì','Tần số'], c:3 },
+    { type:'mcq', q:'Dao động càng nhanh thì tần số dao động', o:['không thay đổi','càng nhỏ','càng lớn','không xác định được'], c:2 },
+    { type:'mcq', q:'Trong 20 giây, một lá thép thực hiện được 5000 dao động. Tần số dao động của lá thép là', o:['20 Hz','250 Hz','5000 Hz','10000 Hz'], c:1 },
+    { type:'mcq', q:'Trong 2 phút, một vật thực hiện được 4000 dao động. Tần số dao động của vật là', o:['33,3 Hz','250 Hz','2000 Hz','333,3 Hz'], c:0 },
+    { type:'mcq', q:'Vật nào trong các vật sau đây dao động với tần số lớn nhất?', o:['Trong một giây, dây đàn thực hiện được 200 dao động.','Trong một phút, con lắc thực hiện được 300 dao động.','Trong ba giây, mặt trống thực hiện được 500 dao động.','Trong mười giây, dây thun thực hiện được 650 dao động.'], c:0 },
+    { type:'mcq', q:'Vật nào trong các vật sau đây dao động với tần số nhỏ nhất?', o:['Trong một giây, dây đàn thực hiện được 200 dao động.','Trong một phút, con lắc thực hiện được 300 dao động.','Trong ba giây, mặt trống thực hiện được 500 dao động.','Trong mười giây, dây thun thực hiện được 650 dao động.'], c:1 },
+    { type:'mcq', q:'Một vật dao động với tần số 50 Hz, vậy số dao động của vật trong 5 giây sẽ là', o:['10','55','250','45'], c:2 },
+    { type:'mcq', q:'So sánh tần số dao động của các nốt nhạc RÊ và MI, của các nốt nhạc RÊ và FA:', o:['Tần số của nốt nhạc RÊ nhỏ hơn MI, RÊ bằng FA.','Tần số của nốt nhạc RÊ nhỏ hơn MI, RÊ lớn hơn FA.','Tần số của nốt nhạc RÊ lớn hơn MI, RÊ nhỏ hơn FA.','Tần số của nốt nhạc RÊ nhỏ hơn MI, RÊ nhỏ hơn FA.'], c:3 },
+    { type:'mcq', q:'Một vật dao động phát ra âm có tần số 50 Hz. Thời gian để vật thực hiện được 200 dao động là', o:['2,5s','4s','5s','0,25s'], c:1 },
+    { type:'mcq', q:'Ta nghe được tiếng vang khi', o:['âm phản xạ đến tai ta chậm hơn âm trực tiếp một khoảng thời gian ít nhất là 1/15 giây.','âm phản xạ đến tai ta chậm hơn âm trực tiếp một khoảng thời gian ít nhất là 15 giây.','âm phản xạ đến tai ta nhanh hơn âm trực tiếp một khoảng thời gian ít nhất là 1/15 giây.','âm phản xạ đến tai ta nhanh hơn âm trực tiếp một khoảng thời gian ít nhất là 15 giây.'], c:0 },
+    { type:'mcq', q:'Nhận định nào sau đây đúng nhất?', o:['Âm nằm trong ngưỡng nghe có khả năng phản xạ.','Các hạ âm không có hiện tượng phản xạ.','Các siêu âm mới có hiện tượng phản xạ.','Mọi âm có tần số bất kỳ gặp vật cản đều cho âm phản xạ.'], c:3 },
+    { type:'mcq', q:'Khi nào thì tai có thể nghe được âm to nhất?', o:['Âm phát ra đến tai cùng lúc với âm phản xạ.','Âm phát ra đến tai trước âm phản xạ.','Âm phát ra đến tai, âm phản xạ đi nơi khác không đến tai.','Âm phản xạ tới trước âm phát ra.'], c:0 },
+    { type:'mcq', q:'Âm phản xạ là', o:['âm dội lại khi gặp vật cản.','âm đi xuyên qua vật cản.','âm đi vòng qua vật cản.','âm bị hấp thụ bởi vật cản.'], c:0 },
+    { type:'mcq', q:'Tiếng vang là âm phản xạ nghe được cách âm trực tiếp ít nhất bao nhiêu giây?', o:['1s','1/2 s','1/10 s','1/15 s'], c:3 },
+    { type:'mcq', q:'Chọn phương án đúng.', o:['Chỉ có hạ âm mới cho âm phản xạ.','Chỉ có siêu âm mới cho âm phản xạ.','Chỉ có âm nghe được mới cho âm phản xạ.','Âm có tần số bất kì đều cho âm phản xạ.'], c:3 },
+    { type:'mcq', q:'Phát biểu nào sau đây là không đúng?', o:['Trong hang động ta nói to thì có âm phản xạ.','Mọi âm thanh gặp vật chắn đều bị phản xạ trở lại.','Không có vật chắn vẫn có âm phản xạ.','Cùng môi trường, vận tốc phản xạ bằng vận tốc truyền âm.'], c:2 },
+    { type:'mcq', q:'Phát biểu nào sau đây là đúng?', o:['Trong hang động ta nói to thì có âm phản xạ.','Không phải âm thanh nào gặp vật chắn đều bị phản xạ trở lại.','Không có vật chắn vẫn có âm phản xạ.','Cùng môi trường, vận tốc phản xạ nhỏ vận tốc truyền âm.'], c:0 },
+    { type:'mcq', q:'Vật nào dưới đây là vật phản xạ âm tốt?', o:['Mảnh xốp.','Mảnh kính.','Tường phủ dạ, nhung.','Vải bông.'], c:1 },
+    { type:'mcq', q:'Những vật nào sau đây phản xạ âm tốt?', o:['Mặt tường gồ ghề, mặt nền trải thảm.','Tấm lụa trải phẳng, áo len, áo mút.','Vải bông, nhung, gấm.','Mặt kính, tường phẳng.'], c:3 },
+    { type:'mcq', q:'Những vật có khả năng hấp thụ âm tốt là những vật', o:['phản xạ âm tốt.','có bề mặt nhẵn, cứng.','có bề mặt phẳng, cứng.','mềm và xốp.'], c:3 },
+    { type:'mcq', q:'Trong các rạp chiếu bóng, người ta làm cho các bức tường sần sùi, thô ráp hoặc treo rèm nhung nhằm mục đích', o:['cách âm tốt.','chống phản xạ âm.','tạo ra các âm thanh lớn.','trang trí phòng.'], c:1 },
+    { type:'mcq', q:'Làm thế nào để hạn chế tiếng vang trong phòng?', o:['Làm tường mấp mô.','Đóng trần bằng xốp.','Làm tường mấp mô và đóng trần bằng xốp.','Làm tường bằng kính.'], c:2 },
+    { type:'mcq', q:'Chọn câu đúng.', o:['Vật hấp thụ âm tốt thì cũng phản xạ âm tốt.','Âm thanh khi phản xạ luôn truyền tới tai người nghe.','Các vật có bề mặt cứng, nhẵn không phản xạ âm.','Sự phản xạ âm đóng vai trò khuếch đại âm, nếu âm phản xạ đến tai người nghe cùng một lúc với âm phát ra.'], c:3 },
+    { type:'mcq', q:'Trong những vật sau đây: miếng xốp, ghế nệm, mặt gương, tấm kim loại, áo len, cao su xốp, mặt đá hoa, tường gạch. Vật phản xạ âm tốt là', o:['Miếng xốp, ghế nệm, mặt gương.','Tấm kim loại, áo len, cao su.','Mặt gương, tấm kim loại, mặt đá hoa, tường gạch.','Miếng xốp, ghế nệm, cao su xốp.'], c:2 },
+    { type:'mcq', q:'Người ta thường dùng sự phản xạ của siêu âm để xác định độ sâu của biển. Giả sử tàu phát ra siêu âm và thu được âm phản xạ của nó từ đáy biển sau 1 giây. Tính gần đúng độ sâu của đáy biển, biết vận tốc truyền siêu âm trong nước là 1500 m/s.', o:['1500 m','750 m','500 m','1000 m'], c:1 },
+    { type:'mcq', q:'Hãy xác định câu đúng trong các câu sau đây.', o:['Những vật có bề mặt nhẵn, cứng phản xạ âm tốt.','Bức tường càng dày phản xạ âm càng tốt.','Những vật có bề mặt mềm, gồ ghề hấp thụ âm kém.','Khi gặp bề mặt xù xì, âm truyền qua hoàn toàn, không bị phản xạ.'], c:0 },
+    { type:'mcq', q:'Một người đứng cách một vách đá 680 m và la to. Sau bao lâu kể từ khi la, người này nghe được âm phản xạ trở lại? Cho vận tốc truyền âm trong không khí là 340 m/s.', o:['1s','2s','3s','4s'], c:3 },
+    { type:'mcq', q:'Yếu tố nào sau đây quyết định điều kiện để có tiếng vang?', o:['Khoảng cách từ nguồn âm đến vật phản xạ âm.','Độ to, nhỏ của âm.','Độ cao, thấp của âm.','Biên độ của âm.'], c:0 },
+    { type:'mcq', q:'Vật liệu nào dưới đây thường không được dùng làm vật ngăn cách âm giữa các phòng?', o:['Tường bê tông.','Cửa kính hai lớp.','Tấm rèm vải.','Cửa gỗ.'], c:2 },
+    { type:'mcq', q:'Ô nhiễm tiếng ồn xảy ra khi', o:['tiếng ồn nhỏ và ngắn.','tiếng ồn nhỏ và dài.','tiếng ồn to và ngắn.','tiếng ồn to và kéo dài.'], c:3 },
+    { type:'mcq', q:'Tất cả những âm thanh được tạo ra từ những ………… gây nên sự ô nhiễm tiếng ồn.', o:['dao động có biên độ to.','dao động với biên độ nhỏ.','dao động với tần số cao.','âm thanh to, kéo dài, ảnh hưởng tới sức khỏe con người.'], c:3 },
+    { type:'mcq', q:'Trường hợp nào sau đây không gây ô nhiễm tiếng ồn?', o:['Tiếng một vật rơi từ trên cao xuống.','Tiếng phát ra từ máy cưa công nghiệp.','Tiếng phát ra từ phòng Karaoke lúc nửa đêm.','Tiếng trao đổi mua bán ở chợ.'], c:0 },
+    { type:'mcq', q:'Âm nào sau đây gây ô nhiễm tiếng ồn?', o:['Tiếng hát của ca sĩ trên sân khấu.','Tiếng nô đùa của lớp mẫu giáo giờ ra chơi.','Tiếng phát ra từ máy cưa công nghiệp.','Tiếng sáo diều vi vu.'], c:2 },
+    { type:'mcq', q:'Để chống ô nhiễm tiếng ồn, người ta không sử dụng biện pháp', o:['làm trần nhà bằng xốp.','trồng cây xanh xung quanh.','bao kín các thiết bị gây ồn.','đập phá thiết bị gây ồn.'], c:3 },
+    { type:'mcq', q:'Chọn phát biểu sai. Cách để chống ô nhiễm tiếng ồn là', o:['giảm độ to của tiếng ồn.','ngăn chặn đường truyền âm.','phân tán âm bằng cách cho âm phản xạ.','giảm tần số âm.'], c:3 },
+    { type:'mcq', q:'Chọn phát biểu đúng. Cách để chống ô nhiễm tiếng ồn là', o:['Giảm độ cao của tiếng ồn.','Mở rộng đường truyền âm.','Phân tán âm bằng cách cho âm phản xạ.','Giảm tần số âm.'], c:2 },
+    { type:'mcq', q:'Âm nào dưới đây gây ô nhiễm tiếng ồn?', o:['Tiếng sấm rền.','Tiếng xình xịch của tàu hỏa đang chạy.','Tiếng sóng biển ầm ầm.','Tiếng máy móc làm việc phát ra to trong thời gian dài.'], c:3 },
+    { type:'mcq', q:'Giả sử nhà em gần đường giao thông có rất nhiều phương tiện qua lại như: xe tải, ôtô, xe máy. Em hãy chọn phương án chống ô nhiễm tiếng ồn phù hợp nhất.', o:['Chuyển nhà ở đi nơi khác.','Luôn mở cửa cho thông thoáng.','Trồng cây xanh xung quanh nhà.','Chặt hết cây xanh xung quanh nhà.'], c:2 },
+    { type:'mcq', q:'Sống trong một khu dân cư bị ô nhiễm tiếng ồn do tàu hỏa gây ra. Để em bé của mình không bị thức giấc mỗi khi tàu hỏa chạy qua, bạn Linh đề nghị với bố mẹ các cách sau, em hãy giúp bố mẹ Linh chọn cách thích hợp nhất.', o:['Chuyển nhà nơi khác không bị ô nhiễm tiếng ồn.','Không cho tàu hỏa đi ngang qua nơi mình ở.','Bịt tai em bé lại mỗi khi tàu đi qua.','Xây dựng tường cách âm.'], c:3 },
+    { type:'mcq', q:'Loại cửa kính có hai lớp kính có khả năng cách âm tốt hơn rất nhiều so với loại cửa kính chỉ có một lớp kính. Tại sao?', o:['Vì hai lớp thì dày hơn một lớp nên âm khó truyền qua hơn.','Vì kính hai lớp có chất lượng tốt hơn.','Vì giữa hai lớp kính có lớp không khí nên cách âm tốt hơn.','Vì cửa một lớp thường xuyên đóng mở nên khả năng cách âm kém hơn.'], c:2 },
+    { type:'mcq', q:'Khi sử dụng gạch có lỗ thì khả năng cách âm tốt hơn so với gạch đúc. Lí giải nào sau đây là đúng nhất?', o:['Gạch có lỗ dày hơn gạch đặc.','Vật liệu làm gạch có lỗ truyền âm kém hơn gạch đặc.','Gạch có lỗ khô hơn gạch đặc nên truyền âm chậm hơn.','Các lỗ gạch chứa không khí nên cách âm tốt hơn.'], c:3 },
+    { type:'mcq', q:'Vì sao ta nhìn thấy một vật?', o:['Vì ta mở mắt hướng về phía vật.','Vì mắt ta phát ra các tia sáng chiếu lên vật.','Vì có ánh sáng từ vật truyền vào mắt ta.','Vì vật được chiếu sáng.'], c:2 },
+    { type:'mcq', q:'Vật nào sau đây không phải là nguồn sáng?', o:['Mặt Trời.','Núi lửa đang cháy.','Bóng đèn đang sáng.','Mặt Trăng.'], c:3 },
+    { type:'mcq', q:'Hiện tượng nào sau đây không liên quan đến năng lượng ánh sáng?', o:['Ánh sáng mặt trời phản chiếu trên mặt nước.','Ánh sáng mặt trời làm cháy bỏng da.','Bếp mặt trời nóng lên nhờ ánh sáng mặt trời.','Ánh sáng mặt trời dùng để tạo điện năng.'], c:0 },
+    { type:'mcq', q:'Vật nào dưới đây không phải là vật sáng?', o:['Mảnh giấy trắng đặt dưới ánh nắng Mặt Trời.','Ngọn nến đang cháy.','Mảnh giấy đen đặt dưới ánh nắng Mặt Trời.','Mặt Trời.'], c:2 },
+    { type:'mcq', q:'Trường hợp nào dưới đây ta không nhận biết được một miếng bìa màu đen?', o:['Dán miếng bìa đen lên một tờ giấy xanh rồi đặt dưới ánh đèn điện.','Dán miếng bìa đen lên một tờ giấy trắng rồi đặt trong phòng tối.','Đặt miếng bìa đen trước một ngọn nến đang cháy.','Đặt miếng bìa đen ngoài trời nắng.'], c:1 },
+    { type:'mcq', q:'Ta nhìn thấy bông hoa màu đỏ vì', o:['bản thân bông hoa có màu đỏ.','bông hoa là một vật sáng.','bông hoa là một nguồn sáng.','có ánh sáng đỏ từ bông hoa truyền đến mắt ta.'], c:3 },
+    { type:'mcq', q:'Ban ngày trời nắng, dùng một gương phẳng hứng ánh sáng Mặt Trời, rồi xoay gương chiếu ánh nắng qua cửa sổ vào trong phòng. Gương đó có phải là nguồn sáng không? Tại sao?', o:['Là nguồn sáng vì có ánh sáng từ gương chiếu vào phòng.','Là nguồn sáng vì gương hắt ánh sáng Mặt Trời chiếu vào phòng.','Không phải là nguồn sáng vì gương chỉ chiếu ánh sáng theo một hướng.','Không phải là nguồn sáng vì gương không tự phát ra ánh sáng.'], c:3 },
+    { type:'mcq', q:'Chiếu một chùm ánh sáng hẹp vào mặt một tấm gỗ phẳng. Hiện tượng nào sau đây sẽ xảy ra?', o:['Ánh sáng truyền xuyên qua tấm gỗ.','Ánh sáng đi vòng qua tấm gỗ theo đường cong.','Ánh sáng đi vòng qua tấm gỗ theo đường gấp khúc.','Ánh sáng không truyền qua được tấm gỗ.'], c:3 },
+    { type:'mcq', q:'Chùm sáng ………… gồm các tia sáng ………… trên đường truyền của chúng.', o:['phân kỳ; giao nhau','hội tụ; loe rộng ra','phân kỳ; loe rộng ra','song song; giao nhau'], c:2 },
+    { type:'mcq', q:'Chọn câu đúng trong các câu sau:', o:['Ánh sáng truyền đi theo một đường thẳng.','Chùm sáng hội tụ là chùm sáng trong đó các tia sáng xuất phát từ cùng một điểm.','Chùm sáng sau khi hội tụ sẽ trở thành chùm sáng phân kì.','Người ta quy ước biểu diễn đường truyền của ánh sáng bằng một đường thẳng.'], c:2 },
+    { type:'mcq', q:'Các chùm sáng nào ở hình vẽ dưới đây là chùm sáng hội tụ? https://i.postimg.cc/bwC3PmZs/image.png', o:['Hình a và b','Hình a và c','Hình b và c','Hình a, c và d'], c:1 },
+    { type:'mcq', q:'Đứng trên mặt đất, trường hợp nào dưới đây ta thấy có nguyệt thực?', o:['Ban đêm, khi nơi ta đứng không nhận được ánh sáng Mặt Trời.','Ban đêm, khi Mặt Trăng không nhận được ánh sáng Mặt Trời vì bị Trái Đất che khuất.','Khi Mặt Trời che khuất Mặt Trăng, không cho ánh sáng từ Mặt Trăng tới Trái Đất.','Khi Mặt Trăng che khuất Mặt Trời, ta chỉ nhìn thấy phía sau Mặt Trăng tối đen.'], c:1 },
+    { type:'mcq', q:'Tại sao trong lớp học, người ta lắp nhiều bóng đèn ở các vị trí khác nhau mà không dùng một bóng đèn lớn?', o:['Để cho lớp học đẹp hơn.','Chỉ để tăng cường độ sáng cho lớp học.','Để tránh bóng tối và bóng nửa tối khi học sinh viết bài.','Để học sinh không bị chói mắt.'], c:2 },
+    { type:'mcq', q:'Yếu tố quyết định tạo bóng nửa tối là', o:['ánh sáng không mạnh lắm.','nguồn sáng to.','màn chắn ở xa nguồn.','màn chắn ở gần nguồn.'], c:1 },
+    { type:'mcq', q:'Trong các hình vẽ dưới đây, hình nào vẽ đúng đường truyền của ánh sáng từ không khí (1) vào nước (2)? https://i.postimg.cc/Z52pj298/image.png', o:['Hình A','Hình B','Hình C','Hình D'], c:1 },
+    { type:'mcq', q:'Chọn một phát biểu không đúng về đường truyền của tia sáng:', o:['Trong môi trường trong suốt nhưng không đồng tính, ánh sáng không truyền đi theo đường thẳng.','Trong môi trường trong suốt và đồng tính, ánh sáng truyền đi theo đường thẳng.','Trong môi trường đồng tính nhưng không trong suốt, ánh sáng không truyền theo đường thẳng.','Trong môi trường trong suốt nhưng không đồng tính, ánh sáng luôn truyền theo đường thẳng.'], c:3 },
+    { type:'mcq', q:'Chọn câu sai. Địa phương có nhật thực toàn phần khi địa phương đó', o:['hoàn toàn không nhìn thấy Mặt Trời.','bị Mặt Trăng cản hoàn toàn ánh sáng từ Mặt Trời truyền tới.','nằm trong vùng bóng tối của Mặt Trăng và ở đó hoàn toàn không nhìn thấy Mặt Trời.','hoàn toàn không nhìn thấy Mặt Trăng.'], c:3 },
+    { type:'mcq', q:'Khi có hiện tượng nhật thực, vị trí tương đối của Trái Đất, Mặt Trời và Mặt Trăng như thế nào?', o:['Trái Đất – Mặt Trời – Mặt Trăng.','Mặt Trời – Trái Đất – Mặt Trăng.','Trái Đất – Mặt Trăng – Mặt Trời.','Mặt Trăng – Trái Đất – Mặt Trời.'], c:2 },
+    { type:'mcq', q:'Thế nào là bóng tối?', o:['Là vùng không nhận được ánh sáng từ nguồn sáng truyền tới.','Là vùng chỉ nhận được một phần ánh sáng từ nguồn sáng truyền tới.','Là vùng nhận được ánh sáng từ nguồn sáng truyền tới.','Là vùng có lúc nhận, có lúc không nhận được ánh sáng truyền tới.'], c:0 },
+    { type:'mcq', q:'Hiện tượng ……… xảy ra vào ban đêm khi Mặt Trời, Mặt Trăng, Trái Đất nằm trên cùng một đường thẳng và khi đó ……… nằm giữa hai thiên thể kia.', o:['nguyệt thực / Mặt Trăng','nguyệt thực / Trái Đất','nhật thực / Mặt Trăng','nhật thực / Trái Đất'], c:1 },
+    { type:'mcq', q:'Em hãy tìm câu sai trong các câu sau:', o:['Ta nhìn thấy một vật khi có ánh sáng truyền từ vật đó đến mắt ta.','Ta nhận biết được ánh sáng khi có ánh sáng truyền vào mắt ta.','Nguồn sáng là vật tự nó phát ra ánh sáng.','Vật sáng cũng là nguồn sáng.'], c:3 },
+    { type:'mcq', q:'Hãy chỉ ra vật nào dưới đây không phải là nguồn sáng:', o:['Ngọn nến đang cháy.','Vỏ chai sáng chói dưới trời nắng.','Mặt Trời.','Đèn ống đang sáng.'], c:1 },
+    { type:'mcq', q:'Chọn câu đúng: Trong một phòng hoàn toàn đóng kín bằng cửa kính, ta có thể nhìn thấy đồ vật trong phòng khi', o:['ban đêm, bật đèn, có ánh trăng, nhưng nhắm mắt.','ban đêm, bật đèn, không có ánh trăng, nhưng nhắm mắt.','ban đêm, không bật đèn, không có ánh trăng, nhưng mở mắt.','ban ngày, không bật đèn, mở mắt.'], c:3 },
+    { type:'mcq', q:'Chùm sáng do dây tóc bóng đèn pin (đèn đang bật sáng) phát ra là chùm sáng', o:['song song.','phân kì.','hội tụ.','đầu tiên hội tụ sau đó phân kì.'], c:1 },
+    { type:'mcq', q:'Trong trường hợp nào dưới đây ánh sáng truyền đi theo đường thẳng?', o:['Trong môi trường trong suốt.','Đi từ môi trường trong suốt này sang môi trường trong suốt khác.','Trong môi trường đồng tính.','Trong môi trường trong suốt và đồng tính.'], c:3 },
+    { type:'mcq', q:'Chùm sáng song song gồm các tia sáng ………… trên đường truyền của chúng.', o:['giao nhau','không giao nhau','loe rộng ra','chỉ cắt nhau một lần'], c:1 },
+    { type:'mcq', q:'Chọn câu đúng.', o:['Chùm sáng song song gồm các tia sáng giao nhau trên đường truyền của chúng.','Chùm sáng càng xa càng loe rộng ra được gọi là chùm phân kì.','Chùm sáng xuất phát từ bóng đèn tròn là chùm hội tụ.','Chùm sáng xuất phát từ bóng đèn dài là chùm sáng song song.'], c:1 },
+    { type:'mcq', q:'Chọn câu sai.', o:['Tia sáng là đường truyền của ánh sáng. Đường đi của tia sáng giữa hai điểm là đường ngắn nhất giữa hai điểm đó.','Chùm tia phân kì là chùm các tia sáng giao nhau trên đường truyền của chúng.','Nguồn sáng là các vật tự phát ra ánh sáng.','Các vật sáng gồm các nguồn sáng và các vật được chiếu sáng.'], c:1 },
+    { type:'mcq', q:'Chọn câu sai.', o:['Ánh sáng phát ra từ chùm sáng hội tụ sẽ gặp nhau tại một điểm.','Ánh sáng phát ra từ chùm sáng song song thì không thể cắt nhau.','Trong chùm sáng hội tụ, các tia sáng đều xuất phát từ cùng một điểm.','Trong chùm sáng phân kì, khoảng cách càng xa nguồn thì chùm sáng càng loe rộng.'], c:2 },
+    { type:'mcq', q:'Chọn phát biểu đúng về "Định luật truyền thẳng của ánh sáng".', o:['Trong môi trường trong suốt và thay đổi ánh sáng truyền đi theo đường thẳng.','Trong môi trường trong suốt và đồng tính ánh sáng truyền đi theo đường thẳng.','Trong môi trường trong suốt và không đổi ánh sáng truyền đi theo đường gấp khúc.','Trong môi trường trong suốt và thay đổi ánh sáng truyền đi theo đường gấp khúc.'], c:1 },
+    { type:'mcq', q:'Bóng tối là', o:['vùng nằm sau vật chắn sáng, không nhận được ánh sáng từ nguồn sáng chiếu tới.','vùng nằm phía trước vật cản, không nhận được ánh sáng từ nguồn sáng chiếu tới.','vùng chỉ nhận được ánh sáng từ một phần của nguồn sáng.','vùng nằm cạnh vật chắn sáng.'], c:0 },
+    { type:'mcq', q:'Bóng nửa tối là', o:['vùng nằm phía sau vật cản, không nhận được ánh sáng từ nguồn sáng chiếu tới.','vùng nằm phía sau vật cản, chỉ nhận được ánh sáng từ một phần của nguồn sáng.','vùng nằm phía trước vật cản, chỉ nhận được ánh sáng từ một phần của nguồn sáng.','vùng nằm cạnh vật chắn sáng.'], c:1 },
+    { type:'mcq', q:'Hiện tượng nhật thực xảy ra khi', o:['Mặt Trăng nằm giữa Mặt Trời và Trái Đất.','Mặt Trời nằm giữa Trái Đất và Mặt Trăng.','Trái Đất nằm giữa Mặt Trời và Mặt Trăng.','Mặt Trăng nằm trong vùng tối của Trái Đất.'], c:0 },
+    { type:'mcq', q:'Ban đêm, trong phòng chỉ có một đèn điện. Giơ bàn tay chắn giữa đèn điện và bức tường, ta quan sát thấy trên bức tường có', o:['một vùng tối hình bàn tay.','vùng sáng được chiếu sáng đầy đủ.','một vùng bóng tối tròn.','một vùng tối hình bàn tay, xung quanh có viền mờ hơn.'], c:3 },
+    { type:'mcq', q:'Khi có hiện tượng nhật thực toàn phần xảy ra, ta thấy', o:['mặt đất bị che khuất hoàn toàn ánh nắng Mặt Trời.','Mặt Trời bị che khuất hoàn toàn, xung quanh có tai lửa.','Mặt Trời bị che khuất và không thấy tia sáng nào của Mặt Trời.','một phần Mặt Trời bị che khuất, phần còn lại là bóng nửa tối.'], c:2 },
+    { type:'mcq', q:'Chọn câu sai. Ở TP HCM có nhật thực một phần khi', o:['ở đó chỉ thấy một phần Mặt Trời.','ở đó bị Mặt Trăng chắn một phần ánh sáng từ Mặt Trời truyền tới.','ở đó nằm trong vùng bóng nửa tối của Mặt Trăng, người ta chỉ nhìn thấy một phần Mặt Trời.','ở đó chỉ thấy một phần Mặt Trăng.'], c:3 },
+    { type:'mcq', q:'Chọn phương án đúng nhất. Để Hà Nội có thể quan sát được hiện tượng nguyệt thực thì', o:['Hà Nội đang là ban đêm và Mặt Trăng đang trong vùng bóng tối của Trái Đất, khi đó Mặt Trăng và cả Hà Nội đều không được chiếu sáng.','Trái Đất che kín Mặt Trăng.','Mặt Trăng nằm trong vùng bóng đen của Trái Đất, không được Mặt Trời chiếu sáng.','Hà Nội đang là ban đêm và không nhìn thấy Mặt Trăng.'], c:0 },
+    { type:'mcq', q:'Phát biểu nào sau đây là đúng?', o:['Các tia sáng là đường cong.','Đường truyền của ánh sáng được biểu diễn bằng một đường thẳng có mũi tên chỉ hướng gọi là tia sáng.','Các tia sáng luôn song song nhau.','Các tia sáng cho ta biết ánh sáng truyền nhanh hay chậm.'], c:1 },
+    { type:'mcq', q:'Một vật cản được đặt trong khoảng giữa một bóng đèn điện đang sáng và một màn chắn. Để trên màn xuất hiện bóng nửa tối thì cần có điều kiện nào sau đây?', o:['Kích thước bóng đèn rất nhỏ.','Bóng đèn phải rất sáng.','Ánh sáng bóng đèn phải có màu vàng.','Kích thước bóng đèn khá lớn.'], c:3 },
+    { type:'mcq', q:'Một vật cản được đặt trong khoảng giữa một bóng điện dây tóc đang sáng và một màn chắn. Kích thước của bóng nửa tối thay đổi như thế nào khi đưa vật cản lại gần màn chắn hơn?', o:['Tăng lên.','Giảm đi.','Không thay đổi.','Lúc đầu tăng lên, sau giảm đi.'], c:1 }
+  ]
+};
+
     let currentSubject = null;
     let quizMode = null;
     let quizStarted = false;
@@ -2149,6 +2250,21 @@ btnRestart.addEventListener('click', () => {
       currentSubject = 'ondia6326';
       const totalQuestions = subjectData.ondia6326.questions.length;
       subjectTitle.textContent = subjectData.ondia6326.fullName;
+      fullModeDesc.textContent = `Chọn từ 1 đến ${totalQuestions} câu hỏi`;
+      randomModeStats = { totalAnswered: 0, totalCorrect: 0 };
+      const customInput = document.getElementById('customQuestionCount');
+      customInput.max = totalQuestions;
+      const defaultValue = Math.min(10, totalQuestions);
+      customInput.value = defaultValue;
+      lastValidQuestionCount = defaultValue;
+      subjectScreen.classList.add('hidden');
+      modeScreen.classList.remove('hidden');
+    });
+
+    document.getElementById('selectOnLy12326').addEventListener('click', () => {
+      currentSubject = 'only12326';
+      const totalQuestions = subjectData.only12326.questions.length;
+      subjectTitle.textContent = subjectData.only12326.fullName;
       fullModeDesc.textContent = `Chọn từ 1 đến ${totalQuestions} câu hỏi`;
       randomModeStats = { totalAnswered: 0, totalCorrect: 0 };
       const customInput = document.getElementById('customQuestionCount');
