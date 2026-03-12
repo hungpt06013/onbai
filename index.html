@@ -121,7 +121,7 @@ body.dark .bg-blue-600 { background-color: #2563eb !important; }
         </div>
 
         <div class="p-8">
-          <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             <button id="selectOnSinh12326" class="group relative overflow-hidden bg-gradient-to-br from-emerald-600 to-emerald-700 text-white p-8 rounded-xl hover:from-emerald-700 hover:to-emerald-800 transition-all transform hover:scale-[1.02] shadow-lg">
               <div class="relative z-10">
                 <div class="flex items-center justify-center mb-4">
@@ -146,6 +146,18 @@ body.dark .bg-blue-600 { background-color: #2563eb !important; }
                 <h3 class="text-2xl font-bold mb-2">Ôn Hóa 12.3.26</h3>
                 <p class="text-purple-100 text-sm">ĐGGK</p>
                 <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">60 câu hỏi</div>
+              </div>
+            </button>
+            <button id="selectOnCN13326" class="group relative overflow-hidden bg-gradient-to-br from-orange-500 to-amber-600 text-white p-8 rounded-xl hover:from-orange-600 hover:to-amber-700 transition-all transform hover:scale-[1.02] shadow-lg">
+              <div class="relative z-10">
+                <div class="flex items-center justify-center mb-4">
+                  <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Ôn CN 13.3.26</h3>
+                <p class="text-orange-100 text-sm">ĐGGK</p>
+                <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">23 câu hỏi</div>
               </div>
             </button>
             <button id="selectOnLy12326" class="group relative overflow-hidden bg-gradient-to-br from-cyan-600 to-blue-700 text-white p-8 rounded-xl hover:from-cyan-700 hover:to-blue-800 transition-all transform hover:scale-[1.02] shadow-lg">
@@ -323,6 +335,35 @@ body.dark .bg-blue-600 { background-color: #2563eb !important; }
 const subjectData = {
 };
 
+subjectData.oncn13326 = {
+  fullName: 'Ôn CN 13.3.26',
+  questions: [
+    {"type":"mcq","q":"Đâu không phải là vai trò của ngành chăn nuôi trong nền kinh tế Việt Nam?","o":["Cung cấp thực phẩm cho con người.","Cung cấp sức kéo phục vụ tham quan, du lịch.","Cung cấp nguyên liệu (da, lông, sừng...) cho ngành công nghiệp nhẹ, phân bón phục vụ sản xuất nông nghiệp.","Cung cấp nguyên liệu cho ngành chế biến gỗ."],"c":3},
+    {"type":"mcq","q":"Đâu không phải là sản phẩm của ngành chăn nuôi?","o":["Thịt gà","Thịt bò","Sữa đậu nành","Trứng vịt"],"c":2},
+    {"type":"mcq","q":"Đâu không phải là triển vọng của ngành chăn nuôi ở Việt Nam?","o":["Chăn nuôi hữu cơ.","Người lao động chăn nuôi tự phối trộn thức ăn chăn nuôi.","Phát triển chăn nuôi trang trại, công nghiệp hoá, hiện đại hoá.","Liên kết giữa các khâu chăn nuôi, giết mổ và phân phối."],"c":1},
+    {"type":"mcq","q":"Cần nuôi dưỡng và chăm sóc như thế nào để vật nuôi non khỏe mạnh, phát triển và kháng bệnh tốt?","o":["Cung cấp thức ăn có đủ năng lượng, protein, vitamin và chất khoáng.","Kiểm tra định kì thể trọng, tinh dịch của vật nuôi.","Thường xuyên tắm, chải cho vật nuôi non.","Cung cấp đủ calcium và các chất dinh dưỡng để tạo trứng."],"c":0},
+    {"type":"mcq","q":"Chăm sóc, phòng và trị bệnh cho vật nuôi có ảnh hưởng như thế nào đến vật nuôi?","o":["Vật nuôi khỏe mạnh, phát triển toàn diện.","Vật nuôi thích nghi với điều kiện sống.","Vật nuôi dễ dàng tiêu thụ thức ăn.","Vật nuôi phát triển cân đối về ngoại hình."],"c":0},
+    {"type":"mcq","q":"Đối với gà, vịt, con trống cần đạt tiêu chuẩn như thế nào?","o":["Lông óng mượt, màu sặc sỡ.","Cơ thể to, khỏe, mạnh mẽ, không quá béo hay quá gầy, nhanh nhẹn.","Chức năng miễn dịch tốt.","Tăng trọng tốt."],"c":1},
+    {"type":"mcq","q":"Đối với lợn, bò, dê, yêu cầu đối với vật nuôi cái sinh sản là gì?","o":["Cơ thể không béo quá hay gầy quá.","Đủ sữa có thành phần dinh dưỡng tốt để nuôi con.","Có chức năng miễn dịch tốt, sức đề kháng cao.","Cơ thể khỏe mạnh, nhanh nhẹn."],"c":1},
+    {"type":"mcq","q":"Vì sao phòng bệnh tốt hơn chữa bệnh?","o":["Đỡ tốn công.","Vật nuôi dễ quen với người chăn nuôi.","Đỡ tốn kém.","A và C đúng."],"c":3},
+    {"type":"mcq","q":"Ứng dụng công nghệ trong quản lí vật nuôi có lợi ích gì?","o":["Theo dõi được hoạt động thường ngày của người lao động chăn nuôi.","Quản lí được đàn vật nuôi với quy mô nhỏ, số lượng vật nuôi ít.","Nắm được tình trạng địa hình nơi đang chăn thả đàn vật nuôi.","Theo dõi được tình trạng sức khỏe, chu kì sinh sản,... của vật nuôi."],"c":3},
+    {"type":"mcq","q":"Phương thức chăn nuôi bán chăn thả có đặc điểm gì?","o":["Vật nuôi đi lại tự do, không có chuồng trại.","Vật nuôi tự kiếm thức ăn có trong tự nhiên.","Vật nuôi sử dụng thức ăn công nghiệp kết hợp thức ăn tự tìm kiếm.","Vật nuôi chỉ sử dụng thức ăn, nước uống do người chăn nuôi cung cấp."],"c":2},
+    {"type":"mcq","q":"Đâu không phải lí do chất thải và rác thải trong chăn nuôi gây ra?","o":["Gây ô nhiễm môi trường đất, nước và không khí.","Gây ra một số bệnh hô hấp, bệnh ngoài da ở người.","Ảnh hưởng đến môi trường sống của tôm, cua, cá.","Làm gia tăng số người mắc bệnh béo phì."],"c":3},
+    {"type":"mcq","q":"Đâu là việc làm sai để phòng và điều trị bệnh cho vật nuôi?","o":["Tiêm phòng và điều trị bệnh kịp thời.","Cung cấp thức ăn đủ dinh dưỡng.","Cho vật nuôi vận động hợp lí.","Không tắm, chải, vệ sinh cho vật nuôi."],"c":3},
+    {"type":"mcq","q":"Đâu không phải là nhiệm vụ của vật nuôi cái sinh sản ở giai đoạn nuôi con?","o":["Tiết nhiều sữa có chất lượng tốt để nuôi con.","Nuôi con khỏe mạnh.","Vật nuôi non không phát sinh các bệnh về hô hấp.","Nuôi con có tỉ lệ sống cao."],"c":2},
+    {"type":"mcq","q":"Đâu không phải là yêu cầu đối với vật nuôi đực giống là lợn, bò, dê?","o":["Cơ thể cân đối, rắn chắc, không béo quá hay gầy quá.","Có sức đề kháng cao.","Tăng trọng tốt.","Có số lượng và chất lượng tinh dịch tốt."],"c":1},
+    {"type":"mcq","q":"Đâu không phải đặc điểm cơ thể vật nuôi non?","o":["Sự điều tiết thân nhiệt chưa hoàn chỉnh.","Chức năng của hệ tiêu hóa chưa hoàn chỉnh.","Có sức khỏe và sức đề kháng khá tốt.","Chức năng miễn dịch chưa tốt."],"c":2},
+    {"type":"mcq","q":"Những yếu tố ít ảnh hưởng đến sự phát triển của vật nuôi là:","o":["Nuôi dưỡng vật nuôi.","Chăm sóc vật nuôi.","Phòng, trị bệnh cho vật nuôi.","Loại cây trồng lấy bóng mát cho bãi chăn thả."],"c":3},
+    {"type":"mcq","q":"Phát biểu sai về đặc điểm chăn nuôi theo phương thức chăn thả:","o":["Vật nuôi sử dụng thức ăn do người chăn nuôi cung cấp.","Kĩ thuật chăn nuôi đơn giản.","Phụ thuộc vào nguồn thức ăn có trong tự nhiên.","Không có chuồng trại cho vật nuôi."],"c":0},
+    {"type":"mcq","q":"Những loại vật nuôi phù hợp với phương thức nuôi công nghiệp là:","o":["Gà, vịt, lợn.","Trâu, bò.","Ong.","Cừu, dê."],"c":0},
+    {"type":"mcq","q":"Đâu không phải giống gia súc ăn cỏ?","o":["Bò vàng Việt Nam.","Lợn Ỉ.","Trâu Việt Nam.","Bò lai Sind."],"c":1},
+    {"type":"mcq","q":"Đâu không phải là lí do vì sao gia súc ăn cỏ được nuôi nhiều ở khu vực Bắc Trung Bộ, Duyên hải Nam Trung Bộ và Tây Nguyên?","o":["Có đồng cỏ tự nhiên thuận lợi để chăn thả gia súc ăn cỏ.","Có nguồn thức ăn dồi dào cung cấp cho gia súc ăn cỏ.","Có nguồn nước để xử lí chất thải chăn nuôi.","Điều kiện khí hậu hạn chế phát sinh dịch bệnh ở gia súc ăn cỏ."],"c":2},
+    {"type":"mcq","q":"Đâu không phải là yêu cầu của nghề chăn nuôi đối với người lao động?","o":["Kiến thức về đặc điểm sinh trưởng của loài vật nuôi.","Kiến thức về mua bán và phân phối sản phẩm chăn nuôi.","Kĩ năng nuôi dưỡng và chăm sóc vật nuôi.","Kĩ năng sử dụng các thiết bị, dụng cụ trong lĩnh vực chăn nuôi."],"c":1},
+    {"type":"mcq","q":"Mục đích của việc nuôi dưỡng, chăm sóc vật nuôi đực giống là gì?","o":["Để đàn con có tỉ lệ sống cao đến lúc cai sữa.","Để đàn con dễ thích nghi với điều kiện sống.","Để vật nuôi có khả năng phối giống cao, đàn con khỏe mạnh.","Để hệ tiêu hóa của vật nuôi đực giống phát triển hoàn thiện."],"c":2},
+    {"type":"mcq","q":"Những loại vật nuôi phù hợp với phương thức chăn nuôi chăn thả là:","o":["Trâu, bò.","Lợn.","Tằm.","Thỏ."],"c":0}
+  ]
+};
+
 subjectData.onhoa12326 = {
     fullName: 'Ôn Hóa 12.3.26',
     questions: [
@@ -401,7 +442,7 @@ subjectData.onhoa12326 = {
                         "3.",
                         "4."
                   ],
-                  "c": 0
+                  "c": 1
             },
             {
                   "type": "mcq",
@@ -1936,6 +1977,21 @@ btnRestart.addEventListener('click', () => {
 
     // selection listeners
 
+
+    document.getElementById('selectOnCN13326').addEventListener('click', () => {
+      currentSubject = 'oncn13326';
+      const totalQuestions = subjectData.oncn13326.questions.length;
+      subjectTitle.textContent = subjectData.oncn13326.fullName;
+      fullModeDesc.textContent = `Chọn từ 1 đến ${totalQuestions} câu hỏi`;
+      randomModeStats = { totalAnswered: 0, totalCorrect: 0 };
+      const customInput = document.getElementById('customQuestionCount');
+      customInput.max = totalQuestions;
+      const defaultValue = Math.min(10, totalQuestions);
+      customInput.value = defaultValue;
+      lastValidQuestionCount = defaultValue;
+      subjectScreen.classList.add('hidden');
+      modeScreen.classList.remove('hidden');
+    });
 
     document.getElementById('selectOnSinh12326').addEventListener('click', () => {
       currentSubject = 'onsinh12326';
