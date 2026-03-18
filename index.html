@@ -196,6 +196,18 @@ body.dark .bg-blue-600 { background-color: #2563eb !important; }
                 <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">39 câu hỏi</div>
               </div>
             </button>
+            <button id="selectOnDia20326" class="group relative overflow-hidden bg-gradient-to-br from-teal-600 to-green-700 text-white p-8 rounded-xl hover:from-teal-700 hover:to-green-800 transition-all transform hover:scale-[1.02] shadow-lg md:col-span-2">
+              <div class="relative z-10">
+                <div class="flex items-center justify-center mb-4">
+                  <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Ôn Địa 20.3.26</h3>
+                <p class="text-teal-100 text-sm">ĐGGK</p>
+                <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">45 câu hỏi</div>
+              </div>
+            </button>
           </div>
         </div>
       </div>
@@ -357,6 +369,57 @@ body.dark .bg-blue-600 { background-color: #2563eb !important; }
   <script>
     // === DATA ===
 const subjectData = {
+};
+
+subjectData.ondia20326 = {
+  fullName: 'Ôn Địa 20.3.26',
+  questions: [
+    {"type":"mcq","q":"Năm 2020, số quốc gia và vùng lãnh thổ thuộc Bắc Á là","o":["1.","2.","3.","4."],"c":0},
+    {"type":"mcq","q":"Năm 2020, số quốc gia và vùng lãnh thổ thuộc Đông Nam Á là","o":["8.","9.","10.","11."],"c":3},
+    {"type":"mcq","q":"Năm 2020, số quốc gia và vùng lãnh thổ thuộc Đông Á là","o":["4.","6.","9.","11."],"c":1},
+    {"type":"mcq","q":"Khu vực rìa phía bắc của Bắc Á có thảm thực vật chủ yếu là","o":["đài nguyên.","thảo nguyên.","rừng lá rộng.","rừng tai-ga."],"c":0},
+    {"type":"mcq","q":"Khu vực núi cao của Trung Á có thảm thực vật chủ yếu là","o":["rừng nhiệt đới ẩm.","rừng lá rộng.","rừng lá kim.","thảo nguyên."],"c":2},
+    {"type":"mcq","q":"Khí hậu khu vực Đông Á có đặc điểm là","o":["toàn bộ khu vực chịu ảnh hưởng mạnh mẽ của gió mùa và bão.","phía đông phần lục địa và phần hải đảo chịu ảnh hưởng của gió mùa.","phần lớn lãnh thổ có khí hậu nhiệt đới, phía nam có khí hậu ôn đới.","khí hậu khô hạn bao trùm toàn bộ phần lục địa và phần hải đảo."],"c":1},
+    {"type":"mcq","q":"Cảnh quan chiếm phần lớn diện tích ở khu vực Tây Á là","o":["rừng nhiệt đới ẩm và rừng ngập mặn.","thảo nguyên và rừng lá kim.","hoang mạc và bán hoang mạc.","rừng thưa và xavan cây bụi."],"c":2},
+    {"type":"mcq","q":"Khoáng sản nào phân bố tập trung ở ven vịnh Péc-xích?","o":["Than đá.","Dầu mỏ.","Sắt.","Đồng."],"c":1},
+    {"type":"mcq","q":"Dãy núi nào cao đồ sộ nhất khu vực Nam Á?","o":["An-đét.","Côn Luân.","Hi-ma-lay-a.","Rốc-ki."],"c":2},
+    {"type":"mcq","q":"Đồng bằng Ấn Hằng được bồi đắp bởi 2 con sông là","o":["sông Ti-grơ và Ơ-phrát.","sông Ấn và Hằng.","sông Hoàng Hà và Trường Giang.","sông Mê Công và I-ra-oa-đi."],"c":1},
+    {"type":"mcq","q":"Các quần đảo thuộc In-đô-nê-xi-a và Phi-líp-pin nằm trong vùng thường xuyên xảy ra thiên tai nào?","o":["Lũ quét và sạt lở đất.","Bão tuyết và sương muối.","Động đất và núi lửa.","Hạn hán quanh năm."],"c":2},
+    {"type":"mcq","q":"Thảm thực vật chủ yếu ở khu vực Đông Nam Á là","o":["rừng lá kim (tai-ga).","thảo nguyên và bán hoang mạc.","rừng nhiệt đới ẩm.","rừng lá cứng địa trung hải."],"c":2},
+    {"type":"mcq","q":"Cực Bắc lãnh thổ Châu Phi có vĩ độ là khoảng","o":["35°B.","37°B.","35°N.","37°N."],"c":1},
+    {"type":"mcq","q":"Cực Nam lãnh thổ Châu Phi có vĩ độ là khoảng","o":["35°B.","37°B.","35°N.","37°N."],"c":2},
+    {"type":"mcq","q":"Phía bắc Châu Phi giáp với","o":["Châu Âu.","Châu Á.","Biển Đỏ.","Biển Địa Trung Hải."],"c":3},
+    {"type":"mcq","q":"Phía đông bắc Châu Phi giáp với","o":["Châu Âu.","Ấn Độ Dương.","châu Á.","Biển Địa Trung Hải."],"c":2},
+    {"type":"mcq","q":"Tên của dòng biển lạnh chảy qua sát bờ biển tây bắc Châu Phi là","o":["Ben-ghê-la.","Mũi kim.","Ca-na-ri.","Mô-dăm-bích."],"c":2},
+    {"type":"mcq","q":"Đặc điểm lãnh thổ của Châu Phi là","o":["kéo dài và hẹp ngang.","có dạng hình khối.","đường bờ biển bị cắt xẻ mạnh.","tập hợp các cung đảo lớn."],"c":1},
+    {"type":"mcq","q":"Diện tích lãnh thổ của Châu Phi là khoảng","o":["10 triệu km².","30 triệu km².","44,4 triệu km².","15 triệu km²."],"c":2},
+    {"type":"mcq","q":"Địa hình châu Phi không có đặc điểm nào?","o":["Bề mặt địa hình khá bằng phẳng.","Đa dạng, chủ yếu là sơn nguyên, bồn địa.","Cao về phía tây bắc và thấp về phía đông nam.","Các đồng bằng nhỏ hẹp phân bố chủ yếu ven biển."],"c":2},
+    {"type":"mcq","q":"So với mực nước biển, độ cao địa hình trung bình của Châu Phi là khoảng","o":["200m.","500m.","750m.","1000m."],"c":2},
+    {"type":"mcq","q":"Bồn địa nào có đường xích đạo đi ngang qua?","o":["Sát.","Nin Thượng.","Công-gô.","Ca-la-ha-ri."],"c":2},
+    {"type":"mcq","q":"Khoáng sản của Châu Phi có đặc điểm là","o":["tuy không đa dạng nhưng trữ lượng lớn.","đa dạng, phong phú, có giá trị cao.","phân bố rải rác, không tập trung thành mỏ lớn.","chưa thu hút được sự đầu tư của các cường quốc."],"c":1},
+    {"type":"mcq","q":"Đặc điểm chung của khí hậu Châu Phi là","o":["nóng ẩm nhất thế giới.","khu vực khí hậu gió mùa điển hình.","khô nóng bậc nhất thế giới.","xuất hiện khí hậu cực đới khắc nghiệt."],"c":2},
+    {"type":"mcq","q":"Sông ngòi Châu Phi có đặc điểm là","o":["rất nhiều sông lớn, mạng lưới dày đặc.","mạng lưới kém phát triển, thưa thớt ở hoang mạc.","phần lớn các con sông bị đóng băng vào mùa đông.","nguồn cung cấp nước cho sông chủ yếu là băng, tuyết."],"c":1},
+    {"type":"mcq","q":"Đại bộ phận lãnh thổ châu Phi nằm giữa hai chí tuyến, vị trí này quy định đặc điểm khí hậu nào sau đây?","o":["Khí hậu mang tính chất nhiệt đới, nóng quanh năm.","Khí hậu ôn hòa, bốn mùa rõ rệt.","Khí hậu lạnh giá, băng tuyết bao phủ.","Khí hậu mang tính chất hải dương ẩm ướt."],"c":0},
+    {"type":"mcq","q":"Châu Phi ngăn cách với châu Âu bởi biển và vịnh biển nào?","o":["Biển Đỏ và vịnh A-đen.","Địa Trung Hải và eo biển Gíp-ran-ta.","Biển Đen và eo biển Bo-xpho.","Biển Ca-spi và vịnh Phe-rơ-xích."],"c":1},
+    {"type":"mcq","q":"Địa hình châu Phi có đặc điểm nổi bật nào dưới đây?","o":["Thấp dần từ bắc xuống nam, nhiều đồng bằng rộng lớn.","Là một khối cao nguyên khổng lồ, cao trung bình 750m.","Nhiều dãy núi trẻ cao và đồ sộ nhất thế giới.","Bị chia cắt mạnh mẽ bởi các vịnh và bán đảo."],"c":1},
+    {"type":"mcq","q":"Khu vực nào sau đây của châu Phi tập trung nhiều dầu mỏ và khí tự nhiên nhất?","o":["Phía nam châu Phi.","Khu vực ven vịnh Ghi-nê và Bắc Phi.","Vùng núi Dré-ken-béc.","Trung tâm bồn địa Công-gô."],"c":1},
+    {"type":"mcq","q":"Nguyên nhân chính khiến châu Phi là châu lục nóng nhất thế giới là do","o":["Có diện tích rộng lớn nhất thế giới.","Có nhiều hoang mạc nhất thế giới.","Vị trí nằm hầu hết trong vùng nội chí tuyến.","Không có các dãy núi cao chắn gió."],"c":2},
+    {"type":"mcq","q":"Hồ nước nào sau đây là hồ nước ngọt lớn nhất châu Phi và là nguồn cung cấp nước cho sông Nin?","o":["Hồ Sát.","Hồ Tan-ga-ni-ca.","Hồ Vích-to-ri-a.","Hồ Ma-la-uy."],"c":2},
+    {"type":"mcq","q":"Các hoang mạc ở châu Phi thường lan ra sát tận bờ biển là do ảnh hưởng của","o":["Các dòng biển nóng chạy ven bờ.","Các dòng biển lạnh chạy ven bờ.","Địa hình đồng bằng thấp.","Gió Tây ôn đới thổi quanh năm."],"c":1},
+    {"type":"mcq","q":"Sông có chiều dài lớn nhất thế giới chảy qua châu Phi là","o":["Sông Công-gô.","Sông Ni-giê.","Sông Nin.","Sông Dăm-be-zi."],"c":2},
+    {"type":"mcq","q":"Trong môi trường xích đạo ở châu Phi, mạng lưới sông ngòi có đặc điểm nào nổi bật?","o":["Sông ngòi rất ít, thường là sông chết.","Mạng lưới sông dày đặc, nhiều nước quanh năm.","Sông chỉ có nước vào mùa mưa, mùa khô cạn kiệt.","Sông thường đóng băng vào mùa đông."],"c":1},
+    {"type":"mcq","q":"Đặc điểm nổi bật của sinh vật trong môi trường hoang mạc ở châu Phi là","o":["Thực vật phong phú, nhiều tầng tán.","Động vật chủ yếu là các loài ăn cỏ và ăn thịt cỡ lớn.","Thực vật rất nghèo nàn, động vật chịu hạn tốt.","Rừng lá kim phát triển mạnh."],"c":2},
+    {"type":"mcq","q":"Kênh đào nào ở châu Phi có vai trò quan trọng trong hàng hải quốc tế?","o":["Kênh đào Pa-na-ma.","Kênh đào Xuy-ê.","Kênh đào Ki-en.","Kênh đào Cô-rin-tô."],"c":1},
+    {"type":"mcq","q":"Đường xích đạo đi qua bộ phận nào của châu Phi?","o":["Gần như chính giữa châu lục.","Cận cực Bắc của châu lục.","Cận cực Nam của châu lục.","Chỉ đi qua các đảo ven bờ."],"c":0},
+    {"type":"mcq","q":"Ý nào sau đây mô tả đúng nhất cấu trúc địa hình của châu Phi?","o":["Toàn bộ châu lục là một hệ thống núi trẻ cao, đồ sộ.","Địa hình chủ yếu là các cao nguyên xen kẽ với các bồn địa thấp.","Có nhiều đồng bằng rộng lớn, màu mỡ nằm ở trung tâm châu lục.","Bề mặt lục địa khá bằng phẳng, thấp dần từ tây sang đông."],"c":1},
+    {"type":"mcq","q":"Tại sao các dòng sông ở châu Phi thường có nhiều thác ghềnh?","o":["Do lòng sông quá hẹp và sâu.","Do sông chảy qua các bậc địa hình từ cao nguyên xuống đồng bằng.","Do lượng mưa ở châu Phi quá lớn làm nước chảy xiết.","Do con người xây dựng quá nhiều đập thủy điện."],"c":1},
+    {"type":"mcq","q":"Hoang mạc Xa-ha-ra nằm ở khu vực nào của châu Phi?","o":["Đông Phi.","Nam Phi.","Trung Phi.","Bắc Phi."],"c":3},
+    {"type":"mcq","q":"Nhóm đất chính ở môi trường nhiệt đới châu Phi là","o":["đất phù sa.","đất đen.","đất feralit đỏ vàng.","đất xám hoang mạc."],"c":2},
+    {"type":"mcq","q":"Hướng nghiêng chung của địa hình châu Phi là","o":["cao ở phía đông nam, thấp dần về phía tây bắc.","cao ở phía tây bắc, thấp dần về phía đông nam.","cao ở giữa, thấp dần về bốn phía.","thấp ở giữa, cao dần ra các rìa lục địa."],"c":0},
+    {"type":"mcq","q":"Vàng tập trung chủ yếu ở khu vực nào của châu Phi?","o":["Bắc Phi.","Trung Phi.","Nam Phi.","Khắp châu Phi."],"c":2},
+    {"type":"mcq","q":"Mạng lưới sông ngòi dày đặc, lượng nước lớn tập trung ở","o":["bồn địa Nin Thượng và bán đảo Xô-ma-li.","dãy Át-lát và bồn địa Ca-la-ha-ri.","hoang mạc Xa-ha-ra và sơn nguyên Đông Phi.","phía bắc vịnh Ghi-nê và bồn địa Công-gô."],"c":3},
+    {"type":"mcq","q":"Môi trường tự nhiên nào ở cực Bắc và cực Nam châu Phi có thảm thực vật là rừng lá cứng và cây bụi gai?","o":["Môi trường xích đạo.","Môi trường cận nhiệt.","Môi trường nhiệt đới.","Môi trường hoang mạc."],"c":1}
+  ]
 };
 
 subjectData.onsudS20326 = {
@@ -2148,6 +2211,21 @@ btnRestart.addEventListener('click', () => {
       currentSubject = 'onsudS20326';
       const totalQuestions = subjectData.onsudS20326.questions.length;
       subjectTitle.textContent = subjectData.onsudS20326.fullName;
+      fullModeDesc.textContent = `Chọn từ 1 đến ${totalQuestions} câu hỏi`;
+      randomModeStats = { totalAnswered: 0, totalCorrect: 0 };
+      const customInput = document.getElementById('customQuestionCount');
+      customInput.max = totalQuestions;
+      const defaultValue = Math.min(10, totalQuestions);
+      customInput.value = defaultValue;
+      lastValidQuestionCount = defaultValue;
+      subjectScreen.classList.add('hidden');
+      modeScreen.classList.remove('hidden');
+    });
+
+    document.getElementById('selectOnDia20326').addEventListener('click', () => {
+      currentSubject = 'ondia20326';
+      const totalQuestions = subjectData.ondia20326.questions.length;
+      subjectTitle.textContent = subjectData.ondia20326.fullName;
       fullModeDesc.textContent = `Chọn từ 1 đến ${totalQuestions} câu hỏi`;
       randomModeStats = { totalAnswered: 0, totalCorrect: 0 };
       const customInput = document.getElementById('customQuestionCount');
