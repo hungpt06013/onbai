@@ -172,6 +172,30 @@ body.dark .bg-blue-600 { background-color: #2563eb !important; }
                 <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">82 câu hỏi</div>
               </div>
             </button>
+            <button id="selectOnSu20326" class="group relative overflow-hidden bg-gradient-to-br from-red-600 to-rose-700 text-white p-8 rounded-xl hover:from-red-700 hover:to-rose-800 transition-all transform hover:scale-[1.02] shadow-lg">
+              <div class="relative z-10">
+                <div class="flex items-center justify-center mb-4">
+                  <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Ôn Sử 20.3.26</h3>
+                <p class="text-red-100 text-sm">ĐGGK</p>
+                <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">26 câu hỏi</div>
+              </div>
+            </button>
+            <button id="selectOnSuDS20326" class="group relative overflow-hidden bg-gradient-to-br from-amber-600 to-yellow-700 text-white p-8 rounded-xl hover:from-amber-700 hover:to-yellow-800 transition-all transform hover:scale-[1.02] shadow-lg">
+              <div class="relative z-10">
+                <div class="flex items-center justify-center mb-4">
+                  <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Ôn Sử Đ/S 20.3.26</h3>
+                <p class="text-amber-100 text-sm">ĐGGK</p>
+                <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">39 câu hỏi</div>
+              </div>
+            </button>
           </div>
         </div>
       </div>
@@ -333,6 +357,83 @@ body.dark .bg-blue-600 { background-color: #2563eb !important; }
   <script>
     // === DATA ===
 const subjectData = {
+};
+
+subjectData.onsudS20326 = {
+  fullName: 'Ôn Sử Đ/S 20.3.26',
+  questions: [
+    {"type":"tf","q":"Bài 15 – Câu 1: Chính sách của nhà Lý đối với các tù trưởng miền núi","statements":["Gả công chúa cho các tù trưởng để tạo mối quan hệ gần gũi.","Ban hành các luật lệ nghiêm ngặt để kiểm soát chặt chẽ.","Miễn thuế cho các tù trưởng miền núi.","Bắt các tù trưởng miền núi nộp nhiều thuế hơn người Kinh."],"answers":[true,true,false,false]},
+    {"type":"tf","q":"Bài 15 – Câu 2: Tình hình chính trị thời Lý","statements":["Nhà Lý chia cả nước thành 24 lộ, phủ và các châu miền núi.","Vua ở ngôi theo chế độ cha truyền con nối.","Quân đội nhà Lý chỉ bao gồm cấm quân bảo vệ kinh thành.","Hệ thống chính quyền từ trung ương đến địa phương do các tù trưởng quản lí."],"answers":[true,true,false,false]},
+    {"type":"tf","q":"Bài 15 – Câu 3: Ý nghĩa bộ luật Hình thư ban hành năm 1042","statements":["Đánh dấu việc xây dựng hệ thống pháp luật thành văn đầu tiên ở Việt Nam.","Là bộ luật thành văn thứ hai ở nước ta sau Luật Hồng Đức.","Giúp quản lý xã hội một cách chặt chẽ và có trật tự hơn.","Chỉ áp dụng cho tầng lớp quý tộc trong xã hội."],"answers":[true,false,true,false]},
+    {"type":"tf","q":"Bài 15 – Câu 4: Tác dụng của chính sách \"ngụ binh ư nông\" của nhà Lý","statements":["Giúp binh sĩ thay phiên làm nông nghiệp, đảm bảo sản xuất không bị gián đoạn.","Là cơ sở để phát triển ngoại giao.","Góp phần đảm bảo sự ổn định về kinh tế và xã hội.","Tạo ra sự chênh lệch lớn giữa binh sĩ và nông dân."],"answers":[true,false,true,false]},
+    {"type":"tf","q":"Bài 15 – Câu 5: Nội dung KHÔNG phản ánh đúng chính sách phát triển nông nghiệp nhà Lý","statements":["Tổ chức cày ruộng tịch điền.","Hạn chế giết mổ trâu bò bừa bãi.","Đào đắp kênh mương, đắp đê phòng lụt.","Nghiêm cấm nhân dân khai khẩn đất hoang."],"answers":[false,false,false,true]},
+    {"type":"tf","q":"Bài 15 – Câu 6: Nội dung phản ánh đúng chính sách phát triển nông nghiệp của nhà Lý","statements":["Tổ chức cày ruộng tịch điền.","Hạn chế giết mổ trâu bò bừa bãi.","Đào đắp kênh mương, đắp đê phòng lụt.","Nghiêm cấm nhân dân khai khẩn đất hoang."],"answers":[true,true,true,false]},
+    {"type":"tf","q":"Bài 15 – Câu 7: Thành tựu văn hóa dưới thời nhà Lý","statements":["Văn học chữ Hán phát triển, xuất hiện tác phẩm như Chiếu dời đô.","Dựng Văn Miếu năm 1070 để làm nơi thờ Khổng Tử.","Xây dựng nhiều đền thờ Đạo giáo thay vì chùa chiền.","Hạn chế tổ chức các trò chơi dân gian để tập trung vào sản xuất."],"answers":[true,true,false,false]},
+    {"type":"tf","q":"Bài 15 – Câu 8: Việc nhà Lý thành lập","statements":["Nhà Lý được thành lập sau khi vua Lê Long Đĩnh qua đời năm 1009.","Sau khi Lê Long Đĩnh qua đời, giới sư sãi và các đại thần trong triều đã tôn Lý Công Uẩn lên ngôi vua.","Nhà Lý được thành lập nhờ sự nổi dậy của nông dân và tầng lớp bình dân.","Vua Lý Công Uẩn lấy niên hiệu là Đại Hòa khi lên ngôi năm 1010."],"answers":[true,true,false,false]},
+    {"type":"tf","q":"Bài 15 – Câu 9: Nội dung KHÔNG phản ánh đúng hoàn cảnh thành lập nhà Lý","statements":["Lê Long Đĩnh lên ngôi không đủ tài đức để điều khiển đất nước.","Lê Long Đĩnh chủ động nhường ngôi cho Lý Công Uẩn.","Nhà Lý được thành lập nhờ sự nổi dậy của nông dân và tầng lớp bình dân.","Lý Công Uẩn là người có tài đức nên được triều thần quý trọng."],"answers":[false,true,true,false]},
+    {"type":"tf","q":"Bài 15 – Câu 10: Ý nghĩa của sự kiện dời đô thời Lý","statements":["Việc dời đô thể hiện khát vọng về một triều đại thịnh vượng, bền vững.","Dời đô giúp Đại La trở thành trung tâm giao thương và văn hóa lớn.","Việc dời đô là một quyết định tạm thời để tránh chiến tranh.","Dời đô chỉ mang ý nghĩa tinh thần, không ảnh hưởng đến kinh tế."],"answers":[true,true,false,false]},
+    {"type":"tf","q":"Bài 15 – Câu 11: Nhà Lý xây dựng đất nước (phần 1)","statements":["Chính quyền trung ương và địa phương thời Lý ngày càng kiện toàn hơn.","Thời Lý, đứng đầu chính quyền trung ương là vua; dưới vua có các quan đại thần (quan văn, quan võ).","Thời Lý, vua ở ngôi theo chế độ \"cha truyền con nối\".","Ở địa phương, nhà Lý chia cả nước thành 12 (lộ/phủ) và đặt các chức quan tri phủ, tri châu."],"answers":[true,true,true,false]},
+    {"type":"tf","q":"Bài 15 – Câu 12: Nhà Lý xây dựng đất nước (phần 2)","statements":["Để củng cố quốc gia thống nhất, nhà Lý đã thực hiện các chính sách đối nội, đối ngoại mềm dẻo nhưng kiên quyết.","Nhà Lý kiên quyết trấn áp những thế lực có mưu đồ tách khỏi Đại Việt.","Nhà Lý thần phục nhà Tống và Chăm-pa.","Quốc Tử Giám là nơi học tập của con em quý tộc, sau đó mở rộng đến con em quan lại và những người giỏi trong nước."],"answers":[true,true,false,true]},
+    {"type":"tf","q":"Bài 15 – Câu 13: Kháng chiến chống xâm lược Tống (1075–1077)","statements":["Trận quyết chiến chiến lược trên phòng tuyến sông Như Nguyệt đã đánh tan cuộc xâm lược của quân Tống.","Chiến thắng Như Nguyệt đã bảo vệ vững chắc nền độc lập dân tộc.","Chiến thắng Như Nguyệt đã thể hiện tinh thần đoàn kết, quyết tâm chống ngoại xâm của nhân dân Đại Việt.","Chiến thắng Như Nguyệt thể hiện sự lãnh đạo tài ba của Lý Công Uẩn."],"answers":[true,true,true,false]},
+    {"type":"tf","q":"Bài 16 – Câu 1: Tình hình chính trị thời Trần","statements":["Chế độ Thái Thượng hoàng giúp củng cố quyền lực của vua Trần.","Tăng cường quản lý chặt chẽ các địa phương miền núi và biên viễn.","Không có các quy định pháp luật cụ thể được ban hành.","Triều đình áp dụng chính sách \"ngụ binh ư nông\" để bảo vệ đất nước."],"answers":[true,true,false,false]},
+    {"type":"tf","q":"Bài 16 – Câu 2: Các tầng lớp xã hội thời Trần","statements":["Tầng lớp nông nô làm việc trong các điền trang hoặc phục dịch quý tộc.","Nhân dân chủ yếu là thương nhân và thợ thủ công.","Quý tộc nắm giữ các chức vụ chủ chốt trong bộ máy nhà nước.","Công nhân là tầng lớp đông đảo nhất."],"answers":[true,false,true,false]},
+    {"type":"tf","q":"Bài 16 – Câu 3: Hoàn cảnh thành lập nhà Trần","statements":["Nhà Lý suy yếu, phải dựa vào họ Trần để đánh dẹp các thế lực chống đối.","Họ Trần đánh thắng quân nhà Lương xâm lược nước ta.","Dân chúng cực khổ; tình trạng lụt lội, hạn hán, mất mùa liên tiếp xảy ra.","Đất nước thái bình, thịnh trị; đời sống nhân dân ổn định, phát triển."],"answers":[true,false,true,false]},
+    {"type":"tf","q":"Bài 16 – Câu 4: Văn học thời Trần","statements":["Văn học chữ Nôm thời Trần đạt được những bước phát triển lớn.","Nguyễn Thuyên (Hàn Thuyên) là nhà thơ tiêu biểu viết bằng chữ Hán.","Văn học chữ Nôm góp phần khẳng định bản sắc văn hóa dân tộc.","Thơ văn thời Trần chỉ tập trung ca ngợi vua."],"answers":[true,false,true,false]},
+    {"type":"tf","q":"Bài 16 – Câu 5: Khoa học – kỹ thuật thời Trần","statements":["Đại Việt sử ký là bộ quốc sử đầu tiên của Việt Nam.","Binh thư yếu lược do Chu Văn An biên soạn.","Tuệ Tĩnh nổi tiếng với nghiên cứu về cây thuốc Nam.","Việt sử lược là tác phẩm do Lê Văn Hưu biên soạn."],"answers":[true,false,true,false]},
+    {"type":"tf","q":"Bài 16 – Câu 6: Nội dung KHÔNG phản ánh đúng hoàn cảnh thành lập nhà Trần","statements":["Nhà Lý suy yếu, phải dựa vào họ Trần để đánh dẹp các thế lực chống đối.","Dân chúng cực khổ; tình trạng lụt lội, hạn hán, mất mùa liên tiếp xảy ra.","Họ Trần đánh thắng quân nhà Lương xâm lược nước ta.","Đất nước thái bình, thịnh trị; đời sống nhân dân ổn định, phát triển."],"answers":[false,false,true,true]},
+    {"type":"tf","q":"Bài 16 – Câu 7: Chính sách nông nghiệp thời Trần","statements":["Nhà Trần tích cực khai hoang để mở rộng diện tích canh tác.","Hạn chế các công trình thủy lợi để tập trung phát triển công nghiệp.","Giảm các loại thuế nặng cho nông dân, bao gồm thuế thân và thuế ruộng.","Các quý tộc không được phép khai hoang lập điền trang."],"answers":[true,false,false,false]},
+    {"type":"tf","q":"Bài 16 – Câu 8: Thủ công nghiệp và thương nghiệp thời Trần","statements":["Các xưởng thủ công nhà nước sản xuất vũ khí và tiền tệ.","Các làng nghề truyền thống dần bị suy giảm dưới thời Trần.","Vân Đồn là trung tâm thương mại sầm uất.","Không có sự giao lưu thương mại với các nước láng giềng."],"answers":[true,false,true,false]},
+    {"type":"tf","q":"Bài 16 – Câu 9: Tôn giáo thời Trần","statements":["Thiền phái Trúc Lâm Yên Tử do Trần Nhân Tông sáng lập.","Nho giáo hoàn toàn bị loại bỏ trong thời kỳ này.","Đạo giáo được coi trọng cùng với Phật giáo.","Phật giáo chỉ được quý tộc ủng hộ, không phổ biến trong nhân dân."],"answers":[true,false,true,false]},
+    {"type":"tf","q":"Bài 16 – Câu 10: Nội dung KHÔNG phản ánh đúng văn học thời Trần","statements":["Văn học chữ Nôm thời Trần đạt được những bước phát triển lớn.","Nguyễn Thuyên (Hàn Thuyên) là nhà thơ tiêu biểu viết bằng chữ Hán.","Văn học chữ Nôm góp phần khẳng định bản sắc văn hóa dân tộc.","Thơ văn thời Trần chỉ tập trung ca ngợi vua."],"answers":[false,true,false,true]},
+    {"type":"tf","q":"Bài 16 – Câu 11: Công cuộc xây dựng đất nước thời Trần (phần 1)","statements":["Pháp luật thời Trần đề cao sự nghiêm minh. Nhà nước ban hành bộ Quốc triều hình luật, các cơ quan pháp luật được tăng cường và hoàn thiện.","Nhà Trần khuyến khích khai khẩn đất hoang, mở rộng diện tích canh tác, đào sông ngòi, đắp đê phòng lụt, đặt các chức quan chuyên lo về nông nghiệp và thủy lợi.","Thăng Long là trung tâm sản xuất và buôn bán lớn nhất nước ta, có 36 phường sản xuất.","Cả nước được chia thành 24 lộ, phủ. Đơn vị hành chính ở địa phương phổ biến là tổng."],"answers":[true,true,false,false]},
+    {"type":"tf","q":"Bài 16 – Câu 12: Công cuộc xây dựng đất nước thời Trần (phần 2)","statements":["Kinh tế thương nghiệp thời Trần khá phát triển: Thăng Long là trung tâm buôn bán lớn nhất; thuyền buôn ngoại quốc thường xuyên lui tới các cảng như Vân Đồn, Hội Thống, Hội Triều,...","Chu Văn An đỗ Thái học sinh và được vua Trần Minh Tông mời ra làm quan và dạy học tại Quốc Tử Giám.","Năm 1248, vua Trần cho đắp đê từ đầu nguồn đến cửa biển dọc các con sông lớn, gọi là đê Cơ Xá.","Tướng sĩ và địa chủ được ban thái ấp và cấp bổng lộc."],"answers":[true,true,false,false]},
+    {"type":"tf","q":"Bài 16 – Câu 13: Đại Việt thời Trần (1226–1400)","statements":["Năm 1258, Quốc Tử Giám được mở rộng và thu nhận cả con cái thường dân vào học. Trường tư cũng được mở nhiều ở làng xã.","Bộ máy chính quyền trung ương và địa phương thời Trần hoàn thiện hơn thời Lý; đặc biệt tăng cường quản lí các khu vực miền núi và biên viễn.","Các vua Trần xưng Thái Thượng hoàng và không tham gia quản lí đất nước; các kì thi Nho học chưa được tổ chức quy củ.","Dòng thiền Trúc Lâm do Phật hoàng Trần Nhân Tông sáng lập."],"answers":[false,true,false,true]},
+    {"type":"tf","q":"Bài 17 – Câu 1: Hội nghị Diên Hồng KHÔNG thể hiện ý nghĩa nào dưới đây","statements":["Nhà Trần biết đoàn kết với nhân dân để đánh giặc.","Nhà Trần sợ giặc Nguyên nên mới nhờ đến nhân dân.","Cuộc kháng chiến của nhà Trần là cuộc chiến tranh nhân dân.","Triều đình và nhân dân còn chưa đồng lòng đánh giặc."],"answers":[false,true,false,true]},
+    {"type":"tf","q":"Bài 17 – Câu 2: Điểm chung về tinh thần chiến đấu của vua tôi nhà Trần","statements":["Quyết tâm đánh giặc, thể hiện sự đoàn kết của vua tôi nhà Trần.","Sự phân tranh giữa vua và các tướng lĩnh trong việc chống giặc.","Quân Mông – Nguyên mạnh cả về thế và lực so với quân ta.","Tinh thần đoàn kết, quyết chiến, không hòa hiếu với quân xâm lược."],"answers":[true,false,false,true]},
+    {"type":"tf","q":"Bài 17 – Câu 3: Nội dung phản ánh đúng kế sách đánh giặc của nhà Trần","statements":["Nhà Trần chưa chủ động tấn công quân giặc.","Tích cực, chủ động chuẩn bị cho cuộc kháng chiến.","Tập trung đánh những chỗ mạnh của quân địch.","Rút lui chiến lược; chớp thời cơ để phản công."],"answers":[false,true,false,true]},
+    {"type":"tf","q":"Bài 17 – Câu 4: Lí do nhà Trần không lựa chọn hòa hoãn với quân Nguyên","statements":["Vì lòng yêu nước nồng nàn, quyết không để mất đất.","Vì quân Trần luôn giữ vững tư tưởng đánh giặc đến cùng.","Vì quân Trần không có đủ lực lượng để chiến đấu.","Vì nhà Trần luôn sẵn sàng chấp nhận hòa bình với kẻ thù mạnh."],"answers":[true,true,false,false]},
+    {"type":"tf","q":"Bài 17 – Câu 5: Ý nghĩa lịch sử ba lần chiến thắng quân Mông – Nguyên","statements":["Bảo vệ độc lập, chủ quyền và toàn vẹn lãnh thổ của Đại Việt.","Ngăn chặn sự xâm lược của Trung Quốc đối với các quốc gia Đông Nam Á.","Củng cố nền văn hóa Mông Cổ tại khu vực Đông Nam Á.","Để lại bài học về tinh thần đoàn kết và quyết chiến trong bảo vệ Tổ quốc."],"answers":[true,false,false,true]},
+    {"type":"tf","q":"Bài 17 – Câu 6: Cuộc kháng chiến chống quân Mông Cổ năm 1258 thể hiện","statements":["Sự khéo léo trong việc sử dụng chiến thuật phòng thủ của quân Trần.","Sự liên kết mạnh mẽ của quân Mông Cổ và quân Trung Quốc trong việc tấn công Đại Việt.","Quyết tâm bảo vệ độc lập và chủ quyền của Đại Việt.","Sự yếu đuối của quân dân nhà Trần trong việc đối phó với kẻ thù."],"answers":[true,false,true,false]},
+    {"type":"tf","q":"Bài 17 – Câu 7: Nội dung thể hiện chính xác nguyên nhân ba lần giặc Mông – Nguyên thất bại","statements":["Đường lối quân sự của Đại Việt rất độc đáo, linh hoạt, sáng tạo.","Lực lượng quân Mông – Nguyên ít, khí thế chiến đấu kém cỏi.","Đại Việt có đội ngũ tướng lĩnh tài giỏi với nhiều danh tiếng kiệt xuất.","Quân Mông – Nguyên không được nước nào viện trợ."],"answers":[true,false,true,false]},
+    {"type":"tf","q":"Bài 17 – Câu 8: Nội dung KHÔNG phản ánh đúng kế sách đánh giặc của nhà Trần","statements":["Nhà Trần chưa chủ động tấn công quân giặc.","Tích cực, chủ động chuẩn bị cho cuộc kháng chiến.","Tập trung đánh những chỗ mạnh của quân địch.","Rút lui chiến lược; chớp thời cơ để phản công."],"answers":[true,false,true,false]},
+    {"type":"tf","q":"Bài 17 – Câu 9: Nội dung KHÔNG thể hiện chính xác nguyên nhân ba lần giặc Mông – Nguyên thất bại","statements":["Đường lối quân sự của Đại Việt rất độc đáo, linh hoạt, sáng tạo.","Lực lượng quân Mông – Nguyên ít, khí thế chiến đấu kém cỏi.","Đại Việt có đội ngũ tướng lĩnh tài giỏi với nhiều danh tiếng kiệt xuất.","Quân Mông – Nguyên không được nước nào viện trợ."],"answers":[false,true,false,true]},
+    {"type":"tf","q":"Bài 17 – Câu 10: Ý nghĩa câu nói của Trần Thủ Độ: \"Đầu thần chưa rơi xuống đất, xin bệ hạ đừng lo\"","statements":["Tinh thần quyết chiến chống giặc của Trần Thủ Độ.","Sự lo lắng của Trần Thủ Độ về sự thất bại của quân Trần.","Sự quyết tâm bảo vệ đất nước của Trần Thủ Độ.","Quân Mông – Nguyên quá mạnh nên ta chưa thể chủ động tấn công."],"answers":[true,false,true,false]},
+    {"type":"tf","q":"Bài 17 – Câu 11: Diễn biến kháng chiến chống Mông – Nguyên (phần 1)","statements":["Năm 1257, Mông Cổ đã cho quân áp sát biên giới Đại Việt rồi ba lần cử sứ giả đến Thăng Long dụ hàng.","Cuối tháng 1 – 1258, quân Trần tổ chức phản công lớn ở Bình Lệ Nguyên (Vĩnh Phúc). Quân Mông Cổ thua trận rút chạy.","Năm 1271, Hốt Tất Liệt lập ra nhà Nguyên, ráo riết chuẩn bị xâm lược Đại Việt.","Đầu năm 1282, Thượng hoàng triệu phụ lão trong nước họp ở điện Diên Hồng, ban yến và hỏi kế đánh giặc."],"answers":[true,false,true,false]},
+    {"type":"tf","q":"Bài 17 – Câu 12: Diễn biến kháng chiến chống Mông – Nguyên (phần 2)","statements":["\"Bệ hạ chém đầu thần trước rồi hãy hàng\" là câu nói của Trần Quốc Tuấn khi trả lời vua Trần Thánh Tông.","Năm 1289, Trần Quốc Tuấn được vua phong tước Hưng Đạo Đại Vương.","Trận Bạch Đằng (năm 1288) đã đánh tan cánh quân chở lương thảo của quân Nguyên.","Năm 1288, trên đường bộ, Thoát Hoan phải chui vào ống đồng bắt quân lính khiêng, tháo chạy về nước."],"answers":[false,true,false,true]},
+    {"type":"tf","q":"Bài 17 – Câu 13: Những nhận định về cuộc kháng chiến chống Mông – Nguyên","statements":["Vào thế kỉ XII, đế chế Mông Cổ liên tiếp tiến hành các cuộc chiến tranh xâm lược và thống trị nhiều nước ở lục địa Á – Âu.","Đầu năm 1258, quân Mông Cổ do tướng Thoát Hoan chỉ huy từ Vân Nam tiến vào Đại Việt.","Tháng 5 – 1285, quân Trần tổ chức phản công, đánh bại quân giặc ở nhiều nơi như: Tây Kết, Hàm Tử, Chương Dương rồi tiến vào giải phóng Thăng Long, kết thúc thắng lợi cuộc kháng chiến.","Trong ba lần kháng chiến chống quân xâm lược Mông – Nguyên, kế sách \"vườn không nhà trống\" đều được nhà Trần sử dụng."],"answers":[false,false,true,true]}
+  ]
+};
+
+subjectData.onsu20326 = {
+  fullName: 'Ôn Sử 20.3.26',
+  questions: [
+    {"type":"mcq","q":"Ý nào dưới đây không phải là việc làm của Lý Công Uẩn sau khi thành lập nhà Lý?","o":["Đặt niên hiệu là Thuận Thiên.","Quyết định dời đô từ Hoa Lư về Đại La (Thăng Long, Hà Nội).","Xây dựng các cung điện ở khu vực trung tâm của kinh thành.","Đổi tên nước là Đại Việt."],"c":3},
+    {"type":"mcq","q":"Ý nào không phản ánh đúng ý nghĩa sự kiện dời đô từ Hoa Lư về Đại La của Lý Công Uẩn?","o":["Khẳng định vị thế của Thăng Long – Hà Nội trong lịch sử dân tộc.","Tạo ra nhiều điều kiện thuận lợi để phát triển đất nước.","Mở ra thời kì mới trong sự phát triển của dân tộc.","Góp phần xây dựng quốc gia thống nhất."],"c":3},
+    {"type":"mcq","q":"Bộ luật thành văn đầu tiên của nước Đại Việt có tên là","o":["Hình thư.","Hình luật.","Quốc triều hình luật.","Hoàng triều luật lệ."],"c":0},
+    {"type":"mcq","q":"Ý nào dưới đây không phải là chính sách của nhà Lý trong việc xây dựng quân đội?","o":["Xây dựng quân đội với kỉ luật nghiêm minh, huấn luyện chu đáo.","Xây dựng quân đội với hai bộ phận: cấm quân và quân địa phương.","Quân đội được trang bị nhiều vũ khí hiện đại.","Thi hành chính sách \"ngụ binh ư nông\"."],"c":2},
+    {"type":"mcq","q":"Đối với nhà Tống, chính sách đối ngoại mà nhà Lý thực hiện là","o":["quan hệ ngoại giao vừa mềm dẻo vừa cứng rắn để giữ vững chủ quyền quốc gia.","hòa hiếu, nộp triều cống đều đặn hằng năm, thần phục nhà Tống không điều kiện.","hòa hiếu, nộp triều cống nhưng luôn giữ tư thế của một quốc gia độc lập.","hợp tác bình đẳng, đôi bên cùng có lợi, luôn giữ tư thế là một quốc gia độc lập."],"c":2},
+    {"type":"mcq","q":"Các vua nhà Lý cho dựng lầu chuông hai bên thềm điện Long Trì để","o":["người dân đánh chuông kêu oan ức.","triệu tập quý tộc, quan lại lúc cần thiết.","báo động triều đình khi có ngoại xâm.","thực hiện nghi thức trong Phật giáo."],"c":0},
+    {"type":"mcq","q":"Nhà Lý gả công chúa và ban hành chức tước cho các tù trưởng dân tộc ít người nhằm","o":["thắt chặt tình đoàn kết giữa các dân tộc.","lấy lòng đồng bào dân tộc thiểu số.","thực hiện chính sách đa dân tộc, sắc tộc.","mở rộng thế lực và phạm vi ảnh hưởng."],"c":0},
+    {"type":"mcq","q":"Ý nào sau đây không phản ánh đúng tình hình tư tưởng – tôn giáo thời Lý?","o":["Phật giáo được các vua Lý tôn sùng và truyền bá rộng rãi trong nhân dân.","Nho giáo bắt đầu được mở rộng.","Nho giáo chưa có vai trò trong đời sống xã hội.","Đạo giáo được truyền bá, kết hợp với các tín ngưỡng dân gian."],"c":2},
+    {"type":"mcq","q":"Ý nào không phản ánh đúng việc làm của nhà Lý trước âm mưu xâm lược của nhà Tống (Trung Quốc)?","o":["Cử Lý Thường Kiệt là tổng chỉ huy cuộc kháng chiến.","Chủ động tiến hành các biện pháp đối phó.","Đạp tan ý đồ phối hợp tiến công của quân Tống với Chăm-pa.","Triệu tập hội nghị Bình Than (Bắc Ninh) để bàn kế sách đánh giặc."],"c":3},
+    {"type":"mcq","q":"Nét độc đáo trong cuộc kháng chiến chống quân xâm lược Tống giai đoạn thứ nhất (1075) là","o":["tích cực luyện tập quân sĩ.","cho quân mai phục, sẵn sàng chiến đấu.","chủ động thực hiện chủ trương \"tiến công trước để tự vệ\".","chặn các ngả đường mà quân xâm lược có thể tiến vào."],"c":2},
+    {"type":"mcq","q":"Lý Thường Kiệt xây dựng phòng tuyến chống quân Tống ở bờ nam sông Như Nguyệt vì","o":["sông Như Nguyệt vừa rộng và sâu nên quân giặc khó có thể vượt qua.","địa hình bên bờ bắc của sông Như Nguyệt không thuận lợi cho quân ta phòng ngự.","sông Như Nguyệt như một chiến hào tự nhiên khó có thể vượt qua.","sông Như Nguyệt có vị trí hiểm yếu, chặn ngang con đường bộ tiến vào Thăng Long."],"c":3},
+    {"type":"mcq","q":"Nét độc đáo trong cách kết thúc cuộc kháng chiến của Lý Thường Kiệt là","o":["giả thua để cho quân giặc kiêu căng rồi bất ngờ phản công tiêu diệt chúng.","giam chân địch ở phía bờ bắc sông Như Nguyệt khiến chúng cạn kiệt lương thực, rệu rã tinh thần rồi bất ngờ mở trận tấn công quyết định.","kết hợp tấn công quân sự với vận động tâm lí để làm nhụt chí xâm lược của quân Tống.","khi địch lâm vào tình thế hết sức khó khăn, tuyệt vọng thì chủ động đề nghị giảng hòa để kết thúc chiến tranh."],"c":3},
+    {"type":"mcq","q":"Ý nào không phản ánh đúng tác dụng trong cách kết thúc cuộc kháng chiến của Lý Thường Kiệt?","o":["Tránh được sự hi sinh xương máu của quân sĩ.","Bảo toàn được lực lượng của quân ta.","Làm cho quân Tống phải từ bỏ mộng xâm lược Đại Việt.","Góp phần giữ được mối quan hệ bang giao giữa Đại Việt và Tống."],"c":2},
+    {"type":"mcq","q":"Điểm độc đáo trong bộ máy nhà nước thời Trần là","o":["các vua lên ngôi khi còn nhỏ tuổi.","các chức vụ quan trọng trong triều đều do những người đỗ đạt nắm giữ.","các vua Trần thường nhường ngôi sớm, xưng là Thái thượng hoàng, hỗ trợ vua (con) trị nước.","nhiều cơ quan và chức quan mới được lập ra."],"c":2},
+    {"type":"mcq","q":"Điểm giống nhau về tổ chức quân đội thời Lý với thời Trần là","o":["thực hiện chính sách \"ngụ binh ư nông\".","thực hiện nền quốc phòng toàn dân.","xây dựng theo hướng \"đông đảo, tinh nhuệ\".","xây dựng theo hướng \"cốt tinh nhuệ, không cốt đông\"."],"c":0},
+    {"type":"mcq","q":"Chủ trương \"binh lính cốt tinh nhuệ, không cốt đông\" có nghĩa là","o":["quan trọng là số lượng binh lính, không quan trọng chất lượng.","quan trọng là chất lượng binh lính, không quan trọng số lượng.","cả chất lượng và số lượng binh lính đều quan trọng.","không xem trọng chất lượng và số lượng."],"c":1},
+    {"type":"mcq","q":"Biểu hiện nào cho thấy dưới thời Trần hoạt động sản xuất thủ công nghiệp đã bước đầu mang tính chuyên môn hóa?","o":["Hình thành các công trường thủ công.","Xuất hiện nhiều thợ thủ công giỏi.","Xuất hiện nhiều làng nghề, phường nghề thủ công.","Trình độ kĩ thuật được nâng cao."],"c":2},
+    {"type":"mcq","q":"Địa danh nào thời Trần trở thành nơi buôn bán tấp nập, thu hút nhiều thuyền buôn và thương nhân nước ngoài đến trao đổi hàng hóa?","o":["Thăng Long.","Chương Dương.","Vân Đồn.","Phố Hiến."],"c":2},
+    {"type":"mcq","q":"Tầng lớp thấp kém nhất trong xã hội thời Trần là","o":["nông dân.","thợ thủ công.","thương nhân.","nông nô, nô tì."],"c":3},
+    {"type":"mcq","q":"Vì sao văn học thời Trần mang đậm tinh thần yêu nước và lòng tự hào dân tộc?","o":["Do nền kinh tế phát triển, tinh thần tự cường của dân tộc dâng cao.","Do đất nước liên tục phải đương đầu và giành chiến thắng trước các cuộc xâm lược của kẻ thù.","Do nền văn hóa dân tộc được xây dựng và phát triển mạnh.","Do Đại Việt vươn lên trở thành cường quốc hùng mạnh nhất Đông Nam Á."],"c":1},
+    {"type":"mcq","q":"Năm 1054, vua Lý Thánh Tông đã đổi quốc hiệu thành","o":["Đại Cồ Việt.","Đại Nam.","Việt Nam.","Đại Việt."],"c":3},
+    {"type":"mcq","q":"Hằng năm, các vua nhà Lý thực hiện lễ cày ruộng tịch điền nhằm mục đích gì?","o":["thúc đẩy sự phát triển của thủ công nghiệp.","khuyến khích nhân dân sản xuất nông nghiệp.","củng cố quyền lực của chính quyền trung ương.","thể hiện uy quyền và tài năng trị quốc của bản thân."],"c":1},
+    {"type":"mcq","q":"Nhà Trần đã cho ban hành bộ luật nào?","o":["Hoàng Việt luật lệ.","Quốc triều hình luật.","Hoàng triều luật lệ.","Luật Hồng Đức."],"c":1},
+    {"type":"mcq","q":"Vị thầy thuốc được mệnh danh là Ông tổ thuốc Nam và là người đầu tiên xây dựng nền y học truyền thống Việt Nam là","o":["Hải Thượng Lãn Ông.","Tuệ Tĩnh.","Tôn Thất Tùng.","Hồ Đắc Di."],"c":1},
+    {"type":"mcq","q":"Quân dân nhà Trần đã phải kháng chiến chống quân xâm lược Mông – Nguyên bao nhiêu lần?","o":["1 lần.","2 lần.","3 lần.","4 lần."],"c":2},
+    {"type":"mcq","q":"Để khích lệ tinh thần chiến đấu của các binh sĩ, Hưng Đạo Vương Trần Quốc Tuấn đã viết ra tác phẩm nào?","o":["Binh thư yếu lược.","Bình Ngô đại cáo.","Hịch tướng sĩ.","Nam quốc sơn hà."],"c":2}
+  ]
 };
 
 subjectData.oncn13326 = {
@@ -2017,6 +2118,36 @@ btnRestart.addEventListener('click', () => {
       currentSubject = 'only12326';
       const totalQuestions = subjectData.only12326.questions.length;
       subjectTitle.textContent = subjectData.only12326.fullName;
+      fullModeDesc.textContent = `Chọn từ 1 đến ${totalQuestions} câu hỏi`;
+      randomModeStats = { totalAnswered: 0, totalCorrect: 0 };
+      const customInput = document.getElementById('customQuestionCount');
+      customInput.max = totalQuestions;
+      const defaultValue = Math.min(10, totalQuestions);
+      customInput.value = defaultValue;
+      lastValidQuestionCount = defaultValue;
+      subjectScreen.classList.add('hidden');
+      modeScreen.classList.remove('hidden');
+    });
+
+    document.getElementById('selectOnSu20326').addEventListener('click', () => {
+      currentSubject = 'onsu20326';
+      const totalQuestions = subjectData.onsu20326.questions.length;
+      subjectTitle.textContent = subjectData.onsu20326.fullName;
+      fullModeDesc.textContent = `Chọn từ 1 đến ${totalQuestions} câu hỏi`;
+      randomModeStats = { totalAnswered: 0, totalCorrect: 0 };
+      const customInput = document.getElementById('customQuestionCount');
+      customInput.max = totalQuestions;
+      const defaultValue = Math.min(10, totalQuestions);
+      customInput.value = defaultValue;
+      lastValidQuestionCount = defaultValue;
+      subjectScreen.classList.add('hidden');
+      modeScreen.classList.remove('hidden');
+    });
+
+    document.getElementById('selectOnSuDS20326').addEventListener('click', () => {
+      currentSubject = 'onsudS20326';
+      const totalQuestions = subjectData.onsudS20326.questions.length;
+      subjectTitle.textContent = subjectData.onsudS20326.fullName;
       fullModeDesc.textContent = `Chọn từ 1 đến ${totalQuestions} câu hỏi`;
       randomModeStats = { totalAnswered: 0, totalCorrect: 0 };
       const customInput = document.getElementById('customQuestionCount');
