@@ -196,7 +196,7 @@ body.dark .bg-blue-600 { background-color: #2563eb !important; }
                 <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">39 câu hỏi</div>
               </div>
             </button>
-            <button id="selectOnDia20326" class="group relative overflow-hidden bg-gradient-to-br from-teal-600 to-green-700 text-white p-8 rounded-xl hover:from-teal-700 hover:to-green-800 transition-all transform hover:scale-[1.02] shadow-lg md:col-span-2">
+            <button id="selectOnDia20326" class="group relative overflow-hidden bg-gradient-to-br from-teal-600 to-green-700 text-white p-8 rounded-xl hover:from-teal-700 hover:to-green-800 transition-all transform hover:scale-[1.02] shadow-lg">
               <div class="relative z-10">
                 <div class="flex items-center justify-center mb-4">
                   <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -206,6 +206,18 @@ body.dark .bg-blue-600 { background-color: #2563eb !important; }
                 <h3 class="text-2xl font-bold mb-2">Ôn Địa 20.3.26</h3>
                 <p class="text-teal-100 text-sm">ĐGGK</p>
                 <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">45 câu hỏi</div>
+              </div>
+            </button>
+            <button id="selectOnDiaDS20326" class="group relative overflow-hidden bg-gradient-to-br from-lime-600 to-emerald-700 text-white p-8 rounded-xl hover:from-lime-700 hover:to-emerald-800 transition-all transform hover:scale-[1.02] shadow-lg">
+              <div class="relative z-10">
+                <div class="flex items-center justify-center mb-4">
+                  <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Ôn Địa Đ/S 20.3.26</h3>
+                <p class="text-lime-100 text-sm">ĐGGK</p>
+                <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">8 câu hỏi</div>
               </div>
             </button>
           </div>
@@ -369,6 +381,20 @@ body.dark .bg-blue-600 { background-color: #2563eb !important; }
   <script>
     // === DATA ===
 const subjectData = {
+};
+
+subjectData.ondiaDS20326 = {
+  fullName: 'Ôn Địa Đ/S 20.3.26',
+  questions: [
+    {"type":"tf","q":"Câu 1 – Một số vấn đề dân cư, xã hội châu Phi","statements":["Năm 2020, số dân châu Phi khoảng 1 340 triệu người.","Dân số châu Phi chiếm khoảng 17% số dân thế giới.","Là lục địa đông dân nhất thế giới.","Châu Phi có số người nhập cư nhiều hơn xuất cư."],"answers":[true,true,false,false]},
+    {"type":"tf","q":"Câu 2 – Một số vấn đề dân cư, xã hội châu Phi","statements":["Số dân châu Phi tăng rất nhanh từ những năm 50 của thế kỉ XX.","Đời sống được cải thiện và những tiến bộ y tế làm giảm nhanh tỉ suất tử, trong khi tỉ suất sinh vẫn còn cao.","Giai đoạn 2015 – 2020, tốc độ tăng dân số có xu hướng tăng.","Giai đoạn 2015 – 2020, tỉ lệ tăng tự nhiên dân số thấp nhất thế giới."],"answers":[true,true,false,false]},
+    {"type":"tf","q":"Câu 3 – Một số vấn đề dân cư, xã hội châu Phi","statements":["Tăng dân số nhanh là một trong những nguyên nhân kìm hãm sự phát triển, dẫn đến đói nghèo.","Tăng dân số nhanh không phải là nguyên nhân kìm hãm sự phát triển, dẫn đến đói nghèo.","Tăng dân số nhanh là một trong những nguyên nhân tài nguyên bị khai thác kiệt quệ, suy thoái và ô nhiễm môi trường.","Tăng dân số nhanh không phải là nguyên nhân tài nguyên bị khai thác kiệt quệ, suy thoái và ô nhiễm môi trường."],"answers":[true,false,true,false]},
+    {"type":"tf","q":"Câu 4 – Một số vấn đề dân cư, xã hội châu Phi","statements":["Mỗi năm, có hàng chục triệu người dân châu Phi bị nạn đói đe dọa.","Người dân châu Phi ít bị nạn đói đe dọa.","Hàng năm, rất nhiều quốc gia châu Phi phải phụ thuộc vào viện trợ lương thực của thế giới.","Vùng hoang mạc Xa-ha-ra là nơi ít chịu ảnh hưởng nhất."],"answers":[true,false,true,false]},
+    {"type":"tf","q":"Câu 5 – Xung đột quân sự châu Phi","statements":["Là một vấn đề đang nổi cộm tại châu Phi.","Xảy ra mâu thuẫn giữa các bộ tộc.","Cạnh tranh về tài nguyên thiên nhiên không phải là nguyên nhân xảy ra xung đột ở châu Phi.","Hậu quả của các cuộc xung đột quân sự thường không nghiêm trọng."],"answers":[true,true,false,false]},
+    {"type":"tf","q":"Câu 6 – Di sản lịch sử châu Phi (phần 1)","statements":["Là một trong những cái nôi của loài người.","Vào khoảng 3000 năm trước Công nguyên, người Ai Cập đã xây dựng nền văn minh sông Nin rực rỡ.","Vào khoảng 3000 năm sau Công nguyên, người Ai Cập đã xây dựng nền văn minh sông Nin rực rỡ.","Nền văn minh sông Nin để lại ít di sản lịch sử."],"answers":[true,true,false,false]},
+    {"type":"tf","q":"Câu 7 – Di sản lịch sử châu Phi (phần 2)","statements":["Nền văn minh sông Nin để lại nhiều di sản lịch sử có giá trị.","Chữ viết tượng hình không phải là di sản của nền văn minh sông Nin.","Phép tính diện tích các hình không phải là di sản của nền văn minh sông Nin.","Kim tự tháp và tượng nhân sư là di sản của nền văn minh sông Nin."],"answers":[true,false,false,true]},
+    {"type":"tf","q":"Câu 8 – Di sản lịch sử châu Phi (phần 3)","statements":["Từ năm 2000 đến nay, tỉ suất sinh có xu hướng giảm.","Từ năm 2000 đến nay, tỉ suất tử có xu hướng tăng.","Tỉ suất tăng dân số tự nhiên của châu Phi vẫn còn ở mức cao so với thế giới.","Tuổi thọ trung bình của người dân dần được cải thiện, tăng dần qua các năm."],"answers":[true,false,true,true]}
+  ]
 };
 
 subjectData.ondia20326 = {
@@ -2226,6 +2252,21 @@ btnRestart.addEventListener('click', () => {
       currentSubject = 'ondia20326';
       const totalQuestions = subjectData.ondia20326.questions.length;
       subjectTitle.textContent = subjectData.ondia20326.fullName;
+      fullModeDesc.textContent = `Chọn từ 1 đến ${totalQuestions} câu hỏi`;
+      randomModeStats = { totalAnswered: 0, totalCorrect: 0 };
+      const customInput = document.getElementById('customQuestionCount');
+      customInput.max = totalQuestions;
+      const defaultValue = Math.min(10, totalQuestions);
+      customInput.value = defaultValue;
+      lastValidQuestionCount = defaultValue;
+      subjectScreen.classList.add('hidden');
+      modeScreen.classList.remove('hidden');
+    });
+
+    document.getElementById('selectOnDiaDS20326').addEventListener('click', () => {
+      currentSubject = 'ondiaDS20326';
+      const totalQuestions = subjectData.ondiaDS20326.questions.length;
+      subjectTitle.textContent = subjectData.ondiaDS20326.fullName;
       fullModeDesc.textContent = `Chọn từ 1 đến ${totalQuestions} câu hỏi`;
       randomModeStats = { totalAnswered: 0, totalCorrect: 0 };
       const customInput = document.getElementById('customQuestionCount');
