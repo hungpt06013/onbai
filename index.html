@@ -563,6 +563,21 @@ subjectData.onsu20326 = {
       return newQ;
     }
 
+    function shuffleStatementsForTF(question) {
+      // returns a copy with shuffled statements and corresponding answers
+      if (question.type !== 'tf') return JSON.parse(JSON.stringify(question));
+      const pairs = question.statements.map((s, i) => ({ s, a: question.answers[i] }));
+      const sh = shuffleArray(pairs);
+      return {
+        type: 'tf',
+        q: question.q,
+        statements: sh.map(p => p.s),
+        answers: sh.map(p => p.a),
+        hint: question.hint || null,
+        explain: question.explain || null
+      };
+    }
+
     // initialize quiz
     function initializeQuiz(mode = 'full', customCount = null) {
       const allQ = subjectData[currentSubject].questions;
@@ -580,18 +595,18 @@ subjectData.onsu20326 = {
         // Shuffle và lấy số câu hỏi theo yêu cầu
         const shuffled = shuffleArray(allQ).slice(0, questionCount).map(q => {
           if (q.type === 'mcq') return shuffleOptionsForMCQ(q);
-          else return JSON.parse(JSON.stringify(q)); // tf unchanged
+          else return shuffleStatementsForTF(q);
         });
         shuffledQuestions = shuffled;
-        userAnswers = shuffledQuestions.map(q => q.type === 'mcq' ? null : [null, null, null, null]);
+        userAnswers = shuffledQuestions.map(q => q.type === 'mcq' ? null : new Array(q.statements.length).fill(null));
       } else {
         if (allQ.length === 0) {
           alert('Không có câu hỏi.');
           return;
         }
         const q = allQ[Math.floor(Math.random() * allQ.length)];
-        shuffledQuestions = (q.type === 'mcq') ? [shuffleOptionsForMCQ(q)] : [JSON.parse(JSON.stringify(q))];
-        userAnswers = [ (shuffledQuestions[0].type === 'mcq') ? null : [null,null,null,null] ];
+        shuffledQuestions = (q.type === 'mcq') ? [shuffleOptionsForMCQ(q)] : [shuffleStatementsForTF(q)];
+        userAnswers = [ (shuffledQuestions[0].type === 'mcq') ? null : new Array(shuffledQuestions[0].statements.length).fill(null) ];
       }
       quizMode = mode;
       quizStarted = true;
