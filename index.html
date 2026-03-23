@@ -156,6 +156,79 @@ body.dark #quizHeader {
 
 /* Dark mode nav panel */
 body.dark #questionNavDesktop > div { background: #1e2535 !important; }
+
+/* ===== TF Grid CSS Classes ===== */
+.tf-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+
+/* Interactive cell */
+.tf-cell {
+  position:relative; padding:12px 12px 10px 12px; border-radius:12px;
+  border:2px solid #e5e7eb; background:#fafafa;
+  display:flex; flex-direction:column; gap:8px;
+  transition:border-color 0.15s, background 0.15s; min-height:100px;
+}
+body.dark .tf-cell { border-color:#334155; background:#252d3d; }
+.tf-cell.tf-selected { border-color:#3b82f6; background:#eff6ff; }
+body.dark .tf-cell.tf-selected { background:#1e3a5f; }
+
+.tf-label {
+  display:inline-flex; align-items:center; justify-content:center;
+  width:20px; height:20px; border-radius:50%;
+  background:#e5e7eb; color:#6b7280;
+  font-size:11px; font-weight:800; flex-shrink:0;
+}
+body.dark .tf-label { background:#374151; color:#9ca3af; }
+
+.tf-stmt { font-size:13px; font-weight:500; color:#374151; flex:1; line-height:1.55; }
+body.dark .tf-stmt { color:#cbd5e1; }
+
+.tf-btn-row { display:flex; gap:6px; margin-top:4px; }
+
+.tf-btn {
+  flex:1; padding:6px 0; border-radius:7px;
+  border:1.5px solid #d1d5db; font-size:12px; font-weight:700;
+  cursor:pointer; background:white; color:#4b5563; transition:all 0.15s;
+}
+body.dark .tf-btn { border-color:#4b5563; background:#1e2535; color:#94a3b8; }
+.tf-btn.tf-btn-active {
+  background:#dbeafe; border-color:#3b82f6; color:#1d4ed8;
+}
+body.dark .tf-btn.tf-btn-active { background:#1d4ed8; color:#bfdbfe; }
+
+/* Review cells */
+.tf-review-cell {
+  padding:12px; border-radius:12px; border:2px solid #e5e7eb;
+  background:#f9fafb; display:flex; flex-direction:column; gap:7px;
+}
+body.dark .tf-review-cell { border-color:#334155; background:#1a2030; }
+.tf-review-cell.tf-rv-correct { border-color:#22c55e; background:#f0fdf4; }
+body.dark .tf-review-cell.tf-rv-correct { background:#052e16; }
+.tf-review-cell.tf-rv-wrong { border-color:#ef4444; background:#fef2f2; }
+body.dark .tf-review-cell.tf-rv-wrong { background:#2d0a0a; }
+
+.tf-rv-label {
+  display:inline-flex; align-items:center; justify-content:center; flex-shrink:0;
+  width:20px; height:20px; border-radius:50%;
+  background:#e5e7eb; color:#6b7280; font-size:11px; font-weight:800; margin-top:1px;
+}
+body.dark .tf-rv-label { background:#374151; color:#9ca3af; }
+.tf-rv-label.tf-rv-correct { background:#dcfce7; color:#15803d; }
+body.dark .tf-rv-label.tf-rv-correct { background:#14532d; color:#86efac; }
+.tf-rv-label.tf-rv-wrong { background:#fee2e2; color:#b91c1c; }
+body.dark .tf-rv-label.tf-rv-wrong { background:#450a0a; color:#fca5a5; }
+
+.tf-rv-stmt { font-size:13px; font-weight:500; color:#374151; line-height:1.55; flex:1; }
+body.dark .tf-rv-stmt { color:#cbd5e1; }
+
+.tf-rv-status {
+  font-size:12px; font-weight:600; padding-top:2px;
+  border-top:1px solid rgba(0,0,0,0.06); color:#6b7280;
+}
+body.dark .tf-rv-status { border-top-color:rgba(255,255,255,0.07); color:#94a3b8; }
+.tf-rv-status.tf-rv-correct { color:#15803d; }
+body.dark .tf-rv-status.tf-rv-correct { color:#86efac; }
+.tf-rv-status.tf-rv-wrong { color:#b91c1c; }
+body.dark .tf-rv-status.tf-rv-wrong { color:#fca5a5; }
 body.dark #navExpandBtn { background: #1e2535 !important; border-color: #334155 !important; color: #94a3b8 !important; }
 body.dark #navExpandBtn:hover { background: #252d3d !important; }
 body.dark #mobileNavDrawer { background: #1e2535 !important; }
@@ -164,6 +237,24 @@ body.dark #navToggleBtn { border-color: #334155 !important; color: #94a3b8; }
 body.dark #navToggleBtn:hover { background: #252d3d !important; }
 body.dark #mobileNavOverlay #mobileNavDrawer { background: #1e2535 !important; color: #e2e8f0; }
 body.dark #mobileNavOverlay .text-gray-700 { color: #cbd5e1 !important; }
+
+/* Apply button container dark mode */
+body.dark #customQuestionInput {
+  background-color: #1e3a5f !important;
+  border-color: #1d4ed8 !important;
+}
+body.dark #customQuestionInput label {
+  color: #93c5fd !important;
+}
+body.dark #customQuestionCount {
+  background: #252d3d !important;
+  color: #e2e8f0 !important;
+  border-color: #334155 !important;
+}
+.apply-btn { background-color: #2563eb; }
+.apply-btn:hover { background-color: #1d4ed8; }
+body.dark .apply-btn { background-color: #334155 !important; color: #93c5fd !important; }
+body.dark .apply-btn:hover { background-color: #475569 !important; }
 </style>
 
   <!-- SUBJECT SELECTION SCREEN -->
@@ -348,7 +439,7 @@ body.dark #mobileNavOverlay .text-gray-700 { color: #cbd5e1 !important; }
               min="1" value="10" />
           </div>
           
-          <button id="applyCustomCount" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors whitespace-nowrap">
+          <button id="applyCustomCount" class="apply-btn text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors whitespace-nowrap">
             Áp dụng
           </button>
 
@@ -464,29 +555,29 @@ const subjectData = {
 subjectData.onhoa20326 = {
   fullName: 'Ôn Hóa 24.3.26',
   questions: [
-    {"type":"mcq","q":"Nguyên tố Li có hóa trị mấy?","o":["I","II","III"],"c":0},
-    {"type":"mcq","q":"Nguyên tố Na có hóa trị mấy?","o":["I","II","III"],"c":0},
-    {"type":"mcq","q":"Nguyên tố K có hóa trị mấy?","o":["I","II","III"],"c":0},
-    {"type":"mcq","q":"Nguyên tố Ag có hóa trị mấy?","o":["I","II","III"],"c":0},
-    {"type":"mcq","q":"Nguyên tố Be có hóa trị mấy?","o":["I","II","III"],"c":1},
-    {"type":"mcq","q":"Nguyên tố Mg có hóa trị mấy?","o":["I","II","III"],"c":1},
-    {"type":"mcq","q":"Nguyên tố Ba có hóa trị mấy?","o":["I","II","III"],"c":1},
-    {"type":"mcq","q":"Nguyên tố Ca có hóa trị mấy?","o":["I","II","III"],"c":1},
-    {"type":"mcq","q":"Nguyên tố Hg có hóa trị mấy?","o":["I","II","III"],"c":1},
-    {"type":"mcq","q":"Nguyên tố Zn có hóa trị mấy?","o":["I","II","III"],"c":1},
-    {"type":"mcq","q":"Nguyên tố Al có hóa trị mấy?","o":["I","II","III"],"c":2},
-    {"type":"mcq","q":"Nguyên tố H có hóa trị mấy?","o":["I","II","III"],"c":0},
-    {"type":"mcq","q":"Nguyên tố Cl có hóa trị mấy?","o":["I","II","III"],"c":0},
-    {"type":"mcq","q":"Nguyên tố Br có hóa trị mấy?","o":["I","II","III"],"c":0},
-    {"type":"mcq","q":"Nguyên tố O có hóa trị mấy?","o":["I","II","III"],"c":1},
-    {"type":"mcq","q":"Nguyên tố B có hóa trị mấy?","o":["I","II","III"],"c":2},
-    {"type":"mcq","q":"Nhóm nguyên tử OH có hóa trị mấy?","o":["I","II","III"],"c":0},
-    {"type":"mcq","q":"Nhóm nguyên tử NO<sub>3</sub> có hóa trị mấy?","o":["I","II","III"],"c":0},
-    {"type":"mcq","q":"Nhóm nguyên tử NH<sub>4</sub> có hóa trị mấy?","o":["I","II","III"],"c":0},
-    {"type":"mcq","q":"Nhóm nguyên tử CO<sub>3</sub> có hóa trị mấy?","o":["I","II","III"],"c":1},
-    {"type":"mcq","q":"Nhóm nguyên tử SO<sub>3</sub> có hóa trị mấy?","o":["I","II","III"],"c":1},
-    {"type":"mcq","q":"Nhóm nguyên tử SO<sub>4</sub> có hóa trị mấy?","o":["I","II","III"],"c":1},
-    {"type":"mcq","q":"Nhóm nguyên tử PO<sub>4</sub> có hóa trị mấy?","o":["I","II","III"],"c":2}
+    {"type":"mcq","q":"Li có hóa trị mấy?","o":["I","II","III"],"c":0},
+    {"type":"mcq","q":"Na có hóa trị mấy?","o":["I","II","III"],"c":0},
+    {"type":"mcq","q":"K có hóa trị mấy?","o":["I","II","III"],"c":0},
+    {"type":"mcq","q":"Ag có hóa trị mấy?","o":["I","II","III"],"c":0},
+    {"type":"mcq","q":"Be có hóa trị mấy?","o":["I","II","III"],"c":1},
+    {"type":"mcq","q":"Mg có hóa trị mấy?","o":["I","II","III"],"c":1},
+    {"type":"mcq","q":"Ba có hóa trị mấy?","o":["I","II","III"],"c":1},
+    {"type":"mcq","q":"Ca có hóa trị mấy?","o":["I","II","III"],"c":1},
+    {"type":"mcq","q":"Hg có hóa trị mấy?","o":["I","II","III"],"c":1},
+    {"type":"mcq","q":"Zn có hóa trị mấy?","o":["I","II","III"],"c":1},
+    {"type":"mcq","q":"Al có hóa trị mấy?","o":["I","II","III"],"c":2},
+    {"type":"mcq","q":"H có hóa trị mấy?","o":["I","II","III"],"c":0},
+    {"type":"mcq","q":"Cl có hóa trị mấy?","o":["I","II","III"],"c":0},
+    {"type":"mcq","q":"Br có hóa trị mấy?","o":["I","II","III"],"c":0},
+    {"type":"mcq","q":"O có hóa trị mấy?","o":["I","II","III"],"c":1},
+    {"type":"mcq","q":"B có hóa trị mấy?","o":["I","II","III"],"c":2},
+    {"type":"mcq","q":"Nhóm OH có hóa trị mấy?","o":["I","II","III"],"c":0},
+    {"type":"mcq","q":"Nhóm NO<sub>3</sub> có hóa trị mấy?","o":["I","II","III"],"c":0},
+    {"type":"mcq","q":"Nhóm NH<sub>4</sub> có hóa trị mấy?","o":["I","II","III"],"c":0},
+    {"type":"mcq","q":"Nhóm CO<sub>3</sub> có hóa trị mấy?","o":["I","II","III"],"c":1},
+    {"type":"mcq","q":"Nhóm SO<sub>3</sub> có hóa trị mấy?","o":["I","II","III"],"c":1},
+    {"type":"mcq","q":"Nhóm SO<sub>4</sub> có hóa trị mấy?","o":["I","II","III"],"c":1},
+    {"type":"mcq","q":"Nhóm PO<sub>4</sub> có hóa trị mấy?","o":["I","II","III"],"c":2}
   ]
 };
 
@@ -943,77 +1034,16 @@ subjectData.onsu20326 = {
             });
             qWrap.appendChild(opts);
           } else if (q.type === 'tf') {
-            const opts = document.createElement('div');
-            opts.className = 'space-y-2';
-            q.statements.forEach((stmt, sidx) => {
-              const row = document.createElement('div');
-              row.className = 'flex items-center gap-3';
-
-              const stmtDiv = document.createElement('div');
-              stmtDiv.className = 'flex-1 p-3 rounded-lg border border-gray-200';
-              stmtDiv.innerHTML = `<div class="font-medium text-gray-800">${stmt}</div>`;
-
-              row.appendChild(stmtDiv);
-
-              const btnTrue = document.createElement('button');
-              btnTrue.type = 'button';
-              btnTrue.className = 'px-3 py-2 rounded-lg border border-gray-200 mr-2';
-              btnTrue.textContent = 'ĐÚNG';
-              const btnFalse = document.createElement('button');
-              btnFalse.type = 'button';
-              btnFalse.className = 'px-3 py-2 rounded-lg border border-gray-200';
-              btnFalse.textContent = 'SAI';
-
-              const val = userAnswers[qi][sidx];
-              if (val === true) { btnTrue.classList.add('bg-blue-50','border-blue-500'); }
-              else if (val === false) { btnFalse.classList.add('bg-blue-50','border-blue-500'); }
-
-              btnTrue.addEventListener('click', () => {
-                if (userAnswers[qi][sidx] === true) {
-                  userAnswers[qi][sidx] = null;
-                  btnTrue.classList.remove('bg-blue-50','border-blue-500');
-                } else {
-                  userAnswers[qi][sidx] = true;
-                  btnTrue.classList.add('bg-blue-50','border-blue-500');
-                  btnFalse.classList.remove('bg-blue-50','border-blue-500');
-                }
-                const answeredCount = shuffledQuestions.reduce((acc, q2, i2) => {
-                  if (q2.type === 'mcq') return acc + (userAnswers[i2] !== null ? 1 : 0);
-                  else return acc + (userAnswers[i2].some(x=>x!==null) ? 1 : 0);
-                }, 0);
-                scoreInfo.textContent = '';
-                setSubmitState(answeredCount > 0, 'Nộp bài');
-                updateNavButton(qi);
-              });
-
-              btnFalse.addEventListener('click', () => {
-                if (userAnswers[qi][sidx] === false) {
-                  userAnswers[qi][sidx] = null;
-                  btnFalse.classList.remove('bg-blue-50','border-blue-500');
-                } else {
-                  userAnswers[qi][sidx] = false;
-                  btnFalse.classList.add('bg-blue-50','border-blue-500');
-                  btnTrue.classList.remove('bg-blue-50','border-blue-500');
-                }
-                const answeredCount = shuffledQuestions.reduce((acc, q2, i2) => {
-                  if (q2.type === 'mcq') return acc + (userAnswers[i2] !== null ? 1 : 0);
-                  else return acc + (userAnswers[i2].some(x=>x!==null) ? 1 : 0);
-                }, 0);
-                scoreInfo.textContent = '';
-                setSubmitState(answeredCount > 0, 'Nộp bài');
-                updateNavButton(qi);
-              });
-
-              const btnWrap = document.createElement('div');
-              btnWrap.className = 'flex items-center';
-              btnWrap.appendChild(btnTrue);
-              btnWrap.appendChild(btnFalse);
-              row.appendChild(btnWrap);
-
-              opts.appendChild(row);
+            const grid = buildTFGrid(q, qi, userAnswers[qi], () => {
+              const answeredCount = shuffledQuestions.reduce((acc, q2, i2) => {
+                if (q2.type === 'mcq') return acc + (userAnswers[i2] !== null ? 1 : 0);
+                else return acc + (userAnswers[i2].some(x=>x!==null) ? 1 : 0);
+              }, 0);
+              scoreInfo.textContent = '';
+              setSubmitState(answeredCount > 0, 'Nộp bài');
+              updateNavButton(qi);
             });
-
-            qWrap.appendChild(opts);
+            qWrap.appendChild(grid);
           }
 
           quizContent.appendChild(qWrap);
@@ -1069,51 +1099,10 @@ subjectData.onsu20326 = {
           setSubmitState(userAnswers[0] !== null, 'Nộp bài');
           btnNext.classList.add('hidden');
         } else {
-          const opts = document.createElement('div');
-          opts.className = 'space-y-3 mb-6';
-          q.statements.forEach((stmt, sidx) => {
-            const row = document.createElement('div');
-            row.className = 'flex items-center gap-3';
-
-            const stmtDiv = document.createElement('div');
-            stmtDiv.className = 'flex-1 p-3 rounded-lg border border-gray-200';
-            stmtDiv.innerHTML = `<div class="font-medium text-gray-800">${stmt}</div>`;
-
-            row.appendChild(stmtDiv);
-
-            const btnTrue = document.createElement('button');
-            btnTrue.type = 'button';
-            btnTrue.className = 'px-3 py-2 rounded-lg border border-gray-200 mr-2';
-            btnTrue.textContent = 'ĐÚNG';
-            const btnFalse = document.createElement('button');
-            btnFalse.type = 'button';
-            btnFalse.className = 'px-3 py-2 rounded-lg border border-gray-200';
-            btnFalse.textContent = 'SAI';
-
-            const val = userAnswers[0][sidx];
-            if (val === true) { btnTrue.classList.add('bg-blue-50','border-blue-500'); }
-            else if (val === false) { btnFalse.classList.add('bg-blue-50','border-blue-500'); }
-
-            btnTrue.addEventListener('click', () => {
-              if (userAnswers[0][sidx] === true) { userAnswers[0][sidx] = null; btnTrue.classList.remove('bg-blue-50','border-blue-500'); }
-              else { userAnswers[0][sidx] = true; btnTrue.classList.add('bg-blue-50','border-blue-500'); btnFalse.classList.remove('bg-blue-50','border-blue-500'); }
-              setSubmitState(userAnswers[0].some(x=>x!==null), 'Nộp bài');
-            });
-            btnFalse.addEventListener('click', () => {
-              if (userAnswers[0][sidx] === false) { userAnswers[0][sidx] = null; btnFalse.classList.remove('bg-blue-50','border-blue-500'); }
-              else { userAnswers[0][sidx] = false; btnFalse.classList.add('bg-blue-50','border-blue-500'); btnTrue.classList.remove('bg-blue-50','border-blue-500'); }
-              setSubmitState(userAnswers[0].some(x=>x!==null), 'Nộp bài');
-            });
-
-            const btnWrap = document.createElement('div');
-            btnWrap.className = 'flex items-center';
-            btnWrap.appendChild(btnTrue);
-            btnWrap.appendChild(btnFalse);
-            row.appendChild(btnWrap);
-
-            opts.appendChild(row);
+          const grid = buildTFGrid(q, 0, userAnswers[0], () => {
+            setSubmitState(userAnswers[0].some(x=>x!==null), 'Nộp bài');
           });
-          qWrap.appendChild(opts);
+          qWrap.appendChild(grid);
           setSubmitState(userAnswers[0].some(x=>x!==null), 'Nộp bài');
           btnNext.classList.add('hidden');
         }
@@ -1205,14 +1194,9 @@ subjectData.onsu20326 = {
       if (text) btnSubmit.textContent = text;
     }
 
-    // grading helper for TF question: counts correct sub-items and maps to points
+    // grading helper for TF question: each correct sub-item = 0.25 points
     function tfPointsForCorrectCount(n) {
-      if (n <= 0) return 0;
-      if (n === 1) return 0.1;
-      if (n === 2) return 0.25;
-      if (n === 3) return 0.5;
-      if (n === 4) return 1;
-      return 0;
+      return Math.round(n * 0.25 * 100) / 100;
     }
 
     // Submit handler
@@ -1309,32 +1293,14 @@ subjectData.onsu20326 = {
             });
             qWrap.appendChild(opts);
           } else if (q.type === 'tf') {
-            const list = document.createElement('div');
-            list.className = 'space-y-2';
-            q.statements.forEach((stmt, sidx) => {
-              const correct = q.answers[sidx];
-              const userVal = userAnswers[qi][sidx];
-              const div = document.createElement('div');
-              div.className = 'w-full text-left p-3 rounded-lg border-2 flex items-center justify-between';
-              if (userVal === null) {
-                div.classList.add('border-gray-200','bg-gray-50');
-                div.innerHTML = `<div><div class="font-medium text-gray-800">${stmt}</div><div class="text-gray-600 text-sm">Bạn chưa chọn</div></div><div class="text-gray-600">Đáp án: ${correct ? 'ĐÚNG' : 'SAI'}</div>`;
-              } else if (userVal === correct) {
-                div.classList.add('border-green-500','bg-green-50');
-                div.innerHTML = `<div class="font-medium text-gray-800">${stmt}</div><div class="text-green-700 font-semibold">Bạn chọn: ${userVal ? 'ĐÚNG' : 'SAI'}</div>`;
-              } else {
-                div.classList.add('border-red-500','bg-red-50');
-                div.innerHTML = `<div class="font-medium text-gray-800">${stmt}</div><div class="text-red-700 font-semibold">Bạn chọn: ${userVal ? 'ĐÚNG' : 'SAI'}</div><div class="text-gray-600 text-sm">Đáp án: ${correct ? 'ĐÚNG' : 'SAI'}</div>`;
-              }
-              list.appendChild(div);
-            });
+            const grid = buildTFGridReview(q, userAnswers[qi]);
             let correctCount = 0;
             for (let j=0;j<4;j++) if (userAnswers[qi][j] !== null && userAnswers[qi][j] === q.answers[j]) correctCount++;
             const pts = tfPointsForCorrectCount(correctCount);
             const ptsDiv = document.createElement('div');
             ptsDiv.className = 'mt-2 text-sm text-gray-700 font-semibold';
             ptsDiv.textContent = `Điểm đạt được cho câu này: ${pts}`;
-            qWrap.appendChild(list);
+            qWrap.appendChild(grid);
             qWrap.appendChild(ptsDiv);
           }
 
@@ -1413,7 +1379,7 @@ subjectData.onsu20326 = {
           const pts = tfPointsForCorrectCount(correctCount);
           score = pts;
           randomModeStats.totalAnswered++;
-          if (pts === 1 && !randomHintUsed) randomModeStats.totalCorrect++;
+          if (!randomHintUsed) randomModeStats.totalCorrect = Math.round((randomModeStats.totalCorrect + pts) * 100) / 100;
 
           quizContent.innerHTML = '';
           const qWrap = document.createElement('div');
@@ -1421,26 +1387,10 @@ subjectData.onsu20326 = {
           qTitle.className = 'text-2xl font-bold text-gray-800 mb-6';
           qTitle.innerHTML = processQuestionText(q.q);
           qWrap.appendChild(qTitle);
-          const list = document.createElement('div'); list.className = 'space-y-3 mb-4';
-          q.statements.forEach((stmt,sidx) => {
-            const div = document.createElement('div');
-            div.className = 'w-full text-left p-4 rounded-lg border-2 transition-all mb-1 flex items-center justify-between';
-            const correct = q.answers[sidx];
-            const userVal = userArr[sidx];
-            if (userVal === null) {
-              div.classList.add('border-gray-200','bg-gray-50');
-              div.innerHTML = `<div class="font-medium text-gray-800">${stmt}</div><div class="text-gray-600">Bạn chưa chọn — Đáp án: ${correct ? 'ĐÚNG' : 'SAI'}</div>`;
-            } else if (userVal === correct) {
-              div.classList.add('border-green-500','bg-green-50');
-              div.innerHTML = `<div class="font-medium text-gray-800">${stmt}</div><div class="text-green-700 font-semibold">Bạn chọn: ${userVal ? 'ĐÚNG' : 'SAI'}</div>`;
-            } else {
-              div.classList.add('border-red-500','bg-red-50');
-              div.innerHTML = `<div class="font-medium text-gray-800">${stmt}</div><div class="text-red-700 font-semibold">Bạn chọn: ${userVal ? 'ĐÚNG' : 'SAI'}</div><div class="text-gray-600">Đáp án: ${correct ? 'ĐÚNG' : 'SAI'}</div>`;
-            }
-            list.appendChild(div);
-          });
-          qWrap.appendChild(list);
-          const ptsDiv = document.createElement('div'); ptsDiv.className = 'text-sm font-semibold mb-3'; ptsDiv.textContent = `Điểm đạt được: ${pts}`;
+          const grid = buildTFGridReview(q, userArr);
+          qWrap.appendChild(grid);
+          const maxPts = Math.round(q.statements.length * 0.25 * 100) / 100;
+          const ptsDiv = document.createElement('div'); ptsDiv.className = 'text-sm font-semibold mt-3 mb-3'; ptsDiv.textContent = `Điểm đạt được: ${pts}/${maxPts}`;
           qWrap.appendChild(ptsDiv);
           if (randomHintUsed) {
             const hw = document.createElement('div');
@@ -1971,6 +1921,119 @@ function expandNavDesktop() {
   nav.classList.remove('nav-collapsed');
   nav.style.width = '';
   localStorage.removeItem('navCollapsed');
+}
+
+// ===== TF GRID HELPERS =====
+const TF_LABELS = ['a', 'b', 'c', 'd'];
+
+function buildTFGrid(q, qi, userAnswersArr, onChangeCallback) {
+  const grid = document.createElement('div');
+  grid.className = 'tf-grid';
+
+  q.statements.forEach((stmt, sidx) => {
+    const cell = document.createElement('div');
+    cell.id = `tf-cell-${qi}-${sidx}`;
+    cell.className = 'tf-cell';
+
+    const label = document.createElement('div');
+    label.className = 'tf-label';
+    label.textContent = TF_LABELS[sidx];
+
+    const stmtEl = document.createElement('div');
+    stmtEl.className = 'tf-stmt';
+    stmtEl.innerHTML = stmt;
+
+    const btnRow = document.createElement('div');
+    btnRow.className = 'tf-btn-row';
+
+    const btnTrue = document.createElement('button');
+    btnTrue.type = 'button';
+    btnTrue.className = 'tf-btn';
+    btnTrue.innerHTML = '<span style="font-size:12px">✓</span> ĐÚNG';
+
+    const btnFalse = document.createElement('button');
+    btnFalse.type = 'button';
+    btnFalse.className = 'tf-btn';
+    btnFalse.innerHTML = '<span style="font-size:12px">✗</span> SAI';
+
+    function applyStyle() {
+      const val = userAnswersArr[sidx];
+      cell.classList.toggle('tf-selected', val !== null);
+      btnTrue.classList.toggle('tf-btn-active', val === true);
+      btnFalse.classList.toggle('tf-btn-active', val === false);
+    }
+
+    applyStyle();
+
+    btnTrue.addEventListener('click', () => {
+      userAnswersArr[sidx] = userAnswersArr[sidx] === true ? null : true;
+      applyStyle();
+      onChangeCallback();
+    });
+    btnFalse.addEventListener('click', () => {
+      userAnswersArr[sidx] = userAnswersArr[sidx] === false ? null : false;
+      applyStyle();
+      onChangeCallback();
+    });
+
+    btnRow.appendChild(btnTrue);
+    btnRow.appendChild(btnFalse);
+    cell.appendChild(label);
+    cell.appendChild(stmtEl);
+    cell.appendChild(btnRow);
+    grid.appendChild(cell);
+  });
+
+  return grid;
+}
+
+function buildTFGridReview(q, userArr) {
+  const grid = document.createElement('div');
+  grid.className = 'tf-grid';
+
+  q.statements.forEach((stmt, sidx) => {
+    const correct = q.answers[sidx];
+    const userVal = userArr[sidx];
+
+    let cellState, labelState, statusClass, statusHtml;
+    if (userVal === null) {
+      cellState = ''; labelState = ''; statusClass = '';
+      statusHtml = `Chưa chọn · ĐA: <strong>${correct ? 'ĐÚNG' : 'SAI'}</strong>`;
+    } else if (userVal === correct) {
+      cellState = 'tf-rv-correct'; labelState = 'tf-rv-correct'; statusClass = 'tf-rv-correct';
+      statusHtml = `✓ ${userVal ? 'ĐÚNG' : 'SAI'} — Đúng!`;
+    } else {
+      cellState = 'tf-rv-wrong'; labelState = 'tf-rv-wrong'; statusClass = 'tf-rv-wrong';
+      statusHtml = `✗ Chọn: <strong>${userVal ? 'ĐÚNG' : 'SAI'}</strong> · ĐA: <strong>${correct ? 'ĐÚNG' : 'SAI'}</strong>`;
+    }
+
+    const cell = document.createElement('div');
+    cell.className = `tf-review-cell ${cellState}`;
+
+    const topRow = document.createElement('div');
+    topRow.style.cssText = 'display:flex;align-items:flex-start;gap:8px;';
+
+    const label = document.createElement('div');
+    label.className = `tf-rv-label ${labelState}`;
+    label.textContent = TF_LABELS[sidx];
+
+    const stmtEl = document.createElement('div');
+    stmtEl.className = 'tf-rv-stmt';
+    stmtEl.innerHTML = stmt;
+
+    topRow.appendChild(label);
+    topRow.appendChild(stmtEl);
+
+    const statusEl = document.createElement('div');
+    statusEl.className = `tf-rv-status ${statusClass}`;
+    statusEl.innerHTML = statusHtml;
+
+    cell.appendChild(topRow);
+    cell.appendChild(statusEl);
+    grid.appendChild(cell);
+  });
+
+  return grid;
 }
 
 // Apply saved nav state on load
