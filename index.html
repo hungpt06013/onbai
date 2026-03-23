@@ -170,6 +170,18 @@ body.dark .bg-blue-600 { background-color: #2563eb !important; }
                 <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">8 câu hỏi</div>
               </div>
             </button>
+            <button id="selectOnHoa20326" class="group relative overflow-hidden bg-gradient-to-br from-violet-600 to-purple-700 text-white p-8 rounded-xl hover:from-violet-700 hover:to-purple-800 transition-all transform hover:scale-[1.02] shadow-lg md:col-span-2">
+              <div class="relative z-10">
+                <div class="flex items-center justify-center mb-4">
+                  <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Ôn Hóa 24.3.26</h3>
+                <p class="text-violet-100 text-sm">Hóa trị các nguyên tố &amp; nhóm nguyên tử</p>
+                <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto">23 câu hỏi</div>
+              </div>
+            </button>
           </div>
         </div>
       </div>
@@ -331,6 +343,35 @@ body.dark .bg-blue-600 { background-color: #2563eb !important; }
   <script>
     // === DATA ===
 const subjectData = {
+};
+
+subjectData.onhoa20326 = {
+  fullName: 'Ôn Hóa 24.3.26',
+  questions: [
+    {"type":"mcq","q":"Li có hóa trị mấy?","o":["I","II","III"],"c":0},
+    {"type":"mcq","q":"Na có hóa trị mấy?","o":["I","II","III"],"c":0},
+    {"type":"mcq","q":"K có hóa trị mấy?","o":["I","II","III"],"c":0},
+    {"type":"mcq","q":"Ag có hóa trị mấy?","o":["I","II","III"],"c":0},
+    {"type":"mcq","q":"Be có hóa trị mấy?","o":["I","II","III"],"c":1},
+    {"type":"mcq","q":"Mg có hóa trị mấy?","o":["I","II","III"],"c":1},
+    {"type":"mcq","q":"Ba có hóa trị mấy?","o":["I","II","III"],"c":1},
+    {"type":"mcq","q":"Ca có hóa trị mấy?","o":["I","II","III"],"c":1},
+    {"type":"mcq","q":"Hg có hóa trị mấy?","o":["I","II","III"],"c":1},
+    {"type":"mcq","q":"Zn có hóa trị mấy?","o":["I","II","III"],"c":1},
+    {"type":"mcq","q":"Al có hóa trị mấy?","o":["I","II","III"],"c":2},
+    {"type":"mcq","q":"H có hóa trị mấy?","o":["I","II","III"],"c":0},
+    {"type":"mcq","q":"Cl có hóa trị mấy?","o":["I","II","III"],"c":0},
+    {"type":"mcq","q":"Br có hóa trị mấy?","o":["I","II","III"],"c":0},
+    {"type":"mcq","q":"O có hóa trị mấy?","o":["I","II","III"],"c":1},
+    {"type":"mcq","q":"B có hóa trị mấy?","o":["I","II","III"],"c":2},
+    {"type":"mcq","q":"Nhóm OH có hóa trị mấy?","o":["I","II","III"],"c":0},
+    {"type":"mcq","q":"Nhóm NO<sub>3</sub> có hóa trị mấy?","o":["I","II","III"],"c":0},
+    {"type":"mcq","q":"Nhóm NH<sub>4</sub> có hóa trị mấy?","o":["I","II","III"],"c":0},
+    {"type":"mcq","q":"Nhóm CO<sub>3</sub> có hóa trị mấy?","o":["I","II","III"],"c":1},
+    {"type":"mcq","q":"Nhóm SO<sub>3</sub> có hóa trị mấy?","o":["I","II","III"],"c":1},
+    {"type":"mcq","q":"Nhóm SO<sub>4</sub> có hóa trị mấy?","o":["I","II","III"],"c":1},
+    {"type":"mcq","q":"Nhóm PO<sub>4</sub> có hóa trị mấy?","o":["I","II","III"],"c":2}
+  ]
 };
 
 subjectData.ondiaDS20326 = {
@@ -1290,6 +1331,21 @@ btnRestart.addEventListener('click', () => {
 
     // selection listeners
 
+
+    document.getElementById('selectOnHoa20326').addEventListener('click', () => {
+      currentSubject = 'onhoa20326';
+      const totalQuestions = subjectData.onhoa20326.questions.length;
+      subjectTitle.textContent = subjectData.onhoa20326.fullName;
+      fullModeDesc.textContent = `Chọn từ 1 đến ${totalQuestions} câu hỏi`;
+      randomModeStats = { totalAnswered: 0, totalCorrect: 0 };
+      const customInput = document.getElementById('customQuestionCount');
+      customInput.max = totalQuestions;
+      const defaultValue = Math.min(10, totalQuestions);
+      customInput.value = defaultValue;
+      lastValidQuestionCount = defaultValue;
+      subjectScreen.classList.add('hidden');
+      modeScreen.classList.remove('hidden');
+    });
 
     document.getElementById('selectOnSu20326').addEventListener('click', () => {
       currentSubject = 'onsu20326';
