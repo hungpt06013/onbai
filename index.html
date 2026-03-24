@@ -28,6 +28,10 @@
   50% { opacity: 0.3; }
 }
 
+html {
+  overflow-y: scroll;
+}
+
 /* Dark mode styles */
 body.dark {
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%) !important;
@@ -867,6 +871,7 @@ subjectData.onsu20326 = {
 
     // Render quiz screen
     function renderQuiz() {
+      window.scrollTo(0, 0);
       if (!currentSubject) {
         subjectScreen.classList.remove('hidden');
         modeScreen.classList.add('hidden');
@@ -927,6 +932,7 @@ subjectData.onsu20326 = {
         navToggleBtnEl.classList.add('hidden');
         navToggleBtnEl.classList.remove('flex');
         navDesktop.classList.add('hidden');
+        navDesktop.style.display = '';
       }
 
       // Hiện/ẩn nút Gợi ý (chỉ với môn có hint, và chưa completed)
