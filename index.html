@@ -1089,6 +1089,7 @@ subjectData.only2626 = {
         shuffledQuestions.forEach((q, qi) => {
           const qWrap = document.createElement('div');
           qWrap.className = 'mb-6 pb-4 border-b';
+          qWrap.id = 'question-' + qi;
           const qTitle = document.createElement('h3');
           qTitle.className = 'text-lg font-semibold mb-3';
           qTitle.innerHTML = `Câu ${qi+1}. ${processQuestionText(q.q)}`;
