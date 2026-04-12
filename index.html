@@ -99,6 +99,20 @@ body.dark .bg-gray-300 { background-color: #374151 !important; }
 body.dark .text-gray-500 { color: #9ca3af !important; }
 body.dark .bg-blue-600 { background-color: #2563eb !important; }
 
+/* === Question Navigator Scrollable Grid === */
+#questionNavGrid, #questionNavGridMobile {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+#questionNavGrid::-webkit-scrollbar,
+#questionNavGridMobile::-webkit-scrollbar { width: 4px; }
+#questionNavGrid::-webkit-scrollbar-track,
+#questionNavGridMobile::-webkit-scrollbar-track { background: transparent; }
+#questionNavGrid::-webkit-scrollbar-thumb,
+#questionNavGridMobile::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+body.dark #questionNavGrid::-webkit-scrollbar-thumb,
+body.dark #questionNavGridMobile::-webkit-scrollbar-thumb { background: #374151; }
+
 /* === Question Navigator Buttons === */
 .q-nav-btn {
   width: 100%;
@@ -464,7 +478,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
           <button id="navCollapseBtn" onclick="collapseNavDesktop()" title="Ẩn danh sách"
             class="w-6 h-6 flex items-center justify-center rounded-full hover:bg-gray-100 text-gray-400 hover:text-gray-700 transition-colors text-sm font-bold">✕</button>
         </div>
-        <div id="questionNavGrid" class="grid grid-cols-5 gap-1.5"></div>
+        <div id="questionNavGrid" class="grid grid-cols-5 gap-1.5" style="max-height:340px;overflow-y:auto;padding-right:2px;"></div>
       </div>
       <!-- Collapsed icon button -->
       <button id="navExpandBtn" onclick="expandNavDesktop()" title="Hiện danh sách câu hỏi"
@@ -488,7 +502,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
         <p class="text-sm font-bold text-gray-700">Danh sách câu hỏi</p>
         <button id="mobileNavClose" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 font-semibold text-sm transition-colors">✕</button>
       </div>
-      <div id="questionNavGridMobile" class="grid grid-cols-5 gap-1.5"></div>
+      <div id="questionNavGridMobile" class="grid grid-cols-5 gap-1.5" style="max-height:340px;overflow-y:auto;padding-right:2px;"></div>
     </div>
   </div>
 
