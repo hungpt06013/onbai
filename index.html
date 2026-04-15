@@ -1778,7 +1778,7 @@ btnRestart.addEventListener('click', () => {
     (function initWarningToggle(){
       const wt = document.getElementById('warningToggle');
       let saved = localStorage.getItem('warningsEnabled');
-      saved = saved === null ? 'true' : saved;
+      saved = saved === null ? 'false' : saved;
       wt.checked = saved === 'true';
       wt.addEventListener('change', () => {
         localStorage.setItem('warningsEnabled', wt.checked ? 'true' : 'false');
