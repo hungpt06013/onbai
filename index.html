@@ -2110,12 +2110,11 @@ console.log('   - cleanupOldPresence() : Xóa presence data cũ hơn 1 phút');
 console.log('   - resetOnlineCount() : Reset toàn bộ (cẩn thận!)');
 </script>
 
-<!-- ===== AUTO-UPDATE NOTIFICATION ===== -->
+<!-- ===== AUTO-UPDATE NOTIFICATION (Chỉ hiện 1 lần mỗi version) ===== -->
 <script>
 (function checkForUpdates() {
-  // Đọc version hiện tại lần đầu
   let currentVersion = null;
-  let checkInterval = null;
+  let lastNotifiedVersion = localStorage.getItem('lastNotifiedVersion');
 
   function fetchVersion() {
     return fetch('/onbai/version.json?_=' + Date.now(), { cache: 'no-store' })
@@ -2125,30 +2124,38 @@ console.log('   - resetOnlineCount() : Reset toàn bộ (cẩn thận!)');
   }
 
   fetchVersion().then(v => {
-    if (!v) return; // file chưa có, bỏ qua
+    if (!v) return;
     currentVersion = v;
-    console.log('📦 Version hiện tại:', currentVersion);
 
-    // Poll mỗi 30 giây
-    checkInterval = setInterval(() => {
+    // Nếu version hiện tại chưa từng được thông báo → lưu lại
+    if (!lastNotifiedVersion) {
+      localStorage.setItem('lastNotifiedVersion', currentVersion);
+      lastNotifiedVersion = currentVersion;
+    }
+
+    setInterval(() => {
       fetchVersion().then(newVersion => {
         if (!newVersion || !currentVersion) return;
-        if (newVersion !== currentVersion) {
-          clearInterval(checkInterval);
+
+        // Có version mới và chưa từng thông báo cho version này
+        if (newVersion !== currentVersion && newVersion !== lastNotifiedVersion) {
+          
           const ok = confirm(
-            '🔔 Đã có cập nhật mới!\n\n' +
+            'Đã có cập nhật mới!\n\n' +
             'Trang web vừa được cập nhật. Vui lòng reload trang để sử dụng phiên bản mới nhất.\n\n' +
             'Nhấn OK để reload ngay, hoặc Cancel để tiếp tục làm bài.'
           );
+
+          // Dù OK hay Cancel, đều lưu lại version này để không hỏi nữa
+          localStorage.setItem('lastNotifiedVersion', newVersion);
+          lastNotifiedVersion = newVersion;
+
           if (ok) {
-            window.location.reload(true);
-          } else {
-            // Nếu người dùng cancel, check lại sau 2 phút
-            setTimeout(checkForUpdates, 120000);
+            window.location.reload();
           }
         }
       });
-    }, 30000); // 30 giây
+    }, 30000); // 30 giây kiểm tra 1 lần
   });
 })();
 </script>
