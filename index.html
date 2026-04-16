@@ -152,6 +152,21 @@ body.dark .q-nav-btn.partial { background: #422006; border-color: #d97706; color
   padding: 1rem 2rem;
   border-radius: 1rem 1rem 0 0;
   border-bottom: 1px solid #e5e7eb;
+  /* Always allow wrapping so items drop to next line on small screens */
+  flex-wrap: wrap !important;
+}
+
+/* scoreInfo in random mode wraps cleanly */
+#quizHeader #scoreInfo {
+  flex-shrink: 0;
+}
+
+/* On very small screens, navToggleBtn wraps to new line */
+@media (max-width: 480px) {
+  #quizHeader #navToggleBtn {
+    order: 10;
+    margin-left: 0 !important;
+  }
 }
 body.dark #quizHeader {
   background: #1e2535;
@@ -254,6 +269,9 @@ body.dark #mobileNavClose { background: #252d3d !important; color: #94a3b8 !impo
 body.dark #navToggleBtn { border-color: #334155 !important; color: #94a3b8; }
 body.dark #navToggleBtn:hover { background: #252d3d !important; }
 body.dark #mobileNavOverlay #mobileNavDrawer { background: #1e2535 !important; color: #e2e8f0; }
+body.dark #singleQuestionBtn { border-color: #334155 !important; color: #94a3b8; }
+body.dark #singleQuestionBtn:hover { background: #252d3d !important; }
+body.dark #singleQuestionBtn.single-active { background: #1e3a5f !important; border-color: #3b82f6 !important; color: #93c5fd !important; }
 
 /* Apply button container dark mode */
 body.dark #customQuestionInput {
@@ -449,15 +467,28 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
             💡 <span id="btnHintLabel">Gợi ý</span>
           </button>
 
-          <!-- Nav toggle button: always inside header when in full/random mode -->
-          <button id="navToggleBtn" style="display:none;" class="ml-auto items-center justify-center w-9 h-9 rounded-lg border border-gray-200 hover:bg-gray-100 transition-colors flex-shrink-0" title="Danh sách câu hỏi">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="1" width="6.5" height="6.5" rx="1.2" fill="currentColor" opacity="0.8"/>
-              <rect x="10.5" y="1" width="6.5" height="6.5" rx="1.2" fill="currentColor" opacity="0.8"/>
-              <rect x="1" y="10.5" width="6.5" height="6.5" rx="1.2" fill="currentColor" opacity="0.8"/>
-              <rect x="10.5" y="10.5" width="6.5" height="6.5" rx="1.2" fill="currentColor" opacity="0.8"/>
-            </svg>
-          </button>
+          <!-- Right-side button group: nav toggle + single question toggle -->
+          <div class="ml-auto flex items-center gap-1 flex-shrink-0">
+            <!-- Single question filter button: only in full mode -->
+            <button id="singleQuestionBtn" style="display:none;" class="items-center justify-center w-9 h-9 rounded-lg border border-gray-200 hover:bg-gray-100 transition-colors flex-shrink-0" title="Chỉ hiện 1 câu đang chọn">
+              <!-- Default: 3 lines (show all) -->
+              <svg id="singleQuestionIcon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="3" width="14" height="2" rx="1" fill="currentColor"/>
+                <rect x="2" y="8" width="14" height="2" rx="1" fill="currentColor"/>
+                <rect x="2" y="13" width="14" height="2" rx="1" fill="currentColor"/>
+              </svg>
+            </button>
+
+            <!-- Nav toggle button: always inside header when in full/random mode -->
+            <button id="navToggleBtn" style="display:none;" class="items-center justify-center w-9 h-9 rounded-lg border border-gray-200 hover:bg-gray-100 transition-colors flex-shrink-0" title="Danh sách câu hỏi">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="6.5" height="6.5" rx="1.2" fill="currentColor" opacity="0.8"/>
+                <rect x="10.5" y="1" width="6.5" height="6.5" rx="1.2" fill="currentColor" opacity="0.8"/>
+                <rect x="1" y="10.5" width="6.5" height="6.5" rx="1.2" fill="currentColor" opacity="0.8"/>
+                <rect x="10.5" y="10.5" width="6.5" height="6.5" rx="1.2" fill="currentColor" opacity="0.8"/>
+              </svg>
+            </button>
+          </div>
           <div id="scoreInfo" class="text-lg font-bold text-blue-600 whitespace-nowrap"></div>
         </div><!-- end quizHeader -->
 
@@ -787,6 +818,9 @@ subjectData.tin2026 = {
     // - for mcq: userAnswers[i] = selectedIndex|null
     // - for tf: userAnswers[i] = [true/false|null, true/false|null, ...] (length 4)
 
+    let singleQuestionMode = false; // for full mode: show only selected question
+    let singleQuestionSelected = 0; // index of selected question in single mode
+
     // UI refs
     const subjectScreen = document.getElementById('subjectScreen');
     const modeScreen = document.getElementById('modeScreen');
@@ -927,6 +961,8 @@ subjectData.tin2026 = {
       score = 0;
       hintsUsed = {};
       randomHintUsed = false;
+      singleQuestionMode = false;
+      singleQuestionSelected = 0;
       renderQuiz();
     }
 
@@ -967,12 +1003,13 @@ subjectData.tin2026 = {
         customQuestionInput.classList.add('hidden');
         customQuestionInput.classList.remove('flex');
         applyCustomCountBtn.classList.add('hidden');
-        quizHeader.classList.remove('flex-wrap');
-        quizHeader.classList.add('justify-between');
+        quizHeader.classList.remove('justify-between');
+        quizHeader.classList.add('flex-wrap');
       }
 
       // Show/hide nav toggle icon and desktop nav panel
       const navToggleBtnEl = document.getElementById('navToggleBtn');
+      const singleQuestionBtnEl = document.getElementById('singleQuestionBtn');
       const navDesktop = document.getElementById('questionNavDesktop');
       navDesktop.classList.remove('nav-collapsed');
       navDesktop.style.width = '';
@@ -980,8 +1017,27 @@ subjectData.tin2026 = {
         navToggleBtnEl.style.display = 'flex';
         navDesktop.classList.remove('hidden');
         updateNavResponsive();
+        // Single question btn: only for full mode
+        if (quizMode === 'full') {
+          singleQuestionBtnEl.style.display = 'flex';
+          // Reset icon and active state (in case user toggled 1-câu then went home)
+          singleQuestionBtnEl.classList.remove('single-active');
+          singleQuestionBtnEl.style.background = '';
+          singleQuestionBtnEl.style.borderColor = '';
+          singleQuestionBtnEl.style.color = '';
+          singleQuestionBtnEl.title = 'Chỉ hiện 1 câu đang chọn';
+          const iconEl = document.getElementById('singleQuestionIcon');
+          if (iconEl) {
+            iconEl.innerHTML = '<rect x="2" y="3" width="14" height="2" rx="1" fill="currentColor"/><rect x="2" y="8" width="14" height="2" rx="1" fill="currentColor"/><rect x="2" y="13" width="14" height="2" rx="1" fill="currentColor"/>';
+          }
+        } else {
+          singleQuestionBtnEl.style.display = 'none';
+          singleQuestionBtnEl.classList.remove('single-active');
+          singleQuestionMode = false;
+        }
       } else {
         navToggleBtnEl.style.display = 'none';
+        singleQuestionBtnEl.style.display = 'none';
         navDesktop.classList.add('hidden');
         navDesktop.style.display = '';
       }
@@ -1353,9 +1409,14 @@ subjectData.tin2026 = {
           const isAnswered = Array.isArray(ans) ? ans.some(v => v !== null) : ans !== null;
           if (isAnswered) btn.classList.add('answered');
           btn.addEventListener('click', () => {
+            singleQuestionSelected = qi;
             const target = document.getElementById('question-' + qi);
             if (target) {
-              target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              if (singleQuestionMode) {
+                applySingleQuestionFilter(qi);
+              } else {
+                target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              }
               // Close mobile drawer if open
               const overlay = document.getElementById('mobileNavOverlay');
               if (overlay) overlay.classList.add('hidden');
@@ -1668,6 +1729,47 @@ btnRestart.addEventListener('click', () => {
     });
 
     backToSubject.addEventListener('click', () => navigateHomeWithConfirm());
+
+    // ===== SINGLE QUESTION MODE (full mode only) =====
+    function applySingleQuestionFilter(idx) {
+      if (!singleQuestionMode) {
+        // Show all questions
+        document.querySelectorAll('[id^="question-"]').forEach(el => { el.style.display = ''; });
+        return;
+      }
+      // Hide all, show only selected
+      document.querySelectorAll('[id^="question-"]').forEach(el => { el.style.display = 'none'; });
+      const target = document.getElementById('question-' + idx);
+      if (target) {
+        target.style.display = '';
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    document.getElementById('singleQuestionBtn').addEventListener('click', () => {
+      singleQuestionMode = !singleQuestionMode;
+      const btn = document.getElementById('singleQuestionBtn');
+      const icon = document.getElementById('singleQuestionIcon');
+      if (singleQuestionMode) {
+        btn.classList.add('single-active');
+        btn.style.background = '#dbeafe';
+        btn.style.borderColor = '#3b82f6';
+        btn.style.color = '#1d4ed8';
+        btn.title = 'Đang hiện 1 câu — click để hiện tất cả';
+        // Switch to 1-line icon
+        icon.innerHTML = '<rect x="2" y="8" width="14" height="2" rx="1" fill="currentColor"/>';
+        applySingleQuestionFilter(singleQuestionSelected);
+      } else {
+        btn.classList.remove('single-active');
+        btn.style.background = '';
+        btn.style.borderColor = '';
+        btn.style.color = '';
+        btn.title = 'Chỉ hiện 1 câu đang chọn';
+        // Switch back to 3-line icon
+        icon.innerHTML = '<rect x="2" y="3" width="14" height="2" rx="1" fill="currentColor"/><rect x="2" y="8" width="14" height="2" rx="1" fill="currentColor"/><rect x="2" y="13" width="14" height="2" rx="1" fill="currentColor"/>';
+        applySingleQuestionFilter(-1);
+      }
+    });
 
     // ===== NAV TOGGLE =====
     function updateNavResponsive() {
@@ -2006,6 +2108,49 @@ if (!presenceRef) {
 console.log('💡 Lệnh hữu ích:');
 console.log('   - cleanupOldPresence() : Xóa presence data cũ hơn 1 phút');
 console.log('   - resetOnlineCount() : Reset toàn bộ (cẩn thận!)');
+</script>
+
+<!-- ===== AUTO-UPDATE NOTIFICATION ===== -->
+<script>
+(function checkForUpdates() {
+  // Đọc version hiện tại lần đầu
+  let currentVersion = null;
+  let checkInterval = null;
+
+  function fetchVersion() {
+    return fetch('/version.json?_=' + Date.now(), { cache: 'no-store' })
+      .then(r => { if (!r.ok) throw new Error('not found'); return r.json(); })
+      .then(data => data.version || null)
+      .catch(() => null);
+  }
+
+  fetchVersion().then(v => {
+    if (!v) return; // file chưa có, bỏ qua
+    currentVersion = v;
+    console.log('📦 Version hiện tại:', currentVersion);
+
+    // Poll mỗi 30 giây
+    checkInterval = setInterval(() => {
+      fetchVersion().then(newVersion => {
+        if (!newVersion || !currentVersion) return;
+        if (newVersion !== currentVersion) {
+          clearInterval(checkInterval);
+          const ok = confirm(
+            '🔔 Đã có cập nhật mới!\n\n' +
+            'Trang web vừa được cập nhật. Vui lòng reload trang để sử dụng phiên bản mới nhất.\n\n' +
+            'Nhấn OK để reload ngay, hoặc Cancel để tiếp tục làm bài.'
+          );
+          if (ok) {
+            window.location.reload(true);
+          } else {
+            // Nếu người dùng cancel, check lại sau 2 phút
+            setTimeout(checkForUpdates, 120000);
+          }
+        }
+      });
+    }, 30000); // 30 giây
+  });
+})();
 </script>
 <!-- Container để nhúng nội dung quizls.html -->
 <div id="embeddedHistoryWrap" class="fixed inset-0 z-50 bg-white/90 hidden overflow-auto p-6">
