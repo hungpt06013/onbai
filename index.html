@@ -449,9 +449,8 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
             💡 <span id="btnHintLabel">Gợi ý</span>
           </button>
 
-          <div id="scoreInfo" class="ml-auto text-lg font-bold text-blue-600 whitespace-nowrap"></div>
-          <!-- Mobile nav toggle: only visible on <lg, only in full mode -->
-          <button id="navToggleBtn" style="display:none;" class="items-center justify-center w-9 h-9 rounded-lg border border-gray-200 hover:bg-gray-100 transition-colors flex-shrink-0" title="Danh sách câu hỏi">
+          <!-- Nav toggle button: always inside header when in full/random mode -->
+          <button id="navToggleBtn" style="display:none;" class="ml-auto items-center justify-center w-9 h-9 rounded-lg border border-gray-200 hover:bg-gray-100 transition-colors flex-shrink-0" title="Danh sách câu hỏi">
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="1" y="1" width="6.5" height="6.5" rx="1.2" fill="currentColor" opacity="0.8"/>
               <rect x="10.5" y="1" width="6.5" height="6.5" rx="1.2" fill="currentColor" opacity="0.8"/>
@@ -459,6 +458,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
               <rect x="10.5" y="10.5" width="6.5" height="6.5" rx="1.2" fill="currentColor" opacity="0.8"/>
             </svg>
           </button>
+          <div id="scoreInfo" class="text-lg font-bold text-blue-600 whitespace-nowrap"></div>
         </div><!-- end quizHeader -->
 
         <div id="quizContent"></div>
@@ -475,21 +475,9 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
       <div class="bg-white rounded-2xl shadow-xl p-4">
         <div class="flex justify-between items-center mb-3">
           <p class="text-xs font-bold text-gray-500 uppercase tracking-wider">Danh sách câu hỏi</p>
-          <button id="navCollapseBtn" onclick="collapseNavDesktop()" title="Ẩn danh sách"
-            class="w-6 h-6 flex items-center justify-center rounded-full hover:bg-gray-100 text-gray-400 hover:text-gray-700 transition-colors text-sm font-bold">✕</button>
         </div>
         <div id="questionNavGrid" class="grid grid-cols-5 gap-1.5" style="max-height:340px;overflow-y:auto;padding-right:2px;"></div>
       </div>
-      <!-- Collapsed icon button -->
-      <button id="navExpandBtn" onclick="expandNavDesktop()" title="Hiện danh sách câu hỏi"
-        class="flex items-center justify-center w-10 h-10 bg-white rounded-xl shadow-xl border border-gray-200 hover:bg-gray-50 transition-colors text-gray-600">
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="1" y="1" width="6.5" height="6.5" rx="1.2" fill="currentColor" opacity="0.8"/>
-          <rect x="10.5" y="1" width="6.5" height="6.5" rx="1.2" fill="currentColor" opacity="0.8"/>
-          <rect x="1" y="10.5" width="6.5" height="6.5" rx="1.2" fill="currentColor" opacity="0.8"/>
-          <rect x="10.5" y="10.5" width="6.5" height="6.5" rx="1.2" fill="currentColor" opacity="0.8"/>
-        </svg>
-      </button>
     </div>
     </div><!-- end flex row -->
   </div>
@@ -983,27 +971,17 @@ subjectData.tin2026 = {
         quizHeader.classList.add('justify-between');
       }
 
-      // Show/hide nav toggle icon (mobile) and desktop nav panel
+      // Show/hide nav toggle icon and desktop nav panel
       const navToggleBtnEl = document.getElementById('navToggleBtn');
       const navDesktop = document.getElementById('questionNavDesktop');
+      navDesktop.classList.remove('nav-collapsed');
+      navDesktop.style.width = '';
       if (quizMode === 'full' || quizMode === 'random') {
-        // Desktop nav: visible only on wide screens
+        navToggleBtnEl.style.display = 'flex';
         navDesktop.classList.remove('hidden');
-        // For random mode: never use collapsed state
-        if (quizMode === 'full' && localStorage.getItem('navCollapsed') === '1') {
-          navDesktop.classList.add('nav-collapsed');
-          navDesktop.style.width = 'auto';
-        } else {
-          navDesktop.classList.remove('nav-collapsed');
-          navDesktop.style.width = '';
-        }
-        // Mobile toggle icon: visible only on narrow screens (managed by updateNavResponsive)
-        navToggleBtnEl.classList.add('flex');
-        navToggleBtnEl.classList.remove('hidden');
         updateNavResponsive();
       } else {
-        navToggleBtnEl.classList.add('hidden');
-        navToggleBtnEl.classList.remove('flex');
+        navToggleBtnEl.style.display = 'none';
         navDesktop.classList.add('hidden');
         navDesktop.style.display = '';
       }
@@ -1205,6 +1183,11 @@ subjectData.tin2026 = {
 
           if (isViewingHistory && entry.answered) {
             // Show review of historical question
+            const qLabel = document.createElement('div');
+            qLabel.className = 'text-sm font-bold text-blue-500 mb-1 uppercase tracking-wide';
+            qLabel.textContent = `Câu ${randomHistoryPos + 1}`;
+            questionArea.appendChild(qLabel);
+
             const qTitle = document.createElement('h3');
             qTitle.className = 'text-2xl font-bold text-gray-800 mb-6';
             qTitle.innerHTML = processQuestionText(qObj.q);
@@ -1244,6 +1227,11 @@ subjectData.tin2026 = {
           }
 
           // Render câu hiện tại (đang làm hoặc đã nộp)
+          const qLabel = document.createElement('div');
+          qLabel.className = 'text-sm font-bold text-blue-500 mb-1 uppercase tracking-wide';
+          qLabel.textContent = `Câu ${randomHistory.length}`;
+          questionArea.appendChild(qLabel);
+
           const qTitle = document.createElement('h3');
           qTitle.className = 'text-2xl font-bold text-gray-800 mb-6';
           qTitle.innerHTML = processQuestionText(qObj.q);
@@ -1681,27 +1669,35 @@ btnRestart.addEventListener('click', () => {
 
     backToSubject.addEventListener('click', () => navigateHomeWithConfirm());
 
-    // ===== MOBILE NAV OVERLAY TOGGLE =====
+    // ===== NAV TOGGLE =====
     function updateNavResponsive() {
       if (quizMode !== 'full' && quizMode !== 'random') return;
       const isWide = window.innerWidth >= 1024;
       const navDesktop = document.getElementById('questionNavDesktop');
-      const navToggleBtnEl = document.getElementById('navToggleBtn');
       if (isWide) {
-        // Wide: show sidebar, hide toggle icon
-        navDesktop.style.display = 'block';
-        navToggleBtnEl.style.display = 'none';
+        const hiddenKey = quizMode === 'random' ? 'randomNavHidden' : 'fullNavHidden';
+        navDesktop.style.display = localStorage.getItem(hiddenKey) === '1' ? 'none' : 'block';
       } else {
-        // Narrow: hide sidebar, show toggle icon
         navDesktop.style.display = 'none';
-        navToggleBtnEl.style.display = 'flex';
       }
     }
     window.addEventListener('resize', updateNavResponsive);
 
     document.getElementById('navToggleBtn').addEventListener('click', () => {
-      const overlay = document.getElementById('mobileNavOverlay');
-      overlay.classList.remove('hidden');
+      const isWide = window.innerWidth >= 1024;
+      if (isWide) {
+        const navDesktop = document.getElementById('questionNavDesktop');
+        const hiddenKey = quizMode === 'random' ? 'randomNavHidden' : 'fullNavHidden';
+        if (navDesktop.style.display === 'none') {
+          navDesktop.style.display = 'block';
+          localStorage.removeItem(hiddenKey);
+        } else {
+          navDesktop.style.display = 'none';
+          localStorage.setItem(hiddenKey, '1');
+        }
+      } else {
+        document.getElementById('mobileNavOverlay').classList.remove('hidden');
+      }
     });
     document.getElementById('mobileNavClose').addEventListener('click', () => {
       document.getElementById('mobileNavOverlay').classList.add('hidden');
