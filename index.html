@@ -1238,7 +1238,88 @@ subjectData.tin2026 = {
       btnRestart.textContent = (quizMode === 'random') ? 'Câu khác' : 'Làm lại';
 
       if (quizMode === 'full') {
-        // show all questions
+        if (quizCompleted) {
+          // === FULL MODE ĐÃ NỘP: render lại dạng review (giống phần submit handler) ===
+          const totalPossible = shuffledQuestions.filter((_, i) => !hintsUsed[i]).length;
+          const hintedCount = Object.keys(hintsUsed).length;
+          const pct = totalPossible > 0 ? Math.round((score / totalPossible) * 100) : 0;
+
+          const summary = document.createElement('div');
+          summary.className = 'mb-6 p-4 rounded-lg border bg-gray-50';
+          summary.innerHTML = `<div class="text-center">
+            <div class="text-3xl font-bold text-blue-600">${Math.round(score*100)/100}/${totalPossible}</div>
+            <div class="text-lg text-gray-600">Điểm số: ${pct}%</div>
+            ${hintedCount > 0 ? `<div class="text-sm text-red-500 mt-1">⚠️ ${hintedCount} câu đã dùng gợi ý (không tính điểm)</div>` : ''}
+          </div>`;
+          quizContent.appendChild(summary);
+
+          shuffledQuestions.forEach((q, qi) => {
+            const qWrap = document.createElement('div');
+            qWrap.className = 'mb-6 pb-4 border-b';
+            qWrap.id = 'question-' + qi;
+            const qTitle = document.createElement('h3');
+            qTitle.className = 'text-lg font-semibold mb-3';
+            qTitle.innerHTML = `Câu ${qi+1}. ${processQuestionText(q.q)}`;
+            qWrap.appendChild(qTitle);
+
+            if (hintsUsed[qi]) {
+              const hw = document.createElement('div');
+              hw.className = 'mb-2 text-xs text-red-500 font-semibold';
+              hw.textContent = '⚠️ Câu này đã dùng gợi ý — không tính điểm.';
+              qWrap.appendChild(hw);
+            }
+
+            if (q.type === 'mcq') {
+              const opts = document.createElement('div');
+              opts.className = 'space-y-2';
+              q.o.forEach((opt, oi) => {
+                const div = document.createElement('div');
+                div.className = 'w-full text-left p-3 rounded-lg border-2 transition-all mb-1 flex items-center justify-between';
+                if (oi === q.c) {
+                  if (userAnswers[qi] === q.c) {
+                    div.classList.add('border-green-500','bg-green-50');
+                    div.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="text-green-700 font-semibold">✓ ĐÚNG</span>`;
+                  } else {
+                    div.classList.add('border-green-300','bg-green-50');
+                    div.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="text-green-600">Đáp án đúng</span>`;
+                  }
+                } else if (userAnswers[qi] === oi) {
+                  div.classList.add('border-red-500','bg-red-50');
+                  div.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span class="text-red-700 font-semibold">✗ SAI</span>`;
+                } else {
+                  div.classList.add('border-gray-200');
+                  div.innerHTML = `<span class="font-medium text-gray-800">${opt}</span><span></span>`;
+                }
+                opts.appendChild(div);
+              });
+              qWrap.appendChild(opts);
+            } else if (q.type === 'tf') {
+              const grid = buildTFGridReview(q, userAnswers[qi]);
+              let correctCount = 0;
+              for (let j=0;j<4;j++) if (userAnswers[qi][j] !== null && userAnswers[qi][j] === q.answers[j]) correctCount++;
+              const pts = tfPointsForCorrectCount(correctCount);
+              const ptsDiv = document.createElement('div');
+              ptsDiv.className = 'mt-2 text-sm text-gray-700 font-semibold';
+              ptsDiv.textContent = `Điểm đạt được cho câu này: ${pts}`;
+              qWrap.appendChild(grid);
+              qWrap.appendChild(ptsDiv);
+            }
+
+            if (q.explain) {
+              const exDiv = document.createElement('div');
+              exDiv.className = 'explain-box';
+              exDiv.innerHTML = `📝 <strong>Giải thích:</strong> ${q.explain}`;
+              qWrap.appendChild(exDiv);
+            }
+
+            quizContent.appendChild(qWrap);
+          });
+
+          setSubmitState(false, 'Đã nộp');
+          btnNext.classList.add('hidden');
+          renderQuestionNav();
+        } else {
+        // === FULL MODE CHƯA NỘP: render interactive ===
         shuffledQuestions.forEach((q, qi) => {
           const qWrap = document.createElement('div');
           qWrap.className = 'mb-6 pb-4 border-b';
@@ -1334,6 +1415,7 @@ subjectData.tin2026 = {
         setSubmitState(anyAnswered, 'Nộp bài');
         btnNext.classList.add('hidden');
         renderQuestionNav();
+        } // end else (chưa nộp)
 
       } else {
         const q = shuffledQuestions[0];
@@ -1384,6 +1466,7 @@ subjectData.tin2026 = {
                 hBtn.addEventListener('click', () => {
                   if (idx === randomHistory.length - 1 && randomHistoryPos === null) return;
                   randomHistoryPos = idx;
+                  saveQuizState();
                   // Close mobile drawer
                   document.getElementById('mobileNavOverlay').classList.add('hidden');
                   renderRandomQuestion();
@@ -1451,6 +1534,10 @@ subjectData.tin2026 = {
               questionArea.appendChild(exDiv);
             }
 
+            // Set nút đúng khi đang xem lại câu lịch sử
+            setSubmitState(false, 'Đã nộp');
+            btnNext.classList.remove('hidden');
+
             return;
           }
 
@@ -1516,6 +1603,9 @@ subjectData.tin2026 = {
               exDiv.innerHTML = `📝 <strong>Giải thích:</strong> ${qObj.explain}`;
               questionArea.appendChild(exDiv);
             }
+            // Restore nút đúng sau khi reload: "Đã nộp" + hiện "Câu tiếp theo"
+            setSubmitState(false, 'Đã nộp');
+            btnNext.classList.remove('hidden');
           } else {
             // Interactive answering
             if (qObj.type === 'mcq') {
@@ -1802,6 +1892,10 @@ subjectData.tin2026 = {
         // Update nav with correct/wrong colors
         renderQuestionNavAfterSubmit();
         saveQuizState(); // lưu trạng thái đã nộp để xem lại sau reload
+        // Nếu đang ở chế độ 1 câu thì giữ nguyên filter
+        if (singleQuestionMode) {
+          requestAnimationFrame(() => applySingleQuestionFilter(singleQuestionSelected));
+        }
       } else {
         // ===== RANDOM MODE =====
         if (userAnswers[0] === null || (Array.isArray(userAnswers[0]) && !userAnswers[0].some(x=>x!==null))) return;
@@ -1825,6 +1919,7 @@ subjectData.tin2026 = {
           setSubmitState(false, 'Đã nộp');
           btnNext.classList.remove('hidden');
           scoreInfo.textContent = `Đúng: ${randomModeStats.totalCorrect}/${randomModeStats.totalAnswered}`;
+          saveQuizState(); // lưu trạng thái đã nộp để reload không bị reset
           if (window.renderRandomQuestion) renderRandomQuestion();
         } else {
           const userArr = userAnswers[0];
@@ -1847,6 +1942,7 @@ subjectData.tin2026 = {
           setSubmitState(false, 'Đã nộp');
           btnNext.classList.remove('hidden');
           scoreInfo.textContent = `Đúng: ${randomModeStats.totalCorrect}/${randomModeStats.totalAnswered}`;
+          saveQuizState(); // lưu trạng thái đã nộp để reload không bị reset
           if (window.renderRandomQuestion) renderRandomQuestion();
         }
       }
