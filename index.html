@@ -956,6 +956,110 @@ subjectData.tin2026 = {
       };
     }
 
+    // ===== SAVE / RESTORE QUIZ STATE =====
+    const QUIZ_STATE_KEY = 'quizSavedState';
+
+    function saveQuizState() {
+      if (!quizStarted || !currentSubject) return;
+      const state = {
+        currentSubject,
+        quizMode,
+        quizStarted,
+        quizCompleted,
+        shuffledQuestions,
+        userAnswers,
+        score,
+        hintsUsed,
+        randomHintUsed,
+        randomModeStats,
+        randomQueue,
+        randomQueuePos,
+        randomHistory,
+        randomHistoryPos,
+        lastValidQuestionCount,
+        singleQuestionMode,
+        singleQuestionSelected,
+        scrollY: window.scrollY,
+        savedAt: Date.now()
+      };
+      try {
+        localStorage.setItem(QUIZ_STATE_KEY, JSON.stringify(state));
+      } catch(e) {}
+    }
+
+    function clearQuizState() {
+      localStorage.removeItem(QUIZ_STATE_KEY);
+    }
+
+    function restoreQuizState() {
+      try {
+        const raw = localStorage.getItem(QUIZ_STATE_KEY);
+        if (!raw) return false;
+        const state = JSON.parse(raw);
+        // Chỉ phục hồi nếu state còn mới (trong vòng 2 giờ)
+        if (!state.savedAt || Date.now() - state.savedAt > 2 * 60 * 60 * 1000) {
+          clearQuizState();
+          return false;
+        }
+        // Kiểm tra subject hợp lệ
+        if (!state.currentSubject || !subjectData[state.currentSubject]) return false;
+
+        // Phục hồi tất cả biến
+        currentSubject = state.currentSubject;
+        quizMode = state.quizMode;
+        quizStarted = state.quizStarted;
+        quizCompleted = state.quizCompleted;
+        shuffledQuestions = state.shuffledQuestions;
+        userAnswers = state.userAnswers;
+        score = state.score;
+        hintsUsed = state.hintsUsed || {};
+        randomHintUsed = state.randomHintUsed || false;
+        randomModeStats = state.randomModeStats || { totalAnswered: 0, totalCorrect: 0 };
+        randomQueue = state.randomQueue || [];
+        randomQueuePos = state.randomQueuePos || 0;
+        randomHistory = state.randomHistory || [];
+        randomHistoryPos = state.randomHistoryPos !== undefined ? state.randomHistoryPos : null;
+        lastValidQuestionCount = state.lastValidQuestionCount || 10;
+        singleQuestionMode = state.singleQuestionMode || false;
+        singleQuestionSelected = state.singleQuestionSelected || 0;
+
+        // Cập nhật subject UI
+        subjectTitle.textContent = subjectData[currentSubject].fullName;
+        const totalQ = subjectData[currentSubject].questions.length;
+        fullModeDesc.textContent = `Chọn từ 1 đến ${totalQ} câu hỏi`;
+        const customInput = document.getElementById('customQuestionCount');
+        customInput.max = totalQ;
+        customInput.value = lastValidQuestionCount;
+
+        // Render lại quiz
+        renderQuiz();
+
+        // Nếu đang ở chế độ 1 câu, áp dụng lại filter sau khi render
+        if (singleQuestionMode && quizMode === 'full') {
+          requestAnimationFrame(() => requestAnimationFrame(() => applySingleQuestionFilter(singleQuestionSelected)));
+        }
+
+        // Sau khi render xong, scroll về vị trí cũ
+        if (state.scrollY) {
+          requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+              window.scrollTo({ top: state.scrollY, behavior: 'instant' });
+            });
+          });
+        }
+
+        // Nếu bài đã nộp (full mode), cập nhật màu nav
+        if (quizCompleted && quizMode === 'full') {
+          requestAnimationFrame(() => renderQuestionNavAfterSubmit());
+        }
+
+        return true;
+      } catch(e) {
+        clearQuizState();
+        return false;
+      }
+    }
+
     // initialize quiz
     function initializeQuiz(mode = 'full', customCount = null) {
       const allQ = subjectData[currentSubject].questions;
@@ -1020,6 +1124,7 @@ subjectData.tin2026 = {
       singleQuestionMode = false;
       singleQuestionSelected = 0;
       renderQuiz();
+      saveQuizState(); // lưu ngay sau khi khởi tạo để reload không mất câu hỏi hiện tại
     }
 
     // Render quiz screen
@@ -1076,15 +1181,21 @@ subjectData.tin2026 = {
         // Single question btn: only for full mode
         if (quizMode === 'full') {
           singleQuestionBtnEl.style.display = 'flex';
-          // Reset icon and active state (in case user toggled 1-câu then went home)
-          singleQuestionBtnEl.classList.remove('single-active');
-          singleQuestionBtnEl.style.background = '';
-          singleQuestionBtnEl.style.borderColor = '';
-          singleQuestionBtnEl.style.color = '';
-          singleQuestionBtnEl.title = 'Chỉ hiện 1 câu đang chọn';
           const iconEl = document.getElementById('singleQuestionIcon');
-          if (iconEl) {
-            iconEl.innerHTML = '<rect x="2" y="3" width="14" height="2" rx="1" fill="currentColor"/><rect x="2" y="8" width="14" height="2" rx="1" fill="currentColor"/><rect x="2" y="13" width="14" height="2" rx="1" fill="currentColor"/>';
+          if (singleQuestionMode) {
+            singleQuestionBtnEl.classList.add('single-active');
+            singleQuestionBtnEl.style.background = '#dbeafe';
+            singleQuestionBtnEl.style.borderColor = '#3b82f6';
+            singleQuestionBtnEl.style.color = '#1d4ed8';
+            singleQuestionBtnEl.title = 'Đang hiện 1 câu — click để hiện tất cả';
+            if (iconEl) iconEl.innerHTML = '<rect x="2" y="8" width="14" height="2" rx="1" fill="currentColor"/>';
+          } else {
+            singleQuestionBtnEl.classList.remove('single-active');
+            singleQuestionBtnEl.style.background = '';
+            singleQuestionBtnEl.style.borderColor = '';
+            singleQuestionBtnEl.style.color = '';
+            singleQuestionBtnEl.title = 'Chỉ hiện 1 câu đang chọn';
+            if (iconEl) iconEl.innerHTML = '<rect x="2" y="3" width="14" height="2" rx="1" fill="currentColor"/><rect x="2" y="8" width="14" height="2" rx="1" fill="currentColor"/><rect x="2" y="13" width="14" height="2" rx="1" fill="currentColor"/>';
           }
         } else {
           singleQuestionBtnEl.style.display = 'none';
@@ -1196,6 +1307,7 @@ subjectData.tin2026 = {
                 scoreInfo.textContent = '';
                 setSubmitState(answeredCount > 0, 'Nộp bài');
                 updateNavButton(qi);
+                saveQuizState();
               });
 
               opts.appendChild(btn);
@@ -1210,6 +1322,7 @@ subjectData.tin2026 = {
               scoreInfo.textContent = '';
               setSubmitState(answeredCount > 0, 'Nộp bài');
               updateNavButton(qi);
+              saveQuizState();
             });
             qWrap.appendChild(grid);
           }
@@ -1422,6 +1535,7 @@ subjectData.tin2026 = {
                     btn.classList.add('border-blue-500','bg-blue-50');
                   }
                   setSubmitState(userAnswers[0] !== null, 'Nộp bài');
+                  saveQuizState();
                 });
                 opts.appendChild(btn);
               });
@@ -1431,6 +1545,7 @@ subjectData.tin2026 = {
             } else {
               const grid = buildTFGrid(qObj, 0, userAnswers[0], () => {
                 setSubmitState(userAnswers[0].some(x=>x!==null), 'Nộp bài');
+                saveQuizState();
               });
               questionArea.appendChild(grid);
               setSubmitState(userAnswers[0].some(x=>x!==null), 'Nộp bài');
@@ -1686,6 +1801,7 @@ subjectData.tin2026 = {
         btnNext.classList.add('hidden');
         // Update nav with correct/wrong colors
         renderQuestionNavAfterSubmit();
+        saveQuizState(); // lưu trạng thái đã nộp để xem lại sau reload
       } else {
         // ===== RANDOM MODE =====
         if (userAnswers[0] === null || (Array.isArray(userAnswers[0]) && !userAnswers[0].some(x=>x!==null))) return;
@@ -1785,6 +1901,7 @@ btnRestart.addEventListener('click', () => {
       if (quizStarted && !quizCompleted) {
         if (!confirm('Bạn có chắc muốn rời trang? Mọi câu trả lời sẽ không được lưu.')) return false;
       }
+      clearQuizState();
       currentSubject = null;
       quizStarted = false;
       randomModeStats = { totalAnswered: 0, totalCorrect: 0 };
@@ -1802,6 +1919,7 @@ btnRestart.addEventListener('click', () => {
         const ok = confirm('Bạn đang làm bài, mọi tiến trình sẽ mất. Bạn có chắc không?');
         if (!ok) return;
       }
+      clearQuizState();
       quizStarted = false;
       quizCompleted = false;
       currentSubject = null;
@@ -1851,6 +1969,7 @@ btnRestart.addEventListener('click', () => {
         icon.innerHTML = '<rect x="2" y="3" width="14" height="2" rx="1" fill="currentColor"/><rect x="2" y="8" width="14" height="2" rx="1" fill="currentColor"/><rect x="2" y="13" width="14" height="2" rx="1" fill="currentColor"/>';
         applySingleQuestionFilter(-1);
       }
+      saveQuizState();
     });
 
     // ===== NAV TOGGLE =====
@@ -2009,8 +2128,10 @@ btnRestart.addEventListener('click', () => {
       drawerOpt.addEventListener('change', onNavStyleChange);
     })();
 
-    // initial render
-    renderQuiz();
+    // initial render — try restoring saved state first
+    if (!restoreQuizState()) {
+      renderQuiz();
+    }
 
   </script>
 <!-- Firebase SDK - Di chuyển xuống đây -->
@@ -2269,6 +2390,7 @@ console.log('   - resetOnlineCount() : Reset toàn bộ (cẩn thận!)');
           const ok = confirm(
             'Đã có cập nhật mới!\n\n' +
             'Trang web vừa được cập nhật. Vui lòng reload trang để sử dụng phiên bản mới nhất.\n\n' +
+            '✅ Tiến trình làm bài của bạn sẽ được lưu lại — bạn có thể tiếp tục sau khi reload.\n\n' +
             'Nhấn OK để reload ngay, hoặc Cancel để tiếp tục làm bài.'
           );
 
@@ -2277,6 +2399,7 @@ console.log('   - resetOnlineCount() : Reset toàn bộ (cẩn thận!)');
           lastNotifiedVersion = newVersion;
 
           if (ok) {
+            saveQuizState();
             window.location.reload();
           }
         }
