@@ -6,7 +6,7 @@
   <title>Ôn Tập Bài Học - Đa Môn</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="antialiased bg-gradient-to-br from-blue-50 to-green-50 min-h-screen p-6">
+<body class="antialiased bg-gradient-to-br from-blue-50 to-green-50 min-h-screen p-6 pt-24">
 <div style="position:fixed;top:10px;left:10px;z-index:9999;display:flex;flex-direction:column;align-items:flex-start;gap:8px;">
   <div style="background:rgba(0,0,0,0.8);color:white;padding:10px 20px;border-radius:20px;display:flex;align-items:center;gap:8px;box-shadow:0 4px 12px rgba(0,0,0,0.3);">
     <svg width="12" height="12" style="animation:blink 1.5s infinite;">
@@ -189,6 +189,8 @@ body.dark #quizHeader {
 
 /* Dark mode nav panel */
 body.dark #questionNavDesktop > div { background: #1e2535 !important; }
+body.dark #mobileNavInline { background: #1e2535 !important; }
+body.dark #mobileNavInlineLabel { color: #94a3b8 !important; }
 
 /* ===== TF Grid CSS Classes ===== */
 .tf-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
@@ -269,6 +271,7 @@ body.dark #mobileNavClose { background: #252d3d !important; color: #94a3b8 !impo
 body.dark #navToggleBtn { border-color: #334155 !important; color: #94a3b8; }
 body.dark #navToggleBtn:hover { background: #252d3d !important; }
 body.dark #mobileNavOverlay #mobileNavDrawer { background: #1e2535 !important; color: #e2e8f0; }
+body.dark #mobileNavInline { background: #1e2535 !important; }
 body.dark #singleQuestionBtn { border-color: #334155 !important; color: #94a3b8; }
 body.dark #singleQuestionBtn:hover { background: #252d3d !important; }
 body.dark #singleQuestionBtn.single-active { background: #1e3a5f !important; border-color: #3b82f6 !important; color: #93c5fd !important; }
@@ -290,21 +293,33 @@ body.dark #customQuestionCount {
 .apply-btn:hover { background-color: #1d4ed8; }
 body.dark .apply-btn { background-color: #334155 !important; color: #93c5fd !important; }
 body.dark .apply-btn:hover { background-color: #475569 !important; }
+
+/* Mobile inline nav: compact buttons, fully responsive to screen width */
+#questionNavGridMobile {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(clamp(28px, 8vw, 44px), 1fr));
+  gap: 4px;
+}
+#questionNavGridMobile .q-nav-btn {
+  font-size: clamp(8px, 2.2vw, 11px);
+  border-radius: 5px;
+  min-height: clamp(26px, 7.5vw, 40px);
+  width: 100%;
+  aspect-ratio: 1;
+}
 </style>
 
   <!-- SUBJECT SELECTION SCREEN -->
   <div id="subjectScreen" class="min-h-screen flex items-center justify-center">
     <div class="max-w-4xl mx-auto">
       <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
-	  <div class="relative z-50 p-3 rounded-lg border bg-white shadow-lg flex items-center gap-4 flex-wrap">
-  <div class="flex items-center gap-2">
-    <input type="checkbox" id="warningToggle" class="w-4 h-4">
-    <label for="warningToggle" class="text-sm text-gray-700 cursor-pointer font-bold">
-      Cảnh báo khi nộp bài / thoát trang / reload
-    </label>
-  </div>
-</div>
-        <div class="bg-gradient-to-r from-blue-600 via-green-600 to-teal-600 p-8 text-white text-center">
+        <div class="bg-gradient-to-r from-blue-600 via-green-600 to-teal-600 p-8 text-white text-center relative">
+          <!-- Settings button top-right — nổi bật với border + shadow -->
+          <button id="settingsToggleBtn" onclick="toggleSettingsPanel()" class="absolute top-4 right-4 flex items-center gap-1.5 transition-all px-3 py-1.5 rounded-full text-sm font-bold backdrop-blur-sm" style="background:rgba(255,255,255,0.25);border:1.5px solid rgba(255,255,255,0.6);box-shadow:0 2px 10px rgba(0,0,0,0.15);letter-spacing:0.01em;">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><circle cx="12" cy="12" r="3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+            Cài đặt
+          </button>
+
           <div class="mb-4">
             <div class="inline-block bg-white/20 rounded-full p-4 backdrop-blur-sm">
               <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -314,6 +329,41 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
           </div>
           <h1 class="text-4xl font-bold mb-3">Ôn Tập Bài Học</h1>
           <p class="text-xl text-blue-100">Chọn môn học để bắt đầu</p>
+        </div>
+
+        <!-- Settings Panel (inline, below header) -->
+        <div id="settingsPanel" style="display:none;" class="border-b border-gray-200 px-8 py-5 bg-gray-50">
+          <div class="max-w-lg mx-auto flex flex-col gap-4">
+
+            <!-- Canh bao -->
+            <div>
+              <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Cảnh báo</div>
+              <div class="pl-1">
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input type="checkbox" id="warningToggle" class="w-4 h-4 accent-blue-500 cursor-pointer flex-shrink-0">
+                  <span class="text-sm font-medium text-gray-700 group-hover:text-gray-900">
+                    Cảnh báo khi nộp bài / thoát trang / reload
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Mobile nav -->
+            <div>
+              <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Điều hướng câu hỏi trên mobile</div>
+              <div class="flex flex-col gap-2 pl-1">
+                <label class="flex items-start gap-3 cursor-pointer group">
+                  <input type="radio" name="mobileNavStyle" id="mobileNavInlineOpt" value="inline" class="mt-0.5 w-4 h-4 accent-blue-500 cursor-pointer flex-shrink-0" checked>
+                  <span class="text-sm text-gray-700 group-hover:text-gray-900">Danh sách câu hỏi hiện <strong>bên dưới trang</strong></span>
+                </label>
+                <label class="flex items-start gap-3 cursor-pointer group">
+                  <input type="radio" name="mobileNavStyle" id="mobileNavDrawerOpt" value="drawer" class="mt-0.5 w-4 h-4 accent-blue-500 cursor-pointer flex-shrink-0">
+                  <span class="text-sm text-gray-700 group-hover:text-gray-900">Hiển thị nút <strong>☰</strong> → danh sách câu hỏi hiện ở<strong>bên phải</strong></span>
+                </label>
+              </div>
+            </div>
+
+          </div>
         </div>
 
         <div class="p-8">
@@ -498,6 +548,12 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
           <button id="btnSubmit" class="flex-1 py-3 rounded-lg font-semibold transition-colors bg-gray-300 text-gray-500 cursor-not-allowed" disabled>Kiểm tra đáp án / Nộp bài</button>
           <button id="btnNext" class="hidden flex-1 bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">Câu tiếp theo →</button>
         </div>
+
+        <!-- Mobile Inline Nav -->
+        <div id="mobileNavInline" style="display:none;" class="mt-4 bg-white rounded-2xl shadow-xl p-3">
+          <p id="mobileNavInlineLabel" class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Danh sách câu hỏi</p>
+          <div id="questionNavGridMobile" style="max-height:160px;overflow-y:auto;padding-right:2px;"></div>
+        </div>
       </div>
     </div>
     <!-- Desktop Question Navigator -->
@@ -513,15 +569,15 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
     </div><!-- end flex row -->
   </div>
 
-  <!-- Mobile Nav Overlay -->
+  <!-- Mobile Nav Overlay (kept for structure, grid moved inline) -->
   <div id="mobileNavOverlay" class="fixed inset-0 z-50 hidden">
     <div id="mobileNavBackdrop" class="absolute inset-0 bg-black/50"></div>
     <div class="absolute right-0 top-0 h-full w-72 bg-white shadow-2xl p-5 overflow-y-auto flex flex-col" id="mobileNavDrawer">
       <div class="flex justify-between items-center mb-4">
-        <p class="text-sm font-bold text-gray-700">Danh sách câu hỏi</p>
+        <p id="mobileNavDrawerLabel" class="text-sm font-bold text-gray-700">Danh sách câu hỏi</p>
         <button id="mobileNavClose" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 font-semibold text-sm transition-colors">✕</button>
       </div>
-      <div id="questionNavGridMobile" class="grid grid-cols-5 gap-1.5" style="max-height:340px;overflow-y:auto;padding-right:2px;"></div>
+      <div id="questionNavGridDrawer" class="grid grid-cols-5 gap-1.5" style="padding-right:2px;"></div>
     </div>
   </div>
 
@@ -1174,12 +1230,15 @@ subjectData.tin2026 = {
           // Cập nhật tiêu đề nav
           const navLabel = document.querySelector('#questionNavDesktop .text-xs.font-bold.text-gray-500');
           if (navLabel) navLabel.textContent = 'Lịch sử câu hỏi';
-          const mobileNavLabel = document.querySelector('#mobileNavDrawer .text-sm.font-bold.text-gray-700');
+          const mobileNavLabel = document.getElementById('mobileNavInlineLabel');
           if (mobileNavLabel) mobileNavLabel.textContent = 'Lịch sử câu hỏi';
+          const drawerLabel = document.getElementById('mobileNavDrawerLabel');
+          if (drawerLabel) drawerLabel.textContent = 'Lịch sử câu hỏi';
 
           const grids = [
             document.getElementById('questionNavGrid'),
-            document.getElementById('questionNavGridMobile')
+            document.getElementById('questionNavGridMobile'),
+            document.getElementById('questionNavGridDrawer')
           ];
           grids.forEach(grid => {
             if (!grid) return;
@@ -1389,12 +1448,15 @@ subjectData.tin2026 = {
       // Reset tiêu đề nav về mặc định cho full mode
       const navLabel = document.querySelector('#questionNavDesktop .text-xs.font-bold.text-gray-500');
       if (navLabel) navLabel.textContent = 'Danh sách câu hỏi';
-      const mobileNavLabel = document.querySelector('#mobileNavDrawer .text-sm.font-bold.text-gray-700');
+      const mobileNavLabel = document.getElementById('mobileNavInlineLabel');
       if (mobileNavLabel) mobileNavLabel.textContent = 'Danh sách câu hỏi';
+      const drawerLabel = document.getElementById('mobileNavDrawerLabel');
+      if (drawerLabel) drawerLabel.textContent = 'Danh sách câu hỏi';
 
       const grids = [
         document.getElementById('questionNavGrid'),
-        document.getElementById('questionNavGridMobile')
+        document.getElementById('questionNavGridMobile'),
+        document.getElementById('questionNavGridDrawer')
       ];
       grids.forEach(grid => {
         if (!grid) return;
@@ -1402,7 +1464,10 @@ subjectData.tin2026 = {
         shuffledQuestions.forEach((q, qi) => {
           const btn = document.createElement('button');
           btn.className = 'q-nav-btn';
-          btn.id = (grid.id === 'questionNavGrid' ? 'nav-btn-' : 'nav-btn-m-') + qi;
+          let prefix = 'nav-btn-';
+          if (grid.id === 'questionNavGridMobile') prefix = 'nav-btn-m-';
+          else if (grid.id === 'questionNavGridDrawer') prefix = 'nav-btn-d-';
+          btn.id = prefix + qi;
           btn.textContent = String(qi + 1).padStart(2, '0');
           // Answered?
           const ans = userAnswers[qi];
@@ -1428,7 +1493,7 @@ subjectData.tin2026 = {
     }
 
     function updateNavButton(qi) {
-      ['nav-btn-' + qi, 'nav-btn-m-' + qi].forEach(id => {
+      ['nav-btn-' + qi, 'nav-btn-m-' + qi, 'nav-btn-d-' + qi].forEach(id => {
         const btn = document.getElementById(id);
         if (!btn) return;
         btn.classList.remove('answered', 'correct', 'wrong', 'partial');
@@ -1440,7 +1505,7 @@ subjectData.tin2026 = {
 
     function renderQuestionNavAfterSubmit() {
       shuffledQuestions.forEach((q, qi) => {
-        ['nav-btn-' + qi, 'nav-btn-m-' + qi].forEach(id => {
+        ['nav-btn-' + qi, 'nav-btn-m-' + qi, 'nav-btn-d-' + qi].forEach(id => {
           const btn = document.getElementById(id);
           if (!btn) return;
           btn.classList.remove('answered', 'correct', 'wrong', 'partial');
@@ -1488,17 +1553,34 @@ subjectData.tin2026 = {
       if (!quizStarted) return;
       if (btnSubmit.disabled && quizCompleted) return;
 
-      const confirmMsg = 'Bạn có chắc muốn nộp bài? Sau khi nộp sẽ không thể thay đổi đáp án.';
-      const warningToggle = document.getElementById('warningToggle');
-      const warningsEnabled = warningToggle ? warningToggle.checked : false;
-      if (warningsEnabled) {
-        if (!confirm(confirmMsg)) return;
+      if (quizMode === 'full') {
+        // Đếm câu chưa trả lời
+        const unanswered = shuffledQuestions.reduce((acc, q, i) => {
+          const ans = userAnswers[i];
+          const isEmpty = Array.isArray(ans) ? !ans.some(v => v !== null) : ans === null;
+          return acc + (isEmpty ? 1 : 0);
+        }, 0);
+
+        if (unanswered > 0) {
+          const ok = confirm(`Bạn còn ${unanswered} câu chưa trả lời. Bạn có chắc muốn nộp bài không?`);
+          if (!ok) return;
+        } else {
+          // Tất cả đã trả lời — hỏi confirm nếu bật cảnh báo
+          const warningToggle = document.getElementById('warningToggle');
+          if (warningToggle && warningToggle.checked) {
+            if (!confirm('Bạn có chắc muốn nộp bài? Sau khi nộp sẽ không thể thay đổi đáp án.')) return;
+          }
+        }
+      } else {
+        // Random mode: giữ nguyên logic cũ
+        const warningToggle = document.getElementById('warningToggle');
+        const warningsEnabled = warningToggle ? warningToggle.checked : false;
+        if (warningsEnabled) {
+          if (!confirm('Bạn có chắc muốn nộp bài? Sau khi nộp sẽ không thể thay đổi đáp án.')) return;
+        }
       }
 
       if (quizMode === 'full') {
-        const anyAnswered = userAnswers.some(x => (Array.isArray(x) ? x.some(v=>v!==null) : x !== null));
-        if (!anyAnswered) return;
-
         let totalPoints = 0;
         let totalPossible = 0;
         shuffledQuestions.forEach((q, i) => {
@@ -1772,15 +1854,31 @@ btnRestart.addEventListener('click', () => {
     });
 
     // ===== NAV TOGGLE =====
+    function getMobileNavStyle() {
+      return localStorage.getItem('mobileNavStyle') || 'inline';
+    }
+
     function updateNavResponsive() {
       if (quizMode !== 'full' && quizMode !== 'random') return;
       const isWide = window.innerWidth >= 1024;
       const navDesktop = document.getElementById('questionNavDesktop');
+      const mobileInline = document.getElementById('mobileNavInline');
+      const navToggleBtnEl = document.getElementById('navToggleBtn');
+      const mobileNavStyle = getMobileNavStyle();
       if (isWide) {
         const hiddenKey = quizMode === 'random' ? 'randomNavHidden' : 'fullNavHidden';
         navDesktop.style.display = localStorage.getItem(hiddenKey) === '1' ? 'none' : 'block';
+        mobileInline.style.display = 'none';
+        navToggleBtnEl.style.display = 'flex';
       } else {
         navDesktop.style.display = 'none';
+        if (mobileNavStyle === 'drawer') {
+          mobileInline.style.display = 'none';
+          navToggleBtnEl.style.display = 'flex';
+        } else {
+          mobileInline.style.display = 'block';
+          navToggleBtnEl.style.display = 'none';
+        }
       }
     }
     window.addEventListener('resize', updateNavResponsive);
@@ -1798,7 +1896,9 @@ btnRestart.addEventListener('click', () => {
           localStorage.setItem(hiddenKey, '1');
         }
       } else {
-        document.getElementById('mobileNavOverlay').classList.remove('hidden');
+        // Mobile drawer mode: open overlay
+        const overlay = document.getElementById('mobileNavOverlay');
+        if (overlay) overlay.classList.remove('hidden');
       }
     });
     document.getElementById('mobileNavClose').addEventListener('click', () => {
@@ -1872,15 +1972,41 @@ btnRestart.addEventListener('click', () => {
       e.returnValue = '';
     });
 
-    // persist warning toggle
+    // warning toggle: luôn tắt khi load trang
     (function initWarningToggle(){
       const wt = document.getElementById('warningToggle');
-      let saved = localStorage.getItem('warningsEnabled');
-      saved = saved === null ? 'false' : saved;
-      wt.checked = saved === 'true';
+      wt.checked = false;
+      localStorage.setItem('warningsEnabled', 'false');
       wt.addEventListener('change', () => {
         localStorage.setItem('warningsEnabled', wt.checked ? 'true' : 'false');
       });
+    })();
+
+    // Mobile nav style setting
+    (function initMobileNavSetting(){
+      const savedStyle = localStorage.getItem('mobileNavStyle') || 'inline';
+      const inlineOpt = document.getElementById('mobileNavInlineOpt');
+      const drawerOpt = document.getElementById('mobileNavDrawerOpt');
+      if (savedStyle === 'drawer') {
+        drawerOpt.checked = true;
+      } else {
+        inlineOpt.checked = true;
+      }
+      function onNavStyleChange() {
+        const val = document.querySelector('input[name="mobileNavStyle"]:checked').value;
+        localStorage.setItem('mobileNavStyle', val);
+        updateNavResponsive();
+        // Re-render nav so the drawer grid gets populated
+        if (quizStarted) {
+          if (quizMode === 'random' && window.renderRandomQuestion) {
+            renderRandomQuestion();
+          } else if (quizMode === 'full') {
+            renderQuestionNav();
+          }
+        }
+      }
+      inlineOpt.addEventListener('change', onNavStyleChange);
+      drawerOpt.addEventListener('change', onNavStyleChange);
     })();
 
     // initial render
@@ -2190,6 +2316,19 @@ function toggleDarkMode() {
   }
   localStorage.setItem('darkMode', isDark ? '1' : '0');
 }
+
+function applySettingsPanelDark(isDark) {
+  const panel = document.getElementById('settingsPanel');
+  if (!panel) return;
+  // bg-gray-50 / bg-white handled by Tailwind dark overrides automatically
+}
+
+function toggleSettingsPanel() {
+  const panel = document.getElementById('settingsPanel');
+  panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+}
+
+// No click-outside needed — panel is inline inside card
 
 function collapseNavDesktop() {
   const nav = document.getElementById('questionNavDesktop');
