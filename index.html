@@ -1424,8 +1424,8 @@ subjectData.dia0526 = {
             } else if (q.type === 'tf') {
               const grid = buildTFGridReview(q, userAnswers[qi]);
               let correctCount = 0;
-              for (let j=0;j<4;j++) if (userAnswers[qi][j] !== null && userAnswers[qi][j] === q.answers[j]) correctCount++;
-              const pts = tfPointsForCorrectCount(correctCount);
+              for (let j=0;j<q.statements.length;j++) if (userAnswers[qi][j] !== null && userAnswers[qi][j] === q.answers[j]) correctCount++;
+              const pts = tfPointsForCorrectCount(correctCount, q.statements.length);
               const ptsDiv = document.createElement('div');
               ptsDiv.className = 'mt-2 text-sm text-gray-700 font-semibold';
               ptsDiv.textContent = `Điểm đạt được cho câu này: ${pts}`;
@@ -1712,7 +1712,7 @@ subjectData.dia0526 = {
               questionArea.appendChild(opts);
             } else {
               const grid = buildTFGridReview(qObj, userAnswers[0]);
-              const maxPts = Math.round(qObj.statements.length * 0.25 * 100) / 100;
+              const maxPts = 1; // mỗi câu TF tối đa 1 điểm
               const ptsDiv = document.createElement('div');
               ptsDiv.className = 'text-sm font-semibold mt-3 mb-3';
               ptsDiv.textContent = `Điểm đạt được: ${score}/${maxPts}`;
@@ -1876,9 +1876,10 @@ subjectData.dia0526 = {
       if (text) btnSubmit.textContent = text;
     }
 
-    // grading helper for TF question: each correct sub-item = 0.25 points
-    function tfPointsForCorrectCount(n) {
-      return Math.round(n * 0.25 * 100) / 100;
+    // grading helper for TF question: each correct sub-item = 1/n points (n = total statements)
+    function tfPointsForCorrectCount(n, total) {
+      if (!total || total === 0) return 0;
+      return Math.round(n * (1 / total) * 100) / 100;
     }
 
     // Submit handler
@@ -1926,11 +1927,12 @@ subjectData.dia0526 = {
             const correctArr = q.answers;
             const userArr = userAnswers[i];
             let correctCount = 0;
-            for (let j=0;j<4;j++){
+            const nStatements = q.statements.length;
+            for (let j=0;j<nStatements;j++){
               if (userArr[j] === null) continue;
               if (userArr[j] === correctArr[j]) correctCount++;
             }
-            totalPoints += tfPointsForCorrectCount(correctCount);
+            totalPoints += tfPointsForCorrectCount(correctCount, nStatements);
           }
         });
 
@@ -1995,8 +1997,9 @@ subjectData.dia0526 = {
           } else if (q.type === 'tf') {
             const grid = buildTFGridReview(q, userAnswers[qi]);
             let correctCount = 0;
-            for (let j=0;j<4;j++) if (userAnswers[qi][j] !== null && userAnswers[qi][j] === q.answers[j]) correctCount++;
-            const pts = tfPointsForCorrectCount(correctCount);
+            const nStmts = q.statements.length;
+            for (let j=0;j<nStmts;j++) if (userAnswers[qi][j] !== null && userAnswers[qi][j] === q.answers[j]) correctCount++;
+            const pts = tfPointsForCorrectCount(correctCount, nStmts);
             const ptsDiv = document.createElement('div');
             ptsDiv.className = 'mt-2 text-sm text-gray-700 font-semibold';
             ptsDiv.textContent = `Điểm đạt được cho câu này: ${pts}`;
@@ -2052,8 +2055,9 @@ subjectData.dia0526 = {
         } else {
           const userArr = userAnswers[0];
           let correctCount = 0;
-          for (let i=0;i<4;i++) if (userArr[i] !== null && userArr[i] === q.answers[i]) correctCount++;
-          const pts = tfPointsForCorrectCount(correctCount);
+          const nS = q.statements.length;
+          for (let i=0;i<nS;i++) if (userArr[i] !== null && userArr[i] === q.answers[i]) correctCount++;
+          const pts = tfPointsForCorrectCount(correctCount, nS);
           score = pts;
           randomModeStats.totalAnswered++;
           if (!randomHintUsed) randomModeStats.totalCorrect = Math.round((randomModeStats.totalCorrect + pts) * 100) / 100;
