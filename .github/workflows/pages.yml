@@ -31,6 +31,7 @@ jobs:
           mkdir _site
           cp index.html _site/
           cp version.json _site/
+          cp -r subjects _site/
           # Nếu sau này có thêm file css/js/image thì copy thêm vào đây
 
       - name: Upload Pages artifact
