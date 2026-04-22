@@ -1069,6 +1069,129 @@ subjectData.dia0526 = {
       return newQ;
     }
 
+    // ===== TF GRID HELPERS (shared by full mode + random mode) =====
+    const TF_LABELS = ['a', 'b', 'c', 'd'];
+
+    function buildTFGrid(q, qi, userAnswersArr, onChangeCallback) {
+      const grid = document.createElement('div');
+      const isSingle = q.statements.length === 1;
+      grid.className = 'tf-grid';
+      if (isSingle) grid.style.gridTemplateColumns = '1fr';
+
+      q.statements.forEach((stmt, sidx) => {
+        const cell = document.createElement('div');
+        cell.id = `tf-cell-${qi}-${sidx}`;
+        cell.className = 'tf-cell';
+
+        const label = document.createElement('div');
+        label.className = 'tf-label';
+        label.textContent = TF_LABELS[sidx];
+        if (isSingle) label.style.display = 'none';
+
+        const stmtEl = document.createElement('div');
+        stmtEl.className = 'tf-stmt';
+        stmtEl.innerHTML = stmt;
+
+        const btnRow = document.createElement('div');
+        btnRow.className = 'tf-btn-row';
+
+        const btnTrue = document.createElement('button');
+        btnTrue.type = 'button';
+        btnTrue.className = 'tf-btn';
+        btnTrue.innerHTML = '<span style="font-size:12px">✓</span> ĐÚNG';
+
+        const btnFalse = document.createElement('button');
+        btnFalse.type = 'button';
+        btnFalse.className = 'tf-btn';
+        btnFalse.innerHTML = '<span style="font-size:12px">✗</span> SAI';
+
+        function applyStyle() {
+          const val = userAnswersArr[sidx];
+          cell.classList.toggle('tf-selected', val !== null);
+          btnTrue.classList.toggle('tf-btn-active', val === true);
+          btnFalse.classList.toggle('tf-btn-active', val === false);
+        }
+
+        applyStyle();
+
+        btnTrue.addEventListener('click', () => {
+          userAnswersArr[sidx] = userAnswersArr[sidx] === true ? null : true;
+          applyStyle();
+          onChangeCallback();
+        });
+        btnFalse.addEventListener('click', () => {
+          userAnswersArr[sidx] = userAnswersArr[sidx] === false ? null : false;
+          applyStyle();
+          onChangeCallback();
+        });
+
+        btnRow.appendChild(btnTrue);
+        btnRow.appendChild(btnFalse);
+        cell.appendChild(label);
+        cell.appendChild(stmtEl);
+        cell.appendChild(btnRow);
+        grid.appendChild(cell);
+      });
+
+      return grid;
+    }
+
+    function buildTFGridReview(q, userArr) {
+      const grid = document.createElement('div');
+      const isSingle = q.statements.length === 1;
+      grid.className = 'tf-grid';
+      if (isSingle) grid.style.gridTemplateColumns = '1fr';
+
+      q.statements.forEach((stmt, sidx) => {
+        const correct = q.answers[sidx];
+        const userVal = userArr[sidx];
+
+        let cellState, labelState, statusClass, statusHtml;
+        if (userVal === null) {
+          cellState = ''; labelState = ''; statusClass = '';
+          statusHtml = `Chưa chọn · ĐA: <strong>${correct ? 'ĐÚNG' : 'SAI'}</strong>`;
+        } else if (userVal === correct) {
+          cellState = 'tf-rv-correct'; labelState = 'tf-rv-correct'; statusClass = 'tf-rv-correct';
+          statusHtml = `✓ ${userVal ? 'ĐÚNG' : 'SAI'} — Đúng!`;
+        } else {
+          cellState = 'tf-rv-wrong'; labelState = 'tf-rv-wrong'; statusClass = 'tf-rv-wrong';
+          statusHtml = `✗ Chọn: <strong>${userVal ? 'ĐÚNG' : 'SAI'}</strong> · ĐA: <strong>${correct ? 'ĐÚNG' : 'SAI'}</strong>`;
+        }
+
+        const cell = document.createElement('div');
+        cell.className = `tf-review-cell ${cellState}`;
+
+        const topRow = document.createElement('div');
+        topRow.style.cssText = 'display:flex;align-items:flex-start;gap:8px;';
+
+        const label = document.createElement('div');
+        label.className = `tf-rv-label ${labelState}`;
+        label.textContent = TF_LABELS[sidx];
+        if (isSingle) label.style.display = 'none';
+
+        const stmtEl = document.createElement('div');
+        stmtEl.className = 'tf-rv-stmt';
+        stmtEl.innerHTML = stmt;
+
+        topRow.appendChild(label);
+        topRow.appendChild(stmtEl);
+
+        const statusEl = document.createElement('div');
+        statusEl.className = `tf-rv-status ${statusClass}`;
+        statusEl.innerHTML = statusHtml;
+
+        cell.appendChild(topRow);
+        cell.appendChild(statusEl);
+        grid.appendChild(cell);
+      });
+
+      return grid;
+    }
+
+    window.buildTFGrid = buildTFGrid;
+    window.buildTFGridReview = buildTFGridReview;
+
+
     function shuffleStatementsForTF(question) {
       // returns a copy with shuffled statements and corresponding answers
       if (question.type !== 'tf') return JSON.parse(JSON.stringify(question));
@@ -1422,7 +1545,7 @@ subjectData.dia0526 = {
               });
               qWrap.appendChild(opts);
             } else if (q.type === 'tf') {
-              const grid = buildTFGridReview(q, userAnswers[qi]);
+              const grid = window.buildTFGridReview(q, userAnswers[qi]);
               let correctCount = 0;
               for (let j=0;j<q.statements.length;j++) if (userAnswers[qi][j] !== null && userAnswers[qi][j] === q.answers[j]) correctCount++;
               const pts = tfPointsForCorrectCount(correctCount, q.statements.length);
@@ -1523,7 +1646,7 @@ subjectData.dia0526 = {
             });
             qWrap.appendChild(opts);
           } else if (q.type === 'tf') {
-            const grid = buildTFGrid(q, qi, userAnswers[qi], () => {
+            const grid = window.buildTFGrid(q, qi, userAnswers[qi], () => {
               const answeredCount = shuffledQuestions.reduce((acc, q2, i2) => {
                 if (q2.type === 'mcq') return acc + (userAnswers[i2] !== null ? 1 : 0);
                 else return acc + (userAnswers[i2].some(x=>x!==null) ? 1 : 0);
@@ -1606,125 +1729,6 @@ subjectData.dia0526 = {
           });
         }
 
-// ===== TF GRID HELPERS =====
-const TF_LABELS = ['a', 'b', 'c', 'd'];
-
-function buildTFGrid(q, qi, userAnswersArr, onChangeCallback) {
-  const grid = document.createElement('div');
-  const isSingle = q.statements.length === 1;
-  grid.className = 'tf-grid';
-  if (isSingle) grid.style.gridTemplateColumns = '1fr';
-
-  q.statements.forEach((stmt, sidx) => {
-    const cell = document.createElement('div');
-    cell.id = `tf-cell-${qi}-${sidx}`;
-    cell.className = 'tf-cell';
-
-    const label = document.createElement('div');
-    label.className = 'tf-label';
-    label.textContent = TF_LABELS[sidx];
-    if (isSingle) label.style.display = 'none';
-
-    const stmtEl = document.createElement('div');
-    stmtEl.className = 'tf-stmt';
-    stmtEl.innerHTML = stmt;
-
-    const btnRow = document.createElement('div');
-    btnRow.className = 'tf-btn-row';
-
-    const btnTrue = document.createElement('button');
-    btnTrue.type = 'button';
-    btnTrue.className = 'tf-btn';
-    btnTrue.innerHTML = '<span style="font-size:12px">✓</span> ĐÚNG';
-
-    const btnFalse = document.createElement('button');
-    btnFalse.type = 'button';
-    btnFalse.className = 'tf-btn';
-    btnFalse.innerHTML = '<span style="font-size:12px">✗</span> SAI';
-
-    function applyStyle() {
-      const val = userAnswersArr[sidx];
-      cell.classList.toggle('tf-selected', val !== null);
-      btnTrue.classList.toggle('tf-btn-active', val === true);
-      btnFalse.classList.toggle('tf-btn-active', val === false);
-    }
-
-    applyStyle();
-
-    btnTrue.addEventListener('click', () => {
-      userAnswersArr[sidx] = userAnswersArr[sidx] === true ? null : true;
-      applyStyle();
-      onChangeCallback();
-    });
-    btnFalse.addEventListener('click', () => {
-      userAnswersArr[sidx] = userAnswersArr[sidx] === false ? null : false;
-      applyStyle();
-      onChangeCallback();
-    });
-
-    btnRow.appendChild(btnTrue);
-    btnRow.appendChild(btnFalse);
-    cell.appendChild(label);
-    cell.appendChild(stmtEl);
-    cell.appendChild(btnRow);
-    grid.appendChild(cell);
-  });
-
-  return grid;
-}
-
-function buildTFGridReview(q, userArr) {
-  const grid = document.createElement('div');
-  const isSingle = q.statements.length === 1;
-  grid.className = 'tf-grid';
-  if (isSingle) grid.style.gridTemplateColumns = '1fr';
-
-  q.statements.forEach((stmt, sidx) => {
-    const correct = q.answers[sidx];
-    const userVal = userArr[sidx];
-
-    let cellState, labelState, statusClass, statusHtml;
-    if (userVal === null) {
-      cellState = ''; labelState = ''; statusClass = '';
-      statusHtml = `Chưa chọn · ĐA: <strong>${correct ? 'ĐÚNG' : 'SAI'}</strong>`;
-    } else if (userVal === correct) {
-      cellState = 'tf-rv-correct'; labelState = 'tf-rv-correct'; statusClass = 'tf-rv-correct';
-      statusHtml = `✓ ${userVal ? 'ĐÚNG' : 'SAI'} — Đúng!`;
-    } else {
-      cellState = 'tf-rv-wrong'; labelState = 'tf-rv-wrong'; statusClass = 'tf-rv-wrong';
-      statusHtml = `✗ Chọn: <strong>${userVal ? 'ĐÚNG' : 'SAI'}</strong> · ĐA: <strong>${correct ? 'ĐÚNG' : 'SAI'}</strong>`;
-    }
-
-    const cell = document.createElement('div');
-    cell.className = `tf-review-cell ${cellState}`;
-
-    const topRow = document.createElement('div');
-    topRow.style.cssText = 'display:flex;align-items:flex-start;gap:8px;';
-
-    const label = document.createElement('div');
-    label.className = `tf-rv-label ${labelState}`;
-    label.textContent = TF_LABELS[sidx];
-    if (isSingle) label.style.display = 'none';
-
-    const stmtEl = document.createElement('div');
-    stmtEl.className = 'tf-rv-stmt';
-    stmtEl.innerHTML = stmt;
-
-    topRow.appendChild(label);
-    topRow.appendChild(stmtEl);
-
-    const statusEl = document.createElement('div');
-    statusEl.className = `tf-rv-status ${statusClass}`;
-    statusEl.innerHTML = statusHtml;
-
-    cell.appendChild(topRow);
-    cell.appendChild(statusEl);
-    grid.appendChild(cell);
-  });
-
-  return grid;
-}
-
         // Main question area — render thẳng vào quizContent
         const questionArea = document.createElement('div');
         questionArea.id = 'randomQuestionArea';
@@ -1771,7 +1775,7 @@ function buildTFGridReview(q, userArr) {
               });
               questionArea.appendChild(opts);
             } else {
-              const grid = buildTFGridReview(qObj, entry.userAnswer);
+              const grid = window.buildTFGridReview(qObj, entry.userAnswer);
               questionArea.appendChild(grid);
             }
             if (qObj.explain) {
@@ -1830,7 +1834,7 @@ function buildTFGridReview(q, userArr) {
               });
               questionArea.appendChild(opts);
             } else {
-              const grid = buildTFGridReview(qObj, userAnswers[0]);
+              const grid = window.buildTFGridReview(qObj, userAnswers[0]);
               const maxPts = 1; // mỗi câu TF tối đa 1 điểm
               const ptsDiv = document.createElement('div');
               ptsDiv.className = 'text-sm font-semibold mt-3 mb-3';
@@ -1880,7 +1884,7 @@ function buildTFGridReview(q, userArr) {
               setSubmitState(userAnswers[0] !== null, 'Nộp bài');
               btnNext.classList.add('hidden');
             } else {
-              const grid = buildTFGrid(qObj, 0, userAnswers[0], () => {
+              const grid = window.buildTFGrid(qObj, 0, userAnswers[0], () => {
                 setSubmitState(userAnswers[0].some(x=>x!==null), 'Nộp bài');
                 saveQuizState();
               });
@@ -2114,7 +2118,7 @@ function buildTFGridReview(q, userArr) {
             });
             qWrap.appendChild(opts);
           } else if (q.type === 'tf') {
-            const grid = buildTFGridReview(q, userAnswers[qi]);
+            const grid = window.buildTFGridReview(q, userAnswers[qi]);
             let correctCount = 0;
             const nStmts = q.statements.length;
             for (let j=0;j<nStmts;j++) if (userAnswers[qi][j] !== null && userAnswers[qi][j] === q.answers[j]) correctCount++;
