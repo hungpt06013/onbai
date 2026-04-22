@@ -6,7 +6,7 @@
   <title>Ôn Tập Bài Học - Đa Môn</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="antialiased bg-gradient-to-br from-blue-50 to-green-50 min-h-screen p-6 pt-24">
+<body class="antialiased bg-gradient-to-br from-blue-50 to-green-50 min-h-screen p-6 pt-24" style="opacity:0;transition:opacity 0.15s ease">
 <div style="position:fixed;top:10px;left:10px;z-index:9999;display:flex;flex-direction:column;align-items:flex-start;gap:8px;">
   <div style="background:rgba(0,0,0,0.8);color:white;padding:10px 20px;border-radius:20px;display:flex;align-items:center;gap:8px;box-shadow:0 4px 12px rgba(0,0,0,0.3);">
     <svg width="12" height="12" style="animation:blink 1.5s infinite;">
@@ -310,7 +310,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
 </style>
 
   <!-- SUBJECT SELECTION SCREEN -->
-  <div id="subjectScreen" class="min-h-screen flex items-center justify-center" style="visibility:hidden">
+  <div id="subjectScreen" class="min-h-screen flex items-center justify-center">
     <div class="max-w-4xl mx-auto">
       <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
         <div class="bg-gradient-to-r from-blue-600 via-green-600 to-teal-600 p-8 text-white text-center relative">
@@ -592,14 +592,14 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
         if (!res.ok) throw new Error('Cannot load subjects/index.json');
         subjectsIndex = await res.json();
         renderSubjectGrid();
-        document.getElementById('subjectScreen').style.visibility = '';
-
         // Thử restore tiến trình sau khi đã có danh sách môn
         await tryRestoreQuizState();
       } catch(e) {
         const g = document.getElementById('subjectGrid');
         if (g) g.innerHTML = '<div class="col-span-3 text-center text-red-500 py-8 text-sm">Lỗi tải: ' + e.message + '</div>';
-        document.getElementById('subjectScreen').style.visibility = '';
+      } finally {
+        // Reveal toàn bộ trang sau khi đã sẵn sàng — tránh flash màn hình chờ
+        document.body.style.opacity = '1';
       }
     }
 
