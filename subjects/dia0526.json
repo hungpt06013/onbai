@@ -1,0 +1,225 @@
+{
+  "fullName": "ÔN ĐỊA 6.5.26",
+  "questions": [
+    {
+      "type": "mcq",
+      "q": "Diện tích của châu Mỹ là",
+      "o": [
+        "42 triệu km²",
+        "46 triệu km²",
+        "54 triệu km²",
+        "72 triệu km²"
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Phía Bắc châu Mỹ tiếp giáp với",
+      "o": [
+        "Bắc Băng Dương.",
+        "Ấn Độ Dương.",
+        "Đại Tây Dương.",
+        "Thái Bình Dương."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Châu Mỹ không tiếp giáp với đại dương nào?",
+      "o": [
+        "Bắc Băng Dương.",
+        "Ấn Độ Dương.",
+        "Đại Tây Dương.",
+        "Thái Bình Dương."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Phía Nam của Bắc Mỹ tiếp giáp với khu vực",
+      "o": [
+        "Mỹ Latinh.",
+        "Nam Mỹ.",
+        "Bắc Phi.",
+        "Tây Âu."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Hai siêu đô thị đông dân nhất ở Bắc Mỹ là",
+      "o": [
+        "New York và Chicago.",
+        "New York và Los Angeles.",
+        "Los Angeles và Washington, D.C.",
+        "Chicago và Washington, D.C."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Đới khí hậu chiếm diện tích lớn nhất ở khu vực Bắc Mỹ là",
+      "o": [
+        "cực đới.",
+        "ôn đới.",
+        "cận nhiệt đới.",
+        "nhiệt đới."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Đới khí hậu nhiệt đới ở khu vực Bắc Mỹ không có đặc điểm",
+      "o": [
+        "chiếm diện tích nhỏ nhất.",
+        "nhiệt độ cao quanh năm.",
+        "mưa nhiều nhưng không đều.",
+        "phân bố ở khoảng vĩ độ 40°B - 60°B."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Đới khí hậu nhiệt đới ở khu vực Bắc Mỹ có thảm thực vật chủ yếu là",
+      "o": [
+        "rừng lá kim.",
+        "rừng lá rộng.",
+        "rừng lá cứng.",
+        "rừng nhiệt đới ẩm."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Đới khí hậu chiếm diện tích nhỏ nhất ở khu vực Nam Mỹ là",
+      "o": [
+        "cực đới.",
+        "ôn đới.",
+        "cận nhiệt đới.",
+        "nhiệt đới."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Sườn phía Tây khu vực Trung Mỹ có đặc điểm thiên nhiên là",
+      "o": [
+        "nóng ẩm, thảm thực vật chủ yếu là rừng rậm nhiệt đới.",
+        "nóng khô, thảm thực vật chủ yếu là rừng rậm nhiệt đới.",
+        "nóng khô, thảm thực vật chủ yếu là xavan và rừng thưa, cây bụi.",
+        "nóng ẩm, thảm thực vật chủ yếu là xavan và rừng thưa, cây bụi."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Sườn phía Đông sơn nguyên Guyan có đặc điểm tự nhiên",
+      "o": [
+        "chủ yếu là đồi, núi thấp; khí hậu nóng ẩm.",
+        "địa hình núi cao trên 1000m; khí hậu nóng ẩm.",
+        "địa hình bằng phẳng độ cao dưới 500m; khí hậu nóng khô.",
+        "địa hình cao nguyên rất bằng phẳng; khí hậu nóng khô."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Rừng A-ma-dôn có diện tích là",
+      "o": [
+        "4,5 triệu km².",
+        "5,5 triệu km².",
+        "6,5 triệu km².",
+        "7,5 triệu km²."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Braxin chiếm khoảng bao nhiêu % diện tích rừng A-ma-dôn?",
+      "o": [
+        "30%.",
+        "40%.",
+        "50%.",
+        "60%."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Giá trị cốt lõi của rừng A-ma-dôn không có vai trò",
+      "o": [
+        "là \"lá phổi xanh\" điều hoà khí hậu thế giới.",
+        "là nơi dự trữ nguồn gen động thực vật quý hiếm.",
+        "cung cấp một lượng lớn oxy cho khí quyển.",
+        "thúc đẩy phát triển công nghiệp nặng."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Người bản địa ở khu vực Trung và Nam Mỹ thuộc chủng tộc",
+      "o": [
+        "Môn-gô-lô-it.",
+        "Nê-grô-it.",
+        "Ơ-rô-pê-ô-it.",
+        "Ô-xtra-lô-it."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Nguyên nhân chủ yếu tạo nên sự phân hóa theo chiều đông-tây ở Trung Mỹ là",
+      "o": [
+        "Khí hậu.",
+        "Địa hình.",
+        "Sinh vật.",
+        "Địa chất."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Hệ ngôn ngữ chủ yếu của Mỹ Latinh là",
+      "o": [
+        "Latinh.",
+        "German.",
+        "Kadu.",
+        "Koman."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Mật độ dân số trung bình của Trung và nam Mỹ là khoảng",
+      "o": [
+        "33 người/km².",
+        "43 người/km².",
+        "38 người/km².",
+        "83 người/km²."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Lãnh thổ châu Đại Dương bao gồm các bộ phận nào?",
+      "o": [
+        "Lục địa Ô-xtrây-li-a, ba chuỗi đảo và quần đảo Niu-Dilen.",
+        "Lục địa Ô-xtrây-li-a, ba chuỗi đảo trên châu Đại Dương.",
+        "Ba chuỗi đảo Po-li-nê-di, Mê-la-nê-di và Mic-rô-nê-di.",
+        "Lục địa Ô-xtrây-li-a và quần đảo Niu-Dilen."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Đại bộ phận lãnh thổ lục địa Ô-xtrây-li-a có khí hậu",
+      "o": [
+        "mát mẻ.",
+        "nóng ẩm.",
+        "khô hạn.",
+        "lạnh giá."
+      ],
+      "c": 2
+    }
+  ]
+}

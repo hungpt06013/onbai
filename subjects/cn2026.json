@@ -1,0 +1,368 @@
+{
+  "fullName": "ÔN CN 20.4.26",
+  "questions": [
+    {
+      "type": "mcq",
+      "q": "Vì sao nuôi thủy sản ven biển, hải đảo lại góp phần đảm bảo chủ quyền, an ninh quốc gia?",
+      "o": [
+        "Vì người dân chỉ được nuôi trồng, đánh bắt thủy sản trong phạm vi lãnh thổ của mình.",
+        "Có thêm thu nhập.",
+        "Tạo công ăn việc làm cho người dân",
+        "Bảo vệ nguồn nước không ô nhiễm."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Sản phẩm của ngành chăn nuôi gia súc là:",
+      "o": [
+        "Thịt bò.",
+        "Nấm Đông cô",
+        "Cá thu",
+        "Thịt gà."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Đâu không phải là triển vọng của ngành chăn nuôi?",
+      "o": [
+        "Công nghiệp hóa, hiện đại hóa",
+        "Người chăn nuôi tự phối trộn thức ăn chăn nuôi",
+        "Phát triển chăn nuôi trang trại",
+        "Chăn nuôi hữu cơ"
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Đâu không phải là vai trò của ngành thủy sản đối với nền kinh tế nước ta?",
+      "o": [
+        "Cung cấp thực phẩm",
+        "Xuất khẩu.",
+        "Phát triển chăn nuôi bò sữa.",
+        "Bảo vệ môi trường và đảm bảo chủ quyền, an ninh quốc gia"
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Vườn chăn thả đem lại những lợi ích gì cho đàn gà thịt thả vườn?",
+      "o": [
+        "Bổ sung dinh dưỡng, vitamin cho gà.",
+        "Nơi gà chạy nhảy, vận động",
+        "Nơi gà ăn uống",
+        "Nơi gà tránh nắng mưa"
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Đâu không phải là vai trò của ngành chăn nuôi trong nền kinh tế?",
+      "o": [
+        "Cung cấp thực phẩm.",
+        "Cung cấp lương thực.",
+        "Cung cấp sức kéo.",
+        "Cung cấp nguyên liệu cho ngành công nghiệp nhẹ."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Hãy chỉ ra giống gia súc ăn cỏ?",
+      "o": [
+        "Vịt cò.",
+        "Lợn Landrace",
+        "Bò vàng Việt nam.",
+        "Chó Phú Quốc"
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Động vật nào thuộc giống gia cầm?",
+      "o": [
+        "Gà Đông Tảo",
+        "Lợn Landrace",
+        "Bò Sind",
+        "Chó Phú Quốc"
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Thể trạng gà con giống ảnh hưởng như thế nào đến quá trình phát triển của đàn gà?",
+      "o": [
+        "Đàn gà dễ thích nghi với môi trường sống.",
+        "Màu lông gà không thay đổi.",
+        "Khả năng tiêu hóa tốt",
+        "Mào gà phát triển nhanh."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Tác dụng của việc thả gà ra vườn chăn thả khi mặt trời mọc và lùa gà về trước khi mặt trời lặn để:",
+      "o": [
+        "Tăng cường chất dinh dưỡng cho gà.",
+        "Xương và cơ thể gà rắn chắc hơn.",
+        "Hạn chế tái nhiễm bệnh.",
+        "Hoàn thiện chức năng tiêu hóa của gà con."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Tại sao cần xây dựng chuồng nuôi cách xa khu dân cư?",
+      "o": [
+        "Dễ thực hiện tiêm Vacxin",
+        "Giữ vệ sinh môi trường sống cho người",
+        "Có nhiều thức ăn chăn nuôi",
+        "Có nguồn nước"
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Những loại vật nuôi phù hợp với phương thức nuôi công nghiệp:",
+      "o": [
+        "Trâu, bò",
+        "Chim sẻ.",
+        "Dê, cừu.",
+        "Gà, vịt, lợn"
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Những loại vật nuôi phù hợp với phương thức chăn nuôi chăn thả:",
+      "o": [
+        "Trâu, bò, dê",
+        "Tằm",
+        "Lợn.",
+        "Gà, vịt."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Phát biểu không đúng về đặc điểm chăn nuôi theo phương thức chăn thả:",
+      "o": [
+        "Vật nuôi đi lại tự do và tự kiếm ăn.",
+        "Kĩ thuật chăn nuôi đơn giản.",
+        "Phụ thuộc nguồn thức ăn trong tự nhiên.",
+        "Phụ thuộc nguồn thức ăn do con người cung cấp."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Những yếu tố không ảnh hưởng đến sự phát triển của vật nuôi:",
+      "o": [
+        "Nuôi dưỡng vật nuôi",
+        "Chăm sóc vật nuôi.",
+        "Phòng trị bệnh cho vật nuôi.",
+        "Loại cây lấy bóng mát cho bãi chăn thả."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Đâu không phải là phương thức chăn nuôi chủ yếu ở nước ta:",
+      "o": [
+        "Nuôi nhốt.",
+        "Chăn nuôi nông hộ",
+        "Bán chăn thả",
+        "Chăn thả."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Phương thức chăn nuôi bán chăn thả có đặc điểm gì?",
+      "o": [
+        "Vật nuôi đi lại tự do, không có chuồng trại.",
+        "Vật nuôi sử dụng thức ăn công nghiệp kết hợp thức ăn tự tìm kiếm.",
+        "Vật nuôi tự kiếm ăn trong tự nhiên",
+        "Vật nuôi chỉ ăn thức ăn công nghiệp do người chăn nuôi cung cấp."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Đâu là ý sai khi chọn gà con giống:",
+      "o": [
+        "Đồng đều về khối lượng",
+        "Lông sặc sỡ",
+        "Mắt sáng",
+        "Chân to thẳng."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Đâu không phải là đặc điểm cơ thể vật nuôi non?",
+      "o": [
+        "Điều tiết thân nhiệt chưa hoàn chỉnh",
+        "Chức năng miễn dịch khá tốt",
+        "Chức năng hệ tiêu hóa chưa hoàn chỉnh",
+        "Sức đề kháng kém so với vật nuôi trưởng thành"
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Đối với lợn, bò, dê yêu cầu đối với vật nuôi cái sinh sản là gì?",
+      "o": [
+        "Chức năng miễn dịch tốt.",
+        "Nhanh nhẹn.",
+        "Không quá béo hoặc quá gầy",
+        "Có đủ sữa chất lượng tốt để nuôi con"
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Đâu không phải là hậu quả chất thải trong chăn nuôi gây ra:",
+      "o": [
+        "Gia tăng số người mắc bệnh béo phì.",
+        "Gây ra một số bệnh hô hấp, ngoài da ở người",
+        "Gây ô nhiễm môi trường đất, nước, không khí.",
+        "Ảnh hưởng đến môi trường sống của tôm của cá…"
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Cần nuôi dưỡng và chăm sóc như thế nào để vật nuôi non khỏe mạnh, phát triển và kháng bệnh tốt?",
+      "o": [
+        "Thường xuyên tắm chải.",
+        "Cho ăn đủ năng lượng, protein, vitamin và khoáng",
+        "Kiểm tra định kì thể trọng, tinh dịch vật nuôi.",
+        "Cung cấp đủ calcium và dinh dưỡng để tạo trứng."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Cá tra được nuôi nhiều ở tỉnh nào?",
+      "o": [
+        "Hải Dương.",
+        "Bình Định.",
+        "An Giang, Đồng tháp",
+        "Thanh Hóa"
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Khu vực nào ở nước ta nuôi cá tra, cá basa để xuất khẩu?",
+      "o": [
+        "Đồng bằng sông Hồng.",
+        "Đồng bằng sông Cửu Long.",
+        "Đồng bằng Nam Trung Bộ",
+        "Tây nguyên."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Vì sao nói nước ta có điều kiện thuận lợi để phát triển ngành chăn nuôi thủy sản?",
+      "o": [
+        "Nước ta có bờ biển dài, vùng đặc quyền kinh tế rộng lớn.",
+        "Nước ta có nhiều giống thủy sản mới, lạ.",
+        "Nước ta có diện tích trồng lúa bao phủ khắp cả nước.",
+        "Người dân nước ta cần cù, chịu khó, ham học hỏi."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Năng khiếu sở thích nào không cần thiết để phù hợp với nghề trong lĩnh vực chăn nuôi?",
+      "o": [
+        "Thích học, nghiên cứu về đời sống, sự phát triển của động vật",
+        "Yêu thích việc nghiên cứu và chữa bệnh cho vật nuôi",
+        "Thích tham gia các nhóm, câu lạc bộ ngoại khóa về nuôi dưỡng động vật",
+        "Có năng khiếu trong lĩnh vực văn học (môn Khoa học xã hội)"
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Đâu là đặc điểm ngoại hình của Lợn Landrace?",
+      "o": [
+        "Thân dài, da trắng, tai to rủ xuống trước mặt",
+        "Thân dài, da trắng, tai to dựng đứng",
+        "Thân dài, da trắng, tai nhỏ dựng đứng",
+        "Thân dài, da có mảng đen hình yên ngựa điển hình"
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Để phân biệt các giống gia cầm người ta không dựa vào:",
+      "o": [
+        "Đặc điểm ngoại hình",
+        "Tầm vóc",
+        "Đặc điểm tai",
+        "Màu lông"
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Chọn câu đúng nhất về yêu cầu của nghề chăn nuôi đối với người lao động:",
+      "o": [
+        "Kiến thức về quy trình sản xuất thức ăn chăn nuôi",
+        "Kiến thức về đặc điểm sinh trưởng của loài vật nuôi",
+        "Kiến thức về mua bán và phân phối sản phẩm chăn nuôi",
+        "Kĩ thuật thiết kế, xây dựng chuồng nuôi"
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Ứng dụng công nghệ trong quản lí vật nuôi có lợi ích gì?",
+      "o": [
+        "Theo dõi được hoạt động thường ngày của người lao động chăn nuôi.",
+        "Quản lí được đàn vật nuôi với quy mô nhỏ, số lượng vật nuôi ít.",
+        "Nắm được tình trạng địa hình nơi đang chăn thả đàn vật nuôi.",
+        "Theo dõi được tình trạng sức khỏe, chu kì sinh sản,… của vật nuôi."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Phòng và trị bệnh cho vật nuôi có ảnh hưởng như thế nào đến vật nuôi?",
+      "o": [
+        "Vật nuôi khỏe mạnh, phát triển toàn diện.",
+        "Vật nuôi thích nghi với điều kiện sống.",
+        "Vật nuôi dễ dàng tiêu thụ thức ăn.",
+        "Vật nuôi phát triển cân đối về ngoại hình."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Yêu cầu cần thiết khi nuôi dưỡng và chăm sóc vật nuôi là:",
+      "o": [
+        "Tắm, chải liên tục cho vật nuôi",
+        "Sơn tường chuồng nuôi màu trắng",
+        "Cung cấp thức ăn đủ dinh dưỡng cho vật nuôi",
+        "Sử dụng máng ăn cho vật nuôi bằng inox"
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Đâu là đặc điểm ngoại hình dễ nhận biết nhất của lợn Móng cái:",
+      "o": [
+        "Dễ nuôi, chịu ăn uống kham khổ.",
+        "Cơ thể cân đối rắn chắc, không quá béo hay gầy quá.",
+        "Tăng trọng tốt.",
+        "Mảng da hình yên ngựa trên lưng."
+      ],
+      "c": 3
+    }
+  ]
+}
