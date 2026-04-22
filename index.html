@@ -594,10 +594,26 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
         if (!res.ok) throw new Error('Cannot load subjects/index.json');
         subjectsIndex = await res.json();
         renderSubjectGrid();
+
+        // Thử restore tiến trình sau khi đã có danh sách môn
+        await tryRestoreQuizState();
       } catch(e) {
         const g = document.getElementById('subjectGrid');
         if (g) g.innerHTML = '<div class="col-span-3 text-center text-red-500 py-8 text-sm">Lỗi tải: ' + e.message + '</div>';
       }
+    }
+
+    async function tryRestoreQuizState() {
+      try {
+        const raw = localStorage.getItem('quizSavedState');
+        if (!raw) return;
+        const state = JSON.parse(raw);
+        if (!state.currentSubject) return;
+        // Load data của môn cần restore trước
+        await loadSubjectData(state.currentSubject);
+        // Bây giờ subjectData đã có → gọi restore bình thường
+        restoreQuizState();
+      } catch(e) {}
     }
 
     function renderSubjectGrid() {
@@ -2152,10 +2168,8 @@ btnRestart.addEventListener('click', () => {
       drawerOpt.addEventListener('change', onNavStyleChange);
     })();
 
-    // initial render — try restoring saved state first
-    if (!restoreQuizState()) {
-      renderQuiz();
-    }
+    // initial render — restore được xử lý async trong loadSubjectsAndInit() → tryRestoreQuizState()
+    // nếu không có state để restore, renderQuiz() sẽ hiện subject screen mặc định
 
   </script>
 <!-- Firebase SDK - Di chuyển xuống đây -->
