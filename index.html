@@ -588,7 +588,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
     // ============================================================
     async function loadSubjectsAndInit() {
       try {
-        const res = await fetch('subjects/index.json');
+        const res = await fetch('subjects/index.json?_=' + Date.now(), { cache: 'no-store' });
         if (!res.ok) throw new Error('Cannot load subjects/index.json');
         subjectsIndex = await res.json();
         renderSubjectGrid();
@@ -650,7 +650,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
 
     async function loadSubjectData(id) {
       if (subjectData[id]) return;
-      const res = await fetch('subjects/' + id + '.json');
+      const res = await fetch('subjects/' + id + '.json?_=' + Date.now(), { cache: 'no-store' });
       if (!res.ok) { alert('Lỗi tải dữ liệu môn ' + id); return; }
       subjectData[id] = await res.json();
     }
