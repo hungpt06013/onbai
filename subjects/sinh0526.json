@@ -137,7 +137,7 @@
         "có giai đoạn hợp tử phát triển thành phôi diễn ra trong trứng đã thụ tinh.",
         "không có giai đoạn hợp tử phát triển thành phôi diễn ra trong trứng đã thụ tinh."
       ],
-      "img":"https://i.postimg.cc/pTj17jhf/image.png",
+      "img": "https://i.postimg.cc/pTj17jhf/image.png",
       "c": 1
     },
     {
@@ -215,7 +215,7 @@
         "Mô rễ.",
         "Mô phân sinh thân."
       ],
-      "img":"https://i.postimg.cc/MHyFb7j9/image.png",
+      "img": "https://i.postimg.cc/MHyFb7j9/image.png",
       "c": 0
     },
     {
@@ -227,7 +227,7 @@
         "Mô rễ.",
         "Mô phân sinh thân."
       ],
-      "img":"https://i.postimg.cc/MHyFb7j9/image.png",
+      "img": "https://i.postimg.cc/MHyFb7j9/image.png",
       "c": 1
     },
     {
@@ -294,7 +294,7 @@
         "mô phân sinh bên.",
         "mô phân sinh đỉnh thân."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -305,7 +305,7 @@
         "(3), (4), (5).",
         "(2), (5), (6)."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -316,7 +316,7 @@
         "trứng → sâu → nhộng → bướm.",
         "bướm → nhộng → sâu → trứng."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -327,7 +327,7 @@
         "làm cho cây sinh sản và chuyển sang già cỗi.",
         "hình thành các cơ quan rễ, thân, lá, hoa, quả."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -338,7 +338,7 @@
         "Mô phân sinh bên.",
         "Mô phân sinh lóng."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -349,7 +349,7 @@
         "lóng của cây một lá mầm dài ra.",
         "cành của thân cây gỗ dài ra."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -371,7 +371,7 @@
         "Cây non, cây con.",
         "Cây con, cây non."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -382,7 +382,7 @@
         "Ếch chuyển từ môi trường nước lên sống ở môi trường cạn.",
         "Trứng đã thụ tinh phát triển thành ấu trùng, thay đổi hình thái đến trưởng thành."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -404,7 +404,7 @@
         "Lớn lên.",
         "Dài ra."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -415,7 +415,7 @@
         "Thân.",
         "Rễ cây."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -437,7 +437,7 @@
         "từ gốc.",
         "từ các cành bên."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -459,7 +459,7 @@
         "Nằm phía ngoài mạch rây.",
         "Nằm bên trong mạch gỗ."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -470,7 +470,7 @@
         "Biểu bì, thịt vỏ và mạch rây.",
         "Mạch rây và mạch gỗ."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -492,7 +492,7 @@
         "ánh sáng vàng và xanh tím.",
         "ánh sáng đỏ và xanh tím."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -503,7 +503,7 @@
         "Cỏ 3 lá, kiều mạch, dâm bụt.",
         "Cúc, cà phê, lúa."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -514,7 +514,7 @@
         "Cỏ 3 lá, kiều mạch, dâm bụt.",
         "Cúc, cà phê, lúa."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -525,7 +525,7 @@
         "số lượng lá trên thân.",
         "cả A, B, C."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -744,7 +744,7 @@
         "phôi, hợp tử.",
         "hợp tử, giao tử."
       ],
-      "img":"https://i.postimg.cc/v8Nr3gzw/image.png",
+      "img": "https://i.postimg.cc/v8Nr3gzw/image.png",
       "c": 1
     },
     {
@@ -846,7 +846,7 @@
         "Chồi hoa.",
         "Bao phấn."
       ],
-      "img":"https://i.postimg.cc/GmJswHkL/image.png",
+      "img": "https://i.postimg.cc/GmJswHkL/image.png",
       "c": 1
     },
     {
@@ -869,7 +869,7 @@
         "chuyển hạt phấn từ bao phấn sang đầu nhụy.",
         "chuyển hạt phấn từ bao phấn sang noãn."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -880,7 +880,7 @@
         "hoa có nhị và nhụy hoa.",
         "hoa có đài và tràng hoa."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -913,7 +913,7 @@
         "3.",
         "4."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -924,7 +924,7 @@
         "Sinh sản sinh dưỡng và sinh sản bào tử.",
         "Sinh sản vô tính và sinh sản hữu tính."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -935,7 +935,7 @@
         "giống và khác cây mẹ, không có sự kết hợp giữa giao tử đực và giao tử cái.",
         "giống cây bố mẹ, có sự kết hợp giữa giao tử đực và giao tử cái."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -968,7 +968,7 @@
         "Thuỷ tức.",
         "Vi khuẩn."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -979,7 +979,7 @@
         "phân đôi.",
         "nhân giống."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -1001,7 +1001,7 @@
         "Nụ hoa.",
         "Bầu nhụy."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -1012,7 +1012,7 @@
         "1-G, 2-E, 3-D, 4-A, 5-B, 6-C.",
         "1-E, 2-G, 3-D, 4-A, 5-B, 6-C."
       ],
-      "c": 0,
+      "c": 3,
       "table": {
         "headers": [
           "Cột A",
@@ -1116,7 +1116,7 @@
         "(1) sinh sản vô tính, (2) sinh sản, (3) hoa, (4) chồi mầm, (5) sinh sản hữu tính.",
         "(1) sinh sản, (2) sinh sản vô tính, (3) hoa, (4) chồi mầm, (5) sinh sản hữu tính."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -1127,7 +1127,7 @@
         "Trùng roi.",
         "Rệp cây, ong, kiến."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -1138,7 +1138,7 @@
         "Cá, thú, chim.",
         "Ong, thủy tức, trùng đế giày."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -1226,7 +1226,7 @@
         "Sinh sản vô tính bằng hình thức trinh sản.",
         "Sinh sản vô tính bằng hình thức phân mảnh."
       ],
-      "img":"https://i.postimg.cc/pdWq59xt/image.png",
+      "img": "https://i.postimg.cc/pdWq59xt/image.png",
       "c": 0
     },
     {
@@ -1238,7 +1238,7 @@
         "Nảy chồi.",
         "Tái sinh."
       ],
-      "img":"https://i.postimg.cc/vB175fNh/image.png",
+      "img": "https://i.postimg.cc/vB175fNh/image.png",
       "c": 0
     },
     {
@@ -1250,7 +1250,7 @@
         "Sinh sản sinh dưỡng.",
         "Sinh sản bằng bào tử."
       ],
-      "img":"https://i.postimg.cc/xTPmJ6dN/image.png",
+      "img": "https://i.postimg.cc/xTPmJ6dN/image.png",
       "c": 3
     },
     {
