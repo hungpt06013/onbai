@@ -134,6 +134,10 @@ body.dark #questionNavGridMobile::-webkit-scrollbar-thumb { background: #374151;
 .q-nav-btn.wrong { background: #fee2e2; border-color: #ef4444; color: #b91c1c; }
 .q-nav-btn.partial { background: #fef9c3; border-color: #eab308; color: #854d0e; }
 
+/* Table dark mode CSS vars */
+body.dark { --tbl-head: #2d3748; --tbl-even: #1e2535; --tbl-odd: #252d3d; }
+body:not(.dark) { --tbl-head: #f3f4f6; --tbl-even: #ffffff; --tbl-odd: #f9fafb; }
+
 /* Dark mode nav buttons */
 body.dark .q-nav-btn { background: #252d3d; border-color: #334155; color: #94a3b8; }
 body.dark .q-nav-btn:hover { background: #2d3748; border-color: #4b5563; }
@@ -742,15 +746,71 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
     const resultHome = document.getElementById('resultHome');
 
     // helpers
-    // Function để chuyển link hình trong câu hỏi thành thẻ img
+    // processQuestionText: giữ lại để tương thích, không còn xử lý URL trong text
     function processQuestionText(text) {
-      // Tìm tất cả các URL hình ảnh (http:// hoặc https://)
-      // Hỗ trợ các định dạng: .jpg, .jpeg, .png, .gif, .webp, .svg, .bmp
-      const imageUrlPattern = /(https?:\/\/[^\s<>"]+?\.(jpg|jpeg|png|gif|webp|svg|bmp))/gi;
-      
-      return text.replace(imageUrlPattern, (url) => {
-        return `<br><img src="${url}" alt="Hình minh họa" class="max-w-full h-auto rounded-lg shadow-md my-3 mx-auto block" style="max-height: 400px;" />`;
-      });
+      return text;
+    }
+
+    // buildQuestionExtras: render img và table từ các field riêng của question
+    function buildQuestionExtras(q) {
+      const frag = document.createDocumentFragment();
+
+      // --- Hình ảnh ---
+      if (q.img) {
+        const srcs = Array.isArray(q.img) ? q.img : [q.img];
+        srcs.forEach(src => {
+          const img = document.createElement('img');
+          img.src = src;
+          img.alt = 'Hình minh họa';
+          img.className = 'max-w-full h-auto rounded-lg shadow-md my-3 mx-auto block';
+          img.style.maxHeight = '420px';
+          frag.appendChild(img);
+        });
+      }
+
+      // --- Bảng ---
+      if (q.table) {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'my-3 overflow-x-auto rounded-lg border border-gray-200';
+        const table = document.createElement('table');
+        table.className = 'w-full border-collapse text-sm';
+        table.style.minWidth = '320px';
+
+        if (q.table.headers && q.table.headers.length) {
+          const thead = document.createElement('thead');
+          const tr = document.createElement('tr');
+          q.table.headers.forEach(h => {
+            const th = document.createElement('th');
+            th.className = 'border border-gray-300 px-3 py-2 font-semibold text-left';
+            th.style.background = 'var(--tbl-head, #f3f4f6)';
+            th.innerHTML = h;
+            tr.appendChild(th);
+          });
+          thead.appendChild(tr);
+          table.appendChild(thead);
+        }
+
+        if (q.table.rows && q.table.rows.length) {
+          const tbody = document.createElement('tbody');
+          q.table.rows.forEach((row, ri) => {
+            const tr = document.createElement('tr');
+            tr.style.background = ri % 2 === 0 ? 'var(--tbl-even, #fff)' : 'var(--tbl-odd, #f9fafb)';
+            row.forEach(cell => {
+              const td = document.createElement('td');
+              td.className = 'border border-gray-300 px-3 py-2 align-top';
+              td.innerHTML = cell;
+              tr.appendChild(td);
+            });
+            tbody.appendChild(tr);
+          });
+          table.appendChild(tbody);
+        }
+
+        wrapper.appendChild(table);
+        frag.appendChild(wrapper);
+      }
+
+      return frag;
     }
     
     function shuffleArray(array) {
@@ -773,7 +833,9 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
         o: sh.map(x => x.t),
         c: sh.findIndex(x => x.idx === question.c),
         hint: question.hint || null,
-        explain: question.explain || null
+        explain: question.explain || null,
+        table: question.table || null,
+        img: question.img || null
       };
       return newQ;
     }
@@ -912,7 +974,9 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
         statements: sh.map(p => p.s),
         answers: sh.map(p => p.a),
         hint: question.hint || null,
-        explain: question.explain || null
+        explain: question.explain || null,
+        table: question.table || null,
+        img: question.img || null
       };
     }
 
@@ -1221,6 +1285,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
             qTitle.className = 'text-lg font-semibold mb-3';
             qTitle.innerHTML = `Câu ${qi+1}. ${processQuestionText(q.q)}`;
             qWrap.appendChild(qTitle);
+            qWrap.appendChild(buildQuestionExtras(q));
 
             if (hintsUsed[qi]) {
               const hw = document.createElement('div');
@@ -1289,6 +1354,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
           qTitle.className = 'text-lg font-semibold mb-3';
           qTitle.innerHTML = `Câu ${qi+1}. ${processQuestionText(q.q)}`;
           qWrap.appendChild(qTitle);
+          qWrap.appendChild(buildQuestionExtras(q));
 
           // Per-question hint (full mode)
           if (q.hint) {
@@ -1463,6 +1529,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
             qTitle.className = 'text-2xl font-bold text-gray-800 mb-6';
             qTitle.innerHTML = processQuestionText(qObj.q);
             questionArea.appendChild(qTitle);
+            questionArea.appendChild(buildQuestionExtras(qObj));
 
             if (qObj.type === 'mcq') {
               const opts = document.createElement('div');
@@ -1511,6 +1578,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
           qTitle.className = 'text-2xl font-bold text-gray-800 mb-6';
           qTitle.innerHTML = processQuestionText(qObj.q);
           questionArea.appendChild(qTitle);
+          questionArea.appendChild(buildQuestionExtras(qObj));
 
           if (qObj.hint) {
             const hintBox = document.createElement('div');
@@ -1793,6 +1861,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
           qTitle.className = 'text-lg font-semibold mb-3';
           qTitle.innerHTML = `Câu ${qi+1}. ${processQuestionText(q.q)}`;
           qWrap.appendChild(qTitle);
+          qWrap.appendChild(buildQuestionExtras(q));
 
           // Show hint-used notice
           if (hintsUsed[qi]) {
