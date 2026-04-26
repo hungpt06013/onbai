@@ -1,0 +1,826 @@
+{
+  "fullName": "ÔN LÝ 4.5.26",
+  "questions": [
+    {
+      "type": "mcq",
+      "q": "Hiện tượng nào sau đây không liên quan đến năng lượng ánh sáng?",
+      "o": [
+        "Ánh sáng mặt trời phản chiếu trên mặt nước.",
+        "Ánh sáng mặt trời làm cháy bỏng da.",
+        "Bếp mặt trời nóng lên nhờ ánh sáng mặt trời.",
+        "Ánh sáng mặt trời dùng để tạo điện năng."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Phát biểu nào sau đây là đúng?",
+      "o": [
+        "Các tia sáng là đường cong.",
+        "Đường truyền của ánh sáng được biểu diễn bằng một đường thẳng có mũi tên chỉ hướng truyền của ánh sáng, gọi là tia sáng.",
+        "Các tia sáng luôn song song nhau.",
+        "Các tia sáng cho ta biết ánh sáng truyền nhanh hay chậm."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Một vật cản được đặt trong khoảng giữa một bóng đèn điện đang sáng và một màn chắn. Để trên màn xuất hiện bóng nửa tối thì cần có điều kiện nào sau đây?",
+      "o": [
+        "Kích thước bóng đèn rất nhỏ.",
+        "Bóng đèn phải rất sáng.",
+        "Ánh sáng bóng đèn phải có màu vàng.",
+        "Kích thước bóng đèn khá lớn."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Chùm sáng ............ gồm các tia sáng ............ trên đường truyền của chúng.\n\nChọn các cụm từ cho sau đây, điền vào chỗ trống của câu trên theo thứ tự cho đầy đủ.",
+      "o": [
+        "phân kỳ; giao nhau",
+        "hội tụ; loe rộng ra",
+        "phân kỳ; loe rộng ra",
+        "song song; giao nhau"
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Chọn câu đúng trong các câu sau",
+      "o": [
+        "Ánh sáng truyền đi theo một đường thẳng.",
+        "Chùm sáng hội tụ là chùm sáng trong đó các tia sáng xuất phát từ cùng một điểm.",
+        "Chùm sáng sau khi hội tụ sẽ trở thành chùm sáng phân kì.",
+        "Người ta quy ước biểu diễn đường truyền của ánh sáng bằng một đường thẳng."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Đứng trên mặt đất, trường hợp nào dưới đây ta thấy có nguyệt thực?",
+      "o": [
+        "Ban đêm, khi nơi ta đứng không nhận được ánh sáng Mặt Trời.",
+        "Ban đêm, khi Mặt Trăng không nhận được ánh sáng Mặt Trời vì bị Trái Đất che khuất.",
+        "Khi Mặt Trời che khuất Mặt Trăng, không cho ánh sáng từ Mặt Trăng tới Trái Đất.",
+        "Khi Mặt Trăng che khuất Mặt Trời, ta chỉ nhìn thấy phía sau Mặt Trăng tối đen."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Tại sao trong lớp học, người ta lắp nhiều bóng đèn ở các vị trí khác nhau mà không dùng một bóng đèn lớn?",
+      "o": [
+        "Để cho lớp học đẹp hơn.",
+        "Chỉ để tăng cường độ sáng cho lớp học.",
+        "Để tránh bóng tối và bóng nửa tối khi học sinh viết bài.",
+        "Để học sinh không bị chói mắt."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Chọn một phát biểu không đúng về đường truyền của tia sáng",
+      "o": [
+        "Trong môi trường trong suốt nhưng không đồng tính, ánh sáng không truyền đi theo đường thẳng.",
+        "Trong môi trường trong suốt và đồng tính, ánh sáng truyền đi theo đường thẳng.",
+        "Trong môi trường đồng tính nhưng không trong suốt, ánh sáng không truyền theo đường thẳng.",
+        "Trong môi trường trong suốt nhưng không đồng tính, ánh sáng luôn truyền theo đường thẳng."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Khi có hiện tượng nhật thực, vị trí tương đối của Trái Đất, Mặt Trời và Mặt Trăng như thế nào? (coi tâm của Trái Đất, Mặt Trời và Mặt Trăng nằm trên một đường thẳng).",
+      "o": [
+        "Trái Đất – Mặt Trời – Mặt Trăng.",
+        "Mặt Trời – Trái Đất – Mặt Trăng.",
+        "Trái Đất – Mặt Trăng – Mặt Trời.",
+        "Mặt Trăng – Trái Đất – Mặt Trời."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Chùm sáng do dây tóc bóng đèn đang bật sáng phát ra là chùm sáng",
+      "o": [
+        "song song.",
+        "phân kì.",
+        "hội tụ.",
+        "đầu tiên hội tụ sau đó phân kì."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Chùm sáng song song gồm các tia sáng ................. trên đường truyền của chúng.",
+      "o": [
+        "giao nhau",
+        "không giao nhau",
+        "loe rộng ra",
+        "chỉ cắt nhau một lần"
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Chọn câu đúng.",
+      "o": [
+        "Chùm sáng song song gồm các tia sáng giao nhau trên đường truyền của chúng.",
+        "Chùm sáng càng xa càng loe rộng ra được gọi là chùm phân kì.",
+        "Chùm sáng xuất phát từ bóng đèn tròn là chùm hội tụ.",
+        "Chùm sáng xuất phát từ bóng đèn dài là chùm sáng song song."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Chọn phát biểu đúng về \"Định luật truyền thẳng của ánh sáng\".",
+      "o": [
+        "Trong môi trường trong suốt và thay đổi, ánh sáng truyền đi theo đường thẳng.",
+        "Trong môi trường trong suốt và đồng tính, ánh sáng truyền đi theo đường thẳng.",
+        "Trong môi trường trong suốt và không đổi, ánh sáng truyền đi theo đường gấp khúc.",
+        "Trong môi trường trong suốt và không thay đổi, ánh sáng truyền đi theo đường cong."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Bóng tối là",
+      "o": [
+        "vùng nằm sau vật chắn sáng, không nhận được ánh sáng từ nguồn sáng chiếu tới.",
+        "vùng nằm phía trước vật cản, không nhận được ánh sáng từ nguồn sáng chiếu tới.",
+        "vùng chỉ nhận được ánh sáng từ một phần của nguồn sáng.",
+        "vùng nằm cạnh vật chắn sáng."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Bóng nửa tối là",
+      "o": [
+        "vùng nằm phía sau vật cản, không nhận được ánh sáng từ nguồn sáng chiếu tới.",
+        "vùng nằm phía sau vật cản, chỉ nhận được ánh sáng từ một phần của nguồn sáng.",
+        "vùng nằm phía trước vật cản, chỉ nhận được ánh sáng từ một phần của nguồn sáng.",
+        "vùng nằm cạnh vật chắn sáng."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Ban đêm, trong phòng chỉ có một đèn điện. Giơ bàn tay chắn giữa đèn điện và bức tường, ta quan sát thấy trên bức tường có",
+      "o": [
+        "một vùng tối hình bàn tay.",
+        "vùng sáng được chiếu sáng đầy đủ.",
+        "một vùng bóng tối tròn.",
+        "một vùng tối hình bàn tay, xung quanh có viền mờ hơn."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Khi có hiện tượng nhật thực toàn phần xảy ra, ta thấy",
+      "o": [
+        "mặt đất bị che khuất hoàn toàn ánh nắng Mặt Trời.",
+        "Mặt Trời bị che khuất hoàn toàn, xung quanh có tai lửa.",
+        "Mặt Trời bị che khuất và không thấy tia sáng nào của Mặt Trời.",
+        "một phần Mặt Trời bị che khuất, phần còn lại là bóng nửa tối."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Máy tính cầm tay sử dụng năng lượng mặt trời đã chuyển hóa năng lượng ánh sáng thành",
+      "o": [
+        "điện năng.",
+        "nhiệt năng.",
+        "hóa năng.",
+        "cơ năng."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Chùm ánh sáng phát ra từ đèn pha xe máy khi chiếu xa là chùm ánh sáng",
+      "o": [
+        "hội tụ.",
+        "phân kì.",
+        "song song.",
+        "Cả A, B, C đều sai."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Trong thí nghiệm tạo bóng với nguồn sáng rộng, kích thước bóng nửa tối thay đổi thế nào khi di chuyển màn chắn ra xa vật cản sáng?",
+      "o": [
+        "Tăng lên.",
+        "Giảm đi.",
+        "Không thay đổi.",
+        "Lúc đầu giảm đi, sau đó tăng lên."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Khi sử dụng bình nước nóng năng lượng Mặt Trời thì năng lượng ánh sáng được chuyển hóa thành dạng năng lượng nào?",
+      "o": [
+        "Điện Năng.",
+        "Cơ năng.",
+        "Nhiệt năng.",
+        "Năng lượng âm."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Hiện tượng nào sau đây liên quan đến sự phản xạ ánh sáng?",
+      "o": [
+        "Ánh sáng mặt trời tạo ra hiện tượng quang hợp.",
+        "Ánh sáng mặt trời phản chiếu trên mặt nước.",
+        "Ánh sáng mặt trời làm pin quang điện hoạt động.",
+        "Ánh sáng mặt trời làm nóng bếp mặt trời."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Phát biểu nào sau đây là sai khi nói về định luật phản xạ ánh sáng?",
+      "o": [
+        "Góc phản xạ bằng góc tới.",
+        "Tia phản xạ nằm trong mặt phẳng chứa tia tới và đường pháp tuyến với gương ở điểm tới.",
+        "Tia phản xạ luôn song song với tia tới.",
+        "Góc hợp bởi tia tới và pháp tuyến bằng góc hợp bởi tia phản xạ và pháp tuyến."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Trường hợp nào sau đây có phản xạ khuếch tán?",
+      "o": [
+        "Ánh sáng chiếu đến mặt gương.",
+        "Ánh sáng chiếu đến mặt hồ phẳng lặng.",
+        "Ánh sáng chiếu đến mặt hồ gợn sóng.",
+        "Ánh sáng chiếu đến tấm bạc láng, phẳng."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Thế nào là hiện tượng phản xạ ánh sáng (phản xạ gương)?",
+      "o": [
+        "Phản xạ ánh sáng là hiện tượng ánh sáng bị hắt trở lại môi trường cũ khi gặp bề mặt bất kì.",
+        "Phản xạ ánh sáng là hiện tượng ánh sáng bị hắt trở lại môi trường cũ khi gặp bề mặt phẳng nhẵn bóng.",
+        "Phản xạ ánh sáng là hiện tượng ánh sáng bị hắt trở lại môi trường cũ khi gặp bề mặt sần sùi.",
+        "Phản xạ ánh sáng là hiện tượng ánh sáng bị hắt trở lại môi trường cũ khi gặp không khí."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Nếu chiếu một chùm tia tới phân kỳ vào gương phẳng thì chùm tia phản xạ sẽ là chùm tia",
+      "o": [
+        "hội tụ.",
+        "không có chùm phản xạ trở lại.",
+        "phân kỳ.",
+        "song song."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Nếu dùng một cái đèn pin chiếu một chùm tia tới song song vào gương phẳng thì chùm tia phản xạ sẽ là chùm tia",
+      "o": [
+        "hội tụ.",
+        "không có chùm phản xạ trở lại.",
+        "song song.",
+        "phân kỳ."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Một gương phẳng đặt nghiêng một góc 45° so với phương nằm ngang, chiếu một chùm tia tới song song theo phương nằm ngang lên mặt gương. Gương tạo chùm tia phản xạ",
+      "o": [
+        "là chùm sáng phân kì.",
+        "là chùm sáng hội tụ.",
+        "gồm các tia sáng không cắt nhau.",
+        "song song hướng thẳng đứng xuống phía dưới."
+      ],
+      "img": "https://i.postimg.cc/D0wSqT0s/image.png",
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Chiếu một tia sáng tới chếch một góc 20° vào một gương phẳng (Hình 16.1) ta được tia sáng phản xạ tạo với tia sáng tới một góc",
+      "o": [
+        "40°.",
+        "70°.",
+        "80°.",
+        "140°."
+      ],
+      "img": "https://i.postimg.cc/j21SPnGT/image.png",
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Chiếu một tia sáng lên bề mặt của một gương phẳng, ta thu được một tia phản xạ tạo với tia tới một góc 60°. Vậy góc tới bằng",
+      "o": [
+        "30°",
+        "40°",
+        "60°",
+        "120°"
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Góc tới là góc hợp bởi",
+      "o": [
+        "tia phản xạ và mặt gương.",
+        "tia tới và pháp tuyến của gương tại điểm tới.",
+        "tia tới và mặt gương.",
+        "tia phản xạ và pháp tuyến của gương tại điểm tới."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Một tia sáng chiếu tới gương phẳng và hợp với mặt gương một góc 30°. Góc phản xạ bằng",
+      "o": [
+        "45°",
+        "30°",
+        "15°",
+        "60°"
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Góc phản xạ là góc hợp bởi",
+      "o": [
+        "tia tới và pháp tuyến của gương tại điểm tới.",
+        "tia phản xạ và mặt gương.",
+        "tia phản xạ và pháp tuyến của gương tại điểm tới.",
+        "tia tới và mặt gương."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Trường hợp nào dưới đây xảy ra hiện tượng phản xạ ánh sáng?",
+      "o": [
+        "Ánh sáng chiếu tới mặt gương.",
+        "Ánh chiếu tới tờ giấy.",
+        "Ánh sáng chiếu tới tấm thảm len.",
+        "Ánh sáng chiếu tới bức tường."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Trong các hình vẽ sau, tia phản xạ IR ở hình vẽ nào đúng?",
+      "o": [
+        "Hình 1",
+        "Hình 2",
+        "Hình 3",
+        "Hình 4"
+      ],
+      "img": "https://i.postimg.cc/J4B1SnfW/image.png",
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Chiếu một tia sáng SI lên một gương phẳng, tia phản xạ thu được nằm trong mặt phẳng nào?",
+      "o": [
+        "Mặt gương.",
+        "Mặt phẳng tạo bởi tia tới và mặt gương.",
+        "Mặt phẳng vuông góc với tia tới.",
+        "Mặt phẳng tạo bởi tia tới và pháp tuyến với gương ở điểm tới."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Một tia sáng Mặt Trời buổi sáng lọt qua khe cửa chếch một góc 50° so với mặt đất (coi mặt đất là mặt phẳng nằm ngang). Để thu được tia sáng phản xạ rọi thẳng đứng từ trên xuống vào một cái bể cá đặt trên nền nhà, ta cần đặt một gương phẳng hợp với mặt phẳng nằm ngang một góc bao nhiêu?",
+      "o": [
+        "20°",
+        "25°",
+        "65°",
+        "70°"
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Ảnh ảo là",
+      "o": [
+        "ảnh không thể nhìn thấy được.",
+        "ảnh tưởng tượng, không tồn tại trong thực tế.",
+        "ảnh không thể hứng được trên màn nhưng có thể nhìn thấy được.",
+        "ảnh luôn ngược chiều với ảnh thật."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Ảnh của một vật qua gương phẳng là",
+      "o": [
+        "ảnh ảo, ngược chiều với vật.",
+        "ảnh ảo, cùng chiều với vật.",
+        "ảnh thật, ngược chiều với vật.",
+        "ảnh thật, cùng chiều với vật."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Đặc điểm nào sau đây không đúng với gương phẳng?",
+      "o": [
+        "Gương phẳng là mặt phẳng phản xạ ánh sáng tốt.",
+        "Vật đặt trước gương cho ảnh ảo có độ lớn bằng vật.",
+        "Khoảng cách từ vật tới gương bằng khoảng cách từ ảnh tới gương.",
+        "Vật đặt trước gương phẳng luôn cho ảnh ngược chiều với vật."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Chỉ ra phát biểu sai.\n\nẢnh của vật qua gương phẳng",
+      "o": [
+        "là ảnh ảo, kích thước luôn bằng kích thước của vật.",
+        "là ảnh ảo, kích thước càng lớn khi vật càng gần gương phẳng.",
+        "là ảnh ảo, đối xứng với vật qua gương phẳng.",
+        "là ảnh ảo, khoảng cách từ ảnh tới gương phẳng bằng khoảng cách từ vật tới gương phẳng."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Có mấy cách dựng ảnh của một vật qua gương phẳng?",
+      "o": [
+        "5.",
+        "3.",
+        "4.",
+        "2."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Phát biểu nào sau đây là đúng khi nói về ảnh của một vật tạo bởi gương phẳng?",
+      "o": [
+        "Ảnh của vật tạo bởi gương phẳng luôn lớn hơn vật.",
+        "Nếu đặt màn hứng ảnh ở vị trí thích hợp, ta có thể hứng được ảnh của vật tạo bởi gương phẳng.",
+        "Ảnh của một vật qua gương phẳng có thể nhỏ hơn vật, tùy thuộc vào vị trí của vật trước gương.",
+        "Ảnh của một vật qua gương phẳng là ảnh ảo, không hứng được trên màn, có kích thước bằng vật."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Khi đứng trước gương soi, nếu ta giơ tay phải lên thì ảnh của mình trong gương lại giơ tay trái lên. Tại sao lại như vậy?",
+      "o": [
+        "Vì ảnh của vật qua gương cùng chiều vật.",
+        "Vì ảnh và vật có kích thước bằng nhau.",
+        "Vì ảnh và vật đối xứng nhau qua gương.",
+        "Vì ảnh và vật không thể giống nhau về hình dạng và kích thước."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Một điểm sáng S đặt trước một gương phẳng một khoảng d cho một ảnh S' cách gương một khoảng d'. So sánh d và d'?",
+      "o": [
+        "d = d'.",
+        "d > d'.",
+        "d < d'.",
+        "Không so sánh được vì ảnh là ảo, vật là thật."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Phải đặt vật AB như thế nào để ảnh A'B' cùng phương, cùng chiều với vật?",
+      "o": [
+        "Đặt vật trước gương và song song với mặt gương.",
+        "Đặt vật sau gương và song song với mặt phẳng gương.",
+        "Đặt vật trước gương và vuông góc với mặt gương.",
+        "Đặt vật sau gương và vuông góc với mặt phẳng gương."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Một người đứng trước gương phẳng để soi. Khoảng cách từ người này đến bề mặt gương là 50 cm. Khoảng cách từ ảnh của người này đến gương là",
+      "o": [
+        "50 cm.",
+        "25 cm.",
+        "100 cm.",
+        "15 cm."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Một người đứng trước gương phẳng và lùi ra xa gương thêm 10 cm, khoảng cách giữa người này và ảnh tạo bởi gương",
+      "o": [
+        "tăng thêm 10 cm.",
+        "giảm đi 10 cm.",
+        "tăng thêm 20 cm.",
+        "giảm đi 20 cm."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Một người cao 1,8 m đứng trước gương phẳng, cho ảnh cách gương 1,6 m. Hỏi người đó cách gương bao nhiêu?",
+      "o": [
+        "3 m.",
+        "1,5 m.",
+        "3,2 m.",
+        "1,6 m."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Không gian xung quanh nam châm, xung quanh dòng điện tồn tại",
+      "o": [
+        "từ trường.",
+        "trọng trường.",
+        "điện trường.",
+        "điện từ trường."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Xung quanh vật nào sau đây có từ trường?",
+      "o": [
+        "Bóng đèn đang sáng.",
+        "Cuộn dây đồng đang nằm trên kệ.",
+        "Thanh sắt đặt trên bàn.",
+        "Ti vi đang tắt."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Cung cấp điện vào hai đầu của đoạn dây dẫn, đặt kim nam châm sao cho trục của kim nam châm song song với trục của dây dẫn. Khi đóng mạch điện có hiện tượng gì xảy ra với kim nam châm?",
+      "o": [
+        "Kim nam châm đứng yên.",
+        "Kim nam châm quay vòng tròn.",
+        "Kim nam châm chỉ hướng Bắc – Nam.",
+        "Kim nam châm bị lệch khỏi vị trí ban đầu."
+      ],
+      "img": "https://i.postimg.cc/mrrZXwRq/image.png",
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Từ phổ là",
+      "o": [
+        "hình ảnh của các đường mạt sắt trong từ trường của nam châm.",
+        "hình ảnh của các kim nam châm đặt gần một nam châm thẳng.",
+        "hình ảnh của các hạt cát đặt trong từ trường của nam châm.",
+        "hình ảnh của các hạt bụi đặt trong từ trường của nam châm."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Hình dưới đây cho biết một số đường sức từ của nam châm thẳng. Vị trí nào dưới đây vẽ đúng hướng của kim nam châm?",
+      "o": [
+        "Vị trí 1.",
+        "Vị trí 2.",
+        "Vị trí 3.",
+        "Vị trí 4."
+      ],
+      "img": "https://i.postimg.cc/kXcd0bjB/image.png",
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Hình dưới đây cho biết một số đường sức từ của nam châm thẳng. Hãy xác định tên hai cực của nam châm dưới đây?",
+      "o": [
+        "A là cực Bắc, B là cực Nam.",
+        "A là cực Nam, B là cực Bắc.",
+        "A và B đều là cực Bắc.",
+        "A và B đều là cực Nam."
+      ],
+      "img": "https://i.postimg.cc/HW9KnCb0/image.png",
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Nam châm hút mạnh nhất ở vị trí nào?",
+      "o": [
+        "1",
+        "2",
+        "3",
+        "Cả 2 và 3 đều đúng"
+      ],
+      "img": "https://i.postimg.cc/pVCGxJtZ/image.png",
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Nam châm có thể hút vật nào dưới đây?",
+      "o": [
+        "Nhựa",
+        "Đồng",
+        "Gỗ",
+        "Thép"
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Trong y tế, để lấy các mạt sắt nhỏ bám trên bề mặt mắt bệnh nhân một cách an toàn, bác sĩ thường sử dụng dụng cụ nào sau đây?",
+      "o": [
+        "Kính lúp",
+        "Kẹp y tế",
+        "Nam châm.",
+        "Kim tiêm"
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Lực tác dụng của nam châm lên các vật có từ tính và các nam châm khác gọi là gì?",
+      "o": [
+        "Lực điện.",
+        "Lực hấp dẫn.",
+        "Lực ma sát.",
+        "Lực từ."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Chọn đáp án sai.",
+      "o": [
+        "Từ phổ cho ta hình ảnh trực quan về từ trường.",
+        "Đường sức từ chính là hình ảnh cụ thể của từ trường.",
+        "Vùng nào các đường mạt sắt sắp xếp mau thì từ trường ở đó yếu.",
+        "Các đường sức từ bên ngoài thanh nam châm luôn đi ra từ cực Bắc và đi vào cực Nam."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Ở bên ngoài thanh nam châm, đường sức từ là",
+      "o": [
+        "những đường thẳng đi ra từ cực Bắc, đi vào ở cực Nam của nam châm.",
+        "những đường thẳng đi ra từ cực Nam, đi vào ở cực Bắc của nam châm.",
+        "những đường cong đi ra từ cực Bắc, đi vào ở cực Nam của nam châm.",
+        "những đường cong đi ra từ cực Nam, đi vào ở cực Bắc của nam châm."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "La bàn là dụng cụ dùng để làm gì?",
+      "o": [
+        "Là dụng cụ để đo tốc độ.",
+        "Là dụng cụ để đo nhiệt độ.",
+        "Là dụng cụ để xác định độ lớn của lực.",
+        "Là dụng cụ để xác định hướng."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Cấu tạo của la bàn gồm những bộ phận nào?",
+      "o": [
+        "Kim la bàn, vỏ la bàn.",
+        "Kim la bàn, vỏ la bàn, mặt la bàn.",
+        "Kim la bàn, mặt la bàn.",
+        "Vỏ la bàn, mặt la bàn."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Sắp xếp các bước theo đúng thứ tự thực hiện sử dụng la bàn xác định hướng địa lí?\n\n(1) Đọc giá trị của góc tạo bởi hướng cần xác định (hướng trước mặt) so với hướng bắc trên mặt chia độ của la bàn để tìm hướng cần xác định.\n\n(2) Đặt la bàn cách xa nam châm và các vật liệu có tính chất từ, để tránh tác động của các vật này lên kim la bàn.\n\n(3) Giữ la bàn trong lòng bàn tay hoặc đặt trên một mặt bàn sao cho la bàn nằm ngang trước mặt. Sau đó xoay vỏ của la bàn sao cho đầu kim màu đỏ chỉ hướng Bắc trùng khít với vạch chữ N trên la bàn.",
+      "o": [
+        "(1) – (2) – (3).",
+        "(2) – (1) – (3).",
+        "(2) – (3) – (1).",
+        "(1) – (3) – (2)."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Có thể tạo ra từ phổ bằng cách nào dưới đây?",
+      "o": [
+        "Rắc các hạt mạt sắt lên tấm bìa đặt trong từ trường và gõ nhẹ.",
+        "Rắc các hạt mạt đồng lên tấm bìa đặt trong từ trường và gõ nhẹ.",
+        "Rắc các hạt mạt nhôm lên tấm bìa đặt trong từ trường và gõ nhẹ.",
+        "Rắc các hạt mạt nhôm lên tấm bìa đặt trong điện trường và gõ nhẹ."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Kim nam châm thử là dụng cụ thường được dùng để nhận biết sự tồn tại của từ trường. Đặt một kim nam châm thử (có thể quay tự do trên mũi nhọn) vào một vùng không gian bất kỳ, dấu hiệu nào sau đây chứng tỏ vùng không gian đó có từ trường?",
+      "o": [
+        "Kim nam châm thử bị mất từ tính và không thể hút được mạt sắt nữa.",
+        "Kim nam châm thử chịu tác dụng của từ trường đó và bị lệch khỏi hướng Bắc – Nam địa lý ban đầu.",
+        "Kim nam châm thử luôn chỉ theo hướng Bắc – Nam địa lý ổn định dù có xoay đi hướng nào.",
+        "Kim nam châm thử bị nóng lên do dòng điện sinh ra từ không gian đó."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Một nam châm vĩnh cửu có đặc tính nào dưới đây?",
+      "o": [
+        "Khi bị nung nóng lên thì có thể hút các vụn sắt.",
+        "Khi bị cọ xát thì hút các vật nhẹ.",
+        "Có thể hút các vật bằng sắt.",
+        "Một đầu có thể hút, còn đầu kia thì đẩy các vụn sắt."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Khi nào hai thanh nam châm hút nhau?",
+      "o": [
+        "Khi hai cực Bắc để gần nhau.",
+        "Khi hai cực Nam để gần nhau.",
+        "Khi để hai cực khác tên gần nhau.",
+        "Khi cọ xát hai cực cùng tên vào nhau."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Trong những vật liệu sau đây, nam châm không hút vật liệu nào?",
+      "o": [
+        "Aluminium.",
+        "Nickel.",
+        "Cobalt.",
+        "Gadolinium."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Mỗi thanh nam châm vĩnh cửu thường có mấy cực?",
+      "o": [
+        "Một cực.",
+        "Hai cực.",
+        "Ba cực.",
+        "Bốn cực."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Trên thanh nam châm chỗ nào hút sắt mạnh nhất?",
+      "o": [
+        "Phần giữa của thanh.",
+        "Từ cực Bắc.",
+        "Cả hai từ cực.",
+        "Mọi chỗ đều hút sắt mạnh như nhau."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Để một kim la bàn (kim nam châm) trên mặt bàn gỗ, cách xa các thiết bị điện và các vật có từ tính. Khi kim la bàn đứng yên, nó sẽ",
+      "o": [
+        "chỉ một hướng ngẫu nhiên.",
+        "luôn chỉ theo hướng Bắc – Nam địa lí.",
+        "quay liên tục do lực hút của vào Trái Đất.",
+        "luôn chỉ theo hướng Đông – Tây địa lí."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Một thanh nam châm bị tróc màu sơn đánh dấu hai cực, có thể sử dụng dụng cụ nào sau đây để xác định tên hai cực của nam châm?",
+      "o": [
+        "Một nam châm đã đánh dấu hai cực.",
+        "Một thanh sắt.",
+        "Một thanh nhôm.",
+        "Một thanh đồng."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Có hai thanh kim loại luôn hút nhau bất kể đưa đầu nào của chúng lại gần nhau. Kết luận nào sau đây là đúng?",
+      "o": [
+        "Hai thanh kim loại đều là sắt.",
+        "Hai thanh kim loại đều là nam châm.",
+        "Một thanh là sắt và một thanh là nam châm.",
+        "Hai thanh kim loại đều là đồng."
+      ],
+      "c": 2
+    }
+  ]
+}

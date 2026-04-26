@@ -1,0 +1,1443 @@
+{
+  "fullName": "ÔN SINH 4.5.26",
+  "questions": [
+    {
+      "type": "mcq",
+      "q": "Sinh trưởng là",
+      "o": [
+        "sự tăng lên về kích thước cơ thể do tăng lên về kích thước tế bào.",
+        "sự tăng lên về khối lượng cơ thể do tăng lên về số lượng tế bào.",
+        "sự tăng lên về kích thước và khối lượng cơ thể do tăng lên về kích thước tế bào.",
+        "sự tăng lên về kích thước và khối lượng cơ thể do tăng lên về số lượng và kích thước tế bào."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Phát triển là",
+      "o": [
+        "những biến đổi của cơ thể sinh vật bao gồm ba quá trình liên quan mật thiết với nhau là sinh trưởng, phân hóa tế bào và phát sinh hình thái các cơ quan của cơ thể.",
+        "sự tăng lên về kích thước và khối lượng cơ thể do tăng lên về số lượng và kích thước tế bào.",
+        "những biến đổi của cơ thể sinh vật dưới tác động trực tiếp của môi trường sống mà không liên quan đến biến đổi vật chất di truyền.",
+        "những biến đổi đột ngột của cơ thể sinh vật do biến đổi vật chất di truyền mà không liên quan đến biến đổi điều kiện môi trường sống."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Cho bảng thông tin sau:\nCách ghép nối phù hợp là",
+      "o": [
+        "1-a,b; 2-c,d,e.",
+        "1-a,c; 2-b,d,e.",
+        "1-a,d; 2-b,c,e.",
+        "1-a,e; 2-b,c,d."
+      ],
+      "c": 0,
+      "table": {
+        "headers": [
+          "Quá trình",
+          "Biểu hiện"
+        ],
+        "rows": [
+          [
+            "(1) Sinh trưởng",
+            "(a) Thể trọng lợn con từ 5kg tăng 8kg."
+          ],
+          [
+            "(2) Phát triển",
+            "(b) Kích thước lá tăng lên."
+          ],
+          [
+            "",
+            "(c) Hạt giống nảy mầm."
+          ],
+          [
+            "",
+            "(d) Cây bưởi ra lá non."
+          ],
+          [
+            "",
+            "(e) Trứng gà nở thành gà con."
+          ]
+        ]
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Sinh trưởng và phát triển có mối quan hệ với nhau như thế nào?",
+      "o": [
+        "Sinh trưởng tạo tiền đề cho phát triển, phát triển sẽ thúc đẩy sinh trưởng.",
+        "Phát triển tạo tiền đề cho sinh trưởng, làm nền tảng cho phát triển.",
+        "Sinh trưởng và phát triển là hai quá trình độc lập, không liên quan đến nhau.",
+        "Sinh trưởng và phát triển mâu thuẫn với nhau."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Cơ sở cho sự sinh trưởng của thực vật là sự phân chia của các tế bào thuộc",
+      "o": [
+        "mô mềm.",
+        "mô xốp.",
+        "mô dẫn.",
+        "mô phân sinh."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Mô phân sinh là",
+      "o": [
+        "nhóm các tế bào có khả năng phân chia, giúp cho thực vật tăng trưởng về kích thước.",
+        "nhóm các tế bào có khả năng cảm ứng, giúp cho thực vật tăng trưởng về kích thước.",
+        "nhóm các tế bào có khả năng biệt hóa, giúp cho thực vật tăng trưởng về kích thước.",
+        "nhóm các tế bào có khả năng phản biệt hóa, giúp cho thực vật tăng trưởng về kích thước."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Cây Một lá mầm không có khả năng tăng kích thước đường kính thân liên tục như cây Hai lá mầm là do cây Một lá mầm không có",
+      "o": [
+        "mô phân sinh.",
+        "mô phân sinh đỉnh.",
+        "mô phân sinh lóng.",
+        "mô phân sinh bên."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Mỗi sinh vật trong quá trình sống đều trải qua các giai đoạn sinh trưởng và phát triển khác nhau gọi là",
+      "o": [
+        "vòng đời.",
+        "quá trình sinh trưởng.",
+        "quá trình phát triển.",
+        "quá trình biến thái."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Vòng đời của ếch trải qua các giai đoạn lần lượt là",
+      "o": [
+        "phôi → trứng → nòng nọc → nòng nọc 2 chân → nòng nọc 4 chân → ếch con → ếch trưởng thành.",
+        "trứng → phôi → nòng nọc → nòng nọc 2 chân → nòng nọc 4 chân → ếch con → ếch trưởng thành.",
+        "phôi → trứng → nòng nọc → nòng nọc 4 chân → nòng nọc 2 chân → ếch con → ếch trưởng thành.",
+        "trứng → phôi → nòng nọc → nòng nọc 4 chân → nòng nọc 2 chân → ếch con → ếch trưởng thành."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Quan sát vòng đời của ếch và của gà. Điểm khác nhau cơ bản trong vòng đời của gà so với ếch là",
+      "o": [
+        "xảy ra nhiều sự biến đổi đột ngột về hình thái.",
+        "không xảy ra nhiều biến đổi đột ngột về hình thái.",
+        "có giai đoạn hợp tử phát triển thành phôi diễn ra trong trứng đã thụ tinh.",
+        "không có giai đoạn hợp tử phát triển thành phôi diễn ra trong trứng đã thụ tinh."
+      ],
+      "img":"https://i.postimg.cc/pTj17jhf/image.png",
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Ở cây Hai lá mầm, thân và rễ dài ra là nhờ hoạt động của",
+      "o": [
+        "mô phân sinh cành.",
+        "mô phân sinh bên.",
+        "mô phân sinh lóng.",
+        "mô phân sinh đỉnh."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Ở cây Một lá mầm, mô phân sinh gồm có",
+      "o": [
+        "mô phân sinh đỉnh và mô phân sinh bên.",
+        "mô phân sinh lóng và mô phân sinh bên.",
+        "mô phân sinh đỉnh và mô phân sinh lóng.",
+        "mô phân sinh đỉnh và mô phân sinh rễ."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Ở thực vật có hai loại mô phân sinh là",
+      "o": [
+        "mô phân sinh đỉnh và mô phân sinh bên.",
+        "mô phân sinh cành và mô phân sinh bên.",
+        "mô phân sinh lá và mô phân sinh thân.",
+        "mô phân sinh ngọn và mô phân sinh rễ."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Sự sinh trưởng làm tăng bề ngang của thân do hoạt động của mô phân sinh nào?",
+      "o": [
+        "Mô phân sinh bên.",
+        "Mô phân sinh thân.",
+        "Mô phân sinh đỉnh rễ.",
+        "Mô phân sinh lóng."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Sinh trưởng ở động vật là",
+      "o": [
+        "sự gia tăng về kích thước cơ thể động vật theo thời gian.",
+        "sự gia tăng về khối lượng cơ thể động vật theo thời gian.",
+        "sự gia tăng về kích thước và khối lượng cơ thể động vật theo thời gian.",
+        "sự biến đổi về hình thái của cơ thể động vật theo thời gian."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Tìm từ/cụm từ phù hợp để hoàn thành thông tin: Mô phân sinh đỉnh giúp thân, cành và rễ tăng lên về ...(1)... Mô phân sinh bên giúp thân, cành và rễ tăng lên về ...(2)...",
+      "o": [
+        "(1) chiều dài, (2) chiều ngang.",
+        "(1) chiều ngang, (2) chiều dài.",
+        "(1) kích thước, (2) chiều dài.",
+        "(1) chiều dài, (2) kích thước."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Lựa chọn tên loại mô phân sinh phù hợp thay thế cho vị trí đánh số (1) trong hình",
+      "o": [
+        "Mô phân sinh đỉnh.",
+        "Mô phân sinh bên.",
+        "Mô rễ.",
+        "Mô phân sinh thân."
+      ],
+      "img":"https://i.postimg.cc/MHyFb7j9/image.png",
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Lựa chọn tên loại mô phân sinh phù hợp thay thế cho vị trí đánh số (2) trong hình",
+      "o": [
+        "Mô phân sinh đỉnh.",
+        "Mô phân sinh bên.",
+        "Mô rễ.",
+        "Mô phân sinh thân."
+      ],
+      "img":"https://i.postimg.cc/MHyFb7j9/image.png",
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Dấu hiệu nào dưới đây không thể hiện sự sinh trưởng ở cây cam?",
+      "o": [
+        "Từ hạt nảy mầm biến đổi thành cây con.",
+        "Từ một quả cam thành hai quả cam.",
+        "Từ một cây con ban đầu thành cây trưởng thành.",
+        "Từ hạt thành hạt nảy mầm."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Biến đổi nào dưới đây diễn ra trong đời sống của con ếch thể hiện sự phát triển?",
+      "o": [
+        "Mắt tiêu biến khi lên bờ.",
+        "Da ếch trần, mềm, ẩm thích nghi với môi trường sống.",
+        "Hình thành vây bơi để bơi dưới nước.",
+        "Từ ấu trùng có đuôi (nòng nọc) rụng đuôi và trở thành ếch trưởng thành."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Hoàn thành sơ đồ các giai đoạn sinh trưởng và phát triển của cây cam: Hạt → ....... → ....... → ....... → .......",
+      "o": [
+        "Hạt nảy mầm → Cây non → Cây con → Cây trưởng thành.",
+        "Hạt nảy mầm → Cây con → Cây non → Cây trưởng thành.",
+        "Hạt nảy mầm → Cây non → Cây trưởng thành → Cây con.",
+        "Hạt nảy mầm → Cây con → Cây trưởng thành → Cây non."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Hoàn thành sơ đồ các giai đoạn sinh trưởng và phát triển của con ếch: ....... → Ấu trùng → ....... → .......",
+      "o": [
+        "Trứng thụ tinh → Ấu trùng → Nòng nọc → Ếch trưởng thành.",
+        "Trứng thụ tinh → Ấu trùng → Nòng nọc → Ếch con.",
+        "Trứng thụ tinh → Ấu trùng → Ếch con → Ếch trưởng thành.",
+        "Trứng thụ tinh → Ấu trùng → Ếch con → Nòng nọc."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Loại mô phân sinh không có ở cây ngô là",
+      "o": [
+        "mô phân sinh đỉnh rễ.",
+        "mô phân sinh lóng.",
+        "mô phân sinh bên.",
+        "mô phân sinh đỉnh thân."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Loại mô phân sinh không có ở cây cam là",
+      "o": [
+        "mô phân sinh đỉnh rễ.",
+        "mô phân sinh lóng.",
+        "mô phân sinh bên.",
+        "mô phân sinh đỉnh thân."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Cho các bộ phận: (1) Đỉnh rễ, (2) Thân, (3) Chồi nách, (4) Chồi đỉnh, (5) Hoa, (6) Lá. Mô phân sinh đỉnh không có ở:",
+      "o": [
+        "(1), (2), (3).",
+        "(2), (3), (4).",
+        "(3), (4), (5).",
+        "(2), (5), (6)."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Các giai đoạn phát triển tuần tự của sâu bướm là",
+      "o": [
+        "trứng → nhộng → sâu → bướm.",
+        "nhộng → trứng → sâu → bướm.",
+        "trứng → sâu → nhộng → bướm.",
+        "bướm → nhộng → sâu → trứng."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Kết quả của quá trình phát triển ở thực vật có hoa là",
+      "o": [
+        "làm cho cây ngừng sinh trưởng và ra hoa.",
+        "làm cho cây lớn lên và to ra.",
+        "làm cho cây sinh sản và chuyển sang già cỗi.",
+        "hình thành các cơ quan rễ, thân, lá, hoa, quả."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Cây thân gỗ cao lên là kết quả hoạt động của mô phân sinh nào?",
+      "o": [
+        "Mô phân sinh đỉnh rễ.",
+        "Mô phân sinh đỉnh thân.",
+        "Mô phân sinh bên.",
+        "Mô phân sinh lóng."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Mô phân sinh lóng có vai trò làm cho",
+      "o": [
+        "thân và rễ cây gỗ to ra.",
+        "thân và rễ cây một lá mầm dài ra.",
+        "lóng của cây một lá mầm dài ra.",
+        "cành của thân cây gỗ dài ra."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Dấu hiệu thể hiện sự sinh trưởng của con ếch là",
+      "o": [
+        "Ấu trùng lớn lên thành ếch trưởng thành.",
+        "Ếch đẻ trứng dưới nước.",
+        "Ếch chuyển từ môi trường nước lên sống ở môi trường cạn.",
+        "Nòng nọc phát triển hình thái đến ếch trưởng thành."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Dấu hiệu sinh trưởng của cây cam: ....... lớn lên thành .......",
+      "o": [
+        "Cây non, cây trưởng thành.",
+        "Cây con, cây trưởng thành.",
+        "Cây non, cây con.",
+        "Cây con, cây non."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Dấu hiệu thể hiện sự phát triển của con ếch là",
+      "o": [
+        "Ấu trùng lớn lên thành ếch trưởng thành.",
+        "Da ếch trần, mềm, ẩm.",
+        "Ếch chuyển từ môi trường nước lên sống ở môi trường cạn.",
+        "Trứng đã thụ tinh phát triển thành ấu trùng, thay đổi hình thái đến trưởng thành."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "....... là sự tăng về kích thước và khối lượng của cơ thể do sự tăng lên về số lượng và kích thước tế bào.",
+      "o": [
+        "Sinh trưởng.",
+        "Phát triển.",
+        "Lớn lên.",
+        "Dài ra."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "....... bao gồm sinh trưởng, phân hoá tế bào, phát sinh hình thái cơ quan và cơ thể.",
+      "o": [
+        "Sinh trưởng.",
+        "Phát triển.",
+        "Lớn lên.",
+        "Dài ra."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Mô phân sinh đỉnh nằm ở",
+      "o": [
+        "Ngọn.",
+        "Đỉnh rễ và các chồi.",
+        "Thân.",
+        "Rễ cây."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Cây cao lên nhờ",
+      "o": [
+        "mô phân sinh đỉnh.",
+        "mô phân sinh bên.",
+        "mô phân sinh thứ cấp.",
+        "mô phân sinh lóng."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Các tế bào ở mô phân sinh đỉnh phân chia, giúp cây dài ra từ",
+      "o": [
+        "bất kì vị trí nào trên cây.",
+        "từ ngọn.",
+        "từ gốc.",
+        "từ các cành bên."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Nhiều loài thực vật không ngừng dài ra và to lên nhờ có",
+      "o": [
+        "mô phân sinh.",
+        "chất dinh dưỡng.",
+        "nước và muối khoáng.",
+        "sự chăm sóc của con người."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Ở thân cây gỗ trưởng thành, tầng sinh trụ nằm ở đâu?",
+      "o": [
+        "Nằm chìm trong lớp thịt vỏ.",
+        "Nằm xen giữa mạch rây và mạch gỗ.",
+        "Nằm phía ngoài mạch rây.",
+        "Nằm bên trong mạch gỗ."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Thông thường, khi ta bóc vỏ cây thân gỗ thì những thành phần nào sẽ bị loại bỏ khỏi cây?",
+      "o": [
+        "Biểu bì và thịt vỏ.",
+        "Biểu bì, thịt vỏ và mạch gỗ.",
+        "Biểu bì, thịt vỏ và mạch rây.",
+        "Mạch rây và mạch gỗ."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Vì sao khi tìm gỗ làm nhà, người ta lại lựa chọn lớp gỗ ròng thay vì gỗ dác?",
+      "o": [
+        "Vì phần gỗ này rắn chắc, ít bị mối mọt và có độ bền cơ học cao hơn gỗ dác.",
+        "Vì phần gỗ này có màu sắc bắt mắt, vân đẹp hơn lớp gỗ dác.",
+        "Vì phần gỗ này dễ phân cắt, đục đẽo và khắc các họa tiết theo ý muốn.",
+        "Tất cả các phương án đưa ra."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Phitôcrôm là 1 loại prôtêin hấp thụ ánh sáng tồn tại ở 2 dạng:",
+      "o": [
+        "ánh sáng lục và đỏ.",
+        "ánh sáng đỏ và đỏ xa.",
+        "ánh sáng vàng và xanh tím.",
+        "ánh sáng đỏ và xanh tím."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Những cây nào sau đây thuộc cây ngắn ngày?",
+      "o": [
+        "Dưa chuột, lúa, dâm bụt.",
+        "Đậu cô ve, dưa chuột, cà chua.",
+        "Cỏ 3 lá, kiều mạch, dâm bụt.",
+        "Cúc, cà phê, lúa."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Những cây nào sau đây thuộc cây dài ngày?",
+      "o": [
+        "Dưa chuột, lúa, dâm bụt.",
+        "Đậu cô ve, dưa chuột, cà chua.",
+        "Cỏ 3 lá, kiều mạch, dâm bụt.",
+        "Cúc, cà phê, lúa."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Thời điểm ra hoa ở thực vật 1 năm có phản ứng quang chu kì được đánh giá theo",
+      "o": [
+        "chiều cao của thân.",
+        "đường kính gốc.",
+        "số lượng lá trên thân.",
+        "cả A, B, C."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Kiểu phát triển của động vật qua biến thái hoàn toàn là kiểu phát triển mà con non có đặc điểm hình thái",
+      "o": [
+        "sinh lý rất khác với con trưởng thành.",
+        "cấu tạo tương tự với con trưởng thành, nhưng khác về sinh lý.",
+        "cấu tạo và sinh lý tương tự với con trưởng thành.",
+        "cấu tạo và sinh lý gần giống với con trưởng thành."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Sinh trưởng ở thực vật là quá trình:",
+      "o": [
+        "tăng chiều dài cơ thể.",
+        "tăng về chiều ngang cơ thể.",
+        "tăng về khối lượng cơ thể.",
+        "tăng về khối lượng và kích thước cơ thể."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Cho dữ liệu sau:\nHãy ghép cột A với cột B tương ứng.",
+      "o": [
+        "1 - b, d, f và 2 - a, c, e.",
+        "1 - b, e, f và 2 - a, c, d.",
+        "1 - a, b, e và 2 - c, d, f.",
+        "1 - a, b, f và 2 - c, d, e."
+      ],
+      "c": 1,
+      "table": {
+        "headers": [
+          "Cột A",
+          "Cột B"
+        ],
+        "rows": [
+          [
+            "(1) Sinh trưởng",
+            "(a) Hạt nảy mầm"
+          ],
+          [
+            "(2) Phát triển",
+            "(b) Cây lên cao"
+          ],
+          [
+            "",
+            "(c) Gà trống bắt đầu biết gáy"
+          ],
+          [
+            "",
+            "(d) Cây ra hoa"
+          ],
+          [
+            "",
+            "(e) Diện tích phiến lá tăng lên"
+          ],
+          [
+            "",
+            "(f) Lợn con tăng cân từ 2 kg lên 4 kg"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Phát triển của sinh vật là",
+      "o": [
+        "quá trình biến đổi tạo nên các tế bào, mô, cơ quan và hình thành chức năng mới ở các giai đoạn.",
+        "quá trình tăng về kích thước, khối lượng của cơ thể do tăng số lượng và kích thước của tế bào, làm cơ thể lớn lên.",
+        "quá trình biến đổi tạo nên các tế bào, mô, cơ quan ở các giai đoạn.",
+        "quá trình biến đổi hình thành chức năng mới ở các giai đoạn."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Quá trình nào sau đây là quá trình sinh trưởng của thực vật?",
+      "o": [
+        "Cơ thể thực vật ra hoa.",
+        "Cơ thể thực vật tạo hạt.",
+        "Cơ thể thực vật tăng kích thước.",
+        "Cơ thể thực vật rụng lá, hoa."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Những động vật sinh trưởng và phát triển không qua biến thái là:",
+      "o": [
+        "Bọ ngựa, cào cào, tôm, cua.",
+        "Châu chấu, ếch, muỗi.",
+        "Cánh cam, bọ rùa, bướm, ruồi.",
+        "Cá chép, gà, thỏ, khỉ."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Cho các mệnh đề sau:\n\nSinh trưởng và phát triển có liên quan mật thiết với nhau, nối tiếp, xen kẽ nhau.\n\nPhát triển là cơ sở cho sinh trưởng, sinh trưởng làm thay đổi và thúc đẩy phát triển.\n\nCây ra lá là sự phát triển của thực vật.\n\nCon gà tăng từ 1,2 kg đến 3 kg là sự sinh trưởng của động vật.\n\nSố mệnh đề đúng là",
+      "o": [
+        "1.",
+        "4.",
+        "3.",
+        "2."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Sinh trưởng và phát triển của động vật qua biến thái không hoàn toàn là trường hợp ấu trùng phát triển",
+      "o": [
+        "hoàn thiện, qua nhiều lần biến đổi ấu trùng biến thành con trưởng thành.",
+        "chưa hoàn thiện, qua nhiều lần biến đổi ấu trùng biến thành con trưởng thành.",
+        "chưa hoàn thiện, qua một lần lột xác ấu trùng biến thành con trưởng thành.",
+        "chưa hoàn thiện, qua nhiều lần lột xác ấu trùng biến thành con trưởng thành."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Loại mô phân sinh nào sau đây không có ở cây một lá mầm?",
+      "o": [
+        "Mô phân sinh bên.",
+        "Mô phân sinh đỉnh cây.",
+        "Mô phân sinh lóng.",
+        "Mô phân sinh đỉnh rễ."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Vào mùa đông, một số cây có hiện tượng rụng lá nhằm",
+      "o": [
+        "giảm sự thoát hơi nước, giúp cây không bị khô héo trong mùa có khí hậu khắc nghiệt.",
+        "giảm sự trao đổi chất, giúp cây không bị khô héo trong mùa có khí hậu khắc nghiệt.",
+        "giảm quá trình quang hợp, giúp cây không bị khô héo trong mùa có khí hậu khắc nghiệt.",
+        "giảm quá trình hô hấp, giúp cây không bị khô héo trong mùa có khí hậu khắc nghiệt."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Phát biểu đúng về mô phân sinh bên và mô phân sinh lóng là",
+      "o": [
+        "mô phân sinh bên và mô phân sinh lóng có ở thân cây Một lá mầm.",
+        "mô phân sinh bên có ở thân cây Một lá mầm, còn mô phân sinh lóng có ở thân cây Hai lá mầm.",
+        "mô phân sinh bên có ở thân cây Hai lá mầm, còn mô phân sinh lóng có ở thân cây Một lá mầm.",
+        "mô phân sinh bên và mô phân sinh lóng có ở thân cây Hai lá mầm."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Sinh sản là",
+      "o": [
+        "một trong những đặc trưng cơ bản của cơ thể sống nhằm tạo ra đặc điểm thích nghi mới đảm bảo sự sinh trưởng liên tục của loài.",
+        "một trong những đặc trưng cơ bản của cơ thể sống nhằm tạo ra các thể mới (con) đảm bảo sự phát triển liên tục của loài.",
+        "một trong những đặc trưng cơ bản của cơ thể sống nhằm tạo ra các loài mới đảm bảo sự phát triển liên tục của sinh giới.",
+        "một trong những đặc trưng cơ bản của cơ thể sống nhằm tạo ra các đặc điểm thích nghi mới đảm bảo sự phát triển liên tục của sinh giới."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Trong tự nhiên, có hai hình thức sinh sản ở sinh vật gồm",
+      "o": [
+        "sinh sản vô tính và sinh sản hữu tính.",
+        "sinh sản phân đôi và sinh sản nảy chồi.",
+        "sinh sản phân đôi và sinh sản phân mảnh.",
+        "sinh sản nảy chồi và sinh sản phân mảnh."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Sinh sản vô tính khác sinh sản hữu tính ở điểm là",
+      "o": [
+        "không có sự kết hợp của giao tử đực và giao tử cái.",
+        "không có sự kế thừa đặc điểm di truyền từ cơ thể mẹ.",
+        "có ít nhất hai cá thể tham gia quá trình hình thành nên cơ thể con.",
+        "có nhiều hơn hai cá thể con được sinh ra từ một cơ thể mẹ ban đầu."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Ưu điểm của hình thức sinh sản hữu tính so với hình thức sinh sản vô tính là",
+      "o": [
+        "có sự kết hợp của giao tử đực và giao tử cái giúp duy trì khả năng thích nghi của thế hệ sau với môi trường sống ổn định.",
+        "có sự kết hợp của giao tử đực và giao tử cái giúp tăng khả năng thích nghi của thế hệ sau với sự thay đổi của môi trường sống.",
+        "có thể tạo ra được một số lượng cá thể con rất lớn trong một khoảng thời gian ngắn từ một cá thể mẹ ban đầu.",
+        "có thể thực hiện được ngay cả trong trường hợp số lượng cá thể của loài bị giảm sút nghiêm trọng."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Nhóm sinh vật nào sau đây có hình thức sinh sản vô tính?",
+      "o": [
+        "Sứa, trùng roi, trùng biến hình, tôm, cua.",
+        "Sứa, thủy tức, trùng roi, hải quỳ, san hô.",
+        "Sứa, san hô, giun đất, tôm, cua, thủy tức.",
+        "Sứa, trùng roi, trùng biến hình, tôm, cua."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Trong sơ đồ sinh sản hữu tính ở sinh vật sau. (1) và (2) lần lượt là",
+      "o": [
+        "giao tử, hợp tử.",
+        "hợp tử, phôi.",
+        "phôi, hợp tử.",
+        "hợp tử, giao tử."
+      ],
+      "img":"https://i.postimg.cc/v8Nr3gzw/image.png",
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Cho bảng thông tin về sinh sản hữu tính ở thực vật:\nCách ghép nối phù hợp là",
+      "o": [
+        "1-a; 2-b; 3-c; 4-d.",
+        "1-b; 2-a; 3-c; 4-d.",
+        "1-a; 2-b; 3-d; 4-c.",
+        "1-b; 2-a; 3-d; 4-c."
+      ],
+      "c": 1,
+      "table": {
+        "headers": [
+          "Tên gọi",
+          "Khái niệm"
+        ],
+        "rows": [
+          [
+            "(1) Hoa",
+            "(a) là hiện tượng hạt phấn tiếp xúc lên đầu nhụy"
+          ],
+          [
+            "(2) Thụ phấn",
+            "(b) là cơ quan sinh sản hữu tính ở thực vật"
+          ],
+          [
+            "(3) Thụ tinh",
+            "(c) là sự kết hợp của giao tử đực với giao tử cái để tạo thành hợp tử"
+          ],
+          [
+            "(4) Quả",
+            "(d) do bầu nhụy phát triển thành, quả lớn lên được là do tế bào phân chia"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Cho các sự kiện về quá trình sinh sản hữu tính ở thực vật:\n\n(1) Giao tử đực kết hợp với giao tử cái tạo thành hợp tử.\n\n(2) Ống phấn tiếp xúc với noãn.\n\n(3) Hạt phấn rơi vào đầu nhụy và nảy mầm.\n\n(4) Ống phấn mọc dài ra trong vòi nhụy và đi vào bầu nhụy.\n\n(5) Nhụy và nhị cùng chín.\n\nThứ tự đúng của các sự kiện trên là",
+      "o": [
+        "5 → 3 → 4 → 2 → 1.",
+        "1 → 2 → 3 → 4 → 5.",
+        "3 → 2 → 1 → 5 → 4.",
+        "2 → 5 → 1 → 2 → 4."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Đối với động vật đẻ trứng, sự thụ tinh diễn ra",
+      "o": [
+        "ngoài môi trường cạn.",
+        "ngoài môi trường nước.",
+        "ngoài môi trường nước hoặc trong cơ thể mẹ.",
+        "ngoài môi trường cạn hoặc ngoài môi trường nước."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Cho các ưu điểm sau của hình thức đẻ con:\n\n(1) Được bảo vệ tốt hơn trước sự tấn công của vật ăn thịt.\n\n(2) Được cung cấp chất dinh dưỡng liên tục.\n\n(3) Tạo ra số lượng lớn cá thể con trong một lần sinh.\n\n(4) Có điều kiện nhiệt độ thích hợp và ổn định để phôi phát triển.\n\nSố ưu điểm của hình thức đẻ con là",
+      "o": [
+        "1.",
+        "2.",
+        "3.",
+        "4."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Sinh sản vô tính là",
+      "o": [
+        "hình thức sinh sản có sự kết hợp của các tế bào sinh sản chuyên biệt.",
+        "hình thức sinh sản ở tất cả các loại sinh vật.",
+        "hình thức sinh sản không có sự kết hợp giữa giao tử đực và giao tử cái.",
+        "hình thức sinh sản có nhiều hơn một cá thể tham gia."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Chúng ta có thể nhân giống cây khoai tây bằng bộ phận nào của cây?",
+      "o": [
+        "Lá.",
+        "Rễ.",
+        "Thân củ.",
+        "Hạt giống."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Bộ phận được khoanh tròn trên củ khoai tây trong hình dưới đây được gọi là gì?",
+      "o": [
+        "Rễ cây con.",
+        "Chồi mầm.",
+        "Chồi hoa.",
+        "Bao phấn."
+      ],
+      "img":"https://i.postimg.cc/GmJswHkL/image.png",
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Trong sinh sản sinh dưỡng ở thực vật, cây mới được hình thành",
+      "o": [
+        "từ một phần cơ quan sinh dưỡng của cây.",
+        "chỉ từ rễ của cây.",
+        "chỉ từ một phần thân của cây.",
+        "chỉ từ lá của cây."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Sự thụ phấn là quá trình",
+      "o": [
+        "chuyển hạt phấn từ bao phấn sang bầu nhụy.",
+        "chuyển giao tử đực từ bao phấn sang vòi nhụy.",
+        "chuyển hạt phấn từ bao phấn sang đầu nhụy.",
+        "chuyển hạt phấn từ bao phấn sang noãn."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Hoa lưỡng tính là",
+      "o": [
+        "hoa có đài, tràng và nhụy hoa.",
+        "hoa có đài, tràng và nhị hoa.",
+        "hoa có nhị và nhụy hoa.",
+        "hoa có đài và tràng hoa."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Thụ tinh là gì?",
+      "o": [
+        "Là sự kết hợp của giao tử cái với giao tử đực tạo thành hợp tử.",
+        "Là sự kết hợp giữa con đực và con cái.",
+        "Là sự kết hợp giữa cơ thể mẹ và cơ thể bố.",
+        "Là sự kết hợp giữa các loài sinh vật."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Sinh sản hữu tính là",
+      "o": [
+        "hình thức sinh sản có sự kết hợp yếu tố đực và yếu tố cái tạo nên hợp tử.",
+        "hình thức sinh sản có sự kết hợp của 2 yếu tố đực tạo nên hợp tử.",
+        "hình thức sinh sản có sự kết hợp của 2 yếu tố cái tạo nên hợp tử.",
+        "hình thức sinh sản có sự kết hợp của tế bào đực và tế bào cái tạo nên hợp tử."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Cho một số nhận định sau:\n\nSinh sản hữu tính tạo hợp tử, hợp tử sẽ phát triển thành cơ thể mới.\n\n1. Cơ thể con nhận được chất di truyền từ cả bố và mẹ nên mang đặc điểm của cả bố và mẹ.\n\n2. Sinh sản hữu tính làm tăng khả năng thích nghi của thế hệ sau với sự thay đổi của môi trường.\n\n3. Sinh sản hữu tính chỉ có ở động vật.\n\n4. Sinh sản hữu tính ưu việt hơn sinh sản vô tính.\n\n5. Số mệnh đề đúng là",
+      "o": [
+        "5.",
+        "2.",
+        "3.",
+        "4."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Các hình thức sinh sản ở thực vật gồm có:",
+      "o": [
+        "Sinh sản bằng rễ và bằng thân và bằng lá.",
+        "Sinh sản bằng hạt và bằng chồi.",
+        "Sinh sản sinh dưỡng và sinh sản bào tử.",
+        "Sinh sản vô tính và sinh sản hữu tính."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Sinh sản vô tính ở thực vật là cây non được sinh ra mang đặc tính",
+      "o": [
+        "giống cây mẹ, có sự kết hợp giữa giao tử đực và giao tử cái.",
+        "giống cây mẹ, không có sự kết hợp giữa giao tử đực và giao tử cái.",
+        "giống và khác cây mẹ, không có sự kết hợp giữa giao tử đực và giao tử cái.",
+        "giống cây bố mẹ, có sự kết hợp giữa giao tử đực và giao tử cái."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Khi nói về ưu điểm của phương pháp nuôi cấy mô, phát biểu nào sau đây sai?",
+      "o": [
+        "Tạo ra các giống cây mới có năng suất cao hơn cây mẹ.",
+        "Phục chế được các giống cây quý.",
+        "Duy trì các tính trạng tốt của cây mẹ.",
+        "Nhân nhanh số lượng cây giống lớn."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Nói đến hình thức sinh sản trinh sinh, chỉ ra phát biểu sai:",
+      "o": [
+        "Chỉ sinh ra những cá thể mang giới tính đực.",
+        "Xảy ra ở động vật bậc thấp.",
+        "Không có quá trình giảm phân.",
+        "Không cần sự tham gia của giao tử đực."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Trong sinh sản vô tính, chồi con hình thành được nhìn thấy ở sinh vật nào dưới đây?",
+      "o": [
+        "Con người.",
+        "Amip.",
+        "Thuỷ tức.",
+        "Vi khuẩn."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Một trùng giày sinh sản bằng cách tự phân chia thành hai tế bào con. Quá trình này được gọi là",
+      "o": [
+        "mọc chồi.",
+        "tái sinh.",
+        "phân đôi.",
+        "nhân giống."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Ở sinh vật, quá trình hợp nhất giữa giao tử đực và giao tử cái được gọi là",
+      "o": [
+        "sự thụ tinh.",
+        "sự thụ phấn.",
+        "tái sản xuất.",
+        "hình thành hạt."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Quả được hình thành từ bộ phận nào của hoa?",
+      "o": [
+        "Đài hoa.",
+        "Tràng hoa.",
+        "Nụ hoa.",
+        "Bầu nhụy."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Nối tên sinh vật ở cột A với hình thức sinh sản ở cột B:",
+      "o": [
+        "1-E, 2-G, 3-D, 4-C, 5-B, 6-A.",
+        "1-E, 2-D, 3-G, 4-A, 5-B, 6-C.",
+        "1-G, 2-E, 3-D, 4-A, 5-B, 6-C.",
+        "1-E, 2-G, 3-D, 4-A, 5-B, 6-C."
+      ],
+      "c": 0,
+      "table": {
+        "headers": [
+          "Cột A",
+          "Cột B"
+        ],
+        "rows": [
+          [
+            "1. Củ khoai lang",
+            "A. sinh sản vô tính bằng phân mảnh."
+          ],
+          [
+            "2. Nhánh xương rồng",
+            "B. sinh sản vô tính bằng cách phân đôi."
+          ],
+          [
+            "3. Thuỷ tức",
+            "C. sinh sản sinh dưỡng bằng lá."
+          ],
+          [
+            "4. Sao biển",
+            "D. sinh sản vô tính bằng cách mọc chồi."
+          ],
+          [
+            "5. Trùng biến hình",
+            "E. sinh sản sinh dưỡng bằng rễ."
+          ],
+          [
+            "6. Cây sen đá",
+            "G. sinh sản sinh dưỡng bằng thân."
+          ]
+        ]
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Cho các cây sau: mía, lúa, khoai tây, hoa hồng. Dựa vào đặc điểm sinh sản, hãy chỉ ra cây nào có phương thức sinh sản khác với các cây còn lại.",
+      "o": [
+        "Cây lúa.",
+        "Cây mía.",
+        "Khoai tây.",
+        "Hoa hồng."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Những ý nào dưới đây nói về đặc điểm của sinh sản vô tính ở sinh vật?\n\n(1) Cá thể sống đơn lẻ có thể tạo ra cơ thể mới.\n\n(2) Sinh sản vô tính tạo ra cơ thể mới tồn tại tốt ở các môi trường sống luôn thay đổi.\n\n(3) Sinh sản vô tính tạo ra các cá thể mới giống nhau và giống cơ thể ban đầu.\n\n(4) Sinh sản vô tính tạo ra số lượng lớn cơ thể mới trong một thời gian ngắn.\n\n(5) Không có sự tham gia của giao tử đực và giao tử cái.\n\n(6) Sinh sản vô tính tạo ra các cơ thể mới thích nghi tốt với môi trường sống ổn định.",
+      "o": [
+        "(1), (3), (4), (5), (6).",
+        "(1), (2), (3), (5).",
+        "(1), (2), (4), (6).",
+        "(1), (2), (3), (4), (5)."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Nối nội dung ở cột A với định nghĩa ở cột B:",
+      "o": [
+        "1-A, 2-D, 3-E, 4-C, 5-B.",
+        "1-D, 2-A, 3-B, 4-C, 5-E.",
+        "1-A, 2-B, 3-C, 4-C, 5-D.",
+        "1-D, 2-A, 3-E, 4-C, 5-B."
+      ],
+      "c": 0,
+      "table": {
+        "headers": [
+          "Cột A",
+          "Cột B"
+        ],
+        "rows": [
+          [
+            "1. Sự thụ tinh",
+            "A. Sự kết hợp giao tử đực và giao tử cái."
+          ],
+          [
+            "2. Động vật đẻ trứng",
+            "B. Giao tử cái."
+          ],
+          [
+            "3. Động vật đẻ con",
+            "C. Giao tử đực."
+          ],
+          [
+            "4. Tinh trùng",
+            "D. Con non được sinh ra từ trứng."
+          ],
+          [
+            "5. Noãn",
+            "E. Con non được nuôi trong cơ thể mẹ và đẻ ra ngoài."
+          ]
+        ]
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Điền từ còn thiếu vào chỗ trống:\n\nMọc chồi là một kiểu của (1)... Quá trình (2)... đảm bảo sự phát triển liên tục của loài. (3)... là cơ quan sinh sản của thực vật Hạt kín. Bộ phận nhú lên trên cơ quan sinh dưỡng của cây và có khả năng hình thành cơ thể mới được gọi là (4)... Thực vật có quả và hạt là kết quả của hình thức (5)...",
+      "o": [
+        "(1) sinh sản hữu tính, (2) sinh sản, (3) hoa, (4) chồi mầm, (5) sinh sản vô tính.",
+        "(1) sinh sản vô tính, (2) sinh sản hữu tính, (3) hoa, (4) chồi mầm, (5) sinh sản.",
+        "(1) sinh sản vô tính, (2) sinh sản, (3) hoa, (4) chồi mầm, (5) sinh sản hữu tính.",
+        "(1) sinh sản, (2) sinh sản vô tính, (3) hoa, (4) chồi mầm, (5) sinh sản hữu tính."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Hình thức sinh sản vô tính \"Phân đôi\" là của loài động vật nào?",
+      "o": [
+        "San hô, thủy tức.",
+        "Sao biển, giun dẹp.",
+        "Trùng roi.",
+        "Rệp cây, ong, kiến."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Nhóm động vật nào sau đây có hình thức sinh sản vô tính?",
+      "o": [
+        "Giun đất, côn trùng.",
+        "Ếch, bò sát, côn trùng.",
+        "Cá, thú, chim.",
+        "Ong, thủy tức, trùng đế giày."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Đâu không phải loài thực vật có khả năng sinh sản vô tính?",
+      "o": [
+        "Cây gấc.",
+        "Cây sen đá.",
+        "Cây thuốc bỏng.",
+        "Cây khoai lang."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Hiện tượng nào dưới đây không phải là sinh sản ở sinh vật?",
+      "o": [
+        "Đuôi mới của thằn lằn hình thành sau khi bị đứt.",
+        "Củ khoai lang mọc mầm.",
+        "Măng mọc lên ở những bụi tre.",
+        "Em bé được sinh ra sau 9 tháng 10 ngày mẹ mang thai."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Quá trình sinh sản hữu tính ở thực vật diễn ra lần lượt theo các giai đoạn nào?",
+      "o": [
+        "Tạo giao tử → Thụ tinh → Thụ phấn → Hình thành quả và hạt.",
+        "Tạo giao tử → Thụ phấn → Thụ tinh → Hình thành quả và hạt.",
+        "Tạo quả và hạt → Thụ phấn → Thụ tinh → Hình thành giao tử.",
+        "Tạo quả và hạt → Thụ tinh → Thụ phấn → Hình thành giao tử."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Trong sinh sản hữu tính, cơ thể mới sinh ra từ",
+      "o": [
+        "Giao tử.",
+        "Hợp tử.",
+        "Bào tử.",
+        "Phôi."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Trong thực tiễn, cây ăn quả lâu năm thường được nhân giống bằng phương pháp chiết cành vì",
+      "o": [
+        "dễ trồng và tốn ít công chăm sóc.",
+        "dễ nhân giống, nhanh và nhiều.",
+        "để tránh sâu, bệnh gây hại.",
+        "giúp rút ngắn thời gian sinh trưởng, sớm thu hoạch và biết trước đặc tính của quả."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Hoàn thành các đoạn thông tin sau:\n\na) Sự hình thành các cá thể mới từ cơ quan sinh dưỡng của mẹ gọi là ...(1)...\n\nb) Hoa có bộ phận sinh sản đực hoặc cái được gọi là ...(2)...\n\nc) Sự chuyển hạt phấn đến đầu nhụy gọi là ...(3)...\n\nd) Sự kết hợp của giao tử đực và cái gọi là ...(4)...",
+      "o": [
+        "(1) sinh sản, (2) hoa đơn tính, (3) sự thụ phấn, (4) thụ tinh.",
+        "(1) sinh sản sinh dưỡng, (2) hoa đơn tính, (3) sự thụ phấn, (4) thụ tinh.",
+        "(1) sinh sản sinh dưỡng, (2) hoa lưỡng tính, (3) sự thụ phấn, (4) hợp tử.",
+        "(1) sinh sản, (2) hoa đơn tính, (3) sự thụ phấn, (4) hợp tử."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Lựa chọn đáp án đúng về quá trình sinh sản hữu tính ở thực vật.",
+      "o": [
+        "Hình thành giao tử đực và giao tử cái → Thụ phấn → Thụ tinh → Kết hạt, tạo quả.",
+        "Hình thành giao tử đực và giao tử cái → Thụ tinh → Thụ phấn → Kết hạt, tạo quả.",
+        "Hình thành giao tử đực và giao tử cái → Thụ phấn → Kết hạt, tạo quả → Thụ tinh.",
+        "Hình thành giao tử đực và giao tử cái → Kết hạt, tạo quả → Thụ phấn → Thụ tinh."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Hình ảnh dưới đây mô tả hình thức sinh sản nào ở thủy tức?",
+      "o": [
+        "Sinh sản vô tính bằng hình thức nảy chồi tách khỏi cơ thể mẹ.",
+        "Sinh sản vô tính bằng hình thức nảy chồi không tách khỏi cơ thể mẹ.",
+        "Sinh sản vô tính bằng hình thức trinh sản.",
+        "Sinh sản vô tính bằng hình thức phân mảnh."
+      ],
+      "img":"https://i.postimg.cc/pdWq59xt/image.png",
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Hình ảnh dưới đây mô tả hình thức sinh sản nào ở sao biển?",
+      "o": [
+        "Phân mảnh.",
+        "Trinh sản.",
+        "Nảy chồi.",
+        "Tái sinh."
+      ],
+      "img":"https://i.postimg.cc/vB175fNh/image.png",
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Hình ảnh dưới đây mô tả hình thức sinh sản nào ở nấm Penicillium?",
+      "o": [
+        "Sinh sản nảy chồi.",
+        "Sinh sản phân mảnh.",
+        "Sinh sản sinh dưỡng.",
+        "Sinh sản bằng bào tử."
+      ],
+      "img":"https://i.postimg.cc/xTPmJ6dN/image.png",
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Vì sao khi nhân giống cam, chanh, bưởi, hồng xiêm,... người ta thường chiết cành mà không sử dụng phương pháp giâm cành?",
+      "o": [
+        "Thời gian ra rễ của các cây trên rất chậm.",
+        "Những cây đó có giá trị kinh tế cao.",
+        "Cành của các cây đó quá to nên không giâm cành được.",
+        "Khả năng vận chuyển các chất dinh dưỡng của các cây này kém vì mạch gỗ nhỏ."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Chọn các từ/cụm từ phù hợp để hoàn thành đoạn thông tin về sinh sản hữu tính ở thực vật:\n\nGiao tử đực được hình thành trong ...(1)..., giao tử cái được hình thành trong ...(2)... Quá trình vận chuyển hạt phấn đến bầu nhụy là ...(3)... Thụ tinh là quá trình kết hợp giữa giao tử đực và giao tử cái tạo thành ...(4)... Bầu nhụy biến đổi thành quả chứa hạt, ...(5)... do noãn phát triển thành.",
+      "o": [
+        "(1) bao phấn; (2) bầu nhụy; (3) thụ phấn; (4) hợp tử; (5) hạt.",
+        "(1) thụ phấn; (2) bầu nhụy; (3) bao phấn; (4) hợp tử; (5) hạt.",
+        "(1) bầu nhụy; (2) bao phấn; (3) thụ phấn; (4) hợp tử; (5) hạt.",
+        "(1) bầu nhụy; (2) thụ phấn; (3) bao phấn; (4) hợp tử; (5) hạt."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Vì sao ở động vật, hình thức mang thai và sinh con sẽ giúp con non có tỉ lệ sống sót cao hơn hình thức đẻ trứng?",
+      "o": [
+        "Vì hợp tử được cung cấp chất dinh dưỡng hạn chế hơn trong trứng, được bảo vệ tốt hơn trước kẻ thù, có điều kiện nhiệt độ thích hợp cho sự phát triển.",
+        "Vì hợp tử được cung cấp chất dinh dưỡng liên tục, được bảo vệ tốt hơn trước kẻ thù, có điều kiện nhiệt độ thay đổi phù hợp với môi trường.",
+        "Vì hợp tử được cung cấp chất dinh dưỡng hạn chế hơn trong trứng, được bảo vệ tốt hơn trước kẻ thù, có điều kiện nhiệt độ thay đổi phù hợp với môi trường.",
+        "Vì hợp tử được cung cấp chất dinh dưỡng liên tục thay vì lượng chất dinh dưỡng hạn chế trong trứng, được bảo vệ tốt hơn trước kẻ thù, có điều kiện nhiệt độ thích hợp cho sự phát triển."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Sinh sản hữu tính ưu việt hơn sinh sản vô tính chủ yếu là",
+      "o": [
+        "tạo ra số lượng lớn cá thể trong một thế hệ.",
+        "tạo ra đời con đa dạng và có sức sống cao.",
+        "phôi được bảo vệ trong hạt và quả.",
+        "phôi được nuôi dưỡng bởi nội nhũ."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Bào tử ở thực vật mang bộ nhiễm sắc thể (NST)",
+      "o": [
+        "lưỡng bội và hình thành cây đơn bội.",
+        "đơn bội và hình thành cây lưỡng bội.",
+        "đơn bội và hình thành cây đơn bội.",
+        "lưỡng bội và hình thành cây lưỡng bội."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Trong phương pháp nhân giống bằng cành ghép, người ta buộc chặt cành ghép vào gốc ghép nhằm những mục đích nào sau đây?\n\n1. Dòng mạch gỗ dễ dàng vận chuyển từ gốc ghép lên cành ghép.\n\n2. Cành ghép không bị rơi.\n\n3. Cành ghép dễ ra rễ.\n\n4. Nước di chuyển từ gốc ghép lên cành ghép không bị chảy ra ngoài.\n\n5. Nhanh chóng hình thành cây mới.",
+      "o": [
+        "1, 2, 3, 4, 5.",
+        "1, 3, 4, 5.",
+        "1, 2, 4.",
+        "2, 3, 5."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Đặc điểm của bào tử là tạo được:",
+      "o": [
+        "nhiều cá thể của một thế hệ, được phát tán chỉ nhờ nước, đảm bảo mở rộng vùng phân bố của loài.",
+        "ít cá thể của một thế hệ, được phát tán nhờ gió, nước, đảm bảo mở rộng vùng phân bố của loài.",
+        "ít cá thể của một thế hệ, được phát tán chỉ nhờ gió, đảm bảo mở rộng vùng phân bố của loài.",
+        "nhiều cá thể của một thế hệ, được phát tán nhờ gió, nước, đảm bảo mở rộng vùng phân bố của loài."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Điều không đúng khi nói về hạt",
+      "o": [
+        "Hạt là noãn đã được thụ tinh phát triển thành.",
+        "Hợp tử trong hạt phát triển thành phôi.",
+        "Tế bào tam bội trong hạt phát triển thành nội nhũ.",
+        "Mọi hạt của thực vật có hoa đều có nội nhũ."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Các động vật lưỡng tính sinh sản theo kiểu giao phối thì duy trì cả cơ quan sinh dục đực và cơ quan sinh dục cái có lợi gì?",
+      "o": [
+        "Có thể chuyển sang tự thụ khi cần thiết.",
+        "Không có lợi cũng không có hại.",
+        "Vẫn đảm bảo hiệu quả sinh sản khi mật độ quần thể thấp.",
+        "Mỗi cơ thể đều có thể sinh ra hậu thế để duy trì sự tồn tại của loài."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Hình ảnh dưới đây mô tả quá trình sinh sản của trùng đế giày. Đây là hình thức",
+      "o": [
+        "sinh sản bằng hình thức nảy chồi.",
+        "sinh sản bằng hình thức phân đôi.",
+        "sinh sản bằng hình thức tiếp hợp.",
+        "sinh sản bằng hình thức phân mảnh."
+      ],
+      "img": "https://i.postimg.cc/8kRJ9ZMn/image.png",
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Trong các nhóm thực vật sau, nhóm nào là nhóm chỉ gồm hoa đơn tính?",
+      "o": [
+        "Hoa cải, hoa bưởi, hoa cam.",
+        "Hoa mướp, hoa bí, hoa ngô.",
+        "Hoa cải, hoa bí, hoa ngô.",
+        "Hoa mướp, hoa bí, hoa cam."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Dựa vào sự tham gia của yếu tố đực và yếu tố cái, sinh sản được phân thành",
+      "o": [
+        "2 loại.",
+        "3 loại.",
+        "4 loại.",
+        "5 loại."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Trong các hình thức sinh sản dưới đây, đâu không phải ví dụ về sinh sản vô tính?",
+      "o": [
+        "Sinh sản bằng bào tử của rêu.",
+        "Sinh sản bằng thân rễ ở cây rau má.",
+        "Sinh sản bằng củ ở gừng.",
+        "Sinh sản bằng hạt ở cây lúa."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Cho dữ liệu sau:\nGhép cột A với cột B sao cho phù hợp.",
+      "o": [
+        "1-a, 2-b, 3-c.",
+        "1-b, 2-c, 3-a.",
+        "1-b, 2-a, 3-c.",
+        "1-a, 2-c, 3-b."
+      ],
+      "c": 1,
+      "table": {
+        "headers": [
+          "Cột A",
+          "Cột B"
+        ],
+        "rows": [
+          [
+            "(1) Hoa",
+            "(a) là hoa có cả nhị và nhụy trên cùng một hoa"
+          ],
+          [
+            "(2) Hoa đơn tính",
+            "(b) là cơ quan sinh sản của thực vật có hoa"
+          ],
+          [
+            "(3) Hoa lưỡng tính",
+            "(c) là hoa chỉ có nhị hoặc nhụy trên cùng một hoa"
+          ]
+        ]
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Trong các nhóm thực vật sau, nhóm nào là nhóm chỉ gồm hoa lưỡng tính?",
+      "o": [
+        "Hoa cải, hoa bưởi, hoa cam.",
+        "Hoa mướp, hoa bí, hoa ngô.",
+        "Hoa cải, hoa bí, hoa ngô.",
+        "Hoa mướp, hoa bí, hoa cam."
+      ],
+      "c": 0
+    }
+  ]
+}
