@@ -268,7 +268,7 @@
         "Một, hai hay nhiều đơn chất.",
         "Không xác định được."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -279,7 +279,7 @@
         "hai nguyên tố hóa học trở lên.",
         "một phân tử."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -290,7 +290,7 @@
         "3 nguyên tố.",
         "4 nguyên tố."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -301,7 +301,7 @@
         "Số lượng nguyên tử trong phân tử.",
         "Nguyên tử cùng loại hay khác loại."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -312,7 +312,7 @@
         "đơn chất, hỗn hợp, hợp chất.",
         "đơn chất và hợp chất."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -323,7 +323,7 @@
         "(b), (d).",
         "(c), (e)."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -345,7 +345,7 @@
         "Khí chlorine do nguyên tố Cl tạo nên.",
         "Sodium chloride do nguyên tố Na và Cl tạo nên."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -356,7 +356,7 @@
         "218 amu.",
         "414 amu."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -389,7 +389,7 @@
         "(1), (2), (3): đơn chất.",
         "(2), (4): đơn chất."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -400,7 +400,7 @@
         "góp chung electron.",
         "chuyển proton từ nguyên tử này sang nguyên tử kia."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -411,7 +411,7 @@
         "cộng hóa trị.",
         "không liên kết."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -422,7 +422,7 @@
         "kim loại.",
         "phi kim."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -433,7 +433,7 @@
         "Các nguyên tố khí hiếm đều rất khó hoặc không kết hợp với nguyên tố khác thành hợp chất.",
         "Hợp chất tạo bởi các nguyên tố khí hiếm đều ở thể khí."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -444,7 +444,7 @@
         "nhường electron hoặc nhận electron để lớp electron ngoài cùng đạt trạng thái bền (có 8 electron).",
         "nhường electron hoặc nhận electron hoặc góp chung electron."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -455,7 +455,7 @@
         "phi kim.",
         "đơn chất."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -466,7 +466,7 @@
         "7 electron.",
         "8 electron."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -477,7 +477,7 @@
         "dùng chung electron.",
         "chuyển electron giữa các lớp."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -488,7 +488,7 @@
         "Các chất cộng hóa trị thường dễ bay hơi.",
         "Các chất cộng hóa trị thường có nhiệt độ nóng chảy cao hơn các chất ion."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -741,7 +741,7 @@
         "phi kim.",
         "tất cả đơn chất."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -752,7 +752,7 @@
         "phi kim.",
         "tất cả đơn chất."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -796,7 +796,7 @@
         "NH₃, H₂O, Na₂O, CH₄.",
         "K₂S, MgCl₂, Na₂O."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -807,7 +807,7 @@
         "liên kết giữa ion dương và ion âm.",
         "liên kết giữa các ion dương trong phân tử."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -818,7 +818,7 @@
         "7 electron.",
         "8 electron."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -829,7 +829,7 @@
         "CaO, KCl.",
         "SO₂, NaCl."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -840,7 +840,7 @@
         "Chất chỉ có liên kết cộng hoá trị là chất cộng hoá trị và luôn ở thể khí.",
         "Hợp chất có chứa kim loại thường là chất ion."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -851,7 +851,7 @@
         "Một số hợp chất có cả liên kết ion và liên kết cộng hoá trị.",
         "Ở điều kiện thường, hợp chất ở thể rắn là chất ion."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -862,7 +862,7 @@
         "Khi các chất ion và chất cộng hoá trị tan trong nước đều tạo dung dịch có khả năng dẫn điện được.",
         "Các chất ion luôn ở thể rắn."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -873,7 +873,7 @@
         "3.",
         "4."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -895,7 +895,7 @@
         "3.",
         "4."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -917,7 +917,7 @@
         "Công thức hoá học gồm kí hiệu hoá học của các nguyên tố và số lượng của các nguyên tố đó.",
         "Công thức hoá học biểu diễn thành phần nguyên tử tạo ra chất."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -928,7 +928,7 @@
         "3.",
         "6."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -939,7 +939,7 @@
         "2.",
         "4."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -950,7 +950,7 @@
         "KOH.",
         "Fe(OH)₃."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -961,7 +961,7 @@
         "Trong hợp chất, nguyên tố luôn có hóa trị bằng II.",
         "Trong hợp chất, nguyên tố N luôn có hóa trị bằng III."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -1225,7 +1225,7 @@
         "31,66%.",
         "38%."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -1258,7 +1258,7 @@
         "III.",
         "IV."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -1269,7 +1269,7 @@
         "SO",
         "S₂O."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -1291,7 +1291,7 @@
         "FeSO₄.",
         "FeCl₂."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -1302,7 +1302,7 @@
         "C luôn có hóa trị là IV.",
         "Cả A và B đều đúng."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -1313,7 +1313,7 @@
         "2.",
         "4."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -1324,7 +1324,7 @@
         "2.",
         "4."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -1335,7 +1335,7 @@
         "1 Ca, 1 N và 6 O.",
         "1 Ca, 2 N và 6 O."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -1357,7 +1357,7 @@
         "Từ 4 nguyên tố trở lên.",
         "Từ 1 nguyên tố."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -1368,7 +1368,7 @@
         "Chỉ từ 3 nguyên tố.",
         "Từ 2 nguyên tố trở lên."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -1379,7 +1379,7 @@
         "Chất trên do 3 nguyên tố là nhôm (aluminium), sulfur và oxygen tạo nên.",
         "Phân tử khối của aluminium sulfate bằng 278 amu."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -1390,7 +1390,7 @@
         "1 và 4.",
         "4 và 1."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -1401,7 +1401,7 @@
         "Fe, NO₂, H₂O.",
         "Cu(NO₃)₂, KCl, HCl."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -1412,7 +1412,7 @@
         "2 lần.",
         "64 lần."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -1423,7 +1423,7 @@
         "phi kim.",
         "kim loại."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -1434,7 +1434,7 @@
         "nguyên tử oxygen và nguyên tử hydrogen góp chung electron.",
         "nguyên tử oxygen và nguyên tử hydrogen góp chung proton."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -1445,7 +1445,7 @@
         "các đám mây electron.",
         "các electron hoá trị."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -1456,7 +1456,7 @@
         "phi kim.",
         "kim loại."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
