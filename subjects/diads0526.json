@@ -1,0 +1,137 @@
+{
+  "fullName": "ÔN ĐỊA Đ/S 6.5.26",
+  "questions": [
+    {
+      "type": "tf",
+      "q": "Trong các phát biểu sau, đâu là phát biểu đúng, đâu là phát biểu sai về đặc điểm đô thị hóa của châu Mỹ?",
+      "statements": [
+        "Các đô thị lớn của Bắc Mỹ tập trung chủ yếu ở phía nam hệ thống Ngũ Hồ và ven Đại Tây Dương.",
+        "Các đô thị nối tiếp nhau tạo thành hai dải siêu đô thị từ Niu-Oóc đến Oa-sinh-tơn và từ Môn-trê-an đến Si-ca-gô.",
+        "Vào sâu trong nội địa, các đô thị có quy mô càng lớn hơn.",
+        "Vào sâu trong nội địa, các đô thị tập trung dày đặc hơn."
+      ],
+      "answers": [true, false, false, false]
+    },
+    {
+      "type": "tf",
+      "q": "Trong các phát biểu sau, đâu là phát biểu đúng, đâu là phát biểu sai về vấn đề nhập cư vào Bắc Mỹ?",
+      "statements": [
+        "Từ thế kỉ XVI đến XIX, người châu Phi bị cưỡng bức di cư đến Bắc Mỹ để làm việc trong các đồn điền, hầm mỏ, công trình xây dựng.",
+        "Năm 2020, người nhập cư vào Bắc Mỹ chủ yếu đến từ châu Âu và châu Á.",
+        "Năm 2020, tỉ lệ người nhập cư từ châu Âu vào Bắc Mỹ tăng so với năm 1990.",
+        "Hoa Kỳ là quốc gia nhận người nhập cư lớn nhất thế giới."
+      ],
+      "answers": [true, false, false, true]
+    },
+    {
+      "type": "tf",
+      "q": "Trong các phát biểu sau, đâu là phát biểu đúng, đâu là phát biểu sai về đặc điểm dân cư Bắc Mỹ?",
+      "statements": [
+        "Dân cư Bắc Mỹ rất đa dạng về chủng tộc, bao gồm người Môn-gô-lô-it, Ơ-rô-pê-ô-ít và Nê-grô-it.",
+        "Trong quá trình chung sống, các nhóm chủng tộc ở Bắc Mỹ hoàn toàn không hoà huyết với nhau.",
+        "Năm 2020, dân số Bắc Mỹ đạt gần 370 triệu người.",
+        "Người nhập cư không có vai trò quan trọng đối với gia tăng dân số của khu vực."
+      ],
+      "answers": [true, false, true, false]
+    },
+    {
+      "type": "tf",
+      "q": "Trong các phát biểu sau, đâu là phát biểu đúng, đâu là phát biểu sai về tỉ lệ dân số đô thị ở Bắc Mỹ năm 2020?",
+      "statements": [
+        "Tỉ lệ dân số đô thị của Bắc Mỹ thấp hơn châu Âu.",
+        "Tỉ lệ dân số đô thị của Bắc Mỹ năm 2020 đạt gần 83%.",
+        "Năm 2020, Bắc Mỹ có hơn 300 triệu người sống ở khu vực đô thị.",
+        "Châu Phi có tỉ lệ dân số đô thị cao hơn châu Á năm 2020."
+      ],
+      "answers": [false, true, true, false]
+    },
+    {
+      "type": "tf",
+      "q": "Trong các phát biểu sau, đâu là phát biểu đúng, đâu là phát biểu sai về quá trình đô thị hoá ở Bắc Mỹ hiện nay?",
+      "statements": [
+        "Hiện nay, các đô thị phát triển nhanh nhất ở khu vực Đông Bắc Hoa Kỳ.",
+        "Quá trình đô thị hoá ở Bắc Mỹ gắn liền với quá trình công nghiệp hoá.",
+        "Hai siêu đô thị của Bắc Mỹ là Niu Oóc và Si-ca-gô.",
+        "Khu vực phía bắc Ca-na-đa và nội địa Bắc Mỹ có mật độ đô thị thưa thớt hơn."
+      ],
+      "answers": [false, true, false, true]
+    },
+    {
+      "type": "tf",
+      "q": "Trong các phát biểu sau đâu là phát biểu đúng, đâu là phát biểu sai khi nói về nguồn gốc dân cư Trung và Nam Mỹ?",
+      "statements": [
+        "Cư dân Trung và Nam Mỹ có nhiều nguồn gốc khác nhau.",
+        "Người Âu thuộc chủng tộc Môn-gô-lô-it.",
+        "Người Anh-điêng thuộc chủng tộc Ơ-rô-pê-ô-ít (chủ yếu đến từ Tây Ban Nha và Bồ Đào Nha).",
+        "Người gốc Phi thuộc chủng tộc Nê-grô-it."
+      ],
+      "answers": [true, false, false, true]
+    },
+    {
+      "type": "tf",
+      "q": "Trong các phát biểu sau đâu là phát biểu đúng, đâu là phát biểu sai khi nói về nguồn gốc dân cư Trung và Nam Mỹ?",
+      "statements": [
+        "Phần lớn dân cư Trung và Nam Mỹ là người lai do sự hợp huyết giữa người gốc Tây Ban Nha với người Bồ Đào Nha.",
+        "Phần lớn dân cư Trung và Nam Mỹ là người lai do sự hợp huyết giữa người gốc Phi với người Anh-điêng.",
+        "Sự hoà trộn này đã tạo nên nền văn hoá Mỹ La-tinh độc đáo.",
+        "Có sự tương đồng về dân cư và xã hội giữa các nước Trung và Nam Mỹ."
+      ],
+      "answers": [false, false, true, true]
+    },
+    {
+      "type": "tf",
+      "q": "Trong các phát biểu sau đâu là phát biểu đúng, đâu là phát biểu sai khi nói về vấn đề đô thị hóa ở Trung và Nam Mỹ?",
+      "statements": [
+        "Trung và Nam Mỹ là khu vực có tốc độ đô thị hóa chậm.",
+        "Trung và Nam Mỹ là khu vực có tốc độ đô thị hóa nhanh nhất thế giới.",
+        "Năm 2020, tỉ lệ dân đô thị là khoảng 50%.",
+        "Năm 2020, tỉ lệ dân đô thị là khoảng 80%."
+      ],
+      "answers": [false, true, false, true]
+    },
+    {
+      "type": "tf",
+      "q": "Trong các phát biểu sau đâu là phát biểu đúng, đâu là phát biểu sai khi nói về văn hóa Mỹ La-tinh?",
+      "statements": [
+        "Trước khi C. Cô-lôm-bô khám phá ra Tân thế giới, nền văn hóa ở Trung và Nam Mỹ chưa có sự đặc sắc.",
+        "Trước khi C. Cô-lôm-bô khám phá ra Tân thế giới, cư dân bản địa ở Trung và Nam Mỹ đã là chủ nhân của nhiều nền văn hoá cổ nổi tiếng.",
+        "Sau khi người Âu gốc Tây Ban Nha và Bồ Đào Nha sang xâm chiếm, sự pha trộn văn hoá của các tộc người đã hình thành ở Trung và Nam Mỹ một nền văn hoá Mỹ La-tinh độc đáo.",
+        "Ngôn ngữ chính là tiếng Anh."
+      ],
+      "answers": [false, true, true, false]
+    },
+    {
+      "type": "tf",
+      "q": "Trong các phát biểu sau đâu là phát biểu đúng, đâu là phát biểu sai khi nói về đặc điểm văn hóa Mỹ La-tinh?",
+      "statements": [
+        "Người dân Trung và Nam Mỹ sử dụng ngôn ngữ hệ La-tinh.",
+        "Tiếng Tây Ban Nha được sử dụng chủ yếu ở Bra-xin.",
+        "Tiếng Bồ Đào Nha được sử dụng chủ yếu ở Bra-xin.",
+        "Người dân Trung và Nam Mỹ chỉ sử dụng tiếng Bồ Đào Nha."
+      ],
+      "answers": [true, false, true, false]
+    },
+    {
+      "type": "tf",
+      "q": "Trong các phát biểu sau đâu là phát biểu đúng, đâu là phát biểu sai khi nói về đặc điểm của văn hóa Mỹ La-tinh?",
+      "statements": [
+        "Đa số các quốc gia sử dụng tiếng Bồ Đào Nha.",
+        "Đa số các quốc gia sử dụng tiếng Tây Ban Nha.",
+        "Nền văn hóa kém phong phú và đa dạng.",
+        "Sự kết hợp của các nền văn hóa trên thế giới với nền văn hóa bản địa đã tạo nên nền văn hóa Mỹ La-tinh đặc sắc, phong phú."
+      ],
+      "answers": [false, true, false, true]
+    },
+    {
+      "type": "tf",
+      "q": "Trong các phát biểu sau đâu là phát biểu đúng, đâu là phát biểu sai khi nói về vấn đề đô thị hóa ở Trung và Nam Mỹ?",
+      "statements": [
+        "Đô thị hóa mang tính chất tự phát.",
+        "Quá trình cải cách ruộng đất không triệt để là một trong những nguyên nhân dẫn đến đô thị hóa.",
+        "Quá trình cải cách ruộng đất không triệt để không phải là một trong những nguyên nhân dẫn đến đô thị hóa.",
+        "Đô thị hóa tự phát không gây sức ép về kinh tế - xã hội và môi trường."
+      ],
+      "answers": [true, true, false, false]
+    }
+  ]
+}
