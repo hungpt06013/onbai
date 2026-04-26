@@ -175,7 +175,7 @@
         "một vùng bóng tối tròn.",
         "một vùng tối hình bàn tay, xung quanh có viền mờ hơn."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -186,7 +186,7 @@
         "Mặt Trời bị che khuất và không thấy tia sáng nào của Mặt Trời.",
         "một phần Mặt Trời bị che khuất, phần còn lại là bóng nửa tối."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -208,7 +208,7 @@
         "song song.",
         "Cả A, B, C đều sai."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -230,7 +230,7 @@
         "Nhiệt năng.",
         "Năng lượng âm."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -241,7 +241,7 @@
         "Ánh sáng mặt trời làm pin quang điện hoạt động.",
         "Ánh sáng mặt trời làm nóng bếp mặt trời."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -252,7 +252,7 @@
         "Tia phản xạ luôn song song với tia tới.",
         "Góc hợp bởi tia tới và pháp tuyến bằng góc hợp bởi tia phản xạ và pháp tuyến."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -263,7 +263,7 @@
         "Ánh sáng chiếu đến mặt hồ gợn sóng.",
         "Ánh sáng chiếu đến tấm bạc láng, phẳng."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -274,7 +274,7 @@
         "Phản xạ ánh sáng là hiện tượng ánh sáng bị hắt trở lại môi trường cũ khi gặp bề mặt sần sùi.",
         "Phản xạ ánh sáng là hiện tượng ánh sáng bị hắt trở lại môi trường cũ khi gặp không khí."
       ],
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -285,7 +285,7 @@
         "phân kỳ.",
         "song song."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -296,7 +296,7 @@
         "song song.",
         "phân kỳ."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -308,7 +308,7 @@
         "song song hướng thẳng đứng xuống phía dưới."
       ],
       "img": "https://i.postimg.cc/D0wSqT0s/image.png",
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -320,7 +320,7 @@
         "140°."
       ],
       "img": "https://i.postimg.cc/j21SPnGT/image.png",
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -530,7 +530,7 @@
         "tăng thêm 20 cm.",
         "giảm đi 20 cm."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -541,7 +541,7 @@
         "3,2 m.",
         "1,6 m."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -563,7 +563,7 @@
         "Thanh sắt đặt trên bàn.",
         "Ti vi đang tắt."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -575,7 +575,7 @@
         "Kim nam châm bị lệch khỏi vị trí ban đầu."
       ],
       "img": "https://i.postimg.cc/mrrZXwRq/image.png",
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -610,7 +610,7 @@
         "A và B đều là cực Nam."
       ],
       "img": "https://i.postimg.cc/HW9KnCb0/image.png",
-      "c": 0
+      "c": 1
     },
     {
       "type": "mcq",
@@ -633,7 +633,7 @@
         "Gỗ",
         "Thép"
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -644,7 +644,7 @@
         "Nam châm.",
         "Kim tiêm"
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
@@ -655,7 +655,7 @@
         "Lực ma sát.",
         "Lực từ."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -666,7 +666,7 @@
         "Vùng nào các đường mạt sắt sắp xếp mau thì từ trường ở đó yếu.",
         "Các đường sức từ bên ngoài thanh nam châm luôn đi ra từ cực Bắc và đi vào cực Nam."
       ],
-      "c": 0
+      "c": 2
     },
     {
       "type": "mcq",
