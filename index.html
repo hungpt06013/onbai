@@ -746,7 +746,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
     const resultHome = document.getElementById('resultHome');
 
     // helpers
-    // processQuestionText: xử lý xuống hàng (\n) thành <br>
+    // processQuestionText: giữ lại để tương thích, không còn xử lý URL trong text
     function processQuestionText(text) {
       return text.replace(/\n/g, '<br>');
     }
@@ -1526,7 +1526,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
             questionArea.appendChild(qLabel);
 
             const qTitle = document.createElement('h3');
-            qTitle.className = 'text-lg font-semibold text-gray-800 mb-3';
+            qTitle.className = 'text-xl font-bold text-gray-800 mb-5';
             qTitle.innerHTML = processQuestionText(qObj.q);
             questionArea.appendChild(qTitle);
             questionArea.appendChild(buildQuestionExtras(qObj));
@@ -1575,7 +1575,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
           questionArea.appendChild(qLabel);
 
           const qTitle = document.createElement('h3');
-          qTitle.className = 'text-lg font-semibold text-gray-800 mb-3';
+          qTitle.className = 'text-xl font-bold text-gray-800 mb-5';
           qTitle.innerHTML = processQuestionText(qObj.q);
           questionArea.appendChild(qTitle);
           questionArea.appendChild(buildQuestionExtras(qObj));
@@ -2241,150 +2241,226 @@ btnRestart.addEventListener('click', () => {
     // nếu không có state để restore, renderQuiz() sẽ hiện subject screen mặc định
 
   </script>
-<!-- ===== SUPABASE ONLINE TRACKING ===== -->
+<!-- Firebase SDK - Di chuyển xuống đây -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+
 <script>
-// ===== SUPABASE CONFIG =====
-const SUPABASE_URL = 'https://wdvjeaykoqspohdjjbrk.supabase.co';
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndkdmplYXlrb3FzcG9oZGpqYnJrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcyNzU5MDgsImV4cCI6MjA5Mjg1MTkwOH0.7haSuO3niQgrMFkVR_vWO-w2pn7MChTuqEsgYe0ZIKM';
+// Cấu hình Firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyB0cL2gvBQHfz6oxrOVWDOR0h2xb822HDM",
+  authDomain: "bruh-68680.firebaseapp.com",
+  databaseURL: "https://bruh-68680-default-rtdb.firebaseio.com",
+  projectId: "bruh-68680",
+  storageBucket: "bruh-68680.firebasestorage.app",
+  messagingSenderId: "322108184836",
+  appId: "1:322108184836:web:f3a60b8fbd50ac1387d851"
+};
 
-// Tạo session ID duy nhất cho user này
-let sessionId = localStorage.getItem('sessionId');
-if (!sessionId) {
-  sessionId = 'session_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
-  localStorage.setItem('sessionId', sessionId);
+// Khai báo biến ở global scope
+let database, presenceRef, myPresenceRef;
+
+// Khởi tạo Firebase với error handling
+try {
+  firebase.initializeApp(firebaseConfig);
+  database = firebase.database();
+  presenceRef = database.ref('presence');
+  console.log('✅ Firebase đã khởi tạo thành công');
+} catch (error) {
+  console.error('❌ Lỗi khởi tạo Firebase:', error);
+  console.log('📌 Vui lòng kiểm tra:');
+  console.log('   1. Firebase Database Rules (phải allow read/write)');
+  console.log('   2. Database URL đúng chưa');
+  console.log('   3. Project ID đúng chưa');
 }
 
-console.log('✅ Supabase loaded. Session ID:', sessionId);
+// Tạo ID duy nhất cho TRÌNH DUYỆT
+let browserId = localStorage.getItem('browserId');
+if (!browserId) {
+  browserId = 'browser_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+  localStorage.setItem('browserId', browserId);
+}
 
-// ===== SUPABASE FUNCTIONS =====
+const tabId = 'tab_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+const tabsKey = 'activeTabs_' + browserId;
+let activeTabs = JSON.parse(localStorage.getItem(tabsKey) || '[]');
+activeTabs.push(tabId);
+localStorage.setItem(tabsKey, JSON.stringify(activeTabs));
 
-// Thêm user vào online_users table
-async function addToOnlineUsers() {
-  try {
-    const response = await fetch(`${SUPABASE_URL}/rest/v1/online_users`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${SUPABASE_KEY}`,
-        'apikey': SUPABASE_KEY,
-        'Prefer': 'return=minimal'
-      },
-      body: JSON.stringify({
-        session_id: sessionId
-      })
-    });
-
-    if (response.ok) {
-      console.log('✅ Đã thêm user vào online_users');
-    } else {
-      console.error('❌ Lỗi thêm user:', response.status, response.statusText);
-    }
-  } catch (error) {
-    console.error('❌ Lỗi kết nối Supabase:', error);
+// Kiểm tra presenceRef có khả dụng không
+if (!presenceRef) {
+  console.error('❌ presenceRef không khả dụng. Firebase chưa được khởi tạo đúng.');
+  const onlineCountEl = document.getElementById('onlineCount');
+  if (onlineCountEl) {
+    onlineCountEl.textContent = '?';
   }
-}
-
-// Lắng nghe số người online (polling every 2 seconds)
-function listenToOnlineUsers() {
-  setInterval(async () => {
-    try {
-      // Lấy các user online trong 5 phút gần đây
-      const fiveMinutesAgo = new Date(Date.now() - 5 * 60000).toISOString();
-      
-      const response = await fetch(
-        `${SUPABASE_URL}/rest/v1/online_users?created_at=gt.${fiveMinutesAgo}&select=id`,
-        {
-          headers: {
-            'Authorization': `Bearer ${SUPABASE_KEY}`,
-            'apikey': SUPABASE_KEY,
-            'Prefer': 'count=exact'
-          }
-        }
-      );
-
-      if (response.ok) {
-        const countHeader = response.headers.get('content-range');
-        const count = countHeader ? parseInt(countHeader.split('/')[1]) : 0;
-        
-        const onlineCountEl = document.getElementById('onlineCount');
-        if (onlineCountEl) {
-          onlineCountEl.textContent = count;
-        }
-        console.log('👥 Số người online:', count);
-      } else {
-        console.error('❌ Lỗi query:', response.status, response.statusText);
+} else {
+  myPresenceRef = presenceRef.child(browserId);
+  
+  // Chỉ set online nếu đây là tab đầu tiên
+  if (activeTabs.length === 1) {
+    myPresenceRef.set({
+      online: true,
+      timestamp: Date.now()
+    }).then(() => {
+      console.log('✅ Đã đăng ký online thành công');
+    }).catch(error => {
+      console.error('❌ Lỗi khi set presence:', error);
+      if (error.code === 'PERMISSION_DENIED') {
+        console.error('🚨 LỖI: Firebase Database Rules chưa cho phép write!');
+        console.log('📝 Hướng dẫn sửa:');
+        console.log('   1. Vào https://console.firebase.google.com');
+        console.log('   2. Chọn project "bruh-68680"');
+        console.log('   3. Vào Realtime Database > Rules');
+        console.log('   4. Đổi rules thành:');
+        console.log('      {');
+        console.log('        "rules": {');
+        console.log('          ".read": true,');
+        console.log('          ".write": true');
+        console.log('        }');
+        console.log('      }');
+        console.log('   5. Nhấn Publish');
       }
-    } catch (error) {
-      console.error('❌ Lỗi lấy online count:', error);
+    });
+  }
+
+  // Đánh dấu offline khi rời trang
+  myPresenceRef.onDisconnect().remove();
+
+  // Lắng nghe số người online với error handling
+  presenceRef.on('value', (snapshot) => {
+    const onlineUsers = snapshot.numChildren();
+    const onlineCountEl = document.getElementById('onlineCount');
+    if (onlineCountEl) {
+      onlineCountEl.textContent = onlineUsers;
+    }
+    console.log('👥 Số người online:', onlineUsers);
+  }, (error) => {
+    console.error('❌ Lỗi khi đọc presence data:', error);
+    if (error.code === 'PERMISSION_DENIED') {
+      console.error('🚨 LỖI: Firebase Database Rules chưa cho phép read!');
+      console.log('📝 Xem hướng dẫn sửa lỗi bên trên');
+      
+      // Hiển thị thông báo lỗi cho user
       const onlineCountEl = document.getElementById('onlineCount');
       if (onlineCountEl) {
         onlineCountEl.textContent = '?';
+        onlineCountEl.parentElement.title = 'Lỗi kết nối Firebase. Vui lòng kiểm tra Database Rules.';
       }
+    }
+  });
+
+  // Cleanup khi tắt tab
+  window.addEventListener('beforeunload', () => {
+    // Xóa tab này khỏi danh sách
+    let tabs = JSON.parse(localStorage.getItem(tabsKey) || '[]');
+    tabs = tabs.filter(id => id !== tabId);
+    localStorage.setItem(tabsKey, JSON.stringify(tabs));
+    
+    // Chỉ remove presence nếu không còn tab nào
+    if (tabs.length === 0 && myPresenceRef) {
+      myPresenceRef.remove();
+      localStorage.removeItem('browserId');
+      localStorage.removeItem(tabsKey);
+    }
+  });
+
+  // Heartbeat để cleanup các tab zombie
+  setInterval(() => {
+    if (!myPresenceRef) return;
+    
+    let tabs = JSON.parse(localStorage.getItem(tabsKey) || '[]');
+    // Giữ tab hiện tại trong danh sách
+    if (!tabs.includes(tabId)) {
+      tabs.push(tabId);
+      localStorage.setItem(tabsKey, JSON.stringify(tabs));
+    }
+    
+    // Cập nhật timestamp để giữ kết nối
+    if (tabs.length > 0) {
+      myPresenceRef.set({
+        online: true,
+        timestamp: Date.now()
+      });
+    }
+  }, 1000); // THỜI GIAN ĐỂ CẬP NHẬT SỐ NGƯỜI 
+
+  // Xử lý khi tab bị ẩn
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden && myPresenceRef) {
+      // Khi quay lại tab, đảm bảo presence vẫn còn
+      let tabs = JSON.parse(localStorage.getItem(tabsKey) || '[]');
+      if (tabs.length > 0) {
+        myPresenceRef.set({
+          online: true,
+          timestamp: Date.now()
+        });
+      }
+    }
+  });
+
+  // Function để clean up presence data cũ (chỉ xóa data quá 1 phút)
+  window.cleanupOldPresence = function() {
+    if (!presenceRef) {
+      console.error('presenceRef không khả dụng');
+      return;
+    }
+    presenceRef.once('value', (snapshot) => {
+      const now = Date.now();
+      const oneMinuteAgo = now - 10000;
+      
+      snapshot.forEach((childSnapshot) => {
+        const data = childSnapshot.val();
+        if (data && data.timestamp < oneMinuteAgo) {
+          childSnapshot.ref.remove();
+          console.log('Đã xóa presence cũ:', childSnapshot.key);
+        }
+      });
+      
+      console.log('✅ Đã dọn dẹp presence data cũ');
+    });
+  };
+
+  // Function reset toàn bộ (CHỈ dùng khi cần thiết)
+  window.resetOnlineCount = function() {
+    if (!firebase || !firebase.database) {
+      console.error('Firebase không khả dụng');
+      return;
+    }
+    
+    if (!confirm('⚠️ Thao tác này sẽ reset TẤT CẢ người online về 0. Bạn có chắc chắn?')) {
+      return;
+    }
+    
+    firebase.database().ref('presence').remove().then(() => {
+      console.log('Bước 1: Đã xóa toàn bộ presence data.');
+      
+      setTimeout(() => {
+        const browserId = localStorage.getItem('browserId');
+        if (browserId && myPresenceRef) {
+          myPresenceRef.set({
+            online: true,
+            timestamp: Date.now()
+          }).then(() => {
+            console.log('Bước 2: Đã đăng ký lại. Số người online sẽ hiển thị 1 sau vài giây.');
+          });
+        }
+      }, 1000);
+    }).catch(error => {
+      console.error('Lỗi:', error);
+    });
+  };
+
+  // Tự động cleanup presence data cũ khi tải trang
+  setTimeout(() => {
+    if (window.cleanupOldPresence) {
+      window.cleanupOldPresence();
     }
   }, 2000);
 }
 
-// Xóa user khỏi online_users khi rời trang
-async function removeFromOnlineUsers() {
-  try {
-    await fetch(
-      `${SUPABASE_URL}/rest/v1/online_users?session_id=eq.${sessionId}`,
-      {
-        method: 'DELETE',
-        headers: {
-          'Authorization': `Bearer ${SUPABASE_KEY}`,
-          'apikey': SUPABASE_KEY
-        }
-      }
-    );
-    console.log('✅ Đã xóa user khỏi online_users');
-  } catch (error) {
-    console.error('❌ Lỗi xóa user:', error);
-  }
-}
-
-// Reset tất cả online users (dùng khi cần thiết)
-window.resetOnlineCount = async function() {
-  if (!confirm('⚠️ Thao tác này sẽ reset TẤT CẢ người online về 0. Bạn có chắc chắn?')) {
-    return;
-  }
-  
-  try {
-    const response = await fetch(
-      `${SUPABASE_URL}/rest/v1/online_users`,
-      {
-        method: 'DELETE',
-        headers: {
-          'Authorization': `Bearer ${SUPABASE_KEY}`,
-          'apikey': SUPABASE_KEY
-        }
-      }
-    );
-    
-    if (response.ok) {
-      console.log('✅ Đã reset toàn bộ online count');
-      // Re-add current user
-      setTimeout(() => {
-        addToOnlineUsers();
-      }, 500);
-    }
-  } catch (error) {
-    console.error('❌ Lỗi reset:', error);
-  }
-};
-
-// ===== INIT ONLINE TRACKING =====
-(function initOnlineTracking() {
-  addToOnlineUsers();
-  listenToOnlineUsers();
-  
-  // Xóa user khi rời trang hoặc đóng tab
-  window.addEventListener('beforeunload', () => {
-    removeFromOnlineUsers();
-  });
-}());
-
 console.log('💡 Lệnh hữu ích:');
+console.log('   - cleanupOldPresence() : Xóa presence data cũ hơn 1 phút');
 console.log('   - resetOnlineCount() : Reset toàn bộ (cẩn thận!)');
 </script>
 
