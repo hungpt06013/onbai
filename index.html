@@ -748,7 +748,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
     // helpers
     // processQuestionText: giữ lại để tương thích, không còn xử lý URL trong text
     function processQuestionText(text) {
-      return text;
+      return text.replace(/\n/g, '<br>');
     }
 
     // buildQuestionExtras: render img và table từ các field riêng của question
