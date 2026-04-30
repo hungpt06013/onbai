@@ -1438,6 +1438,62 @@
         "Hoa mướp, hoa bí, hoa cam."
       ],
       "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Chọn chú thích đúng cho hình sau:\n\na. Lá non\nb. Mắt\nc. Tầng phát sinh\nd. Lóng\ne. Mô phân sinh đỉnh\n\nPhương án trả lời đúng là?",
+      "o": [
+        "1c, 2e, 3a, 4b, 5d",
+        "1c, 2a, 3e, 4b, 5d",
+        "1e, 2c, 3a, 4b, 5d",
+        "1b, 2e, 3a, 4c, 5d"
+      ],
+      "img": "https://i.postimg.cc/VLHKmhZq/image.png",
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Đâu không phải là hình thức sinh sản vô tính ở động vật?",
+      "o": [
+        "Trinh sinh",
+        "Nảy chồi",
+        "Hình thành bào tử",
+        "Phân mảnh"
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Nảy chồi là hình thức sinh sản có ở:",
+      "o": [
+        "bọt biển và ruột khoang",
+        "trùng roi và thủy tức",
+        "trùng đế giày và thủy tức",
+        "amip và trùng roi"
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Cho các phát biểu sau:\n\n(1) Giun dẹp sinh sản bằng hình thức phân mảnh\n(2) Thủy tức sinh sản bằng hình thức nảy chồi và phân mảnh\n(3) Bọt biển sinh sản bằng hình thức nảy chồi\n(4) Trùng biến hình sinh sản bằng phân đôi\n(5) Kiến sinh sản bằng phân đôi và trinh sinh\n(6) Ong sinh sản bằng hình thức trinh sinh\n\nTính đúng (Đ)/sai (S) trong các phát biểu trên là:",
+      "o": [
+        "1Đ, 2S, 3Đ, 4Đ, 5S, 6Đ",
+        "1Đ, 2S, 3S, 4Đ, 5Đ, 6Đ",
+        "1Đ, 2Đ, 3Đ, 4S, 5S, 6Đ",
+        "1S, 2S, 3Đ, 4Đ, 5S, 6Đ"
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Sinh sản vô tính ở động vật có các hình thức nào sau đây?",
+      "o": [
+        "Phân đôi, nảy chồi, phân mảnh, tái sinh",
+        "Phân đôi, nảy chồi, phân mảnh, trinh sinh",
+        "Phân đôi, tái sinh, bào tử, sinh dưỡng",
+        "Phân đôi, tiếp hợp, phân mảnh, tái sinh"
+      ],
+      "c": 1
     }
   ]
 }
