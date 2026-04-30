@@ -256,12 +256,12 @@
       "type": "mcq",
       "q": "Hoàn thành sơ đồ các giai đoạn sinh trưởng và phát triển của cây cam: Hạt → ....... → ....... → ....... → .......",
       "o": [
-        "Hạt nảy mầm → Cây non → Cây con → Cây trưởng thành.",
-        "Hạt nảy mầm → Cây con → Cây non → Cây trưởng thành.",
-        "Hạt nảy mầm → Cây non → Cây trưởng thành → Cây con.",
-        "Hạt nảy mầm → Cây con → Cây trưởng thành → Cây non."
+        "Hạt nảy mầm → Cây mầm → Cây con → Cây trưởng thành.",
+        "Hạt nảy mầm → Cây con → Cây mầm → Cây trưởng thành.",
+        "Hạt nảy mầm → Cây mầm → Cây non → Cây trưởng thành.",
+        "Hạt nảy mầm → Cây non → Cây mầm → Cây trưởng thành."
       ],
-      "c": 1
+      "c": 0
     },
     {
       "type": "mcq",
