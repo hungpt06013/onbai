@@ -2383,7 +2383,7 @@ if (!presenceRef) {
         timestamp: Date.now()
       });
     }
-  }, 1000); // THỜI GIAN ĐỂ CẬP NHẬT SỐ NGƯỜI 
+  }, 30000); // THỜI GIAN ĐỂ CẬP NHẬT SỐ NGƯỜI 
 
   // Xử lý khi tab bị ẩn
   document.addEventListener('visibilitychange', () => {
@@ -2407,7 +2407,7 @@ if (!presenceRef) {
     }
     presenceRef.once('value', (snapshot) => {
       const now = Date.now();
-      const oneMinuteAgo = now - 10000;
+      const oneMinuteAgo = now - 60000;
       
       snapshot.forEach((childSnapshot) => {
         const data = childSnapshot.val();
