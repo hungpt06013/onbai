@@ -518,14 +518,14 @@
     },
     {
       "type": "mcq",
-      "q": "Thời điểm ra hoa ở thực vật 1 năm có phản ứng quang chu kì được đánh giá theo",
+      "q": "Thời điểm ra hoa ở thực vật 1 năm có phản ứng quang chu kì trung tính được đánh giá theo",
       "o": [
         "chiều cao của thân.",
         "đường kính gốc.",
         "số lượng lá trên thân.",
         "cả A, B, C."
       ],
-      "c": 3
+      "c": 2
     },
     {
       "type": "mcq",
@@ -897,10 +897,10 @@
       "type": "mcq",
       "q": "Sinh sản hữu tính là",
       "o": [
-        "hình thức sinh sản có sự kết hợp yếu tố đực và yếu tố cái tạo nên hợp tử.",
-        "hình thức sinh sản có sự kết hợp của 2 yếu tố đực tạo nên hợp tử.",
-        "hình thức sinh sản có sự kết hợp của 2 yếu tố cái tạo nên hợp tử.",
-        "hình thức sinh sản có sự kết hợp của tế bào đực và tế bào cái tạo nên hợp tử."
+        "hình thức sinh sản có sự kết hợp của giao tử đực và giao tử cái tạo nên hợp tử, hợp tử phát triển thành cơ thể mới.",
+        "hình thức sinh sản có sự kết hợp của 2 giao tử đực tạo nên hợp tử, hợp tử phát triển thành cơ thể mới.",
+        "hình thức sinh sản có sự kết hợp của 2 giao tử cái tạo nên hợp tử, hợp tử phát triển thành cơ thể mới.",
+        "hình thức sinh sản có sự kết hợp của yếu tố đực và yếu tố cái tạo nên hợp tử, hợp tử phát triển thành cơ thể mới."
       ],
       "c": 0
     },
