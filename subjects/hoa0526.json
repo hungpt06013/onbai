@@ -1016,7 +1016,7 @@
         "3.",
         "4."
       ],
-      "c": 0
+      "c": 3
     },
     {
       "type": "mcq",
@@ -1300,7 +1300,7 @@
         "H luôn có hóa trị là I.",
         "O luôn có hóa trị là II.",
         "C luôn có hóa trị là IV.",
-        "Cả A và B đều đúng."
+        "Cả H luôn có hóa trị là I và O luôn có hóa trị là II đều đúng."
       ],
       "c": 3
     },
@@ -1666,6 +1666,17 @@
         "X₂Y₃."
       ],
       "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Có các phát biểu sau: (a) Trong hợp chất ion, kim loại luôn nhường electron, phi kim luôn nhận electron. (b) Để có 8 electron ở lớp vỏ ngoài cùng thì nguyên tử aluminium hoặc nhường 3 electron hoặc nhận 5 electron. (c) Liên kết trong hợp chất tạo bởi hydrogen và chlorine là liên kết ion. (d) Trong phân tử, hợp chất gồm các nguyên tố C, H, O chỉ có liên kết cộng hoá trị. (e) Khi tạo liên kết ion, nguyên tử chlorine chỉ tạo ion âm bằng cách nhận thêm 1 electron. Số phát biểu đúng là",
+      "o": [
+        "1.",
+        "2.",
+        "3.",
+        "4."
+      ],
+      "c": 3
     }
   ]
 }
