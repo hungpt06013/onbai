@@ -998,7 +998,7 @@
     },
     {
       "type": "mcq",
-      "q": "Cho kim loại X tạo ra hợp chất XSO₄. Biết phân tử khối là 120 amu. Biết nguyên tử khối S = 32 amu; O = 16 amu. Xác định tên kim loại X (chữ đầu câu hơi mờ)",
+      "q": "Cho kim loại X tạo ra hợp chất XSO₄. Biết phân tử khối là 120 amu. Biết nguyên tử khối S = 32 amu; O = 16 amu. Xác định tên kim loại X",
       "o": [
         "Magnesium (Mg = 24 amu).",
         "Copper (Cu = 64 amu).",
