@@ -1713,7 +1713,10 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
               if (singleQuestionMode) {
                 applySingleQuestionFilter(qi);
               } else {
-                target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                const header = document.getElementById('quizHeader');
+                const headerH = header ? header.getBoundingClientRect().height + 24 : 80;
+                const targetTop = target.getBoundingClientRect().top + window.scrollY - headerH;
+                window.scrollTo({ top: targetTop, behavior: 'smooth' });
               }
               // Close mobile drawer if open
               const overlay = document.getElementById('mobileNavOverlay');
@@ -2071,7 +2074,12 @@ btnRestart.addEventListener('click', () => {
       const target = document.getElementById('question-' + idx);
       if (target) {
         target.style.display = '';
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        requestAnimationFrame(() => {
+          const header = document.getElementById('quizHeader');
+          const headerH = header ? header.getBoundingClientRect().height + 24 : 80;
+          const targetTop = target.getBoundingClientRect().top + window.scrollY - headerH;
+          window.scrollTo({ top: targetTop, behavior: 'smooth' });
+        });
       }
     }
 
