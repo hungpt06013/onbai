@@ -298,6 +298,12 @@ body.dark #customQuestionCount {
 body.dark .apply-btn { background-color: #334155 !important; color: #93c5fd !important; }
 body.dark .apply-btn:hover { background-color: #475569 !important; }
 
+/* Image skeleton loading animation */
+@keyframes imgSkeleton {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
 /* Mobile inline nav: compact buttons, fully responsive to screen width */
 #questionNavGridMobile {
   display: grid !important;
@@ -759,12 +765,39 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
       if (q.img) {
         const srcs = Array.isArray(q.img) ? q.img : [q.img];
         srcs.forEach(src => {
+          // Wrapper để chứa skeleton + ảnh
+          const wrapper = document.createElement('div');
+          wrapper.className = 'my-3 mx-auto block';
+          wrapper.style.cssText = 'position:relative;max-width:100%;width:fit-content;';
+
+          // Skeleton placeholder hiện ngay, biến mất khi ảnh load xong
+          const skeleton = document.createElement('div');
+          skeleton.style.cssText = 'width:360px;max-width:100%;height:220px;border-radius:8px;background:linear-gradient(90deg,#e5e7eb 25%,#f3f4f6 50%,#e5e7eb 75%);background-size:200% 100%;animation:imgSkeleton 1.2s infinite;';
+          wrapper.appendChild(skeleton);
+
           const img = document.createElement('img');
-          img.src = src;
           img.alt = 'Hình minh họa';
-          img.className = 'max-w-full h-auto rounded-lg shadow-md my-3 mx-auto block';
-          img.style.maxHeight = '420px';
-          frag.appendChild(img);
+          img.className = 'max-w-full h-auto rounded-lg shadow-md mx-auto block';
+          img.style.cssText = 'max-height:420px;opacity:0;transition:opacity 0.25s ease;position:absolute;top:0;left:0;width:100%;height:auto;';
+          img.loading = 'eager'; // load ngay, không lazy vì đang hiển thị
+          img.decoding = 'async';
+
+          img.onload = () => {
+            // Ảnh load xong: ẩn skeleton, hiện ảnh
+            skeleton.style.display = 'none';
+            img.style.position = 'static';
+            img.style.width = 'auto';
+            img.style.opacity = '1';
+          };
+          img.onerror = () => {
+            skeleton.style.background = '#fee2e2';
+            skeleton.style.animation = 'none';
+            skeleton.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#b91c1c;font-size:13px;">⚠️ Không tải được ảnh</div>';
+          };
+
+          img.src = src;
+          wrapper.appendChild(img);
+          frag.appendChild(wrapper);
         });
       }
 
@@ -838,6 +871,20 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
         img: question.img || null
       };
       return newQ;
+    }
+
+    // Preload ảnh của câu kế tiếp để không bị chờ khi chuyển câu
+    function preloadQuestionImages(questions, currentIdx) {
+      const nextIdxList = [currentIdx + 1, currentIdx + 2]; // preload 2 câu tiếp
+      nextIdxList.forEach(ni => {
+        if (ni >= 0 && ni < questions.length && questions[ni].img) {
+          const srcs = Array.isArray(questions[ni].img) ? questions[ni].img : [questions[ni].img];
+          srcs.forEach(src => {
+            const p = new Image();
+            p.src = src;
+          });
+        }
+      });
     }
 
     // ===== TF GRID HELPERS (shared by full mode + random mode) =====
@@ -1672,6 +1719,19 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
           }
         };
 
+        // Preload ảnh câu tiếp theo trong random queue
+        function preloadNextRandomImage() {
+          const nextPos = randomQueuePos; // randomQueuePos đã tăng sau khi lấy câu hiện tại
+          if (nextPos < randomQueue.length) {
+            const nextIdx = randomQueue[nextPos];
+            const d = subjectData[currentSubject];
+            if (d && d.questions[nextIdx] && d.questions[nextIdx].img) {
+              const srcs = Array.isArray(d.questions[nextIdx].img) ? d.questions[nextIdx].img : [d.questions[nextIdx].img];
+              srcs.forEach(src => { const p = new Image(); p.src = src; });
+            }
+          }
+        }
+        preloadNextRandomImage();
         renderRandomQuestion();
 		}
 	}
