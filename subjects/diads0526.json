@@ -3,58 +3,113 @@
   "questions": [
     {
       "type": "tf",
-      "q": "Trong các phát biểu sau, đâu là phát biểu đúng, đâu là phát biểu sai về đặc điểm đô thị hóa của châu Mỹ?",
+      "q": "Xác định Đúng/Sai về các trung tâm kinh tế",
       "statements": [
-        "Các đô thị lớn của Bắc Mỹ tập trung chủ yếu ở phía nam hệ thống Ngũ Hồ và ven Đại Tây Dương.",
-        "Các đô thị nối tiếp nhau tạo thành hai dải siêu đô thị từ Niu-Oóc đến Oa-sinh-tơn và từ Môn-trê-an đến Si-ca-gô.",
-        "Vào sâu trong nội địa, các đô thị có quy mô càng lớn hơn.",
-        "Vào sâu trong nội địa, các đô thị tập trung dày đặc hơn."
+        "Bắc Mỹ không có nhiều trung tâm kinh tế lớn.",
+        "Các trung tâm kinh tế ở Bắc Mỹ có cơ cấu ngành kém đa dạng.",
+        "Phần lớn các trung tâm phân bố tập trung ở khu vực phía đông và đông bắc của Bắc Mỹ.",
+        "Trong những năm gần đây, các trung tâm kinh tế xuất hiện ngày càng nhiều ở phía nam và phía tây."
       ],
-      "answers": [true, false, false, false]
+      "answers": [false, false, true, true]
     },
     {
       "type": "tf",
-      "q": "Trong các phát biểu sau, đâu là phát biểu đúng, đâu là phát biểu sai về vấn đề nhập cư vào Bắc Mỹ?",
+      "q": "Xác định Đúng/Sai về thành phần chủng tộc",
       "statements": [
-        "Từ thế kỉ XVI đến XIX, người châu Phi bị cưỡng bức di cư đến Bắc Mỹ để làm việc trong các đồn điền, hầm mỏ, công trình xây dựng.",
-        "Năm 2020, người nhập cư vào Bắc Mỹ chủ yếu đến từ châu Âu và châu Á.",
-        "Năm 2020, tỉ lệ người nhập cư từ châu Âu vào Bắc Mỹ tăng so với năm 1990.",
-        "Hoa Kỳ là quốc gia nhận người nhập cư lớn nhất thế giới."
+        "Dân cư Bắc Mỹ có thành phần chủng tộc rất đa dạng do lịch sử nhập cư lâu dài.",
+        "Người Môn-gô-lô-it có nguồn gốc từ châu Âu.",
+        "Người Ơ-rô-pê-ô-it có nguồn gốc từ châu Á.",
+        "Các nhóm người lai được hình thành do quá trình hòa huyết giữa các chủng tộc chính."
       ],
       "answers": [true, false, false, true]
     },
     {
       "type": "tf",
-      "q": "Trong các phát biểu sau, đâu là phát biểu đúng, đâu là phát biểu sai về đặc điểm dân cư Bắc Mỹ?",
+      "q": "Xác định Đúng/Sai về quy mô dân số và nhập cư",
       "statements": [
-        "Dân cư Bắc Mỹ rất đa dạng về chủng tộc, bao gồm người Môn-gô-lô-it, Ơ-rô-pê-ô-ít và Nê-grô-it.",
-        "Trong quá trình chung sống, các nhóm chủng tộc ở Bắc Mỹ hoàn toàn không hoà huyết với nhau.",
-        "Năm 2020, dân số Bắc Mỹ đạt gần 370 triệu người.",
-        "Người nhập cư không có vai trò quan trọng đối với gia tăng dân số của khu vực."
+        "Vào năm 2020, tổng số dân của khu vực Bắc Mỹ đạt chính xác là 370 triệu người.",
+        "Việc gia tăng dân số ở Bắc Mỹ có sự đóng góp đáng kể từ nguồn gốc nhập cư.",
+        "Người nhập cư hầu như không có ảnh hưởng gì đến đời sống xã hội ở Bắc Mỹ.",
+        "Sự phát triển kinh tế và văn hóa ở khu vực này có vai trò quan trọng của người nhập cư."
+      ],
+      "answers": [false, true, false, true]
+    },
+    {
+      "type": "tf",
+      "q": "Xác định Đúng/Sai về lịch sử di cư giai đoạn sớm",
+      "statements": [
+        "Sau năm 1492, các chuyến thám hiểm của Tây Ban Nha, Anh, Pháp... thúc đẩy dòng di cư từ châu Âu vào Bắc Mỹ.",
+        "Từ thế kỉ XVI đến XIX, người châu Phi tự nguyện di cư đến Bắc Mỹ để tìm việc làm.",
+        "Người châu Phi đến Bắc Mỹ chủ yếu làm việc trong các đồn điền, hầm mỏ, công trình xây dựng.",
+        "Sau Chiến tranh thế giới thứ hai, Bắc Mỹ chỉ thu hút người nhập cư từ các nước châu Âu."
       ],
       "answers": [true, false, true, false]
     },
     {
       "type": "tf",
-      "q": "Trong các phát biểu sau, đâu là phát biểu đúng, đâu là phát biểu sai về tỉ lệ dân số đô thị ở Bắc Mỹ năm 2020?",
+      "q": "Xác định Đúng/Sai về xu hướng nhập cư hiện nay",
       "statements": [
-        "Tỉ lệ dân số đô thị của Bắc Mỹ thấp hơn châu Âu.",
-        "Tỉ lệ dân số đô thị của Bắc Mỹ năm 2020 đạt gần 83%.",
-        "Năm 2020, Bắc Mỹ có hơn 300 triệu người sống ở khu vực đô thị.",
-        "Châu Phi có tỉ lệ dân số đô thị cao hơn châu Á năm 2020."
+        "Trong những thập niên gần đây, người nhập cư vào Bắc Mỹ chủ yếu đến từ Trung Mỹ, Nam Mỹ và châu Á.",
+        "Hoa Kỳ là quốc gia nhận người nhập cư lớn nhất thế giới.",
+        "Các chuyến thám hiểm vào châu Mỹ sau năm 1492 không có sự tham gia của Hà Lan và Đan Mạch.",
+        "Lịch sử nhập cư của Bắc Mỹ gắn liền với các chuyến thám hiểm và nhu cầu lao động."
       ],
-      "answers": [false, true, true, false]
+      "answers": [true, true, false, true]
     },
     {
       "type": "tf",
-      "q": "Trong các phát biểu sau, đâu là phát biểu đúng, đâu là phát biểu sai về quá trình đô thị hoá ở Bắc Mỹ hiện nay?",
+      "q": "Xác định Đúng/Sai về quá trình đô thị hóa",
       "statements": [
-        "Hiện nay, các đô thị phát triển nhanh nhất ở khu vực Đông Bắc Hoa Kỳ.",
-        "Quá trình đô thị hoá ở Bắc Mỹ gắn liền với quá trình công nghiệp hoá.",
-        "Hai siêu đô thị của Bắc Mỹ là Niu Oóc và Si-ca-gô.",
-        "Khu vực phía bắc Ca-na-đa và nội địa Bắc Mỹ có mật độ đô thị thưa thớt hơn."
+        "Quá trình đô thị hóa ở Bắc Mỹ tách rời hoàn toàn với quá trình công nghiệp hóa.",
+        "Vùng ven Hồ Lớn và Đông Bắc Hoa Kỳ là những nơi khởi đầu quá trình đô thị hóa.",
+        "Dải đô thị từ Bô-xtơn đến Oa-sinh-tơn là một trong những khu vực tập trung nhiều đô thị lớn.",
+        "Hiện nay, dịch vụ và công nghệ cao là những động lực chính thúc đẩy đô thị hóa."
       ],
-      "answers": [false, true, false, true]
+      "answers": [false, true, true, true]
+    },
+    {
+      "type": "tf",
+      "q": "Xác định Đúng/Sai về tình hình phát triển đô thị",
+      "statements": [
+        "Các đô thị ở khu vực Tây Nam Hoa Kỳ hiện đang có tốc độ phát triển nhanh.",
+        "Do thiên nhiên không thuận lợi, đô thị ở phía bắc Ca-na-đa và vùng nội địa thường thưa thớt.",
+        "Năm 2020, tỉ lệ dân số đô thị của Bắc Mỹ đạt mức rất cao, gần 83%.",
+        "Bắc Mỹ hiện chỉ có hai siêu đô thị là Niu Oóc và Lốt An-giơ-lét."
+      ],
+      "answers": [true, true, true, false]
+    },
+    {
+      "type": "tf",
+      "q": "Xác định Đúng/Sai về cơ cấu nhập cư 1990 - 2020",
+      "statements": [
+        "Tỉ trọng người nhập cư từ Trung và Nam Mỹ luôn giữ vị trí đứng đầu và có xu hướng tăng.",
+        "Châu Âu là khu vực duy nhất có tỉ trọng người nhập cư giảm đáng kể trong giai đoạn này.",
+        "Người nhập cư từ châu Á ngày càng chiếm vị trí quan trọng trong cơ cấu nhập cư vào Bắc Mỹ.",
+        "Đến năm 2020, tỉ trọng người nhập cư từ châu Phi đã vượt qua tỉ trọng của châu Đại Dương."
+      ],
+      "answers": [true, true, true, false]
+    },
+    {
+      "type": "tf",
+      "q": "Xác định Đúng/Sai về phân bố đô thị (lược đồ)",
+      "statements": [
+        "Các đô thị ở Bắc Mỹ có sự phân bố không đồng đều giữa các khu vực.",
+        "Các đô thị lớn (trên 10 triệu người) chỉ tập trung ở khu vực nội địa của Hoa Kỳ.",
+        "Khu vực phía Bắc của Ca-na-đa tập trung rất ít đô thị lớn do điều kiện tự nhiên khắc nghiệt.",
+        "Ven Đại Tây Dương và vùng ven Hồ Lớn là nơi có mật độ đô thị dày đặc nhất."
+      ],
+      "answers": [true, false, true, true]
+    },
+    {
+      "type": "tf",
+      "q": "Xác định Đúng/Sai về tỉ lệ dân số đô thị thế giới",
+      "statements": [
+        "Bắc Mỹ là khu vực có tỉ lệ dân số đô thị cao nhất trong các khu vực được so sánh.",
+        "Tỉ lệ dân số đô thị của Bắc Mỹ cao gấp hơn hai lần so với tỉ lệ của châu Phi.",
+        "Các khu vực thuộc nhóm nước phát triển (Bắc Mỹ, châu Âu) đều có tỉ lệ dân số đô thị trên 70%.",
+        "Tỉ lệ dân số đô thị có xu hướng tỉ lệ thuận với mức độ phát triển kinh tế của các châu lục."
+      ],
+      "answers": [true, false, true, true]
     },
     {
       "type": "tf",
@@ -76,7 +131,7 @@
         "Sự hoà trộn này đã tạo nên nền văn hoá Mỹ La-tinh độc đáo.",
         "Có sự tương đồng về dân cư và xã hội giữa các nước Trung và Nam Mỹ."
       ],
-      "answers": [false, false, true, true]
+      "answers": [false, false, true, false]
     },
     {
       "type": "tf",
@@ -132,6 +187,94 @@
         "Đô thị hóa tự phát không gây sức ép về kinh tế - xã hội và môi trường."
       ],
       "answers": [true, true, false, false]
+    },
+    {
+      "type": "tf",
+      "q": "Khi nói về mật độ dân số và phân bố dân cư ở Trung và Nam Mỹ, phát biểu nào đúng, phát biểu nào sai?",
+      "statements": [
+        "Mật độ dân số ở vùng rìa A-ma-dôn đơn độc thấp, dân cư phân bố thưa thớt.",
+        "Trung và Nam Mỹ có mật độ dân số rất cao và đều đặn trên toàn lãnh thổ.",
+        "Năm 2020, mật độ dân số trung bình ở Trung và Nam Mỹ là 33 người/km².",
+        "Dân cư tập trung chủ yếu ở các vùng ven biển trong khi nội địa có mật độ dân số rất thấp."
+      ],
+      "answers": [true, false, true, true]
+    },
+    {
+      "type": "tf",
+      "q": "Dựa vào thông tin về quá trình đô thị hóa ở Trung và Nam Mỹ, phát biểu nào đúng, phát biểu nào sai?",
+      "statements": [
+        "Đô thị hóa ở Trung và Nam Mỹ là kết quả của sự phát triển kinh tế lành mạnh và có kế hoạch.",
+        "Những nguyên nhân chính dẫn đến đô thị hóa bao gồm: cải cách ruộng đất không triệt để, khí hậu khắc nghiệt, chất lượng cuộc sống không đảm bảo ở nông thôn.",
+        "Đô thị hóa tự phát không tạo ra bất kỳ vấn đề gì cho xã hội.",
+        "Một phần trăm lớn dân cư được lôi cuốn vào các thành phố lớn để tìm kiếm việc làm."
+      ],
+      "answers": [false, true, false, true]
+    },
+    {
+      "type": "tf",
+      "q": "Xét về phân bố của các thành phố lớn ở Trung và Nam Mỹ, phát biểu nào đúng, phát biểu nào sai?",
+      "statements": [
+        "Trung và Nam Mỹ có các đô thị lớn trên 10 triệu dân như Mê-hi-cô Xi-ti, Xao Pao-lô, Ri-ô de Gia-nê-rô.",
+        "Các thành phố lớn của Trung và Nam Mỹ phân bố đều đặn trên toàn bộ lãnh thổ.",
+        "Các đô thị lớn tập trung chủ yếu ở các nước Bra-xin, Mê-hi-cô và các vùng ven biển.",
+        "Vùng nội địa và các khu vực xa biển thường có nhiều thành phố lớn với dân số đông đúc."
+      ],
+      "answers": [true, false, true, false]
+    },
+    {
+      "type": "tf",
+      "q": "Dựa vào bản đồ phân bố dân cư ở Trung và Nam Mỹ, phát biểu nào đúng, phát biểu nào sai?",
+      "statements": [
+        "Dân cư Trung và Nam Mỹ có xu hướng tập trung ở các vùng ven biển Đại Tây Dương và Thái Bình Dương.",
+        "Vùng A-ma-dôn có mật độ dân số cao do điều kiện tự nhiên thuận lợi.",
+        "Phân bố dân cư không đều, với những khu vực dân cư dày đặc và những vùng hoang vắng.",
+        "Đối với Bra-xin, dân cư tập trung chủ yếu ở các vùng phía tây nội địa."
+      ],
+      "answers": [true, false, true, false]
+    },
+    {
+      "type": "tf",
+      "q": "Về các thành phố lớn Mê-hi-cô Xi-ti, Xao Pao-lô, Ri-ô de Gia-nê-rô, phát biểu nào đúng, phát biểu nào sai?",
+      "statements": [
+        "Mê-hi-cô Xi-ti là thủ đô của Mê-hi-cô và là một trong những siêu đô thị của Trung và Nam Mỹ.",
+        "Xao Pao-lô nằm ở Bra-xin và là thành phố có dân số lớn nhất Trung và Nam Mỹ.",
+        "Ri-ô de Gia-nê-rô là thủ đô của Bra-xin hiện nay.",
+        "Các thành phố này đều là những trung tâm kinh tế, chính trị và văn hóa quan trọng của khu vực."
+      ],
+      "answers": [true, true, false, true]
+    },
+    {
+      "type": "tf",
+      "q": "Khi xem xét vị trí địa lý của các quốc gia lớn trong Trung và Nam Mỹ, phát biểu nào đúng, phát biểu nào sai?",
+      "statements": [
+        "Bra-xin là quốc gia lớn nhất Trung và Nam Mỹ và nằm ở vùng trung tâm của khu vực.",
+        "Mê-hi-cô nằm ở Bắc Mỹ chứ không phải Trung Mỹ.",
+        "Các quốc gia Trung và Nam Mỹ đều có lãnh thổ tiếp giáp với Đại Tây Dương.",
+        "Pa-ra-guay và Bô-li-vi là những quốc gia có đặc điểm không có đường biển."
+      ],
+      "answers": [true, true, false, true]
+    },
+    {
+      "type": "tf",
+      "q": "Về văn hóa Mỹ La-tinh và các lễ hội truyền thống, phát biểu nào đúng, phát biểu nào sai?",
+      "statements": [
+        "Lễ hội Carnaval là một lễ hội truyền thống của người dân Bra-xin, thể hiện sự phong phú và đa dạng của nền văn hóa Mỹ La-tinh.",
+        "Các lễ hội ở Trung và Nam Mỹ chỉ mang tính chất tôn giáo Thiên chúa giáo.",
+        "Nền văn hóa Mỹ La-tinh không có sự ảnh hưởng từ các nền văn hóa bản địa cổ xưa.",
+        "Sự pha trộn giữa nền văn hóa Âu và nền văn hóa bản địa đã tạo nên những lễ hội và tập tục độc đáo ở Trung và Nam Mỹ."
+      ],
+      "answers": [true, false, false, true]
+    },
+    {
+      "type": "tf",
+      "q": "Về đặc điểm của lễ hội Carnival ở Bra-xin, phát biểu nào đúng, phát biểu nào sai?",
+      "statements": [
+        "Carnival là lễ hội lớn nhất ở Bra-xin được tổ chức với quy mô khổng lồ và thu hút hàng triệu người tham dự.",
+        "Các điệu nhạc ở Carnival như Tango, Salsa, Rumba, Cha-cha-cha phản ánh sự pha trộn các nền văn hóa.",
+        "Carnival chỉ có sự tham gia của người dân địa phương Bra-xin.",
+        "Lễ hội này biểu tượng cho sự sống động, phong phú và đa dạng của nền văn hóa Mỹ La-tinh."
+      ],
+      "answers": [true, true, false, true]
     }
   ]
 }
