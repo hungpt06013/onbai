@@ -6,7 +6,7 @@
       "q": "Xác định Đúng/Sai về đặc điểm đô thị hóa của châu Mỹ",
       "statements": [
         "Các đô thị lớn của Bắc Mỹ tập trung chủ yếu ở phía nam hệ thống Ngũ Hồ và ven Đại Tây Dương.",
-        "Các đô thị nối tiếp nhau tạo thành hai dải siêu đô thị từ Niu-Oóc đến Oa-sinh-tơn và từ Môn-trê-an đến Si-ca-gô.",
+        "Các đô thị nối tiếp nhau tạo thành hai dải siêu đô thị từ Bô-xtơn đến Oa-sinh-tơn và từ Môn-trê-an đến Si-ca-gô.",
         "Vào sâu trong nội địa, các đô thị có quy mô càng lớn hơn.",
         "Vào sâu trong nội địa, các đô thị tập trung dày đặc hơn."
       ],
@@ -252,7 +252,7 @@
         "Các quốc gia Trung và Nam Mỹ đều có lãnh thổ tiếp giáp với Đại Tây Dương.",
         "Pa-ra-guay và Bô-li-vi là những quốc gia có đặc điểm không có đường biển."
       ],
-      "answers": [true, true, false, true]
+      "answers": [true, false, false, true]
     },
     {
       "type": "tf",
