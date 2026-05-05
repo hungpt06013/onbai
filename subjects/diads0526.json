@@ -3,14 +3,14 @@
   "questions": [
     {
       "type": "tf",
-      "q": "Xác định Đúng/Sai về các trung tâm kinh tế",
+      "q": "Xác định Đúng/Sai về đặc điểm đô thị hóa của châu Mỹ",
       "statements": [
-        "Bắc Mỹ không có nhiều trung tâm kinh tế lớn.",
-        "Các trung tâm kinh tế ở Bắc Mỹ có cơ cấu ngành kém đa dạng.",
-        "Phần lớn các trung tâm phân bố tập trung ở khu vực phía đông và đông bắc của Bắc Mỹ.",
-        "Trong những năm gần đây, các trung tâm kinh tế xuất hiện ngày càng nhiều ở phía nam và phía tây."
+        "Các đô thị lớn của Bắc Mỹ tập trung chủ yếu ở phía nam hệ thống Ngũ Hồ và ven Đại Tây Dương.",
+        "Các đô thị nối tiếp nhau tạo thành hai dải siêu đô thị từ Niu-Oóc đến Oa-sinh-tơn và từ Môn-trê-an đến Si-ca-gô.",
+        "Vào sâu trong nội địa, các đô thị có quy mô càng lớn hơn.",
+        "Vào sâu trong nội địa, các đô thị tập trung dày đặc hơn."
       ],
-      "answers": [false, false, true, true]
+      "answers": [true, true, false, false]
     },
     {
       "type": "tf",
@@ -131,7 +131,7 @@
         "Sự hoà trộn này đã tạo nên nền văn hoá Mỹ La-tinh độc đáo.",
         "Có sự tương đồng về dân cư và xã hội giữa các nước Trung và Nam Mỹ."
       ],
-      "answers": [false, false, true, false]
+      "answers": [false, false, true, true]
     },
     {
       "type": "tf",
