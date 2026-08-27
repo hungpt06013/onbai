@@ -17,6 +17,7 @@
     })();
   </script>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
   <title>Ôn Tập Bài Học - Đa Môn</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
@@ -59,6 +60,18 @@ body.dark .bg-blue-50 { background-color: #1e3a5f !important; }
 body.dark .bg-green-50 { background-color: #1a3a2a !important; }
 body.dark .bg-red-50 { background-color: #3a1a1a !important; }
 body.dark .bg-yellow-50 { background-color: #3a2e0a !important; }
+body.dark .bg-orange-50 { background-color: #4a2a12 !important; }
+body.dark .border-orange-300 { border-color: #c2410c !important; }
+body.dark .text-orange-900 { color: #fdba74 !important; }
+/* Minigame (hằng đẳng thức): công thức hiển thị qua KaTeX phải tự set màu chữ,
+   không thể chỉ trông cậy vào kế thừa màu — nếu không sẽ rất mờ ở dark mode. */
+#mgPromptBox { color: #7c2d12; }
+#mgPromptBox .katex { color: inherit !important; }
+body.dark #mgPromptBox { background-color: #4a2a12 !important; color: #fdba74 !important; }
+#mgFeedback .katex { color: inherit !important; }
+body.dark input#mgAnswerInput { background: #252d3d; color: #e2e8f0; border-color: #4b5563; }
+body.dark input#mgAnswerInput::placeholder { color: #64748b; }
+body.dark #mgLivePreview .katex { color: inherit !important; }
 body.dark .border-yellow-300 { border-color: #854d0e !important; }
 body.dark .text-yellow-900 { color: #fef08a !important; }
 body.dark .text-yellow-800 { color: #fde047 !important; }
@@ -340,6 +353,12 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
     <div class="max-w-4xl mx-auto">
       <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
         <div class="bg-gradient-to-r from-blue-600 via-green-600 to-teal-600 p-8 text-white text-center relative">
+          <!-- Settings button top-right — nổi bật với border + shadow -->
+          <button id="settingsToggleBtn" onclick="toggleSettingsPanel()" class="absolute top-4 right-4 flex items-center gap-1.5 transition-all px-3 py-1.5 rounded-full text-sm font-bold backdrop-blur-sm" style="background:rgba(255,255,255,0.25);border:1.5px solid rgba(255,255,255,0.6);box-shadow:0 2px 10px rgba(0,0,0,0.15);letter-spacing:0.01em;">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><circle cx="12" cy="12" r="3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+            Cài đặt
+          </button>
+
           <div class="mb-4">
             <div class="inline-block bg-white/20 rounded-full p-4 backdrop-blur-sm">
               <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -349,6 +368,41 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
           </div>
           <h1 class="text-4xl font-bold mb-3">Ôn Tập Bài Học</h1>
           <p class="text-xl text-blue-100">Chọn lớp hoặc chế độ để bắt đầu</p>
+        </div>
+
+        <!-- Settings Panel (inline, below header) -->
+        <div id="settingsPanel" style="display:none;" class="border-b border-gray-200 px-8 py-5 bg-gray-50">
+          <div class="max-w-lg mx-auto flex flex-col gap-4">
+
+            <!-- Canh bao -->
+            <div>
+              <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Cảnh báo</div>
+              <div class="pl-1">
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input type="checkbox" id="warningToggle" class="w-4 h-4 accent-blue-500 cursor-pointer flex-shrink-0">
+                  <span class="text-sm font-medium text-gray-700 group-hover:text-gray-900">
+                    Cảnh báo khi nộp bài / thoát trang / reload
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Mobile nav -->
+            <div>
+              <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Điều hướng câu hỏi trên mobile</div>
+              <div class="flex flex-col gap-2 pl-1">
+                <label class="flex items-start gap-3 cursor-pointer group">
+                  <input type="radio" name="mobileNavStyle" id="mobileNavInlineOpt" value="inline" class="mt-0.5 w-4 h-4 accent-blue-500 cursor-pointer flex-shrink-0" checked>
+                  <span class="text-sm text-gray-700 group-hover:text-gray-900">Danh sách câu hỏi hiện <strong>bên dưới trang</strong></span>
+                </label>
+                <label class="flex items-start gap-3 cursor-pointer group">
+                  <input type="radio" name="mobileNavStyle" id="mobileNavDrawerOpt" value="drawer" class="mt-0.5 w-4 h-4 accent-blue-500 cursor-pointer flex-shrink-0">
+                  <span class="text-sm text-gray-700 group-hover:text-gray-900">Hiển thị nút <strong>⸬</strong> → danh sách câu hỏi hiện ở <strong>bên phải</strong></span>
+                </label>
+              </div>
+            </div>
+
+          </div>
         </div>
 
         <div class="p-8">
@@ -394,34 +448,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
     </div>
   </div>
 
-  <!-- LOP8 SCREEN: chưa có môn học -->
-  <div id="lop8Screen" class="hidden min-h-screen flex items-center justify-center">
-    <div class="max-w-lg mx-auto">
-      <div class="bg-white rounded-3xl shadow-2xl overflow-hidden text-center">
-        <div class="bg-gradient-to-r from-purple-600 to-fuchsia-700 p-8 text-white">
-          <div class="mb-4">
-            <div class="inline-block bg-white/20 rounded-full p-4 backdrop-blur-sm">
-              <svg class="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422A12.083 12.083 0 0121 12c0 2.21-.895 4.21-2.343 5.657m-4.114-3.114L12 14"/>
-              </svg>
-            </div>
-          </div>
-          <h1 class="text-3xl font-bold">Lớp 8</h1>
-        </div>
-        <div class="p-8">
-          <p class="text-gray-600 mb-6">Chưa có môn học nào cho lớp 8, quay lại sau nhé!</p>
-          <button id="lop8HomeBtn" class="inline-flex items-center gap-2 bg-gray-700 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors font-semibold">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3"/>
-            </svg>
-            Về trang chủ
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- LOP7 ROOT: chứa toàn bộ flow ôn tập môn học hiện có -->
+  <!-- LOP7/LOP8 ROOT: 1 flow ôn tập môn học dùng chung cho cả 2 lớp, lọc theo tiền tố id môn học -->
   <div id="lop7Root" class="hidden">
   <!-- SUBJECT SELECTION SCREEN -->
   <div id="subjectScreen" class="min-h-screen flex items-center justify-center">
@@ -435,11 +462,6 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
             </svg>
             Trang chủ
           </button>
-          <!-- Settings button top-right — nổi bật với border + shadow -->
-          <button id="settingsToggleBtn" onclick="toggleSettingsPanel()" class="absolute top-4 right-4 flex items-center gap-1.5 transition-all px-3 py-1.5 rounded-full text-sm font-bold backdrop-blur-sm" style="background:rgba(255,255,255,0.25);border:1.5px solid rgba(255,255,255,0.6);box-shadow:0 2px 10px rgba(0,0,0,0.15);letter-spacing:0.01em;">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><circle cx="12" cy="12" r="3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-            Cài đặt
-          </button>
 
           <div class="mb-4">
             <div class="inline-block bg-white/20 rounded-full p-4 backdrop-blur-sm">
@@ -448,43 +470,8 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
               </svg>
             </div>
           </div>
-          <h1 class="text-4xl font-bold mb-3">Ôn Tập Bài Học</h1>
-          <p class="text-xl text-blue-100">Chọn môn học để bắt đầu</p>
-        </div>
-
-        <!-- Settings Panel (inline, below header) -->
-        <div id="settingsPanel" style="display:none;" class="border-b border-gray-200 px-8 py-5 bg-gray-50">
-          <div class="max-w-lg mx-auto flex flex-col gap-4">
-
-            <!-- Canh bao -->
-            <div>
-              <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Cảnh báo</div>
-              <div class="pl-1">
-                <label class="flex items-center gap-3 cursor-pointer group">
-                  <input type="checkbox" id="warningToggle" class="w-4 h-4 accent-blue-500 cursor-pointer flex-shrink-0">
-                  <span class="text-sm font-medium text-gray-700 group-hover:text-gray-900">
-                    Cảnh báo khi nộp bài / thoát trang / reload
-                  </span>
-                </label>
-              </div>
-            </div>
-
-            <!-- Mobile nav -->
-            <div>
-              <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Điều hướng câu hỏi trên mobile</div>
-              <div class="flex flex-col gap-2 pl-1">
-                <label class="flex items-start gap-3 cursor-pointer group">
-                  <input type="radio" name="mobileNavStyle" id="mobileNavInlineOpt" value="inline" class="mt-0.5 w-4 h-4 accent-blue-500 cursor-pointer flex-shrink-0" checked>
-                  <span class="text-sm text-gray-700 group-hover:text-gray-900">Danh sách câu hỏi hiện <strong>bên dưới trang</strong></span>
-                </label>
-                <label class="flex items-start gap-3 cursor-pointer group">
-                  <input type="radio" name="mobileNavStyle" id="mobileNavDrawerOpt" value="drawer" class="mt-0.5 w-4 h-4 accent-blue-500 cursor-pointer flex-shrink-0">
-                  <span class="text-sm text-gray-700 group-hover:text-gray-900">Hiển thị nút <strong>⸬</strong> → danh sách câu hỏi hiện ở <strong>bên phải</strong></span>
-                </label>
-              </div>
-            </div>
-
-          </div>
+          <h1 id="classScreenTitle" class="text-4xl font-bold mb-3">Ôn Tập Bài Học</h1>
+          <p id="classScreenSubtitle" class="text-xl text-blue-100">Chọn môn học để bắt đầu</p>
         </div>
 
         <div class="p-8">
@@ -700,8 +687,49 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
   </div>
   </div><!-- end #lop7Root -->
 
-  <!-- MINIGAME ROOT -->
-  <div id="mgRoot" class="hidden">
+  <!-- MINIGAME PICKER: /minigame - chọn 1 trong các minigame -->
+  <div id="mgPickerScreen" class="hidden min-h-screen flex items-center justify-center">
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
+        <div class="bg-gradient-to-r from-orange-500 to-rose-600 p-8 text-white text-center relative">
+          <button id="mgPickerHomeBtn" class="absolute top-4 left-4 flex items-center gap-1.5 transition-all px-3 py-1.5 rounded-full text-sm font-bold backdrop-blur-sm" style="background:rgba(255,255,255,0.25);border:1.5px solid rgba(255,255,255,0.6);box-shadow:0 2px 10px rgba(0,0,0,0.15);letter-spacing:0.01em;">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3"/>
+            </svg>
+            Trang chủ
+          </button>
+          <div class="mb-4">
+            <div class="inline-block bg-white/20 rounded-full p-4 backdrop-blur-sm">
+              <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+          </div>
+          <h1 class="text-4xl font-bold mb-3">Minigame</h1>
+          <p class="text-xl text-orange-100">Chọn 1 minigame để chơi</p>
+        </div>
+
+        <div class="p-8">
+          <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <button id="mgPickHangDangThuc" class="group relative overflow-hidden bg-gradient-to-br from-orange-500 to-rose-600 text-white p-8 rounded-xl hover:from-orange-600 hover:to-rose-700 transition-all transform hover:scale-[1.02] shadow-lg">
+              <div class="relative z-10">
+                <div class="flex items-center justify-center mb-4">
+                  <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Hằng Đẳng Thức</h3>
+                <p class="text-white/70 text-sm">Kiểm tra 7 hằng đẳng thức đáng nhớ</p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MINIGAME: HẰNG ĐẲNG THỨC ROOT: /minigame/hangdangthuc -->
+  <div id="mgHDTRoot" class="hidden">
     <!-- MINIGAME MODE SELECT -->
     <div id="mgModeScreen" class="min-h-screen flex items-center justify-center">
       <div class="max-w-4xl mx-auto">
@@ -709,9 +737,9 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
           <div class="bg-gradient-to-r from-orange-500 to-rose-600 p-8 text-white text-center relative">
             <button id="mgHomeBtn" class="absolute top-4 left-4 flex items-center gap-1.5 transition-all px-3 py-1.5 rounded-full text-sm font-bold backdrop-blur-sm" style="background:rgba(255,255,255,0.25);border:1.5px solid rgba(255,255,255,0.6);box-shadow:0 2px 10px rgba(0,0,0,0.15);letter-spacing:0.01em;">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
-              Trang chủ
+              Đổi minigame
             </button>
             <div class="mb-4">
               <div class="inline-block bg-white/20 rounded-full p-4 backdrop-blur-sm">
@@ -820,12 +848,13 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
         </div>
       </div>
     </div>
-  </div><!-- end #mgRoot -->
+  </div><!-- end #mgHDTRoot -->
 
   <script>
     // === DATA: loaded dynamically from subjects/*.json ===
     const subjectData = {};
     let subjectsIndex = [];
+    let currentClassPrefix = null; // 'lop7' | 'lop8' - set by the router, filters subjectsIndex by id prefix
 
     // ============================================================
     // DYNAMIC SUBJECT LOADING
@@ -853,6 +882,8 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
         if (!raw) return;
         const state = JSON.parse(raw);
         if (!state.currentSubject) return;
+        // Bỏ qua nếu tiến trình đã lưu thuộc lớp khác với lớp đang xem
+        if (currentClassPrefix && !state.currentSubject.startsWith(currentClassPrefix + '_')) return;
         // Load data của môn cần restore trước
         await loadSubjectData(state.currentSubject);
         // Bây giờ subjectData đã có → gọi restore bình thường
@@ -860,10 +891,22 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
       } catch(e) {}
     }
 
+    function classLabel() { return currentClassPrefix === 'lop8' ? 'lớp 8' : 'lớp 7'; }
+
     function renderSubjectGrid() {
       const grid = document.getElementById('subjectGrid');
       if (!grid) return;
-      grid.innerHTML = subjectsIndex.map(s => `
+      const prefix = currentClassPrefix ? (currentClassPrefix + '_') : '';
+      const filtered = subjectsIndex.filter(s => s.id.startsWith(prefix));
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `<div class="md:col-span-3 text-center py-10">
+          <p class="text-gray-500">Chưa có môn học nào cho ${classLabel()}, quay lại sau nhé!</p>
+        </div>`;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(s => `
         <button data-subject-id="${s.id}"
           class="subject-card group relative overflow-hidden bg-gradient-to-br ${s.gradient} text-white p-8 rounded-xl ${s.hoverGradient} transition-all transform hover:scale-[1.02] shadow-lg">
           <div class="relative z-10">
@@ -889,7 +932,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
         });
       });
 
-      subjectsIndex.forEach(s => loadSubjectCount(s.id));
+      filtered.forEach(s => loadSubjectCount(s.id));
     }
 
     async function loadSubjectData(id) {
@@ -2892,8 +2935,8 @@ function expandNavDesktop() {
 document.addEventListener('DOMContentLoaded', () => {
   const route = getRoute();
   renderRoute();
-  if (route !== 'lop7') {
-    // lop7's loadSubjectsAndInit() reveals the page itself once data is ready;
+  if (route !== 'lop7' && route !== 'lop8') {
+    // lop7/lop8's loadSubjectsAndInit() reveals the page itself once data is ready;
     // every other route has nothing to fetch, so reveal right away.
     document.body.style.opacity = '1';
   }
@@ -2905,7 +2948,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </script>
 
-<!-- ===== ROUTER: /, /lop7, /lop8, /minigame ===== -->
+<!-- ===== ROUTER: /, /lop7, /lop8, /minigame, /minigame/hangdangthuc ===== -->
 <script>
   const BASE_PATH = '/onbai';
 
@@ -2915,11 +2958,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (path === '/lop7') return 'lop7';
     if (path === '/lop8') return 'lop8';
     if (path === '/minigame') return 'minigame';
+    if (path === '/minigame/hangdangthuc') return 'minigame-hangdangthuc';
     return 'home';
   }
 
   function routeToPath(route) {
-    return route === 'home' ? (BASE_PATH + '/') : (BASE_PATH + '/' + route);
+    if (route === 'home') return BASE_PATH + '/';
+    if (route === 'minigame-hangdangthuc') return BASE_PATH + '/minigame/hangdangthuc';
+    return BASE_PATH + '/' + route;
   }
 
   function navigate(route) {
@@ -2930,19 +2976,47 @@ document.addEventListener('DOMContentLoaded', () => {
     renderRoute();
   }
 
+  function updateClassScreenHeader() {
+    const label = classLabel();
+    const titleEl = document.getElementById('classScreenTitle');
+    const subtitleEl = document.getElementById('classScreenSubtitle');
+    if (titleEl) titleEl.textContent = 'Ôn Tập Bài Học - ' + label.replace(/^./, c => c.toUpperCase());
+    if (subtitleEl) subtitleEl.textContent = 'Chọn môn học ' + label + ' để bắt đầu';
+  }
+
+  function enterClassRoute(route) {
+    const changed = currentClassPrefix !== null && currentClassPrefix !== route;
+    currentClassPrefix = route;
+    if (changed) {
+      // Chuyển lớp giữa chừng: xóa state trong bộ nhớ của lớp cũ (không đụng localStorage,
+      // tiến trình đã lưu của lớp cũ vẫn còn nguyên khi quay lại).
+      currentSubject = null;
+      quizStarted = false;
+      quizCompleted = false;
+      randomModeStats = { totalAnswered: 0, totalCorrect: 0 };
+      randomQueue = []; randomQueuePos = 0; randomHistory = []; randomHistoryPos = null;
+    }
+    updateClassScreenHeader();
+    if (subjectsIndex.length === 0) {
+      loadSubjectsAndInit();
+    } else {
+      renderSubjectGrid();
+      if (!quizStarted) tryRestoreQuizState();
+      renderQuiz();
+    }
+  }
+
   function renderRoute() {
     const route = getRoute();
+    const isClassRoute = route === 'lop7' || route === 'lop8';
     document.getElementById('homeScreen').classList.toggle('hidden', route !== 'home');
-    document.getElementById('lop8Screen').classList.toggle('hidden', route !== 'lop8');
-    document.getElementById('lop7Root').classList.toggle('hidden', route !== 'lop7');
-    document.getElementById('mgRoot').classList.toggle('hidden', route !== 'minigame');
+    document.getElementById('lop7Root').classList.toggle('hidden', !isClassRoute);
+    document.getElementById('mgPickerScreen').classList.toggle('hidden', route !== 'minigame');
+    document.getElementById('mgHDTRoot').classList.toggle('hidden', route !== 'minigame-hangdangthuc');
     window.scrollTo(0, 0);
 
-    if (route === 'lop7') {
-      if (subjectsIndex.length === 0) loadSubjectsAndInit();
-      else renderQuiz();
-    }
-    if (route === 'minigame' && window.initMinigameScreen) {
+    if (isClassRoute) enterClassRoute(route);
+    if (route === 'minigame-hangdangthuc' && window.initMinigameScreen) {
       window.initMinigameScreen();
     }
   }
@@ -2953,7 +3027,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('homeBtnLop8').addEventListener('click', () => navigate('lop8'));
   document.getElementById('homeBtnMinigame').addEventListener('click', () => navigate('minigame'));
   document.getElementById('lop7HomeBtn').addEventListener('click', () => navigate('home'));
-  document.getElementById('lop8HomeBtn').addEventListener('click', () => navigate('home'));
 </script>
 
 <!-- ===== MATH ENGINE (parse + expand + compare polynomials in a, b; AST -> LaTeX) ===== -->
@@ -3487,7 +3560,9 @@ const MathEngine = (function () {
     mgStarted = false;
     navigate('home');
   });
-  document.getElementById('mgHomeBtn').addEventListener('click', () => navigate('home'));
+  document.getElementById('mgHomeBtn').addEventListener('click', () => navigate('minigame'));
+  document.getElementById('mgPickerHomeBtn').addEventListener('click', () => navigate('home'));
+  document.getElementById('mgPickHangDangThuc').addEventListener('click', () => navigate('minigame-hangdangthuc'));
 
   window.initMinigameScreen = function () {
     if (!mgKeypadBuilt) { buildMgKeypad(); mgKeypadBuilt = true; }

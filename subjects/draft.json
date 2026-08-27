@@ -1,0 +1,136 @@
+{
+  "fullName": "FILE MẪU - Hướng dẫn cấu trúc câu hỏi (không dùng để ôn tập)",
+  "questions": [
+    {
+      "type": "mcq",
+      "q": "1) Câu trắc nghiệm cơ bản (chỉ có q, o, c) - chọn 1 đáp án đúng trong 4 lựa chọn.",
+      "o": [
+        "Đáp án A",
+        "Đáp án B (đây là đáp án đúng, c=1 vì đếm từ 0)",
+        "Đáp án C",
+        "Đáp án D"
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "2) Câu trắc nghiệm có gợi ý (hint) và giải thích (explain).\nCó thể xuống dòng trong câu hỏi bằng \\n.",
+      "o": [
+        "Đáp án A (đúng, c=0)",
+        "Đáp án B",
+        "Đáp án C",
+        "Đáp án D"
+      ],
+      "c": 0,
+      "hint": "Đây là gợi ý sẽ hiện ra khi người dùng bấm nút Gợi ý (câu này sẽ không được tính điểm nếu dùng gợi ý).",
+      "explain": "Đây là phần giải thích hiện ra sau khi nộp bài/trả lời, giúp người dùng hiểu vì sao đáp án đúng là đáp án A."
+    },
+    {
+      "type": "mcq",
+      "q": "3) Câu trắc nghiệm có 1 hình ảnh minh họa (img là 1 chuỗi URL).",
+      "img": "https://i.postimg.cc/rm8XmyZR/image.png",
+      "o": [
+        "Đáp án A (đúng, c=0)",
+        "Đáp án B",
+        "Đáp án C",
+        "Đáp án D"
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "4) Câu trắc nghiệm có NHIỀU hình ảnh (img là 1 mảng các URL, hiện lần lượt từ trên xuống).",
+      "img": [
+        "https://i.postimg.cc/rm8XmyZR/image.png",
+        "https://i.postimg.cc/rm8XmyZR/image.png"
+      ],
+      "o": [
+        "Đáp án A",
+        "Đáp án B (đúng, c=1)",
+        "Đáp án C",
+        "Đáp án D"
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "5) Câu trắc nghiệm có bảng dữ liệu (table gồm headers và rows). Có thể để ô trống \"\" nếu ô đó gộp/không có nội dung.",
+      "table": {
+        "headers": ["Cột 1", "Cột 2", "Cột 3"],
+        "rows": [
+          ["Hàng 1 - ô 1", "Hàng 1 - ô 2", "Hàng 1 - ô 3"],
+          ["Hàng 2 - ô 1", "", "Hàng 2 - ô 3"]
+        ]
+      },
+      "o": [
+        "Đáp án A (đúng, c=0)",
+        "Đáp án B",
+        "Đáp án C",
+        "Đáp án D"
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "6) Câu trắc nghiệm dùng ĐẦY ĐỦ mọi trường cùng lúc: img + table + hint + explain.",
+      "img": "https://i.postimg.cc/rm8XmyZR/image.png",
+      "table": {
+        "headers": ["Quá trình", "Biểu hiện"],
+        "rows": [
+          ["(1) A", "(a) Mô tả A"],
+          ["(2) B", "(b) Mô tả B"]
+        ]
+      },
+      "o": [
+        "Đáp án A (đúng, c=0)",
+        "Đáp án B",
+        "Đáp án C",
+        "Đáp án D"
+      ],
+      "c": 0,
+      "hint": "Gợi ý cho câu kết hợp đầy đủ mọi trường.",
+      "explain": "Giải thích cho câu kết hợp đầy đủ mọi trường."
+    },
+    {
+      "type": "tf",
+      "q": "7) Câu Đúng/Sai với 1 mệnh đề duy nhất (statements chỉ có 1 phần tử -> không hiện nhãn a/b/c/d).",
+      "statements": [
+        "Đây là mệnh đề duy nhất cần xác định Đúng hay Sai."
+      ],
+      "answers": [
+        true
+      ]
+    },
+    {
+      "type": "tf",
+      "q": "8) Câu Đúng/Sai với đủ 4 mệnh đề (a, b, c, d) - mỗi mệnh đề đúng được tính 0.25 điểm.",
+      "statements": [
+        "Mệnh đề a - Đúng.",
+        "Mệnh đề b - Đúng.",
+        "Mệnh đề c - Sai.",
+        "Mệnh đề d - Sai."
+      ],
+      "answers": [
+        true,
+        true,
+        false,
+        false
+      ]
+    },
+    {
+      "type": "tf",
+      "q": "9) Câu Đúng/Sai có img + hint + explain, chỉ có 2 mệnh đề (a, b).",
+      "img": "https://i.postimg.cc/rm8XmyZR/image.png",
+      "statements": [
+        "Mệnh đề a - Đúng.",
+        "Mệnh đề b - Sai."
+      ],
+      "answers": [
+        true,
+        false
+      ],
+      "hint": "Gợi ý cho câu Đúng/Sai này.",
+      "explain": "Giải thích cho câu Đúng/Sai này, vì sao mệnh đề a đúng và mệnh đề b sai."
+    }
+  ]
+}
