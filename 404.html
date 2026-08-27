@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<title>Ôn Tập Bài Học</title>
+<script>
+  // Single Page Apps for GitHub Pages: https://github.com/rafgraph/spa-github-pages
+  // Encodes the real path into a query string on index.html, which decodes it
+  // back with history.replaceState() before the router reads window.location.
+  var pathSegmentsToKeep = 1; // keep '/onbai'
+  var l = window.location;
+  l.replace(
+    l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+    l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?p=/' +
+    l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+    (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+    l.hash
+  );
+</script>
+</head>
+<body></body>
+</html>
