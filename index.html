@@ -60,14 +60,11 @@ body.dark .bg-blue-50 { background-color: #1e3a5f !important; }
 body.dark .bg-green-50 { background-color: #1a3a2a !important; }
 body.dark .bg-red-50 { background-color: #3a1a1a !important; }
 body.dark .bg-yellow-50 { background-color: #3a2e0a !important; }
-body.dark .bg-orange-50 { background-color: #4a2a12 !important; }
-body.dark .border-orange-300 { border-color: #c2410c !important; }
-body.dark .text-orange-900 { color: #fdba74 !important; }
 /* Minigame (hằng đẳng thức): công thức hiển thị qua KaTeX phải tự set màu chữ,
    không thể chỉ trông cậy vào kế thừa màu — nếu không sẽ rất mờ ở dark mode. */
-#mgPromptBox { color: #7c2d12; }
+#mgPromptBox { color: #854d0e; }
 #mgPromptBox .katex { color: inherit !important; }
-body.dark #mgPromptBox { background-color: #4a2a12 !important; color: #fdba74 !important; }
+body.dark #mgPromptBox { background-color: #3a2e0a !important; color: #fde047 !important; }
 #mgFeedback .katex { color: inherit !important; }
 body.dark input#mgAnswerInput { background: #252d3d; color: #e2e8f0; border-color: #4b5563; }
 body.dark input#mgAnswerInput::placeholder { color: #64748b; }
@@ -691,7 +688,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
   <div id="mgPickerScreen" class="hidden min-h-screen flex items-center justify-center">
     <div class="max-w-4xl mx-auto">
       <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
-        <div class="bg-gradient-to-r from-orange-500 to-rose-600 p-8 text-white text-center relative">
+        <div class="bg-gradient-to-r from-yellow-500 to-orange-600 p-8 text-white text-center relative">
           <button id="mgPickerHomeBtn" class="absolute top-4 left-4 flex items-center gap-1.5 transition-all px-3 py-1.5 rounded-full text-sm font-bold backdrop-blur-sm" style="background:rgba(255,255,255,0.25);border:1.5px solid rgba(255,255,255,0.6);box-shadow:0 2px 10px rgba(0,0,0,0.15);letter-spacing:0.01em;">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3"/>
@@ -706,12 +703,12 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
             </div>
           </div>
           <h1 class="text-4xl font-bold mb-3">Minigame</h1>
-          <p class="text-xl text-orange-100">Chọn 1 minigame để chơi</p>
+          <p class="text-xl text-amber-100">Chọn 1 minigame để chơi</p>
         </div>
 
         <div class="p-8">
           <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <button id="mgPickHangDangThuc" class="group relative overflow-hidden bg-gradient-to-br from-orange-500 to-rose-600 text-white p-8 rounded-xl hover:from-orange-600 hover:to-rose-700 transition-all transform hover:scale-[1.02] shadow-lg">
+            <button id="mgPickHangDangThuc" class="group relative overflow-hidden bg-gradient-to-br from-yellow-500 to-orange-600 text-white p-8 rounded-xl hover:from-yellow-600 hover:to-orange-700 transition-all transform hover:scale-[1.02] shadow-lg">
               <div class="relative z-10">
                 <div class="flex items-center justify-center mb-4">
                   <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -734,7 +731,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
     <div id="mgModeScreen" class="min-h-screen flex items-center justify-center">
       <div class="max-w-4xl mx-auto">
         <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
-          <div class="bg-gradient-to-r from-orange-500 to-rose-600 p-8 text-white text-center relative">
+          <div class="bg-gradient-to-r from-yellow-500 to-orange-600 p-8 text-white text-center relative">
             <button id="mgHomeBtn" class="absolute top-4 left-4 flex items-center gap-1.5 transition-all px-3 py-1.5 rounded-full text-sm font-bold backdrop-blur-sm" style="background:rgba(255,255,255,0.25);border:1.5px solid rgba(255,255,255,0.6);box-shadow:0 2px 10px rgba(0,0,0,0.15);letter-spacing:0.01em;">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -749,7 +746,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
               </div>
             </div>
             <h1 class="text-4xl font-bold mb-3">Minigame: Hằng Đẳng Thức</h1>
-            <p class="text-xl text-orange-100">Chọn chế độ chơi</p>
+            <p class="text-xl text-amber-100">Chọn chế độ chơi</p>
           </div>
 
           <div class="p-8">
@@ -801,15 +798,15 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
               <span class="font-medium">Đổi chế độ</span>
             </button>
             <div id="mgProgressInfo" class="text-sm font-semibold text-gray-500"></div>
-            <div id="mgScoreInfo" class="text-lg font-bold text-orange-600"></div>
+            <div id="mgScoreInfo" class="text-lg font-bold text-amber-600"></div>
           </div>
 
-          <div class="text-sm font-bold text-orange-500 mb-2 uppercase tracking-wide">Điền vế còn lại của hằng đẳng thức</div>
-          <div id="mgPromptBox" class="text-2xl md:text-3xl text-center py-6 px-4 bg-orange-50 rounded-xl mb-6 overflow-x-auto"></div>
+          <div class="text-sm font-bold text-amber-600 mb-2 uppercase tracking-wide">Điền vế còn lại của hằng đẳng thức</div>
+          <div id="mgPromptBox" class="text-2xl md:text-3xl text-center py-6 px-4 bg-yellow-50 rounded-xl mb-6 overflow-x-auto"></div>
 
           <div class="mb-2 text-sm font-medium text-gray-700">Đáp án của bạn:</div>
           <input id="mgAnswerInput" type="text" autocomplete="off" spellcheck="false"
-            class="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-orange-500 focus:outline-none text-lg font-mono"
+            class="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-amber-500 focus:outline-none text-lg font-mono"
             placeholder="Nhập đáp án, vd: a^2+2ab+b^2" />
           <div id="mgLivePreview" class="min-h-[2.5rem] mt-2 px-2 text-lg text-gray-600"></div>
 
@@ -835,10 +832,10 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
             </svg>
           </div>
           <h2 class="text-3xl font-bold text-gray-800 mb-4">Hoàn thành bài test! 🎉</h2>
-          <div id="mgResultScoreLarge" class="text-6xl font-bold text-orange-600 mb-2">0/0</div>
+          <div id="mgResultScoreLarge" class="text-6xl font-bold text-amber-600 mb-2">0/0</div>
           <p id="mgResultPercent" class="text-xl text-gray-600 mb-6">Điểm số: 0%</p>
           <div class="flex flex-col gap-3 mt-8">
-            <button id="mgResultRestart" class="flex items-center justify-center gap-2 w-full bg-orange-600 text-white px-8 py-4 rounded-lg hover:bg-orange-700 transition-colors font-semibold text-lg">
+            <button id="mgResultRestart" class="flex items-center justify-center gap-2 w-full bg-amber-600 text-white px-8 py-4 rounded-lg hover:bg-amber-700 transition-colors font-semibold text-lg">
               Làm lại bài test
             </button>
             <button id="mgResultHome" class="flex items-center justify-center gap-2 w-full bg-gray-600 text-white px-8 py-4 rounded-lg hover:bg-gray-700 transition-colors font-semibold text-lg">
@@ -3393,10 +3390,10 @@ const MathEngine = (function () {
     btn.disabled = !enabled;
     if (enabled) {
       btn.classList.remove('cursor-not-allowed', 'bg-gray-300', 'text-gray-500');
-      btn.classList.add('bg-orange-600', 'text-white');
+      btn.classList.add('bg-amber-600', 'text-white');
     } else {
       btn.classList.add('cursor-not-allowed', 'bg-gray-300', 'text-gray-500');
-      btn.classList.remove('bg-orange-600', 'text-white');
+      btn.classList.remove('bg-amber-600', 'text-white');
     }
   }
 
