@@ -179,8 +179,8 @@
     },
     {
       "type": "mcq",
-      "q": "Quan sát cân như hình vẽ sau (một bên đặt 500ml nước, một bên đặt 500ml dầu):",
-      "img": "",
+      "q": "Quan sát cân như hình vẽ sau:",
+      "img": "https://i.postimg.cc/L87HLt6g/image.png",
       "o": [
         "Khối lượng riêng của nước nặng hơn dầu.",
         "Khối lượng riêng của dầu nặng hơn nước.",
@@ -231,7 +231,7 @@
         "997 kg/m³.",
         "995 kg/m³."
       ],
-      "c": 2
+      "c": 0
     },
     {
       "type": "mcq",
