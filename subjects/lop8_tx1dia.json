@@ -1,0 +1,478 @@
+{
+  "fullName": "TX1 ĐỊA - Bài 2 (đồi núi, đồng bằng)",
+  "questions": [
+    {
+      "type": "mcq",
+      "q": "Ở Việt Nam, địa hình đồi núi thấp (dưới 1 000 m) chiếm khoảng bao nhiêu diện tích phần đất liền?",
+      "o": [
+        "55%.",
+        "65%.",
+        "75%.",
+        "85%."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Các dãy núi ở Việt Nam có hai hướng chủ yếu nào?",
+      "o": [
+        "Tây Bắc - Đông Nam và Tây - Đông.",
+        "Tây Bắc - Đông Nam và vòng cung.",
+        "Tây - Đông và Đông Bắc - Tây Nam.",
+        "Vòng cung và Đông Bắc - Tây Nam."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Ở Việt Nam, đồi núi chiếm khoảng bao nhiêu diện tích phần đất liền?",
+      "o": [
+        "2/3 diện tích.",
+        "1/2 diện tích.",
+        "3/4 diện tích.",
+        "1/4 diện tích."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Ở Việt Nam, địa danh nào sau đây chủ yếu là địa hình cac-xtơ (đá vôi)?",
+      "o": [
+        "Cao nguyên Đồng Văn.",
+        "Cao nguyên Mộc Châu.",
+        "Cao nguyên Kon Tum.",
+        "Cao nguyên Mơ Nông."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Địa hình đồi núi Việt Nam được chia thành mấy vùng?",
+      "o": [
+        "2 vùng.",
+        "3 vùng.",
+        "4 vùng.",
+        "5 vùng."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "“Cao nguyên badan xếp tầng” phân bố chủ yếu ở vùng đồi núi nào của Việt Nam?",
+      "o": [
+        "Tây Bắc.",
+        "Đông Bắc.",
+        "Trường Sơn Bắc.",
+        "Trường Sơn Nam."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Đồng bằng sông Cửu Long (Việt Nam) có diện tích khoảng",
+      "o": [
+        "15 000 km².",
+        "25 000 km².",
+        "35 000 km².",
+        "40 000 km²."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Trong các đồng bằng duyên hải miền Trung Việt Nam, đồng bằng nào sau đây có diện tích lớn nhất?",
+      "o": [
+        "Đồng bằng Nghệ An.",
+        "Đồng bằng Thanh Hóa.",
+        "Đồng bằng Tuy Hòa.",
+        "Đồng bằng Quảng Nam."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Địa hình cao nhất Việt Nam phân bố chủ yếu ở vùng núi nào?",
+      "o": [
+        "Đông Bắc.",
+        "Tây Bắc.",
+        "Trường Sơn Bắc.",
+        "Trường Sơn Nam."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Vùng núi Tây Bắc (Việt Nam) nằm giữa hai con sông lớn nào?",
+      "o": [
+        "Sông Hồng và sông Mã.",
+        "Sông Cả và sông Mã.",
+        "Sông Đà và sông Lô.",
+        "Sông Hồng và sông Cả."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Địa hình vùng núi Tây Bắc (Việt Nam) không có đặc điểm nào sau đây?",
+      "o": [
+        "Phía đông là dãy núi cao và đồ sộ Hoàng Liên Sơn.",
+        "Phía tây là địa hình núi trung bình chạy dọc biên giới Việt – Lào.",
+        "Ở giữa thấp hơn, có các dãy núi, các sơn nguyên và cao nguyên.",
+        "Địa hình thấp với nhiều dãy núi hướng vòng cung."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Nét nổi bật của địa hình vùng núi Đông Bắc (Việt Nam) là",
+      "o": [
+        "Địa hình núi thấp chiếm phần lớn diện tích.",
+        "Có địa hình cao nhất nước ta.",
+        "Có 3 mạch núi lớn hướng tây bắc – đông nam.",
+        "Gồm các dãy núi liền kề với các cao nguyên."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "“Thấp và hẹp ngang, nâng cao ở hai đầu” là đặc điểm địa hình của vùng núi nào ở Việt Nam?",
+      "o": [
+        "Tây Bắc.",
+        "Đông Bắc.",
+        "Trường Sơn Bắc.",
+        "Trường Sơn Nam."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Vùng núi Trường Sơn Bắc (Việt Nam) kéo dài từ đâu đến đâu?",
+      "o": [
+        "Từ sông Mã tới dãy Hoành Sơn.",
+        "Từ phía nam sông Cả tới dãy Bạch Mã.",
+        "Từ phía nam sông Cả tới dãy Hoành Sơn.",
+        "Từ sông Hồng tới dãy Bạch Mã."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Địa hình vùng núi Trường Sơn Nam (Việt Nam) gồm chủ yếu",
+      "o": [
+        "các đồng bằng và đồi trung du.",
+        "các cao nguyên và đồi trung du.",
+        "các khối núi và cao nguyên.",
+        "các cao nguyên và đồng bằng."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Đồng bằng châu thổ nào có diện tích lớn nhất Việt Nam?",
+      "o": [
+        "Đồng bằng sông Hồng.",
+        "Đồng bằng sông Cửu Long.",
+        "Đồng bằng sông Mã.",
+        "Đồng bằng sông Cả."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Địa hình Đồng bằng sông Cửu Long có đặc điểm nào sau đây?",
+      "o": [
+        "Cao ở rìa phía tây và tây bắc, thấp dần ra biển, có các khu ruộng cao bạc màu.",
+        "Đồng bằng được khai thác từ lâu đời nên địa hình bề mặt đã bị biến đổi nhiều.",
+        "Trên bề mặt đồng bằng không có đê, có mạng lưới sông ngòi, kênh rạch chằng chịt.",
+        "Địa hình chia làm 3 dải: giáp biển là cồn cát, đầm phá; giữa là vùng thấp trũng; dải trong cùng được bồi tụ thành đồng bằng."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Đồng bằng sông Cửu Long có hai vùng trũng lớn là",
+      "o": [
+        "Tứ giác Long Xuyên và Đồng Tháp Mười.",
+        "Kiên Giang và Đồng Tháp Mười.",
+        "Cà Mau và Đồng Tháp Mười.",
+        "Tứ giác Long Xuyên và Cà Mau."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Địa hình Đồng bằng sông Hồng có đặc điểm nào sau đây?",
+      "o": [
+        "Hằng năm toàn bộ đồng bằng được hệ thống sông Hồng bồi đắp phù sa màu mỡ.",
+        "Địa hình thấp và bằng phẳng, không có đê, mạng lưới sông ngòi, kênh rạch chằng chịt.",
+        "Đồng bằng có các vùng trũng lớn, nhiều nơi chưa được bồi lấp xong.",
+        "Địa hình cao ở rìa phía tây và tây bắc, bề mặt bị chia cắt thành nhiều ô."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Ở miền núi Việt Nam thường xảy ra các loại thiên tai nào sau đây?",
+      "o": [
+        "Lũ nguồn, lũ quét, xói mòn, trượt lở đất.",
+        "Xói mòn, bão, ngập lụt, xâm nhập mặn.",
+        "Ngập lụt, cát chảy, cát bay, khô hạn.",
+        "Trượt lở đất, xâm nhập mặn, ngập lụt."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Đất ở dải đồng bằng ven biển miền Trung (Việt Nam) không có đặc điểm nào sau đây?",
+      "o": [
+        "Ít phù sa sông.",
+        "Lẫn nhiều cát.",
+        "Giàu chất dinh dưỡng.",
+        "Nghèo chất dinh dưỡng."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Khu vực đồi núi Việt Nam không có thế mạnh nào sau đây?",
+      "o": [
+        "Tập trung nhiều khoáng sản là nguyên liệu, nhiên liệu cho nhiều ngành công nghiệp.",
+        "Thuận lợi cho việc hình thành các vùng chuyên canh cây công nghiệp, cây ăn quả, chăn nuôi đại gia súc.",
+        "Có điều kiện để phát triển các loại hình du lịch tham quan, nghỉ dưỡng, nhất là du lịch sinh thái.",
+        "Địa hình bị chia cắt mạnh, lắm sông suối thuận lợi cho phát triển giao thông vận tải."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Địa hình vùng núi Tây Bắc và vùng núi Đông Bắc (Việt Nam) có đặc điểm giống nhau là",
+      "o": [
+        "Hướng nghiêng chung tây bắc – đông nam.",
+        "Núi cao chiếm ưu thế.",
+        "Núi thấp chiếm ưu thế.",
+        "Hướng núi vòng cung."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Tại sao nhiều vùng trong đê ở Đồng bằng sông Hồng không còn được bồi tụ phù sa?",
+      "o": [
+        "Sông ngòi khô hạn.",
+        "Có đê ven sông ngăn lũ.",
+        "Nước sông không có phù sa.",
+        "Chế độ nước sông thất thường."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Tại sao vùng ngoài đê của Đồng bằng sông Hồng có đất rất màu mỡ?",
+      "o": [
+        "Hệ số sử dụng đất cao.",
+        "Thường xuyên bị ngập nước.",
+        "Được bồi tụ phù sa hằng năm.",
+        "Được bón nhiều phân hóa học."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Đặc điểm nào sau đây không đúng với dải đồng bằng ven biển miền Trung (Việt Nam)?",
+      "o": [
+        "Được bồi đắp chủ yếu bởi phù sa sông.",
+        "Dài và hẹp ngang.",
+        "Giáp biển thường là cồn cát và đầm phá.",
+        "Bị chia cắt thành nhiều đồng bằng nhỏ bởi các mạch núi."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Một trong những thế mạnh về nông nghiệp của khu vực đồng bằng ở Việt Nam là",
+      "o": [
+        "Chăn nuôi đại gia súc.",
+        "Cây công nghiệp lâu năm.",
+        "Cây lương thực, cây thực phẩm.",
+        "Cây ăn quả cận nhiệt và ôn đới."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Nhận định nào sau đây không đúng về thế mạnh tự nhiên của khu vực đồng bằng Việt Nam đối với phát triển kinh tế - xã hội?",
+      "o": [
+        "Nguồn thủy năng dồi dào, khoáng sản phong phú, đa dạng.",
+        "Là cơ sở phát triển nền nông nghiệp nhiệt đới, đa dạng nông sản.",
+        "Thuận lợi phát triển giao thông vận tải đường bộ, đường sông.",
+        "Cung cấp các nguồn lợi thiên nhiên khác như: khoáng sản, thủy sản…"
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Tại sao miền núi Việt Nam có điều kiện thuận lợi để phát triển du lịch?",
+      "o": [
+        "Giao thông vận tải thuận lợi.",
+        "Cảnh quan thiên nhiên phong phú, đa dạng.",
+        "Nguồn nhân lực phục vụ du lịch dồi dào.",
+        "Khí hậu ổn định, ít thiên tai."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Khu vực đồi núi Việt Nam có thế mạnh nào sau đây?",
+      "o": [
+        "Cây lương thực, cây thực phẩm, chăn nuôi gia cầm.",
+        "Đánh bắt thủy hải sản, cây ăn quả, cây lương thực.",
+        "Khoáng sản, thủy điện, nông lâm nghiệp, du lịch.",
+        "Nhiệt điện, cây rau đậu, đánh bắt thủy hải sản."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Đồng bằng nào ở Việt Nam tiếp giáp vịnh Bắc Bộ?",
+      "o": [
+        "Đồng bằng sông Cửu Long.",
+        "Đồng bằng sông Hồng.",
+        "Các đồng bằng duyên hải miền Trung.",
+        "Đáp án khác."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Ở Việt Nam, địa hình chuyển tiếp giữa vùng núi, cao nguyên Trường Sơn Nam với đồng bằng Nam Bộ là",
+      "o": [
+        "Núi thấp.",
+        "Bán bình nguyên Đông Nam Bộ.",
+        "Trung du.",
+        "Đáp án khác."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Ở Việt Nam, địa hình các-xtơ khá phổ biến, có những cảnh quan đẹp như vùng hồ Ba Bể, vịnh Hạ Long là đặc điểm địa hình của vùng nào?",
+      "o": [
+        "Vùng núi Tây Bắc.",
+        "Vùng núi Đông Bắc.",
+        "Vùng núi Trường Sơn Bắc.",
+        "Vùng núi Trường Sơn Nam."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Vùng núi Trường Sơn Nam (Việt Nam) nằm ở đâu?",
+      "o": [
+        "Giữa sông Hồng và sông Cả.",
+        "Từ phía nam sông Cả tới dãy Bạch Mã (dài khoảng 600 km).",
+        "Phía nam dãy Bạch Mã, chủ yếu ở Tây Nguyên, Duyên hải Nam Trung Bộ và một phần Đông Nam Bộ.",
+        "Tả ngạn sông Hồng đến biên giới phía Bắc."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Vùng núi Đông Bắc (Việt Nam) nằm ở đâu?",
+      "o": [
+        "Giữa sông Hồng và sông Cả.",
+        "Từ phía nam sông Cả tới dãy Bạch Mã (dài khoảng 600 km).",
+        "Phía nam dãy Bạch Mã, chủ yếu ở Tây Nguyên, Duyên hải Nam Trung Bộ và một phần Đông Nam Bộ.",
+        "Tả ngạn sông Hồng đến biên giới phía Bắc."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Địa hình đồng bằng Việt Nam có đặc điểm gì?",
+      "o": [
+        "Chiếm khoảng 1/4 diện tích phần đất liền.",
+        "Chia thành nhiều khu vực.",
+        "Dải đồng bằng duyên hải miền Trung bị đồi núi ngăn cách thành nhiều đồng bằng nhỏ.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Đồi núi Việt Nam chạy dài khoảng 1 400 km, từ đâu đến đâu?",
+      "o": [
+        "Từ Tây Bắc tới Nam Bộ.",
+        "Từ Tây Bắc tới Tây Nguyên.",
+        "Từ Tây Bắc tới Đông Nam Bộ.",
+        "Từ Đông Bắc tới Đông Nam Bộ."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Ở Việt Nam, địa hình núi cao trên 2 000 m chỉ chiếm khoảng bao nhiêu diện tích cả nước?",
+      "o": [
+        "10% diện tích.",
+        "15% diện tích.",
+        "1% diện tích.",
+        "5% diện tích."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Núi Ngọc Linh (2 598 m) thuộc vùng núi nào của Việt Nam?",
+      "o": [
+        "Trường Sơn Bắc.",
+        "Trường Sơn Nam.",
+        "Hoàng Liên Sơn.",
+        "Tất cả các ý còn lại đều sai."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Dãy núi nào sau đây ở Việt Nam chạy theo hướng vòng cung?",
+      "o": [
+        "Dãy Ngân Sơn.",
+        "Dãy Bắc Sơn.",
+        "Dãy Đông Triều.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Các dãy núi hướng tây bắc – đông nam của Việt Nam tập trung chủ yếu ở các vùng núi nào?",
+      "o": [
+        "Tây Bắc, Trường Sơn Bắc, Trường Sơn Nam.",
+        "Tây Bắc, Trường Sơn Bắc.",
+        "Đông Bắc, Trường Sơn Bắc, Trường Sơn Nam.",
+        "Đông Bắc, Tây Bắc, Trường Sơn Bắc."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Dãy núi nào sau đây ở Việt Nam chạy theo hướng tây bắc – đông nam?",
+      "o": [
+        "Dãy Hoàng Liên Sơn.",
+        "Dãy Trường Sơn (Trường Sơn Bắc).",
+        "Dãy Pu Đen Đinh.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Đồng bằng nào ở Việt Nam tiếp giáp vịnh Thái Lan?",
+      "o": [
+        "Đồng bằng sông Cửu Long.",
+        "Đồng bằng sông Hồng.",
+        "Các đồng bằng duyên hải miền Trung.",
+        "Đáp án khác."
+      ],
+      "c": 0
+    }
+  ]
+}
