@@ -1,0 +1,893 @@
+{
+  "fullName": "TX1 HÓA - Bài 1, 2 KHTN",
+  "questions": [
+    {
+      "type": "mcq",
+      "q": "Quan sát hình các dụng cụ thí nghiệm. Hình 1 là hình ảnh của dụng cụ thí nghiệm nào?",
+      "img": "",
+      "o": [
+        "Ống nghiệm.",
+        "Cốc thuỷ tinh.",
+        "Bình nón.",
+        "Phễu lọc."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Quan sát hình các dụng cụ thí nghiệm. Hình 2 là hình ảnh của dụng cụ thí nghiệm nào?",
+      "img": "",
+      "o": [
+        "Ống nghiệm.",
+        "Cốc thuỷ tinh.",
+        "Bình nón.",
+        "Phễu lọc."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Quan sát hình các dụng cụ thí nghiệm. Hình 3 là hình ảnh của dụng cụ thí nghiệm nào?",
+      "img": "",
+      "o": [
+        "Ống nghiệm.",
+        "Ống nhỏ giọt.",
+        "Bình nón.",
+        "Phễu lọc."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Quan sát hình các dụng cụ thí nghiệm. Hình 4 là hình ảnh của dụng cụ thí nghiệm nào?",
+      "img": "",
+      "o": [
+        "Ống nghiệm.",
+        "Cốc thuỷ tinh.",
+        "Bình nón.",
+        "Phễu lọc."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Quan sát hình các dụng cụ thí nghiệm. Hình 5 là hình ảnh của dụng cụ thí nghiệm nào?",
+      "img": "",
+      "o": [
+        "Ống nghiệm.",
+        "Lọ thuỷ tinh.",
+        "Bình tam giác.",
+        "Phễu lọc."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Quan sát hình các dụng cụ thí nghiệm. Hình 6 là hình ảnh của dụng cụ thí nghiệm nào?",
+      "img": "",
+      "o": [
+        "Ống nghiệm.",
+        "Cốc thuỷ tinh.",
+        "Bình nón.",
+        "Ống đong."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Quan sát hình các dụng cụ thí nghiệm. Dụng cụ như hình 7 có tên là gì?",
+      "img": "",
+      "o": [
+        "Bếp điện.",
+        "Kiềng đun.",
+        "Đèn cồn.",
+        "Lọ thủy tinh."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Quan sát hình các dụng cụ thí nghiệm. Dụng cụ như hình 8 có tên là gì?",
+      "img": "",
+      "o": [
+        "Giá thí nghiệm.",
+        "Ống nghiệm.",
+        "Giá để ống nghiệm.",
+        "Cốc đong."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Ở điều kiện thường, sulfur (S) ở trạng thái gì?",
+      "o": [
+        "Rắn.",
+        "Lỏng.",
+        "Khí.",
+        "Dung dịch."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Cồn được xếp vào nhóm hóa chất",
+      "o": [
+        "Dễ cháy.",
+        "Nguy hiểm.",
+        "Khó cháy.",
+        "An toàn."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Sulfuric acid (H₂SO₄) được xếp vào nhóm hóa chất",
+      "o": [
+        "Dễ cháy.",
+        "Nguy hiểm.",
+        "Khó cháy.",
+        "An toàn."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Dụng cụ đo thể tích chất lỏng là?",
+      "o": [
+        "Cốc đong.",
+        "Ống đong.",
+        "Bình tam giác.",
+        "Cả cốc đong, ống đong và bình tam giác."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Công dụng của bình thủy tinh có nút nhám là",
+      "o": [
+        "đo khối lượng.",
+        "đo thể tích.",
+        "bảo quản hóa chất.",
+        "đun nóng."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Công dụng của thìa thủy tinh là",
+      "o": [
+        "đo khối lượng.",
+        "lấy hóa chất rắn.",
+        "cố định ống nghiệm.",
+        "đun nóng."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Công dụng của ống nghiệm là",
+      "o": [
+        "chứa hóa chất thí nghiệm.",
+        "cố định ống nghiệm.",
+        "đun nóng hóa chất.",
+        "bảo quản hóa chất."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Công dụng của đèn cồn là",
+      "o": [
+        "chứa hóa chất thí nghiệm.",
+        "cố định ống nghiệm.",
+        "đun nóng hóa chất.",
+        "bảo quản hóa chất."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Khi làm thí nghiệm, dùng cặp gỗ để kẹp ống nghiệm, người ta thường:",
+      "o": [
+        "Kẹp ở vị trí ⅓ ống từ đáy lên.",
+        "Kẹp ở vị trí ⅓ ống từ miệng xuống.",
+        "Kẹp ở giữa ống nghiệm.",
+        "Kẹp ở bất kì vị trí nào."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Những dụng cụ nào sau đây trong phòng thí nghiệm thuộc loại dễ vỡ?",
+      "o": [
+        "đèn cồn, các hóa chất, những dụng cụ bằng nhựa như ca nhựa, ...",
+        "ống nghiệm, đũa thủy tinh, nhiệt kế, cốc thủy tinh, kính....",
+        "lực kế, các bộ thí nghiệm như là ròng rọc, đòn bẩy....",
+        "đèn cồn, hóa chất, ống nghiệm…"
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Điều nào sau đây cần làm khi sử dụng hóa chất thí nghiệm?",
+      "o": [
+        "Sử dụng tay tiếp xúc trực tiếp với hóa chất.",
+        "Ăn uống trong phòng thực hành.",
+        "Nghiêng hai đèn cồn vào nhau để lấy lửa.",
+        "Không sử dụng hóa chất không nhãn mác."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Cách làm nào dưới đây khi đun hoá chất lỏng trong ống nghiệm là đúng?",
+      "o": [
+        "Khi đun hoá chất lỏng trong ống nghiệm cần nghiêng ống nghiệm một góc khoảng 30°, hướng miệng ống nghiệm về phía không có người.",
+        "Khi đun hoá chất lỏng trong ống nghiệm cần nghiêng ống nghiệm một góc khoảng 90°, hướng miệng ống nghiệm về phía không có người.",
+        "Khi đun hoá chất lỏng trong ống nghiệm cần nghiêng ống nghiệm một góc khoảng 60°, hướng miệng ống nghiệm về phía người khác.",
+        "Khi đun hoá chất lỏng trong ống nghiệm cần nghiêng ống nghiệm một góc khoảng 60°, hướng miệng ống nghiệm về phía không có người."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Điều nào sau đây không được làm khi sử dụng hóa chất thí nghiệm?",
+      "o": [
+        "Đậy kín lọ hóa chất sau khi lấy hóa chất.",
+        "Ngửi hóa chất trước khi làm thí nghiệm.",
+        "Đọc kĩ nhãn mác của lọ hóa chất.",
+        "Thông báo cho thầy cô khi có sự cố cháy nổ."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Có bao nhiêu ý dưới đây là quy tắc sử dụng hoá chất an toàn trong phòng thí nghiệm?\n(a). Không sử dụng hoá chất đựng trong đồ chứa không có nhãn hoặc nhãn mờ, mất chữ.\n(b). Trước khi sử dụng cần đọc cẩn nhận nhãn hóa chất và cần tìm hiểu kĩ các tính chất chất, các lưu ý, cảnh báo của mỗi loại hoá chất để thực hiện thí nghiệm an toàn.\n(c). Thực hiện thí nghiệm cẩn thận, không dùng tay trực tiếp lấy hoá chất.\n(d). Khi bị hóa chất dính vào người hoặc hoá chất bị đổ, tràn ra ngoài cần báo cáo với nhóm trưởng để được hướng dẫn xử lí.\n(e). Các hoá chất dùng xong còn thừa nên đổ trở lại bình chứa đúng với hoá chất đó để tiết kiệm.",
+      "o": [
+        "2.",
+        "3.",
+        "4.",
+        "5."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Có bao nhiêu câu dưới đây đúng khi nói về nguyên tắc lấy hoá chất trong phòng thí nghiệm?\n(a). Lấy hoá chất rắn ở các dạng hạt to, dày, thanh có thể dùng panh để gắp.\n(b). Lấy hoá chất rắn ở dạng hạt nhỏ hay bột phải dùng thìa nhựa để xúc.\n(c). Không được đặt lại thìa, panh, vào lọ đựng hoá chất sau khi đã sử dụng.\n(d). Lấy lượng nhỏ dung dịch thường dùng ống hút nhỏ giọt.\n(e). Rót hóa chất lỏng từ lọ cần hướng nhãn hoá chất lên phía trên để tránh các giọt hóa chất dính vào nhãn làm hỏng nhãn.\n(f). Lấy chất lỏng từ chai miệng nhỏ phải rót qua phễu hoặc qua cốc, ống đong không có mỏ.",
+      "o": [
+        "2.",
+        "3.",
+        "4.",
+        "5."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Việc nào dưới đây thuộc quy định những việc cần làm trong phòng thực hành?",
+      "o": [
+        "Được ăn, uống trong phòng thực hành.",
+        "Đeo găng tay và kính bảo hộ khi làm thí nghiệm.",
+        "Làm vỡ ống nghiệm không báo với giáo viên vì tự mình có thể tự xử lý được.",
+        "Ngửi nếm các hóa chất."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Việc nào sau đây là việc không nên làm trong phòng thực hành?",
+      "o": [
+        "Chạy nhảy trong phòng thực hành.",
+        "Đọc hiểu các biển cảnh báo trong phòng thực hành khi đi vào khu vực có biển cảnh báo.",
+        "Làm thí nghiệm dưới sự hướng dẫn của giáo viên.",
+        "Cẩn thận khi dùng lửa bằng đèn cồn để phòng tránh cháy nổ."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Khi có hỏa hoạn trong phòng thực hành cần xử lí theo cách nào sau đây?",
+      "o": [
+        "Bình tĩnh, sử dụng các biện pháp dập tắt ngọn lửa theo hướng dẫn của phòng thực hành như ngắt toàn bộ hệ thống điện, đưa toàn bộ các hóa chất, các chất dễ cháy ra khu vực an toàn…",
+        "Sử dụng nước để dập đám cháy nơi có các thiết bị điện.",
+        "Sử dụng bình khí oxygen để dập đám cháy quần áo trên người.",
+        "Không cần ngắt hệ thống điện, phải dập đám cháy trước."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Việc làm nào sau đây được cho là không an toàn trong phòng thực hành?",
+      "o": [
+        "Tự ý làm thí nghiệm.",
+        "Quan sát lối thoát hiểm của phòng thực hành.",
+        "Đeo găng tay khi lấy hóa chất.",
+        "Rửa tay trước khi ra khỏi phòng thực hành."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Để đảm bảo an toàn trong phòng thực hành cần thực hiện nguyên tắc nào dưới đây?",
+      "o": [
+        "Chỉ làm thí nghiệm, thực hành khi có sự hướng dẫn và giám sát của giáo viên.",
+        "Đọc kỹ nội quy và thực hiện theo nội quy phòng thực hành.",
+        "Thực hiện đúng nguyên tắc khi sử dụng hóa chất, dụng cụ, thiết bị trong phòng thực hành.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Khi gặp sự cố mất an toàn trong phòng thực hành, em cần làm gì?",
+      "o": [
+        "Nhờ bạn xử lí sự cố.",
+        "Tự xử lí và không thông báo với giáo viên.",
+        "Tiếp tục làm thí nghiệm.",
+        "Báo cáo ngay với giáo viên trong phòng thực hành."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Câu nào không đúng về cách sử dụng ống nghiệm trong phòng thí nghiệm?",
+      "o": [
+        "Khi thực hiện thí nghiệm, giữ ống nghiệm bằng tay thuận, dùng tay không thuận để thêm hoá chất vào ống nghiệm.",
+        "Khi thực hiện thí nghiệm, giữ ống nghiệm bằng tay không thuận, dùng tay thuận để thêm hoá chất vào ống nghiệm.",
+        "Khi đun nóng hoá chất trong ống nghiệm cần kẹp ống nghiệm bằng kẹp ở khoảng ⅓ ống nghiệm tính từ miệng ống.",
+        "Điều chỉnh đáy ống nghiệm vào vị trí nóng nhất của ngọn lửa (khoảng ⅔ ngọn lửa từ dưới lên), không để đáy ống nghiệm sát vào bấc đèn cồn."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Khi hoà tan muối ăn vào nước đã xảy ra hiện tượng",
+      "o": [
+        "hiện tượng vật lí.",
+        "hiện tượng hoá học.",
+        "cả hiện tượng vật lí và hoá học.",
+        "không có hiện tượng gì."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Hiện tượng nào là hiện tượng hoá học trong các hiện tượng thiên nhiên sau đây?",
+      "o": [
+        "Sáng sớm, khi mặt trời mọc sương mù tan dần.",
+        "Hơi nước trong các đám mây ngưng tụ và rơi xuống tạo ra mưa.",
+        "Nạn cháy rừng tạo khói đen dày đặc gây ô nhiễm môi trường.",
+        "Khi mưa giông thường có sấm sét."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Trong các quá trình sau, quá trình nào xảy ra biến đổi vật lí?",
+      "o": [
+        "Nước hồ bị bốc hơi khi trời nắng.",
+        "Diêm bị cháy khi quẹt vào vỏ hộp diêm.",
+        "Thịt bị cháy khi nướng.",
+        "Pháo hoa có nhiều màu sắc sặc sỡ."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Trong các quá trình sau, quá trình nào xảy ra biến đổi vật lí?",
+      "o": [
+        "Đường cháy thành than.",
+        "Cơm để lâu bị ôi thiu.",
+        "Sữa chua lên men.",
+        "Nước hóa rắn ở 0°C."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Trong các quá trình sau, quá trình nào xảy ra biến đổi vật lí?",
+      "o": [
+        "Khí hydrogen cháy.",
+        "Gỗ bị cháy.",
+        "Sắt (iron) nóng chảy.",
+        "Sắt (iron) bị gỉ."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Trong các quá trình sau, quá trình nào xảy ra biến đổi hóa học?",
+      "o": [
+        "Muối ăn hòa vào nước thành nước muối.",
+        "Bật bếp ga thấy lửa màu xanh.",
+        "Cồn bay hơi khi mở nắp.",
+        "Mở lọ nước hoa thấy mùi thơm."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Trong các quá trình sau, quá trình nào xảy ra biến đổi hóa học?",
+      "o": [
+        "Cô cạn nước muối thu được muối ăn.",
+        "Cồn để trong lọ không đậy nắp bị cạn dần.",
+        "Đun nước, nước sôi bốc hơi.",
+        "Đốt cháy than để nấu nướng."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Trong các quá trình sau, quá trình nào xảy ra biến đổi hóa học?",
+      "o": [
+        "Bóng đèn phát sáng, kèm theo tỏa nhiệt.",
+        "Hòa tan đường vào nước để được nước đường.",
+        "Đun nóng đường, đường chảy rồi chuyển màu đen, có mùi hắc.",
+        "Trời nắng, nước bốc hơi hình thành mây."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Hiện tượng vật lí là",
+      "o": [
+        "hiện tượng chất biến đổi có tạo ra chất mới.",
+        "hiện tượng chất biến đổi về trạng thái, kích thước, …mà vẫn giữ nguyên là chất ban đầu.",
+        "hiện tượng chất bị phân hủy.",
+        "hiện tượng biến đổi chất, có thể tạo ra chất mới hoặc không."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Dấu hiệu chính để phân biệt hiện tượng vật lý và hiện tượng hóa học là",
+      "o": [
+        "sự thay đổi về màu sắc của chất.",
+        "sự xuất hiện chất mới.",
+        "sự thay đổi về trạng thái của chất.",
+        "sự thay đổi về hình dạng của chất."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Biến đổi hoá học khác với biến đổi vật lí là",
+      "o": [
+        "chỉ biến đổi về trạng thái.",
+        "có sinh ra chất mới.",
+        "biến đổi về hình dạng.",
+        "khối lượng thay đổi."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Hiện tượng nào sau đây là hiện tượng vật lý?\n(a). Pha loãng nước muối.\n(b). Nước đá chảy thành nước lỏng.\n(c). Lưu huỳnh cháy trong không khí.\n(d). Đốt than.",
+      "o": [
+        "Cả a, b, c, d",
+        "a, b, c.",
+        "Chỉ có a.",
+        "a và b."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Trong số các hiện tượng sau, hiện tượng nào là hiện tượng hóa học?",
+      "o": [
+        "Thanh sắt bị dát mỏng.",
+        "Cồn để trong lọ không kín bị bay hơi.",
+        "Thủy tinh nóng chảy được thổi thành bình cầu.",
+        "Đốt cháy mẩu giấy."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Trong các hiện tượng sau, hiện tượng nào không phải là hiện tượng hoá học?",
+      "o": [
+        "Khi nung nóng đá vôi (calcium carbonate) thì thấy khối lượng giảm đi.",
+        "Rượu để lâu trong không khí bị chua.",
+        "Thuỷ tinh nóng chảy được thổi thành bình cầu.",
+        "Một lá đồng bị nung nóng, trên mặt đồng phủ một lớp màu đen."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Trong các hiện tượng sau, hiện tượng hóa học là",
+      "o": [
+        "cơm bị ôi thiu.",
+        "hòa tan đường vào nước.",
+        "cầu vồng xuất hiện sau mưa.",
+        "đun sôi nước."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Trong các hiện tượng sau, hiện tượng vật lý là",
+      "o": [
+        "gỗ cháy thành than.",
+        "cơm bị ôi thiu.",
+        "sữa chua lên men.",
+        "nước bốc hơi."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Trong các thí nghiệm sau đây, thí nghiệm nào có sự biến đổi hoá học?",
+      "o": [
+        "Hoà tan một ít chất rắn màu trắng vào nước lọc để loại bỏ các chất bẩn không tan được dung dịch.",
+        "Đun nóng nước lỏng, nước chuyển thành hơi.",
+        "Mang các hạt chất rắn nghiền được bột màu trắng.",
+        "Nung một chất bột màu trắng, màu trắng không đổi nhưng thoát ra một chất khí có thể làm đục nước vôi trong."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Sự biến đổi nào sau đây không phải là một biến đổi hóa học?",
+      "o": [
+        "Hơi nến cháy trong không khí tạo thành khí carbonic và hơi nước.",
+        "Hòa tan muối ăn vào nước tạo thành dung dịch muối.",
+        "Sắt (iron) cháy trong lưu huỳnh (sulfur) tạo thành muối iron (II) sufide.",
+        "Khí hydrogen cháy trong oxygen tạo thành nước."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Các hiện tượng sau đây, hiện tượng nào có sự biến đổi hoá học:\n(a). Dây sắt được cắt nhỏ từng đoạn và tán thành đinh.\n(b). Dây xích xe đạp bằng sắt bị phủ một lớp gỉ là chất màu nâu đỏ.\n(c). Rượu để lâu trong không khí thường bị chua.\n(d). Đèn tín hiệu giao thông chuyển từ màu đỏ sang màu xanh.\n(e). Dây tóc trong bóng đèn điện nóng và sáng lên khi dòng điện đi qua.",
+      "o": [
+        "(a), (b), (c), (d).",
+        "(a), (b), (d), (e).",
+        "(b), (c).",
+        "(a), (c), (d), (e)."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Trong số quá trình và sự việc dưới đây, đâu là hiện tượng vật lí?\n(a). Hoà tan muối ăn vào nước ta được dung dịch muối ăn.\n(b). Hơi nước làm quay tuabin của máy phát điện.\n(c). Cồn để trong lọ không kín bị bay hơi.\n(d). Nước bị đóng băng hai cực Trái đất.\n(e). Cho vôi sống CaO hoà tan vào nước thu được Ca(OH)₂.",
+      "o": [
+        "(a), (b), (c), (d).",
+        "(a), (b), (d).",
+        "(b), (c), (d).",
+        "(a), (d), (e)."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Nến được làm bằng parafin, khi đốt nến, xảy ra các quá trình sau\n(a). Paraffin nóng chảy.\n(b). Paraffin lỏng chuyển thành hơi.\n(c). Hơi paraffin cháy biến đổi thành khí carbon dioxide và hơi nước.\nQuá trình nào có sự biến đổi hoá học?",
+      "o": [
+        "(a).",
+        "(b).",
+        "(c).",
+        "Cả (a), (b), (c)."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Khi điện cúp vào ban đêm thì người ta hay dùng nến thắp sáng. Khi đốt cháy một cây nến thì đã xảy ra những hiện tượng gì?",
+      "o": [
+        "Hiện tượng vật lý.",
+        "Hiện tượng hóa học.",
+        "Cả hiện tượng vật lý và hóa học.",
+        "Không xảy ra hiện tượng gì cả."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Cho một số hiện tượng sau.\n(a) Mài một thanh kim loại nhôm thì thu được bột nhôm.\n(b) Thanh sắt bị gỉ (sét) trong không khí sẽ chuyển dần sang màu nâu đỏ hoặc nâu đen… vì có tạo ra chất mới bám trên thanh sắt.\n(c) Khi làm lạnh nước lỏng đến 0°C thì nước đông thành nước đá.\n(d) Cho muối ăn vào nước thì thu được nước muối.\n(e) Cho vôi sống (calcium oxide) khan vào nước thì có tỏa nhiều nhiệt và thu được chất mới là vôi tôi (calcium hydroxide).\n(g) Thổi hơi thở vào nước vôi trong (dung dịch calcium hydroxide) thì có xảy ra phản ứng hóa học, tạo ra chất calcium carbonate không tan trong nước, làm cho nước vôi trong bị vẩn đục.\nSố hiện tượng hóa học là:",
+      "o": [
+        "5.",
+        "4.",
+        "3.",
+        "2."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Phản ứng hóa học là",
+      "o": [
+        "quá trình kết hợp các đơn chất thành hợp chất.",
+        "quá trình biến đổi chất này thành chất khác.",
+        "sự trao đổi của 2 hay nhiều chất ban đầu để tạo chất mới.",
+        "là quá trình phân hủy chất ban đầu thành nhiều chất."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Điều kiện để một phản ứng hóa học xảy ra là",
+      "o": [
+        "không thể thiếu chất xúc tác.",
+        "các chất phản ứng phải tiếp xúc với nhau.",
+        "cần phải đun nóng.",
+        "cả 3 điều kiện còn lại."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Dấu hiệu nào giúp ta có khẳng định có phản ứng hoá học xảy ra?",
+      "o": [
+        "Có chất kết tủa (chất không tan).",
+        "Có chất khí thoát ra (sủi bọt).",
+        "Có sự thay đổi màu sắc.",
+        "Có ít nhất một trong số các dấu hiệu còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Hiện tượng nào sau đây chứng tỏ có phản ứng hoá học xảy ra?",
+      "o": [
+        "Từ màu này chuyển sang màu khác.",
+        "Từ trạng thái rắn chuyển sang trạng thái lỏng.",
+        "Từ trạng thái lỏng chuyển sang trạng thái hơi.",
+        "Từ trạng rắn chuyển sang trạng thái hơi."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Trong một phản ứng hoá học, các chất phản ứng và chất tạo thành phải chứa cùng",
+      "o": [
+        "số nguyên tử của mỗi nguyên tố.",
+        "số nguyên tử trong mỗi chất.",
+        "số phân tử trong mỗi chất.",
+        "số nguyên tố tạo ra chất."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Khi xảy ra phản ứng hóa học sẽ",
+      "o": [
+        "có ánh sáng phát ra.",
+        "có sinh nhiệt.",
+        "có chất mới tạo thành.",
+        "có chất không tan trong nước."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Khẳng định sau đây gồm 2 ý: “Trong phản ứng hóa học, chỉ có phân tử bị biến đổi còn các nguyên tử vẫn giữ nguyên, nên tổng khối lượng trước phản ứng luôn bằng tổng khối lượng sau phản ứng”. Hãy chọn phương án đúng dưới đây?",
+      "o": [
+        "Ý 1 đúng, ý 2 sai.",
+        "Cả hai ý đều đúng nhưng ý 1 không giải thích cho ý 2.",
+        "Ý 1 sai, ý 2 đúng.",
+        "Cả hai ý đều đúng và ý 1 giải thích cho ý 2."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Loại hạt vi mô nào luôn được bảo toàn trong phản ứng hóa học?",
+      "o": [
+        "Phân tử.",
+        "Nguyên tử.",
+        "Cả phân tử và nguyên tử.",
+        "Không phải phân tử, cũng không phải nguyên tử."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Câu nào sau đây đúng?",
+      "o": [
+        "Trong phản ứng hoá học, các nguyên tử bị phá vỡ.",
+        "Trong phản ứng hoá học, liên kết trong các phân tử bị phá vỡ.",
+        "Trong phản ứng hoá học, liên kết trong các phân tử không bị phá vỡ.",
+        "Trong phản ứng hoá học các phân tử được bảo toàn."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Các câu sau, câu nào sai?",
+      "o": [
+        "Trong phản ứng hoá học các nguyên tử được bảo toàn, không tự nhiên sinh ra hoặc mất đi.",
+        "Trong phản ứng hoá học, các nguyên tử bị phân chia.",
+        "Trong phản ứng hoá học, các phân tử bị phân chia.",
+        "Trong phản ứng hoá học, các phân tử bị phá vỡ."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Trong một phản ứng hóa học, giữa các sản phẩm với các chất phản ứng không có sự thay đổi về",
+      "o": [
+        "số nguyên tử của mỗi chất.",
+        "số nguyên tố của mỗi chất.",
+        "số nguyên tử của mỗi nguyên tố.",
+        "số phân tử của mỗi chất."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Trong các trường hợp sau, trường hợp không xảy ra phản ứng hóa học?",
+      "o": [
+        "Rượu để trong chai không kín bị cạn dần.",
+        "Lưu huỳnh (sulfur) tác dụng với oxygen tạo ra khí sulfur dioxide SO₂.",
+        "Sodium cháy trong không khí tạo thành sodium oxide Na₂O.",
+        "Calcium oxide (CaO) để lâu ngày trong không khí bị biến đổi thành calcium carbonate CaCO₃."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Trường hợp nào sau đây xảy ra phản ứng hóa học?",
+      "o": [
+        "Đất đèn (CaC₂) tác dụng với nước tạo ra C₂H₂.",
+        "Bơm khí C₂H₂ vào bóng bay.",
+        "Quả bóng bay bay lên không trung rồi nổ tung.",
+        "Bơm khí H₂ vào bóng bay."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Trường hợp nào sau đây không xảy ra phản ứng hóa học?",
+      "o": [
+        "Đốt cao su có mùi hắc rất khó chịu.",
+        "Trên bề mặt các hồ tôi vôi để lâu ngày sẽ có lớp màng mỏng màu trắng.",
+        "Quả bóng bay trên cao rồi nổ tung.",
+        "Khi chiên trứng gà nếu đun quá lửa sẽ có mùi khét."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Trong các quá trình sau, quá trình nào có phản ứng hóa học?\n(a). Đốt cháy than trong không khí.\n(b). Làm bay hơi nước muối biển trong quá trình sản xuất muối.\n(c). Nung đá vôi.\n(d). Nổ hầm mỏ than.\n(e). Iodine thăng hoa.",
+      "o": [
+        "a, b, c.",
+        "b, c, d, e.",
+        "a, c, d.",
+        "a, b, c, d, e."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Dùng nước mưa đun sôi rồi để nguội làm nước uống, lâu ngày thấy trong ấm có những cặn trắng. Biết rằng trong nước mưa có chứa nhiều muối calcium hydrocarbonate. Muối này dễ bị nhiệt phân hủy sinh ra calcium carbonate (là chất kết tủa trắng), khí carbon dioxide và nước. Hãy cho biết dấu hiệu có phản ứng xảy ra khi đun nước sôi rồi để nguội.",
+      "o": [
+        "Do tạo thành nước.",
+        "Do tạo chất kết tủa trắng calcium carbonate.",
+        "Do để nguội nước.",
+        "Do đun sôi nước."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Sắt (iron; ferrum) để trong không khí một thời gian sẽ bị gỉ do tác dụng với khí oxygen trong không khí tạo ra sắt từ oxide (gỉ sắt; iron(II) diiron(III) oxide; ferơ-ferric oxide; magnetit). Trong phản ứng trên, chất tham gia phản ứng là",
+      "o": [
+        "không khí.",
+        "sắt và không khí.",
+        "sắt từ oxide.",
+        "sắt và khí oxygen."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Trong phản ứng sau chất nào là sản phẩm?\nHydrochloric acid + potassium carbonate → potassium chloride + carbon dioxide + nước",
+      "o": [
+        "hydrochloric acid, sodium chloride.",
+        "potassium chloride, carbon dioxide.",
+        "carbon dioxide, nước.",
+        "potassium chloride, carbon dioxide, nước."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Bỏ quả trứng vào dung dịch hydrochloric acid thấy sủi bọt ở vỏ trứng. Biết rằng hydrochloric acid đã tác dụng với calcium carbonate (chất này trong vỏ trứng) tạo ra calcium chloride (chất này tan), nước và khí carbon dioxide thoát ra. Ý nào dưới đây biểu diễn đúng phương trình chữ của phản ứng trên.",
+      "o": [
+        "Hydrochloric acid + calcium carbonate → calcium chloride + carbon dioxide + nước.",
+        "Calcium chloride + carbon dioxide + nước → acid chloride + calcium carbonate.",
+        "Hydrochloric acid + calcium carbonate → calcium chloride + carbon dioxide.",
+        "Calcium chloride + nước → acid chloride + calcium carbonate."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Cồn cháy được là do phản ứng với khí oxygen, tạo ra khí carbon dioxide và hơi nước. Phương trình chữ nào biểu thị đúng cho phản ứng trên?",
+      "o": [
+        "Cồn + khí oxygen → carbon dioxide",
+        "Cồn + khí oxygen → hơi nước",
+        "Cồn + khí oxygen → carbon dioxide + hơi nước",
+        "Cồn → hơi nước + carbon dioxide"
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Sắt (iron) cháy trong oxygen, không có ngọn lửa nhưng sáng chói tạo ra hạt nhỏ nóng chảy màu nâu là sắt từ oxide, phương trình chữ của phản ứng hóa học là:",
+      "o": [
+        "Iron + oxygen → iron(II) diiron(III) oxide.",
+        "Oxygen + iron(II) diiron(III) oxide → iron.",
+        "Iron(II) diiron(III) oxide → iron + oxygen.",
+        "Iron + iron(II) diiron(III) oxide → oxygen."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Đốt phosphorus trong oxygen thu được chất diphosphorus pentaoxide. Phương trình chữ nào sau đây biểu diễn đúng phản ứng hóa học trên.",
+      "o": [
+        "Phosphorus + diphosphorus pentaoxide → khí oxygen",
+        "Phosphorus → khí oxygen + diphosphorus pentaoxide",
+        "Phosphorus + khí oxygen → diphosphorus pentaoxide",
+        "Diphosphorus pentaoxide + khí oxygen → phosphorus"
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Thế nào là phản ứng thu nhiệt?",
+      "o": [
+        "Là phản ứng tỏa ra năng lượng dưới dạng nhiệt.",
+        "Là phản ứng hấp thụ ion dưới dạng nhiệt.",
+        "Là phản ứng hấp thụ năng lượng dưới dạng nhiệt.",
+        "Là phản ứng giải phóng ion dưới dạng nhiệt."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Phản ứng tỏa nhiệt là gì?",
+      "o": [
+        "Là phản ứng tỏa ra năng lượng dưới dạng nhiệt.",
+        "Là phản ứng hấp thụ năng lượng dưới dạng nhiệt.",
+        "Là phản ứng hấp thụ ion dưới dạng nhiệt.",
+        "Là phản ứng giải phóng ion dưới dạng nhiệt."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Phát biểu nào sau đây là đúng?\n(a). Phản ứng tỏa nhiệt là phản ứng hóa học trong đó có sự giải phóng nhiệt năng ra môi trường.\n(b). Phản ứng thu nhiệt là phản ứng hóa học trong đó có sự hấp thụ nhiệt năng từ môi trường.\n(c). Phản ứng tỏa nhiệt là phản ứng hóa học trong đó có sự hấp thụ nhiệt năng từ môi trường.\n(d). Phản ứng thu nhiệt là phản ứng hóa học trong đó có sự giải phóng nhiệt năng từ môi trường.",
+      "o": [
+        "(a) và (d)",
+        "(b) và (c)",
+        "(c) và (d)",
+        "(a) và (b)."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Trong các quá trình sau quá trình nào là quá trình thu nhiệt?",
+      "o": [
+        "Vôi sống tác dụng với nước.",
+        "Đốt than đá.",
+        "Đốt cháy cồn.",
+        "Nung đá vôi."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Vì sao khi nung vôi, người ta phải xếp đá vôi lẫn với than trong lò?",
+      "o": [
+        "Vì phản ứng nung vôi là phản ứng tỏa nhiệt.",
+        "Vì phản ứng nung vôi là phản ứng thu nhiệt, cần nhiệt từ quá trình đốt cháy than.",
+        "Để rút ngắn thời gian nung vôi.",
+        "Vì than hấp thu bớt lượng nhiệt tỏa ra của phản ứng nung vôi."
+      ],
+      "c": 1
+    }
+  ]
+}
