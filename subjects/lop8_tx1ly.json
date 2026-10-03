@@ -1,0 +1,556 @@
+{
+  "fullName": "TX1 LÝ - Bài 13, 14 KHTN",
+  "questions": [
+    {
+      "type": "mcq",
+      "q": "Cho biết 13,5 kg nhôm có thể tích là 5 dm³. Khối lượng riêng của nhôm bằng bao nhiêu?",
+      "o": [
+        "2700 kg/m³.",
+        "2700 kg/dm³.",
+        "260 kg/m³.",
+        "270 kg/m³."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Mỗi hòn gạch \"hai lỗ\" có khối lượng 1,6 kg. Hòn gạch có thể tích 1200 cm³. Mỗi lỗ có thể tích 192 cm³. Tính trọng lượng riêng của gạch.",
+      "o": [
+        "13270 N/m³.",
+        "12654 N/m³.",
+        "42608 N/m³.",
+        "19608 N/m³."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Cho biết 1kg nước có thể tích 1 lít còn 1kg dầu hỏa có thể tích 5/4 lít. Phát biểu nào sau đây là đúng?",
+      "o": [
+        "1 lít dầu hỏa có khối lượng lớn hơn 1 lít nước.",
+        "1 lít nước có thể tích lớn hơn 1 lít dầu hỏa.",
+        "Khối lượng riêng của nước bằng 5/4 khối lượng riêng của dầu hỏa.",
+        "Khối lượng riêng của dầu hỏa bằng 5/4 khối lượng riêng của dầu hỏa."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Người ta thường nói đồng nặng hơn nhôm. Câu giải thích nào sau đây là không đúng?",
+      "o": [
+        "Vì trọng lượng của đồng lớn hơn trọng lượng của nhôm.",
+        "Vì khối lượng riêng của đồng lớn hơn khối lượng riêng của nhôm.",
+        "Vì trọng lượng riêng của miếng đồng lớn hơn trọng lượng của miếng nhôm có cùng thể tích.",
+        "Vì trọng lượng riêng của đồng lớn hơn trọng lượng riêng của nhôm."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Một hộp sữa Ông Thọ có khối lượng 397g và có thể tích 320cm³. Hãy tính khối lượng riêng của sữa trong hộp theo đơn vị kg/m³.",
+      "o": [
+        "1240,6 kg/m³.",
+        "1740,6 kg/m³.",
+        "1440,6 kg/m³.",
+        "1300,6 kg/m³."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Một vật bằng sắt có khối lượng riêng là 7800 kg/m³; thể tích 50 dm³. Khối lượng của vật là:",
+      "o": [
+        "312 kg.",
+        "390 kg.",
+        "390000 kg.",
+        "156 kg."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Muốn đo khối lượng riêng của các hòn bi thủy tinh, ta cần dùng những dụng cụ gì? Hãy chọn câu trả lời đúng.",
+      "o": [
+        "Cần dùng một cái cân và một cái bình chia độ.",
+        "Chỉ cần dùng một cái bình chia độ.",
+        "Chỉ cần dùng một cái lực kế.",
+        "Chỉ cần dùng một cái cân."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Biết 10 lít cát có khối lượng 15 kg. Tính trọng lượng của một đống cát 3 m³.",
+      "o": [
+        "60000 N.",
+        "30000 N.",
+        "50000 N.",
+        "45000 N."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Biết 10 lít cát có khối lượng 15 kg. Tính thể tích của 1 tấn cát.",
+      "o": [
+        "0,667 m⁴.",
+        "0,778 m³.",
+        "0,667 m³.",
+        "0,778 m⁴."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "1kg kem giặt VISO có thể tích 900cm³. Tính khối lượng riêng của kem giặt VISO và so sánh với khối lượng riêng của nước.",
+      "o": [
+        "1240 kg/m³.",
+        "1200 kg/m³.",
+        "1111,1 kg/m³.",
+        "1000 kg/m³."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Khối lượng riêng của sắt là 7800 kg/m³. Vậy, 1kg sắt sẽ có thể tích vào khoảng",
+      "o": [
+        "12,8 cm³.",
+        "128 cm³.",
+        "1.280 cm³.",
+        "12.800 cm³."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Công thức nào dưới đây tính trọng lượng riêng của một chất theo trọng lượng và thể tích?",
+      "o": [
+        "d = V.D.",
+        "D = V.P.",
+        "D = P.V.",
+        "d = P/V."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Khối lượng riêng của nhôm là bao nhiêu?",
+      "o": [
+        "1300,6 kg/m³.",
+        "2700 N.",
+        "2700 kg/m³.",
+        "2700 N/m³."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Khối lượng riêng của dầu ăn vào khoảng 800 kg/m³. Do đó, 2 lít dầu ăn sẽ có trọng lượng khoảng",
+      "o": [
+        "1,6 N.",
+        "16 N.",
+        "160 N.",
+        "1600 N."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Để xác định khối lượng riêng của các viên sỏi, ba bạn Sử, Sen, Anh đưa ra ý kiến như sau:\nSử: Mình chỉ cần một cái cân là đủ.\nSen: Theo mình, cần một bình chia độ mới đúng.\nAnh: Sai bét, phải cần một cái cân và một bình chia độ mới xác định được chứ.\nTheo em, ý kiến nào đúng.",
+      "o": [
+        "Sử đúng.",
+        "Sen đúng.",
+        "Anh đúng.",
+        "Cả ba bạn cùng sai."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Đun nóng một lượng nước đá từ 0°C đến 100°C. Khối lượng của lượng nước đó thay đổi như thế nào?",
+      "o": [
+        "tăng lên.",
+        "giảm xuống.",
+        "tăng/giảm 50%.",
+        "không đổi."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Quan sát cân như hình vẽ sau (một bên đặt 500ml nước, một bên đặt 500ml dầu):",
+      "img": "",
+      "o": [
+        "Khối lượng riêng của nước nặng hơn dầu.",
+        "Khối lượng riêng của dầu nặng hơn nước.",
+        "Khối lượng riêng của nước và của dầu bằng nhau.",
+        "Chưa đủ yếu tố để xác định."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Cho 3 thỏi đồng, nhôm, thủy tinh có thể tích bằng nhau. Khối lượng của chúng được sắp xếp theo khối lượng giảm dần như sau: (chọn câu đúng). Cho biết D(đồng) = 8900 kg/m³; D(nhôm) = 2700 kg/m³; D(thủy tinh) = 2500 kg/m³.",
+      "o": [
+        "m(đồng) > m(nhôm) > m(thủy tinh).",
+        "m(thủy tinh) > m(nhôm) > m(đồng).",
+        "m(nhôm) > m(đồng) > m(thủy tinh).",
+        "m(nhôm) > m(thủy tinh) > m(đồng)."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Đơn vị đo khối lượng hợp pháp của nước Việt Nam là",
+      "o": [
+        "tấn (kí hiệu: t).",
+        "miligram (kí hiệu: mg).",
+        "kilogram (kí hiệu: kg).",
+        "gram (kí hiệu: g)."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Để đo khối lượng người ta dùng dụng cụ gì?",
+      "o": [
+        "Thước.",
+        "Bình chia độ.",
+        "Cân.",
+        "Ca đong."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Khối lượng riêng của nước là",
+      "o": [
+        "998 kg/m³.",
+        "996 kg/m³.",
+        "997 kg/m³.",
+        "995 kg/m³."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Trên vỏ các chai nước giải khát có ghi các số liệu (ví dụ 330ml). Số liệu đó chỉ",
+      "o": [
+        "thể tích của cả chai nước.",
+        "thể tích của nước trong chai.",
+        "khối lượng của cả chai nước.",
+        "khối lượng của nước trong chai."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Bức tượng phật Di Lạc tại chùa Vĩnh Tràng (Mỹ Tho, Tiền Giang) là một trong những bức tượng phật khổng lồ nổi tiếng trên thế giới. Tượng cao 20 m, nặng 250 tấn. Thể tích đồng được dùng để đúc bức tượng trên có giá trị là bao nhiêu? Biết khối lượng riêng của đồng là 8900 kg/m³.",
+      "o": [
+        "28,08 m³.",
+        "2808 m³.",
+        "2,808 m³.",
+        "280,8 m³."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Gọi d và D lần lượt là trọng lượng riêng và khối lượng riêng. Mối liên hệ giữa d và D là:",
+      "o": [
+        "D = 10d.",
+        "d = 10D.",
+        "d = 10/D.",
+        "D + d = 10."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Đổi đơn vị nào dưới đây đúng?",
+      "o": [
+        "100 kg/m³ = 1 g/cm³.",
+        "10 kg/m³ = 0,01 g/cm³.",
+        "100 kg/m³ = 10 g/mL.",
+        "1 kg/m³ = 0,01 g/mL."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Một khối hình hộp chữ nhật có kích thước 3 cm × 4 cm × 5 cm, khối lượng 48g. Khối lượng riêng của vật liệu làm khối hình hộp là",
+      "o": [
+        "0,8 g/cm³.",
+        "0,48 g/cm³.",
+        "0,6 g/cm³.",
+        "2,88 g/cm³."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Một người khiêng một khúc gỗ tròn dài 1 m đường kính 20 cm. Khối lượng riêng của gỗ vào khoảng 800 kg/m³. Trọng lượng khối gỗ đặt lên vai người đó là khoảng",
+      "o": [
+        "250 N.",
+        "300 N.",
+        "400 N.",
+        "500 N."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Người ta đo được khối lượng của 200 ml nước là 200 g. Khối lượng riêng của nước tính theo đơn vị g/L là",
+      "o": [
+        "D = 1 000 g/L.",
+        "D = 1 g/L.",
+        "D = 4 g/L.",
+        "D = 4 000 g/L."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Dầu nổi trên mặt nước vì",
+      "o": [
+        "khối lượng riêng của dầu bằng khối lượng riêng của nước.",
+        "khối lượng riêng của dầu nhỏ hơn khối lượng riêng của nước.",
+        "khối lượng riêng của dầu lớn hơn khối lượng riêng của nước.",
+        "thể tích của dầu nhỏ hơn thể tích của nước."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Muốn đo khối lượng riêng của quả cầu bằng sắt người ta dùng dụng cụ gì?",
+      "o": [
+        "Chỉ cần dùng một cái cân.",
+        "Chỉ cần dùng một lực kế.",
+        "Cần dùng một cái cân và bình chia độ.",
+        "Chỉ cần dùng một bình chia độ."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Biết rằng trọng lượng của vật càng giảm khi đưa vật lên càng cao so với mặt đất. Khi đưa một vật lên cao dần, kết luận nào sau đây là đúng? Coi trong suốt quá trình đó vật không bị biến dạng.",
+      "o": [
+        "Khối lượng riêng của vật càng tăng.",
+        "Trọng lượng riêng của vật giảm dần.",
+        "Trọng lượng riêng của vật càng tăng.",
+        "Khối lượng riêng của vật càng giảm."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Cho khối lượng riêng của nhôm, sắt, chì, đá lần lượt là 2700 kg/m³, 7800 kg/m³, 11300 kg/m³, 2600 kg/m³. Một khối đồng chất có thể tích 300 cm³, nặng 810g đó là",
+      "o": [
+        "nhôm.",
+        "sắt.",
+        "chì.",
+        "đá."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Cho hai khối kim loại chì và sắt. Sắt có khối lượng gấp đôi chì. Biết khối lượng riêng của sắt và chì lần lượt là D₁ = 7800 kg/m³, D₂ = 11300 kg/m³. Tỉ lệ thể tích giữa sắt và chì gần nhất với giá trị nào sau đây?",
+      "o": [
+        "0,69.",
+        "2,9.",
+        "1,38.",
+        "3,2."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Nếu sữa trong một hộp sữa có khối lượng tịnh 387 g và thể tích 0,314 lít thì trọng lượng riêng của sữa gần nhất với giá trị nào sau đây?",
+      "o": [
+        "1,264 N/m³.",
+        "0,791 N/m³.",
+        "12643 N/m³.",
+        "1264 N/m³."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Xét hiện tượng sau: Nước đựng trong khay làm đá có bề mặt thoáng phẳng. Khi nước đông lại thành đá trong tủ lạnh, nước đá có mặt khum vồng cao lên. Như vậy khối lượng riêng của nước đá nhỏ hơn khối lượng riêng của nước ở nhiệt độ thường.\nGiải thích: Vì bề mặt nước đá bị khum lên, nên chứng tỏ thể tích của nó tăng mà khối lượng của nước thì không đổi. Vậy theo công thức D = m/V ta suy ra khối lượng riêng của nước đá giảm đi (bé hơn) khối lượng riêng của nước ở nhiệt bình thường.",
+      "o": [
+        "Hiện tượng đúng; Lời giải thích đúng.",
+        "Hiện tượng đúng; Lời giải thích sai.",
+        "Hiện tượng sai; Lời giải thích đúng.",
+        "Hiện tượng sai; Lời giải thích sai."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Khối lượng riêng của dầu ăn vào khoảng 800 kg/m³. Do đó, 2 lít dầu ăn sẽ có trọng lượng khoảng bao nhiêu?",
+      "o": [
+        "16N.",
+        "160N.",
+        "1,6N.",
+        "61N."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Cho biết 1kg nước có thể tích 1 lít còn 1kg dầu hỏa có thể tích 5/4 lít. Phát biểu nào sau đây đúng?",
+      "o": [
+        "1 lít nước có thể tích lớn hơn 1 lít dầu hỏa.",
+        "1 lít dầu hỏa có khối lượng hơn 1 khối nước.",
+        "khối lượng của dầu hỏa bằng 5/4 thể tích của dầu hỏa.",
+        "khối lượng riêng của nước bằng 5/4 khối lượng riêng của dầu hỏa."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Tính khối lượng của một khối đá hoa cương dạng hình hộp chữ nhật có kích thước 2,0 m x 3,0 m x 1,5 m. Biết khối lượng riêng của đá hoa cương là ρ = 2750 kg/m³.",
+      "o": [
+        "2475 kg.",
+        "24750 kg.",
+        "275 kg.",
+        "2750 kg."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Khi nói \"Khối lượng riêng của sắt là 7800 kg/m³\" có nghĩa là",
+      "o": [
+        "7800 kg sắt bằng 1 m³ sắt.",
+        "1 m³ sắt có khối lượng riêng là 7800 kg.",
+        "1 m³ sắt có khối lượng là 7800 kg.",
+        "1 m³ sắt có trọng lượng là 7800 kg."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Điền vào chỗ trống cụm từ thích hợp: Để xác định khối lượng riêng của một chất, ta cần đo …(1)… và …(2)… vật làm bằng chất đó, sau đó chia …(3)…",
+      "o": [
+        "(1) khối lượng; (2) thể tích; (3) khối lượng cho thể tích.",
+        "(1) thể tích; (2) khối lượng riêng; (3) thể tích cho khối lượng.",
+        "(1) khối lượng riêng; (2) thể tích; (3) khối lượng cho thể tích.",
+        "(1) thể tích; (2) khối lượng; (3) thể tích cho khối lượng."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Khi sử dụng lực kế để đo trọng lượng của một vật, kim trên lực kế chỉ 5,4N. Khi đó khối lượng của vật nặng là",
+      "o": [
+        "5,4g.",
+        "54 kg.",
+        "0,54 kg.",
+        "0,054 kg."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Khối lượng riêng của chì vào khoảng 11300 kg/m³. Do đó 2 lít chì sẽ có khối lượng bằng",
+      "o": [
+        "2,26 kg.",
+        "22,6 kg.",
+        "226 kg.",
+        "2260 kg."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Đơn vị của trọng lượng là",
+      "o": [
+        "N.",
+        "m².",
+        "kg/m³.",
+        "N/cm³."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Trong các đơn vị sau đơn vị nào không phải là đơn vị của khối lượng riêng?",
+      "o": [
+        "g/cm³.",
+        "dag/cm³.",
+        "N/cm³.",
+        "kg/m³."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Ở thể lỏng dưới áp suất thường, khối lượng riêng của nước có giá trị lớn nhất ở nhiệt độ:",
+      "o": [
+        "0 °C.",
+        "100 °C.",
+        "20 °C.",
+        "4 °C."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Đọc đoạn thông tin sau:\nTrong cuộc sống, việc hiểu và xác định khối lượng riêng của các vật liệu là rất quan trọng. Khối lượng riêng cho biết mức độ \"nặng nhẹ\" của một vật chất trong cùng một thể tích. Ví dụ, khối lượng riêng của nước ở 4°C là khoảng 1.000 kg/m³, trong khi khối lượng riêng của sắt khoảng 7.800 kg/m³. Điều này lý giải vì sao cùng một thể tích, sắt nặng hơn nước rất nhiều.\nTrong thực tế, kỹ thuật viên xây dựng cần biết khối lượng riêng của các vật liệu như bê tông, thép, gỗ để tính toán tải trọng công trình. Hoặc trong ngành dầu khí, việc xác định khối lượng riêng giúp phân biệt dầu thô với nước lẫn trong giếng khoan. Để đo khối lượng riêng, ta cần đo khối lượng (m) và thể tích (V) của vật thể, sau đó áp dụng công thức: D = m/V.\nVới chất rắn có hình dạng đều như khối hộp chữ nhật, thể tích được tính bằng tích ba chiều dài, rộng, cao. Đối với vật có hình dạng bất kỳ, ta có thể dùng phương pháp đo dịch chuyển thể tích nước trong ống đong. Còn với chất lỏng, người ta đo khối lượng của ống đong rỗng và ống đong chứa chất lỏng, rồi trừ đi để tìm ra khối lượng của chất lỏng. Khối lượng riêng sau đó là khối lượng chia cho thể tích đã đo được. Việc xác định đúng khối lượng riêng giúp ứng dụng trong sản xuất, xây dựng, vận chuyển và nghiên cứu khoa học một cách chính xác và hiệu quả.\n\nKhối lượng riêng cho biết điều gì về một chất?",
+      "o": [
+        "Thể tích của chất đó",
+        "Khối lượng chất đó",
+        "Khả năng dẫn điện của chất đó",
+        "Khối lượng của một đơn vị thể tích chất đó"
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Đọc đoạn thông tin sau:\nTrong cuộc sống, việc hiểu và xác định khối lượng riêng của các vật liệu là rất quan trọng. Khối lượng riêng cho biết mức độ \"nặng nhẹ\" của một vật chất trong cùng một thể tích. Ví dụ, khối lượng riêng của nước ở 4°C là khoảng 1.000 kg/m³, trong khi khối lượng riêng của sắt khoảng 7.800 kg/m³. Điều này lý giải vì sao cùng một thể tích, sắt nặng hơn nước rất nhiều.\nTrong thực tế, kỹ thuật viên xây dựng cần biết khối lượng riêng của các vật liệu như bê tông, thép, gỗ để tính toán tải trọng công trình. Hoặc trong ngành dầu khí, việc xác định khối lượng riêng giúp phân biệt dầu thô với nước lẫn trong giếng khoan. Để đo khối lượng riêng, ta cần đo khối lượng (m) và thể tích (V) của vật thể, sau đó áp dụng công thức: D = m/V.\nVới chất rắn có hình dạng đều như khối hộp chữ nhật, thể tích được tính bằng tích ba chiều dài, rộng, cao. Đối với vật có hình dạng bất kỳ, ta có thể dùng phương pháp đo dịch chuyển thể tích nước trong ống đong. Còn với chất lỏng, người ta đo khối lượng của ống đong rỗng và ống đong chứa chất lỏng, rồi trừ đi để tìm ra khối lượng của chất lỏng. Khối lượng riêng sau đó là khối lượng chia cho thể tích đã đo được. Việc xác định đúng khối lượng riêng giúp ứng dụng trong sản xuất, xây dựng, vận chuyển và nghiên cứu khoa học một cách chính xác và hiệu quả.\n\nVì sao sắt cùng thể tích với nước lại có khối lượng lớn hơn?",
+      "o": [
+        "Sắt có thể tích lớn hơn nước",
+        "Sắt có khối lượng riêng lớn hơn nước",
+        "Nước nặng hơn sắt",
+        "Sắt có diện tích tiếp xúc lớn hơn nước"
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Đọc đoạn thông tin sau:\nTrong cuộc sống, việc hiểu và xác định khối lượng riêng của các vật liệu là rất quan trọng. Khối lượng riêng cho biết mức độ \"nặng nhẹ\" của một vật chất trong cùng một thể tích. Ví dụ, khối lượng riêng của nước ở 4°C là khoảng 1.000 kg/m³, trong khi khối lượng riêng của sắt khoảng 7.800 kg/m³. Điều này lý giải vì sao cùng một thể tích, sắt nặng hơn nước rất nhiều.\nTrong thực tế, kỹ thuật viên xây dựng cần biết khối lượng riêng của các vật liệu như bê tông, thép, gỗ để tính toán tải trọng công trình. Hoặc trong ngành dầu khí, việc xác định khối lượng riêng giúp phân biệt dầu thô với nước lẫn trong giếng khoan. Để đo khối lượng riêng, ta cần đo khối lượng (m) và thể tích (V) của vật thể, sau đó áp dụng công thức: D = m/V.\nVới chất rắn có hình dạng đều như khối hộp chữ nhật, thể tích được tính bằng tích ba chiều dài, rộng, cao. Đối với vật có hình dạng bất kỳ, ta có thể dùng phương pháp đo dịch chuyển thể tích nước trong ống đong. Còn với chất lỏng, người ta đo khối lượng của ống đong rỗng và ống đong chứa chất lỏng, rồi trừ đi để tìm ra khối lượng của chất lỏng. Khối lượng riêng sau đó là khối lượng chia cho thể tích đã đo được. Việc xác định đúng khối lượng riêng giúp ứng dụng trong sản xuất, xây dựng, vận chuyển và nghiên cứu khoa học một cách chính xác và hiệu quả.\n\nĐể đo khối lượng riêng của một viên đá hình dạng bất kỳ, phương pháp hợp lí nhất là:",
+      "o": [
+        "Đo thể tích của viên đá bằng thước kẹp",
+        "Đo thể tích nước thay đổi khi thả viên đá vào ống đong",
+        "Đo trọng lượng viên đá bằng cân lò xo",
+        "Tính diện tích bề mặt của viên đá"
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Đọc đoạn thông tin sau:\nTrong cuộc sống, việc hiểu và xác định khối lượng riêng của các vật liệu là rất quan trọng. Khối lượng riêng cho biết mức độ \"nặng nhẹ\" của một vật chất trong cùng một thể tích. Ví dụ, khối lượng riêng của nước ở 4°C là khoảng 1.000 kg/m³, trong khi khối lượng riêng của sắt khoảng 7.800 kg/m³. Điều này lý giải vì sao cùng một thể tích, sắt nặng hơn nước rất nhiều.\nTrong thực tế, kỹ thuật viên xây dựng cần biết khối lượng riêng của các vật liệu như bê tông, thép, gỗ để tính toán tải trọng công trình. Hoặc trong ngành dầu khí, việc xác định khối lượng riêng giúp phân biệt dầu thô với nước lẫn trong giếng khoan. Để đo khối lượng riêng, ta cần đo khối lượng (m) và thể tích (V) của vật thể, sau đó áp dụng công thức: D = m/V.\nVới chất rắn có hình dạng đều như khối hộp chữ nhật, thể tích được tính bằng tích ba chiều dài, rộng, cao. Đối với vật có hình dạng bất kỳ, ta có thể dùng phương pháp đo dịch chuyển thể tích nước trong ống đong. Còn với chất lỏng, người ta đo khối lượng của ống đong rỗng và ống đong chứa chất lỏng, rồi trừ đi để tìm ra khối lượng của chất lỏng. Khối lượng riêng sau đó là khối lượng chia cho thể tích đã đo được. Việc xác định đúng khối lượng riêng giúp ứng dụng trong sản xuất, xây dựng, vận chuyển và nghiên cứu khoa học một cách chính xác và hiệu quả.\n\nNếu bạn rót dầu ăn vào một ống đong và thấy thể tích là 200 mL, đồng thời cân nặng tăng thêm 184 g, thì khối lượng riêng của dầu ăn (theo g/mL) là gần đúng:",
+      "o": [
+        "0,92 g/mL",
+        "1,10 g/mL",
+        "1,08 g/mL",
+        "0,82 g/mL"
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Đọc đoạn thông tin sau:\nTrong cuộc sống, việc hiểu và xác định khối lượng riêng của các vật liệu là rất quan trọng. Khối lượng riêng cho biết mức độ \"nặng nhẹ\" của một vật chất trong cùng một thể tích. Ví dụ, khối lượng riêng của nước ở 4°C là khoảng 1.000 kg/m³, trong khi khối lượng riêng của sắt khoảng 7.800 kg/m³. Điều này lý giải vì sao cùng một thể tích, sắt nặng hơn nước rất nhiều.\nTrong thực tế, kỹ thuật viên xây dựng cần biết khối lượng riêng của các vật liệu như bê tông, thép, gỗ để tính toán tải trọng công trình. Hoặc trong ngành dầu khí, việc xác định khối lượng riêng giúp phân biệt dầu thô với nước lẫn trong giếng khoan. Để đo khối lượng riêng, ta cần đo khối lượng (m) và thể tích (V) của vật thể, sau đó áp dụng công thức: D = m/V.\nVới chất rắn có hình dạng đều như khối hộp chữ nhật, thể tích được tính bằng tích ba chiều dài, rộng, cao. Đối với vật có hình dạng bất kỳ, ta có thể dùng phương pháp đo dịch chuyển thể tích nước trong ống đong. Còn với chất lỏng, người ta đo khối lượng của ống đong rỗng và ống đong chứa chất lỏng, rồi trừ đi để tìm ra khối lượng của chất lỏng. Khối lượng riêng sau đó là khối lượng chia cho thể tích đã đo được. Việc xác định đúng khối lượng riêng giúp ứng dụng trong sản xuất, xây dựng, vận chuyển và nghiên cứu khoa học một cách chính xác và hiệu quả.\n\nMột chiếc bè gỗ nổi trên mặt nước. Nguyên nhân chính nào sau đây giải thích đúng hiện tượng này?",
+      "o": [
+        "Khối lượng của gỗ nhỏ hơn khối lượng của nước.",
+        "Lực đẩy Ác-si-mét tác dụng lên bè lớn hơn trọng lượng của bè.",
+        "Bè gỗ được buộc cố định vào bờ nên không chìm.",
+        "Diện tích bè gỗ lớn nên làm tăng lực hấp dẫn của nước."
+      ],
+      "c": 1
+    }
+  ]
+}
