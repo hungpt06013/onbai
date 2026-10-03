@@ -154,6 +154,842 @@
         "lực lượng quân đội cách mạng."
       ],
       "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Lực lượng nào dưới đây mới xuất hiện trong xã hội nước Anh vào cuối thế kỉ XVI – đầu thế kỉ XVII?",
+      "o": [
+        "Tăng lữ Giáo hội.",
+        "Nông dân.",
+        "Quý tộc mới.",
+        "Thợ thủ công."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Trong cách mạng tư sản Anh (thế kỉ XVII), người giữ vai trò lãnh đạo lực lượng Nghị viện chống lại phe Bảo hoàng là",
+      "o": [
+        "Ô. Crôm-oen.",
+        "G. Oa-sinh-tơn.",
+        "M. Rô-be-spi-e.",
+        "G. Rút-xô."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Sắp xếp các sự kiện sau theo trình tự thời gian:\n1. Ô. Crôm-oen thiết lập chế độ độc tài quân sự.\n2. Nghị viện tiến hành đảo chính. Chế độ quân chủ lập hiến được thiết lập ở Anh.\n3. Vua Sác-lơ I bị xử tử. Anh trở thành nước cộng hòa.\n4. Cách mạng tư sản Anh bùng nổ.\n5. Chế độ quân chủ chuyên chế được phục hưng ở Anh.",
+      "o": [
+        "1 - 3 - 5 - 4 - 2.",
+        "2 - 1 - 4 - 5 - 3.",
+        "3 - 5 - 2 - 1 - 4.",
+        "4 - 3 - 1 - 5 - 2."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Lực lượng nào giữ vai trò lãnh đạo trong cuộc cách mạng tư sản Anh (1642 - 1688)?",
+      "o": [
+        "Giai cấp tư sản và nông dân.",
+        "Quý tộc mới và tăng lữ Giáo hội.",
+        "Quý tộc phong kiến và chủ nô.",
+        "Giai cấp tư sản và quý tộc mới."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Thắng lợi của cuộc cách mạng tư sản Anh (1642 - 1688) đã",
+      "o": [
+        "mở đường cho chủ nghĩa tư bản phát triển ở Anh.",
+        "đưa tới sự thiết lập của chế độ quân chủ chuyên chế.",
+        "lật đổ sự tồn tại của chế độ quân chủ lập hiến ở Anh.",
+        "đưa nhân dân lao động lên nắm chính quyền ở Anh."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "So với chế độ quân chủ chuyên chế, chế độ quân chủ lập hiến có điểm gì khác biệt?",
+      "o": [
+        "Không tồn tại ngôi vua.",
+        "Quyền lực của vua bị hạn chế.",
+        "Quyền lực của vua là tối cao và tuyệt đối.",
+        "Không thừa nhận vai trò của Nghị viện."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Đến năm 1760, thực dân Anh đã thiết lập được bao nhiêu thuộc địa ở Bắc Mỹ?",
+      "o": [
+        "13 thuộc địa.",
+        "14 thuộc địa.",
+        "15 thuộc địa.",
+        "16 thuộc địa."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Văn kiện nào dưới đây đã xác định quyền con người và quyền độc lập của 13 thuộc địa Anh ở Bắc Mỹ?",
+      "o": [
+        "Tuyên ngôn Nhân quyền và Dân quyền.",
+        "Tuyên ngôn Giải phóng.",
+        "Tuyên ngôn Độc lập.",
+        "Tuyên ngôn hòa bình."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Hãy cho biết đoạn văn sau được trích dẫn từ văn kiện nào?\n“Chúng tôi khẳng định một chân lý hiển nhiên rằng mọi người sinh ra đều bình đẳng, rằng tạo hóa đã ban cho họ những quyền tất yếu và bất khả xâm phạm, trong đó có quyền được sống, quyền được tự do và mưu cầu hạnh phúc”",
+      "o": [
+        "Tuyên ngôn Độc lập (Mỹ, 1776).",
+        "Tuyên ngôn hòa bình (Ấn Độ, 1920).",
+        "Tuyên ngôn Nhân quyền và Dân quyền (Pháp, 1789).",
+        "Tuyên ngôn Giải phóng nô lệ (Mỹ, 1862)."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Cuộc chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ đã đạt được kết quả nào?",
+      "o": [
+        "Đưa người lao động Bắc Mỹ lên nắm chính quyền.",
+        "Lật đổ ách cai trị của thực dân Anh ở Bắc Mỹ.",
+        "Lật đổ chế độ phong kiến chuyên chế ở Bắc Mỹ.",
+        "Nhà nước quân chủ lập hiến ra đời ở Bắc Mỹ."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Nội dung nào dưới đây phản ánh đúng ý nghĩa của cuộc chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ?",
+      "o": [
+        "Mở ra thời đại mới - thời đại của các cuộc cách mạng tư sản.",
+        "Cổ vũ nhân dân thuộc địa khắp nơi trên thế giới đứng lên đấu tranh.",
+        "Là cuộc cách mạng triệt để nhất trong các cuộc cách mạng tư sản.",
+        "Đưa người dân lao động ở Bắc Mỹ lên nắm chính quyền."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Cuộc chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ diễn ra dưới hình thức nào?",
+      "o": [
+        "Nội chiến cách mạng.",
+        "Cải cách, duy tân đất nước.",
+        "Chiến tranh giải phóng dân tộc.",
+        "Đấu tranh thống nhất đất nước."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Nội dung nào sau đây phản ánh điểm tương đồng cơ bản giữa cách mạng tư sản Anh và Chiến tranh giành độc lập của 13 thuộc địa ở Bắc Mỹ?",
+      "o": [
+        "Lực lượng lãnh đạo cách mạng.",
+        "Hình thức của cuộc cách mạng.",
+        "Mục tiêu chống chế độ phong kiến.",
+        "Tính chất của cuộc cách mạng."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Vào đầu thế kỉ XVII, nước Anh có nền kinh tế:",
+      "o": [
+        "Phát triển nhất châu Âu.",
+        "Lạc hậu nhất châu Âu.",
+        "Với nhiều ngành nghề hoàn toàn mới lạ, đi trước thế giới.",
+        "Phát triển nhất châu Âu và có nhiều ngành nghề mới lạ, đi trước thế giới."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Vào đầu thế kỉ XVII ở Anh, sự thay đổi về kinh tế, những mâu thuẫn gay gắt giữa tư sản, quý tộc mới với chế độ quân chủ chuyên chế đã dẫn tới:",
+      "o": [
+        "Cuộc chiến với người Scotland và nhiều dân tộc xung quanh nước Anh khác.",
+        "Cuộc cách mạng lật đổ chế độ phong kiến, xác lập quan hệ sản xuất tư bản chủ nghĩa.",
+        "Cuộc cách mạng lật đổ chế độ phong kiến, xác lập quan hệ sản xuất xã hội chủ nghĩa.",
+        "Cuộc chiến tranh giành ngôi vua giữa tầng lớp quý tộc mới."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Sau khi phát hiện ra châu Mỹ, nhiều nước châu Âu đã:",
+      "o": [
+        "Chuyển toàn bộ lãnh thổ của mình sang lục địa này.",
+        "Tiến hành xâm chiếm lục địa này.",
+        "Đặt quan hệ hữu nghị hợp tác phát triển toàn diện với các nước ở lục địa này.",
+        "Biến nơi đây thành hải cảng cho giao thương Á – Âu."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Vào thế kỉ XVIII, khi đại biểu các thuộc địa Bắc Mỹ họp, đòi vua Anh xoá bỏ các luật cấm vô lí thì vua Anh đã làm gì?",
+      "o": [
+        "Không chấp nhận yêu cầu đó và tuyên bố sẽ trừng trị nếu các thuộc địa “nổi loạn”.",
+        "Không chấp nhận yêu cầu đó và hợp lực với quân đội của các nước khác tấn công 13 thuộc địa này.",
+        "Chấp nhận yêu cầu đó và nhượng bộ cho 13 thuộc địa này.",
+        "Chấp nhận yêu cầu đó và cho phép hình thành Hợp chúng quốc Hoa Kỳ."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Cuộc chiến tranh bùng nổ giữa thực dân Anh và 13 thuộc địa Anh ở Bắc Mỹ xảy ra vào năm nào?",
+      "o": [
+        "1765",
+        "1775",
+        "1785",
+        "1795"
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Vào đầu thế kỉ XVII, xã hội nước Anh chia thành hai phe đối lập, đó là:",
+      "o": [
+        "Một bên là vua và các thế lực phong kiến; một bên là giai cấp tư sản, tầng lớp quý tộc mới, nông dân và bình dân thành thị.",
+        "Một bên là hoàng gia và giới quý tộc; một bên là quan lại, giai cấp tư sản, tầng lớp quý tộc mới.",
+        "Một bên là vua, các thế lực phong kiến và giai cấp tư sản; một bên là nông dân và bình dân thành thị.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Năm 1640, để có tiền đàn áp cuộc khởi nghĩa của người Scotland, vua Charles I (Sác-lơ I) đã làm gì?",
+      "o": [
+        "Tăng thuế thu nhập cá nhân lên gấp đôi so với trước đó.",
+        "Vay nặng lãi từ giai cấp tư sản và đặc biệt là tầng lớp quý tộc mới.",
+        "Triệu tập Quốc hội, gồm đa số đại biểu là quý tộc mới và tư sản, nhằm tăng thêm các khoản thuế mới.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Sự kiện nào xảy ra sau chiến thắng Saratoga (Xa-ra-tô-ga, năm 1777) trong Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ?",
+      "o": [
+        "Nhân dân cảng Boston tấn công ba tàu chở chè của Anh.",
+        "Chiến tranh bùng nổ.",
+        "Hợp chúng quốc Mỹ được thành lập.",
+        "Chiến thắng Yorktown."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Câu nào sau đây không đúng về tình hình kinh tế nước Anh vào đầu thế kỉ XVII?",
+      "o": [
+        "Công nghiệp len dạ phát triển đã dẫn đến nghề nuôi cừu trở nên có lợi nhất.",
+        "Việc chế tạo thành công súng bắn liên thanh đã mở ra một lĩnh vực thu được rất nhiều lợi nhuận, đó là sản xuất vũ khí.",
+        "Số đông quý tộc vừa và nhỏ chuyển sang kinh doanh theo lối tư bản chủ nghĩa, đuổi tá điền, rào đất, biến ruộng đất thành đồng cỏ để chăn nuôi cừu,...",
+        "Nông dân không có đất để trồng trọt, chăn nuôi, cuộc sống vô cùng khổ cực."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Nguyên nhân nào dẫn tới sự bùng nổ Cách mạng tư sản Anh?",
+      "o": [
+        "Sự phân hóa giai cấp.",
+        "Sự thay đổi về kinh tế.",
+        "Chính sách tăng thuế.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Đâu là nguyên nhân khiến vua tuyên chiến với Quốc hội, cách mạng tư sản Anh bùng nổ?",
+      "o": [
+        "Chính sách tăng thuế khiến mâu thuẫn giữa tư sản, quý tộc mới với thế lực phong kiến phản động ngày càng gay gắt.",
+        "Mâu thuẫn gay gắt giữa tư sản, quý tộc mới với chế độ quân chủ chuyên chế (bên cạnh những mâu thuẫn cũ).",
+        "Sự phân hóa giai cấp, chia thành 2 phe đối lập.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Tính chất của Cách mạng tư sản Anh là gì?",
+      "o": [
+        "Thắng lợi của giai cấp tư sản là thắng lợi của chế độ xã hội mới, của chế độ tư hữu tư bản chủ nghĩa đối với chế độ phong kiến.",
+        "Thắng lợi của giai cấp tư sản là thắng lợi của chế độ xã hội cũ, của chế độ xã hội chủ nghĩa.",
+        "Thắng lợi của giai cấp tư sản là thắng lợi của chế độ xã hội cũ, của chế độ tư hữu tư bản chủ nghĩa đối với chế độ phong kiến.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Đâu là hạn chế của Cách mạng tư sản Anh?",
+      "o": [
+        "Là một cuộc cách mạng không triệt để.",
+        "Không xóa bỏ tận gốc chế độ phong kiến.",
+        "Chưa giải quyết được vấn đề ruộng đất của nông dân.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Đâu là nguyên nhân trực tiếp dẫn tới Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ?",
+      "o": [
+        "Sự phát triển kinh tế theo con đường tư bản chủ nghĩa làm sâu sắc hơn mâu thuẫn giữa các thuộc địa với chính quốc.",
+        "Chế độ thuế vô lí của thực dân Anh.",
+        "Nhân dân cảng Bô-xtơn tấn công ba tàu chở chè của Anh.",
+        "Đầu thế kỷ XVIII, người Anh thành lập 13 thuộc địa ở Bắc Mỹ."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Đâu không phải là kết quả của Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ?",
+      "o": [
+        "Lật đổ ách thống trị của thực dân Anh.",
+        "Lật đổ chế độ phong kiến.",
+        "Thành lập Hợp chúng quốc Mỹ.",
+        "Mở đường cho kinh tế tư bản chủ nghĩa phát triển."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Tính chất của Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ là?",
+      "o": [
+        "Thắng lợi của chế độ xã hội mới.",
+        "Là cuộc cách mạng tư sản.",
+        "Là cuộc cách mạng vô sản.",
+        "Tất cả các ý còn lại đều sai."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Đặc điểm chính của Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ là?",
+      "o": [
+        "Do tầng lớp chủ nô và tư sản lãnh đạo.",
+        "Diễn ra dưới hình thức cuộc chiến tranh giải phóng.",
+        "Thiết lập chế độ cộng hòa tổng thống.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Trong Cách mạng tư sản Anh, sự tham gia lãnh đạo của tầng lớp nào đóng vai trò quan trọng, quyết định chiến thắng của chủ nghĩa tư bản đối với chế độ phong kiến?",
+      "o": [
+        "Quý tộc cũ.",
+        "Nông dân.",
+        "Quý tộc mới.",
+        "Công nhân."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Cuộc chiến tranh nào đã dẫn tới sự thành lập Hợp chúng quốc Mỹ?",
+      "o": [
+        "Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ.",
+        "Cách mạng tư sản Anh.",
+        "Cách mạng tháng Mười Nga.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Ai là người lãnh đạo lực lượng yêu nước giành chiến thắng trong cuộc Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ?",
+      "o": [
+        "G. Oa-sinh-tơn.",
+        "Ô-li-vơ Crôm-oen.",
+        "Hô-xê Ri-dan.",
+        "Bô-ni-pha-xi-ô."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Tổng thống đầu tiên của Hợp chúng quốc Mỹ là",
+      "o": [
+        "G. Oa-sinh-tơn.",
+        "A. Lin-côn.",
+        "B. Phran-klin.",
+        "T. Giép-phéc-xơn."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Sau khi Ô-li-vơ Crôm-oen mất, nước Anh rơi vào hoàn cảnh nào?",
+      "o": [
+        "Tình trạng không ổn định về chính trị.",
+        "Sự thỏa hiệp giữa Quốc hội với lực lượng phong kiến cũ.",
+        "Nền quân chủ được phục hồi.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Đầu thế kỉ XVII, xã hội Anh tồn tại những mâu thuẫn nào?",
+      "o": [
+        "Mâu thuẫn giữa nông dân với địa chủ, quý tộc.",
+        "Mâu thuẫn giữa giai cấp tư sản, quý tộc mới với chế độ quân chủ chuyên chế.",
+        "Cả mâu thuẫn giữa nông dân với địa chủ, quý tộc và mâu thuẫn giữa tư sản, quý tộc mới với chế độ quân chủ chuyên chế.",
+        "Đáp án khác."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Ở Pháp, vào cuối thế kỉ XVIII, những đẳng cấp nào không phải đóng thuế?",
+      "o": [
+        "Quý tộc và Đẳng cấp thứ ba.",
+        "Tăng lữ Giáo hội và Quý tộc.",
+        "Đẳng cấp thứ ba và Tăng lữ.",
+        "Giai cấp tư sản và nông dân."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Người đứng đầu nhà nước phong kiến chuyên chế ở Pháp trong những năm 1774 - 1789 là",
+      "o": [
+        "Na-pô-lê-ông Đại đế.",
+        "vua Ni-cô-lai II.",
+        "vua Lu-i XVI.",
+        "vua Sác-lơ I."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Trong xã hội Pháp cuối thế kỉ XVIII, lực lượng nào dưới đây không thuộc Đẳng cấp thứ ba?",
+      "o": [
+        "Giai cấp tư sản.",
+        "Bình dân thành thị.",
+        "Nông dân.",
+        "Quý tộc phong kiến."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Nội dung nào dưới đây không phản ánh đúng tình hình nước Pháp cuối thế kỉ XVIII?",
+      "o": [
+        "Chế độ quân chủ lập hiến kìm hãm sự phát triển của nền kinh tế.",
+        "Sản xuất nông nghiệp lạc hậu, mất mùa thường xuyên diễn ra.",
+        "Trào lưu Triết học Ánh sáng được đón nhận rộng rãi trong xã hội.",
+        "Trật tự ba đẳng cấp ngày càng khoét sâu mâu thuẫn trong xã hội."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Ngày 5/5/1789, vua Lu-i XVI triệu tập Hội nghị ba đẳng cấp nhằm mục đích gì?",
+      "o": [
+        "Thông qua bản Hiến pháp mới của quốc gia.",
+        "Hòa giải mâu thuẫn giữa các đẳng cấp.",
+        "Bầu các đại biểu của Quốc hội mới.",
+        "Tăng thuế cũ, đặt thêm các loại thuế mới."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Sắp xếp các sự kiện sau theo đúng tiến trình của Cách mạng tư sản Pháp (cuối thế kỉ XVIII):\n1. Tuyên ngôn Nhân quyền và Dân quyền được công bố.\n2. Vua Lu-i XVI bị xử tử. Liên minh phong kiến châu Âu tấn công nước Pháp.\n3. Quần chúng nhân dân Pa-ri tấn công ngục Ba-xti.\n4. Na-pô-lê-ông lên nắm chính quyền.\n5. Rô-be-spi-e thiết lập nền chuyên chính cách mạng.",
+      "o": [
+        "1 - 3 - 4 - 5 - 2.",
+        "5 - 4 - 3 - 2 - 1.",
+        "3 - 1 - 2 - 5 - 4.",
+        "1 - 2 - 3 - 4 - 5."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Sự kiện nào dưới đây đã châm ngòi cho sự bùng nổ của Cách mạng tư sản Pháp (cuối thế kỉ XVIII)?",
+      "o": [
+        "Rô-be-spi-e thiết lập nền chuyên chính dân chủ cách mạng (tháng 7/1793).",
+        "Tuyên ngôn Nhân quyền và Dân quyền được thông qua (tháng 8/1789).",
+        "Quần chúng nhân dân Pa-ri đánh chiếm ngục Ba-xti (tháng 7/1789).",
+        "Vua Lu-i XVI bị xử tử với tội danh phản bội Tổ quốc (tháng 1/1793)."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Trong Cách mạng tư sản Pháp cuối thế kỉ XVIII, ai là người đứng đầu nền chuyên chính dân chủ Gia-cô-banh?",
+      "o": [
+        "Rút-xô.",
+        "Rô-be-spi-e.",
+        "Lu-i XVI.",
+        "Vôn-te."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Khi soạn thảo Tuyên ngôn Độc lập cho nhà nước Việt Nam Dân chủ Cộng hòa, Chủ tịch Hồ Chí Minh đã trích dẫn những câu nói nổi tiếng trong bản tuyên ngôn nào dưới đây?",
+      "o": [
+        "Tuyên ngôn Nhân quyền và Dân quyền (Pháp, 1789).",
+        "Tuyên ngôn hòa bình (Ấn Độ, 1920).",
+        "Tuyên ngôn của Đảng Cộng sản (1848).",
+        "Tuyên ngôn Giải phóng nô lệ (Mỹ, 1862)."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Cuộc Cách mạng tư sản Pháp (1789 - 1794) diễn ra dưới hình thức nào?",
+      "o": [
+        "Nội chiến và chiến tranh vệ quốc.",
+        "Chiến tranh giải phóng dân tộc.",
+        "Cải cách, duy tân đất nước.",
+        "Nội chiến cách mạng."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Lực lượng nào giữ vai trò lãnh đạo trong cuộc cách mạng tư sản Pháp (1789 - 1794)?",
+      "o": [
+        "Giai cấp tư sản.",
+        "Tăng lữ Giáo hội.",
+        "Quý tộc phong kiến.",
+        "Tầng lớp chủ nô."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Nội dung nào sau đây không phản ánh đúng ý nghĩa của cuộc cách mạng tư sản Pháp (cuối thế kỉ XVIII)?",
+      "o": [
+        "Tư tưởng Tự do, Bình đẳng, Bác ái được truyền bá rộng rãi.",
+        "Mở đường cho chủ nghĩa tư bản phát triển mạnh mẽ ở Pháp.",
+        "Để lại nhiều bài học kinh nghiệm cho phong trào cách mạng các nước.",
+        "Đưa giai cấp công nhân và nhân dân lao động Pháp lên nắm chính quyền."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Các cuộc cách mạng ở Anh (thế kỉ XVII), Bắc Mỹ và Pháp (thế kỉ XVIII) có điểm giống nhau cơ bản về",
+      "o": [
+        "hình thức cách mạng.",
+        "tính chất cách mạng.",
+        "lực lượng lãnh đạo cách mạng.",
+        "mục tiêu chống phong kiến."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Về kinh tế, cuối thế kỉ XVIII, Pháp là:",
+      "o": [
+        "Nước nông nghiệp tiên tiến.",
+        "Nước nông nghiệp lạc hậu.",
+        "Nước công nghiệp hiện đại.",
+        "Nước có tiềm lực lớn mạnh nhất."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Vào nửa sau thế kỉ XVIII, chế độ quân chủ chuyên chế ở Pháp đã:",
+      "o": [
+        "Đạt đến sự chuẩn mực.",
+        "Lâm vào tình trạng khủng hoảng.",
+        "Bước đầu thoái trào.",
+        "Bước đầu có những chính sách cởi mở."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Điều gì đã thôi thúc nhân dân Pháp nổi dậy đấu tranh chống chế độ phong kiến?",
+      "o": [
+        "Nước Pháp đang trong tình trạng diệt vong.",
+        "Đời sống nhân dân ngày càng cơ cực.",
+        "Nhân dân muốn chiếm đoạt ngôi vua.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Đâu là kết quả của Cách mạng tư sản Pháp?",
+      "o": [
+        "Lật đổ chế độ phong kiến, thành lập chế độ cộng hoà.",
+        "Đưa giai cấp tư sản lên cầm quyền.",
+        "Xoá bỏ nhiều trở ngại trên con đường phát triển của chủ nghĩa tư bản.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Trước cách mạng, điều gì đã kìm hãm nền sản xuất công nghiệp, hạn chế tự do kinh doanh và cải tiến sản xuất ở Pháp?",
+      "o": [
+        "Những quy định ngặt nghèo của chế độ phường hội.",
+        "Sự xâm lược của nước Anh.",
+        "Chế độ quân chủ chuyên chế đạt đến độ chuẩn.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Vào nửa sau thế kỉ XVIII, sự quan liêu, tham nhũng của tầng lớp quan lại ở Pháp trở thành:",
+      "o": [
+        "Gánh nặng đối với đời sống của đông đảo người dân.",
+        "Gánh nặng đối với vua Louis XVI.",
+        "Nguồn cơn cho sự chiếm đóng của Anh quốc.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Đâu không phải một nhà tư tưởng của giai cấp tư sản ở Pháp trước cách mạng?",
+      "o": [
+        "S. Montesquieu",
+        "Ph. Voltaire",
+        "G. Rousseau",
+        "F. Engels"
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Khi số nợ Nhà nước vay của tư sản không thể trả được thì nhà vua của Pháp trước cách mạng đã làm gì?",
+      "o": [
+        "Đi xâm chiếm các nước khác.",
+        "Tăng thuế.",
+        "Vay nặng lãi giới quý tộc và tư sản.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Cách mạng tư sản Pháp bùng nổ vào năm nào?",
+      "o": [
+        "1769",
+        "1779",
+        "1789",
+        "1799"
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Ngày Quốc khánh của nước Pháp là ngày:",
+      "o": [
+        "Mở đầu Cách mạng tư sản Pháp.",
+        "Thống nhất nước Pháp.",
+        "Lật đổ hoàn toàn chế độ phong kiến.",
+        "Nước Pháp trở thành siêu cường."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Cách mạng tư sản Pháp cuối thế kỉ XVIII được ví như cái gì?",
+      "o": [
+        "“cái chổi khổng lồ quét sạch mọi rác rưởi của chế độ phong kiến châu Âu”",
+        "“cái máy khổng lồ hút sạch mọi rác rưởi của chế độ phong kiến châu Âu”",
+        "“cái quạt khổng lồ thổi sạch mọi rác rưởi của chế độ phong kiến châu Âu”",
+        "Tất cả các ý còn lại đều sai."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Vì sao Cách mạng tư sản Pháp cuối thế kỉ XVIII được ví như “cái chổi khổng lồ quét sạch mọi rác rưởi của chế độ phong kiến châu Âu”?",
+      "o": [
+        "Cuộc cách mạng đã giải phóng các tư tưởng tiến bộ của xã hội Pháp khỏi sự kìm hãm dưới chế độ phong kiến.",
+        "Mở đường cho kinh tế tư bản chủ nghĩa phát triển.",
+        "Trở thành mối đe dọa đến sự tồn tại của các quốc gia theo chế độ phong kiến thời bấy giờ.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Nguyên nhân sâu xa dẫn tới sự bùng nổ Cách mạng tư sản Pháp cuối thế kỉ XVIII là gì?",
+      "o": [
+        "Mâu thuẫn về kinh tế, chính trị, xã hội trong lòng chế độ phong kiến Pháp ngày càng gay gắt.",
+        "Mâu thuẫn giữa Đẳng cấp thứ ba với hai đẳng cấp Tăng lữ và Quý tộc.",
+        "Cả mâu thuẫn trong lòng chế độ phong kiến và mâu thuẫn giữa Đẳng cấp thứ ba với Tăng lữ, Quý tộc.",
+        "Không phải các mâu thuẫn đó."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Nhân dân Pa-ri tấn công ngục Ba-xti vào ngày nào?",
+      "o": [
+        "14-7-1789",
+        "24-7-1789",
+        "15-7-1789",
+        "14-8-1789"
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Ý nghĩa của Cách mạng tư sản Pháp là gì?",
+      "o": [
+        "Lật đổ chế độ phong kiến, mọi tàn dư của chế độ phong kiến bị thủ tiêu.",
+        "Người nông dân được giải phóng, vấn đề ruộng đất được giải quyết.",
+        "Những cản trở đối với công thương nghiệp bị xóa bỏ, tạo điều kiện cho chủ nghĩa tư bản phát triển.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Đâu là tính chất của Cách mạng tư sản Pháp?",
+      "o": [
+        "Thiết lập chế độ cộng hòa cùng các quyền tự do, dân chủ.",
+        "Giải quyết vấn đề ruộng đất cho người nông dân.",
+        "Xóa bỏ chế độ đẳng cấp và quan hệ sản xuất phong kiến.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Cuộc cách mạng nào được coi là cuộc cách mạng dân chủ tư sản điển hình và triệt để nhất?",
+      "o": [
+        "Cách mạng tư sản Anh.",
+        "Cách mạng tư sản Pháp.",
+        "Cách mạng tháng Mười Nga.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Đâu là đặc điểm chính của cuộc cách mạng tư sản Pháp?",
+      "o": [
+        "Diễn ra dưới hình thức cuộc đấu tranh giai cấp quyết liệt.",
+        "Do giai cấp tư sản lãnh đạo.",
+        "Lật đổ chế độ quân chủ chuyên chế, bảo vệ Tổ quốc.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Cuộc cách mạng nào đã giải quyết được vấn đề ruộng đất cho nông dân?",
+      "o": [
+        "Cách mạng tư sản Anh thế kỉ XVII.",
+        "Chiến tranh giành độc lập của các thuộc địa Anh ở Bắc Mỹ.",
+        "Cách mạng tư sản Pháp cuối thế kỉ XVIII.",
+        "Cách mạng tháng Mười Nga."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Cách mạng tư sản Pháp cuối thế kỉ XVIII đã mở ra thời kì thắng lợi và củng cố của chế độ nào?",
+      "o": [
+        "Chủ nghĩa xã hội.",
+        "Chủ nghĩa tư bản.",
+        "Phong kiến.",
+        "Chiếm hữu nô lệ."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Cách mạng tư sản Pháp cuối thế kỉ XVIII đã đe dọa đến sự tồn tại của các quốc gia theo chế độ nào?",
+      "o": [
+        "Chủ nghĩa xã hội.",
+        "Chủ nghĩa tư bản.",
+        "Phong kiến.",
+        "Chiếm hữu nô lệ."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Sự khủng hoảng của nền tài chính quốc gia buộc vua Lu-i XVI phải làm gì?",
+      "o": [
+        "Triệu tập Hội nghị ba đẳng cấp tại cung điện Véc-xai.",
+        "Tiến hành mở các cuộc chiến tranh xâm lược.",
+        "Bóc lột, đàn áp nhân dân.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Mâu thuẫn giữa Đẳng cấp thứ ba với hai đẳng cấp Tăng lữ và Quý tộc là mâu thuẫn gì?",
+      "o": [
+        "Mâu thuẫn giữa việc xóa bỏ và duy trì chế độ phong kiến.",
+        "Mâu thuẫn giữa việc bảo vệ lợi ích kinh tế.",
+        "Mâu thuẫn giữa việc nắm quyền lực.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Nguyên nhân trực tiếp dẫn tới sự bùng nổ Cách mạng tư sản Pháp cuối thế kỉ XVIII là gì?",
+      "o": [
+        "Sự khủng hoảng của nền tài chính quốc gia.",
+        "Lu-i XVI triệu tập Hội nghị ba đẳng cấp tại cung điện Véc-xai.",
+        "Đề xuất vấn đề vay tiền và ban hành thuế mới.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Vì sao Cách mạng tư sản Pháp cuối thế kỉ XVIII được coi là một cuộc đại cách mạng?",
+      "o": [
+        "Cách mạng tư sản Pháp đã giải quyết triệt để những nhiệm vụ dân tộc và dân chủ đặt ra cho nước Pháp vào cuối thế kỉ XVIII.",
+        "Thắng lợi của Cách mạng tư sản Pháp không chỉ đưa đến những thay đổi sâu rộng trong phạm vi nước Pháp mà còn để lại dấu ấn sâu sắc trong tiến trình lịch sử châu Âu (nói riêng) và nhân loại (nói chung).",
+        "Vì cả hai lí do: giải quyết triệt để nhiệm vụ dân tộc, dân chủ và để lại dấu ấn sâu sắc trong lịch sử châu Âu, nhân loại.",
+        "Không vì lí do nào trong hai lí do đó."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Cách mạng tư sản Pháp đã giải quyết triệt để những nhiệm vụ dân tộc và dân chủ nào đặt ra cho nước Pháp vào cuối thế kỉ XVIII?",
+      "o": [
+        "Thống nhất lãnh thổ, hình thành thị trường dân tộc thống nhất, qua đó thúc đẩy sự phát triển của kinh tế tư bản chủ nghĩa.",
+        "Đấu tranh chống ngoại xâm và nội phản, bảo vệ độc lập dân tộc và chính quyền cách mạng.",
+        "Xóa bỏ chế độ phong kiến chuyên chế, xác lập nền dân chủ tư sản; xóa bỏ chế độ đẳng cấp, ban hành các quyền tự do, bình đẳng; đảm bảo quyền tư hữu về ruộng đất cho nông dân.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Những tư tưởng tiến bộ trong trào lưu Triết học Ánh sáng ở Pháp đã được đón nhận nồng nhiệt ở nhiều nơi trên thế giới, làm cho thế kỉ XVIII đi vào lịch sử với tên gọi nào?",
+      "o": [
+        "Thế kỉ Ánh sáng.",
+        "Thế kỉ Bóng tối.",
+        "Thế kỉ đấu tranh.",
+        "Tất cả các ý còn lại đều sai."
+      ],
+      "c": 0
     }
   ]
 }
