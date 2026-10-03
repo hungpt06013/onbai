@@ -17,7 +17,7 @@
     })();
   </script>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="color-scheme" content="light dark" />
+  <meta name="color-scheme" content="light" />
   <title>Ôn Tập Bài Học - Đa Môn</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
@@ -48,6 +48,13 @@
 html {
   overflow-y: scroll;
 }
+
+/* Color scheme follows the in-app toggle, not the OS theme: otherwise on a
+   phone in system dark mode, light mode gets white default text (invisible on
+   white cards) and dark form controls. */
+:root { color-scheme: light; }
+body { color: #1f2937; }
+html:has(body.dark), body.dark { color-scheme: dark; }
 
 /* Dark mode styles */
 body.dark {
