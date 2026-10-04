@@ -7,12 +7,18 @@
     // Decode the GitHub Pages 404.html SPA redirect (see 404.html) back into a
     // real pathname *before* any routing code reads window.location.
     (function () {
+      // 404.html gửi về dạng /onbai/?p=/lop8/tx1ly&q=<query gốc>[&bf=1]
       var l = window.location;
-      if (l.search[1] === '/') {
-        var decoded = l.search.slice(1).split('&').map(function (s) {
-          return s.replace(/~and~/g, '&');
-        }).join('?');
-        window.history.replaceState(null, '', l.pathname.slice(0, -1) + decoded + l.hash);
+      if (l.search.indexOf('?p=/') === 0) {
+        var rest = l.search.slice(3);
+        if (/&bf=1$/.test(rest)) {
+          window.__spaFromHistory = true;
+          rest = rest.slice(0, -5);
+        }
+        var qi = rest.indexOf('&q=');
+        var path = (qi < 0 ? rest : rest.slice(0, qi)).replace(/~and~/g, '&');
+        var query = qi < 0 ? '' : '?' + rest.slice(qi + 3).replace(/~and~/g, '&');
+        window.history.replaceState(null, '', l.pathname.replace(/\/$/, '') + path + query + l.hash);
       }
     })();
   </script>
@@ -866,14 +872,14 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
     // ============================================================
     // DYNAMIC SUBJECT LOADING
     // ============================================================
-    async function loadSubjectsAndInit() {
+    async function loadSubjectsAndInit(subjectSlug) {
       try {
         const res = await fetch('subjects/index.json?_=' + Date.now(), { cache: 'no-store' });
         if (!res.ok) throw new Error('Cannot load subjects/index.json');
         subjectsIndex = await res.json();
         renderSubjectGrid();
-        // Thử restore tiến trình sau khi đã có danh sách môn
-        await tryRestoreQuizState();
+        // Mở môn trên URL / restore tiến trình sau khi đã có danh sách môn
+        await applySubjectRoute(subjectSlug);
       } catch(e) {
         const g = document.getElementById('subjectGrid');
         if (g) g.innerHTML = '<div class="col-span-3 text-center text-red-500 py-8 text-sm">Lỗi tải: ' + e.message + '</div>';
@@ -883,19 +889,65 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
       }
     }
 
-    async function tryRestoreQuizState() {
+    // onlySubjectId: chỉ restore nếu tiến trình đã lưu đúng là môn này (khi URL đã chỉ định môn)
+    // pushUrl: thêm URL của môn vào lịch sử thay vì thay thế URL hiện tại
+    async function tryRestoreQuizState(onlySubjectId, pushUrl) {
       try {
         const raw = localStorage.getItem('quizSavedState');
-        if (!raw) return;
+        if (!raw) return false;
         const state = JSON.parse(raw);
-        if (!state.currentSubject) return;
+        if (!state.currentSubject) return false;
+        if (onlySubjectId && state.currentSubject !== onlySubjectId) return false;
         // Bỏ qua nếu tiến trình đã lưu thuộc lớp khác với lớp đang xem
-        if (currentClassPrefix && !state.currentSubject.startsWith(currentClassPrefix + '_')) return;
+        if (currentClassPrefix && !state.currentSubject.startsWith(currentClassPrefix + '_')) return false;
         // Load data của môn cần restore trước
         await loadSubjectData(state.currentSubject);
         // Bây giờ subjectData đã có → gọi restore bình thường
-        restoreQuizState();
-      } catch(e) {}
+        if (!restoreQuizState()) return false;
+        syncSubjectUrl(!!pushUrl);
+        return true;
+      } catch(e) { return false; }
+    }
+
+    // Trang được mở bằng Back/Forward của trình duyệt? (chỉ áp dụng cho lần vào lớp đầu tiên)
+    let pageLoadedFromHistory = (() => {
+      const nav = performance.getEntriesByType('navigation')[0];
+      return !!window.__spaFromHistory || (!!nav && nav.type === 'back_forward');
+    })();
+
+    // Đồng bộ màn hình lớp với môn trên URL (/lop8 hoặc /lop8/tx1ly)
+    async function applySubjectRoute(subjectSlug) {
+      const fromHistory = pageLoadedFromHistory;
+      pageLoadedFromHistory = false;
+      if (!subjectSlug) {
+        if (currentSubject) {
+          // Về /lopX (vd. nút Back của trình duyệt) khi đang mở 1 môn → về danh sách môn;
+          // nếu người dùng hủy thì đưa URL trở lại môn đang làm
+          if (!navigateHomeWithConfirm()) syncSubjectUrl(true);
+          return;
+        }
+        // Mở /lopX bằng Back/Forward của trình duyệt thì chỉ hiện danh sách môn,
+        // không tự nhảy lại vào bài đang làm (bấm vào môn đó để làm tiếp)
+        if (fromHistory || !(await tryRestoreQuizState())) renderQuiz();
+        return;
+      }
+      const id = currentClassPrefix + '_' + subjectSlug;
+      if (!subjectsIndex.some(s => s.id === id)) {
+        // Môn không tồn tại → về danh sách môn của lớp
+        syncSubjectUrl(false);
+        if (!currentSubject) renderQuiz();
+        return;
+      }
+      if (currentSubject === id) { renderQuiz(); return; }
+      if (currentSubject && !navigateHomeWithConfirm()) {
+        // Đang làm môn khác và không muốn rời → giữ nguyên môn hiện tại
+        syncSubjectUrl(false);
+        return;
+      }
+      if (await tryRestoreQuizState(id)) return;
+      await loadSubjectData(id);
+      if (!subjectData[id]) { syncSubjectUrl(false); renderQuiz(); return; }
+      selectSubject(id);
     }
 
     function classLabel() { return currentClassPrefix === 'lop8' ? 'lớp 8' : 'lớp 7'; }
@@ -934,8 +986,12 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
       grid.querySelectorAll('.subject-card').forEach(btn => {
         btn.addEventListener('click', async () => {
           const id = btn.dataset.subjectId;
+          // Môn có bài đang làm dở → làm tiếp
+          if (await tryRestoreQuizState(id, true)) return;
           await loadSubjectData(id);
+          if (!subjectData[id]) return;
           selectSubject(id);
+          syncSubjectUrl(true);
         });
       });
 
@@ -2398,7 +2454,7 @@ btnRestart.addEventListener('click', () => {
     }
 
     resultHome.addEventListener('click', () => {
-      navigateHomeWithConfirm();
+      if (navigateHomeWithConfirm()) syncSubjectUrl(true);
     });
 
     backHomeBtn.addEventListener('click', () => {
@@ -2413,9 +2469,12 @@ btnRestart.addEventListener('click', () => {
       randomModeStats = { totalAnswered: 0, totalCorrect: 0 };
       randomQueue = []; randomQueuePos = 0; randomHistory = []; randomHistoryPos = null;
       renderQuiz();
+      syncSubjectUrl(true);
     });
 
-    backToSubject.addEventListener('click', () => navigateHomeWithConfirm());
+    backToSubject.addEventListener('click', () => {
+      if (navigateHomeWithConfirm()) syncSubjectUrl(true);
+    });
 
     // ===== SINGLE QUESTION MODE (full mode only) =====
     function updateSingleNextBtn() {
@@ -2983,15 +3042,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </script>
 
-<!-- ===== ROUTER: /, /lop7, /lop8, /minigame, /minigame/hangdangthuc ===== -->
+<!-- ===== ROUTER: /, /lop7[/<môn>], /lop8[/<môn>], /minigame, /minigame/hangdangthuc ===== -->
 <script>
   const BASE_PATH = '/onbai';
 
+  function currentPath() {
+    return window.location.pathname.replace(/^\/onbai/, '').replace(/\/+$/, '');
+  }
+
   function getRoute() {
-    let path = window.location.pathname.replace(/^\/onbai/, '').replace(/\/+$/, '');
+    const path = currentPath();
     if (path === '' || path === '/index.html') return 'home';
-    if (path === '/lop7') return 'lop7';
-    if (path === '/lop8') return 'lop8';
+    const m = path.match(/^\/(lop7|lop8)(?:\/[^/]+)?$/);
+    if (m) return m[1];
     if (path === '/minigame') return 'minigame';
     if (path === '/minigame/hangdangthuc') return 'minigame-hangdangthuc';
     return 'home';
@@ -3001,6 +3064,26 @@ document.addEventListener('DOMContentLoaded', () => {
     if (route === 'home') return BASE_PATH + '/';
     if (route === 'minigame-hangdangthuc') return BASE_PATH + '/minigame/hangdangthuc';
     return BASE_PATH + '/' + route;
+  }
+
+  // /lop8/tx1ly → 'tx1ly' (id môn bỏ phần 'lop8_'), /lop8 → null
+  function getRouteSubjectSlug() {
+    const m = currentPath().match(/^\/(?:lop7|lop8)\/([^/]+)$/);
+    return m ? m[1] : null;
+  }
+
+  function subjectIdToSlug(id) {
+    return id.replace(/^lop\d+_/, '');
+  }
+
+  // Cập nhật URL theo lớp + môn đang mở (push: thêm vào lịch sử, ngược lại thay thế)
+  function syncSubjectUrl(push) {
+    if (!currentClassPrefix) return;
+    let target = BASE_PATH + '/' + currentClassPrefix;
+    if (currentSubject) target += '/' + subjectIdToSlug(currentSubject);
+    if (window.location.pathname === target) return;
+    if (push) window.history.pushState(null, '', target);
+    else window.history.replaceState(null, '', target);
   }
 
   function navigate(route) {
@@ -3019,7 +3102,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (subtitleEl) subtitleEl.textContent = 'Chọn môn học ' + label + ' để bắt đầu';
   }
 
-  function enterClassRoute(route) {
+  function enterClassRoute(route, wasInClass) {
     const changed = currentClassPrefix !== null && currentClassPrefix !== route;
     currentClassPrefix = route;
     if (changed) {
@@ -3032,14 +3115,22 @@ document.addEventListener('DOMContentLoaded', () => {
       randomQueue = []; randomQueuePos = 0; randomHistory = []; randomHistoryPos = null;
     }
     updateClassScreenHeader();
+    const slug = getRouteSubjectSlug();
     if (subjectsIndex.length === 0) {
-      loadSubjectsAndInit();
+      loadSubjectsAndInit(slug);
     } else {
       renderSubjectGrid();
-      if (!quizStarted) tryRestoreQuizState();
-      renderQuiz();
+      if (!slug && currentSubject && !wasInClass) {
+        // Quay lại lớp từ trang khác (vd. trang chủ) → tiếp tục môn đang mở
+        syncSubjectUrl(false);
+        renderQuiz();
+      } else {
+        applySubjectRoute(slug);
+      }
     }
   }
+
+  let lastRouteWasClass = false;
 
   function renderRoute() {
     const route = getRoute();
@@ -3050,7 +3141,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('mgHDTRoot').classList.toggle('hidden', route !== 'minigame-hangdangthuc');
     window.scrollTo(0, 0);
 
-    if (isClassRoute) enterClassRoute(route);
+    const wasInClass = lastRouteWasClass;
+    lastRouteWasClass = isClassRoute;
+    if (isClassRoute) enterClassRoute(route, wasInClass);
     if (route === 'minigame-hangdangthuc' && window.initMinigameScreen) {
       window.initMinigameScreen();
     }

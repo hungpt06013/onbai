@@ -9,11 +9,15 @@
   // back with history.replaceState() before the router reads window.location.
   var pathSegmentsToKeep = 1; // keep '/onbai'
   var l = window.location;
+  // Báo cho index.html biết trang được mở bằng Back/Forward (location.replace làm mất thông tin này)
+  var nav = window.performance && performance.getEntriesByType && performance.getEntriesByType('navigation')[0];
+  var fromHistory = !!nav && nav.type === 'back_forward';
   l.replace(
     l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
     l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?p=/' +
     l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
     (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+    (fromHistory ? '&bf=1' : '') +
     l.hash
   );
 </script>
