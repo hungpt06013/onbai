@@ -473,6 +473,83 @@
         "Đáp án khác."
       ],
       "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Đỉnh núi cao nhất Việt Nam là",
+      "o": [
+        "Ngọc Linh.",
+        "Phan-xi-păng.",
+        "Tây Côn Lĩnh.",
+        "Pu Xai Lai Leng."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Vùng núi Đông Bắc (Việt Nam) có bốn cánh cung lớn là",
+      "o": [
+        "Hoàng Liên Sơn, Ngân Sơn, Bắc Sơn, Đông Triều.",
+        "Sông Gâm, Pu Đen Đinh, Bắc Sơn, Đông Triều.",
+        "Sông Gâm, Ngân Sơn, Bắc Sơn, Đông Triều.",
+        "Sông Gâm, Ngân Sơn, Bạch Mã, Đông Triều."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Các cao nguyên nào sau đây thuộc vùng núi Trường Sơn Nam (Việt Nam)?",
+      "o": [
+        "Mộc Châu, Plây Ku, Đắk Lắk, Lâm Viên.",
+        "Kon Tum, Plây Ku, Đồng Văn, Lâm Viên.",
+        "Kon Tum, Sơn La, Đắk Lắk, Lâm Viên.",
+        "Kon Tum, Plây Ku, Đắk Lắk, Lâm Viên."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Ở khu vực đồng bằng Việt Nam thường xảy ra các loại thiên tai nào sau đây?",
+      "o": [
+        "Lũ quét, trượt lở đất, xói mòn đất.",
+        "Bão, lũ lụt, hạn hán, xâm nhập mặn.",
+        "Động đất, núi lửa, sóng thần.",
+        "Lũ nguồn, sạt lở núi, rét đậm, rét hại."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Đồng bằng sông Hồng (Việt Nam) có diện tích khoảng",
+      "o": [
+        "5 000 km².",
+        "10 000 km².",
+        "15 000 km².",
+        "25 000 km²."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Đặc điểm nào sau đây đúng với đất ở Đồng bằng sông Cửu Long (Việt Nam)?",
+      "o": [
+        "Chủ yếu là đất feralit hình thành trên đá badan.",
+        "Chủ yếu là đất cát pha, rất nghèo dinh dưỡng.",
+        "Chủ yếu là đất bạc màu do được khai thác lâu đời.",
+        "Ngoài đất phù sa còn có diện tích lớn đất phèn, đất mặn."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Địa hình đồi trung du ở Việt Nam, chuyển tiếp giữa miền núi và đồng bằng, phân bố nhiều ở",
+      "o": [
+        "Rìa phía bắc và phía tây của Đồng bằng sông Hồng.",
+        "Rìa phía nam của Đồng bằng sông Cửu Long.",
+        "Trên các cao nguyên badan ở Tây Nguyên.",
+        "Dải ven biển Duyên hải Nam Trung Bộ."
+      ],
+      "c": 0
     }
   ]
 }
