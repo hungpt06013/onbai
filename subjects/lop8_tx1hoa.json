@@ -860,9 +860,9 @@
       "type": "mcq",
       "q": "Phát biểu nào sau đây là đúng?\n(a). Phản ứng tỏa nhiệt là phản ứng hóa học trong đó có sự giải phóng nhiệt năng ra môi trường.\n(b). Phản ứng thu nhiệt là phản ứng hóa học trong đó có sự hấp thụ nhiệt năng từ môi trường.\n(c). Phản ứng tỏa nhiệt là phản ứng hóa học trong đó có sự hấp thụ nhiệt năng từ môi trường.\n(d). Phản ứng thu nhiệt là phản ứng hóa học trong đó có sự giải phóng nhiệt năng từ môi trường.",
       "o": [
-        "(a) và (d)",
-        "(b) và (c)",
-        "(c) và (d)",
+        "(a) và (d).",
+        "(b) và (c).",
+        "(c) và (d).",
         "(a) và (b)."
       ],
       "c": 3
