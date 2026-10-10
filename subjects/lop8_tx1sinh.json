@@ -322,6 +322,303 @@
     },
     {
       "type": "mcq",
+      "q": "Bệnh loãng xương là tình trạng",
+      "o": [
+        "mật độ chất khoáng trong xương thưa dần.",
+        "cột sống bị cong, xoay lệch về một bên.",
+        "cơ bị co cứng, không duỗi ra được.",
+        "khớp xương bị viêm, sưng đau."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Nguyên nhân gây bệnh loãng xương là do cơ thể thiếu",
+      "o": [
+        "calcium và phosphorus.",
+        "sắt và iodine.",
+        "vitamin C và vitamin B1.",
+        "protein và lipid."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Bệnh loãng xương thường gặp ở",
+      "o": [
+        "trẻ sơ sinh.",
+        "trẻ em đang lớn.",
+        "thanh niên.",
+        "người cao tuổi."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Khi bị chấn thương, người mắc bệnh loãng xương",
+      "o": [
+        "có nguy cơ gãy xương cao hơn người không mắc bệnh.",
+        "có xương rất cứng nên khó bị gãy.",
+        "có xương mau liền hơn người bình thường.",
+        "không bị ảnh hưởng gì đến xương."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Chọn cụm từ thích hợp để điền vào các chỗ trống trong câu sau: Bệnh loãng xương có triệu chứng là xương …(1)… dù chỉ bị chấn thương nhẹ. Nguyên nhân là do thiếu calcium và phosphorus để tạo xương, dẫn đến mật độ …(2)… trong xương thưa dần.",
+      "o": [
+        "(1): dễ bị gãy; (2): chất khoáng",
+        "(1): dễ bị gãy; (2): chất hữu cơ",
+        "(1): cứng chắc; (2): chất khoáng",
+        "(1): mềm dẻo; (2): tủy đỏ"
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Biện pháp nào sau đây giúp phòng chống bệnh loãng xương?",
+      "o": [
+        "Tập thể dục, thể thao đều đặn và vừa sức.",
+        "Ăn uống đủ đạm, calcium và vitamin D.",
+        "Tắm nắng đúng cách.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Thói quen nào sau đây làm tăng nguy cơ mắc bệnh loãng xương?",
+      "o": [
+        "Uống nhiều bia, rượu, cà phê.",
+        "Tắm nắng đúng cách.",
+        "Ăn nhiều thực phẩm giàu calcium.",
+        "Duy trì trọng lượng cơ thể hợp lí."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Phát biểu nào sau đây về bệnh loãng xương là đúng?",
+      "o": [
+        "Bệnh loãng xương chỉ xảy ra ở người già.",
+        "Người bị loãng xương thường có xương rất cứng.",
+        "Thiếu calcium và phosphorus làm xương trở nên yếu và dễ gãy.",
+        "Uống nhiều cà phê giúp phòng bệnh loãng xương."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Tắm nắng đúng cách giúp phòng bệnh loãng xương vì ánh nắng giúp cơ thể tạo ra",
+      "o": [
+        "vitamin A.",
+        "vitamin C.",
+        "vitamin D.",
+        "vitamin K."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Bộ xương người trưởng thành có khoảng bao nhiêu xương?",
+      "o": [
+        "106 xương.",
+        "206 xương.",
+        "306 xương.",
+        "600 xương."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Bộ xương người được chia thành ba phần là",
+      "o": [
+        "xương đầu, xương thân, xương chi.",
+        "xương sọ, xương sườn, xương chậu.",
+        "xương tay, xương chân, cột sống.",
+        "xương dài, xương ngắn, xương dẹt."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Xương thân gồm",
+      "o": [
+        "xương ức, xương sườn và xương sống.",
+        "xương sọ và xương mặt.",
+        "xương tay và xương chân.",
+        "xương đòn và xương bả vai."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Ba loại khớp xương cơ bản là",
+      "o": [
+        "khớp động, khớp bán động, khớp bất động.",
+        "khớp tay, khớp chân, khớp cổ.",
+        "khớp cứng, khớp mềm, khớp sụn.",
+        "khớp đơn, khớp kép, khớp ba."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Khớp giữa các xương hộp sọ thuộc loại",
+      "o": [
+        "khớp động.",
+        "khớp bán động.",
+        "khớp bất động.",
+        "khớp đòn bẩy."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Khớp khuỷu tay, khớp đầu gối thuộc loại",
+      "o": [
+        "khớp động.",
+        "khớp bán động.",
+        "khớp bất động.",
+        "khớp hộp sọ."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Khớp giữa các đốt sống thuộc loại",
+      "o": [
+        "khớp động.",
+        "khớp bán động.",
+        "khớp bất động.",
+        "khớp hộp sọ."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Cơ bám vào xương nhờ",
+      "o": [
+        "các mô liên kết như gân, dây chằng.",
+        "các mạch máu.",
+        "các dây thần kinh.",
+        "tủy xương."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Chất khoáng và chất hữu cơ trong xương lần lượt giúp xương",
+      "o": [
+        "bền chắc; mềm dẻo.",
+        "mềm dẻo; bền chắc.",
+        "nhẹ; nặng.",
+        "dài ra; to ra."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Hệ vận động của người có chức năng",
+      "o": [
+        "nâng đỡ và bảo vệ cơ thể, tạo ra hình dạng, duy trì tư thế và giúp con người vận động.",
+        "chỉ nâng đỡ và bảo vệ cơ thể.",
+        "chỉ tạo ra hình dạng cơ thể.",
+        "chỉ giúp con người vận động."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Khớp xương kết nối giữa các xương như thế nào để xương có khả năng chịu tải cao khi vận động?",
+      "o": [
+        "Kết nối linh hoạt giữa các xương.",
+        "Kết nối kiểu đòn bẩy giữa các xương.",
+        "Gắn kết chắc chắn giữa các xương.",
+        "Kết nối kiểu khớp bất động."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Tay ở tư thế nào có khả năng chịu tải tốt hơn?",
+      "o": [
+        "Tay co, cẳng tay gập lại.",
+        "Tay duỗi thẳng.",
+        "Tay buông thõng.",
+        "Như nhau ở mọi tư thế."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Hoạt động co cơ có ý nghĩa gì?",
+      "o": [
+        "Giúp cơ thể di chuyển.",
+        "Giúp cơ thể vận động.",
+        "Giúp con người lao động được.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Tật cong vẹo cột sống là tình trạng",
+      "o": [
+        "cột sống không giữ được trạng thái bình thường, các đốt sống bị xoay lệch về một bên, cong quá mức về phía trước hay phía sau.",
+        "mật độ chất khoáng trong xương thưa dần.",
+        "cơ lưng bị co cứng.",
+        "xương cột sống bị gãy."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Nguyên nhân nào dẫn đến tật cong vẹo cột sống?",
+      "o": [
+        "Ngồi học không đúng tư thế trong thời gian dài.",
+        "Mang vác vật nặng thường xuyên.",
+        "Còi xương.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Tập thể dục, thể thao có vai trò kích thích tích cực đến điều gì của xương?",
+      "o": [
+        "Chỉ sự lớn lên về chu vi của xương.",
+        "Chỉ sự kéo dài của xương.",
+        "Sự phát triển trọng lượng của xương.",
+        "Sự phát triển chiều dài và chu vi của xương."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Phương pháp luyện tập nào sau đây phù hợp với lứa tuổi học sinh?",
+      "o": [
+        "Đi bộ, chạy bộ, đạp xe, bơi lội, cầu lông.",
+        "Cử tạ thật nặng.",
+        "Tập luyện liên tục không nghỉ.",
+        "Mang vác vật nặng."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Để tăng cường khả năng sinh công của cơ và giúp cơ làm việc dẻo dai, chúng ta cần",
+      "o": [
+        "thường xuyên luyện tập thể dục, thể thao.",
+        "lao động vừa sức.",
+        "tắm nóng, tắm lạnh theo lộ trình phù hợp.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
       "q": "Cơ quan nào dưới đây không nằm trong ống tiêu hóa?",
       "o": [
         "Thực quản.",
@@ -781,6 +1078,325 @@
         "Tất cả các ý còn lại."
       ],
       "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Sâu răng là tình trạng tổn thương phần mô cứng của răng do",
+      "o": [
+        "có sâu trong miệng.",
+        "không đánh răng thường xuyên.",
+        "tế bào răng bị mòn đi vì hoạt động nhai.",
+        "vi khuẩn gây ra, hình thành các lỗ nhỏ trên răng."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Vi khuẩn chủ yếu gây bệnh sâu răng là",
+      "o": [
+        "Helicobacter pylori.",
+        "Streptococcus mutans.",
+        "trực khuẩn E. coli.",
+        "vi khuẩn lao."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Vi khuẩn gây sâu răng phân hủy thức ăn bám trên răng, tạo ra chất nào ăn mòn men răng?",
+      "o": [
+        "Acid.",
+        "Chất kiềm.",
+        "Muối khoáng.",
+        "Vitamin."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Loại thức ăn bám trên răng nào dễ gây sâu răng nhất?",
+      "o": [
+        "Đường và tinh bột.",
+        "Rau xanh.",
+        "Nước lọc.",
+        "Thịt nạc."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Khi lỗ sâu răng lan sâu và rộng thì",
+      "o": [
+        "gây đau, thức ăn dễ bị nhét vào lỗ sâu gây khó chịu.",
+        "răng tự liền lại.",
+        "răng trắng sáng hơn.",
+        "không ảnh hưởng gì."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Biện pháp nào giúp phòng chống sâu răng?",
+      "o": [
+        "Giữ vệ sinh răng miệng đúng cách.",
+        "Hạn chế đồ ngọt.",
+        "Khám răng định kì.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Chất dinh dưỡng là",
+      "o": [
+        "các chất có trong thức ăn mà cơ thể sử dụng làm nguyên liệu cấu tạo cơ thể và cung cấp năng lượng cho các hoạt động sống.",
+        "quá trình thu nhận và biến đổi thức ăn.",
+        "các chất cơ thể thải ra ngoài.",
+        "các enzyme tiêu hóa."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Dinh dưỡng là",
+      "o": [
+        "quá trình thu nhận, biến đổi và sử dụng chất dinh dưỡng để duy trì sự sống của cơ thể.",
+        "các chất có trong thức ăn.",
+        "quá trình thải phân.",
+        "lượng thức ăn ăn trong một ngày."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Các nhóm chất dinh dưỡng cần thiết cho cơ thể gồm",
+      "o": [
+        "carbohydrate, protein, chất béo, vitamin và chất khoáng.",
+        "chỉ carbohydrate, protein và chất béo.",
+        "chỉ vitamin và chất khoáng.",
+        "protein, enzyme và hormone."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Hoạt động của hệ tiêu hóa giúp",
+      "o": [
+        "biến đổi thức ăn thành các chất dinh dưỡng cung cấp cho cơ thể.",
+        "vận chuyển máu đi nuôi cơ thể.",
+        "trao đổi khí với môi trường.",
+        "lọc máu, tạo nước tiểu."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Các cơ quan trong ống tiêu hóa gồm",
+      "o": [
+        "miệng, thực quản, dạ dày, gan, ruột non, ruột già.",
+        "miệng, hầu, thực quản, dạ dày, tụy, ruột non, ruột già.",
+        "miệng, hầu, thực quản, dạ dày, ruột non, ruột già.",
+        "miệng, thực quản, dạ dày, túi mật, ruột non, ruột già."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Cơ quan nào dưới đây không phải là bộ phận của hệ tiêu hóa?",
+      "o": [
+        "Thanh quản.",
+        "Thực quản.",
+        "Dạ dày.",
+        "Gan."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Cơ quan nào có chức năng chứa, nghiền bóp và nhào trộn thức ăn cho ngấm dịch vị?",
+      "o": [
+        "Dạ dày.",
+        "Thực quản.",
+        "Ruột non.",
+        "Ruột già."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Enzyme trong nước bọt giúp biến đổi tinh bột chín là",
+      "o": [
+        "amylase.",
+        "pepsin.",
+        "lipase.",
+        "trypsin."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Ở khoang miệng, enzyme amylase biến đổi một phần tinh bột chín thành",
+      "o": [
+        "đường maltose.",
+        "amino acid.",
+        "glycerol và acid béo.",
+        "protein."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Ở dạ dày, enzyme pepsin giúp biến đổi một phần chất nào trong thức ăn?",
+      "o": [
+        "Protein.",
+        "Tinh bột.",
+        "Lipid.",
+        "Cellulose."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Ở ruột già, một số vi khuẩn phân hủy những chất còn lại của protein, carbohydrate, lên men tạo thành",
+      "o": [
+        "phân.",
+        "dịch mật.",
+        "nước bọt.",
+        "dịch vị."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Triệu chứng của bệnh viêm loét dạ dày – tá tràng là",
+      "o": [
+        "đau vùng bụng trên rốn, đầy bụng, khó tiêu, ợ hơi, ợ chua.",
+        "đau răng, chảy máu chân răng.",
+        "ho, khó thở.",
+        "đau khớp gối."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Để phòng bệnh viêm loét dạ dày – tá tràng cần",
+      "o": [
+        "ăn uống hợp lí, nghỉ ngơi và sinh hoạt điều độ, giữ tinh thần thoải mái.",
+        "thường xuyên uống rượu bia.",
+        "bỏ bữa sáng, ăn khuya.",
+        "để căng thẳng kéo dài."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Lượng thức ăn cung cấp cho cơ thể trong một ngày được gọi là",
+      "o": [
+        "khẩu phần ăn.",
+        "nhu cầu dinh dưỡng.",
+        "chế độ dinh dưỡng.",
+        "năng lượng."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Nguyên tắc xây dựng khẩu phần ăn là",
+      "o": [
+        "đảm bảo đủ lượng thức ăn phù hợp với nhu cầu dinh dưỡng của cơ thể.",
+        "cân đối thành phần các chất dinh dưỡng.",
+        "cung cấp đủ năng lượng cho cơ thể.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Trẻ em có nhu cầu dinh dưỡng cao hơn người cao tuổi vì",
+      "o": [
+        "ngoài năng lượng cho các hoạt động còn cần nguyên liệu để xây dựng cơ thể, giúp cơ thể lớn lên.",
+        "trẻ em ít vận động.",
+        "trẻ em tiêu hóa kém.",
+        "người cao tuổi không cần năng lượng."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "An toàn vệ sinh thực phẩm là",
+      "o": [
+        "giữ cho thực phẩm không bị nhiễm khuẩn, nhiễm độc và biến chất.",
+        "ăn thật nhiều thực phẩm.",
+        "chỉ ăn thực phẩm đắt tiền.",
+        "nấu thật nhiều món."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Thực phẩm nào sau đây là thực phẩm không an toàn?",
+      "o": [
+        "Thực phẩm nhiễm vi sinh vật và độc tố của chúng.",
+        "Thức ăn ôi thiu, biến chất.",
+        "Thực phẩm nhiễm chì, formaldehyde.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Mầm khoai tây có chứa chất độc nào?",
+      "o": [
+        "Solanine.",
+        "Tetrodotoxin.",
+        "Histamine.",
+        "Formaldehyde."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Cá nóc có chứa chất độc nào?",
+      "o": [
+        "Solanine.",
+        "Tetrodotoxin.",
+        "Histamine.",
+        "Chì."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Ăn phải thực phẩm không an toàn có thể gây ra",
+      "o": [
+        "ngộ độc thực phẩm, rối loạn tiêu hóa (đầy hơi, đau bụng, tiêu chảy).",
+        "tăng chiều cao.",
+        "xương chắc khỏe.",
+        "tăng sức đề kháng."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Việc nào sau đây không giúp giữ an toàn vệ sinh thực phẩm?",
+      "o": [
+        "Để lẫn thực phẩm ăn sống với thực phẩm cần nấu chín.",
+        "Bảo quản lạnh rau, quả, cá, thịt tươi.",
+        "Chỉ dùng đồ hộp còn hạn sử dụng.",
+        "Che đậy thực phẩm sau khi chế biến."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Thói quen ăn uống nào sau đây không tốt cho hệ tiêu hóa?",
+      "o": [
+        "Dự trữ thức ăn quá lâu và đun lại nhiều lần.",
+        "Ăn nhiều rau củ, trái cây.",
+        "Tránh chất béo, chất kích thích vào bữa tối.",
+        "Ăn uống vui vẻ, thoải mái."
+      ],
+      "c": 0
     }
   ]
 }
