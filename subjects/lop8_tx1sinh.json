@@ -423,10 +423,10 @@
       "type": "mcq",
       "q": "Bộ xương người trưởng thành có khoảng bao nhiêu xương?",
       "o": [
-        "106 xương.",
+        "200 xương.",
         "206 xương.",
-        "306 xương.",
-        "600 xương."
+        "208 xương.",
+        "300 xương."
       ],
       "c": 1
     },
@@ -1361,7 +1361,7 @@
         "Solanine.",
         "Tetrodotoxin.",
         "Histamine.",
-        "Chì."
+        "Formaldehyde."
       ],
       "c": 1
     },
