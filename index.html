@@ -468,9 +468,9 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
           <!-- Home button top-left -->
           <button id="lop7HomeBtn" class="absolute top-4 left-4 flex items-center gap-1.5 transition-all px-3 py-1.5 rounded-full text-sm font-bold backdrop-blur-sm" style="background:rgba(255,255,255,0.25);border:1.5px solid rgba(255,255,255,0.6);box-shadow:0 2px 10px rgba(0,0,0,0.15);letter-spacing:0.01em;">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3v-6a1 1 0 011-1h2a1 1 0 011 1v6h3a1 1 0 001-1V10M9 21h6"/>
+              <path id="lop7HomeBtnIcon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3v-6a1 1 0 011-1h2a1 1 0 011 1v6h3a1 1 0 001-1V10M9 21h6"/>
             </svg>
-            Trang chủ
+            <span id="lop7HomeBtnLabel">Trang chủ</span>
           </button>
 
           <div class="mb-4">
@@ -868,6 +868,26 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
     const subjectData = {};
     let subjectsIndex = [];
     let currentClassPrefix = null; // 'lop7' | 'lop8' - set by the router, filters subjectsIndex by id prefix
+    // Thư mục đang mở trong danh sách môn (entry "type": "folder" trong index.json, vd. 'lop8_luutru'),
+    // null = danh sách gốc của lớp. Môn thuộc thư mục có field "folder"; URL của môn không đổi.
+    let currentFolder = null;
+
+    function findFolder(id) {
+      return subjectsIndex.find(s => s.id === id && s.type === 'folder') || null;
+    }
+
+    function subjectFolder(id) {
+      const s = subjectsIndex.find(x => x.id === id);
+      return (s && s.folder) || null;
+    }
+
+    // Đổi thư mục đang xem; vẽ lại danh sách môn nếu có thay đổi
+    function setCurrentFolder(folderId) {
+      if (currentFolder === folderId) return;
+      currentFolder = folderId;
+      updateClassScreenHeader();
+      renderSubjectGrid();
+    }
 
     // ============================================================
     // DYNAMIC SUBJECT LOADING
@@ -904,6 +924,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
         await loadSubjectData(state.currentSubject);
         // Bây giờ subjectData đã có → gọi restore bình thường
         if (!restoreQuizState()) return false;
+        setCurrentFolder(subjectFolder(currentSubject));
         syncSubjectUrl(!!pushUrl);
         return true;
       } catch(e) { return false; }
@@ -915,20 +936,24 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
       return !!window.__spaFromHistory || (!!nav && nav.type === 'back_forward');
     })();
 
-    // Đồng bộ màn hình lớp với môn trên URL (/lop8 hoặc /lop8/tx1ly)
+    // Đồng bộ màn hình lớp với môn/thư mục trên URL (/lop8, /lop8/tx1ly hoặc /lop8/luutru)
     async function applySubjectRoute(subjectSlug) {
       const fromHistory = pageLoadedFromHistory;
       pageLoadedFromHistory = false;
-      if (!subjectSlug) {
+      const folder = subjectSlug ? findFolder(currentClassPrefix + '_' + subjectSlug) : null;
+      if (!subjectSlug || folder) {
+        const folderId = folder ? folder.id : null;
         if (currentSubject) {
-          // Về /lopX (vd. nút Back của trình duyệt) khi đang mở 1 môn → về danh sách môn;
+          // Về /lopX hoặc thư mục (vd. nút Back của trình duyệt) khi đang mở 1 môn → về danh sách môn;
           // nếu người dùng hủy thì đưa URL trở lại môn đang làm
-          if (!navigateHomeWithConfirm()) syncSubjectUrl(true);
+          if (navigateHomeWithConfirm()) setCurrentFolder(folderId);
+          else syncSubjectUrl(true);
           return;
         }
+        setCurrentFolder(folderId);
         // Mở /lopX bằng Back/Forward của trình duyệt thì chỉ hiện danh sách môn,
         // không tự nhảy lại vào bài đang làm (bấm vào môn đó để làm tiếp)
-        if (fromHistory || !(await tryRestoreQuizState())) renderQuiz();
+        if (folder || fromHistory || !(await tryRestoreQuizState())) renderQuiz();
         return;
       }
       const id = currentClassPrefix + '_' + subjectSlug;
@@ -956,7 +981,8 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
       const grid = document.getElementById('subjectGrid');
       if (!grid) return;
       const prefix = currentClassPrefix ? (currentClassPrefix + '_') : '';
-      const filtered = subjectsIndex.filter(s => s.id.startsWith(prefix));
+      const inClass = subjectsIndex.filter(s => s.id.startsWith(prefix));
+      const filtered = inClass.filter(s => (s.folder || null) === currentFolder);
 
       if (filtered.length === 0) {
         grid.innerHTML = `<div class="md:col-span-3 text-center py-10">
@@ -965,9 +991,12 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
         return;
       }
 
-      grid.innerHTML = filtered.map(s => `
+      grid.innerHTML = filtered.map(s => {
+        const isFolder = s.type === 'folder';
+        const badge = isFolder ? inClass.filter(x => x.folder === s.id).length + ' môn' : 'Đang tải...';
+        return `
         <button data-subject-id="${s.id}"
-          class="subject-card group relative overflow-hidden bg-gradient-to-br ${s.gradient} text-white p-8 rounded-xl ${s.hoverGradient} transition-all transform hover:scale-[1.02] shadow-lg">
+          class="${isFolder ? 'folder-card' : 'subject-card'} group relative overflow-hidden bg-gradient-to-br ${s.gradient} text-white p-8 rounded-xl ${s.hoverGradient} transition-all transform hover:scale-[1.02] shadow-lg">
           <div class="relative z-10">
             <div class="flex items-center justify-center mb-4">
               <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -976,12 +1005,21 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
             </div>
             <h3 class="text-2xl font-bold mb-2">${s.label}</h3>
             <p class="text-white/70 text-sm">${s.subtitle}</p>
-            <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto subject-q-count" data-id="${s.id}">
-              Đang tải...
+            <div class="mt-4 text-xs bg-white/20 rounded-full px-3 py-1 w-fit mx-auto${isFolder ? '' : ' subject-q-count'}" data-id="${s.id}">
+              ${badge}
             </div>
           </div>
         </button>
-      `).join('');
+      `;
+      }).join('');
+
+      grid.querySelectorAll('.folder-card').forEach(btn => {
+        btn.addEventListener('click', () => {
+          setCurrentFolder(btn.dataset.subjectId);
+          syncSubjectUrl(true);
+          window.scrollTo(0, 0);
+        });
+      });
 
       grid.querySelectorAll('.subject-card').forEach(btn => {
         btn.addEventListener('click', async () => {
@@ -995,7 +1033,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
         });
       });
 
-      filtered.forEach(s => loadSubjectCount(s.id));
+      filtered.filter(s => s.type !== 'folder').forEach(s => loadSubjectCount(s.id));
     }
 
     async function loadSubjectData(id) {
@@ -1016,6 +1054,8 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
     }
 
     function selectSubject(subjectKey) {
+      // Mở môn thuộc thư mục (kể cả mở thẳng bằng URL) → "Chọn môn khác" quay về thư mục đó
+      setCurrentFolder(subjectFolder(subjectKey));
       currentSubject = subjectKey;
       const d = subjectData[subjectKey];
       const totalQuestions = d.questions.length;
@@ -3076,11 +3116,12 @@ document.addEventListener('DOMContentLoaded', () => {
     return id.replace(/^lop\d+_/, '');
   }
 
-  // Cập nhật URL theo lớp + môn đang mở (push: thêm vào lịch sử, ngược lại thay thế)
+  // Cập nhật URL theo lớp + môn (hoặc thư mục) đang mở (push: thêm vào lịch sử, ngược lại thay thế)
   function syncSubjectUrl(push) {
     if (!currentClassPrefix) return;
     let target = BASE_PATH + '/' + currentClassPrefix;
     if (currentSubject) target += '/' + subjectIdToSlug(currentSubject);
+    else if (currentFolder) target += '/' + subjectIdToSlug(currentFolder);
     if (window.location.pathname === target) return;
     if (push) window.history.pushState(null, '', target);
     else window.history.replaceState(null, '', target);
@@ -3094,12 +3135,23 @@ document.addEventListener('DOMContentLoaded', () => {
     renderRoute();
   }
 
+  const CLASS_BTN_ICON_HOME = 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3v-6a1 1 0 011-1h2a1 1 0 011 1v6h3a1 1 0 001-1V10M9 21h6';
+  const CLASS_BTN_ICON_BACK = 'M10 19l-7-7m0 0l7-7m-7 7h18';
+
   function updateClassScreenHeader() {
     const label = classLabel();
+    const folder = currentFolder ? findFolder(currentFolder) : null;
     const titleEl = document.getElementById('classScreenTitle');
     const subtitleEl = document.getElementById('classScreenSubtitle');
+    const homeLabelEl = document.getElementById('lop7HomeBtnLabel');
+    const homeIconEl = document.getElementById('lop7HomeBtnIcon');
     if (titleEl) titleEl.textContent = 'Ôn Tập Bài Học - ' + label.replace(/^./, c => c.toUpperCase());
-    if (subtitleEl) subtitleEl.textContent = 'Chọn môn học ' + label + ' để bắt đầu';
+    if (subtitleEl) subtitleEl.textContent = folder
+      ? folder.label + ': chọn môn học ' + label + ' để bắt đầu'
+      : 'Chọn môn học ' + label + ' để bắt đầu';
+    // Trong thư mục, nút góc trái quay về danh sách môn của lớp thay vì trang chủ
+    if (homeLabelEl) homeLabelEl.textContent = folder ? 'Quay lại' : 'Trang chủ';
+    if (homeIconEl) homeIconEl.setAttribute('d', folder ? CLASS_BTN_ICON_BACK : CLASS_BTN_ICON_HOME);
   }
 
   function enterClassRoute(route, wasInClass) {
@@ -3108,6 +3160,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (changed) {
       // Chuyển lớp giữa chừng: xóa state trong bộ nhớ của lớp cũ (không đụng localStorage,
       // tiến trình đã lưu của lớp cũ vẫn còn nguyên khi quay lại).
+      currentFolder = null;
       currentSubject = null;
       quizStarted = false;
       quizCompleted = false;
@@ -3154,7 +3207,13 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('homeBtnLop7').addEventListener('click', () => navigate('lop7'));
   document.getElementById('homeBtnLop8').addEventListener('click', () => navigate('lop8'));
   document.getElementById('homeBtnMinigame').addEventListener('click', () => navigate('minigame'));
-  document.getElementById('lop7HomeBtn').addEventListener('click', () => navigate('home'));
+  document.getElementById('lop7HomeBtn').addEventListener('click', () => {
+    if (!currentFolder) { navigate('home'); return; }
+    // Đang ở trong thư mục → về danh sách môn gốc của lớp
+    setCurrentFolder(null);
+    syncSubjectUrl(true);
+    window.scrollTo(0, 0);
+  });
 </script>
 
 <!-- ===== MATH ENGINE (parse + expand + compare polynomials in a, b; AST -> LaTeX) ===== -->
