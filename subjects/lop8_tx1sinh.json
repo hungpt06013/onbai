@@ -333,6 +333,17 @@
     },
     {
       "type": "mcq",
+      "q": "Nhu cầu dinh dưỡng phụ thuộc vào yếu tố nào?",
+      "o": [
+        "Giới tính, lứa tuổi.",
+        "Khả năng lao động.",
+        "Môi trường, khí hậu.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
       "q": "Hoạt động đầu tiên của quá trình tiêu hóa xảy ra ở đâu?",
       "o": [
         "Miệng.",
@@ -363,6 +374,17 @@
         "Thực quản."
       ],
       "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Bữa ăn hợp lí dựa trên nhu cầu dinh dưỡng của cơ thể nhằm đáp ứng yêu cầu nào?",
+      "o": [
+        "Cung cấp cho cơ thể đủ các chất dinh dưỡng theo nhu cầu, lứa tuổi, khả năng lao động, môi trường, khí hậu.",
+        "Đảm bảo bữa ăn hằng ngày cân đối, đủ dinh dưỡng để phát triển tốt thể lực và trí lực, có sức khỏe để lao động.",
+        "Thức ăn phải đảm bảo an toàn vệ sinh, không được là nguồn lây bệnh.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
     },
     {
       "type": "mcq",
@@ -399,6 +421,17 @@
     },
     {
       "type": "mcq",
+      "q": "Điều gì sẽ xảy ra khi cơ thể không đủ chất dinh dưỡng?",
+      "o": [
+        "Suy dinh dưỡng.",
+        "Đau dạ dày.",
+        "Giảm thị lực.",
+        "Tiêu hóa kém."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
       "q": "Chất nào dưới đây không bị biến đổi thành chất khác trong quá trình tiêu hóa?",
       "o": [
         "Vitamin.",
@@ -410,11 +443,44 @@
     },
     {
       "type": "mcq",
+      "q": "Năng lượng cần thiết của trẻ em trong một ngày khoảng bao nhiêu?",
+      "o": [
+        "50 kcal/kg trọng lượng cơ thể/ngày.",
+        "100 kcal/kg trọng lượng cơ thể/ngày.",
+        "150 kcal/kg trọng lượng cơ thể/ngày.",
+        "200 kcal/kg trọng lượng cơ thể/ngày."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Người béo phì nên ăn loại thực phẩm nào dưới đây?",
+      "o": [
+        "Đồ ăn nhanh.",
+        "Nước uống có ga.",
+        "Ăn ít thức ăn nhưng nên ăn đầy đủ tinh bột.",
+        "Hạn chế tinh bột, đồ chiên rán, ăn nhiều rau xanh."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
       "q": "Tiêu hóa thức ăn bao gồm các hoạt động nào?",
       "o": [
         "Tiêu hóa lí học (cơ học).",
         "Tiêu hóa hóa học.",
         "Tiết dịch tiêu hóa.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Thế nào là tiêu hóa thức ăn?",
+      "o": [
+        "Biến đổi thức ăn thành các chất dinh dưỡng.",
+        "Cơ thể hấp thụ chất dinh dưỡng qua thành ruột.",
+        "Thải bỏ các chất thừa không hấp thụ được.",
         "Tất cả các ý còn lại."
       ],
       "c": 3
