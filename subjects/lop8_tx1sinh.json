@@ -1,0 +1,720 @@
+{
+  "fullName": "TX1 SINH - Bài 31, 32 KHTN",
+  "questions": [
+    {
+      "type": "mcq",
+      "q": "Cơ sẽ bị duỗi tối đa trong trường hợp nào dưới đây?",
+      "o": [
+        "Mỏi cơ.",
+        "Liệt cơ.",
+        "Viêm cơ.",
+        "Xơ cơ."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Chức năng của hai đầu xương là",
+      "o": [
+        "giảm ma sát trong khớp xương.",
+        "phân tán lực tác động.",
+        "tạo các ô chứa tủy đỏ.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Chất khoáng chủ yếu cấu tạo nên xương người là",
+      "o": [
+        "sắt.",
+        "calcium (canxi).",
+        "phosphorus (photpho).",
+        "magnesium (magiê)."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Chọn cặp từ thích hợp để điền vào các chỗ trống trong câu sau: Xương to ra về bề ngang là nhờ các tế bào …(1)… tạo ra những tế bào mới đẩy …(2)… và hóa xương.",
+      "o": [
+        "(1): mô xương cứng; (2): ra ngoài",
+        "(1): mô xương xốp; (2): vào trong",
+        "(1): màng xương; (2): ra ngoài",
+        "(1): màng xương; (2): vào trong"
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Thành phần cấu tạo của xương gồm",
+      "o": [
+        "chủ yếu là chất hữu cơ (cốt giao).",
+        "chủ yếu là chất vô cơ (muối khoáng).",
+        "chất hữu cơ (cốt giao) và chất vô cơ (muối khoáng), tỉ lệ chất cốt giao không đổi.",
+        "chất hữu cơ (cốt giao) và chất vô cơ (muối khoáng), tỉ lệ chất cốt giao thay đổi theo độ tuổi."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Cơ có hai tính chất cơ bản, đó là",
+      "o": [
+        "co và dãn.",
+        "gấp và duỗi.",
+        "phồng và xẹp.",
+        "kéo và đẩy."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Xương có nhiều biến đổi do sự phát triển tiếng nói ở người là",
+      "o": [
+        "xương trán.",
+        "xương mũi.",
+        "xương hàm trên.",
+        "xương hàm dưới."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Ở người già, trong khoang xương có chứa gì?",
+      "o": [
+        "Máu.",
+        "Mỡ (tủy vàng).",
+        "Tủy đỏ.",
+        "Nước mô."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Hiện tượng mỏi cơ có liên quan mật thiết đến sự sản sinh loại acid hữu cơ nào?",
+      "o": [
+        "Acid acetic.",
+        "Acid malic.",
+        "Acid acrylic.",
+        "Acid lactic."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Các nan xương sắp xếp như thế nào trong mô xương xốp?",
+      "o": [
+        "Xếp nối tiếp nhau tạo thành các rãnh chứa tủy đỏ.",
+        "Xếp theo hình vòng cung và đan xen nhau tạo thành các ô chứa tủy đỏ.",
+        "Xếp gối đầu lên nhau tạo ra các khoang xương chứa tủy vàng.",
+        "Xếp thành từng bó và nằm giữa các bó là tủy đỏ."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Sự khác biệt trong hình thái, cấu tạo của bộ xương người và bộ xương thú chủ yếu là do nguyên nhân nào sau đây?",
+      "o": [
+        "Tư thế đứng thẳng và quá trình lao động.",
+        "Sống trên mặt đất và cấu tạo của bộ não.",
+        "Tư thế đứng thẳng và cấu tạo của bộ não.",
+        "Sống trên mặt đất và quá trình lao động."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Cơ thể người có khoảng bao nhiêu cơ?",
+      "o": [
+        "400 cơ.",
+        "600 cơ.",
+        "800 cơ.",
+        "500 cơ."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Xương nào dưới đây có hình dạng và cấu tạo có nhiều sai khác với các xương còn lại?",
+      "o": [
+        "Xương đốt sống.",
+        "Xương bả vai.",
+        "Xương cánh chậu.",
+        "Xương sọ."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Khi cơ co thì bắp cơ ngắn lại và to ra về bề ngang là do",
+      "o": [
+        "vân tối dày lên.",
+        "một đầu cơ to và một đầu cố định.",
+        "các tơ cơ mảnh xuyên sâu vào vùng phân bố của tơ cơ dày làm tế bào cơ ngắn lại.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Đặc điểm nào dưới đây chỉ có ở con người?",
+      "o": [
+        "Xương lồng ngực phát triển theo hướng lưng – bụng.",
+        "Lồi cằm xương mặt phát triển.",
+        "Xương cột sống hình vòm.",
+        "Cơ mông tiêu giảm."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Con người có bao nhiêu đôi xương sườn cụt không gắn với xương ức qua phần sụn?",
+      "o": [
+        "4 đôi.",
+        "3 đôi.",
+        "1 đôi.",
+        "2 đôi."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Để chống cong vẹo cột sống, cần phải làm gì?",
+      "o": [
+        "Khi ngồi phải ngay ngắn, không nghiêng vẹo.",
+        "Mang vác về một bên liên tục.",
+        "Mang vác quá sức chịu đựng.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Chức năng của cột sống là",
+      "o": [
+        "bảo vệ tim, phổi và các cơ quan phía bên trong khoang bụng.",
+        "giúp cơ thể đứng thẳng, gắn xương sườn với xương ức thành lồng ngực.",
+        "giúp cơ thể đứng thẳng và lao động.",
+        "bảo đảm cho cơ thể được vận động dễ dàng."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Đặc điểm cấu tạo của tế bào cơ phù hợp với chức năng co cơ là",
+      "o": [
+        "tế bào cơ gồm nhiều đơn vị cấu trúc nối liền nhau.",
+        "mỗi đơn vị cấu trúc có tơ cơ dày, tơ cơ mảnh xếp xen kẽ nhau.",
+        "mỗi đơn vị cấu trúc đều có thành phần mềm dẻo phù hợp với chức năng co dãn cơ.",
+        "tế bào cơ gồm nhiều đơn vị cấu trúc nối liền nhau và mỗi đơn vị cấu trúc có tơ cơ dày, tơ cơ mảnh xếp xen kẽ nhau."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Bắp cơ vân có hình dạng như thế nào?",
+      "o": [
+        "Hình cầu.",
+        "Hình trụ.",
+        "Hình đĩa.",
+        "Hình thoi."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Phần cẳng chân có bao nhiêu xương?",
+      "o": [
+        "2 xương.",
+        "3 xương.",
+        "1 xương.",
+        "4 xương."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Loại xương nào dưới đây không tham gia cấu tạo nên lồng ngực?",
+      "o": [
+        "Xương cột sống.",
+        "Xương đòn.",
+        "Xương ức.",
+        "Xương sườn."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Loại xương nào dưới đây được xếp vào nhóm xương dài?",
+      "o": [
+        "Xương hộp sọ.",
+        "Xương đùi.",
+        "Xương cánh chậu.",
+        "Xương đốt sống."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Ở xương dài, màng xương có chức năng gì?",
+      "o": [
+        "Giúp giảm ma sát khi chuyển động.",
+        "Giúp xương dài ra.",
+        "Giúp xương phát triển to về bề ngang.",
+        "Giúp dự trữ các chất dinh dưỡng."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Ở xương dài của trẻ em, bộ phận nào có chứa tủy đỏ?",
+      "o": [
+        "Mô xương xốp và khoang xương.",
+        "Mô xương cứng và mô xương xốp.",
+        "Khoang xương và màng xương.",
+        "Màng xương và sụn bọc đầu xương."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Khi nói về cơ chế co cơ, nhận định nào sau đây là đúng?",
+      "o": [
+        "Khi cơ co, tơ cơ dày xuyên sâu vào vùng phân bố của tơ cơ mảnh làm cho tế bào cơ ngắn lại.",
+        "Khi cơ co, tơ cơ dày xuyên sâu vào vùng phân bố của tơ cơ mảnh làm cho tế bào cơ dài ra.",
+        "Khi cơ co, tơ cơ mảnh xuyên sâu vào vùng phân bố của tơ cơ dày làm cho tế bào cơ dài ra.",
+        "Khi cơ co, tơ cơ mảnh xuyên sâu vào vùng phân bố của tơ cơ dày làm cho tế bào cơ ngắn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Đâu không phải là ý nghĩa của việc luyện tập thể dục, thể thao?",
+      "o": [
+        "Kích thích tăng chiều dài và chu vi của xương.",
+        "Cơ bắp nở nang và rắn chắc.",
+        "Tăng cường sự dẻo dai của cơ thể.",
+        "Giết thời gian."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Xương trẻ nhỏ khi gãy thì mau liền hơn vì",
+      "o": [
+        "thành phần cốt giao nhiều hơn chất khoáng.",
+        "thành phần cốt giao ít hơn chất khoáng.",
+        "chưa có thành phần khoáng.",
+        "chưa có thành phần cốt giao."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Cơ vận động lưỡi của con người phát triển hơn các loài thú là do chúng ta có khả năng",
+      "o": [
+        "nuốt.",
+        "viết.",
+        "nói.",
+        "nhai."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Cơ quan nào dưới đây không nằm trong ống tiêu hóa?",
+      "o": [
+        "Thực quản.",
+        "Dạ dày.",
+        "Tuyến ruột.",
+        "Tá tràng."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Hoạt động đầu tiên của quá trình tiêu hóa xảy ra ở đâu?",
+      "o": [
+        "Miệng.",
+        "Thực quản.",
+        "Dạ dày.",
+        "Ruột non."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Tuyến nào dưới đây là tuyến tiêu hóa?",
+      "o": [
+        "Tuyến nước bọt.",
+        "Tuyến vị.",
+        "Tuyến ruột.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Tuyến vị nằm ở bộ phận nào trong ống tiêu hóa?",
+      "o": [
+        "Dạ dày.",
+        "Ruột non.",
+        "Ruột già.",
+        "Thực quản."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Trong hệ tiêu hóa ở người, bộ phận nào tiếp nhận thức ăn từ dạ dày?",
+      "o": [
+        "Tá tràng.",
+        "Thực quản.",
+        "Hậu môn.",
+        "Kết tràng."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Trong ống tiêu hóa ở người, vai trò hấp thụ chất dinh dưỡng chủ yếu thuộc về cơ quan nào?",
+      "o": [
+        "Ruột thừa.",
+        "Ruột già.",
+        "Ruột non.",
+        "Dạ dày."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Chất nào dưới đây cơ thể người không hấp thụ được?",
+      "o": [
+        "Đường đơn.",
+        "Amino acid.",
+        "Muối khoáng.",
+        "Cellulose."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Chất nào dưới đây không bị biến đổi thành chất khác trong quá trình tiêu hóa?",
+      "o": [
+        "Vitamin.",
+        "Carbohydrate (gluxit).",
+        "Protein.",
+        "Lipid."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Tiêu hóa thức ăn bao gồm các hoạt động nào?",
+      "o": [
+        "Tiêu hóa lí học (cơ học).",
+        "Tiêu hóa hóa học.",
+        "Tiết dịch tiêu hóa.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Tại ruột già xảy ra hoạt động nào dưới đây?",
+      "o": [
+        "Hấp thụ lại nước.",
+        "Tiêu hóa thức ăn.",
+        "Hấp thụ chất dinh dưỡng.",
+        "Nghiền nát thức ăn."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Mỗi ngày, một người bình thường tiết khoảng bao nhiêu ml nước bọt?",
+      "o": [
+        "1000 – 1500 ml.",
+        "800 – 1200 ml.",
+        "400 – 600 ml.",
+        "500 – 800 ml."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Chất nhày trong dịch vị có tác dụng gì?",
+      "o": [
+        "Bảo vệ dạ dày khỏi sự xâm lấn của virus gây hại.",
+        "Dự trữ nước cho hoạt động co bóp của dạ dày.",
+        "Chứa một số enzyme giúp tăng hiệu quả tiêu hóa thức ăn.",
+        "Bao phủ bề mặt niêm mạc, giúp ngăn cách các tế bào niêm mạc với pepsin và HCl."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Sắp xếp các quá trình sau theo diễn biến của quá trình tiêu hóa xảy ra trong cơ thể.",
+      "o": [
+        "Ăn và uống → vận chuyển thức ăn trong ống tiêu hóa → tiêu hóa thức ăn → hấp thụ các chất dinh dưỡng → thải phân.",
+        "Ăn và uống → tiêu hóa thức ăn → vận chuyển thức ăn trong ống tiêu hóa → hấp thụ các chất dinh dưỡng → thải phân.",
+        "Ăn và uống → vận chuyển thức ăn trong ống tiêu hóa → hấp thụ các chất dinh dưỡng → tiêu hóa thức ăn → thải phân.",
+        "Ăn và uống → hấp thụ các chất dinh dưỡng → vận chuyển thức ăn trong ống tiêu hóa → tiêu hóa thức ăn → thải phân."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Quá trình biến đổi lí học và hóa học của thức ăn diễn ra đồng thời ở bộ phận nào dưới đây?",
+      "o": [
+        "Khoang miệng.",
+        "Dạ dày.",
+        "Ruột non.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Tuyến nước bọt lớn nhất của con người nằm ở đâu?",
+      "o": [
+        "Hai bên mang tai.",
+        "Dưới lưỡi.",
+        "Dưới hàm.",
+        "Vòm họng."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Dịch tụy và dịch mật đổ vào bộ phận nào của ống tiêu hóa?",
+      "o": [
+        "Tá tràng.",
+        "Manh tràng.",
+        "Hỗng tràng.",
+        "Hồi tràng."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Ở người, dịch tiêu hóa từ tuyến tụy sẽ đổ vào bộ phận nào?",
+      "o": [
+        "Thực quản.",
+        "Ruột già.",
+        "Dạ dày.",
+        "Ruột non."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Thông thường, thức ăn được lưu giữ ở dạ dày trong bao lâu?",
+      "o": [
+        "1 – 2 giờ.",
+        "3 – 6 giờ.",
+        "6 – 8 giờ.",
+        "10 – 12 giờ."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Trong các bộ phận dưới đây, quá trình tiêu hóa thức ăn về mặt hóa học diễn ra mạnh mẽ nhất ở bộ phận nào?",
+      "o": [
+        "Hồi tràng.",
+        "Hỗng tràng.",
+        "Dạ dày.",
+        "Tá tràng."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Trong ống tiêu hóa ở người, dịch ruột được tiết ra khi nào?",
+      "o": [
+        "Khi thức ăn chạm lên niêm mạc dạ dày.",
+        "Khi thức ăn chạm lên niêm mạc ruột.",
+        "Khi thức ăn chạm vào lưỡi.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Độ acid cao của thức ăn khi xuống tá tràng chính là tín hiệu",
+      "o": [
+        "đóng tâm vị.",
+        "mở môn vị.",
+        "đóng môn vị.",
+        "mở tâm vị."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Đặc điểm nào của ruột non giúp tăng hiệu quả hấp thụ chất dinh dưỡng?",
+      "o": [
+        "Hệ thống mao mạch máu và mao mạch bạch huyết dày đặc, phân bố tới từng lông ruột.",
+        "Lớp niêm mạc gấp nếp, trên đó có các lông ruột dày đặc giúp làm tăng diện tích bề mặt bên trong ruột non.",
+        "Kích thước rất dài (2,8 – 3 mét).",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Hoạt động đảo trộn thức ăn trong khoang miệng được thực hiện bởi các cơ quan nào?",
+      "o": [
+        "Răng, lưỡi, cơ má.",
+        "Răng và lưỡi.",
+        "Răng, lưỡi, cơ môi, cơ má.",
+        "Răng, lưỡi, cơ môi."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Sự kiện nào sau đây xảy ra khi chúng ta nuốt thức ăn?",
+      "o": [
+        "Lưỡi nâng lên.",
+        "Khẩu cái mềm hạ xuống.",
+        "Nắp thanh quản đóng kín đường tiêu hóa.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Loại dịch nào đóng vai trò quan trọng nhất trong quá trình tiêu hóa thức ăn ở ruột non?",
+      "o": [
+        "Dịch tụy.",
+        "Dịch ruột.",
+        "Dịch mật.",
+        "Dịch vị."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Thành phần nào dưới đây của thức ăn hầu như không bị tiêu hóa trong khoang miệng?",
+      "o": [
+        "Nước.",
+        "Lipid.",
+        "Vitamin.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Từ ngoài vào trong, các cơ của dạ dày sắp xếp theo trật tự như thế nào?",
+      "o": [
+        "Cơ dọc – cơ chéo – cơ vòng.",
+        "Cơ chéo – cơ vòng – cơ dọc.",
+        "Cơ dọc – cơ vòng – cơ chéo.",
+        "Cơ vòng – cơ dọc – cơ chéo."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Biện pháp nào dưới đây giúp làm tăng hiệu quả tiêu hóa và hấp thụ thức ăn?",
+      "o": [
+        "Tạo bầu không khí thoải mái, vui vẻ khi ăn.",
+        "Ăn đúng giờ, đúng bữa và hợp khẩu vị.",
+        "Ăn chậm, nhai kĩ.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Qua tiêu hóa, lipid sẽ được biến đổi thành",
+      "o": [
+        "glycerol và vitamin.",
+        "glycerol và amino acid.",
+        "nucleotide và amino acid.",
+        "glycerol và acid béo."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Chất nào dưới đây bị biến đổi thành chất khác qua quá trình tiêu hóa?",
+      "o": [
+        "Vitamin.",
+        "Ion khoáng.",
+        "Carbohydrate (gluxit).",
+        "Nước."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Vi khuẩn Helicobacter pylori – thủ phạm gây viêm loét dạ dày – kí sinh ở đâu trên thành dạ dày?",
+      "o": [
+        "Lớp dưới niêm mạc.",
+        "Lớp niêm mạc.",
+        "Lớp cơ.",
+        "Lớp màng bọc."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Cho các hoạt động sau:\n(1) Tiết dịch vị.\n(2) Tiết nước bọt.\n(3) Tạo viên thức ăn.\n(4) Biến đổi lí học của thức ăn nhờ sự co bóp của dạ dày.\n(5) Nuốt.\n(6) Biến đổi hóa học của thức ăn nhờ các enzyme.\n(7) Đẩy thức ăn xuống ruột.\nNhững hoạt động tiêu hóa diễn ra ở dạ dày là",
+      "o": [
+        "(1), (2), (4), (6).",
+        "(1), (4), (6), (7).",
+        "(2), (4), (5), (7).",
+        "(1), (3), (5), (7)."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Loại vitamin nào dưới đây được vận chuyển theo con đường bạch huyết về tim?",
+      "o": [
+        "Vitamin B1.",
+        "Vitamin E.",
+        "Vitamin C.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Loại đồ ăn/thức uống nào dưới đây tốt cho hệ tiêu hóa?",
+      "o": [
+        "Nước giải khát có ga.",
+        "Xúc xích.",
+        "Lạp xưởng.",
+        "Khoai lang."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Khi ăn rau sống không được rửa sạch, ta có nguy cơ",
+      "o": [
+        "mắc bệnh sởi.",
+        "nhiễm giun sán.",
+        "mắc bệnh lậu.",
+        "nổi mề đay."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Bệnh đau dạ dày có thể phát sinh từ nguyên nhân nào dưới đây?",
+      "o": [
+        "Nhiễm vi khuẩn Helicobacter pylori.",
+        "Căng thẳng thần kinh kéo dài.",
+        "Ăn các loại thức ăn thô cứng hoặc quá cay nóng.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    }
+  ]
+}
