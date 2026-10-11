@@ -81,6 +81,8 @@ body.dark #mgPromptBox { background-color: #3a2e0a !important; color: #fde047 !i
 #mgFeedback .katex { color: inherit !important; }
 body.dark input#mgAnswerInput { background: #252d3d; color: #e2e8f0; border-color: #4b5563; }
 body.dark input#mgAnswerInput::placeholder { color: #64748b; }
+body.dark input.text-answer-input { background: #252d3d; color: #e2e8f0; }
+body.dark input.text-answer-input::placeholder { color: #64748b; }
 body.dark #mgLivePreview .katex { color: inherit !important; }
 body.dark .border-yellow-300 { border-color: #854d0e !important; }
 body.dark .text-yellow-900 { color: #fef08a !important; }
@@ -1049,7 +1051,12 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
       if (!d) return;
       const mcq = d.questions.filter(q => q.type === 'mcq').length;
       const tf  = d.questions.filter(q => q.type === 'tf').length;
-      const label = (mcq && tf) ? mcq + ' TN + ' + tf + ' Đ/S' : tf ? tf + ' Đ/S' : mcq + ' TN';
+      const text = d.questions.filter(q => q.type === 'text').length;
+      const parts = [];
+      if (mcq) parts.push(mcq + ' TN');
+      if (tf) parts.push(tf + ' Đ/S');
+      if (text) parts.push(text + ' điền');
+      const label = parts.join(' + ') || '0 TN';
       document.querySelectorAll('.subject-q-count[data-id="' + id + '"]').forEach(el => el.textContent = label);
     }
 
@@ -1417,6 +1424,99 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
       };
     }
 
+    // ===== CÂU NHẬP TEXT =====
+    // { "type": "text", "q": ..., "a": ["đáp án theo SGK", "cách ghi khác cũng được chấp nhận", ...] }
+    const VN_TONE_MARKS = /[\u0300\u0301\u0303\u0309\u0323]/g;
+
+    // Chuẩn hoá đáp án để so sánh: không phân biệt hoa/thường, khoảng trắng thừa, dấu câu,
+    // và vị trí đặt dấu thanh trong mỗi chữ (tụy = tuỵ, hóa = hoá)
+    function normalizeTextAnswer(s) {
+      return String(s == null ? '' : s).normalize('NFD').toLowerCase()
+        .replace(/[.,;:!?"'()]/g, ' ')
+        .split(/\s+/).filter(Boolean)
+        .map(w => w.replace(VN_TONE_MARKS, '') + (w.match(VN_TONE_MARKS) || []).join(''))
+        .join(' ');
+    }
+
+    // Vị trí của đáp án khớp trong q.a (0 = đúng như SGK), -1 nếu sai hoặc bỏ trống
+    function textAnswerMatch(q, ans) {
+      const n = normalizeTextAnswer(ans);
+      if (!n) return -1;
+      return (q.a || []).findIndex(a => normalizeTextAnswer(a) === n);
+    }
+
+    function prepareQuestion(q) {
+      if (q.type === 'mcq') return shuffleOptionsForMCQ(q);
+      if (q.type === 'tf') return shuffleStatementsForTF(q);
+      return JSON.parse(JSON.stringify(q));
+    }
+
+    function emptyAnswer(q) {
+      if (q.type === 'tf') return new Array(q.statements.length).fill(null);
+      if (q.type === 'text') return '';
+      return null;
+    }
+
+    function hasAnswer(ans) {
+      if (Array.isArray(ans)) return ans.some(v => v !== null);
+      if (typeof ans === 'string') return ans.trim() !== '';
+      return ans !== null && ans !== undefined;
+    }
+
+    function countAnswered() {
+      return userAnswers.reduce((acc, ans) => acc + (hasAnswer(ans) ? 1 : 0), 0);
+    }
+
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
+    }
+
+    function buildTextAnswerInput(value, onChange, onEnter) {
+      const input = document.createElement('input');
+      input.type = 'text';
+      input.className = 'text-answer-input w-full p-3 rounded-lg border-2 border-gray-200 focus:border-blue-500 outline-none font-medium text-gray-800';
+      input.placeholder = 'Nhập đáp án...';
+      input.autocomplete = 'off';
+      input.spellcheck = false;
+      input.setAttribute('autocapitalize', 'off');
+      input.value = value || '';
+      input.addEventListener('input', () => onChange(input.value));
+      if (onEnter) {
+        input.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter') { e.preventDefault(); onEnter(); }
+        });
+      }
+      return input;
+    }
+
+    function buildTextAnswerReview(q, ans) {
+      const wrap = document.createElement('div');
+      wrap.className = 'space-y-2 mb-1';
+      const idx = textAnswerMatch(q, ans);
+      const given = String(ans || '').trim();
+      const row = document.createElement('div');
+      row.className = 'w-full p-3 rounded-lg border-2 flex items-center justify-between gap-3';
+      if (idx >= 0) {
+        row.classList.add('border-green-500', 'bg-green-50');
+        row.innerHTML = `<span class="font-medium text-gray-800">${escapeHtml(given)}</span><span class="text-green-700 font-semibold whitespace-nowrap">✓ ĐÚNG</span>`;
+      } else if (!given) {
+        row.classList.add('border-gray-200');
+        row.innerHTML = `<span class="italic text-gray-500">(Chưa trả lời)</span><span></span>`;
+      } else {
+        row.classList.add('border-red-500', 'bg-red-50');
+        row.innerHTML = `<span class="font-medium text-gray-800">${escapeHtml(given)}</span><span class="text-red-700 font-semibold whitespace-nowrap">✗ SAI</span>`;
+      }
+      wrap.appendChild(row);
+      // Sai/bỏ trống → hiện đáp án; đúng nhưng ghi khác SGK → nhắc tên gọi trong SGK
+      if (idx !== 0 && q.a && q.a.length) {
+        const note = document.createElement('div');
+        note.className = 'text-sm ' + (idx > 0 ? 'text-green-700' : 'text-gray-700');
+        note.innerHTML = (idx > 0 ? 'SGK gọi là: ' : 'Đáp án đúng: ') + `<strong>${escapeHtml(q.a[0])}</strong>`;
+        wrap.appendChild(note);
+      }
+      return wrap;
+    }
+
     // ===== SAVE / RESTORE QUIZ STATE =====
     const QUIZ_STATE_KEY = 'quizSavedState';
 
@@ -1544,12 +1644,8 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
         lastValidQuestionCount = questionCount;
         
         // Shuffle và lấy số câu hỏi theo yêu cầu
-        const shuffled = shuffleArray(allQ).slice(0, questionCount).map(q => {
-          if (q.type === 'mcq') return shuffleOptionsForMCQ(q);
-          else return shuffleStatementsForTF(q);
-        });
-        shuffledQuestions = shuffled;
-        userAnswers = shuffledQuestions.map(q => q.type === 'mcq' ? null : new Array(q.statements.length).fill(null));
+        shuffledQuestions = shuffleArray(allQ).slice(0, questionCount).map(prepareQuestion);
+        userAnswers = shuffledQuestions.map(emptyAnswer);
       } else {
         if (allQ.length === 0) {
           alert('Không có câu hỏi.');
@@ -1563,8 +1659,8 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
         const pickedIdx = randomQueue[randomQueuePos];
         randomQueuePos++;
         const q = allQ[pickedIdx];
-        shuffledQuestions = (q.type === 'mcq') ? [shuffleOptionsForMCQ(q)] : [shuffleStatementsForTF(q)];
-        userAnswers = [ (shuffledQuestions[0].type === 'mcq') ? null : new Array(shuffledQuestions[0].statements.length).fill(null) ];
+        shuffledQuestions = [prepareQuestion(q)];
+        userAnswers = [emptyAnswer(shuffledQuestions[0])];
         // Thêm vào history (chưa answered)
         randomHistoryPos = null;
         randomHistory.push({
@@ -1756,6 +1852,8 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
                 opts.appendChild(div);
               });
               qWrap.appendChild(opts);
+            } else if (q.type === 'text') {
+              qWrap.appendChild(buildTextAnswerReview(q, userAnswers[qi]));
             } else if (q.type === 'tf') {
               const grid = window.buildTFGridReview(q, userAnswers[qi]);
               let correctCount = 0;
@@ -1845,12 +1943,8 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
                   btn.classList.add('border-blue-500', 'bg-blue-50');
                 }
 
-                const answeredCount = shuffledQuestions.reduce((acc, q2, i2) => {
-                  if (q2.type === 'mcq') return acc + (userAnswers[i2] !== null ? 1 : 0);
-                  else return acc + (userAnswers[i2].some(x=>x!==null) ? 1 : 0);
-                }, 0);
                 scoreInfo.textContent = '';
-                setSubmitState(answeredCount > 0, 'Nộp bài');
+                setSubmitState(countAnswered() > 0, 'Nộp bài');
                 updateNavButton(qi);
                 saveQuizState();
               });
@@ -1858,14 +1952,18 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
               opts.appendChild(btn);
             });
             qWrap.appendChild(opts);
+          } else if (q.type === 'text') {
+            qWrap.appendChild(buildTextAnswerInput(userAnswers[qi], (val) => {
+              userAnswers[qi] = val;
+              scoreInfo.textContent = '';
+              setSubmitState(countAnswered() > 0, 'Nộp bài');
+              updateNavButton(qi);
+              saveQuizState();
+            }));
           } else if (q.type === 'tf') {
             const grid = window.buildTFGrid(q, qi, userAnswers[qi], () => {
-              const answeredCount = shuffledQuestions.reduce((acc, q2, i2) => {
-                if (q2.type === 'mcq') return acc + (userAnswers[i2] !== null ? 1 : 0);
-                else return acc + (userAnswers[i2].some(x=>x!==null) ? 1 : 0);
-              }, 0);
               scoreInfo.textContent = '';
-              setSubmitState(answeredCount > 0, 'Nộp bài');
+              setSubmitState(countAnswered() > 0, 'Nộp bài');
               updateNavButton(qi);
               saveQuizState();
             });
@@ -1875,8 +1973,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
           quizContent.appendChild(qWrap);
         });
 
-        const anyAnswered = userAnswers.some(x => (Array.isArray(x) ? x.some(v=>v!==null) : x !== null));
-        setSubmitState(anyAnswered, 'Nộp bài');
+        setSubmitState(countAnswered() > 0, 'Nộp bài');
         btnNext.classList.add('hidden');
         renderQuestionNav();
         } // end else (chưa nộp)
@@ -1988,6 +2085,8 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
                 opts.appendChild(div);
               });
               questionArea.appendChild(opts);
+            } else if (qObj.type === 'text') {
+              questionArea.appendChild(buildTextAnswerReview(qObj, entry.userAnswer));
             } else {
               const grid = window.buildTFGridReview(qObj, entry.userAnswer);
               questionArea.appendChild(grid);
@@ -2048,6 +2147,8 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
                 opts.appendChild(div);
               });
               questionArea.appendChild(opts);
+            } else if (qObj.type === 'text') {
+              questionArea.appendChild(buildTextAnswerReview(qObj, userAnswers[0]));
             } else {
               const grid = window.buildTFGridReview(qObj, userAnswers[0]);
               const maxPts = 1; // mỗi câu TF tối đa 1 điểm
@@ -2097,6 +2198,15 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
               });
               questionArea.appendChild(opts);
               setSubmitState(userAnswers[0] !== null, 'Nộp bài');
+              btnNext.classList.add('hidden');
+            } else if (qObj.type === 'text') {
+              const input = buildTextAnswerInput(userAnswers[0], (val) => {
+                userAnswers[0] = val;
+                setSubmitState(hasAnswer(val), 'Nộp bài');
+                saveQuizState();
+              }, () => { if (!btnSubmit.disabled) btnSubmit.click(); });
+              questionArea.appendChild(input);
+              setSubmitState(hasAnswer(userAnswers[0]), 'Nộp bài');
               btnNext.classList.add('hidden');
             } else {
               const grid = window.buildTFGrid(qObj, 0, userAnswers[0], () => {
@@ -2154,9 +2264,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
           btn.id = prefix + qi;
           btn.textContent = String(qi + 1).padStart(2, '0');
           // Answered?
-          const ans = userAnswers[qi];
-          const isAnswered = Array.isArray(ans) ? ans.some(v => v !== null) : ans !== null;
-          if (isAnswered) btn.classList.add('answered');
+          if (hasAnswer(userAnswers[qi])) btn.classList.add('answered');
           btn.addEventListener('click', () => {
             singleQuestionSelected = qi;
             const target = document.getElementById('question-' + qi);
@@ -2184,9 +2292,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
         const btn = document.getElementById(id);
         if (!btn) return;
         btn.classList.remove('answered', 'correct', 'wrong', 'partial');
-        const ans = userAnswers[qi];
-        const isAnswered = Array.isArray(ans) ? ans.some(v => v !== null) : ans !== null;
-        if (isAnswered) btn.classList.add('answered');
+        if (hasAnswer(userAnswers[qi])) btn.classList.add('answered');
       });
     }
 
@@ -2201,6 +2307,9 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
             const ans = userAnswers[qi];
             if (ans === null) { return; }
             btn.classList.add(ans === q.c ? 'correct' : 'wrong');
+          } else if (q.type === 'text') {
+            if (!hasAnswer(userAnswers[qi])) return;
+            btn.classList.add(textAnswerMatch(q, userAnswers[qi]) >= 0 ? 'correct' : 'wrong');
           } else if (q.type === 'tf') {
             const ansArr = userAnswers[qi];
             let correct = 0, total = 0;
@@ -2243,11 +2352,7 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
 
       if (quizMode === 'full') {
         // Đếm câu chưa trả lời
-        const unanswered = shuffledQuestions.reduce((acc, q, i) => {
-          const ans = userAnswers[i];
-          const isEmpty = Array.isArray(ans) ? !ans.some(v => v !== null) : ans === null;
-          return acc + (isEmpty ? 1 : 0);
-        }, 0);
+        const unanswered = shuffledQuestions.length - countAnswered();
 
         if (unanswered > 0) {
           const ok = confirm(`Bạn còn ${unanswered} câu chưa trả lời. Bạn có chắc muốn nộp bài không?`);
@@ -2276,6 +2381,9 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
           if (q.type === 'mcq') {
             totalPossible += 1;
             if (userAnswers[i] === q.c) totalPoints += 1;
+          } else if (q.type === 'text') {
+            totalPossible += 1;
+            if (textAnswerMatch(q, userAnswers[i]) >= 0) totalPoints += 1;
           } else if (q.type === 'tf') {
             totalPossible += 1;
             const correctArr = q.answers;
@@ -2349,6 +2457,8 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
               opts.appendChild(div);
             });
             qWrap.appendChild(opts);
+          } else if (q.type === 'text') {
+            qWrap.appendChild(buildTextAnswerReview(q, userAnswers[qi]));
           } else if (q.type === 'tf') {
             const grid = window.buildTFGridReview(q, userAnswers[qi]);
             let correctCount = 0;
@@ -2384,11 +2494,11 @@ body.dark .apply-btn:hover { background-color: #475569 !important; }
         }
       } else {
         // ===== RANDOM MODE =====
-        if (userAnswers[0] === null || (Array.isArray(userAnswers[0]) && !userAnswers[0].some(x=>x!==null))) return;
+        if (!hasAnswer(userAnswers[0])) return;
 
         const q = shuffledQuestions[0];
-        if (q.type === 'mcq') {
-          const isCorrect = userAnswers[0] === q.c;
+        if (q.type === 'mcq' || q.type === 'text') {
+          const isCorrect = q.type === 'mcq' ? userAnswers[0] === q.c : textAnswerMatch(q, userAnswers[0]) >= 0;
           score = isCorrect ? 1 : 0;
           randomModeStats.totalAnswered++;
           if (isCorrect && !randomHintUsed) randomModeStats.totalCorrect++;
