@@ -131,6 +131,27 @@
       ],
       "hint": "Gợi ý cho câu Đúng/Sai này.",
       "explain": "Giải thích cho câu Đúng/Sai này, vì sao mệnh đề a đúng và mệnh đề b sai."
+    },
+    {
+      "type": "text",
+      "q": "10) Câu điền đáp án (người dùng tự gõ chữ). a là danh sách đáp án được chấp nhận: phần tử ĐẦU TIÊN là đáp án chính (theo SGK), các phần tử sau là cách ghi khác cũng tính đúng.\nKhi chấm: không phân biệt chữ hoa/thường, khoảng trắng thừa, dấu chấm/phẩy và vị trí đặt dấu thanh (tụy = tuỵ, hóa = hoá). Gõ KHÔNG dấu thì tính sai.\nNếu trả lời đúng theo cách ghi khác, sau khi nộp sẽ hiện thêm \"SGK gọi là: <đáp án chính>\".",
+      "a": [
+        "Đáp án chính",
+        "Cách ghi khác 1",
+        "Cách ghi khác 2"
+      ]
+    },
+    {
+      "type": "text",
+      "q": "11) Câu điền đáp án có img + hint + explain (dùng được y như câu trắc nghiệm). Ví dụ: Quan sát hình, cơ quan được đánh số 2 là gì?",
+      "img": "https://i.postimg.cc/rm8XmyZR/image.png",
+      "a": [
+        "Hầu",
+        "Họng",
+        "Hầu họng"
+      ],
+      "hint": "Gợi ý cho câu điền này.",
+      "explain": "Giải thích cho câu điền này. Gõ \"họng\" vẫn được tính đúng, nhưng SGK gọi là \"hầu\"."
     }
   ]
 }
