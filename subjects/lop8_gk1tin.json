@@ -653,19 +653,20 @@
     },
     {
       "type": "tf",
-      "q": "Máy tính thế hệ thứ năm là một bước tiến lớn trong lịch sử phát triển máy tính, mở ra kỷ nguyên của trí tuệ nhân tạo. Trong đó, VLSI là nền tảng công nghệ chính của máy tính thế hệ thứ năm. Máy tính thế hệ thứ năm có một số khả năng xử lí thông tin trong thế giới thực giống con người như: cảm nhận, suy luận, tương tác… Hãy đánh giá tính đúng đắn của các nhận định sau liên quan đến máy tính thế hệ thứ năm:",
+      "q": "Máy tính thế hệ thứ năm là một bước tiến lớn trong lịch sử phát triển máy tính, mở ra kỷ nguyên của trí tuệ nhân tạo. Trong đó, ULSI là nền tảng công nghệ chính của máy tính thế hệ thứ năm. Máy tính thế hệ thứ năm có một số khả năng xử lí thông tin trong thế giới thực giống con người như: cảm nhận, suy luận, tương tác… Hãy đánh giá tính đúng đắn của các nhận định sau liên quan đến máy tính thế hệ thứ năm:",
       "statements": [
         "Máy tính thế hệ thứ năm có khả năng học hỏi và tự thích ứng.",
         "Máy tính thế hệ thứ năm đã trở nên phổ biến và được sử dụng rộng rãi.",
         "Máy tính thế hệ thứ năm hoàn toàn thay thế được con người trong mọi công việc.",
-        "Máy tính thế hệ thứ năm sử dụng công nghệ vi mạch siêu lớn (VLSI)."
+        "Máy tính thế hệ thứ năm sử dụng công nghệ vi mạch siêu lớn (ULSI)."
       ],
       "answers": [
         true,
-        false,
+        true,
         false,
         true
       ]
+      "explain": "VLSI (mạch tích hợp cỡ rất lớn) là của thế hệ thứ tư, còn ULSI (mạch tích hợp cỡ siêu lớn) mới là của thế hệ thứ năm."
     },
     {
       "type": "tf",
