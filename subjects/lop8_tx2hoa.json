@@ -1,5 +1,5 @@
 {
-  "fullName": "TX1 HÓA - Bài 1, 2 KHTN",
+  "fullName": "TX2 HÓA - Bài 1, 2, 3 KHTN",
   "questions": [
     {
       "type": "mcq",
@@ -890,6 +890,338 @@
         "Vì than hấp thu bớt lượng nhiệt tỏa ra của phản ứng nung vôi."
       ],
       "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Số Avogadro có giá trị là",
+      "o": [
+        "6,022.10²².",
+        "6,022.10²³.",
+        "6,022.10²⁴.",
+        "6,022.10²⁵."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Trong 2 mol CO₂ có bao nhiêu phân tử?",
+      "o": [
+        "6,022.10²³.",
+        "9,033.10²³.",
+        "12,044.10²³.",
+        "18,055.10²³."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Có bao nhiêu mol phân tử oxygen có trong 1,5055.10²⁴ phân tử oxygen?",
+      "o": [
+        "2 mol.",
+        "3 mol.",
+        "2,5 mol.",
+        "3,5 mol."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Ở đkc, 1 mol của bất kì chất khí nào đều chiếm một thể tích là",
+      "o": [
+        "27,49 lít.",
+        "24,79 lít.",
+        "24,2 lít.",
+        "24,97 lít."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Nếu 2 chất khác nhau nhưng có ở cùng nhiệt độ và áp suất, có thể tích bằng nhau thì",
+      "o": [
+        "cùng khối lượng.",
+        "cùng số mol.",
+        "cùng tính chất hóa học.",
+        "cùng tính chất vật lí."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Thể tích (đkc) của 280 gam khí nitrogen là",
+      "o": [
+        "991,6 lít.",
+        "734,7 lít.",
+        "619,75 lít.",
+        "247,9 lít."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Ở điều kiện chuẩn 7,437 lít khí CO₂ có số mol là",
+      "o": [
+        "0,1 mol.",
+        "0,2 mol.",
+        "0,3 mol.",
+        "0,4 mol."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Cho các phát biểu sau:\n(a) Trong 2 mol khí oxygen có chứa 12,044.10²⁴ phân tử oxygen.\n(b) 12,044.10²³ nguyên tử đồng (copper) có khối lượng bằng 4,958 L khí SO₂ (đkc).\n(c) Ở điều kiện chuẩn 1,5 mol khí O₂ có khối lượng bằng 1,5 mol khí N₂.\n(d) Ở cùng điều kiện về nhiệt độ và áp suất, 2 mol khí Cl₂ có thể tích bằng 2 mol khí CO₂.\n(e) 7,2 gam magnesium có số mol gấp hai lần số mol của 6,1975 L khí H₂ (đkc).\nSố phát biểu sai là",
+      "o": [
+        "1.",
+        "2.",
+        "3.",
+        "4."
+      ],
+      "c": 3,
+      "explain": "a, b, c và e sai; chỉ d đúng.<br>(a) 2 mol O₂ chứa 2 × 6,022.10²³ = 12,044.10²³ phân tử (không phải 10²⁴).<br>(b) 12,044.10²³ nguyên tử Cu = 2 mol → 2 × 64 = 128 g; 4,958 L SO₂ = 0,2 mol → 0,2 × 64 = 12,8 g.<br>(c) 1,5 mol O₂ nặng 1,5 × 32 = 48 g; 1,5 mol N₂ nặng 1,5 × 28 = 42 g.<br>(d) Cùng nhiệt độ, áp suất và cùng số mol thì các khí có thể tích bằng nhau.<br>(e) n(Mg) = 7,2 : 24 = 0,3 mol; n(H₂) = 6,1975 : 24,79 = 0,25 mol → 0,3 không gấp đôi 0,25."
+    },
+    {
+      "type": "mcq",
+      "q": "Khối lượng của 0,01 mol khí SO₂ là",
+      "o": [
+        "3,3 gam.",
+        "0,35 gam.",
+        "6,4 gam.",
+        "0,64 gam."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "0,2 mol chất nào sau đây có khối lượng bằng 8 gam?",
+      "o": [
+        "KOH.",
+        "Mg(OH)₂.",
+        "HCl.",
+        "NaOH."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Số mol ứng với 6,4 gam khí sulfurous (SO₂) là",
+      "o": [
+        "0,2 mol.",
+        "0,5 mol.",
+        "0,01 mol.",
+        "0,1 mol."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Trong 1 mol H₂O có chứa bao nhiêu nguyên tử hydrogen?",
+      "o": [
+        "3,055.10⁶.",
+        "9,033.10²³.",
+        "12,044.10²³.",
+        "6,022.10²³."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Trong 1 mol AlCl₃ có chứa bao nhiêu nguyên tử chlorine?",
+      "o": [
+        "18,066.10²³.",
+        "9,033.10²³.",
+        "12,044.10²³.",
+        "6,022.10²³."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Ở điều kiện chuẩn, hỗn hợp gồm 12,395 L H₂ và 6,1975 L O₂ có khối lượng là",
+      "o": [
+        "8 gam.",
+        "9 gam.",
+        "10 gam.",
+        "12 gam."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Ở cùng điều kiện nhiệt độ và áp suất, so sánh thể tích của 4 gam CH₄ và 1 gam H₂ ta có:",
+      "o": [
+        "thể tích của CH₄ lớn hơn.",
+        "thể tích của H₂ lớn hơn.",
+        "bằng nhau.",
+        "không thể so sánh được."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Thể tích (đkc) của các chất tương ứng với 4 gam H₂; 2,8 gam N₂; 6,4 gam O₂; 22 gam CO₂ là",
+      "o": [
+        "49,58 L H₂; 24,79 L N₂; 4,958 L O₂; 12,395 L CO₂.",
+        "49,58 L H₂; 2,4 L N₂; 4,958 L O₂; 12,395 L CO₂.",
+        "4,8 L H₂; 24,79 L N₂; 4,958 L O₂; 12,395 L CO₂.",
+        "49,58 L H₂; 2,479 L N₂; 4,958 L O₂; 12,395 L CO₂."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Số mol của các chất tương ứng với 15 gam CaCO₃; 9,125 gam HCl; 100 gam CuO là:",
+      "o": [
+        "0,35 mol CaCO₃; 0,25 mol HCl; 1,25 mol CuO.",
+        "0,25 mol CaCO₃; 0,25 mol HCl; 1,25 mol CuO.",
+        "0,15 mol CaCO₃; 0,75 mol HCl; 1,25 mol CuO.",
+        "0,15 mol CaCO₃; 0,25 mol HCl; 1,25 mol CuO."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Khối lượng của các chất tương ứng với 0,1 mol S; 0,25 mol C; 0,6 mol Mg; 0,3 mol P là:",
+      "o": [
+        "3,2 gam S; 3 gam C; 14,4 gam Mg; 9,3 gam P.",
+        "3,2 gam S; 3 gam C; 14,4 gam Mg; 8,3 gam P.",
+        "3,4 gam S; 3 gam C; 14,4 gam Mg; 9,3 gam P.",
+        "3,2 gam S; 3,6 gam C; 14,4 gam Mg; 9,3 gam P."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Lấy cùng một lượng m gam mỗi chất sau, chất nào có số mol lớn nhất?",
+      "o": [
+        "Mg.",
+        "Ca.",
+        "Cl₂.",
+        "N₂."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Lấy cùng một lượng m gam mỗi chất sau, chất nào có số mol nhỏ nhất?",
+      "o": [
+        "KNO₃.",
+        "Ba.",
+        "Cl₂.",
+        "CuSO₄."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Trong các khí CO₂, H₂S, N₂, H₂, SO₂, số khí nhẹ hơn không khí là",
+      "o": [
+        "5.",
+        "4.",
+        "3.",
+        "2."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Trong các khí CO₂, H₂S, N₂, H₂, SO₂, N₂O, số khí nặng hơn không khí là",
+      "o": [
+        "1.",
+        "3.",
+        "4.",
+        "5."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Dãy các chất khí đều nặng hơn không khí là:",
+      "o": [
+        "SO₂, Cl₂, H₂S.",
+        "N₂, CO₂, H₂.",
+        "CH₄, H₂S, O₂.",
+        "Cl₂, SO₂, N₂."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Dãy các chất khí đều nhẹ hơn không khí là:",
+      "o": [
+        "CO₂, O₂, H₂S, N₂.",
+        "N₂, CH₄, H₂, C₂H₂.",
+        "CH₄, H₂S, CO₂, C₂H₄.",
+        "Cl₂, SO₂, N₂, CH₄."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Tỉ khối của khí X đối với khí hydrogen bằng 16. Khí X có khối lượng mol bằng:",
+      "o": [
+        "16 gam.",
+        "32 gam.",
+        "64 gam.",
+        "8 gam."
+      ],
+      "c": 1
+    },
+    {
+      "type": "mcq",
+      "q": "Một chất khí có phân tử khối bằng 14 lần khí hydrogen, khí đó là",
+      "o": [
+        "nitrogen.",
+        "oxygen.",
+        "chlorine.",
+        "carbonic."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Dãy nào gồm các khí đều có thể thu được vào lọ bằng phương pháp đẩy không khí, đặt úp ngược lọ (miệng lọ hướng xuống dưới)?",
+      "o": [
+        "NH₃, H₂, CH₄.",
+        "H₂, CH₄, Cl₂.",
+        "NH₃, CH₄, O₂.",
+        "H₂, NH₃, Cl₂."
+      ],
+      "c": 0
+    },
+    {
+      "type": "mcq",
+      "q": "Dãy nào gồm các khí đều có thể thu được vào lọ bằng phương pháp đẩy không khí, đặt ngửa lọ (miệng lọ hướng lên trên)?",
+      "o": [
+        "H₂, N₂, NH₃, CO₂, H₂S, SO₂.",
+        "O₂, Cl₂, H₂S, CO₂, HCl, NH₃.",
+        "O₂, Cl₂, H₂S, SO₂, CO₂, HCl.",
+        "H₂, NH₃, N₂, HCl, CO₂, O₂."
+      ],
+      "c": 2
+    },
+    {
+      "type": "mcq",
+      "q": "Trong phòng thí nghiệm, bộ dụng cụ điều chế khí có bình thu khí đặt ngửa (thu bằng phương pháp đẩy không khí) có thể dùng để điều chế những chất khí nào trong các chất khí sau: Cl₂, O₂, NH₃, SO₂, CO₂, H₂, C₂H₄?",
+      "o": [
+        "Cl₂, NH₃, CO₂, O₂.",
+        "Cl₂, SO₂, H₂, O₂.",
+        "Cl₂, SO₂, NH₃, C₂H₄.",
+        "Cl₂, SO₂, CO₂, O₂."
+      ],
+      "c": 3
+    },
+    {
+      "type": "mcq",
+      "q": "Cho các phát biểu sau:\n(a) Mol là lượng chất có chứa 6,022.10²³ nguyên tử hoặc phân tử chất đó.\n(b) Ở điều kiện chuẩn, 1 mol khí bất kì đều có thể tích là 24,79 L.\n(c) Ở điều kiện chuẩn, thể tích của 6,4 gam khí oxygen bằng thể tích của 2,8 gam khí nitrogen.\n(d) Khối lượng của 0,25 mol khí CO₂ là 11 gam.\n(e) Khối lượng của 9,033.10²³ phân tử nước lớn hơn 2,7 gam nhôm (aluminium).\nSố phát biểu đúng là",
+      "o": [
+        "1.",
+        "2.",
+        "3.",
+        "4."
+      ],
+      "c": 3,
+      "explain": "a, b, d và e đúng; chỉ c sai.<br>(a) Đúng: đó là định nghĩa mol (6,022.10²³ là số Avogadro).<br>(b) Đúng: ở điều kiện chuẩn (25 °C, 1 bar), 1 mol khí bất kì chiếm 24,79 L.<br>(c) Sai: n(O₂) = 6,4 : 32 = 0,2 mol; n(N₂) = 2,8 : 28 = 0,1 mol → thể tích O₂ gấp đôi thể tích N₂.<br>(d) Đúng: m = 0,25 × 44 = 11 gam.<br>(e) Đúng: 9,033.10²³ phân tử H₂O = 1,5 mol → m = 1,5 × 18 = 27 gam > 2,7 gam."
     }
   ]
 }
