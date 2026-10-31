@@ -1,0 +1,193 @@
+{
+  "fullName": "GK1 ĐỊA Đ/S - Bài 2, 5 ĐL",
+  "questions": [
+    {
+      "id": 1,
+      "type": "tf",
+      "q": "Trong các phát biểu sau, phát biểu nào đúng, phát biểu nào sai khi nói về đặc điểm địa hình của Việt Nam?",
+      "statements": [
+        "Đồng bằng duyên hải miền Trung bị đồi núi ngăn cách thành nhiều đồng bằng nhỏ.",
+        "Vùng núi Đông Bắc có hướng núi tây bắc – đông nam.",
+        "Hướng vòng cung thể hiện rõ nét nhất ở dãy Hoàng Liên Sơn.",
+        "Hướng tây bắc – đông nam điển hình là các dãy núi: Con Voi, Hoàng Liên Sơn, Trường Sơn Bắc,..."
+      ],
+      "answers": [
+        true,
+        false,
+        false,
+        true
+      ],
+      "explain": "Vùng núi Đông Bắc có hướng vòng cung (các cánh cung). Dãy Hoàng Liên Sơn có hướng tây bắc – đông nam."
+    },
+    {
+      "id": 2,
+      "type": "tf",
+      "q": "Khi nói về các khu vực địa hình của Việt Nam, em hãy chọn ra đâu là ý đúng, đâu là ý sai?",
+      "statements": [
+        "Địa hình đồi núi nước ta chia thành bốn vùng là Đông Bắc, Tây Bắc, Trường Sơn Bắc và Trường Sơn Nam.",
+        "Vùng Đông Bắc là một vùng đồi núi cao nằm ở phía bờ trái của sông Hồng.",
+        "Trường Sơn Bắc chạy theo hướng vòng cung.",
+        "Đồng bằng sông Cửu Long là đồng bằng lớn nhất nước ta."
+      ],
+      "answers": [
+        true,
+        false,
+        false,
+        true
+      ],
+      "explain": "Vùng núi Đông Bắc nằm ở tả ngạn (bờ trái) sông Hồng nhưng chủ yếu là đồi núi thấp. Trường Sơn Bắc có hướng tây bắc – đông nam."
+    },
+    {
+      "id": 3,
+      "type": "tf",
+      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Láng (Hà Nội). Các ý sau đây đúng hay sai?",
+      "img": "",
+      "statements": [
+        "Nhiệt độ cao nhất khoảng 29°C, vào khoảng tháng 6 – 7.",
+        "Nhiệt độ thấp nhất khoảng 16 – 17°C, vào tháng 1.",
+        "Biên độ nhiệt năm khoảng 5°C.",
+        "Tổng lượng mưa năm là 1 670 mm."
+      ],
+      "answers": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "explain": "Nhiệt độ cao nhất khoảng 29°C (tháng 6 – 7), thấp nhất khoảng 16 – 17°C (tháng 1) → biên độ nhiệt khoảng 13°C. Tổng lượng mưa P = 1 670 mm."
+    },
+    {
+      "id": 4,
+      "type": "tf",
+      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Láng (Hà Nội) (tháng mưa nhiều: lượng mưa trên 100 mm; tháng mưa ít: dưới 100 mm). Các ý sau đây đúng hay sai?",
+      "img": "",
+      "statements": [
+        "Các tháng mưa nhiều kéo dài từ tháng 5 đến tháng 10.",
+        "Các tháng mưa ít là từ tháng 4 đến tháng 9.",
+        "Tháng có lượng mưa lớn nhất là tháng 8, khoảng 310 mm.",
+        "Tháng 1 có nhiệt độ cao nhất trong năm."
+      ],
+      "answers": [
+        true,
+        false,
+        true,
+        false
+      ],
+      "explain": "Tháng 5 – 10 mưa trên 100 mm; tháng 11 – 4 mưa dưới 100 mm. Tháng 8 mưa nhiều nhất (khoảng 310 mm). Tháng 1 là tháng lạnh nhất."
+    },
+    {
+      "id": 5,
+      "type": "tf",
+      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Tân Sơn Hoà (Thành phố Hồ Chí Minh). Các ý sau đây đúng hay sai?",
+      "img": "",
+      "statements": [
+        "Nhiệt độ cao nhất khoảng 30°C, vào tháng 4.",
+        "Nhiệt độ thấp nhất khoảng 20°C, vào tháng 7.",
+        "Biên độ nhiệt năm nhỏ, chỉ khoảng 3°C.",
+        "Tổng lượng mưa năm là 1 964 mm."
+      ],
+      "answers": [
+        true,
+        false,
+        true,
+        true
+      ],
+      "explain": "Nhiệt độ các tháng chỉ dao động khoảng 27 – 30°C: cao nhất khoảng 30°C (tháng 4), thấp nhất khoảng 27°C (tháng 1) → biên độ nhiệt khoảng 3°C. Tổng lượng mưa P = 1 964 mm."
+    },
+    {
+      "id": 6,
+      "type": "tf",
+      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Tân Sơn Hoà (Thành phố Hồ Chí Minh) (tháng mưa nhiều: lượng mưa trên 100 mm; tháng mưa ít: dưới 100 mm). Các ý sau đây đúng hay sai?",
+      "img": "",
+      "statements": [
+        "Các tháng mưa nhiều là từ tháng 5 đến tháng 11.",
+        "Các tháng mưa ít là tháng 12, 1, 2, 3 và 4.",
+        "Tháng có lượng mưa lớn nhất là tháng 2.",
+        "Nhiệt độ cao nhất vào tháng 9."
+      ],
+      "answers": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "explain": "Tháng 5 – 11 mưa trên 100 mm; tháng 12 – 4 mưa dưới 100 mm. Tháng 9 mưa nhiều nhất, tháng 2 mưa ít nhất. Nhiệt độ cao nhất vào tháng 4."
+    },
+    {
+      "id": 7,
+      "type": "tf",
+      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Móng Cái (Quảng Ninh). Các ý sau đây đúng hay sai?",
+      "img": "",
+      "statements": [
+        "Nhiệt độ cao nhất khoảng 28°C, vào khoảng tháng 6 – 7.",
+        "Nhiệt độ thấp nhất khoảng 15°C, vào tháng 1.",
+        "Biên độ nhiệt năm khoảng 13°C.",
+        "Tổng lượng mưa năm là 1 661 mm."
+      ],
+      "answers": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "explain": "Nhiệt độ cao nhất khoảng 28°C (tháng 6 – 7), thấp nhất khoảng 15°C (tháng 1) → biên độ nhiệt khoảng 13°C. Tổng lượng mưa P = 2 661 mm, không phải 1 661 mm."
+    },
+    {
+      "id": 8,
+      "type": "tf",
+      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Móng Cái (Quảng Ninh) (tháng mưa nhiều: lượng mưa trên 100 mm; tháng mưa ít: dưới 100 mm). Các ý sau đây đúng hay sai?",
+      "img": "",
+      "statements": [
+        "Các tháng mưa nhiều là từ tháng 4 đến tháng 10.",
+        "Các tháng mưa ít là tháng 11, 12, 1, 2 và 3.",
+        "Tháng có lượng mưa lớn nhất là tháng 7, gần 600 mm.",
+        "Nhiệt độ thấp nhất rơi vào tháng 7."
+      ],
+      "answers": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "explain": "Tháng 4 – 10 mưa trên 100 mm; tháng 11 – 3 mưa dưới 100 mm. Tháng 7 mưa nhiều nhất (gần 600 mm) và cũng là tháng nóng nhất; tháng 1 lạnh nhất."
+    },
+    {
+      "id": 9,
+      "type": "tf",
+      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Điện Biên (Điện Biên). Các ý sau đây đúng hay sai?",
+      "img": "",
+      "statements": [
+        "Nhiệt độ cao nhất khoảng 26°C, vào khoảng tháng 6.",
+        "Nhiệt độ thấp nhất khoảng 16°C, vào tháng 12 và tháng 1.",
+        "Biên độ nhiệt năm khoảng 20°C.",
+        "Tổng lượng mưa năm trên 2 500 mm."
+      ],
+      "answers": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "explain": "Nhiệt độ cao nhất khoảng 26°C (tháng 6), thấp nhất khoảng 16°C (tháng 12, tháng 1) → biên độ nhiệt khoảng 10°C. Tổng lượng mưa chỉ khoảng 1 500 – 1 600 mm."
+    },
+    {
+      "id": 10,
+      "type": "tf",
+      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Điện Biên (Điện Biên) (tháng mưa nhiều: lượng mưa trên 100 mm; tháng mưa ít: dưới 100 mm). Các ý sau đây đúng hay sai?",
+      "img": "",
+      "statements": [
+        "Các tháng mưa nhiều là từ tháng 4 đến tháng 9.",
+        "Các tháng mưa ít là từ tháng 10 đến tháng 3 năm sau.",
+        "Tháng 1 có lượng mưa lớn nhất trong năm.",
+        "Nhiệt độ cao nhất rơi vào tháng 1."
+      ],
+      "answers": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "explain": "Tháng 4 (hơn 100 mm một chút) đến tháng 9 mưa trên 100 mm; tháng 10 – 3 mưa dưới 100 mm. Mưa nhiều nhất vào tháng 7 – 8; tháng 1 mưa ít và lạnh nhất."
+    }
+  ]
+}

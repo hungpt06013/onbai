@@ -1,0 +1,314 @@
+{
+  "fullName": "GK1 SỬ Đ/S - Bài 1, 2 LS",
+  "questions": [
+    {
+      "id": 1,
+      "type": "tf",
+      "q": "Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về nguyên nhân của cách mạng tư sản Anh?",
+      "statements": [
+        "Xã hội phân hoá thành nhiều giai cấp và chia thành hai phe đối lập.",
+        "Mâu thuẫn giữa tư sản, quý tộc mới với thế lực phong kiến ngày càng gay gắt.",
+        "Chế độ bế quan tỏa cảng đã tạo ra sự bất mãn trong xã hội.",
+        "Mâu thuẫn giữa công nhân và tư sản ngày càng gay gắt."
+      ],
+      "answers": [
+        true,
+        true,
+        false,
+        false
+      ]
+    },
+    {
+      "id": 2,
+      "type": "tf",
+      "q": "Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về đặc điểm của cách mạng tư sản Anh?",
+      "statements": [
+        "Là cuộc cách mạng lật đổ chế độ phong kiến, thiết lập chế độ xã hội chủ nghĩa.",
+        "Diễn ra dưới hình thức nội chiến.",
+        "Xóa bỏ triệt để chế độ phong kiến và vấn đề ruộng đất.",
+        "Do tầng lớp quý tộc mới và giai cấp tư sản lãnh đạo."
+      ],
+      "answers": [
+        false,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "id": 3,
+      "type": "tf",
+      "q": "Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về kết quả của cách mạng tư sản Anh?",
+      "statements": [
+        "Chế độ quân chủ chuyên chế bị lật đổ.",
+        "Xóa bỏ hoàn toàn chế độ phong kiến ở Anh và châu Âu.",
+        "Chế độ quân chủ lập hiến được thiết lập ở Anh.",
+        "Tất cả quyền lực thuộc về nhân dân và Quốc hội."
+      ],
+      "answers": [
+        true,
+        false,
+        true,
+        false
+      ]
+    },
+    {
+      "id": 4,
+      "type": "tf",
+      "q": "Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về tính chất của cách mạng tư sản Anh?",
+      "statements": [
+        "Chế độ quân chủ chuyên chế bị lật đổ.",
+        "Xóa bỏ hoàn toàn chế độ phong kiến ở Anh và châu Âu.",
+        "Cách mạng Anh mang tính chất của một cuộc cách mạng tư sản.",
+        "Đây là cuộc cách mạng không triệt để."
+      ],
+      "answers": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "explain": "“Chế độ quân chủ chuyên chế bị lật đổ” là kết quả, không phải tính chất của cách mạng. Về tính chất, cách mạng Anh là một cuộc cách mạng tư sản nhưng không triệt để."
+    },
+    {
+      "id": 5,
+      "type": "tf",
+      "q": "Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về nguyên nhân bùng nổ chiến tranh giành độc lập của 13 thuộc địa Anh?",
+      "statements": [
+        "Thực dân Anh ban hành nhiều đạo luật hà khắc nhằm kìm hãm sự phát triển kinh tế của 13 thuộc địa ở Bắc Mỹ.",
+        "Mâu thuẫn gay gắt giữa công nhân và tư sản.",
+        "Chế độ bế quan tỏa cảng đã tạo ra sự bất mãn trong xã hội.",
+        "Sự kiện “chè Bô-xtơn” đã thổi bùng ngọn lửa chiến tranh."
+      ],
+      "answers": [
+        true,
+        false,
+        false,
+        true
+      ]
+    },
+    {
+      "id": 6,
+      "type": "tf",
+      "q": "Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về kết quả của chiến tranh giành độc lập của 13 thuộc địa Anh?",
+      "statements": [
+        "Lật đổ ách thống trị của thực dân Anh.",
+        "Đưa giai cấp công nhân lên nắm quyền.",
+        "Tất cả quyền lực thuộc về nhân dân và Quốc hội.",
+        "Đưa đến sự thành lập Hợp chúng quốc Hoa Kì."
+      ],
+      "answers": [
+        true,
+        false,
+        false,
+        true
+      ]
+    },
+    {
+      "id": 7,
+      "type": "tf",
+      "q": "Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về ý nghĩa của chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ?",
+      "statements": [
+        "Mở đường cho kinh tế tư bản chủ nghĩa phát triển mạnh mẽ ở Mỹ.",
+        "Cổ vũ cuộc đấu tranh giành độc lập, tự do của nhân dân thuộc địa ở nhiều nước vào cuối thế kỉ XVIII - đầu thế kỉ XIX.",
+        "Đưa giai cấp công nhân lên nắm quyền.",
+        "Tất cả quyền lực thuộc về nhân dân và Quốc hội."
+      ],
+      "answers": [
+        true,
+        true,
+        false,
+        false
+      ]
+    },
+    {
+      "id": 8,
+      "type": "tf",
+      "q": "Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về đặc điểm chiến tranh giành độc lập của 13 thuộc địa Anh?",
+      "statements": [
+        "Lực lượng lãnh đạo là giai cấp tư sản và tầng lớp chủ nô.",
+        "Diễn ra dưới hình thức nội chiến.",
+        "Xóa bỏ triệt để chế độ phong kiến và vấn đề ruộng đất.",
+        "Diễn ra dưới hình thức chiến tranh giải phóng."
+      ],
+      "answers": [
+        true,
+        false,
+        false,
+        true
+      ]
+    },
+    {
+      "id": 9,
+      "type": "tf",
+      "q": "Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi phản ánh tình hình nước Pháp cuối thế kỉ XVIII?",
+      "statements": [
+        "Chế độ quân chủ lập hiến kìm hãm sự phát triển của nền kinh tế.",
+        "Sản xuất nông nghiệp lạc hậu, mất mùa thường xuyên diễn ra.",
+        "Trào lưu Triết học Ánh sáng được đón nhận rộng rãi trong xã hội.",
+        "Trật tự ba đẳng cấp ngày càng khoét sâu mâu thuẫn trong xã hội."
+      ],
+      "answers": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "explain": "Cuối thế kỉ XVIII, Pháp theo chế độ quân chủ chuyên chế, không phải quân chủ lập hiến (đề gốc in lỗi “quân chuyên chế hiến”).<br>Trang nguồn ghi ý về nông nghiệp là Sai, nhưng theo SGK, nông nghiệp Pháp lạc hậu, mất mùa đói kém thường xuyên xảy ra nên ý này Đúng."
+    },
+    {
+      "id": 10,
+      "type": "tf",
+      "q": "Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về tình hình kinh tế nước Pháp trước cách mạng?",
+      "statements": [
+        "Cuối thế kỉ XVIII, Pháp vẫn là nước nông nghiệp lạc hậu.",
+        "Công cụ và phương thức canh tác thô sơ, năng suất thấp.",
+        "Ruộng đất được khai khẩn nhiều nhưng hiệu quả đem lại không cao.",
+        "Nền công, thương nghiệp của Pháp phát triển."
+      ],
+      "answers": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "id": 11,
+      "type": "tf",
+      "q": "Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về tình hình chính trị, xã hội nước Pháp trước cách mạng?",
+      "statements": [
+        "Chế độ quân chủ chuyên chế ở Pháp đã lâm vào tình trạng khủng hoảng.",
+        "Công nhân là giai cấp có số lượng đông đảo nhất.",
+        "Xã hội Pháp phân chia thành bốn đẳng cấp.",
+        "Quý tộc và Tăng lữ là hai đẳng cấp nắm mọi chức vụ cao nhất."
+      ],
+      "answers": [
+        true,
+        false,
+        false,
+        true
+      ]
+    },
+    {
+      "id": 12,
+      "type": "tf",
+      "q": "Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về ý nghĩa của cuộc cách mạng tư sản Pháp (cuối thế kỉ XVIII)?",
+      "statements": [
+        "Tư tưởng Tự do, Bình đẳng, Chủ quyền được truyền bá rộng rãi.",
+        "Mở đường cho chủ nghĩa tư bản phát triển mạnh mẽ ở Pháp.",
+        "Để lại nhiều bài học kinh nghiệm cho phong trào cách mạng các nước.",
+        "Đưa giai cấp công nhân và nhân dân lao động Pháp lên nắm chính quyền."
+      ],
+      "answers": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "id": 13,
+      "type": "tf",
+      "q": "Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về đặc điểm chính của cách mạng tư sản Pháp?",
+      "statements": [
+        "Lực lượng lãnh đạo là giai cấp tư sản.",
+        "Diễn ra dưới hình thức nội chiến cách mạng và chiến tranh bảo vệ Tổ quốc.",
+        "Dẫn đến sự thành lập của Hội liên hiệp Pháp.",
+        "Lực lượng tham gia đông đảo nhất là nông nô."
+      ],
+      "answers": [
+        true,
+        true,
+        false,
+        false
+      ]
+    },
+    {
+      "id": 14,
+      "type": "tf",
+      "q": "Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về tình trạng của nền nông nghiệp Pháp trước cách mạng?",
+      "statements": [
+        "Chỉ còn số lượng nhỏ nông dân làm nông nghiệp.",
+        "Công cụ, kĩ thuật canh tác tương đối hiện đại.",
+        "Nông dân phải nộp địa tô rất nặng nề và làm mọi nghĩa vụ phong kiến.",
+        "Nạn đói xảy ra thường xuyên."
+      ],
+      "answers": [
+        false,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "id": 15,
+      "type": "tf",
+      "q": "Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về đặc điểm của các đẳng cấp Quý tộc và Tăng lữ?",
+      "statements": [
+        "Chiếm đa số trong dân cư.",
+        "Được hưởng mọi đặc quyền, đặc lợi, không phải nộp thuế.",
+        "Giữ chức vụ cao trong chính quyền, quân đội và Giáo hội.",
+        "Giữ chức vụ cao sau giai cấp tư sản."
+      ],
+      "answers": [
+        false,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "id": 16,
+      "type": "tf",
+      "q": "Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về kết quả của cách mạng tư sản Pháp?",
+      "statements": [
+        "Xóa bỏ chế độ quân chủ chuyên chế; thiết lập nền cộng hòa ở Pháp.",
+        "Đưa giai cấp công nhân lên nắm quyền.",
+        "Khẳng định các quyền tự do dân chủ của công dân.",
+        "Tư tưởng Tự do, Bình đẳng, Chủ quyền được truyền bá rộng rãi."
+      ],
+      "answers": [
+        true,
+        false,
+        true,
+        false
+      ],
+      "explain": "“Tư tưởng Tự do, Bình đẳng, Chủ quyền được truyền bá rộng rãi” là ý nghĩa, không phải kết quả của cách mạng tư sản Pháp."
+    },
+    {
+      "id": 17,
+      "type": "tf",
+      "q": "Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về ý nghĩa của cách mạng tư sản Pháp?",
+      "statements": [
+        "Mở đường cho sự phát triển mạnh mẽ của chủ nghĩa tư bản ở Pháp.",
+        "Để lại nhiều bài học kinh nghiệm cho phong trào cách mạng các nước.",
+        "Đưa giai cấp công nhân lên nắm quyền.",
+        "Tư tưởng Tự do, Bình đẳng, Chủ quyền được truyền bá rộng rãi."
+      ],
+      "answers": [
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "id": 18,
+      "type": "tf",
+      "q": "Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về tính chất của cách mạng tư sản Pháp?",
+      "statements": [
+        "Thiết lập chế độ cộng hoà cùng các quyền tự do, dân chủ.",
+        "Giải quyết vấn đề ruộng đất cho người nông dân.",
+        "Giải quyết triệt để vấn đề việc làm cho công nhân.",
+        "Đưa giai cấp công nhân lên nắm quyền."
+      ],
+      "answers": [
+        true,
+        true,
+        false,
+        false
+      ]
+    }
+  ]
+}
