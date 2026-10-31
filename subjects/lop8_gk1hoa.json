@@ -1,0 +1,1532 @@
+{
+  "fullName": "GK1 HÓA - Bài 2, 3, 4 KHTN",
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "q": "Khi hoà tan muối ăn vào nước đã xảy ra hiện tượng",
+      "o": [
+        "hiện tượng vật lí.",
+        "hiện tượng hoá học.",
+        "cả hiện tượng vật lí và hoá học.",
+        "không có hiện tượng gì."
+      ],
+      "c": 0
+    },
+    {
+      "id": 2,
+      "type": "mcq",
+      "q": "Hiện tượng nào là hiện tượng hoá học trong các hiện tượng thiên nhiên sau đây?",
+      "o": [
+        "Sáng sớm, khi mặt trời mọc sương mù tan dần.",
+        "Hơi nước trong các đám mây ngưng tụ và rơi xuống tạo ra mưa.",
+        "Nạn cháy rừng tạo khói đen dày đặc gây ô nhiễm môi trường.",
+        "Khi mưa giông thường có sấm sét."
+      ],
+      "c": 2
+    },
+    {
+      "id": 3,
+      "type": "mcq",
+      "q": "Trong các quá trình sau, quá trình nào xảy ra biến đổi vật lí?",
+      "o": [
+        "Nước hồ bị bốc hơi khi trời nắng.",
+        "Diêm bị cháy khi quẹt vào vỏ hộp diêm.",
+        "Thịt bị cháy khi nướng.",
+        "Pháo hoa có nhiều màu sắc sặc sỡ."
+      ],
+      "c": 0
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "q": "Trong các quá trình sau, quá trình nào xảy ra biến đổi vật lí?",
+      "o": [
+        "Đường cháy thành than.",
+        "Cơm để lâu bị ôi thiu.",
+        "Sữa chua lên men.",
+        "Nước hóa rắn ở 0°C."
+      ],
+      "c": 3
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "q": "Trong các quá trình sau, quá trình nào xảy ra biến đổi vật lí?",
+      "o": [
+        "Khí hydrogen cháy.",
+        "Gỗ bị cháy.",
+        "Sắt (iron) nóng chảy.",
+        "Sắt (iron) bị gỉ."
+      ],
+      "c": 2
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "q": "Trong các quá trình sau, quá trình nào xảy ra biến đổi hóa học?",
+      "o": [
+        "Muối ăn hòa vào nước thành nước muối.",
+        "Bật bếp ga thấy lửa màu xanh.",
+        "Cồn bay hơi khi mở nắp.",
+        "Mở lọ nước hoa thấy mùi thơm."
+      ],
+      "c": 1
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "q": "Trong các quá trình sau, quá trình nào xảy ra biến đổi hóa học?",
+      "o": [
+        "Cô cạn nước muối thu được muối ăn.",
+        "Cồn để trong lọ không đậy nắp bị cạn dần.",
+        "Đun nước, nước sôi bốc hơi.",
+        "Đốt cháy than để nấu nướng."
+      ],
+      "c": 3
+    },
+    {
+      "id": 8,
+      "type": "mcq",
+      "q": "Trong các quá trình sau, quá trình nào xảy ra biến đổi hóa học?",
+      "o": [
+        "Bóng đèn phát sáng, kèm theo tỏa nhiệt.",
+        "Hòa tan đường vào nước để được nước đường.",
+        "Đun nóng đường, đường chảy rồi chuyển màu đen, có mùi hắc.",
+        "Trời nắng, nước bốc hơi hình thành mây."
+      ],
+      "c": 2
+    },
+    {
+      "id": 9,
+      "type": "mcq",
+      "q": "Hiện tượng vật lí là",
+      "o": [
+        "hiện tượng chất biến đổi có tạo ra chất mới.",
+        "hiện tượng chất biến đổi về trạng thái, kích thước, …mà vẫn giữ nguyên là chất ban đầu.",
+        "hiện tượng chất bị phân hủy.",
+        "hiện tượng biến đổi chất, có thể tạo ra chất mới hoặc không."
+      ],
+      "c": 1
+    },
+    {
+      "id": 10,
+      "type": "mcq",
+      "q": "Dấu hiệu chính để phân biệt hiện tượng vật lý và hiện tượng hóa học là",
+      "o": [
+        "sự thay đổi về màu sắc của chất.",
+        "sự xuất hiện chất mới.",
+        "sự thay đổi về trạng thái của chất.",
+        "sự thay đổi về hình dạng của chất."
+      ],
+      "c": 1
+    },
+    {
+      "id": 11,
+      "type": "mcq",
+      "q": "Biến đổi hoá học khác với biến đổi vật lí là",
+      "o": [
+        "chỉ biến đổi về trạng thái.",
+        "có sinh ra chất mới.",
+        "biến đổi về hình dạng.",
+        "khối lượng thay đổi."
+      ],
+      "c": 1
+    },
+    {
+      "id": 12,
+      "type": "mcq",
+      "q": "Hiện tượng nào sau đây là hiện tượng vật lý?\n(a). Pha loãng nước muối.\n(b). Nước đá chảy thành nước lỏng.\n(c). Lưu huỳnh cháy trong không khí.\n(d). Đốt than.",
+      "o": [
+        "Cả a, b, c, d",
+        "a, b, c.",
+        "Chỉ có a.",
+        "a và b."
+      ],
+      "c": 3
+    },
+    {
+      "id": 13,
+      "type": "mcq",
+      "q": "Trong số các hiện tượng sau, hiện tượng nào là hiện tượng hóa học?",
+      "o": [
+        "Thanh sắt bị dát mỏng.",
+        "Cồn để trong lọ không kín bị bay hơi.",
+        "Thủy tinh nóng chảy được thổi thành bình cầu.",
+        "Đốt cháy mẩu giấy."
+      ],
+      "c": 3
+    },
+    {
+      "id": 14,
+      "type": "mcq",
+      "q": "Trong các hiện tượng sau, hiện tượng nào không phải là hiện tượng hoá học?",
+      "o": [
+        "Khi nung nóng đá vôi (calcium carbonate) thì thấy khối lượng giảm đi.",
+        "Rượu để lâu trong không khí bị chua.",
+        "Thuỷ tinh nóng chảy được thổi thành bình cầu.",
+        "Một lá đồng bị nung nóng, trên mặt đồng phủ một lớp màu đen."
+      ],
+      "c": 2
+    },
+    {
+      "id": 15,
+      "type": "mcq",
+      "q": "Trong các hiện tượng sau, hiện tượng hóa học là",
+      "o": [
+        "cơm bị ôi thiu.",
+        "hòa tan đường vào nước.",
+        "cầu vồng xuất hiện sau mưa.",
+        "đun sôi nước."
+      ],
+      "c": 0
+    },
+    {
+      "id": 16,
+      "type": "mcq",
+      "q": "Trong các hiện tượng sau, hiện tượng vật lý là",
+      "o": [
+        "gỗ cháy thành than.",
+        "cơm bị ôi thiu.",
+        "sữa chua lên men.",
+        "nước bốc hơi."
+      ],
+      "c": 3
+    },
+    {
+      "id": 17,
+      "type": "mcq",
+      "q": "Trong các thí nghiệm sau đây, thí nghiệm nào có sự biến đổi hoá học?",
+      "o": [
+        "Hoà tan một ít chất rắn màu trắng vào nước lọc để loại bỏ các chất bẩn không tan được dung dịch.",
+        "Đun nóng nước lỏng, nước chuyển thành hơi.",
+        "Mang các hạt chất rắn nghiền được bột màu trắng.",
+        "Nung một chất bột màu trắng, màu trắng không đổi nhưng thoát ra một chất khí có thể làm đục nước vôi trong."
+      ],
+      "c": 3
+    },
+    {
+      "id": 18,
+      "type": "mcq",
+      "q": "Sự biến đổi nào sau đây không phải là một biến đổi hóa học?",
+      "o": [
+        "Hơi nến cháy trong không khí tạo thành khí carbonic và hơi nước.",
+        "Hòa tan muối ăn vào nước tạo thành dung dịch muối.",
+        "Sắt (iron) cháy trong lưu huỳnh (sulfur) tạo thành muối iron (II) sufide.",
+        "Khí hydrogen cháy trong oxygen tạo thành nước."
+      ],
+      "c": 1
+    },
+    {
+      "id": 19,
+      "type": "mcq",
+      "q": "Các hiện tượng sau đây, hiện tượng nào có sự biến đổi hoá học:\n(a). Dây sắt được cắt nhỏ từng đoạn và tán thành đinh.\n(b). Dây xích xe đạp bằng sắt bị phủ một lớp gỉ là chất màu nâu đỏ.\n(c). Rượu để lâu trong không khí thường bị chua.\n(d). Đèn tín hiệu giao thông chuyển từ màu đỏ sang màu xanh.\n(e). Dây tóc trong bóng đèn điện nóng và sáng lên khi dòng điện đi qua.",
+      "o": [
+        "(a), (b), (c), (d).",
+        "(a), (b), (d), (e).",
+        "(b), (c).",
+        "(a), (c), (d), (e)."
+      ],
+      "c": 2
+    },
+    {
+      "id": 20,
+      "type": "mcq",
+      "q": "Trong số quá trình và sự việc dưới đây, đâu là hiện tượng vật lí?\n(a). Hoà tan muối ăn vào nước ta được dung dịch muối ăn.\n(b). Hơi nước làm quay tuabin của máy phát điện.\n(c). Cồn để trong lọ không kín bị bay hơi.\n(d). Nước bị đóng băng hai cực Trái đất.\n(e). Cho vôi sống CaO hoà tan vào nước thu được Ca(OH)₂.",
+      "o": [
+        "(a), (b), (c), (d).",
+        "(a), (b), (d).",
+        "(b), (c), (d).",
+        "(a), (d), (e)."
+      ],
+      "c": 0
+    },
+    {
+      "id": 21,
+      "type": "mcq",
+      "q": "Nến được làm bằng parafin, khi đốt nến, xảy ra các quá trình sau\n(a). Paraffin nóng chảy.\n(b). Paraffin lỏng chuyển thành hơi.\n(c). Hơi paraffin cháy biến đổi thành khí carbon dioxide và hơi nước.\nQuá trình nào có sự biến đổi hoá học?",
+      "o": [
+        "(a).",
+        "(b).",
+        "(c).",
+        "Cả (a), (b), (c)."
+      ],
+      "c": 2
+    },
+    {
+      "id": 22,
+      "type": "mcq",
+      "q": "Khi điện cúp vào ban đêm thì người ta hay dùng nến thắp sáng. Khi đốt cháy một cây nến thì đã xảy ra những hiện tượng gì?",
+      "o": [
+        "Hiện tượng vật lý.",
+        "Hiện tượng hóa học.",
+        "Cả hiện tượng vật lý và hóa học.",
+        "Không xảy ra hiện tượng gì cả."
+      ],
+      "c": 2
+    },
+    {
+      "id": 23,
+      "type": "mcq",
+      "q": "Cho một số hiện tượng sau.\n(a) Mài một thanh kim loại nhôm thì thu được bột nhôm.\n(b) Thanh sắt bị gỉ (sét) trong không khí sẽ chuyển dần sang màu nâu đỏ hoặc nâu đen… vì có tạo ra chất mới bám trên thanh sắt.\n(c) Khi làm lạnh nước lỏng đến 0°C thì nước đông thành nước đá.\n(d) Cho muối ăn vào nước thì thu được nước muối.\n(e) Cho vôi sống (calcium oxide) khan vào nước thì có tỏa nhiều nhiệt và thu được chất mới là vôi tôi (calcium hydroxide).\n(g) Thổi hơi thở vào nước vôi trong (dung dịch calcium hydroxide) thì có xảy ra phản ứng hóa học, tạo ra chất calcium carbonate không tan trong nước, làm cho nước vôi trong bị vẩn đục.\nSố hiện tượng hóa học là:",
+      "o": [
+        "5.",
+        "4.",
+        "3.",
+        "2."
+      ],
+      "c": 2
+    },
+    {
+      "id": 24,
+      "type": "mcq",
+      "q": "Phản ứng hóa học là",
+      "o": [
+        "quá trình kết hợp các đơn chất thành hợp chất.",
+        "quá trình biến đổi chất này thành chất khác.",
+        "sự trao đổi của 2 hay nhiều chất ban đầu để tạo chất mới.",
+        "là quá trình phân hủy chất ban đầu thành nhiều chất."
+      ],
+      "c": 1
+    },
+    {
+      "id": 25,
+      "type": "mcq",
+      "q": "Điều kiện để một phản ứng hóa học xảy ra là",
+      "o": [
+        "không thể thiếu chất xúc tác.",
+        "các chất phản ứng phải tiếp xúc với nhau.",
+        "cần phải đun nóng.",
+        "cả 3 điều kiện còn lại."
+      ],
+      "c": 1
+    },
+    {
+      "id": 26,
+      "type": "mcq",
+      "q": "Dấu hiệu nào giúp ta có khẳng định có phản ứng hoá học xảy ra?",
+      "o": [
+        "Có chất kết tủa (chất không tan).",
+        "Có chất khí thoát ra (sủi bọt).",
+        "Có sự thay đổi màu sắc.",
+        "Có ít nhất một trong số các dấu hiệu còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "id": 27,
+      "type": "mcq",
+      "q": "Hiện tượng nào sau đây chứng tỏ có phản ứng hoá học xảy ra?",
+      "o": [
+        "Từ màu này chuyển sang màu khác.",
+        "Từ trạng thái rắn chuyển sang trạng thái lỏng.",
+        "Từ trạng thái lỏng chuyển sang trạng thái hơi.",
+        "Từ trạng rắn chuyển sang trạng thái hơi."
+      ],
+      "c": 0
+    },
+    {
+      "id": 28,
+      "type": "mcq",
+      "q": "Trong một phản ứng hoá học, các chất phản ứng và chất tạo thành phải chứa cùng",
+      "o": [
+        "số nguyên tử của mỗi nguyên tố.",
+        "số nguyên tử trong mỗi chất.",
+        "số phân tử trong mỗi chất.",
+        "số nguyên tố tạo ra chất."
+      ],
+      "c": 0
+    },
+    {
+      "id": 29,
+      "type": "mcq",
+      "q": "Khi xảy ra phản ứng hóa học sẽ",
+      "o": [
+        "có ánh sáng phát ra.",
+        "có sinh nhiệt.",
+        "có chất mới tạo thành.",
+        "có chất không tan trong nước."
+      ],
+      "c": 2
+    },
+    {
+      "id": 30,
+      "type": "mcq",
+      "q": "Khẳng định sau đây gồm 2 ý: “Trong phản ứng hóa học, chỉ có phân tử bị biến đổi còn các nguyên tử vẫn giữ nguyên, nên tổng khối lượng trước phản ứng luôn bằng tổng khối lượng sau phản ứng”. Hãy chọn phương án đúng dưới đây?",
+      "o": [
+        "Ý 1 đúng, ý 2 sai.",
+        "Cả hai ý đều đúng nhưng ý 1 không giải thích cho ý 2.",
+        "Ý 1 sai, ý 2 đúng.",
+        "Cả hai ý đều đúng và ý 1 giải thích cho ý 2."
+      ],
+      "c": 3
+    },
+    {
+      "id": 31,
+      "type": "mcq",
+      "q": "Loại hạt vi mô nào luôn được bảo toàn trong phản ứng hóa học?",
+      "o": [
+        "Phân tử.",
+        "Nguyên tử.",
+        "Cả phân tử và nguyên tử.",
+        "Không phải phân tử, cũng không phải nguyên tử."
+      ],
+      "c": 1
+    },
+    {
+      "id": 32,
+      "type": "mcq",
+      "q": "Câu nào sau đây đúng?",
+      "o": [
+        "Trong phản ứng hoá học, các nguyên tử bị phá vỡ.",
+        "Trong phản ứng hoá học, liên kết trong các phân tử bị phá vỡ.",
+        "Trong phản ứng hoá học, liên kết trong các phân tử không bị phá vỡ.",
+        "Trong phản ứng hoá học các phân tử được bảo toàn."
+      ],
+      "c": 1
+    },
+    {
+      "id": 33,
+      "type": "mcq",
+      "q": "Các câu sau, câu nào sai?",
+      "o": [
+        "Trong phản ứng hoá học các nguyên tử được bảo toàn, không tự nhiên sinh ra hoặc mất đi.",
+        "Trong phản ứng hoá học, các nguyên tử bị phân chia.",
+        "Trong phản ứng hoá học, các phân tử bị phân chia.",
+        "Trong phản ứng hoá học, các phân tử bị phá vỡ."
+      ],
+      "c": 1
+    },
+    {
+      "id": 34,
+      "type": "mcq",
+      "q": "Trong một phản ứng hóa học, giữa các sản phẩm với các chất phản ứng không có sự thay đổi về",
+      "o": [
+        "số nguyên tử của mỗi chất.",
+        "số nguyên tố của mỗi chất.",
+        "số nguyên tử của mỗi nguyên tố.",
+        "số phân tử của mỗi chất."
+      ],
+      "c": 2
+    },
+    {
+      "id": 35,
+      "type": "mcq",
+      "q": "Trong các trường hợp sau, trường hợp không xảy ra phản ứng hóa học?",
+      "o": [
+        "Rượu để trong chai không kín bị cạn dần.",
+        "Lưu huỳnh (sulfur) tác dụng với oxygen tạo ra khí sulfur dioxide SO₂.",
+        "Sodium cháy trong không khí tạo thành sodium oxide Na₂O.",
+        "Calcium oxide (CaO) để lâu ngày trong không khí bị biến đổi thành calcium carbonate CaCO₃."
+      ],
+      "c": 0
+    },
+    {
+      "id": 36,
+      "type": "mcq",
+      "q": "Trường hợp nào sau đây xảy ra phản ứng hóa học?",
+      "o": [
+        "Đất đèn (CaC₂) tác dụng với nước tạo ra C₂H₂.",
+        "Bơm khí C₂H₂ vào bóng bay.",
+        "Quả bóng bay bay lên không trung rồi nổ tung.",
+        "Bơm khí H₂ vào bóng bay."
+      ],
+      "c": 0
+    },
+    {
+      "id": 37,
+      "type": "mcq",
+      "q": "Trường hợp nào sau đây không xảy ra phản ứng hóa học?",
+      "o": [
+        "Đốt cao su có mùi hắc rất khó chịu.",
+        "Trên bề mặt các hồ tôi vôi để lâu ngày sẽ có lớp màng mỏng màu trắng.",
+        "Quả bóng bay trên cao rồi nổ tung.",
+        "Khi chiên trứng gà nếu đun quá lửa sẽ có mùi khét."
+      ],
+      "c": 2
+    },
+    {
+      "id": 38,
+      "type": "mcq",
+      "q": "Trong các quá trình sau, quá trình nào có phản ứng hóa học?\n(a). Đốt cháy than trong không khí.\n(b). Làm bay hơi nước muối biển trong quá trình sản xuất muối.\n(c). Nung đá vôi.\n(d). Nổ hầm mỏ than.\n(e). Iodine thăng hoa.",
+      "o": [
+        "a, b, c.",
+        "b, c, d, e.",
+        "a, c, d.",
+        "a, b, c, d, e."
+      ],
+      "c": 2
+    },
+    {
+      "id": 39,
+      "type": "mcq",
+      "q": "Dùng nước mưa đun sôi rồi để nguội làm nước uống, lâu ngày thấy trong ấm có những cặn trắng. Biết rằng trong nước mưa có chứa nhiều muối calcium hydrocarbonate. Muối này dễ bị nhiệt phân hủy sinh ra calcium carbonate (là chất kết tủa trắng), khí carbon dioxide và nước. Hãy cho biết dấu hiệu có phản ứng xảy ra khi đun nước sôi rồi để nguội.",
+      "o": [
+        "Do tạo thành nước.",
+        "Do tạo chất kết tủa trắng calcium carbonate.",
+        "Do để nguội nước.",
+        "Do đun sôi nước."
+      ],
+      "c": 1
+    },
+    {
+      "id": 40,
+      "type": "mcq",
+      "q": "Sắt (iron; ferrum) để trong không khí một thời gian sẽ bị gỉ do tác dụng với khí oxygen trong không khí tạo ra sắt từ oxide (gỉ sắt; iron(II) diiron(III) oxide; ferơ-ferric oxide; magnetit). Trong phản ứng trên, chất tham gia phản ứng là",
+      "o": [
+        "không khí.",
+        "sắt và không khí.",
+        "sắt từ oxide.",
+        "sắt và khí oxygen."
+      ],
+      "c": 3
+    },
+    {
+      "id": 41,
+      "type": "mcq",
+      "q": "Trong phản ứng sau chất nào là sản phẩm?\nHydrochloric acid + potassium carbonate → potassium chloride + carbon dioxide + nước",
+      "o": [
+        "hydrochloric acid, sodium chloride.",
+        "potassium chloride, carbon dioxide.",
+        "carbon dioxide, nước.",
+        "potassium chloride, carbon dioxide, nước."
+      ],
+      "c": 3
+    },
+    {
+      "id": 42,
+      "type": "mcq",
+      "q": "Bỏ quả trứng vào dung dịch hydrochloric acid thấy sủi bọt ở vỏ trứng. Biết rằng hydrochloric acid đã tác dụng với calcium carbonate (chất này trong vỏ trứng) tạo ra calcium chloride (chất này tan), nước và khí carbon dioxide thoát ra. Ý nào dưới đây biểu diễn đúng phương trình chữ của phản ứng trên.",
+      "o": [
+        "Hydrochloric acid + calcium carbonate → calcium chloride + carbon dioxide + nước.",
+        "Calcium chloride + carbon dioxide + nước → acid chloride + calcium carbonate.",
+        "Hydrochloric acid + calcium carbonate → calcium chloride + carbon dioxide.",
+        "Calcium chloride + nước → acid chloride + calcium carbonate."
+      ],
+      "c": 0
+    },
+    {
+      "id": 43,
+      "type": "mcq",
+      "q": "Cồn cháy được là do phản ứng với khí oxygen, tạo ra khí carbon dioxide và hơi nước. Phương trình chữ nào biểu thị đúng cho phản ứng trên?",
+      "o": [
+        "Cồn + khí oxygen → carbon dioxide",
+        "Cồn + khí oxygen → hơi nước",
+        "Cồn + khí oxygen → carbon dioxide + hơi nước",
+        "Cồn → hơi nước + carbon dioxide"
+      ],
+      "c": 2
+    },
+    {
+      "id": 44,
+      "type": "mcq",
+      "q": "Sắt (iron) cháy trong oxygen, không có ngọn lửa nhưng sáng chói tạo ra hạt nhỏ nóng chảy màu nâu là sắt từ oxide, phương trình chữ của phản ứng hóa học là:",
+      "o": [
+        "Iron + oxygen → iron(II) diiron(III) oxide.",
+        "Oxygen + iron(II) diiron(III) oxide → iron.",
+        "Iron(II) diiron(III) oxide → iron + oxygen.",
+        "Iron + iron(II) diiron(III) oxide → oxygen."
+      ],
+      "c": 0
+    },
+    {
+      "id": 45,
+      "type": "mcq",
+      "q": "Đốt phosphorus trong oxygen thu được chất diphosphorus pentaoxide. Phương trình chữ nào sau đây biểu diễn đúng phản ứng hóa học trên.",
+      "o": [
+        "Phosphorus + diphosphorus pentaoxide → khí oxygen",
+        "Phosphorus → khí oxygen + diphosphorus pentaoxide",
+        "Phosphorus + khí oxygen → diphosphorus pentaoxide",
+        "Diphosphorus pentaoxide + khí oxygen → phosphorus"
+      ],
+      "c": 2
+    },
+    {
+      "id": 46,
+      "type": "mcq",
+      "q": "Thế nào là phản ứng thu nhiệt?",
+      "o": [
+        "Là phản ứng tỏa ra năng lượng dưới dạng nhiệt.",
+        "Là phản ứng hấp thụ ion dưới dạng nhiệt.",
+        "Là phản ứng hấp thụ năng lượng dưới dạng nhiệt.",
+        "Là phản ứng giải phóng ion dưới dạng nhiệt."
+      ],
+      "c": 2
+    },
+    {
+      "id": 47,
+      "type": "mcq",
+      "q": "Phản ứng tỏa nhiệt là gì?",
+      "o": [
+        "Là phản ứng tỏa ra năng lượng dưới dạng nhiệt.",
+        "Là phản ứng hấp thụ năng lượng dưới dạng nhiệt.",
+        "Là phản ứng hấp thụ ion dưới dạng nhiệt.",
+        "Là phản ứng giải phóng ion dưới dạng nhiệt."
+      ],
+      "c": 0
+    },
+    {
+      "id": 48,
+      "type": "mcq",
+      "q": "Phát biểu nào sau đây là đúng?\n(a). Phản ứng tỏa nhiệt là phản ứng hóa học trong đó có sự giải phóng nhiệt năng ra môi trường.\n(b). Phản ứng thu nhiệt là phản ứng hóa học trong đó có sự hấp thụ nhiệt năng từ môi trường.\n(c). Phản ứng tỏa nhiệt là phản ứng hóa học trong đó có sự hấp thụ nhiệt năng từ môi trường.\n(d). Phản ứng thu nhiệt là phản ứng hóa học trong đó có sự giải phóng nhiệt năng từ môi trường.",
+      "o": [
+        "(a) và (d).",
+        "(b) và (c).",
+        "(c) và (d).",
+        "(a) và (b)."
+      ],
+      "c": 3
+    },
+    {
+      "id": 49,
+      "type": "mcq",
+      "q": "Trong các quá trình sau quá trình nào là quá trình thu nhiệt?",
+      "o": [
+        "Vôi sống tác dụng với nước.",
+        "Đốt than đá.",
+        "Đốt cháy cồn.",
+        "Nung đá vôi."
+      ],
+      "c": 3
+    },
+    {
+      "id": 50,
+      "type": "mcq",
+      "q": "Vì sao khi nung vôi, người ta phải xếp đá vôi lẫn với than trong lò?",
+      "o": [
+        "Vì phản ứng nung vôi là phản ứng tỏa nhiệt.",
+        "Vì phản ứng nung vôi là phản ứng thu nhiệt, cần nhiệt từ quá trình đốt cháy than.",
+        "Để rút ngắn thời gian nung vôi.",
+        "Vì than hấp thu bớt lượng nhiệt tỏa ra của phản ứng nung vôi."
+      ],
+      "c": 1
+    },
+    {
+      "id": 51,
+      "type": "mcq",
+      "q": "Sự hình thành mưa, tuyết gồm các giai đoạn sau:\n(1) Nhiệt lượng từ Mặt Trời làm nước từ các đại dương bốc hơi vào khí quyển.\n(2) Hơi nước ở nơi có nhiệt độ thấp ngưng tụ thành mây gồm các hạt nước nhỏ li ti.\n(3) Những hạt nước nhỏ li ti kết hợp với nhau, gia tăng kích thước và rơi xuống thành mưa.\n(4) Nếu thời tiết lạnh giá, nước mưa hoá rắn thành tuyết.\nỞ giai đoạn nào, nước chỉ tồn tại ở thể lỏng?",
+      "o": [
+        "(2).",
+        "(1).",
+        "(3).",
+        "(4)."
+      ],
+      "c": 2
+    },
+    {
+      "id": 52,
+      "type": "mcq",
+      "q": "Chất phản ứng của phản ứng: nhôm (aluminium) + chlorine → aluminium chloride là",
+      "o": [
+        "nhôm (aluminium).",
+        "aluminium chloride.",
+        "chlorine.",
+        "nhôm (aluminium) và chlorine."
+      ],
+      "c": 3
+    },
+    {
+      "id": 53,
+      "type": "mcq",
+      "q": "Cho các quá trình sau:\n(1) Về mùa hè thức ăn thường bị ôi thiu.\n(2) Đun đường, đường ngả màu nâu rồi chuyển thành màu đen.\n(3) Thổi quả bóng bay căng đến phát nổ.\n(4) Cháy rừng gây ô nhiễm lớn cho môi trường.\n(5) Nhiệt độ trái đất nóng lên làm băng ở hai cực trái đất tan dần.\nNhững quá trình xảy ra biến đổi hóa học là",
+      "o": [
+        "(1), (2), (3), (4).",
+        "(1), (2), (4), (5).",
+        "(1), (2), (4).",
+        "(1), (4), (5)."
+      ],
+      "c": 2
+    },
+    {
+      "id": 54,
+      "type": "mcq",
+      "q": "Điều kiện để một phản ứng hóa học xảy ra là",
+      "o": [
+        "cần áp suất cao.",
+        "các chất phản ứng phải tiếp xúc với nhau.",
+        "cần phải đun nóng.",
+        "cần chất xúc tác."
+      ],
+      "c": 1
+    },
+    {
+      "id": 55,
+      "type": "mcq",
+      "q": "Trong phản ứng hóa học, đại lượng nào sau đây được bảo toàn?",
+      "o": [
+        "Số phân tử của mỗi chất.",
+        "Số nguyên tử của mỗi nguyên tố.",
+        "Trạng thái của các chất.",
+        "Tính chất của các chất."
+      ],
+      "c": 1
+    },
+    {
+      "id": 56,
+      "type": "mcq",
+      "q": "Trong phản ứng điện phân nước tạo thành oxygen và hydrogen, các liên kết giữa các nguyên tử...(1)... bị phá vỡ, liên kết giữa các nguyên tử...(2)... được hình thành.\nCác từ thích hợp để điền vào vị trí (1), (2) lần lượt là:",
+      "o": [
+        "cùng loại, cùng loại.",
+        "khác loại, khác loại.",
+        "khác loại, cùng loại.",
+        "cùng loại, khác loại."
+      ],
+      "c": 2
+    },
+    {
+      "id": 57,
+      "type": "mcq",
+      "q": "Trong các quá trình sau quá trình nào là quá trình thu nhiệt?",
+      "o": [
+        "Phản ứng đốt cháy cồn.",
+        "Phản ứng tôi vôi.",
+        "Phản ứng quang hợp của cây xanh.",
+        "Phản ứng oxi hóa thức ăn trong cơ thể."
+      ],
+      "c": 2
+    },
+    {
+      "id": 58,
+      "type": "mcq",
+      "q": "Cho các quá trình sau:\n(1) Hoà tan muối ăn vào nước ta được dung dịch muối ăn.\n(2) Cồn để trong lọ không kín bị bay hơi.\n(3) Nước bị đóng băng hai cực trái đất.\n(4) Cho vôi sống hoà tan vào nước tạo thành vôi tôi.\nNhững quá trình xảy ra biến đổi vật lí là",
+      "o": [
+        "(1), (2), (3).",
+        "(1), (2), (4).",
+        "(2), (3), (4).",
+        "(1), (4)."
+      ],
+      "c": 0
+    },
+    {
+      "id": 59,
+      "type": "mcq",
+      "q": "Cho một đinh sắt vào ống nghiệm chứa dung dịch sulfuric acid loãng. Dấu hiệu cho biết đã có phản ứng hóa học xảy ra là",
+      "o": [
+        "đinh sắt bị gỉ sét.",
+        "dung dịch acid chuyển sang màu xanh.",
+        "có sự tỏa nhiệt và phát sáng.",
+        "dung dịch sủi bọt khí."
+      ],
+      "c": 3
+    },
+    {
+      "id": 60,
+      "type": "mcq",
+      "q": "Cho các phát biểu sau:\n(a) Phản ứng tỏa nhiệt giải phóng nhiệt năng ra môi trường.\n(b) Phản ứng thu nhiệt hấp thụ nhiệt năng từ môi trường.\n(c) Mọi phản ứng hóa học đều cần đun nóng.\n(d) Đốt cháy nhiên liệu là một ví dụ về phản ứng tỏa nhiệt.\nCác phát biểu đúng là",
+      "o": [
+        "(a), (b).",
+        "(a), (c).",
+        "(a), (b), (d).",
+        "(b), (c), (d)."
+      ],
+      "c": 2
+    },
+    {
+      "id": 61,
+      "type": "mcq",
+      "q": "Xét khẳng định: “Trong phản ứng hóa học, chỉ có liên kết giữa các phân tử thay đổi để tạo thành chất mới còn số nguyên tử của mỗi nguyên tố được bảo toàn nên tổng khối lượng các chất trước phản ứng bằng tổng khối lượng các chất sau phản ứng.” Hãy chọn phương án đúng.",
+      "o": [
+        "Ý thứ nhất đúng, ý thứ hai sai.",
+        "Ý thứ nhất sai, ý thứ hai đúng.",
+        "Cả hai ý đúng nhưng ý thứ nhất không liên quan đến ý thứ hai.",
+        "Cả hai ý đúng và ý thứ nhất giải thích cho ý thứ hai."
+      ],
+      "c": 3
+    },
+    {
+      "id": 62,
+      "type": "mcq",
+      "q": "Sản phẩm của phản ứng: Sắt (iron) + hydrochloric acid → iron (II) chloride + hydrogen là",
+      "o": [
+        "sắt (iron).",
+        "hydrochloric acid.",
+        "iron (II) chloride.",
+        "iron (II) chloride và hydrogen."
+      ],
+      "c": 3
+    },
+    {
+      "id": 63,
+      "type": "mcq",
+      "q": "Sự hình thành mưa, tuyết gồm các giai đoạn sau:\n(1) Nhiệt lượng từ Mặt Trời làm nước từ các đại dương bốc hơi vào khí quyển.\n(2) Hơi nước ở nơi có nhiệt độ thấp ngưng tụ thành mây gồm các hạt nước nhỏ li ti.\n(3) Những hạt nước nhỏ li ti kết hợp với nhau, gia tăng kích thước và rơi xuống thành mưa.\n(4) Nếu thời tiết lạnh giá, nước mưa hoá rắn thành tuyết.\nSự biến đổi vật lí của hơi nước biến thành nước lỏng xảy ra ở giai đoạn nào?",
+      "o": [
+        "(2).",
+        "(1).",
+        "(3).",
+        "(4)."
+      ],
+      "c": 0
+    },
+    {
+      "id": 64,
+      "type": "mcq",
+      "q": "Trong phản ứng hoá học, yếu tố nào sau đây không thay đổi?",
+      "o": [
+        "Số phân tử trước và sau phản ứng.",
+        "Liên kết giữa các nguyên tử trước và sau phản ứng.",
+        "Số nguyên tử của mỗi nguyên tố trước và sau phản ứng.",
+        "Trạng thái chất trước và sau phản ứng."
+      ],
+      "c": 2
+    },
+    {
+      "id": 65,
+      "type": "mcq",
+      "q": "Trong phản ứng tổng hợp ammonia từ nitrogen và hydrogen, các liên kết giữa các nguyên tử...(1)... bị phá vỡ, liên kết giữa các nguyên tử...(2)... được hình thành.\nCác từ thích hợp để điền vào vị trí (1), (2) lần lượt là:",
+      "o": [
+        "cùng loại, cùng loại.",
+        "khác loại, khác loại.",
+        "khác loại, cùng loại.",
+        "cùng loại, khác loại."
+      ],
+      "c": 3
+    },
+    {
+      "id": 66,
+      "type": "mcq",
+      "q": "Trong các quá trình sau quá trình nào là quá trình thu nhiệt?",
+      "o": [
+        "Vôi sống tác dụng với nước.",
+        "Sulfuric acid tác dụng với sodium hydroxide.",
+        "Phản ứng quang hợp của cây xanh.",
+        "Phản ứng oxi hóa thức ăn trong cơ thể."
+      ],
+      "c": 2
+    },
+    {
+      "id": 67,
+      "type": "mcq",
+      "q": "Nhỏ giấm ăn vào viên đá vôi. Dấu hiệu cho biết đã có phản ứng hóa học xảy ra là",
+      "o": [
+        "viên đá vôi hóa rắn.",
+        "có sủi bọt khí trên bề mặt viên đá vôi.",
+        "có sự tỏa nhiệt và phát sáng.",
+        "xuất hiện chất kết tủa màu trắng."
+      ],
+      "c": 1
+    },
+    {
+      "id": 68,
+      "type": "mcq",
+      "q": "Số Avogadro có giá trị là",
+      "o": [
+        "6,022.10²².",
+        "6,022.10²³.",
+        "6,022.10²⁴.",
+        "6,022.10²⁵."
+      ],
+      "c": 1
+    },
+    {
+      "id": 69,
+      "type": "mcq",
+      "q": "Trong 2 mol CO₂ có bao nhiêu phân tử?",
+      "o": [
+        "6,022.10²³.",
+        "9,033.10²³.",
+        "12,044.10²³.",
+        "18,055.10²³."
+      ],
+      "c": 2
+    },
+    {
+      "id": 70,
+      "type": "mcq",
+      "q": "Có bao nhiêu mol phân tử oxygen có trong 1,5055.10²⁴ phân tử oxygen?",
+      "o": [
+        "2 mol.",
+        "3 mol.",
+        "2,5 mol.",
+        "3,5 mol."
+      ],
+      "c": 2
+    },
+    {
+      "id": 71,
+      "type": "mcq",
+      "q": "Ở đkc, 1 mol của bất kì chất khí nào đều chiếm một thể tích là",
+      "o": [
+        "27,49 lít.",
+        "24,79 lít.",
+        "24,2 lít.",
+        "24,97 lít."
+      ],
+      "c": 1
+    },
+    {
+      "id": 72,
+      "type": "mcq",
+      "q": "Nếu 2 chất khác nhau nhưng có ở cùng nhiệt độ và áp suất, có thể tích bằng nhau thì",
+      "o": [
+        "cùng khối lượng.",
+        "cùng số mol.",
+        "cùng tính chất hóa học.",
+        "cùng tính chất vật lí."
+      ],
+      "c": 1
+    },
+    {
+      "id": 73,
+      "type": "mcq",
+      "q": "Thể tích (đkc) của 280 gam khí nitrogen là",
+      "o": [
+        "991,6 lít.",
+        "734,7 lít.",
+        "619,75 lít.",
+        "247,9 lít."
+      ],
+      "c": 3
+    },
+    {
+      "id": 74,
+      "type": "mcq",
+      "q": "Ở điều kiện chuẩn 7,437 lít khí CO₂ có số mol là",
+      "o": [
+        "0,1 mol.",
+        "0,2 mol.",
+        "0,3 mol.",
+        "0,4 mol."
+      ],
+      "c": 2
+    },
+    {
+      "id": 75,
+      "type": "mcq",
+      "q": "Cho các phát biểu sau:\n(a) Trong 2 mol khí oxygen có chứa 12,044.10²⁴ phân tử oxygen.\n(b) 12,044.10²³ nguyên tử đồng (copper) có khối lượng bằng 4,958 L khí SO₂ (đkc).\n(c) Ở điều kiện chuẩn 1,5 mol khí O₂ có khối lượng bằng 1,5 mol khí N₂.\n(d) Ở cùng điều kiện về nhiệt độ và áp suất, 2 mol khí Cl₂ có thể tích bằng 2 mol khí CO₂.\n(e) 7,2 gam magnesium có số mol gấp hai lần số mol của 6,1975 L khí H₂ (đkc).\nSố phát biểu sai là",
+      "o": [
+        "1.",
+        "2.",
+        "3.",
+        "4."
+      ],
+      "c": 3,
+      "explain": "a, b, c và e sai; chỉ d đúng.<br>(a) 2 mol O₂ chứa 2 × 6,022.10²³ = 12,044.10²³ phân tử (không phải 10²⁴).<br>(b) 12,044.10²³ nguyên tử Cu = 2 mol → 2 × 64 = 128 g; 4,958 L SO₂ = 0,2 mol → 0,2 × 64 = 12,8 g.<br>(c) 1,5 mol O₂ nặng 1,5 × 32 = 48 g; 1,5 mol N₂ nặng 1,5 × 28 = 42 g.<br>(d) Cùng nhiệt độ, áp suất và cùng số mol thì các khí có thể tích bằng nhau.<br>(e) n(Mg) = 7,2 : 24 = 0,3 mol; n(H₂) = 6,1975 : 24,79 = 0,25 mol → 0,3 không gấp đôi 0,25."
+    },
+    {
+      "id": 76,
+      "type": "mcq",
+      "q": "Khối lượng của 0,01 mol khí SO₂ là",
+      "o": [
+        "3,3 gam.",
+        "0,35 gam.",
+        "6,4 gam.",
+        "0,64 gam."
+      ],
+      "c": 3
+    },
+    {
+      "id": 77,
+      "type": "mcq",
+      "q": "0,2 mol chất nào sau đây có khối lượng bằng 8 gam?",
+      "o": [
+        "KOH.",
+        "Mg(OH)₂.",
+        "HCl.",
+        "NaOH."
+      ],
+      "c": 3
+    },
+    {
+      "id": 78,
+      "type": "mcq",
+      "q": "Số mol ứng với 6,4 gam khí sulfurous (SO₂) là",
+      "o": [
+        "0,2 mol.",
+        "0,5 mol.",
+        "0,01 mol.",
+        "0,1 mol."
+      ],
+      "c": 3
+    },
+    {
+      "id": 79,
+      "type": "mcq",
+      "q": "Trong 1 mol H₂O có chứa bao nhiêu nguyên tử hydrogen?",
+      "o": [
+        "3,055.10⁶.",
+        "9,033.10²³.",
+        "12,044.10²³.",
+        "6,022.10²³."
+      ],
+      "c": 2
+    },
+    {
+      "id": 80,
+      "type": "mcq",
+      "q": "Trong 1 mol AlCl₃ có chứa bao nhiêu nguyên tử chlorine?",
+      "o": [
+        "18,066.10²³.",
+        "9,033.10²³.",
+        "12,044.10²³.",
+        "6,022.10²³."
+      ],
+      "c": 0
+    },
+    {
+      "id": 81,
+      "type": "mcq",
+      "q": "Ở điều kiện chuẩn, hỗn hợp gồm 12,395 L H₂ và 6,1975 L O₂ có khối lượng là",
+      "o": [
+        "8 gam.",
+        "9 gam.",
+        "10 gam.",
+        "12 gam."
+      ],
+      "c": 1
+    },
+    {
+      "id": 82,
+      "type": "mcq",
+      "q": "Ở cùng điều kiện nhiệt độ và áp suất, so sánh thể tích của 4 gam CH₄ và 1 gam H₂ ta có:",
+      "o": [
+        "thể tích của CH₄ lớn hơn.",
+        "thể tích của H₂ lớn hơn.",
+        "bằng nhau.",
+        "không thể so sánh được."
+      ],
+      "c": 1
+    },
+    {
+      "id": 83,
+      "type": "mcq",
+      "q": "Thể tích (đkc) của các chất tương ứng với 4 gam H₂; 2,8 gam N₂; 6,4 gam O₂; 22 gam CO₂ là",
+      "o": [
+        "49,58 L H₂; 24,79 L N₂; 4,958 L O₂; 12,395 L CO₂.",
+        "49,58 L H₂; 2,4 L N₂; 4,958 L O₂; 12,395 L CO₂.",
+        "4,8 L H₂; 24,79 L N₂; 4,958 L O₂; 12,395 L CO₂.",
+        "49,58 L H₂; 2,479 L N₂; 4,958 L O₂; 12,395 L CO₂."
+      ],
+      "c": 3
+    },
+    {
+      "id": 84,
+      "type": "mcq",
+      "q": "Số mol của các chất tương ứng với 15 gam CaCO₃; 9,125 gam HCl; 100 gam CuO là:",
+      "o": [
+        "0,35 mol CaCO₃; 0,25 mol HCl; 1,25 mol CuO.",
+        "0,25 mol CaCO₃; 0,25 mol HCl; 1,25 mol CuO.",
+        "0,15 mol CaCO₃; 0,75 mol HCl; 1,25 mol CuO.",
+        "0,15 mol CaCO₃; 0,25 mol HCl; 1,25 mol CuO."
+      ],
+      "c": 3
+    },
+    {
+      "id": 85,
+      "type": "mcq",
+      "q": "Khối lượng của các chất tương ứng với 0,1 mol S; 0,25 mol C; 0,6 mol Mg; 0,3 mol P là:",
+      "o": [
+        "3,2 gam S; 3 gam C; 14,4 gam Mg; 9,3 gam P.",
+        "3,2 gam S; 3 gam C; 14,4 gam Mg; 8,3 gam P.",
+        "3,4 gam S; 3 gam C; 14,4 gam Mg; 9,3 gam P.",
+        "3,2 gam S; 3,6 gam C; 14,4 gam Mg; 9,3 gam P."
+      ],
+      "c": 0
+    },
+    {
+      "id": 86,
+      "type": "mcq",
+      "q": "Lấy cùng một lượng m gam mỗi chất sau, chất nào có số mol lớn nhất?",
+      "o": [
+        "Mg.",
+        "Ca.",
+        "Cl₂.",
+        "N₂."
+      ],
+      "c": 0
+    },
+    {
+      "id": 87,
+      "type": "mcq",
+      "q": "Lấy cùng một lượng m gam mỗi chất sau, chất nào có số mol nhỏ nhất?",
+      "o": [
+        "KNO₃.",
+        "Ba.",
+        "Cl₂.",
+        "CuSO₄."
+      ],
+      "c": 3
+    },
+    {
+      "id": 88,
+      "type": "mcq",
+      "q": "Trong các khí CO₂, H₂S, N₂, H₂, SO₂, số khí nhẹ hơn không khí là",
+      "o": [
+        "5.",
+        "4.",
+        "3.",
+        "2."
+      ],
+      "c": 3
+    },
+    {
+      "id": 89,
+      "type": "mcq",
+      "q": "Trong các khí CO₂, H₂S, N₂, H₂, SO₂, N₂O, số khí nặng hơn không khí là",
+      "o": [
+        "1.",
+        "3.",
+        "4.",
+        "5."
+      ],
+      "c": 2
+    },
+    {
+      "id": 90,
+      "type": "mcq",
+      "q": "Dãy các chất khí đều nặng hơn không khí là:",
+      "o": [
+        "SO₂, Cl₂, H₂S.",
+        "N₂, CO₂, H₂.",
+        "CH₄, H₂S, O₂.",
+        "Cl₂, SO₂, N₂."
+      ],
+      "c": 0
+    },
+    {
+      "id": 91,
+      "type": "mcq",
+      "q": "Dãy các chất khí đều nhẹ hơn không khí là:",
+      "o": [
+        "CO₂, O₂, H₂S, N₂.",
+        "N₂, CH₄, H₂, C₂H₂.",
+        "CH₄, H₂S, CO₂, C₂H₄.",
+        "Cl₂, SO₂, N₂, CH₄."
+      ],
+      "c": 1
+    },
+    {
+      "id": 92,
+      "type": "mcq",
+      "q": "Tỉ khối của khí X đối với khí hydrogen bằng 16. Khí X có khối lượng mol bằng:",
+      "o": [
+        "16 gam.",
+        "32 gam.",
+        "64 gam.",
+        "8 gam."
+      ],
+      "c": 1
+    },
+    {
+      "id": 93,
+      "type": "mcq",
+      "q": "Một chất khí có phân tử khối bằng 14 lần khí hydrogen, khí đó là",
+      "o": [
+        "nitrogen.",
+        "oxygen.",
+        "chlorine.",
+        "carbonic."
+      ],
+      "c": 0
+    },
+    {
+      "id": 94,
+      "type": "mcq",
+      "q": "Dãy nào gồm các khí đều có thể thu được vào lọ bằng phương pháp đẩy không khí, đặt úp ngược lọ (miệng lọ hướng xuống dưới)?",
+      "o": [
+        "NH₃, H₂, CH₄.",
+        "H₂, CH₄, Cl₂.",
+        "NH₃, CH₄, O₂.",
+        "H₂, NH₃, Cl₂."
+      ],
+      "c": 0
+    },
+    {
+      "id": 95,
+      "type": "mcq",
+      "q": "Dãy nào gồm các khí đều có thể thu được vào lọ bằng phương pháp đẩy không khí, đặt ngửa lọ (miệng lọ hướng lên trên)?",
+      "o": [
+        "H₂, N₂, NH₃, CO₂, H₂S, SO₂.",
+        "O₂, Cl₂, H₂S, CO₂, HCl, NH₃.",
+        "O₂, Cl₂, H₂S, SO₂, CO₂, HCl.",
+        "H₂, NH₃, N₂, HCl, CO₂, O₂."
+      ],
+      "c": 2
+    },
+    {
+      "id": 96,
+      "type": "mcq",
+      "q": "Trong phòng thí nghiệm, bộ dụng cụ điều chế khí có bình thu khí đặt ngửa (thu bằng phương pháp đẩy không khí) có thể dùng để điều chế những chất khí nào trong các chất khí sau: Cl₂, O₂, NH₃, SO₂, CO₂, H₂, C₂H₄?",
+      "o": [
+        "Cl₂, NH₃, CO₂, O₂.",
+        "Cl₂, SO₂, H₂, O₂.",
+        "Cl₂, SO₂, NH₃, C₂H₄.",
+        "Cl₂, SO₂, CO₂, O₂."
+      ],
+      "c": 3
+    },
+    {
+      "id": 97,
+      "type": "mcq",
+      "q": "Cho các phát biểu sau:\n(a) Mol là lượng chất có chứa 6,022.10²³ nguyên tử hoặc phân tử chất đó.\n(b) Ở điều kiện chuẩn, 1 mol khí bất kì đều có thể tích là 24,79 L.\n(c) Ở điều kiện chuẩn, thể tích của 6,4 gam khí oxygen bằng thể tích của 2,8 gam khí nitrogen.\n(d) Khối lượng của 0,25 mol khí CO₂ là 11 gam.\n(e) Khối lượng của 9,033.10²³ phân tử nước lớn hơn 2,7 gam nhôm (aluminium).\nSố phát biểu đúng là",
+      "o": [
+        "1.",
+        "2.",
+        "3.",
+        "4."
+      ],
+      "c": 3,
+      "explain": "a, b, d và e đúng; chỉ c sai.<br>(a) Đúng: đó là định nghĩa mol (6,022.10²³ là số Avogadro).<br>(b) Đúng: ở điều kiện chuẩn (25 °C, 1 bar), 1 mol khí bất kì chiếm 24,79 L.<br>(c) Sai: n(O₂) = 6,4 : 32 = 0,2 mol; n(N₂) = 2,8 : 28 = 0,1 mol → thể tích O₂ gấp đôi thể tích N₂.<br>(d) Đúng: m = 0,25 × 44 = 11 gam.<br>(e) Đúng: 9,033.10²³ phân tử H₂O = 1,5 mol → m = 1,5 × 18 = 27 gam > 2,7 gam."
+    },
+    {
+      "id": 98,
+      "type": "mcq",
+      "q": "Dung dịch là hỗn hợp",
+      "o": [
+        "của chất rắn trong chất lỏng.",
+        "của chất khí trong chất lỏng.",
+        "đồng nhất của chất rắn và dung môi.",
+        "đồng nhất của dung môi và chất tan."
+      ],
+      "c": 3
+    },
+    {
+      "id": 99,
+      "type": "mcq",
+      "q": "Độ tan của một chất trong nước ở nhiệt độ xác định là",
+      "o": [
+        "số gam chất đó có thể tan trong 100 gam dung dịch.",
+        "số gam chất đó có thể tan trong 100 gam nước.",
+        "số gam chất đó có thể tan trong 100 gam dung môi để tạo thành dung dịch bão hòa.",
+        "số gam chất đó có thể tan trong 100 gam nước để tạo thành dung dịch bão hòa."
+      ],
+      "c": 3
+    },
+    {
+      "id": 100,
+      "type": "mcq",
+      "q": "Khi tăng nhiệt độ thì độ tan của các chất rắn trong nước",
+      "o": [
+        "đều tăng.",
+        "đều giảm.",
+        "phần lớn là tăng.",
+        "phần lớn là giảm."
+      ],
+      "c": 2
+    },
+    {
+      "id": 101,
+      "type": "mcq",
+      "q": "Khi giảm nhiệt độ và tăng áp suất thì độ tan của chất khí trong nước",
+      "o": [
+        "đều tăng.",
+        "đều giảm.",
+        "hầu hết tăng.",
+        "không đổi."
+      ],
+      "c": 0
+    },
+    {
+      "id": 102,
+      "type": "mcq",
+      "q": "Nồng độ phần trăm là nồng độ cho biết",
+      "o": [
+        "số gam chất tan có trong 100 gam dung dịch.",
+        "số gam chất tan có trong 100 gam dung dịch bão hoà.",
+        "số gam chất tan có trong 100 gam nước.",
+        "số gam chất tan có trong 1 lít dung dịch."
+      ],
+      "c": 0
+    },
+    {
+      "id": 103,
+      "type": "mcq",
+      "q": "Nồng độ mol/L của dung dịch là",
+      "o": [
+        "số gam chất tan trong 1 lít dung dịch.",
+        "số gam chất tan trong 1 lít dung môi.",
+        "số mol chất tan trong 1 lít dung dịch.",
+        "số mol chất tan trong 1 lít dung môi."
+      ],
+      "c": 2
+    },
+    {
+      "id": 104,
+      "type": "mcq",
+      "q": "Công thức tính nồng độ phần trăm của dung dịch là",
+      "o": [
+        "C% = (m<sub>ct</sub> / m<sub>H₂O</sub>) × 100%.",
+        "C% = (m<sub>dd</sub> / m<sub>ct</sub>) × 100%.",
+        "C% = (m<sub>ct</sub> / m<sub>dd</sub>) × 100%.",
+        "C% = (m<sub>H₂O</sub> / m<sub>ct</sub>) × 100%."
+      ],
+      "c": 2
+    },
+    {
+      "id": 105,
+      "type": "mcq",
+      "q": "Công thức tính nồng độ mol của dung dịch là",
+      "o": [
+        "C<sub>M</sub> = m / V.",
+        "C<sub>M</sub> = (n / V) × 100.",
+        "C<sub>M</sub> = V / m.",
+        "C<sub>M</sub> = n / V."
+      ],
+      "c": 3
+    },
+    {
+      "id": 106,
+      "type": "mcq",
+      "q": "Độ tan của NaCl trong nước ở 20°C là 36 gam. Khi hòa tan 14 gam NaCl vào 40 gam nước thì thu được dung dịch loại nào?",
+      "o": [
+        "Chưa bão hòa.",
+        "Không xác định được.",
+        "Bão hòa.",
+        "Quá bão hòa."
+      ],
+      "c": 0
+    },
+    {
+      "id": 107,
+      "type": "mcq",
+      "q": "Ở 20°C, 45 gam muối K₂CO₃ hòa tan hết trong 150 gam nước thì được dung dịch bão hòa. Độ tan của K₂CO₃ ở nhiệt độ này là",
+      "o": [
+        "20 gam.",
+        "30 gam.",
+        "45 gam.",
+        "12 gam."
+      ],
+      "c": 1
+    },
+    {
+      "id": 108,
+      "type": "mcq",
+      "q": "Hoà tan 14,36 gam NaCl vào 40 gam nước ở nhiệt độ 20°C thì được dung dịch bão hoà. Độ tan của NaCl ở nhiệt độ đó là",
+      "o": [
+        "35,5 gam.",
+        "35,9 gam.",
+        "36,5 gam.",
+        "37,2 gam."
+      ],
+      "c": 1
+    },
+    {
+      "id": 109,
+      "type": "mcq",
+      "q": "Ở 20°C hoà tan 40 gam KNO₃ vào trong 95 gam nước thì được dung dịch bão hoà. Độ tan của KNO₃ ở nhiệt độ 20°C là",
+      "o": [
+        "40,1 gam.",
+        "44,2 gam.",
+        "42,1 gam.",
+        "43,5 gam."
+      ],
+      "c": 2
+    },
+    {
+      "id": 110,
+      "type": "mcq",
+      "q": "Khi hoà tan 50 gam đường glucose (C₆H₁₂O₆) vào 250 gam nước ở 20°C thì thu được dung dịch bão hoà. Độ tan của đường ở 20°C là",
+      "o": [
+        "20 gam.",
+        "10 gam.",
+        "15 gam.",
+        "30 gam."
+      ],
+      "c": 0
+    },
+    {
+      "id": 111,
+      "type": "mcq",
+      "q": "Nồng độ của dung dịch tăng nhanh nhất khi nào?",
+      "o": [
+        "Tăng lượng chất tan đồng thời tăng lượng dung môi.",
+        "Tăng lượng chất tan đồng thời giảm lượng dung môi.",
+        "Tăng lượng chất tan đồng thời giữ nguyên lượng dung môi.",
+        "Giảm lượng chất tan đồng thời giảm lượng dung môi."
+      ],
+      "c": 1
+    },
+    {
+      "id": 112,
+      "type": "mcq",
+      "q": "Hòa tan 50 gam NaCl vào 450 gam nước thì thu được dung dịch có nồng độ là",
+      "o": [
+        "15%.",
+        "20%.",
+        "10%.",
+        "5%."
+      ],
+      "c": 2
+    },
+    {
+      "id": 113,
+      "type": "mcq",
+      "q": "Để có 100 gam dung dịch CuSO₄ 4% thì khối lượng nước cần lấy là",
+      "o": [
+        "95 gam.",
+        "96 gam.",
+        "97 gam.",
+        "98 gam."
+      ],
+      "c": 1
+    },
+    {
+      "id": 114,
+      "type": "mcq",
+      "q": "Số gam H₂SO₄ và H₂O cần dùng để pha 200 gam dung dịch H₂SO₄ 15% là",
+      "o": [
+        "170 gam H₂SO₄ và 30 gam H₂O.",
+        "15 gam H₂SO₄ và 185 gam H₂O.",
+        "185 gam H₂SO₄ và 15 gam H₂O.",
+        "30 gam H₂SO₄ và 170 gam H₂O."
+      ],
+      "c": 3
+    },
+    {
+      "id": 115,
+      "type": "mcq",
+      "q": "Số gam chất tan cần dùng để pha chế 250 mL dung dịch MgSO₄ 0,1M là",
+      "o": [
+        "2 gam.",
+        "1 gam.",
+        "4 gam.",
+        "3 gam."
+      ],
+      "c": 3
+    },
+    {
+      "id": 116,
+      "type": "mcq",
+      "q": "Hoà tan 4 gam NaOH vào nước được 400 mL dung dịch. Nồng độ mol dung dịch thu được là",
+      "o": [
+        "0,22M.",
+        "0,23M.",
+        "0,24M.",
+        "0,25M."
+      ],
+      "c": 3
+    },
+    {
+      "id": 117,
+      "type": "mcq",
+      "q": "Trong 400 mL dung dịch có chứa 19,6 gam H₂SO₄. Nồng độ mol của dung dịch thu được là",
+      "o": [
+        "0,2M.",
+        "0,3M.",
+        "0,4M.",
+        "0,5M."
+      ],
+      "c": 3
+    },
+    {
+      "id": 118,
+      "type": "mcq",
+      "q": "Muốn pha 400 mL dung dịch CuSO₄ 0,2M thì khối lượng CuSO₄ cần lấy là",
+      "o": [
+        "10,8 gam.",
+        "12,8 gam.",
+        "5,04 gam.",
+        "10 gam."
+      ],
+      "c": 1
+    },
+    {
+      "id": 119,
+      "type": "mcq",
+      "q": "Muốn pha 100 mL dung dịch H₂SO₄ 3M thì khối lượng H₂SO₄ cần lấy là",
+      "o": [
+        "26,4 gam.",
+        "27,5 gam.",
+        "28,6 gam.",
+        "29,4 gam."
+      ],
+      "c": 3
+    },
+    {
+      "id": 120,
+      "type": "mcq",
+      "q": "Số mol trong 400 mL NaOH 6M là",
+      "o": [
+        "1,2 mol.",
+        "2,4 mol.",
+        "1,5 mol.",
+        "4 mol."
+      ],
+      "c": 1
+    },
+    {
+      "id": 121,
+      "type": "mcq",
+      "q": "Nước muối sinh lý là dung dịch NaCl 0,9%, khối lượng riêng gần bằng 1 g/mL. Để pha chế 1 lít nước muối sinh lý thì cần dùng bao nhiêu gam NaCl và bao nhiêu mL nước cất (D<sub>nước cất</sub> = 1 g/mL)?",
+      "o": [
+        "9 gam NaCl, 1000 mL nước cất.",
+        "9 gam NaCl, 991 mL nước cất.",
+        "0,9 gam NaCl, 1000 mL nước cất.",
+        "0,9 gam NaCl, 991 mL nước cất."
+      ],
+      "c": 1
+    },
+    {
+      "id": 122,
+      "type": "mcq",
+      "q": "Độ tan của NaCl trong nước ở 25°C là 36 gam. Khi mới hòa tan 15 gam NaCl vào 50 gam nước thì phải hoà tan thêm bao nhiêu gam NaCl để dung dịch bão hòa?",
+      "o": [
+        "3 gam.",
+        "40 gam.",
+        "5 gam.",
+        "9 gam."
+      ],
+      "c": 0
+    },
+    {
+      "id": 123,
+      "type": "mcq",
+      "q": "Độ tan trong nước của NaCl ở 20°C và 80°C lần lượt là 36 gam và 38 gam. Làm lạnh 690 gam dung dịch bão hòa NaCl 80°C xuống 20°C thì có bao nhiêu gam NaCl kết tinh tách ra khỏi dung dịch?",
+      "o": [
+        "3 gam.",
+        "10 gam.",
+        "6 gam.",
+        "2 gam."
+      ],
+      "c": 1,
+      "explain": "Ở 80°C: 138 gam dung dịch bão hòa có 38 gam NaCl và 100 gam nước → 690 gam dung dịch có 190 gam NaCl và 500 gam nước.<br>Ở 20°C, 500 gam nước chỉ hòa tan được 5 × 36 = 180 gam NaCl → kết tinh 190 − 180 = 10 gam.<br>Đề in có các lựa chọn 3, 4, 6, 2 gam (không có đáp án đúng) nên đã thay 4 gam bằng 10 gam."
+    },
+    {
+      "id": 124,
+      "type": "mcq",
+      "q": "Hòa tan 4 gam NaOH vào nước để được 400 mL dung dịch. Cần thêm bao nhiêu mL nước vào 100 mL dung dịch này để được dung dịch có nồng độ 0,1M?",
+      "o": [
+        "150 mL.",
+        "160 mL.",
+        "170 mL.",
+        "180 mL."
+      ],
+      "c": 0
+    },
+    {
+      "id": 125,
+      "type": "mcq",
+      "q": "Muốn pha 150 gam dung dịch CuSO₄ 2% từ dung dịch CuSO₄ 20% thì khối lượng dung dịch CuSO₄ 20% cần lấy là",
+      "o": [
+        "14 gam.",
+        "15 gam.",
+        "16 gam.",
+        "17 gam."
+      ],
+      "c": 1
+    },
+    {
+      "id": 126,
+      "type": "mcq",
+      "q": "Có 75 gam dung dịch KOH 30%. Khối lượng KOH cần cho thêm vào dung dịch trên để được dung dịch 56,25% là",
+      "o": [
+        "40 gam.",
+        "45 gam.",
+        "33 gam.",
+        "21 gam."
+      ],
+      "c": 1
+    },
+    {
+      "id": 127,
+      "type": "mcq",
+      "q": "Hòa tan 200 gam SO₃ vào m₂ gam dung dịch H₂SO₄ 49%, thu được dung dịch H₂SO₄ 78,4%. Giá trị của m₂ là",
+      "o": [
+        "133,3 gam.",
+        "146,9 gam.",
+        "272,2 gam.",
+        "300 gam."
+      ],
+      "c": 3
+    }
+  ]
+}

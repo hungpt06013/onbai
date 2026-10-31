@@ -2,6 +2,7 @@
   "fullName": "ÔN ĐỊA Đ/S 6.5.26",
   "questions": [
     {
+      "id": 1,
       "type": "tf",
       "q": "Xác định Đúng/Sai về đặc điểm đô thị hóa của châu Mỹ",
       "statements": [
@@ -13,6 +14,7 @@
       "answers": [true, true, false, false]
     },
     {
+      "id": 2,
       "type": "tf",
       "q": "Xác định Đúng/Sai về thành phần chủng tộc",
       "statements": [
@@ -24,6 +26,7 @@
       "answers": [true, false, false, true]
     },
     {
+      "id": 3,
       "type": "tf",
       "q": "Xác định Đúng/Sai về quy mô dân số và nhập cư",
       "statements": [
@@ -35,6 +38,7 @@
       "answers": [false, true, false, true]
     },
     {
+      "id": 4,
       "type": "tf",
       "q": "Xác định Đúng/Sai về lịch sử di cư giai đoạn sớm",
       "statements": [
@@ -46,6 +50,7 @@
       "answers": [true, false, true, false]
     },
     {
+      "id": 5,
       "type": "tf",
       "q": "Xác định Đúng/Sai về xu hướng nhập cư hiện nay",
       "statements": [
@@ -57,6 +62,7 @@
       "answers": [true, true, false, true]
     },
     {
+      "id": 6,
       "type": "tf",
       "q": "Xác định Đúng/Sai về quá trình đô thị hóa",
       "statements": [
@@ -68,6 +74,7 @@
       "answers": [false, true, true, true]
     },
     {
+      "id": 7,
       "type": "tf",
       "q": "Xác định Đúng/Sai về tình hình phát triển đô thị",
       "statements": [
@@ -79,6 +86,7 @@
       "answers": [true, true, true, false]
     },
     {
+      "id": 8,
       "type": "tf",
       "q": "Xác định Đúng/Sai về cơ cấu nhập cư 1990 - 2020",
       "statements": [
@@ -90,6 +98,7 @@
       "answers": [true, true, true, false]
     },
     {
+      "id": 9,
       "type": "tf",
       "q": "Xác định Đúng/Sai về phân bố đô thị (lược đồ)",
       "statements": [
@@ -101,6 +110,7 @@
       "answers": [true, false, true, true]
     },
     {
+      "id": 10,
       "type": "tf",
       "q": "Xác định Đúng/Sai về tỉ lệ dân số đô thị thế giới",
       "statements": [
@@ -112,6 +122,7 @@
       "answers": [true, false, true, true]
     },
     {
+      "id": 11,
       "type": "tf",
       "q": "Trong các phát biểu sau đâu là phát biểu đúng, đâu là phát biểu sai khi nói về nguồn gốc dân cư Trung và Nam Mỹ?",
       "statements": [
@@ -123,6 +134,7 @@
       "answers": [true, false, false, true]
     },
     {
+      "id": 12,
       "type": "tf",
       "q": "Trong các phát biểu sau đâu là phát biểu đúng, đâu là phát biểu sai khi nói về nguồn gốc dân cư Trung và Nam Mỹ?",
       "statements": [
@@ -134,6 +146,7 @@
       "answers": [false, false, true, true]
     },
     {
+      "id": 13,
       "type": "tf",
       "q": "Trong các phát biểu sau đâu là phát biểu đúng, đâu là phát biểu sai khi nói về vấn đề đô thị hóa ở Trung và Nam Mỹ?",
       "statements": [
@@ -145,6 +158,7 @@
       "answers": [false, true, false, true]
     },
     {
+      "id": 14,
       "type": "tf",
       "q": "Trong các phát biểu sau đâu là phát biểu đúng, đâu là phát biểu sai khi nói về văn hóa Mỹ La-tinh?",
       "statements": [
@@ -156,6 +170,7 @@
       "answers": [false, true, true, false]
     },
     {
+      "id": 15,
       "type": "tf",
       "q": "Trong các phát biểu sau đâu là phát biểu đúng, đâu là phát biểu sai khi nói về đặc điểm văn hóa Mỹ La-tinh?",
       "statements": [
@@ -167,6 +182,7 @@
       "answers": [true, false, true, false]
     },
     {
+      "id": 16,
       "type": "tf",
       "q": "Trong các phát biểu sau đâu là phát biểu đúng, đâu là phát biểu sai khi nói về đặc điểm của văn hóa Mỹ La-tinh?",
       "statements": [
@@ -178,6 +194,7 @@
       "answers": [false, true, false, true]
     },
     {
+      "id": 17,
       "type": "tf",
       "q": "Trong các phát biểu sau đâu là phát biểu đúng, đâu là phát biểu sai khi nói về vấn đề đô thị hóa ở Trung và Nam Mỹ?",
       "statements": [
@@ -189,6 +206,7 @@
       "answers": [true, true, false, false]
     },
     {
+      "id": 18,
       "type": "tf",
       "q": "Khi nói về mật độ dân số và phân bố dân cư ở Trung và Nam Mỹ, phát biểu nào đúng, phát biểu nào sai?",
       "statements": [
@@ -200,6 +218,7 @@
       "answers": [true, false, true, true]
     },
     {
+      "id": 19,
       "type": "tf",
       "q": "Dựa vào thông tin về quá trình đô thị hóa ở Trung và Nam Mỹ, phát biểu nào đúng, phát biểu nào sai?",
       "statements": [
@@ -211,6 +230,7 @@
       "answers": [false, true, false, true]
     },
     {
+      "id": 20,
       "type": "tf",
       "q": "Xét về phân bố của các thành phố lớn ở Trung và Nam Mỹ, phát biểu nào đúng, phát biểu nào sai?",
       "statements": [
@@ -222,6 +242,7 @@
       "answers": [true, false, true, false]
     },
     {
+      "id": 21,
       "type": "tf",
       "q": "Dựa vào bản đồ phân bố dân cư ở Trung và Nam Mỹ, phát biểu nào đúng, phát biểu nào sai?",
       "statements": [
@@ -233,6 +254,7 @@
       "answers": [true, false, true, false]
     },
     {
+      "id": 22,
       "type": "tf",
       "q": "Về các thành phố lớn Mê-hi-cô Xi-ti, Xao Pao-lô, Ri-ô de Gia-nê-rô, phát biểu nào đúng, phát biểu nào sai?",
       "statements": [
@@ -244,6 +266,7 @@
       "answers": [true, true, false, true]
     },
     {
+      "id": 23,
       "type": "tf",
       "q": "Khi xem xét vị trí địa lý của các quốc gia lớn trong Trung và Nam Mỹ, phát biểu nào đúng, phát biểu nào sai?",
       "statements": [
@@ -255,6 +278,7 @@
       "answers": [true, false, false, true]
     },
     {
+      "id": 24,
       "type": "tf",
       "q": "Về văn hóa Mỹ La-tinh và các lễ hội truyền thống, phát biểu nào đúng, phát biểu nào sai?",
       "statements": [
@@ -266,6 +290,7 @@
       "answers": [true, false, false, true]
     },
     {
+      "id": 25,
       "type": "tf",
       "q": "Về đặc điểm của lễ hội Carnival ở Bra-xin, phát biểu nào đúng, phát biểu nào sai?",
       "statements": [

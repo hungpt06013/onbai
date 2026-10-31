@@ -2,8 +2,9 @@
   "fullName": "FILE MẪU - Hướng dẫn cấu trúc câu hỏi (không dùng để ôn tập)",
   "questions": [
     {
+      "id": 1,
       "type": "mcq",
-      "q": "1) Câu trắc nghiệm cơ bản (chỉ có q, o, c) - chọn 1 đáp án đúng trong 4 lựa chọn.",
+      "q": "1) Câu trắc nghiệm cơ bản (chỉ có q, o, c) - chọn 1 đáp án đúng trong 4 lựa chọn.\nid là số thứ tự của câu trong file, chỉ để dễ tìm câu khi sửa file, web không dùng tới.",
       "o": [
         "Đáp án A",
         "Đáp án B (đây là đáp án đúng, c=1 vì đếm từ 0)",
@@ -13,6 +14,7 @@
       "c": 1
     },
     {
+      "id": 2,
       "type": "mcq",
       "q": "2) Câu trắc nghiệm có gợi ý (hint) và giải thích (explain).\nCó thể xuống dòng trong câu hỏi bằng \\n.",
       "o": [
@@ -26,6 +28,7 @@
       "explain": "Đây là phần giải thích hiện ra sau khi nộp bài/trả lời, giúp người dùng hiểu vì sao đáp án đúng là đáp án A."
     },
     {
+      "id": 3,
       "type": "mcq",
       "q": "3) Câu trắc nghiệm có 1 hình ảnh minh họa (img là 1 chuỗi URL).",
       "img": "https://i.postimg.cc/rm8XmyZR/image.png",
@@ -38,6 +41,7 @@
       "c": 0
     },
     {
+      "id": 4,
       "type": "mcq",
       "q": "4) Câu trắc nghiệm có NHIỀU hình ảnh (img là 1 mảng các URL, hiện lần lượt từ trên xuống).",
       "img": [
@@ -53,6 +57,7 @@
       "c": 1
     },
     {
+      "id": 5,
       "type": "mcq",
       "q": "5) Câu trắc nghiệm có bảng dữ liệu (table gồm headers và rows). Có thể để ô trống \"\" nếu ô đó gộp/không có nội dung.",
       "table": {
@@ -71,6 +76,7 @@
       "c": 0
     },
     {
+      "id": 6,
       "type": "mcq",
       "q": "6) Câu trắc nghiệm dùng ĐẦY ĐỦ mọi trường cùng lúc: img + table + hint + explain.",
       "img": "https://i.postimg.cc/rm8XmyZR/image.png",
@@ -92,6 +98,7 @@
       "explain": "Giải thích cho câu kết hợp đầy đủ mọi trường."
     },
     {
+      "id": 7,
       "type": "tf",
       "q": "7) Câu Đúng/Sai với 1 mệnh đề duy nhất (statements chỉ có 1 phần tử -> không hiện nhãn a/b/c/d).",
       "statements": [
@@ -102,6 +109,7 @@
       ]
     },
     {
+      "id": 8,
       "type": "tf",
       "q": "8) Câu Đúng/Sai với đủ 4 mệnh đề (a, b, c, d) - mỗi mệnh đề đúng được tính 0.25 điểm.",
       "statements": [
@@ -118,6 +126,7 @@
       ]
     },
     {
+      "id": 9,
       "type": "tf",
       "q": "9) Câu Đúng/Sai có img + hint + explain, chỉ có 2 mệnh đề (a, b).",
       "img": "https://i.postimg.cc/rm8XmyZR/image.png",
@@ -133,6 +142,7 @@
       "explain": "Giải thích cho câu Đúng/Sai này, vì sao mệnh đề a đúng và mệnh đề b sai."
     },
     {
+      "id": 10,
       "type": "text",
       "q": "10) Câu điền đáp án (người dùng tự gõ chữ). a là danh sách đáp án được chấp nhận: phần tử ĐẦU TIÊN là đáp án chính (theo SGK), các phần tử sau là cách ghi khác cũng tính đúng.\nKhi chấm: không phân biệt chữ hoa/thường, khoảng trắng thừa, dấu chấm/phẩy và vị trí đặt dấu thanh (tụy = tuỵ, hóa = hoá). Gõ KHÔNG dấu thì tính sai.\nNếu trả lời đúng theo cách ghi khác, sau khi nộp sẽ hiện thêm \"SGK gọi là: <đáp án chính>\".",
       "a": [
@@ -142,6 +152,7 @@
       ]
     },
     {
+      "id": 11,
       "type": "text",
       "q": "11) Câu điền đáp án có img + hint + explain (dùng được y như câu trắc nghiệm). Ví dụ: Quan sát hình, cơ quan được đánh số 2 là gì?",
       "img": "https://i.postimg.cc/rm8XmyZR/image.png",

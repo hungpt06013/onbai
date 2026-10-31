@@ -2,6 +2,7 @@
   "fullName": "ÔN SINH 4.5.26",
   "questions": [
     {
+      "id": 1,
       "type": "mcq",
       "q": "Sinh trưởng là",
       "o": [
@@ -13,6 +14,7 @@
       "c": 3
     },
     {
+      "id": 2,
       "type": "mcq",
       "q": "Phát triển là",
       "o": [
@@ -24,6 +26,7 @@
       "c": 0
     },
     {
+      "id": 3,
       "type": "mcq",
       "q": "Cho bảng thông tin sau:\nCách ghép nối phù hợp là",
       "o": [
@@ -63,6 +66,7 @@
       }
     },
     {
+      "id": 4,
       "type": "mcq",
       "q": "Sinh trưởng và phát triển có mối quan hệ với nhau như thế nào?",
       "o": [
@@ -74,6 +78,7 @@
       "c": 0
     },
     {
+      "id": 5,
       "type": "mcq",
       "q": "Cơ sở cho sự sinh trưởng của thực vật là sự phân chia của các tế bào thuộc",
       "o": [
@@ -85,6 +90,7 @@
       "c": 3
     },
     {
+      "id": 6,
       "type": "mcq",
       "q": "Mô phân sinh là",
       "o": [
@@ -96,6 +102,7 @@
       "c": 0
     },
     {
+      "id": 7,
       "type": "mcq",
       "q": "Cây Một lá mầm không có khả năng tăng kích thước đường kính thân liên tục như cây Hai lá mầm là do cây Một lá mầm không có",
       "o": [
@@ -107,6 +114,7 @@
       "c": 3
     },
     {
+      "id": 8,
       "type": "mcq",
       "q": "Mỗi sinh vật trong quá trình sống đều trải qua các giai đoạn sinh trưởng và phát triển khác nhau gọi là",
       "o": [
@@ -118,6 +126,7 @@
       "c": 0
     },
     {
+      "id": 9,
       "type": "mcq",
       "q": "Vòng đời của ếch trải qua các giai đoạn lần lượt là",
       "o": [
@@ -129,6 +138,7 @@
       "c": 1
     },
     {
+      "id": 10,
       "type": "mcq",
       "q": "Quan sát vòng đời của ếch và của gà. Điểm khác nhau cơ bản trong vòng đời của gà so với ếch là",
       "o": [
@@ -141,6 +151,7 @@
       "c": 1
     },
     {
+      "id": 11,
       "type": "mcq",
       "q": "Ở cây Hai lá mầm, thân và rễ dài ra là nhờ hoạt động của",
       "o": [
@@ -152,6 +163,7 @@
       "c": 3
     },
     {
+      "id": 12,
       "type": "mcq",
       "q": "Ở cây Một lá mầm, mô phân sinh gồm có",
       "o": [
@@ -163,6 +175,7 @@
       "c": 2
     },
     {
+      "id": 13,
       "type": "mcq",
       "q": "Ở thực vật có hai loại mô phân sinh là",
       "o": [
@@ -174,6 +187,7 @@
       "c": 0
     },
     {
+      "id": 14,
       "type": "mcq",
       "q": "Sự sinh trưởng làm tăng bề ngang của thân do hoạt động của mô phân sinh nào?",
       "o": [
@@ -185,6 +199,7 @@
       "c": 0
     },
     {
+      "id": 15,
       "type": "mcq",
       "q": "Sinh trưởng ở động vật là",
       "o": [
@@ -196,6 +211,7 @@
       "c": 2
     },
     {
+      "id": 16,
       "type": "mcq",
       "q": "Tìm từ/cụm từ phù hợp để hoàn thành thông tin: Mô phân sinh đỉnh giúp thân, cành và rễ tăng lên về ...(1)... Mô phân sinh bên giúp thân, cành và rễ tăng lên về ...(2)...",
       "o": [
@@ -207,6 +223,7 @@
       "c": 0
     },
     {
+      "id": 17,
       "type": "mcq",
       "q": "Lựa chọn tên loại mô phân sinh phù hợp thay thế cho vị trí đánh số (1) trong hình",
       "o": [
@@ -219,6 +236,7 @@
       "c": 0
     },
     {
+      "id": 18,
       "type": "mcq",
       "q": "Lựa chọn tên loại mô phân sinh phù hợp thay thế cho vị trí đánh số (2) trong hình",
       "o": [
@@ -231,6 +249,7 @@
       "c": 1
     },
     {
+      "id": 19,
       "type": "mcq",
       "q": "Dấu hiệu nào dưới đây không thể hiện sự sinh trưởng ở cây cam?",
       "o": [
@@ -242,6 +261,7 @@
       "c": 1
     },
     {
+      "id": 20,
       "type": "mcq",
       "q": "Biến đổi nào dưới đây diễn ra trong đời sống của con ếch thể hiện sự phát triển?",
       "o": [
@@ -253,6 +273,7 @@
       "c": 3
     },
     {
+      "id": 21,
       "type": "mcq",
       "q": "Hoàn thành sơ đồ các giai đoạn sinh trưởng và phát triển của cây cam: Hạt → ....... → ....... → ....... → .......",
       "o": [
@@ -264,6 +285,7 @@
       "c": 0
     },
     {
+      "id": 22,
       "type": "mcq",
       "q": "Hoàn thành sơ đồ các giai đoạn sinh trưởng và phát triển của con ếch: ....... → Ấu trùng → ....... → .......",
       "o": [
@@ -275,6 +297,7 @@
       "c": 2
     },
     {
+      "id": 23,
       "type": "mcq",
       "q": "Loại mô phân sinh không có ở cây ngô là",
       "o": [
@@ -286,6 +309,7 @@
       "c": 2
     },
     {
+      "id": 24,
       "type": "mcq",
       "q": "Loại mô phân sinh không có ở cây cam là",
       "o": [
@@ -297,6 +321,7 @@
       "c": 1
     },
     {
+      "id": 25,
       "type": "mcq",
       "q": "Cho các bộ phận: (1) Đỉnh rễ, (2) Thân, (3) Chồi nách, (4) Chồi đỉnh, (5) Hoa, (6) Lá. Mô phân sinh đỉnh không có ở:",
       "o": [
@@ -308,6 +333,7 @@
       "c": 3
     },
     {
+      "id": 26,
       "type": "mcq",
       "q": "Các giai đoạn phát triển tuần tự của sâu bướm là",
       "o": [
@@ -319,6 +345,7 @@
       "c": 2
     },
     {
+      "id": 27,
       "type": "mcq",
       "q": "Kết quả của quá trình phát triển ở thực vật có hoa là",
       "o": [
@@ -330,6 +357,7 @@
       "c": 3
     },
     {
+      "id": 28,
       "type": "mcq",
       "q": "Cây thân gỗ cao lên là kết quả hoạt động của mô phân sinh nào?",
       "o": [
@@ -341,6 +369,7 @@
       "c": 1
     },
     {
+      "id": 29,
       "type": "mcq",
       "q": "Mô phân sinh lóng có vai trò làm cho",
       "o": [
@@ -352,6 +381,7 @@
       "c": 2
     },
     {
+      "id": 30,
       "type": "mcq",
       "q": "Dấu hiệu thể hiện sự sinh trưởng của con ếch là",
       "o": [
@@ -363,6 +393,7 @@
       "c": 0
     },
     {
+      "id": 31,
       "type": "mcq",
       "q": "Dấu hiệu sinh trưởng của cây cam: ....... lớn lên thành .......",
       "o": [
@@ -374,6 +405,7 @@
       "c": 1
     },
     {
+      "id": 32,
       "type": "mcq",
       "q": "Dấu hiệu thể hiện sự phát triển của con ếch là",
       "o": [
@@ -385,6 +417,7 @@
       "c": 3
     },
     {
+      "id": 33,
       "type": "mcq",
       "q": "....... là sự tăng về kích thước và khối lượng của cơ thể do sự tăng lên về số lượng và kích thước tế bào.",
       "o": [
@@ -396,6 +429,7 @@
       "c": 0
     },
     {
+      "id": 34,
       "type": "mcq",
       "q": "....... bao gồm sinh trưởng, phân hoá tế bào, phát sinh hình thái cơ quan và cơ thể.",
       "o": [
@@ -407,6 +441,7 @@
       "c": 1
     },
     {
+      "id": 35,
       "type": "mcq",
       "q": "Mô phân sinh đỉnh nằm ở",
       "o": [
@@ -418,6 +453,7 @@
       "c": 1
     },
     {
+      "id": 36,
       "type": "mcq",
       "q": "Cây cao lên nhờ",
       "o": [
@@ -429,6 +465,7 @@
       "c": 0
     },
     {
+      "id": 37,
       "type": "mcq",
       "q": "Các tế bào ở mô phân sinh đỉnh phân chia, giúp cây dài ra từ",
       "o": [
@@ -440,6 +477,7 @@
       "c": 1
     },
     {
+      "id": 38,
       "type": "mcq",
       "q": "Nhiều loài thực vật không ngừng dài ra và to lên nhờ có",
       "o": [
@@ -451,6 +489,7 @@
       "c": 0
     },
     {
+      "id": 39,
       "type": "mcq",
       "q": "Ở thân cây gỗ trưởng thành, tầng sinh trụ nằm ở đâu?",
       "o": [
@@ -462,6 +501,7 @@
       "c": 1
     },
     {
+      "id": 40,
       "type": "mcq",
       "q": "Thông thường, khi ta bóc vỏ cây thân gỗ thì những thành phần nào sẽ bị loại bỏ khỏi cây?",
       "o": [
@@ -473,6 +513,7 @@
       "c": 2
     },
     {
+      "id": 41,
       "type": "mcq",
       "q": "Vì sao khi tìm gỗ làm nhà, người ta lại lựa chọn lớp gỗ ròng thay vì gỗ dác?",
       "o": [
@@ -484,6 +525,7 @@
       "c": 0
     },
     {
+      "id": 42,
       "type": "mcq",
       "q": "Phitôcrôm là 1 loại prôtêin hấp thụ ánh sáng tồn tại ở 2 dạng:",
       "o": [
@@ -495,6 +537,7 @@
       "c": 1
     },
     {
+      "id": 43,
       "type": "mcq",
       "q": "Những cây nào sau đây thuộc cây ngắn ngày?",
       "o": [
@@ -506,6 +549,7 @@
       "c": 3
     },
     {
+      "id": 44,
       "type": "mcq",
       "q": "Những cây nào sau đây thuộc cây dài ngày?",
       "o": [
@@ -517,6 +561,7 @@
       "c": 2
     },
     {
+      "id": 45,
       "type": "mcq",
       "q": "Thời điểm ra hoa ở thực vật 1 năm có phản ứng quang chu kì trung tính được đánh giá theo",
       "o": [
@@ -528,6 +573,7 @@
       "c": 2
     },
     {
+      "id": 46,
       "type": "mcq",
       "q": "Kiểu phát triển của động vật qua biến thái hoàn toàn là kiểu phát triển mà con non có đặc điểm hình thái",
       "o": [
@@ -539,6 +585,7 @@
       "c": 0
     },
     {
+      "id": 47,
       "type": "mcq",
       "q": "Sinh trưởng ở thực vật là quá trình:",
       "o": [
@@ -550,6 +597,7 @@
       "c": 3
     },
     {
+      "id": 48,
       "type": "mcq",
       "q": "Cho dữ liệu sau:\nHãy ghép cột A với cột B tương ứng.",
       "o": [
@@ -593,6 +641,7 @@
       }
     },
     {
+      "id": 49,
       "type": "mcq",
       "q": "Phát triển của sinh vật là",
       "o": [
@@ -604,6 +653,7 @@
       "c": 0
     },
     {
+      "id": 50,
       "type": "mcq",
       "q": "Quá trình nào sau đây là quá trình sinh trưởng của thực vật?",
       "o": [
@@ -615,6 +665,7 @@
       "c": 2
     },
     {
+      "id": 51,
       "type": "mcq",
       "q": "Những động vật sinh trưởng và phát triển không qua biến thái là:",
       "o": [
@@ -626,6 +677,7 @@
       "c": 3
     },
     {
+      "id": 52,
       "type": "mcq",
       "q": "Cho các mệnh đề sau:\n\nSinh trưởng và phát triển có liên quan mật thiết với nhau, nối tiếp, xen kẽ nhau.\n\nPhát triển là cơ sở cho sinh trưởng, sinh trưởng làm thay đổi và thúc đẩy phát triển.\n\nCây ra lá là sự phát triển của thực vật.\n\nCon gà tăng từ 1,2 kg đến 3 kg là sự sinh trưởng của động vật.\n\nSố mệnh đề đúng là",
       "o": [
@@ -637,6 +689,7 @@
       "c": 2
     },
     {
+      "id": 53,
       "type": "mcq",
       "q": "Sinh trưởng và phát triển của động vật qua biến thái không hoàn toàn là trường hợp ấu trùng phát triển",
       "o": [
@@ -648,6 +701,7 @@
       "c": 3
     },
     {
+      "id": 54,
       "type": "mcq",
       "q": "Loại mô phân sinh nào sau đây không có ở cây một lá mầm?",
       "o": [
@@ -659,6 +713,7 @@
       "c": 0
     },
     {
+      "id": 55,
       "type": "mcq",
       "q": "Vào mùa đông, một số cây có hiện tượng rụng lá nhằm",
       "o": [
@@ -670,6 +725,7 @@
       "c": 0
     },
     {
+      "id": 56,
       "type": "mcq",
       "q": "Phát biểu đúng về mô phân sinh bên và mô phân sinh lóng là",
       "o": [
@@ -681,6 +737,7 @@
       "c": 2
     },
     {
+      "id": 57,
       "type": "mcq",
       "q": "Sinh sản là",
       "o": [
@@ -692,6 +749,7 @@
       "c": 1
     },
     {
+      "id": 58,
       "type": "mcq",
       "q": "Trong tự nhiên, có hai hình thức sinh sản ở sinh vật gồm",
       "o": [
@@ -703,6 +761,7 @@
       "c": 0
     },
     {
+      "id": 59,
       "type": "mcq",
       "q": "Sinh sản vô tính khác sinh sản hữu tính ở điểm là",
       "o": [
@@ -714,6 +773,7 @@
       "c": 0
     },
     {
+      "id": 60,
       "type": "mcq",
       "q": "Ưu điểm của hình thức sinh sản hữu tính so với hình thức sinh sản vô tính là",
       "o": [
@@ -725,6 +785,7 @@
       "c": 1
     },
     {
+      "id": 61,
       "type": "mcq",
       "q": "Nhóm sinh vật nào sau đây có hình thức sinh sản vô tính?",
       "o": [
@@ -736,6 +797,7 @@
       "c": 1
     },
     {
+      "id": 62,
       "type": "mcq",
       "q": "Trong sơ đồ sinh sản hữu tính ở sinh vật sau. (1) và (2) lần lượt là",
       "o": [
@@ -748,6 +810,7 @@
       "c": 1
     },
     {
+      "id": 63,
       "type": "mcq",
       "q": "Cho bảng thông tin về sinh sản hữu tính ở thực vật:\nCách ghép nối phù hợp là",
       "o": [
@@ -783,6 +846,7 @@
       }
     },
     {
+      "id": 64,
       "type": "mcq",
       "q": "Cho các sự kiện về quá trình sinh sản hữu tính ở thực vật:\n\n(1) Giao tử đực kết hợp với giao tử cái tạo thành hợp tử.\n\n(2) Ống phấn tiếp xúc với noãn.\n\n(3) Hạt phấn rơi vào đầu nhụy và nảy mầm.\n\n(4) Ống phấn mọc dài ra trong vòi nhụy và đi vào bầu nhụy.\n\n(5) Nhụy và nhị cùng chín.\n\nThứ tự đúng của các sự kiện trên là",
       "o": [
@@ -794,6 +858,7 @@
       "c": 0
     },
     {
+      "id": 65,
       "type": "mcq",
       "q": "Đối với động vật đẻ trứng, sự thụ tinh diễn ra",
       "o": [
@@ -805,6 +870,7 @@
       "c": 2
     },
     {
+      "id": 66,
       "type": "mcq",
       "q": "Cho các ưu điểm sau của hình thức đẻ con:\n\n(1) Được bảo vệ tốt hơn trước sự tấn công của vật ăn thịt.\n\n(2) Được cung cấp chất dinh dưỡng liên tục.\n\n(3) Tạo ra số lượng lớn cá thể con trong một lần sinh.\n\n(4) Có điều kiện nhiệt độ thích hợp và ổn định để phôi phát triển.\n\nSố ưu điểm của hình thức đẻ con là",
       "o": [
@@ -816,6 +882,7 @@
       "c": 2
     },
     {
+      "id": 67,
       "type": "mcq",
       "q": "Sinh sản vô tính là",
       "o": [
@@ -827,6 +894,7 @@
       "c": 2
     },
     {
+      "id": 68,
       "type": "mcq",
       "q": "Chúng ta có thể nhân giống cây khoai tây bằng bộ phận nào của cây?",
       "o": [
@@ -838,6 +906,7 @@
       "c": 2
     },
     {
+      "id": 69,
       "type": "mcq",
       "q": "Bộ phận được khoanh tròn trên củ khoai tây trong hình dưới đây được gọi là gì?",
       "o": [
@@ -850,6 +919,7 @@
       "c": 1
     },
     {
+      "id": 70,
       "type": "mcq",
       "q": "Trong sinh sản sinh dưỡng ở thực vật, cây mới được hình thành",
       "o": [
@@ -861,6 +931,7 @@
       "c": 0
     },
     {
+      "id": 71,
       "type": "mcq",
       "q": "Sự thụ phấn là quá trình",
       "o": [
@@ -872,6 +943,7 @@
       "c": 2
     },
     {
+      "id": 72,
       "type": "mcq",
       "q": "Hoa lưỡng tính là",
       "o": [
@@ -883,6 +955,7 @@
       "c": 2
     },
     {
+      "id": 73,
       "type": "mcq",
       "q": "Thụ tinh là gì?",
       "o": [
@@ -894,6 +967,7 @@
       "c": 0
     },
     {
+      "id": 74,
       "type": "mcq",
       "q": "Sinh sản hữu tính là",
       "o": [
@@ -905,6 +979,7 @@
       "c": 0
     },
     {
+      "id": 75,
       "type": "mcq",
       "q": "Cho một số nhận định sau:\n\n1. Sinh sản hữu tính tạo hợp tử, hợp tử sẽ phát triển thành cơ thể mới.\n\n2. Cơ thể con nhận được chất di truyền từ cả bố và mẹ nên mang đặc điểm của cả bố và mẹ.\n\n3. Sinh sản hữu tính làm tăng khả năng thích nghi của thế hệ sau với sự thay đổi của môi trường.\n\n4. Sinh sản hữu tính chỉ có ở động vật.\n\n5. Sinh sản hữu tính ưu việt hơn sinh sản vô tính.\n\nSố mệnh đề đúng là",
       "o": [
@@ -916,6 +991,7 @@
       "c": 3
     },
     {
+      "id": 76,
       "type": "mcq",
       "q": "Các hình thức sinh sản ở thực vật gồm có:",
       "o": [
@@ -927,6 +1003,7 @@
       "c": 3
     },
     {
+      "id": 77,
       "type": "mcq",
       "q": "Sinh sản vô tính ở thực vật là cây non được sinh ra mang đặc tính",
       "o": [
@@ -938,6 +1015,7 @@
       "c": 1
     },
     {
+      "id": 78,
       "type": "mcq",
       "q": "Khi nói về ưu điểm của phương pháp nuôi cấy mô, phát biểu nào sau đây sai?",
       "o": [
@@ -949,6 +1027,7 @@
       "c": 0
     },
     {
+      "id": 79,
       "type": "mcq",
       "q": "Nói đến hình thức sinh sản trinh sinh, chỉ ra phát biểu sai:",
       "o": [
@@ -960,6 +1039,7 @@
       "c": 0
     },
     {
+      "id": 80,
       "type": "mcq",
       "q": "Trong sinh sản vô tính, chồi con hình thành được nhìn thấy ở sinh vật nào dưới đây?",
       "o": [
@@ -971,6 +1051,7 @@
       "c": 2
     },
     {
+      "id": 81,
       "type": "mcq",
       "q": "Một trùng giày sinh sản bằng cách tự phân chia thành hai tế bào con. Quá trình này được gọi là",
       "o": [
@@ -982,6 +1063,7 @@
       "c": 2
     },
     {
+      "id": 82,
       "type": "mcq",
       "q": "Ở sinh vật, quá trình hợp nhất giữa giao tử đực và giao tử cái được gọi là",
       "o": [
@@ -993,6 +1075,7 @@
       "c": 0
     },
     {
+      "id": 83,
       "type": "mcq",
       "q": "Quả được hình thành từ bộ phận nào của hoa?",
       "o": [
@@ -1004,6 +1087,7 @@
       "c": 3
     },
     {
+      "id": 84,
       "type": "mcq",
       "q": "Nối tên sinh vật ở cột A với hình thức sinh sản ở cột B:",
       "o": [
@@ -1047,6 +1131,7 @@
       }
     },
     {
+      "id": 85,
       "type": "mcq",
       "q": "Cho các cây sau: mía, lúa, khoai tây, hoa hồng. Dựa vào đặc điểm sinh sản, hãy chỉ ra cây nào có phương thức sinh sản khác với các cây còn lại.",
       "o": [
@@ -1058,6 +1143,7 @@
       "c": 0
     },
     {
+      "id": 86,
       "type": "mcq",
       "q": "Những ý nào dưới đây nói về đặc điểm của sinh sản vô tính ở sinh vật?\n\n(1) Cá thể sống đơn lẻ có thể tạo ra cơ thể mới.\n\n(2) Sinh sản vô tính tạo ra cơ thể mới tồn tại tốt ở các môi trường sống luôn thay đổi.\n\n(3) Sinh sản vô tính tạo ra các cá thể mới giống nhau và giống cơ thể ban đầu.\n\n(4) Sinh sản vô tính tạo ra số lượng lớn cơ thể mới trong một thời gian ngắn.\n\n(5) Không có sự tham gia của giao tử đực và giao tử cái.\n\n(6) Sinh sản vô tính tạo ra các cơ thể mới thích nghi tốt với môi trường sống ổn định.",
       "o": [
@@ -1069,6 +1155,7 @@
       "c": 0
     },
     {
+      "id": 87,
       "type": "mcq",
       "q": "Nối nội dung ở cột A với định nghĩa ở cột B:",
       "o": [
@@ -1108,6 +1195,7 @@
       }
     },
     {
+      "id": 88,
       "type": "mcq",
       "q": "Điền từ còn thiếu vào chỗ trống:\n\nMọc chồi là một kiểu của (1)... Quá trình (2)... đảm bảo sự phát triển liên tục của loài. (3)... là cơ quan sinh sản của thực vật Hạt kín. Bộ phận nhú lên trên cơ quan sinh dưỡng của cây và có khả năng hình thành cơ thể mới được gọi là (4)... Thực vật có quả và hạt là kết quả của hình thức (5)...",
       "o": [
@@ -1119,6 +1207,7 @@
       "c": 2
     },
     {
+      "id": 89,
       "type": "mcq",
       "q": "Hình thức sinh sản vô tính \"Phân đôi\" là của loài động vật nào?",
       "o": [
@@ -1130,6 +1219,7 @@
       "c": 2
     },
     {
+      "id": 90,
       "type": "mcq",
       "q": "Nhóm động vật nào sau đây có hình thức sinh sản vô tính?",
       "o": [
@@ -1141,6 +1231,7 @@
       "c": 3
     },
     {
+      "id": 91,
       "type": "mcq",
       "q": "Đâu không phải loài thực vật có khả năng sinh sản vô tính?",
       "o": [
@@ -1152,6 +1243,7 @@
       "c": 0
     },
     {
+      "id": 92,
       "type": "mcq",
       "q": "Hiện tượng nào dưới đây không phải là sinh sản ở sinh vật?",
       "o": [
@@ -1163,6 +1255,7 @@
       "c": 0
     },
     {
+      "id": 93,
       "type": "mcq",
       "q": "Quá trình sinh sản hữu tính ở thực vật diễn ra lần lượt theo các giai đoạn nào?",
       "o": [
@@ -1174,6 +1267,7 @@
       "c": 1
     },
     {
+      "id": 94,
       "type": "mcq",
       "q": "Trong sinh sản hữu tính, cơ thể mới sinh ra từ",
       "o": [
@@ -1185,6 +1279,7 @@
       "c": 1
     },
     {
+      "id": 95,
       "type": "mcq",
       "q": "Trong thực tiễn, cây ăn quả lâu năm thường được nhân giống bằng phương pháp chiết cành vì",
       "o": [
@@ -1196,6 +1291,7 @@
       "c": 3
     },
     {
+      "id": 96,
       "type": "mcq",
       "q": "Hoàn thành các đoạn thông tin sau:\n\na) Sự hình thành các cá thể mới từ cơ quan sinh dưỡng của mẹ gọi là ...(1)...\n\nb) Hoa có bộ phận sinh sản đực hoặc cái được gọi là ...(2)...\n\nc) Sự chuyển hạt phấn đến đầu nhụy gọi là ...(3)...\n\nd) Sự kết hợp của giao tử đực và cái gọi là ...(4)...",
       "o": [
@@ -1207,6 +1303,7 @@
       "c": 1
     },
     {
+      "id": 97,
       "type": "mcq",
       "q": "Lựa chọn đáp án đúng về quá trình sinh sản hữu tính ở thực vật.",
       "o": [
@@ -1218,6 +1315,7 @@
       "c": 0
     },
     {
+      "id": 98,
       "type": "mcq",
       "q": "Hình ảnh dưới đây mô tả hình thức sinh sản nào ở thủy tức?",
       "o": [
@@ -1230,6 +1328,7 @@
       "c": 0
     },
     {
+      "id": 99,
       "type": "mcq",
       "q": "Hình ảnh dưới đây mô tả hình thức sinh sản nào ở sao biển?",
       "o": [
@@ -1242,6 +1341,7 @@
       "c": 0
     },
     {
+      "id": 100,
       "type": "mcq",
       "q": "Hình ảnh dưới đây mô tả hình thức sinh sản nào ở nấm Penicillium?",
       "o": [
@@ -1254,6 +1354,7 @@
       "c": 3
     },
     {
+      "id": 101,
       "type": "mcq",
       "q": "Vì sao khi nhân giống cam, chanh, bưởi, hồng xiêm,... người ta thường chiết cành mà không sử dụng phương pháp giâm cành?",
       "o": [
@@ -1265,6 +1366,7 @@
       "c": 0
     },
     {
+      "id": 102,
       "type": "mcq",
       "q": "Chọn các từ/cụm từ phù hợp để hoàn thành đoạn thông tin về sinh sản hữu tính ở thực vật:\n\nGiao tử đực được hình thành trong ...(1)..., giao tử cái được hình thành trong ...(2)... Quá trình vận chuyển hạt phấn đến bầu nhụy là ...(3)... Thụ tinh là quá trình kết hợp giữa giao tử đực và giao tử cái tạo thành ...(4)... Bầu nhụy biến đổi thành quả chứa hạt, ...(5)... do noãn phát triển thành.",
       "o": [
@@ -1276,6 +1378,7 @@
       "c": 0
     },
     {
+      "id": 103,
       "type": "mcq",
       "q": "Vì sao ở động vật, hình thức mang thai và sinh con sẽ giúp con non có tỉ lệ sống sót cao hơn hình thức đẻ trứng?",
       "o": [
@@ -1287,6 +1390,7 @@
       "c": 3
     },
     {
+      "id": 104,
       "type": "mcq",
       "q": "Sinh sản hữu tính ưu việt hơn sinh sản vô tính chủ yếu là",
       "o": [
@@ -1298,6 +1402,7 @@
       "c": 1
     },
     {
+      "id": 105,
       "type": "mcq",
       "q": "Bào tử ở thực vật mang bộ nhiễm sắc thể (NST)",
       "o": [
@@ -1309,6 +1414,7 @@
       "c": 2
     },
     {
+      "id": 106,
       "type": "mcq",
       "q": "Trong phương pháp nhân giống bằng cành ghép, người ta buộc chặt cành ghép vào gốc ghép nhằm những mục đích nào sau đây?\n\n1. Dòng mạch gỗ dễ dàng vận chuyển từ gốc ghép lên cành ghép.\n\n2. Cành ghép không bị rơi.\n\n3. Cành ghép dễ ra rễ.\n\n4. Nước di chuyển từ gốc ghép lên cành ghép không bị chảy ra ngoài.\n\n5. Nhanh chóng hình thành cây mới.",
       "o": [
@@ -1320,6 +1426,7 @@
       "c": 2
     },
     {
+      "id": 107,
       "type": "mcq",
       "q": "Đặc điểm của bào tử là tạo được:",
       "o": [
@@ -1331,6 +1438,7 @@
       "c": 3
     },
     {
+      "id": 108,
       "type": "mcq",
       "q": "Điều không đúng khi nói về hạt",
       "o": [
@@ -1342,6 +1450,7 @@
       "c": 3
     },
     {
+      "id": 109,
       "type": "mcq",
       "q": "Các động vật lưỡng tính sinh sản theo kiểu giao phối thì duy trì cả cơ quan sinh dục đực và cơ quan sinh dục cái có lợi gì?",
       "o": [
@@ -1353,6 +1462,7 @@
       "c": 2
     },
     {
+      "id": 110,
       "type": "mcq",
       "q": "Hình ảnh dưới đây mô tả quá trình sinh sản của trùng đế giày. Đây là hình thức",
       "o": [
@@ -1365,6 +1475,7 @@
       "c": 1
     },
     {
+      "id": 111,
       "type": "mcq",
       "q": "Trong các nhóm thực vật sau, nhóm nào là nhóm chỉ gồm hoa đơn tính?",
       "o": [
@@ -1376,6 +1487,7 @@
       "c": 1
     },
     {
+      "id": 112,
       "type": "mcq",
       "q": "Dựa vào sự tham gia của yếu tố đực và yếu tố cái, sinh sản được phân thành",
       "o": [
@@ -1387,6 +1499,7 @@
       "c": 0
     },
     {
+      "id": 113,
       "type": "mcq",
       "q": "Trong các hình thức sinh sản dưới đây, đâu không phải ví dụ về sinh sản vô tính?",
       "o": [
@@ -1398,6 +1511,7 @@
       "c": 3
     },
     {
+      "id": 114,
       "type": "mcq",
       "q": "Cho dữ liệu sau:\nGhép cột A với cột B sao cho phù hợp.",
       "o": [
@@ -1429,6 +1543,7 @@
       }
     },
     {
+      "id": 115,
       "type": "mcq",
       "q": "Trong các nhóm thực vật sau, nhóm nào là nhóm chỉ gồm hoa lưỡng tính?",
       "o": [
@@ -1440,6 +1555,7 @@
       "c": 0
     },
     {
+      "id": 116,
       "type": "mcq",
       "q": "Chọn chú thích đúng cho hình sau:\n\na. Lá non\nb. Mắt\nc. Tầng phát sinh\nd. Lóng\ne. Mô phân sinh đỉnh\n\nPhương án trả lời đúng là?",
       "o": [
@@ -1452,6 +1568,7 @@
       "c": 0
     },
     {
+      "id": 117,
       "type": "mcq",
       "q": "Đâu không phải là hình thức sinh sản vô tính ở động vật?",
       "o": [
@@ -1463,6 +1580,7 @@
       "c": 2
     },
     {
+      "id": 118,
       "type": "mcq",
       "q": "Nảy chồi là hình thức sinh sản có ở:",
       "o": [
@@ -1474,6 +1592,7 @@
       "c": 0
     },
     {
+      "id": 119,
       "type": "mcq",
       "q": "Cho các phát biểu sau:\n\n(1) Giun dẹp sinh sản bằng hình thức phân mảnh\n(2) Thủy tức sinh sản bằng hình thức nảy chồi và phân mảnh\n(3) Bọt biển sinh sản bằng hình thức nảy chồi\n(4) Trùng biến hình sinh sản bằng phân đôi\n(5) Kiến sinh sản bằng phân đôi và trinh sinh\n(6) Ong sinh sản bằng hình thức trinh sinh\n\nTính đúng (Đ)/sai (S) trong các phát biểu trên là:",
       "o": [
@@ -1485,6 +1604,7 @@
       "c": 0
     },
     {
+      "id": 120,
       "type": "mcq",
       "q": "Sinh sản vô tính ở động vật có các hình thức nào sau đây?",
       "o": [

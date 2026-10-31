@@ -2,6 +2,7 @@
   "fullName": "TX1 SỬ - Bài 1, 2 LS",
   "questions": [
     {
+      "id": 1,
       "type": "mcq",
       "q": "Tầng lớp quý tộc mới ở Anh (thế kỉ XVI – XVII) là",
       "o": [
@@ -13,6 +14,7 @@
       "c": 1
     },
     {
+      "id": 2,
       "type": "mcq",
       "q": "Nguyên nhân sâu xa dẫn tới cuộc Cách mạng tư sản Anh giữa thế kỉ XVII là",
       "o": [
@@ -24,6 +26,7 @@
       "c": 0
     },
     {
+      "id": 3,
       "type": "mcq",
       "q": "Cuộc Cách mạng tư sản Anh (1642 - 1688) đã diễn ra dưới hình thức nào?",
       "o": [
@@ -35,6 +38,7 @@
       "c": 3
     },
     {
+      "id": 4,
       "type": "mcq",
       "q": "Đặc điểm nào không đúng với cuộc Cách mạng tư sản Anh thế kỉ XVII?",
       "o": [
@@ -46,6 +50,7 @@
       "c": 1
     },
     {
+      "id": 5,
       "type": "mcq",
       "q": "Nguyên nhân sâu xa dẫn tới cuộc Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ (thế kỉ XVIII) là",
       "o": [
@@ -57,6 +62,7 @@
       "c": 2
     },
     {
+      "id": 6,
       "type": "mcq",
       "q": "Ngày 4 - 7 là ngày Quốc khánh của Hợp chúng quốc Mỹ vì",
       "o": [
@@ -68,6 +74,7 @@
       "c": 1
     },
     {
+      "id": 7,
       "type": "mcq",
       "q": "Đặc điểm nổi bật của tình hình xã hội Pháp trước khi bùng nổ Cách mạng tư sản (cuối thế kỉ XVIII) là",
       "o": [
@@ -79,6 +86,7 @@
       "c": 3
     },
     {
+      "id": 8,
       "type": "mcq",
       "q": "Các nhà tư tưởng tiêu biểu của trào lưu Triết học Ánh sáng ở Pháp (thế kỉ XVIII) là",
       "o": [
@@ -90,6 +98,7 @@
       "c": 2
     },
     {
+      "id": 9,
       "type": "mcq",
       "q": "Nội dung tư tưởng chính của trào lưu Triết học Ánh sáng ở Pháp (thế kỉ XVIII) là",
       "o": [
@@ -101,6 +110,7 @@
       "c": 2
     },
     {
+      "id": 10,
       "type": "mcq",
       "q": "Chế độ chính trị ở nước Pháp trước khi Cách mạng tư sản (năm 1789) bùng nổ là",
       "o": [
@@ -112,6 +122,7 @@
       "c": 2
     },
     {
+      "id": 11,
       "type": "mcq",
       "q": "Mâu thuẫn bao trùm trong xã hội Pháp trước Cách mạng tư sản cuối thế kỉ XVIII là",
       "o": [
@@ -123,6 +134,7 @@
       "c": 3
     },
     {
+      "id": 12,
       "type": "mcq",
       "q": "Điểm giống nhau cơ bản giữa nước Anh (thế kỉ XVII) và nước Pháp (cuối thế kỉ XVIII) khi cách mạng tư sản bùng nổ là",
       "o": [
@@ -134,6 +146,7 @@
       "c": 1
     },
     {
+      "id": 13,
       "type": "mcq",
       "q": "Khẩu hiệu nổi tiếng của bản Tuyên ngôn Nhân quyền và Dân quyền (Pháp, năm 1789) là",
       "o": [
@@ -145,6 +158,7 @@
       "c": 1
     },
     {
+      "id": 14,
       "type": "mcq",
       "q": "Lực lượng chủ yếu đưa Cách mạng tư sản Pháp cuối thế kỉ XVIII đạt đến đỉnh cao là",
       "o": [
@@ -156,6 +170,7 @@
       "c": 2
     },
     {
+      "id": 15,
       "type": "mcq",
       "q": "Lực lượng nào dưới đây mới xuất hiện trong xã hội nước Anh vào cuối thế kỉ XVI – đầu thế kỉ XVII?",
       "o": [
@@ -167,6 +182,7 @@
       "c": 2
     },
     {
+      "id": 16,
       "type": "mcq",
       "q": "Trong cách mạng tư sản Anh (thế kỉ XVII), người giữ vai trò lãnh đạo lực lượng Nghị viện chống lại phe Bảo hoàng là",
       "o": [
@@ -178,6 +194,7 @@
       "c": 0
     },
     {
+      "id": 17,
       "type": "mcq",
       "q": "Sắp xếp các sự kiện sau trong Cách mạng tư sản Anh (thế kỉ XVII) theo trình tự thời gian:\n1. Ô. Crôm-oen thiết lập chế độ độc tài quân sự.\n2. Nghị viện tiến hành đảo chính. Chế độ quân chủ lập hiến được thiết lập ở Anh.\n3. Vua Sác-lơ I bị xử tử. Anh trở thành nước cộng hòa.\n4. Cách mạng tư sản Anh bùng nổ.\n5. Chế độ quân chủ chuyên chế được phục hưng ở Anh.",
       "o": [
@@ -189,6 +206,7 @@
       "c": 3
     },
     {
+      "id": 18,
       "type": "mcq",
       "q": "Lực lượng nào giữ vai trò lãnh đạo trong cuộc cách mạng tư sản Anh (1642 - 1688)?",
       "o": [
@@ -200,6 +218,7 @@
       "c": 3
     },
     {
+      "id": 19,
       "type": "mcq",
       "q": "Thắng lợi của cuộc cách mạng tư sản Anh (1642 - 1688) đã",
       "o": [
@@ -211,6 +230,7 @@
       "c": 0
     },
     {
+      "id": 20,
       "type": "mcq",
       "q": "So với chế độ quân chủ chuyên chế, chế độ quân chủ lập hiến (được thiết lập ở Anh năm 1688) có điểm gì khác biệt?",
       "o": [
@@ -222,6 +242,7 @@
       "c": 1
     },
     {
+      "id": 21,
       "type": "mcq",
       "q": "Đến năm 1760, thực dân Anh đã thiết lập được bao nhiêu thuộc địa ở Bắc Mỹ?",
       "o": [
@@ -233,6 +254,7 @@
       "c": 0
     },
     {
+      "id": 22,
       "type": "mcq",
       "q": "Văn kiện nào dưới đây đã xác định quyền con người và quyền độc lập của 13 thuộc địa Anh ở Bắc Mỹ?",
       "o": [
@@ -244,6 +266,7 @@
       "c": 2
     },
     {
+      "id": 23,
       "type": "mcq",
       "q": "Hãy cho biết đoạn văn sau được trích dẫn từ văn kiện nào?\n“Chúng tôi khẳng định một chân lý hiển nhiên rằng mọi người sinh ra đều bình đẳng, rằng tạo hóa đã ban cho họ những quyền tất yếu và bất khả xâm phạm, trong đó có quyền được sống, quyền được tự do và mưu cầu hạnh phúc”",
       "o": [
@@ -255,6 +278,7 @@
       "c": 0
     },
     {
+      "id": 24,
       "type": "mcq",
       "q": "Cuộc chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ đã đạt được kết quả nào?",
       "o": [
@@ -266,6 +290,7 @@
       "c": 1
     },
     {
+      "id": 25,
       "type": "mcq",
       "q": "Nội dung nào dưới đây phản ánh đúng ý nghĩa của cuộc chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ?",
       "o": [
@@ -277,6 +302,7 @@
       "c": 1
     },
     {
+      "id": 26,
       "type": "mcq",
       "q": "Cuộc chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ diễn ra dưới hình thức nào?",
       "o": [
@@ -288,6 +314,7 @@
       "c": 2
     },
     {
+      "id": 27,
       "type": "mcq",
       "q": "Nội dung nào sau đây phản ánh điểm tương đồng cơ bản giữa cách mạng tư sản Anh (thế kỉ XVII) và Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ (thế kỉ XVIII)?",
       "o": [
@@ -299,6 +326,7 @@
       "c": 3
     },
     {
+      "id": 28,
       "type": "mcq",
       "q": "Vào đầu thế kỉ XVII, nước Anh có nền kinh tế:",
       "o": [
@@ -310,6 +338,7 @@
       "c": 0
     },
     {
+      "id": 29,
       "type": "mcq",
       "q": "Vào đầu thế kỉ XVII ở Anh, sự thay đổi về kinh tế, những mâu thuẫn gay gắt giữa tư sản, quý tộc mới với chế độ quân chủ chuyên chế đã dẫn tới:",
       "o": [
@@ -321,6 +350,7 @@
       "c": 1
     },
     {
+      "id": 30,
       "type": "mcq",
       "q": "Sau khi phát hiện ra châu Mỹ (cuối thế kỉ XV), nhiều nước châu Âu đã:",
       "o": [
@@ -332,6 +362,7 @@
       "c": 1
     },
     {
+      "id": 31,
       "type": "mcq",
       "q": "Vào thế kỉ XVIII, khi đại biểu các thuộc địa Bắc Mỹ họp, đòi vua Anh xoá bỏ các luật cấm vô lí thì vua Anh đã làm gì?",
       "o": [
@@ -343,6 +374,7 @@
       "c": 0
     },
     {
+      "id": 32,
       "type": "mcq",
       "q": "Cuộc chiến tranh bùng nổ giữa thực dân Anh và 13 thuộc địa Anh ở Bắc Mỹ xảy ra vào năm nào?",
       "o": [
@@ -354,6 +386,7 @@
       "c": 1
     },
     {
+      "id": 33,
       "type": "mcq",
       "q": "Vào đầu thế kỉ XVII, xã hội nước Anh chia thành hai phe đối lập, đó là:",
       "o": [
@@ -365,6 +398,7 @@
       "c": 0
     },
     {
+      "id": 34,
       "type": "mcq",
       "q": "Năm 1640, để có tiền đàn áp cuộc khởi nghĩa của người Scotland, vua Charles I (Sác-lơ I) đã làm gì?",
       "o": [
@@ -376,6 +410,7 @@
       "c": 2
     },
     {
+      "id": 35,
       "type": "mcq",
       "q": "Sự kiện nào xảy ra sau chiến thắng Saratoga (Xa-ra-tô-ga, năm 1777) trong Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ?",
       "o": [
@@ -387,6 +422,7 @@
       "c": 3
     },
     {
+      "id": 36,
       "type": "mcq",
       "q": "Câu nào sau đây không đúng về tình hình kinh tế nước Anh vào đầu thế kỉ XVII?",
       "o": [
@@ -398,6 +434,7 @@
       "c": 1
     },
     {
+      "id": 37,
       "type": "mcq",
       "q": "Nguyên nhân nào dẫn tới sự bùng nổ Cách mạng tư sản Anh (thế kỉ XVII)?",
       "o": [
@@ -409,6 +446,7 @@
       "c": 3
     },
     {
+      "id": 38,
       "type": "mcq",
       "q": "Đâu là nguyên nhân khiến vua Sác-lơ I tuyên chiến với Quốc hội (năm 1642), làm Cách mạng tư sản Anh bùng nổ?",
       "o": [
@@ -420,6 +458,7 @@
       "c": 0
     },
     {
+      "id": 39,
       "type": "mcq",
       "q": "Tính chất của Cách mạng tư sản Anh (thế kỉ XVII) là gì?",
       "o": [
@@ -431,6 +470,7 @@
       "c": 0
     },
     {
+      "id": 40,
       "type": "mcq",
       "q": "Đâu là hạn chế của Cách mạng tư sản Anh (thế kỉ XVII)?",
       "o": [
@@ -442,6 +482,7 @@
       "c": 3
     },
     {
+      "id": 41,
       "type": "mcq",
       "q": "Đâu là nguyên nhân trực tiếp dẫn tới Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ?",
       "o": [
@@ -453,6 +494,7 @@
       "c": 2
     },
     {
+      "id": 42,
       "type": "mcq",
       "q": "Đâu không phải là kết quả của Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ?",
       "o": [
@@ -464,6 +506,7 @@
       "c": 1
     },
     {
+      "id": 43,
       "type": "mcq",
       "q": "Tính chất của Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ là?",
       "o": [
@@ -475,6 +518,7 @@
       "c": 1
     },
     {
+      "id": 44,
       "type": "mcq",
       "q": "Đặc điểm chính của Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ là?",
       "o": [
@@ -486,6 +530,7 @@
       "c": 3
     },
     {
+      "id": 45,
       "type": "mcq",
       "q": "Trong Cách mạng tư sản Anh (thế kỉ XVII), sự tham gia lãnh đạo của tầng lớp nào đóng vai trò quan trọng, quyết định chiến thắng của chủ nghĩa tư bản đối với chế độ phong kiến?",
       "o": [
@@ -497,6 +542,7 @@
       "c": 2
     },
     {
+      "id": 46,
       "type": "mcq",
       "q": "Cuộc chiến tranh nào đã dẫn tới sự thành lập Hợp chúng quốc Mỹ?",
       "o": [
@@ -508,6 +554,7 @@
       "c": 0
     },
     {
+      "id": 47,
       "type": "mcq",
       "q": "Ai là người lãnh đạo lực lượng yêu nước giành chiến thắng trong cuộc Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ?",
       "o": [
@@ -519,6 +566,7 @@
       "c": 0
     },
     {
+      "id": 48,
       "type": "mcq",
       "q": "Tổng thống đầu tiên của Hợp chúng quốc Mỹ là",
       "o": [
@@ -530,6 +578,7 @@
       "c": 0
     },
     {
+      "id": 49,
       "type": "mcq",
       "q": "Sau khi Ô-li-vơ Crôm-oen mất (năm 1658), nước Anh rơi vào hoàn cảnh nào?",
       "o": [
@@ -541,6 +590,7 @@
       "c": 3
     },
     {
+      "id": 50,
       "type": "mcq",
       "q": "Đầu thế kỉ XVII, xã hội Anh tồn tại những mâu thuẫn nào?",
       "o": [
@@ -552,6 +602,7 @@
       "c": 2
     },
     {
+      "id": 51,
       "type": "mcq",
       "q": "Ở Pháp, vào cuối thế kỉ XVIII, những đẳng cấp nào không phải đóng thuế?",
       "o": [
@@ -563,6 +614,7 @@
       "c": 1
     },
     {
+      "id": 52,
       "type": "mcq",
       "q": "Người đứng đầu nhà nước phong kiến chuyên chế ở Pháp trong những năm 1774 - 1789 là",
       "o": [
@@ -574,6 +626,7 @@
       "c": 2
     },
     {
+      "id": 53,
       "type": "mcq",
       "q": "Trong xã hội Pháp cuối thế kỉ XVIII, lực lượng nào dưới đây không thuộc Đẳng cấp thứ ba?",
       "o": [
@@ -585,6 +638,7 @@
       "c": 3
     },
     {
+      "id": 54,
       "type": "mcq",
       "q": "Nội dung nào dưới đây không phản ánh đúng tình hình nước Pháp cuối thế kỉ XVIII?",
       "o": [
@@ -596,6 +650,7 @@
       "c": 0
     },
     {
+      "id": 55,
       "type": "mcq",
       "q": "Ngày 5/5/1789, vua Lu-i XVI triệu tập Hội nghị ba đẳng cấp nhằm mục đích gì?",
       "o": [
@@ -607,6 +662,7 @@
       "c": 3
     },
     {
+      "id": 56,
       "type": "mcq",
       "q": "Sắp xếp các sự kiện sau theo đúng tiến trình của Cách mạng tư sản Pháp (cuối thế kỉ XVIII):\n1. Tuyên ngôn Nhân quyền và Dân quyền được công bố.\n2. Vua Lu-i XVI bị xử tử. Liên minh phong kiến châu Âu tấn công nước Pháp.\n3. Quần chúng nhân dân Pa-ri tấn công ngục Ba-xti.\n4. Na-pô-lê-ông lên nắm chính quyền.\n5. Rô-be-spi-e thiết lập nền chuyên chính cách mạng.",
       "o": [
@@ -618,6 +674,7 @@
       "c": 2
     },
     {
+      "id": 57,
       "type": "mcq",
       "q": "Sự kiện nào dưới đây đã châm ngòi cho sự bùng nổ của Cách mạng tư sản Pháp (cuối thế kỉ XVIII)?",
       "o": [
@@ -629,6 +686,7 @@
       "c": 2
     },
     {
+      "id": 58,
       "type": "mcq",
       "q": "Trong Cách mạng tư sản Pháp cuối thế kỉ XVIII, ai là người đứng đầu nền chuyên chính dân chủ Gia-cô-banh?",
       "o": [
@@ -640,6 +698,7 @@
       "c": 1
     },
     {
+      "id": 59,
       "type": "mcq",
       "q": "Khi soạn thảo Tuyên ngôn Độc lập (năm 1945) cho nhà nước Việt Nam Dân chủ Cộng hòa, Chủ tịch Hồ Chí Minh đã trích dẫn những câu nói nổi tiếng trong bản tuyên ngôn nào dưới đây?",
       "o": [
@@ -651,6 +710,7 @@
       "c": 0
     },
     {
+      "id": 60,
       "type": "mcq",
       "q": "Cuộc Cách mạng tư sản Pháp (1789 - 1794) diễn ra dưới hình thức nào?",
       "o": [
@@ -662,6 +722,7 @@
       "c": 0
     },
     {
+      "id": 61,
       "type": "mcq",
       "q": "Lực lượng nào giữ vai trò lãnh đạo trong cuộc cách mạng tư sản Pháp (1789 - 1794)?",
       "o": [
@@ -673,6 +734,7 @@
       "c": 0
     },
     {
+      "id": 62,
       "type": "mcq",
       "q": "Nội dung nào sau đây không phản ánh đúng ý nghĩa của cuộc cách mạng tư sản Pháp (cuối thế kỉ XVIII)?",
       "o": [
@@ -684,6 +746,7 @@
       "c": 3
     },
     {
+      "id": 63,
       "type": "mcq",
       "q": "Các cuộc cách mạng ở Anh (thế kỉ XVII), Bắc Mỹ và Pháp (thế kỉ XVIII) có điểm giống nhau cơ bản về",
       "o": [
@@ -695,6 +758,7 @@
       "c": 1
     },
     {
+      "id": 64,
       "type": "mcq",
       "q": "Về kinh tế, cuối thế kỉ XVIII, Pháp là:",
       "o": [
@@ -706,6 +770,7 @@
       "c": 1
     },
     {
+      "id": 65,
       "type": "mcq",
       "q": "Vào nửa sau thế kỉ XVIII, chế độ quân chủ chuyên chế ở Pháp đã:",
       "o": [
@@ -717,6 +782,7 @@
       "c": 1
     },
     {
+      "id": 66,
       "type": "mcq",
       "q": "Điều gì đã thôi thúc nhân dân Pháp nổi dậy đấu tranh chống chế độ phong kiến vào cuối thế kỉ XVIII?",
       "o": [
@@ -728,6 +794,7 @@
       "c": 1
     },
     {
+      "id": 67,
       "type": "mcq",
       "q": "Đâu là kết quả của Cách mạng tư sản Pháp cuối thế kỉ XVIII?",
       "o": [
@@ -739,6 +806,7 @@
       "c": 3
     },
     {
+      "id": 68,
       "type": "mcq",
       "q": "Trước Cách mạng tư sản Pháp (cuối thế kỉ XVIII), điều gì đã kìm hãm nền sản xuất công nghiệp, hạn chế tự do kinh doanh và cải tiến sản xuất ở Pháp?",
       "o": [
@@ -750,6 +818,7 @@
       "c": 0
     },
     {
+      "id": 69,
       "type": "mcq",
       "q": "Vào nửa sau thế kỉ XVIII, sự quan liêu, tham nhũng của tầng lớp quan lại ở Pháp (trước Cách mạng tư sản) trở thành:",
       "o": [
@@ -761,6 +830,7 @@
       "c": 0
     },
     {
+      "id": 70,
       "type": "mcq",
       "q": "Đâu không phải một nhà tư tưởng của giai cấp tư sản ở Pháp trước Cách mạng tư sản cuối thế kỉ XVIII?",
       "o": [
@@ -772,6 +842,7 @@
       "c": 3
     },
     {
+      "id": 71,
       "type": "mcq",
       "q": "Khi số nợ Nhà nước vay của tư sản không thể trả được thì vua Lu-i XVI của Pháp (trước Cách mạng tư sản cuối thế kỉ XVIII) đã làm gì?",
       "o": [
@@ -783,6 +854,7 @@
       "c": 1
     },
     {
+      "id": 72,
       "type": "mcq",
       "q": "Cách mạng tư sản Pháp (cuối thế kỉ XVIII) bùng nổ vào năm nào?",
       "o": [
@@ -794,6 +866,7 @@
       "c": 2
     },
     {
+      "id": 73,
       "type": "mcq",
       "q": "Ngày Quốc khánh của nước Pháp hiện nay là ngày kỉ niệm sự kiện nào?",
       "o": [
@@ -805,6 +878,7 @@
       "c": 0
     },
     {
+      "id": 74,
       "type": "mcq",
       "q": "Cách mạng tư sản Pháp cuối thế kỉ XVIII được ví như cái gì?",
       "o": [
@@ -816,6 +890,7 @@
       "c": 0
     },
     {
+      "id": 75,
       "type": "mcq",
       "q": "Vì sao Cách mạng tư sản Pháp cuối thế kỉ XVIII được ví như “cái chổi khổng lồ quét sạch mọi rác rưởi của chế độ phong kiến châu Âu”?",
       "o": [
@@ -827,6 +902,7 @@
       "c": 3
     },
     {
+      "id": 76,
       "type": "mcq",
       "q": "Nguyên nhân sâu xa dẫn tới sự bùng nổ Cách mạng tư sản Pháp cuối thế kỉ XVIII là gì?",
       "o": [
@@ -838,6 +914,7 @@
       "c": 2
     },
     {
+      "id": 77,
       "type": "mcq",
       "q": "Nhân dân Pa-ri tấn công ngục Ba-xti, mở đầu Cách mạng tư sản Pháp, vào ngày nào?",
       "o": [
@@ -849,6 +926,7 @@
       "c": 0
     },
     {
+      "id": 78,
       "type": "mcq",
       "q": "Ý nghĩa của Cách mạng tư sản Pháp cuối thế kỉ XVIII là gì?",
       "o": [
@@ -860,6 +938,7 @@
       "c": 3
     },
     {
+      "id": 79,
       "type": "mcq",
       "q": "Đâu là tính chất của Cách mạng tư sản Pháp cuối thế kỉ XVIII?",
       "o": [
@@ -871,6 +950,7 @@
       "c": 3
     },
     {
+      "id": 80,
       "type": "mcq",
       "q": "Trong các cuộc cách mạng dưới đây, cuộc cách mạng nào được coi là cuộc cách mạng dân chủ tư sản điển hình và triệt để nhất?",
       "o": [
@@ -882,6 +962,7 @@
       "c": 1
     },
     {
+      "id": 81,
       "type": "mcq",
       "q": "Đâu là đặc điểm chính của cuộc cách mạng tư sản Pháp cuối thế kỉ XVIII?",
       "o": [
@@ -893,6 +974,7 @@
       "c": 3
     },
     {
+      "id": 82,
       "type": "mcq",
       "q": "Trong các cuộc cách mạng tư sản thế kỉ XVII – XVIII, cuộc cách mạng nào đã giải quyết được vấn đề ruộng đất cho nông dân?",
       "o": [
@@ -904,6 +986,7 @@
       "c": 2
     },
     {
+      "id": 83,
       "type": "mcq",
       "q": "Cách mạng tư sản Pháp cuối thế kỉ XVIII đã mở ra thời kì thắng lợi và củng cố của chế độ nào?",
       "o": [
@@ -915,6 +998,7 @@
       "c": 1
     },
     {
+      "id": 84,
       "type": "mcq",
       "q": "Cách mạng tư sản Pháp cuối thế kỉ XVIII đã đe dọa đến sự tồn tại của các quốc gia theo chế độ nào?",
       "o": [
@@ -926,6 +1010,7 @@
       "c": 2
     },
     {
+      "id": 85,
       "type": "mcq",
       "q": "Năm 1789, sự khủng hoảng của nền tài chính quốc gia Pháp buộc vua Lu-i XVI phải làm gì?",
       "o": [
@@ -937,6 +1022,7 @@
       "c": 0
     },
     {
+      "id": 86,
       "type": "mcq",
       "q": "Trong xã hội Pháp cuối thế kỉ XVIII, mâu thuẫn giữa Đẳng cấp thứ ba với hai đẳng cấp Tăng lữ và Quý tộc là mâu thuẫn gì?",
       "o": [
@@ -948,6 +1034,7 @@
       "c": 0
     },
     {
+      "id": 87,
       "type": "mcq",
       "q": "Nguyên nhân trực tiếp dẫn tới sự bùng nổ Cách mạng tư sản Pháp cuối thế kỉ XVIII là gì?",
       "o": [
@@ -959,6 +1046,7 @@
       "c": 3
     },
     {
+      "id": 88,
       "type": "mcq",
       "q": "Vì sao Cách mạng tư sản Pháp cuối thế kỉ XVIII được coi là một cuộc đại cách mạng?",
       "o": [
@@ -970,6 +1058,7 @@
       "c": 2
     },
     {
+      "id": 89,
       "type": "mcq",
       "q": "Cách mạng tư sản Pháp đã giải quyết triệt để những nhiệm vụ dân tộc và dân chủ nào đặt ra cho nước Pháp vào cuối thế kỉ XVIII?",
       "o": [
@@ -981,6 +1070,7 @@
       "c": 3
     },
     {
+      "id": 90,
       "type": "mcq",
       "q": "Những tư tưởng tiến bộ trong trào lưu Triết học Ánh sáng ở Pháp đã được đón nhận nồng nhiệt ở nhiều nơi trên thế giới, làm cho thế kỉ XVIII đi vào lịch sử với tên gọi nào?",
       "o": [

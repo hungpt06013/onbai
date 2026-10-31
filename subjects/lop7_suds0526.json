@@ -2,6 +2,7 @@
   "fullName": "ÔN SỬ Đ/S 6.5.26",
   "questions": [
     {
+      "id": 1,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [
@@ -12,6 +13,7 @@
       ]
     },
     {
+      "id": 2,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [
@@ -22,6 +24,7 @@
       ]
     },
     {
+      "id": 3,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [
@@ -32,6 +35,7 @@
       ]
     },
     {
+      "id": 4,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [
@@ -42,6 +46,7 @@
       ]
     },
     {
+      "id": 5,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [
@@ -52,6 +57,7 @@
       ]
     },
     {
+      "id": 6,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [
@@ -62,6 +68,7 @@
       ]
     },
     {
+      "id": 7,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [
@@ -72,6 +79,7 @@
       ]
     },
     {
+      "id": 8,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [
@@ -82,6 +90,7 @@
       ]
     },
     {
+      "id": 9,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [
@@ -92,6 +101,7 @@
       ]
     },
     {
+      "id": 10,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [
@@ -102,6 +112,7 @@
       ]
     },
     {
+      "id": 11,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [
@@ -112,6 +123,7 @@
       ]
     },
     {
+      "id": 12,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [
@@ -122,6 +134,7 @@
       ]
     },
     {
+      "id": 13,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [
@@ -132,6 +145,7 @@
       ]
     },
     {
+      "id": 14,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [
@@ -142,6 +156,7 @@
       ]
     },
     {
+      "id": 15,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [
@@ -152,6 +167,7 @@
       ]
     },
     {
+      "id": 16,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [
@@ -162,6 +178,7 @@
       ]
     },
     {
+      "id": 17,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [
@@ -172,6 +189,7 @@
       ]
     },
     {
+      "id": 18,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [
@@ -182,6 +200,7 @@
       ]
     },
     {
+      "id": 19,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [
@@ -192,6 +211,7 @@
       ]
     },
     {
+      "id": 20,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [
@@ -202,6 +222,7 @@
       ]
     },
     {
+      "id": 21,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [
@@ -212,6 +233,7 @@
       ]
     },
     {
+      "id": 22,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [
@@ -222,6 +244,7 @@
       ]
     },
     {
+      "id": 23,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [
@@ -232,6 +255,7 @@
       ]
     },
     {
+      "id": 24,
       "type": "tf",
       "q": "Xác định Đ/S ý sau đây",
       "statements": [

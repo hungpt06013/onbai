@@ -2,6 +2,7 @@
   "fullName": "ÔN ĐỊA 6.5.26",
   "questions": [
     {
+      "id": 1,
       "type": "mcq",
       "q": "Diện tích của châu Mỹ là",
       "o": [
@@ -13,6 +14,7 @@
       "c": 0
     },
     {
+      "id": 2,
       "type": "mcq",
       "q": "Phía Bắc châu Mỹ tiếp giáp với",
       "o": [
@@ -24,6 +26,7 @@
       "c": 0
     },
     {
+      "id": 3,
       "type": "mcq",
       "q": "Châu Mỹ không tiếp giáp với đại dương nào?",
       "o": [
@@ -35,6 +38,7 @@
       "c": 1
     },
     {
+      "id": 4,
       "type": "mcq",
       "q": "Phía Nam của Bắc Mỹ tiếp giáp với khu vực",
       "o": [
@@ -46,6 +50,7 @@
       "c": 0
     },
     {
+      "id": 5,
       "type": "mcq",
       "q": "Hai siêu đô thị đông dân nhất ở Bắc Mỹ là",
       "o": [
@@ -57,6 +62,7 @@
       "c": 1
     },
     {
+      "id": 6,
       "type": "mcq",
       "q": "Đới khí hậu chiếm diện tích lớn nhất ở khu vực Bắc Mỹ là",
       "o": [
@@ -68,6 +74,7 @@
       "c": 1
     },
     {
+      "id": 7,
       "type": "mcq",
       "q": "Đới khí hậu nhiệt đới ở khu vực Bắc Mỹ không có đặc điểm",
       "o": [
@@ -79,6 +86,7 @@
       "c": 3
     },
     {
+      "id": 8,
       "type": "mcq",
       "q": "Đới khí hậu nhiệt đới ở khu vực Bắc Mỹ có thảm thực vật chủ yếu là",
       "o": [
@@ -90,6 +98,7 @@
       "c": 3
     },
     {
+      "id": 9,
       "type": "mcq",
       "q": "Đới khí hậu chiếm diện tích nhỏ nhất ở khu vực Nam Mỹ là",
       "o": [
@@ -101,6 +110,7 @@
       "c": 1
     },
     {
+      "id": 10,
       "type": "mcq",
       "q": "Sườn phía Tây khu vực Trung Mỹ có đặc điểm thiên nhiên là",
       "o": [
@@ -112,6 +122,7 @@
       "c": 2
     },
     {
+      "id": 11,
       "type": "mcq",
       "q": "Sườn phía Đông sơn nguyên Guyan có đặc điểm tự nhiên",
       "o": [
@@ -123,6 +134,7 @@
       "c": 0
     },
     {
+      "id": 12,
       "type": "mcq",
       "q": "Rừng A-ma-dôn có diện tích là",
       "o": [
@@ -134,6 +146,7 @@
       "c": 1
     },
     {
+      "id": 13,
       "type": "mcq",
       "q": "Braxin chiếm khoảng bao nhiêu % diện tích rừng A-ma-dôn?",
       "o": [
@@ -145,6 +158,7 @@
       "c": 3
     },
     {
+      "id": 14,
       "type": "mcq",
       "q": "Giá trị cốt lõi của rừng A-ma-dôn không có vai trò",
       "o": [
@@ -156,6 +170,7 @@
       "c": 3
     },
     {
+      "id": 15,
       "type": "mcq",
       "q": "Người bản địa ở khu vực Trung và Nam Mỹ thuộc chủng tộc",
       "o": [
@@ -167,6 +182,7 @@
       "c": 0
     },
     {
+      "id": 16,
       "type": "mcq",
       "q": "Nguyên nhân chủ yếu tạo nên sự phân hóa theo chiều đông-tây ở Trung Mỹ là",
       "o": [
@@ -178,6 +194,7 @@
       "c": 1
     },
     {
+      "id": 17,
       "type": "mcq",
       "q": "Hệ ngôn ngữ chủ yếu của Mỹ Latinh là",
       "o": [
@@ -189,6 +206,7 @@
       "c": 0
     },
     {
+      "id": 18,
       "type": "mcq",
       "q": "Mật độ dân số trung bình của Trung và nam Mỹ là khoảng",
       "o": [
@@ -200,6 +218,7 @@
       "c": 0
     },
     {
+      "id": 19,
       "type": "mcq",
       "q": "Lãnh thổ châu Đại Dương bao gồm các bộ phận nào?",
       "o": [
@@ -211,6 +230,7 @@
       "c": 0
     },
     {
+      "id": 20,
       "type": "mcq",
       "q": "Đại bộ phận lãnh thổ lục địa Ô-xtrây-li-a có khí hậu",
       "o": [

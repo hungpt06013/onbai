@@ -2,6 +2,7 @@
   "fullName": "TX2 HÓA - Bài 1, 2, 3 KHTN",
   "questions": [
     {
+      "id": 1,
       "type": "mcq",
       "q": "Quan sát hình các dụng cụ thí nghiệm. Hình 1 là hình ảnh của dụng cụ thí nghiệm nào?",
       "img": "https://i.postimg.cc/6p1dZmvY/image.png",
@@ -14,6 +15,7 @@
       "c": 0
     },
     {
+      "id": 2,
       "type": "mcq",
       "q": "Quan sát hình các dụng cụ thí nghiệm. Hình 2 là hình ảnh của dụng cụ thí nghiệm nào?",
       "img": "https://i.postimg.cc/6p1dZmvY/image.png",
@@ -26,6 +28,7 @@
       "c": 3
     },
     {
+      "id": 3,
       "type": "mcq",
       "q": "Quan sát hình các dụng cụ thí nghiệm. Hình 3 là hình ảnh của dụng cụ thí nghiệm nào?",
       "img": "https://i.postimg.cc/6p1dZmvY/image.png",
@@ -38,6 +41,7 @@
       "c": 1
     },
     {
+      "id": 4,
       "type": "mcq",
       "q": "Quan sát hình các dụng cụ thí nghiệm. Hình 4 là hình ảnh của dụng cụ thí nghiệm nào?",
       "img": "https://i.postimg.cc/6p1dZmvY/image.png",
@@ -50,6 +54,7 @@
       "c": 1
     },
     {
+      "id": 5,
       "type": "mcq",
       "q": "Quan sát hình các dụng cụ thí nghiệm. Hình 5 là hình ảnh của dụng cụ thí nghiệm nào?",
       "img": "https://i.postimg.cc/6p1dZmvY/image.png",
@@ -62,6 +67,7 @@
       "c": 1
     },
     {
+      "id": 6,
       "type": "mcq",
       "q": "Quan sát hình các dụng cụ thí nghiệm. Hình 6 là hình ảnh của dụng cụ thí nghiệm nào?",
       "img": "https://i.postimg.cc/6p1dZmvY/image.png",
@@ -74,6 +80,7 @@
       "c": 2
     },
     {
+      "id": 7,
       "type": "mcq",
       "q": "Quan sát hình các dụng cụ thí nghiệm. Dụng cụ như hình 7 có tên là gì?",
       "img": "https://i.postimg.cc/6p1dZmvY/image.png",
@@ -86,6 +93,7 @@
       "c": 2
     },
     {
+      "id": 8,
       "type": "mcq",
       "q": "Quan sát hình các dụng cụ thí nghiệm. Dụng cụ như hình 8 có tên là gì?",
       "img": "https://i.postimg.cc/6p1dZmvY/image.png",
@@ -98,6 +106,7 @@
       "c": 2
     },
     {
+      "id": 9,
       "type": "mcq",
       "q": "Ở điều kiện thường, sulfur (S) ở trạng thái gì?",
       "o": [
@@ -109,6 +118,7 @@
       "c": 0
     },
     {
+      "id": 10,
       "type": "mcq",
       "q": "Cồn được xếp vào nhóm hóa chất",
       "o": [
@@ -120,6 +130,7 @@
       "c": 0
     },
     {
+      "id": 11,
       "type": "mcq",
       "q": "Sulfuric acid (H₂SO₄) được xếp vào nhóm hóa chất",
       "o": [
@@ -131,6 +142,7 @@
       "c": 1
     },
     {
+      "id": 12,
       "type": "mcq",
       "q": "Dụng cụ đo thể tích chất lỏng là?",
       "o": [
@@ -142,6 +154,7 @@
       "c": 3
     },
     {
+      "id": 13,
       "type": "mcq",
       "q": "Công dụng của bình thủy tinh có nút nhám là",
       "o": [
@@ -153,6 +166,7 @@
       "c": 2
     },
     {
+      "id": 14,
       "type": "mcq",
       "q": "Công dụng của thìa thủy tinh là",
       "o": [
@@ -164,6 +178,7 @@
       "c": 1
     },
     {
+      "id": 15,
       "type": "mcq",
       "q": "Công dụng của ống nghiệm là",
       "o": [
@@ -175,6 +190,7 @@
       "c": 0
     },
     {
+      "id": 16,
       "type": "mcq",
       "q": "Công dụng của đèn cồn là",
       "o": [
@@ -186,6 +202,7 @@
       "c": 2
     },
     {
+      "id": 17,
       "type": "mcq",
       "q": "Khi làm thí nghiệm, dùng cặp gỗ để kẹp ống nghiệm, người ta thường:",
       "o": [
@@ -197,6 +214,7 @@
       "c": 1
     },
     {
+      "id": 18,
       "type": "mcq",
       "q": "Những dụng cụ nào sau đây trong phòng thí nghiệm thuộc loại dễ vỡ?",
       "o": [
@@ -208,6 +226,7 @@
       "c": 1
     },
     {
+      "id": 19,
       "type": "mcq",
       "q": "Điều nào sau đây cần làm khi sử dụng hóa chất thí nghiệm?",
       "o": [
@@ -219,6 +238,7 @@
       "c": 3
     },
     {
+      "id": 20,
       "type": "mcq",
       "q": "Cách làm nào dưới đây khi đun hoá chất lỏng trong ống nghiệm là đúng?",
       "o": [
@@ -230,6 +250,7 @@
       "c": 3
     },
     {
+      "id": 21,
       "type": "mcq",
       "q": "Điều nào sau đây không được làm khi sử dụng hóa chất thí nghiệm?",
       "o": [
@@ -241,6 +262,7 @@
       "c": 1
     },
     {
+      "id": 22,
       "type": "mcq",
       "q": "Có bao nhiêu ý dưới đây là quy tắc sử dụng hoá chất an toàn trong phòng thí nghiệm?\n(a). Không sử dụng hoá chất đựng trong đồ chứa không có nhãn hoặc nhãn mờ, mất chữ.\n(b). Trước khi sử dụng cần đọc cẩn nhận nhãn hóa chất và cần tìm hiểu kĩ các tính chất chất, các lưu ý, cảnh báo của mỗi loại hoá chất để thực hiện thí nghiệm an toàn.\n(c). Thực hiện thí nghiệm cẩn thận, không dùng tay trực tiếp lấy hoá chất.\n(d). Khi bị hóa chất dính vào người hoặc hoá chất bị đổ, tràn ra ngoài cần báo cáo với nhóm trưởng để được hướng dẫn xử lí.\n(e). Các hoá chất dùng xong còn thừa nên đổ trở lại bình chứa đúng với hoá chất đó để tiết kiệm.",
       "o": [
@@ -253,6 +275,7 @@
       "explain": "a, b và c đúng"
     },
     {
+      "id": 23,
       "type": "mcq",
       "q": "Có bao nhiêu câu dưới đây đúng khi nói về nguyên tắc lấy hoá chất trong phòng thí nghiệm?\n(a). Lấy hoá chất rắn ở các dạng hạt to, dày, thanh có thể dùng panh để gắp.\n(b). Lấy hoá chất rắn ở dạng hạt nhỏ hay bột phải dùng thìa nhựa để xúc.\n(c). Không được đặt lại thìa, panh, vào lọ đựng hoá chất sau khi đã sử dụng.\n(d). Lấy lượng nhỏ dung dịch thường dùng ống hút nhỏ giọt.\n(e). Rót hóa chất lỏng từ lọ cần hướng nhãn hoá chất lên phía trên để tránh các giọt hóa chất dính vào nhãn làm hỏng nhãn.\n(f). Lấy chất lỏng từ chai miệng nhỏ phải rót qua phễu hoặc qua cốc, ống đong không có mỏ.",
       "o": [
@@ -265,6 +288,7 @@
       "explain": "a, c, d và e đúng"
     },
     {
+      "id": 24,
       "type": "mcq",
       "q": "Việc nào dưới đây thuộc quy định những việc cần làm trong phòng thực hành?",
       "o": [
@@ -276,6 +300,7 @@
       "c": 1
     },
     {
+      "id": 25,
       "type": "mcq",
       "q": "Việc nào sau đây là việc không nên làm trong phòng thực hành?",
       "o": [
@@ -287,6 +312,7 @@
       "c": 0
     },
     {
+      "id": 26,
       "type": "mcq",
       "q": "Khi có hỏa hoạn trong phòng thực hành cần xử lí theo cách nào sau đây?",
       "o": [
@@ -298,6 +324,7 @@
       "c": 0
     },
     {
+      "id": 27,
       "type": "mcq",
       "q": "Việc làm nào sau đây được cho là không an toàn trong phòng thực hành?",
       "o": [
@@ -309,6 +336,7 @@
       "c": 0
     },
     {
+      "id": 28,
       "type": "mcq",
       "q": "Để đảm bảo an toàn trong phòng thực hành cần thực hiện nguyên tắc nào dưới đây?",
       "o": [
@@ -320,6 +348,7 @@
       "c": 3
     },
     {
+      "id": 29,
       "type": "mcq",
       "q": "Khi gặp sự cố mất an toàn trong phòng thực hành, em cần làm gì?",
       "o": [
@@ -331,6 +360,7 @@
       "c": 3
     },
     {
+      "id": 30,
       "type": "mcq",
       "q": "Câu nào không đúng về cách sử dụng ống nghiệm trong phòng thí nghiệm?",
       "o": [
@@ -342,6 +372,7 @@
       "c": 0
     },
     {
+      "id": 31,
       "type": "mcq",
       "q": "Khi hoà tan muối ăn vào nước đã xảy ra hiện tượng",
       "o": [
@@ -353,6 +384,7 @@
       "c": 0
     },
     {
+      "id": 32,
       "type": "mcq",
       "q": "Hiện tượng nào là hiện tượng hoá học trong các hiện tượng thiên nhiên sau đây?",
       "o": [
@@ -364,6 +396,7 @@
       "c": 2
     },
     {
+      "id": 33,
       "type": "mcq",
       "q": "Trong các quá trình sau, quá trình nào xảy ra biến đổi vật lí?",
       "o": [
@@ -375,6 +408,7 @@
       "c": 0
     },
     {
+      "id": 34,
       "type": "mcq",
       "q": "Trong các quá trình sau, quá trình nào xảy ra biến đổi vật lí?",
       "o": [
@@ -386,6 +420,7 @@
       "c": 3
     },
     {
+      "id": 35,
       "type": "mcq",
       "q": "Trong các quá trình sau, quá trình nào xảy ra biến đổi vật lí?",
       "o": [
@@ -397,6 +432,7 @@
       "c": 2
     },
     {
+      "id": 36,
       "type": "mcq",
       "q": "Trong các quá trình sau, quá trình nào xảy ra biến đổi hóa học?",
       "o": [
@@ -408,6 +444,7 @@
       "c": 1
     },
     {
+      "id": 37,
       "type": "mcq",
       "q": "Trong các quá trình sau, quá trình nào xảy ra biến đổi hóa học?",
       "o": [
@@ -419,6 +456,7 @@
       "c": 3
     },
     {
+      "id": 38,
       "type": "mcq",
       "q": "Trong các quá trình sau, quá trình nào xảy ra biến đổi hóa học?",
       "o": [
@@ -430,6 +468,7 @@
       "c": 2
     },
     {
+      "id": 39,
       "type": "mcq",
       "q": "Hiện tượng vật lí là",
       "o": [
@@ -441,6 +480,7 @@
       "c": 1
     },
     {
+      "id": 40,
       "type": "mcq",
       "q": "Dấu hiệu chính để phân biệt hiện tượng vật lý và hiện tượng hóa học là",
       "o": [
@@ -452,6 +492,7 @@
       "c": 1
     },
     {
+      "id": 41,
       "type": "mcq",
       "q": "Biến đổi hoá học khác với biến đổi vật lí là",
       "o": [
@@ -463,6 +504,7 @@
       "c": 1
     },
     {
+      "id": 42,
       "type": "mcq",
       "q": "Hiện tượng nào sau đây là hiện tượng vật lý?\n(a). Pha loãng nước muối.\n(b). Nước đá chảy thành nước lỏng.\n(c). Lưu huỳnh cháy trong không khí.\n(d). Đốt than.",
       "o": [
@@ -474,6 +516,7 @@
       "c": 3
     },
     {
+      "id": 43,
       "type": "mcq",
       "q": "Trong số các hiện tượng sau, hiện tượng nào là hiện tượng hóa học?",
       "o": [
@@ -485,6 +528,7 @@
       "c": 3
     },
     {
+      "id": 44,
       "type": "mcq",
       "q": "Trong các hiện tượng sau, hiện tượng nào không phải là hiện tượng hoá học?",
       "o": [
@@ -496,6 +540,7 @@
       "c": 2
     },
     {
+      "id": 45,
       "type": "mcq",
       "q": "Trong các hiện tượng sau, hiện tượng hóa học là",
       "o": [
@@ -507,6 +552,7 @@
       "c": 0
     },
     {
+      "id": 46,
       "type": "mcq",
       "q": "Trong các hiện tượng sau, hiện tượng vật lý là",
       "o": [
@@ -518,6 +564,7 @@
       "c": 3
     },
     {
+      "id": 47,
       "type": "mcq",
       "q": "Trong các thí nghiệm sau đây, thí nghiệm nào có sự biến đổi hoá học?",
       "o": [
@@ -529,6 +576,7 @@
       "c": 3
     },
     {
+      "id": 48,
       "type": "mcq",
       "q": "Sự biến đổi nào sau đây không phải là một biến đổi hóa học?",
       "o": [
@@ -540,6 +588,7 @@
       "c": 1
     },
     {
+      "id": 49,
       "type": "mcq",
       "q": "Các hiện tượng sau đây, hiện tượng nào có sự biến đổi hoá học:\n(a). Dây sắt được cắt nhỏ từng đoạn và tán thành đinh.\n(b). Dây xích xe đạp bằng sắt bị phủ một lớp gỉ là chất màu nâu đỏ.\n(c). Rượu để lâu trong không khí thường bị chua.\n(d). Đèn tín hiệu giao thông chuyển từ màu đỏ sang màu xanh.\n(e). Dây tóc trong bóng đèn điện nóng và sáng lên khi dòng điện đi qua.",
       "o": [
@@ -551,6 +600,7 @@
       "c": 2
     },
     {
+      "id": 50,
       "type": "mcq",
       "q": "Trong số quá trình và sự việc dưới đây, đâu là hiện tượng vật lí?\n(a). Hoà tan muối ăn vào nước ta được dung dịch muối ăn.\n(b). Hơi nước làm quay tuabin của máy phát điện.\n(c). Cồn để trong lọ không kín bị bay hơi.\n(d). Nước bị đóng băng hai cực Trái đất.\n(e). Cho vôi sống CaO hoà tan vào nước thu được Ca(OH)₂.",
       "o": [
@@ -562,6 +612,7 @@
       "c": 0
     },
     {
+      "id": 51,
       "type": "mcq",
       "q": "Nến được làm bằng parafin, khi đốt nến, xảy ra các quá trình sau\n(a). Paraffin nóng chảy.\n(b). Paraffin lỏng chuyển thành hơi.\n(c). Hơi paraffin cháy biến đổi thành khí carbon dioxide và hơi nước.\nQuá trình nào có sự biến đổi hoá học?",
       "o": [
@@ -573,6 +624,7 @@
       "c": 2
     },
     {
+      "id": 52,
       "type": "mcq",
       "q": "Khi điện cúp vào ban đêm thì người ta hay dùng nến thắp sáng. Khi đốt cháy một cây nến thì đã xảy ra những hiện tượng gì?",
       "o": [
@@ -584,6 +636,7 @@
       "c": 2
     },
     {
+      "id": 53,
       "type": "mcq",
       "q": "Cho một số hiện tượng sau.\n(a) Mài một thanh kim loại nhôm thì thu được bột nhôm.\n(b) Thanh sắt bị gỉ (sét) trong không khí sẽ chuyển dần sang màu nâu đỏ hoặc nâu đen… vì có tạo ra chất mới bám trên thanh sắt.\n(c) Khi làm lạnh nước lỏng đến 0°C thì nước đông thành nước đá.\n(d) Cho muối ăn vào nước thì thu được nước muối.\n(e) Cho vôi sống (calcium oxide) khan vào nước thì có tỏa nhiều nhiệt và thu được chất mới là vôi tôi (calcium hydroxide).\n(g) Thổi hơi thở vào nước vôi trong (dung dịch calcium hydroxide) thì có xảy ra phản ứng hóa học, tạo ra chất calcium carbonate không tan trong nước, làm cho nước vôi trong bị vẩn đục.\nSố hiện tượng hóa học là:",
       "o": [
@@ -595,6 +648,7 @@
       "c": 2
     },
     {
+      "id": 54,
       "type": "mcq",
       "q": "Phản ứng hóa học là",
       "o": [
@@ -606,6 +660,7 @@
       "c": 1
     },
     {
+      "id": 55,
       "type": "mcq",
       "q": "Điều kiện để một phản ứng hóa học xảy ra là",
       "o": [
@@ -617,6 +672,7 @@
       "c": 1
     },
     {
+      "id": 56,
       "type": "mcq",
       "q": "Dấu hiệu nào giúp ta có khẳng định có phản ứng hoá học xảy ra?",
       "o": [
@@ -628,6 +684,7 @@
       "c": 3
     },
     {
+      "id": 57,
       "type": "mcq",
       "q": "Hiện tượng nào sau đây chứng tỏ có phản ứng hoá học xảy ra?",
       "o": [
@@ -639,6 +696,7 @@
       "c": 0
     },
     {
+      "id": 58,
       "type": "mcq",
       "q": "Trong một phản ứng hoá học, các chất phản ứng và chất tạo thành phải chứa cùng",
       "o": [
@@ -650,6 +708,7 @@
       "c": 0
     },
     {
+      "id": 59,
       "type": "mcq",
       "q": "Khi xảy ra phản ứng hóa học sẽ",
       "o": [
@@ -661,6 +720,7 @@
       "c": 2
     },
     {
+      "id": 60,
       "type": "mcq",
       "q": "Khẳng định sau đây gồm 2 ý: “Trong phản ứng hóa học, chỉ có phân tử bị biến đổi còn các nguyên tử vẫn giữ nguyên, nên tổng khối lượng trước phản ứng luôn bằng tổng khối lượng sau phản ứng”. Hãy chọn phương án đúng dưới đây?",
       "o": [
@@ -672,6 +732,7 @@
       "c": 3
     },
     {
+      "id": 61,
       "type": "mcq",
       "q": "Loại hạt vi mô nào luôn được bảo toàn trong phản ứng hóa học?",
       "o": [
@@ -683,6 +744,7 @@
       "c": 1
     },
     {
+      "id": 62,
       "type": "mcq",
       "q": "Câu nào sau đây đúng?",
       "o": [
@@ -694,6 +756,7 @@
       "c": 1
     },
     {
+      "id": 63,
       "type": "mcq",
       "q": "Các câu sau, câu nào sai?",
       "o": [
@@ -705,6 +768,7 @@
       "c": 1
     },
     {
+      "id": 64,
       "type": "mcq",
       "q": "Trong một phản ứng hóa học, giữa các sản phẩm với các chất phản ứng không có sự thay đổi về",
       "o": [
@@ -716,6 +780,7 @@
       "c": 2
     },
     {
+      "id": 65,
       "type": "mcq",
       "q": "Trong các trường hợp sau, trường hợp không xảy ra phản ứng hóa học?",
       "o": [
@@ -727,6 +792,7 @@
       "c": 0
     },
     {
+      "id": 66,
       "type": "mcq",
       "q": "Trường hợp nào sau đây xảy ra phản ứng hóa học?",
       "o": [
@@ -738,6 +804,7 @@
       "c": 0
     },
     {
+      "id": 67,
       "type": "mcq",
       "q": "Trường hợp nào sau đây không xảy ra phản ứng hóa học?",
       "o": [
@@ -749,6 +816,7 @@
       "c": 2
     },
     {
+      "id": 68,
       "type": "mcq",
       "q": "Trong các quá trình sau, quá trình nào có phản ứng hóa học?\n(a). Đốt cháy than trong không khí.\n(b). Làm bay hơi nước muối biển trong quá trình sản xuất muối.\n(c). Nung đá vôi.\n(d). Nổ hầm mỏ than.\n(e). Iodine thăng hoa.",
       "o": [
@@ -760,6 +828,7 @@
       "c": 2
     },
     {
+      "id": 69,
       "type": "mcq",
       "q": "Dùng nước mưa đun sôi rồi để nguội làm nước uống, lâu ngày thấy trong ấm có những cặn trắng. Biết rằng trong nước mưa có chứa nhiều muối calcium hydrocarbonate. Muối này dễ bị nhiệt phân hủy sinh ra calcium carbonate (là chất kết tủa trắng), khí carbon dioxide và nước. Hãy cho biết dấu hiệu có phản ứng xảy ra khi đun nước sôi rồi để nguội.",
       "o": [
@@ -771,6 +840,7 @@
       "c": 1
     },
     {
+      "id": 70,
       "type": "mcq",
       "q": "Sắt (iron; ferrum) để trong không khí một thời gian sẽ bị gỉ do tác dụng với khí oxygen trong không khí tạo ra sắt từ oxide (gỉ sắt; iron(II) diiron(III) oxide; ferơ-ferric oxide; magnetit). Trong phản ứng trên, chất tham gia phản ứng là",
       "o": [
@@ -782,6 +852,7 @@
       "c": 3
     },
     {
+      "id": 71,
       "type": "mcq",
       "q": "Trong phản ứng sau chất nào là sản phẩm?\nHydrochloric acid + potassium carbonate → potassium chloride + carbon dioxide + nước",
       "o": [
@@ -793,6 +864,7 @@
       "c": 3
     },
     {
+      "id": 72,
       "type": "mcq",
       "q": "Bỏ quả trứng vào dung dịch hydrochloric acid thấy sủi bọt ở vỏ trứng. Biết rằng hydrochloric acid đã tác dụng với calcium carbonate (chất này trong vỏ trứng) tạo ra calcium chloride (chất này tan), nước và khí carbon dioxide thoát ra. Ý nào dưới đây biểu diễn đúng phương trình chữ của phản ứng trên.",
       "o": [
@@ -804,6 +876,7 @@
       "c": 0
     },
     {
+      "id": 73,
       "type": "mcq",
       "q": "Cồn cháy được là do phản ứng với khí oxygen, tạo ra khí carbon dioxide và hơi nước. Phương trình chữ nào biểu thị đúng cho phản ứng trên?",
       "o": [
@@ -815,6 +888,7 @@
       "c": 2
     },
     {
+      "id": 74,
       "type": "mcq",
       "q": "Sắt (iron) cháy trong oxygen, không có ngọn lửa nhưng sáng chói tạo ra hạt nhỏ nóng chảy màu nâu là sắt từ oxide, phương trình chữ của phản ứng hóa học là:",
       "o": [
@@ -826,6 +900,7 @@
       "c": 0
     },
     {
+      "id": 75,
       "type": "mcq",
       "q": "Đốt phosphorus trong oxygen thu được chất diphosphorus pentaoxide. Phương trình chữ nào sau đây biểu diễn đúng phản ứng hóa học trên.",
       "o": [
@@ -837,6 +912,7 @@
       "c": 2
     },
     {
+      "id": 76,
       "type": "mcq",
       "q": "Thế nào là phản ứng thu nhiệt?",
       "o": [
@@ -848,6 +924,7 @@
       "c": 2
     },
     {
+      "id": 77,
       "type": "mcq",
       "q": "Phản ứng tỏa nhiệt là gì?",
       "o": [
@@ -859,6 +936,7 @@
       "c": 0
     },
     {
+      "id": 78,
       "type": "mcq",
       "q": "Phát biểu nào sau đây là đúng?\n(a). Phản ứng tỏa nhiệt là phản ứng hóa học trong đó có sự giải phóng nhiệt năng ra môi trường.\n(b). Phản ứng thu nhiệt là phản ứng hóa học trong đó có sự hấp thụ nhiệt năng từ môi trường.\n(c). Phản ứng tỏa nhiệt là phản ứng hóa học trong đó có sự hấp thụ nhiệt năng từ môi trường.\n(d). Phản ứng thu nhiệt là phản ứng hóa học trong đó có sự giải phóng nhiệt năng từ môi trường.",
       "o": [
@@ -870,6 +948,7 @@
       "c": 3
     },
     {
+      "id": 79,
       "type": "mcq",
       "q": "Trong các quá trình sau quá trình nào là quá trình thu nhiệt?",
       "o": [
@@ -881,6 +960,7 @@
       "c": 3
     },
     {
+      "id": 80,
       "type": "mcq",
       "q": "Vì sao khi nung vôi, người ta phải xếp đá vôi lẫn với than trong lò?",
       "o": [
@@ -892,6 +972,7 @@
       "c": 1
     },
     {
+      "id": 81,
       "type": "mcq",
       "q": "Số Avogadro có giá trị là",
       "o": [
@@ -903,6 +984,7 @@
       "c": 1
     },
     {
+      "id": 82,
       "type": "mcq",
       "q": "Trong 2 mol CO₂ có bao nhiêu phân tử?",
       "o": [
@@ -914,6 +996,7 @@
       "c": 2
     },
     {
+      "id": 83,
       "type": "mcq",
       "q": "Có bao nhiêu mol phân tử oxygen có trong 1,5055.10²⁴ phân tử oxygen?",
       "o": [
@@ -925,6 +1008,7 @@
       "c": 2
     },
     {
+      "id": 84,
       "type": "mcq",
       "q": "Ở đkc, 1 mol của bất kì chất khí nào đều chiếm một thể tích là",
       "o": [
@@ -936,6 +1020,7 @@
       "c": 1
     },
     {
+      "id": 85,
       "type": "mcq",
       "q": "Nếu 2 chất khác nhau nhưng có ở cùng nhiệt độ và áp suất, có thể tích bằng nhau thì",
       "o": [
@@ -947,6 +1032,7 @@
       "c": 1
     },
     {
+      "id": 86,
       "type": "mcq",
       "q": "Thể tích (đkc) của 280 gam khí nitrogen là",
       "o": [
@@ -958,6 +1044,7 @@
       "c": 3
     },
     {
+      "id": 87,
       "type": "mcq",
       "q": "Ở điều kiện chuẩn 7,437 lít khí CO₂ có số mol là",
       "o": [
@@ -969,6 +1056,7 @@
       "c": 2
     },
     {
+      "id": 88,
       "type": "mcq",
       "q": "Cho các phát biểu sau:\n(a) Trong 2 mol khí oxygen có chứa 12,044.10²⁴ phân tử oxygen.\n(b) 12,044.10²³ nguyên tử đồng (copper) có khối lượng bằng 4,958 L khí SO₂ (đkc).\n(c) Ở điều kiện chuẩn 1,5 mol khí O₂ có khối lượng bằng 1,5 mol khí N₂.\n(d) Ở cùng điều kiện về nhiệt độ và áp suất, 2 mol khí Cl₂ có thể tích bằng 2 mol khí CO₂.\n(e) 7,2 gam magnesium có số mol gấp hai lần số mol của 6,1975 L khí H₂ (đkc).\nSố phát biểu sai là",
       "o": [
@@ -981,6 +1069,7 @@
       "explain": "a, b, c và e sai; chỉ d đúng.<br>(a) 2 mol O₂ chứa 2 × 6,022.10²³ = 12,044.10²³ phân tử (không phải 10²⁴).<br>(b) 12,044.10²³ nguyên tử Cu = 2 mol → 2 × 64 = 128 g; 4,958 L SO₂ = 0,2 mol → 0,2 × 64 = 12,8 g.<br>(c) 1,5 mol O₂ nặng 1,5 × 32 = 48 g; 1,5 mol N₂ nặng 1,5 × 28 = 42 g.<br>(d) Cùng nhiệt độ, áp suất và cùng số mol thì các khí có thể tích bằng nhau.<br>(e) n(Mg) = 7,2 : 24 = 0,3 mol; n(H₂) = 6,1975 : 24,79 = 0,25 mol → 0,3 không gấp đôi 0,25."
     },
     {
+      "id": 89,
       "type": "mcq",
       "q": "Khối lượng của 0,01 mol khí SO₂ là",
       "o": [
@@ -992,6 +1081,7 @@
       "c": 3
     },
     {
+      "id": 90,
       "type": "mcq",
       "q": "0,2 mol chất nào sau đây có khối lượng bằng 8 gam?",
       "o": [
@@ -1003,6 +1093,7 @@
       "c": 3
     },
     {
+      "id": 91,
       "type": "mcq",
       "q": "Số mol ứng với 6,4 gam khí sulfurous (SO₂) là",
       "o": [
@@ -1014,6 +1105,7 @@
       "c": 3
     },
     {
+      "id": 92,
       "type": "mcq",
       "q": "Trong 1 mol H₂O có chứa bao nhiêu nguyên tử hydrogen?",
       "o": [
@@ -1025,6 +1117,7 @@
       "c": 2
     },
     {
+      "id": 93,
       "type": "mcq",
       "q": "Trong 1 mol AlCl₃ có chứa bao nhiêu nguyên tử chlorine?",
       "o": [
@@ -1036,6 +1129,7 @@
       "c": 0
     },
     {
+      "id": 94,
       "type": "mcq",
       "q": "Ở điều kiện chuẩn, hỗn hợp gồm 12,395 L H₂ và 6,1975 L O₂ có khối lượng là",
       "o": [
@@ -1047,6 +1141,7 @@
       "c": 1
     },
     {
+      "id": 95,
       "type": "mcq",
       "q": "Ở cùng điều kiện nhiệt độ và áp suất, so sánh thể tích của 4 gam CH₄ và 1 gam H₂ ta có:",
       "o": [
@@ -1058,6 +1153,7 @@
       "c": 1
     },
     {
+      "id": 96,
       "type": "mcq",
       "q": "Thể tích (đkc) của các chất tương ứng với 4 gam H₂; 2,8 gam N₂; 6,4 gam O₂; 22 gam CO₂ là",
       "o": [
@@ -1069,6 +1165,7 @@
       "c": 3
     },
     {
+      "id": 97,
       "type": "mcq",
       "q": "Số mol của các chất tương ứng với 15 gam CaCO₃; 9,125 gam HCl; 100 gam CuO là:",
       "o": [
@@ -1080,6 +1177,7 @@
       "c": 3
     },
     {
+      "id": 98,
       "type": "mcq",
       "q": "Khối lượng của các chất tương ứng với 0,1 mol S; 0,25 mol C; 0,6 mol Mg; 0,3 mol P là:",
       "o": [
@@ -1091,6 +1189,7 @@
       "c": 0
     },
     {
+      "id": 99,
       "type": "mcq",
       "q": "Lấy cùng một lượng m gam mỗi chất sau, chất nào có số mol lớn nhất?",
       "o": [
@@ -1102,6 +1201,7 @@
       "c": 0
     },
     {
+      "id": 100,
       "type": "mcq",
       "q": "Lấy cùng một lượng m gam mỗi chất sau, chất nào có số mol nhỏ nhất?",
       "o": [
@@ -1113,6 +1213,7 @@
       "c": 3
     },
     {
+      "id": 101,
       "type": "mcq",
       "q": "Trong các khí CO₂, H₂S, N₂, H₂, SO₂, số khí nhẹ hơn không khí là",
       "o": [
@@ -1124,6 +1225,7 @@
       "c": 3
     },
     {
+      "id": 102,
       "type": "mcq",
       "q": "Trong các khí CO₂, H₂S, N₂, H₂, SO₂, N₂O, số khí nặng hơn không khí là",
       "o": [
@@ -1135,6 +1237,7 @@
       "c": 2
     },
     {
+      "id": 103,
       "type": "mcq",
       "q": "Dãy các chất khí đều nặng hơn không khí là:",
       "o": [
@@ -1146,6 +1249,7 @@
       "c": 0
     },
     {
+      "id": 104,
       "type": "mcq",
       "q": "Dãy các chất khí đều nhẹ hơn không khí là:",
       "o": [
@@ -1157,6 +1261,7 @@
       "c": 1
     },
     {
+      "id": 105,
       "type": "mcq",
       "q": "Tỉ khối của khí X đối với khí hydrogen bằng 16. Khí X có khối lượng mol bằng:",
       "o": [
@@ -1168,6 +1273,7 @@
       "c": 1
     },
     {
+      "id": 106,
       "type": "mcq",
       "q": "Một chất khí có phân tử khối bằng 14 lần khí hydrogen, khí đó là",
       "o": [
@@ -1179,6 +1285,7 @@
       "c": 0
     },
     {
+      "id": 107,
       "type": "mcq",
       "q": "Dãy nào gồm các khí đều có thể thu được vào lọ bằng phương pháp đẩy không khí, đặt úp ngược lọ (miệng lọ hướng xuống dưới)?",
       "o": [
@@ -1190,6 +1297,7 @@
       "c": 0
     },
     {
+      "id": 108,
       "type": "mcq",
       "q": "Dãy nào gồm các khí đều có thể thu được vào lọ bằng phương pháp đẩy không khí, đặt ngửa lọ (miệng lọ hướng lên trên)?",
       "o": [
@@ -1201,6 +1309,7 @@
       "c": 2
     },
     {
+      "id": 109,
       "type": "mcq",
       "q": "Trong phòng thí nghiệm, bộ dụng cụ điều chế khí có bình thu khí đặt ngửa (thu bằng phương pháp đẩy không khí) có thể dùng để điều chế những chất khí nào trong các chất khí sau: Cl₂, O₂, NH₃, SO₂, CO₂, H₂, C₂H₄?",
       "o": [
@@ -1212,6 +1321,7 @@
       "c": 3
     },
     {
+      "id": 110,
       "type": "mcq",
       "q": "Cho các phát biểu sau:\n(a) Mol là lượng chất có chứa 6,022.10²³ nguyên tử hoặc phân tử chất đó.\n(b) Ở điều kiện chuẩn, 1 mol khí bất kì đều có thể tích là 24,79 L.\n(c) Ở điều kiện chuẩn, thể tích của 6,4 gam khí oxygen bằng thể tích của 2,8 gam khí nitrogen.\n(d) Khối lượng của 0,25 mol khí CO₂ là 11 gam.\n(e) Khối lượng của 9,033.10²³ phân tử nước lớn hơn 2,7 gam nhôm (aluminium).\nSố phát biểu đúng là",
       "o": [

@@ -2,6 +2,7 @@
   "fullName": "ÔN LÝ 4.5.26",
   "questions": [
     {
+      "id": 1,
       "type": "mcq",
       "q": "Hiện tượng nào sau đây không liên quan đến năng lượng ánh sáng?",
       "o": [
@@ -13,6 +14,7 @@
       "c": 0
     },
     {
+      "id": 2,
       "type": "mcq",
       "q": "Phát biểu nào sau đây là đúng?",
       "o": [
@@ -24,6 +26,7 @@
       "c": 1
     },
     {
+      "id": 3,
       "type": "mcq",
       "q": "Một vật cản được đặt trong khoảng giữa một bóng đèn điện đang sáng và một màn chắn. Để trên màn xuất hiện bóng nửa tối thì cần có điều kiện nào sau đây?",
       "o": [
@@ -35,6 +38,7 @@
       "c": 3
     },
     {
+      "id": 4,
       "type": "mcq",
       "q": "Chùm sáng ............ gồm các tia sáng ............ trên đường truyền của chúng.\n\nChọn các cụm từ cho sau đây, điền vào chỗ trống của câu trên theo thứ tự cho đầy đủ.",
       "o": [
@@ -46,6 +50,7 @@
       "c": 2
     },
     {
+      "id": 5,
       "type": "mcq",
       "q": "Chọn câu đúng trong các câu sau",
       "o": [
@@ -57,6 +62,7 @@
       "c": 2
     },
     {
+      "id": 6,
       "type": "mcq",
       "q": "Đứng trên mặt đất, trường hợp nào dưới đây ta thấy có nguyệt thực?",
       "o": [
@@ -68,6 +74,7 @@
       "c": 1
     },
     {
+      "id": 7,
       "type": "mcq",
       "q": "Tại sao trong lớp học, người ta lắp nhiều bóng đèn ở các vị trí khác nhau mà không dùng một bóng đèn lớn?",
       "o": [
@@ -79,6 +86,7 @@
       "c": 2
     },
     {
+      "id": 8,
       "type": "mcq",
       "q": "Chọn một phát biểu không đúng về đường truyền của tia sáng",
       "o": [
@@ -90,6 +98,7 @@
       "c": 3
     },
     {
+      "id": 9,
       "type": "mcq",
       "q": "Khi có hiện tượng nhật thực, vị trí tương đối của Trái Đất, Mặt Trời và Mặt Trăng như thế nào? (coi tâm của Trái Đất, Mặt Trời và Mặt Trăng nằm trên một đường thẳng).",
       "o": [
@@ -101,6 +110,7 @@
       "c": 2
     },
     {
+      "id": 10,
       "type": "mcq",
       "q": "Chùm sáng do dây tóc bóng đèn đang bật sáng phát ra là chùm sáng",
       "o": [
@@ -112,6 +122,7 @@
       "c": 1
     },
     {
+      "id": 11,
       "type": "mcq",
       "q": "Chùm sáng song song gồm các tia sáng ................. trên đường truyền của chúng.",
       "o": [
@@ -123,6 +134,7 @@
       "c": 1
     },
     {
+      "id": 12,
       "type": "mcq",
       "q": "Chọn câu đúng.",
       "o": [
@@ -134,6 +146,7 @@
       "c": 1
     },
     {
+      "id": 13,
       "type": "mcq",
       "q": "Chọn phát biểu đúng về \"Định luật truyền thẳng của ánh sáng\".",
       "o": [
@@ -145,6 +158,7 @@
       "c": 1
     },
     {
+      "id": 14,
       "type": "mcq",
       "q": "Bóng tối là",
       "o": [
@@ -156,6 +170,7 @@
       "c": 0
     },
     {
+      "id": 15,
       "type": "mcq",
       "q": "Bóng nửa tối là",
       "o": [
@@ -167,6 +182,7 @@
       "c": 1
     },
     {
+      "id": 16,
       "type": "mcq",
       "q": "Ban đêm, trong phòng chỉ có một đèn điện. Giơ bàn tay chắn giữa đèn điện và bức tường, ta quan sát thấy trên bức tường có",
       "o": [
@@ -178,6 +194,7 @@
       "c": 3
     },
     {
+      "id": 17,
       "type": "mcq",
       "q": "Khi có hiện tượng nhật thực toàn phần xảy ra, ta thấy",
       "o": [
@@ -189,6 +206,7 @@
       "c": 1
     },
     {
+      "id": 18,
       "type": "mcq",
       "q": "Máy tính cầm tay sử dụng năng lượng mặt trời đã chuyển hóa năng lượng ánh sáng thành",
       "o": [
@@ -200,6 +218,7 @@
       "c": 0
     },
     {
+      "id": 19,
       "type": "mcq",
       "q": "Chùm ánh sáng phát ra từ đèn pha xe máy khi chiếu xa là chùm ánh sáng",
       "o": [
@@ -211,6 +230,7 @@
       "c": 2
     },
     {
+      "id": 20,
       "type": "mcq",
       "q": "Trong thí nghiệm tạo bóng với nguồn sáng rộng, kích thước bóng nửa tối thay đổi thế nào khi di chuyển màn chắn ra xa vật cản sáng?",
       "o": [
@@ -222,6 +242,7 @@
       "c": 0
     },
     {
+      "id": 21,
       "type": "mcq",
       "q": "Khi sử dụng bình nước nóng năng lượng Mặt Trời thì năng lượng ánh sáng được chuyển hóa thành dạng năng lượng nào?",
       "o": [
@@ -233,6 +254,7 @@
       "c": 2
     },
     {
+      "id": 22,
       "type": "mcq",
       "q": "Hiện tượng nào sau đây liên quan đến sự phản xạ ánh sáng?",
       "o": [
@@ -244,6 +266,7 @@
       "c": 1
     },
     {
+      "id": 23,
       "type": "mcq",
       "q": "Phát biểu nào sau đây là sai khi nói về định luật phản xạ ánh sáng?",
       "o": [
@@ -255,6 +278,7 @@
       "c": 2
     },
     {
+      "id": 24,
       "type": "mcq",
       "q": "Trường hợp nào sau đây có phản xạ khuếch tán?",
       "o": [
@@ -266,6 +290,7 @@
       "c": 2
     },
     {
+      "id": 25,
       "type": "mcq",
       "q": "Thế nào là hiện tượng phản xạ ánh sáng (phản xạ gương)?",
       "o": [
@@ -277,6 +302,7 @@
       "c": 1
     },
     {
+      "id": 26,
       "type": "mcq",
       "q": "Nếu chiếu một chùm tia tới phân kỳ vào gương phẳng thì chùm tia phản xạ sẽ là chùm tia",
       "o": [
@@ -288,6 +314,7 @@
       "c": 2
     },
     {
+      "id": 27,
       "type": "mcq",
       "q": "Nếu dùng một cái đèn pin chiếu một chùm tia tới song song vào gương phẳng thì chùm tia phản xạ sẽ là chùm tia",
       "o": [
@@ -299,6 +326,7 @@
       "c": 2
     },
     {
+      "id": 28,
       "type": "mcq",
       "q": "Một gương phẳng đặt nghiêng một góc 45° so với phương nằm ngang, chiếu một chùm tia tới song song theo phương nằm ngang lên mặt gương. Gương tạo chùm tia phản xạ",
       "o": [
@@ -311,6 +339,7 @@
       "c": 3
     },
     {
+      "id": 29,
       "type": "mcq",
       "q": "Chiếu một tia sáng tới chếch một góc 20° vào một gương phẳng (Hình 16.1) ta được tia sáng phản xạ tạo với tia sáng tới một góc",
       "o": [
@@ -323,6 +352,7 @@
       "c": 3
     },
     {
+      "id": 30,
       "type": "mcq",
       "q": "Chiếu một tia sáng lên bề mặt của một gương phẳng, ta thu được một tia phản xạ tạo với tia tới một góc 60°. Vậy góc tới bằng",
       "o": [
@@ -334,6 +364,7 @@
       "c": 0
     },
     {
+      "id": 31,
       "type": "mcq",
       "q": "Góc tới là góc hợp bởi",
       "o": [
@@ -345,6 +376,7 @@
       "c": 1
     },
     {
+      "id": 32,
       "type": "mcq",
       "q": "Một tia sáng chiếu tới gương phẳng và hợp với mặt gương một góc 30°. Góc phản xạ bằng",
       "o": [
@@ -356,6 +388,7 @@
       "c": 3
     },
     {
+      "id": 33,
       "type": "mcq",
       "q": "Góc phản xạ là góc hợp bởi",
       "o": [
@@ -367,6 +400,7 @@
       "c": 2
     },
     {
+      "id": 34,
       "type": "mcq",
       "q": "Trường hợp nào dưới đây xảy ra hiện tượng phản xạ ánh sáng?",
       "o": [
@@ -378,6 +412,7 @@
       "c": 0
     },
     {
+      "id": 35,
       "type": "mcq",
       "q": "Trong các hình vẽ sau, tia phản xạ IR ở hình vẽ nào đúng?",
       "o": [
@@ -390,6 +425,7 @@
       "c": 1
     },
     {
+      "id": 36,
       "type": "mcq",
       "q": "Chiếu một tia sáng SI lên một gương phẳng, tia phản xạ thu được nằm trong mặt phẳng nào?",
       "o": [
@@ -401,6 +437,7 @@
       "c": 3
     },
     {
+      "id": 37,
       "type": "mcq",
       "q": "Một tia sáng Mặt Trời buổi sáng lọt qua khe cửa chếch một góc 50° so với mặt đất (coi mặt đất là mặt phẳng nằm ngang). Để thu được tia sáng phản xạ rọi thẳng đứng từ trên xuống vào một cái bể cá đặt trên nền nhà, ta cần đặt một gương phẳng hợp với mặt phẳng nằm ngang một góc bao nhiêu?",
       "o": [
@@ -412,6 +449,7 @@
       "c": 3
     },
     {
+      "id": 38,
       "type": "mcq",
       "q": "Ảnh ảo là",
       "o": [
@@ -423,6 +461,7 @@
       "c": 2
     },
     {
+      "id": 39,
       "type": "mcq",
       "q": "Ảnh của một vật qua gương phẳng là",
       "o": [
@@ -434,6 +473,7 @@
       "c": 1
     },
     {
+      "id": 40,
       "type": "mcq",
       "q": "Đặc điểm nào sau đây không đúng với gương phẳng?",
       "o": [
@@ -445,6 +485,7 @@
       "c": 3
     },
     {
+      "id": 41,
       "type": "mcq",
       "q": "Chỉ ra phát biểu sai.\n\nẢnh của vật qua gương phẳng",
       "o": [
@@ -456,6 +497,7 @@
       "c": 1
     },
     {
+      "id": 42,
       "type": "mcq",
       "q": "Có mấy cách dựng ảnh của một vật qua gương phẳng?",
       "o": [
@@ -467,6 +509,7 @@
       "c": 3
     },
     {
+      "id": 43,
       "type": "mcq",
       "q": "Phát biểu nào sau đây là đúng khi nói về ảnh của một vật tạo bởi gương phẳng?",
       "o": [
@@ -478,6 +521,7 @@
       "c": 3
     },
     {
+      "id": 44,
       "type": "mcq",
       "q": "Khi đứng trước gương soi, nếu ta giơ tay phải lên thì ảnh của mình trong gương lại giơ tay trái lên. Tại sao lại như vậy?",
       "o": [
@@ -489,6 +533,7 @@
       "c": 2
     },
     {
+      "id": 45,
       "type": "mcq",
       "q": "Một điểm sáng S đặt trước một gương phẳng một khoảng d cho một ảnh S' cách gương một khoảng d'. So sánh d và d'?",
       "o": [
@@ -500,6 +545,7 @@
       "c": 0
     },
     {
+      "id": 46,
       "type": "mcq",
       "q": "Phải đặt vật AB như thế nào để ảnh A'B' cùng phương, cùng chiều với vật?",
       "o": [
@@ -511,6 +557,7 @@
       "c": 0
     },
     {
+      "id": 47,
       "type": "mcq",
       "q": "Một người đứng trước gương phẳng để soi. Khoảng cách từ người này đến bề mặt gương là 50 cm. Khoảng cách từ ảnh của người này đến gương là",
       "o": [
@@ -522,6 +569,7 @@
       "c": 0
     },
     {
+      "id": 48,
       "type": "mcq",
       "q": "Một người đứng trước gương phẳng và lùi ra xa gương thêm 10 cm, khoảng cách giữa người này và ảnh tạo bởi gương",
       "o": [
@@ -533,6 +581,7 @@
       "c": 2
     },
     {
+      "id": 49,
       "type": "mcq",
       "q": "Một người cao 1,8 m đứng trước gương phẳng, cho ảnh cách gương 1,6 m. Hỏi người đó cách gương bao nhiêu?",
       "o": [
@@ -544,6 +593,7 @@
       "c": 3
     },
     {
+      "id": 50,
       "type": "mcq",
       "q": "Không gian xung quanh nam châm, xung quanh dòng điện tồn tại",
       "o": [
@@ -555,6 +605,7 @@
       "c": 0
     },
     {
+      "id": 51,
       "type": "mcq",
       "q": "Xung quanh vật nào sau đây có từ trường?",
       "o": [
@@ -566,6 +617,7 @@
       "c": 0
     },
     {
+      "id": 52,
       "type": "mcq",
       "q": "Cung cấp điện vào hai đầu của đoạn dây dẫn, đặt kim nam châm sao cho trục của kim nam châm song song với trục của dây dẫn. Khi đóng mạch điện có hiện tượng gì xảy ra với kim nam châm?",
       "o": [
@@ -578,6 +630,7 @@
       "c": 3
     },
     {
+      "id": 53,
       "type": "mcq",
       "q": "Từ phổ là",
       "o": [
@@ -589,6 +642,7 @@
       "c": 0
     },
     {
+      "id": 54,
       "type": "mcq",
       "q": "Hình dưới đây cho biết một số đường sức từ của nam châm thẳng. Vị trí nào dưới đây vẽ đúng hướng của kim nam châm?",
       "o": [
@@ -601,6 +655,7 @@
       "c": 0
     },
     {
+      "id": 55,
       "type": "mcq",
       "q": "Hình dưới đây cho biết một số đường sức từ của nam châm thẳng. Hãy xác định tên hai cực của nam châm dưới đây?",
       "o": [
@@ -613,6 +668,7 @@
       "c": 1
     },
     {
+      "id": 56,
       "type": "mcq",
       "q": "Nam châm hút mạnh nhất ở vị trí nào?",
       "o": [
@@ -625,6 +681,7 @@
       "c": 0
     },
     {
+      "id": 57,
       "type": "mcq",
       "q": "Nam châm có thể hút vật nào dưới đây?",
       "o": [
@@ -636,6 +693,7 @@
       "c": 3
     },
     {
+      "id": 58,
       "type": "mcq",
       "q": "Trong y tế, để lấy các mạt sắt nhỏ bám trên bề mặt mắt bệnh nhân một cách an toàn, bác sĩ thường sử dụng dụng cụ nào sau đây?",
       "o": [
@@ -647,6 +705,7 @@
       "c": 2
     },
     {
+      "id": 59,
       "type": "mcq",
       "q": "Lực tác dụng của nam châm lên các vật có từ tính và các nam châm khác gọi là gì?",
       "o": [
@@ -658,6 +717,7 @@
       "c": 3
     },
     {
+      "id": 60,
       "type": "mcq",
       "q": "Chọn đáp án sai.",
       "o": [
@@ -669,6 +729,7 @@
       "c": 2
     },
     {
+      "id": 61,
       "type": "mcq",
       "q": "Ở bên ngoài thanh nam châm, đường sức từ là",
       "o": [
@@ -680,6 +741,7 @@
       "c": 2
     },
     {
+      "id": 62,
       "type": "mcq",
       "q": "La bàn là dụng cụ dùng để làm gì?",
       "o": [
@@ -691,6 +753,7 @@
       "c": 3
     },
     {
+      "id": 63,
       "type": "mcq",
       "q": "Cấu tạo của la bàn gồm những bộ phận nào?",
       "o": [
@@ -702,6 +765,7 @@
       "c": 1
     },
     {
+      "id": 64,
       "type": "mcq",
       "q": "Sắp xếp các bước theo đúng thứ tự thực hiện sử dụng la bàn xác định hướng địa lí?\n\n(1) Đọc giá trị của góc tạo bởi hướng cần xác định (hướng trước mặt) so với hướng bắc trên mặt chia độ của la bàn để tìm hướng cần xác định.\n\n(2) Đặt la bàn cách xa nam châm và các vật liệu có tính chất từ, để tránh tác động của các vật này lên kim la bàn.\n\n(3) Giữ la bàn trong lòng bàn tay hoặc đặt trên một mặt bàn sao cho la bàn nằm ngang trước mặt. Sau đó xoay vỏ của la bàn sao cho đầu kim màu đỏ chỉ hướng Bắc trùng khít với vạch chữ N trên la bàn.",
       "o": [
@@ -713,6 +777,7 @@
       "c": 2
     },
     {
+      "id": 65,
       "type": "mcq",
       "q": "Có thể tạo ra từ phổ bằng cách nào dưới đây?",
       "o": [
@@ -724,6 +789,7 @@
       "c": 0
     },
     {
+      "id": 66,
       "type": "mcq",
       "q": "Kim nam châm thử là dụng cụ thường được dùng để nhận biết sự tồn tại của từ trường. Đặt một kim nam châm thử (có thể quay tự do trên mũi nhọn) vào một vùng không gian bất kỳ, dấu hiệu nào sau đây chứng tỏ vùng không gian đó có từ trường?",
       "o": [
@@ -735,6 +801,7 @@
       "c": 1
     },
     {
+      "id": 67,
       "type": "mcq",
       "q": "Một nam châm vĩnh cửu có đặc tính nào dưới đây?",
       "o": [
@@ -746,6 +813,7 @@
       "c": 2
     },
     {
+      "id": 68,
       "type": "mcq",
       "q": "Khi nào hai thanh nam châm hút nhau?",
       "o": [
@@ -757,6 +825,7 @@
       "c": 2
     },
     {
+      "id": 69,
       "type": "mcq",
       "q": "Trong những vật liệu sau đây, nam châm không hút vật liệu nào?",
       "o": [
@@ -768,6 +837,7 @@
       "c": 0
     },
     {
+      "id": 70,
       "type": "mcq",
       "q": "Mỗi thanh nam châm vĩnh cửu thường có mấy cực?",
       "o": [
@@ -779,6 +849,7 @@
       "c": 1
     },
     {
+      "id": 71,
       "type": "mcq",
       "q": "Trên thanh nam châm chỗ nào hút sắt mạnh nhất?",
       "o": [
@@ -790,6 +861,7 @@
       "c": 2
     },
     {
+      "id": 72,
       "type": "mcq",
       "q": "Để một kim la bàn (kim nam châm) trên mặt bàn gỗ, cách xa các thiết bị điện và các vật có từ tính. Khi kim la bàn đứng yên, nó sẽ",
       "o": [
@@ -801,6 +873,7 @@
       "c": 1
     },
     {
+      "id": 73,
       "type": "mcq",
       "q": "Một thanh nam châm bị tróc màu sơn đánh dấu hai cực, có thể sử dụng dụng cụ nào sau đây để xác định tên hai cực của nam châm?",
       "o": [
@@ -812,6 +885,7 @@
       "c": 0
     },
     {
+      "id": 74,
       "type": "mcq",
       "q": "Có hai thanh kim loại luôn hút nhau bất kể đưa đầu nào của chúng lại gần nhau. Kết luận nào sau đây là đúng?",
       "o": [

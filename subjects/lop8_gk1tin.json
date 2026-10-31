@@ -2,6 +2,7 @@
   "fullName": "GK1 Tin - Bài 1, 2, 4",
   "questions": [
     {
+      "id": 1,
       "type": "mcq",
       "q": "Điền vào chỗ (...)\nÝ tưởng cơ giới hóa việc tính toán đóng vai trò quan trọng trong lịch sử phát triển của ........................ . Năm 1642, nhà bác học Blaise Pascal đã sáng chế ra .......................................... Pascaline.",
       "o": [
@@ -13,6 +14,7 @@
       "c": 3
     },
     {
+      "id": 2,
       "type": "mcq",
       "q": "Đây là hình ảnh của?",
       "img": "https://i.postimg.cc/wBvDDwBs/image.png",
@@ -25,6 +27,7 @@
       "c": 0
     },
     {
+      "id": 3,
       "type": "mcq",
       "q": "Máy tính trong dự án của Babbage có những đặc điểm gì?",
       "o": [
@@ -36,6 +39,7 @@
       "c": 3
     },
     {
+      "id": 4,
       "type": "mcq",
       "q": "Nguyên lí thiết kế máy tính của Babbage là?",
       "o": [
@@ -47,6 +51,7 @@
       "c": 3
     },
     {
+      "id": 5,
       "type": "mcq",
       "q": "Đây là hình ảnh của?",
       "img": "https://i.postimg.cc/RZCtzgwM/image.png",
@@ -59,6 +64,7 @@
       "c": 0
     },
     {
+      "id": 6,
       "type": "mcq",
       "q": "Trong lịch sử máy tính điện tử, có bao nhiêu thế hệ máy tính?",
       "o": [
@@ -70,6 +76,7 @@
       "c": 2
     },
     {
+      "id": 7,
       "type": "mcq",
       "q": "Các thế hệ máy tính gắn liền với các tiến bộ công nghệ nào?",
       "o": [
@@ -81,6 +88,7 @@
       "c": 3
     },
     {
+      "id": 8,
       "type": "mcq",
       "q": "Những chiếc máy tính phát minh sau đó hướng tới đặc điểm gì?",
       "o": [
@@ -92,6 +100,7 @@
       "c": 3
     },
     {
+      "id": 9,
       "type": "mcq",
       "q": "Sự phát triển của máy tính mang lại điều gì?",
       "o": [
@@ -103,6 +112,7 @@
       "c": 3
     },
     {
+      "id": 10,
       "type": "mcq",
       "q": "Lựa chọn phương án sai.\nMáy tính ngày càng trở nên gọn nhẹ hơn, nhanh hơn, thông minh hơn bởi vì:",
       "o": [
@@ -114,6 +124,7 @@
       "c": 2
     },
     {
+      "id": 11,
       "type": "mcq",
       "q": "Phát biểu nào sau đây là sai?",
       "o": [
@@ -125,6 +136,7 @@
       "c": 0
     },
     {
+      "id": 12,
       "type": "mcq",
       "q": "Thế hệ thứ nhất trong lịch sử phát triển máy tính diễn ra vào năm nào?",
       "o": [
@@ -136,6 +148,7 @@
       "c": 2
     },
     {
+      "id": 13,
       "type": "mcq",
       "q": "Thế hệ thứ hai trong lịch sử phát triển máy tính diễn ra vào năm nào?",
       "o": [
@@ -147,6 +160,7 @@
       "c": 3
     },
     {
+      "id": 14,
       "type": "mcq",
       "q": "Thế hệ thứ ba trong lịch sử phát triển máy tính diễn ra vào năm nào?",
       "o": [
@@ -158,6 +172,7 @@
       "c": 0
     },
     {
+      "id": 15,
       "type": "mcq",
       "q": "Thế hệ thứ tư trong lịch sử phát triển máy tính diễn ra vào năm nào?",
       "o": [
@@ -169,6 +184,7 @@
       "c": 2
     },
     {
+      "id": 16,
       "type": "mcq",
       "q": "Thế hệ thứ năm trong lịch sử phát triển máy tính diễn ra vào năm nào?",
       "o": [
@@ -180,6 +196,7 @@
       "c": 1
     },
     {
+      "id": 17,
       "type": "mcq",
       "q": "Những phát biểu nào sau đây là sai?\n1 – Kể từ khi ra đời, máy tính nói riêng và Tin học nói chung đã tác động mạnh mẽ, rộng khắp đến xã hội loài người.\n2 – Máy tính làm thay đổi cách thức con người thu thập, lưu trữ, xử lí, chia sẻ thông tin.\n3 – Các thiết bị thông minh không phải là thành phần của hệ thống thông minh.\n4 – Trong nông nghiệp, hệ thống thông minh cho phép tự động thực hiện việc chăm sóc phù hợp với từng thời kì phát triển của cây trồng, vật nuôi.\n5 – Trong công nghiệp, đã xuất hiện những nhà máy thông minh được tự động hóa hoàn toàn, không có công nhân làm việc trong nhà máy.\n6 – Cách mạng công nghiệp 4.0 và kinh tế tri thức đã, đang và sẽ mang lại nhiều thay đổi to lớn hơn nữa cho xã hội loài người.\n7 – Yếu tố quan trọng nhất trong kinh tế tri thức là các hệ thống máy tính.",
       "o": [
@@ -191,6 +208,7 @@
       "c": 2
     },
     {
+      "id": 18,
       "type": "mcq",
       "q": "Hãy ghép nối mỗi ví dụ ở cột bên phải với một lĩnh vực ở cột bên trái cho phù hợp.",
       "table": {
@@ -238,6 +256,7 @@
       "c": 1
     },
     {
+      "id": 19,
       "type": "mcq",
       "q": "Thông tin kĩ thuật số là",
       "o": [
@@ -249,6 +268,7 @@
       "c": 3
     },
     {
+      "id": 20,
       "type": "mcq",
       "q": "Internet là",
       "o": [
@@ -260,6 +280,7 @@
       "c": 0
     },
     {
+      "id": 21,
       "type": "mcq",
       "q": "Đặc điểm của thông tin trên Internet là?",
       "o": [
@@ -271,6 +292,7 @@
       "c": 3
     },
     {
+      "id": 22,
       "type": "mcq",
       "q": "Em hãy chọn phương án ghép đúng.\nThông tin số được nhiều tổ chức và cá nhân lưu trữ với dung lượng rất lớn, ........",
       "o": [
@@ -282,6 +304,7 @@
       "c": 2
     },
     {
+      "id": 23,
       "type": "mcq",
       "q": "Thông tin số có những đặc điểm chính là?",
       "o": [
@@ -293,6 +316,7 @@
       "c": 2
     },
     {
+      "id": 24,
       "type": "mcq",
       "q": "Đặc điểm nào sau đây không thuộc về thông tin số?",
       "o": [
@@ -304,6 +328,7 @@
       "c": 1
     },
     {
+      "id": 25,
       "type": "mcq",
       "q": "Một số yếu tố nhận biết độ tin cậy của thông tin gồm",
       "o": [
@@ -315,6 +340,7 @@
       "c": 3
     },
     {
+      "id": 26,
       "type": "mcq",
       "q": "Thông tin đáng tin cậy giúp em điều gì?",
       "o": [
@@ -326,6 +352,7 @@
       "c": 3
     },
     {
+      "id": 27,
       "type": "mcq",
       "q": "Dưới đây là mô tả của yếu tố nào?\nNgười cung cấp thông tin, có uy tín, trách nhiệm, kinh nghiệm, trình độ chuyên môn sâu về lĩnh vực của bài viết.",
       "o": [
@@ -337,6 +364,7 @@
       "c": 1
     },
     {
+      "id": 28,
       "type": "mcq",
       "q": "Thông tin không đáng tin cậy có thể là?",
       "o": [
@@ -348,6 +376,7 @@
       "c": 3
     },
     {
+      "id": 29,
       "type": "mcq",
       "q": "Xác định nguồn thông tin là?",
       "o": [
@@ -359,6 +388,7 @@
       "c": 0
     },
     {
+      "id": 30,
       "type": "mcq",
       "q": "Học sinh ở cuối năm học lớp 9 thường cần tìm hiểu thông tin tuyển sinh vào lớp 10. Giữa thông tin tìm được từ hai nguồn sau đây, thông tin nào đáng tin cậy hơn?",
       "o": [
@@ -368,6 +398,7 @@
       "c": 1
     },
     {
+      "id": 31,
       "type": "mcq",
       "q": "Theo em, trong hoạt động thường xuyên hằng ngày, các tổ chức (cơ quan, doanh nghiệp) sử dụng thông tin từ nguồn nào sau đây?",
       "o": [
@@ -379,6 +410,7 @@
       "c": 2
     },
     {
+      "id": 32,
       "type": "mcq",
       "q": "Để tìm hiểu về cách sử dụng một chiếc máy ảnh mới, nguồn thông tin nào sau đây cần được tham khảo nhất?",
       "o": [
@@ -390,6 +422,7 @@
       "c": 1
     },
     {
+      "id": 33,
       "type": "mcq",
       "q": "Để tìm hiểu về một đội bóng đá ở châu Phi, nguồn thông tin nào sau đây đáng tin cậy nhất?",
       "o": [
@@ -401,6 +434,7 @@
       "c": 2
     },
     {
+      "id": 34,
       "type": "mcq",
       "q": "Vì sao nói thời điểm công bố thông tin quan trọng?",
       "o": [
@@ -412,6 +446,7 @@
       "c": 2
     },
     {
+      "id": 35,
       "type": "mcq",
       "q": "Thông tin trong những trường hợp nào sau đây là không đáng tin cậy?",
       "o": [
@@ -423,6 +458,7 @@
       "c": 1
     },
     {
+      "id": 36,
       "type": "mcq",
       "q": "Điền vào chỗ (...).\nPháp luật quy định rõ những hành vi nào là ........................ pháp luật, những hành vi nào bị cấm. Những hành vi khác không phù hợp với truyền thống tốt đẹp, lợi ích chung của cộng đồng hay ...................... được gọi là hành vi thiếu văn hóa, ..............................",
       "o": [
@@ -434,6 +470,7 @@
       "c": 3
     },
     {
+      "id": 37,
       "type": "mcq",
       "q": "Những hành vi nào biểu hiện vi phạm khi sử dụng công nghệ kĩ thuật số?",
       "o": [
@@ -445,6 +482,7 @@
       "c": 3
     },
     {
+      "id": 38,
       "type": "mcq",
       "q": "Hành động nào sau đây không vi phạm đạo đức và pháp luật?",
       "o": [
@@ -456,6 +494,7 @@
       "c": 2
     },
     {
+      "id": 39,
       "type": "mcq",
       "q": "Những lưu ý để tránh các vi phạm khi sử dụng công nghệ kĩ thuật số là?",
       "o": [
@@ -467,6 +506,7 @@
       "c": 3
     },
     {
+      "id": 40,
       "type": "mcq",
       "q": "Thế nào là vi phạm bản quyền?",
       "o": [
@@ -478,6 +518,7 @@
       "c": 1
     },
     {
+      "id": 41,
       "type": "mcq",
       "q": "Đâu là sản phẩm số?",
       "o": [
@@ -489,6 +530,7 @@
       "c": 3
     },
     {
+      "id": 42,
       "type": "mcq",
       "q": "Mục đích của sản phẩm số là gì?",
       "o": [
@@ -500,6 +542,7 @@
       "c": 2
     },
     {
+      "id": 43,
       "type": "mcq",
       "q": "Những hành vi nào không nên làm khi sử dụng công nghệ kĩ thuật số?",
       "o": [
@@ -511,6 +554,7 @@
       "c": 3
     },
     {
+      "id": 44,
       "type": "mcq",
       "q": "Những hành vi nào nên làm khi sử dụng công nghệ kĩ thuật số?",
       "o": [
@@ -522,6 +566,7 @@
       "c": 1
     },
     {
+      "id": 45,
       "type": "mcq",
       "q": "Em hãy xác định hành động nào là vi phạm đạo đức, pháp luật và văn hóa khi sử dụng công nghệ kĩ thuật số?",
       "o": [
@@ -533,6 +578,7 @@
       "c": 3
     },
     {
+      "id": 46,
       "type": "mcq",
       "q": "Hãy chỉ ra những hành vi vi phạm bản quyền trong các tình huống dưới đây.",
       "o": [
@@ -544,6 +590,7 @@
       "c": 2
     },
     {
+      "id": 47,
       "type": "mcq",
       "q": "Em đồng ý, không đồng ý hay đồng ý một phần với ý kiến sau.\nChúng ta có thể sử dụng điện thoại di động khi đang lái xe miễn là không gây tai nạn giao thông.",
       "o": [
@@ -555,6 +602,7 @@
       "c": 1
     },
     {
+      "id": 48,
       "type": "mcq",
       "q": "Đâu là hành vi không có đạo đức, văn hóa khi sử dụng công nghệ kĩ thuật số?",
       "o": [
@@ -566,6 +614,7 @@
       "c": 2
     },
     {
+      "id": 49,
       "type": "mcq",
       "q": "Em hãy chỉ ra hành vi vi phạm bản quyền, vi phạm đạo đức trong tình huống dưới đây.\nVân mua cuốn sách các bài văn hay trong hiệu sách. Vân dùng điện thoại di động chụp một bài văn trong cuốn sách và gửi cho Long. Long sử dụng phần mềm Word để gõ lại, chỉnh sửa, cắt xén bài văn này và nộp cho cô giáo để chấm điểm.",
       "o": [
@@ -577,6 +626,7 @@
       "c": 2
     },
     {
+      "id": 50,
       "type": "mcq",
       "q": "Tình huống nào dưới đây là vi phạm quy định pháp luật?",
       "o": [
@@ -588,6 +638,7 @@
       "c": 0
     },
     {
+      "id": 51,
       "type": "mcq",
       "q": "Người được mệnh danh là một trong những người tiên phong, giữ vai trò quyết định trong việc đưa máy tính cá nhân đến với mọi nhà thông qua phần mềm là",
       "o": [
@@ -599,6 +650,7 @@
       "c": 0
     },
     {
+      "id": 52,
       "type": "mcq",
       "q": "Kết quả tính toán của máy tính thế hệ thứ nhất được thể hiện",
       "o": [
@@ -610,6 +662,7 @@
       "c": 2
     },
     {
+      "id": 53,
       "type": "mcq",
       "q": "Chiếc máy tính Macintosh (Mac) ra đời năm 1984 của hãng Apple nổi tiếng vì là dòng máy tính cá nhân đầu tiên sở hữu đặc điểm tiên tiến thời bấy giờ là",
       "o": [
@@ -621,6 +674,7 @@
       "c": 0
     },
     {
+      "id": 54,
       "type": "mcq",
       "q": "Nguyên lý đã đặt nền móng cho sự phát triển của máy tính điện tử là",
       "o": [
@@ -632,6 +686,7 @@
       "c": 1
     },
     {
+      "id": 55,
       "type": "mcq",
       "q": "Đặc điểm của thông tin số là",
       "o": [
@@ -643,6 +698,7 @@
       "c": 3
     },
     {
+      "id": 56,
       "type": "mcq",
       "q": "Theo lịch sử phát triển, máy tính thay đổi về kích thước là",
       "o": [
@@ -654,6 +710,7 @@
       "c": 1
     },
     {
+      "id": 57,
       "type": "mcq",
       "q": "Khi tìm kiếm và sử dụng thông tin số trên Internet, học sinh cần có lưu ý quan trọng để đảm bảo tính an toàn và chính xác là",
       "o": [
@@ -665,6 +722,7 @@
       "c": 3
     },
     {
+      "id": 58,
       "type": "mcq",
       "q": "Công nghệ được sử dụng ở thế hệ máy tính thứ năm là",
       "o": [
@@ -676,6 +734,7 @@
       "c": 1
     },
     {
+      "id": 59,
       "type": "mcq",
       "q": "Có những thông tin đáng tin cậy mang lại giá trị cao được khai phá từ",
       "o": [
@@ -687,6 +746,7 @@
       "c": 0
     },
     {
+      "id": 60,
       "type": "mcq",
       "q": "Dòng máy tính cá nhân ra đời vào năm 1981 của tập đoàn IBM đã tạo nên cú hích lớn, biến máy tính cá nhân trở nên phổ biến trong mọi văn phòng và doanh nghiệp là",
       "o": [
@@ -698,6 +758,7 @@
       "c": 2
     },
     {
+      "id": 61,
       "type": "mcq",
       "q": "Theo lịch sử phát triển, máy tính thay đổi về điện năng tiêu thụ là",
       "o": [
@@ -709,6 +770,7 @@
       "c": 1
     },
     {
+      "id": 62,
       "type": "mcq",
       "q": "Thông tin có độ tin cậy thấp là",
       "o": [
@@ -720,6 +782,7 @@
       "c": 3
     },
     {
+      "id": 63,
       "type": "mcq",
       "q": "Thông tin số được tạo ra với tốc độ ngày càng tăng vì",
       "o": [
@@ -731,6 +794,7 @@
       "c": 3
     },
     {
+      "id": 64,
       "type": "mcq",
       "q": "Các công cụ giao tiếp người - máy tính có đặc điểm?",
       "o": [
@@ -742,6 +806,7 @@
       "c": 1
     },
     {
+      "id": 65,
       "type": "mcq",
       "q": "Nguồn thông tin đáng tin cậy là",
       "o": [
@@ -753,6 +818,7 @@
       "c": 3
     },
     {
+      "id": 66,
       "type": "mcq",
       "q": "Dữ liệu số hiện nay nhiều hơn so với dữ liệu truyền thống vì",
       "o": [
@@ -764,6 +830,7 @@
       "c": 2
     },
     {
+      "id": 67,
       "type": "mcq",
       "q": "Thông tin số có tính bản quyền vì",
       "o": [
@@ -775,6 +842,7 @@
       "c": 0
     },
     {
+      "id": 68,
       "type": "mcq",
       "q": "Công nghệ được sử dụng ở thế hệ máy tính thứ tư là",
       "o": [
@@ -786,6 +854,7 @@
       "c": 1
     },
     {
+      "id": 69,
       "type": "mcq",
       "q": "Thuật ngữ được dùng để chỉ môi trường số, nơi các thông tin số được lưu trữ, truyền tải và chia sẻ thông qua các mạng máy tính là",
       "o": [
@@ -797,6 +866,7 @@
       "c": 0
     },
     {
+      "id": 70,
       "type": "mcq",
       "q": "Một trong những đặc điểm cơ bản của thông tin số là",
       "o": [
@@ -808,6 +878,7 @@
       "c": 2
     },
     {
+      "id": 71,
       "type": "mcq",
       "q": "Các hành vi vi phạm đạo đức, pháp luật khi sử dụng công nghệ kĩ thuật số em có thể gặp là?",
       "o": [
@@ -819,6 +890,7 @@
       "c": 3
     },
     {
+      "id": 72,
       "type": "mcq",
       "q": "Các trung tâm dữ liệu có thể lên đến?",
       "o": [
@@ -830,6 +902,7 @@
       "c": 0
     },
     {
+      "id": 73,
       "type": "mcq",
       "q": "Theo em, máy tính thu nhỏ dần kích thước tới mức như một điện thoại thông minh thì có ưu điểm gì?",
       "o": [
@@ -841,6 +914,7 @@
       "c": 3
     },
     {
+      "id": 74,
       "type": "mcq",
       "q": "Đâu không là công cụ giao tiếp giữa người với máy tính?",
       "o": [
@@ -852,6 +926,7 @@
       "c": 3
     },
     {
+      "id": 75,
       "type": "mcq",
       "q": "Trong lĩnh vực giao thông, máy tính đã đem lại tiện ích nào dưới đây?",
       "o": [
@@ -863,6 +938,7 @@
       "c": 3
     },
     {
+      "id": 76,
       "type": "mcq",
       "q": "Sự phát triển tiện ích giao tiếp người - máy tính không được thể hiện qua?",
       "o": [
@@ -874,6 +950,7 @@
       "c": 2
     },
     {
+      "id": 77,
       "type": "mcq",
       "q": "Sự phát triển của máy tính khi so sánh máy tính điện tử ENIAC với máy tính bảng mỏng nhẹ hiện nay là?",
       "o": [
@@ -885,6 +962,7 @@
       "c": 3
     },
     {
+      "id": 78,
       "type": "mcq",
       "q": "Trong các câu sau:\n1 – Thế hệ máy tính thứ năm thuộc giai đoạn năm 1990 đến năm 2008.\n2 – Siêu máy tính CRAY-X-MP thuộc máy tính ở thế hệ thứ tư.\n3 – Năm 1971, máy tính cá nhân đầu tiên ra đời.\n4 – Thế hệ máy tính thứ ba sử dụng công nghệ mạch tích hợp IC.\n5 – Máy tính IBM-360 đánh dấu sự xuất hiện của máy tính có ổ đĩa.\nTrong các câu trên, có bao nhiêu câu ĐÚNG?",
       "o": [
@@ -897,6 +975,7 @@
       "explain": "Ý 2, 3, 4 đúng"
     },
     {
+      "id": 79,
       "type": "mcq",
       "q": "Máy tính Pascaline thực hiện được phép tính nào?",
       "o": [
@@ -908,6 +987,7 @@
       "c": 0
     },
     {
+      "id": 80,
       "type": "mcq",
       "q": "Các máy tính thế hệ thứ nhất có đặc điểm",
       "o": [
@@ -919,6 +999,7 @@
       "c": 3
     },
     {
+      "id": 81,
       "type": "mcq",
       "q": "Máy tính cá nhân ra đời tại thế hệ máy tính thứ mấy?",
       "o": [
@@ -930,6 +1011,7 @@
       "c": 0
     },
     {
+      "id": 82,
       "type": "mcq",
       "q": "Điền vào chỗ trống: Có được thông tin .......... là một thách thức?",
       "o": [
@@ -941,6 +1023,7 @@
       "c": 3
     },
     {
+      "id": 83,
       "type": "mcq",
       "q": "Thiết bị số ghi lại lịch sử làm việc thành các tệp có đuôi tệp là?",
       "o": [
@@ -952,6 +1035,7 @@
       "c": 2
     },
     {
+      "id": 84,
       "type": "mcq",
       "q": "Hành vi vi phạm pháp luật và vô đạo đức là?",
       "o": [
@@ -963,6 +1047,7 @@
       "c": 3
     },
     {
+      "id": 85,
       "type": "mcq",
       "q": "Dữ liệu số được sử dụng trong lĩnh vực nào?",
       "o": [
@@ -974,6 +1059,7 @@
       "c": 3
     },
     {
+      "id": 86,
       "type": "mcq",
       "q": "Chọn phát biểu đúng?",
       "o": [
@@ -985,6 +1071,7 @@
       "c": 1
     },
     {
+      "id": 87,
       "type": "mcq",
       "q": "Vì sao máy tính cá nhân ngày càng trở nên thông dụng?",
       "o": [
@@ -996,6 +1083,7 @@
       "c": 3
     },
     {
+      "id": 88,
       "type": "mcq",
       "q": "Máy tính góp phần thay đổi cuộc sống con người trong",
       "o": [
@@ -1007,6 +1095,7 @@
       "c": 3
     },
     {
+      "id": 89,
       "type": "mcq",
       "q": "Vì sao em cần bảo đảm được sản phẩm số do bản thân tạo ra?",
       "o": [
@@ -1018,6 +1107,7 @@
       "c": 3
     },
     {
+      "id": 90,
       "type": "mcq",
       "q": "Ở thế hệ máy tính thứ nhất thì công nghệ nào được sử dụng?",
       "o": [
@@ -1029,6 +1119,7 @@
       "c": 1
     },
     {
+      "id": 91,
       "type": "mcq",
       "q": "Trong các câu sau, câu nào phát biểu sai?",
       "o": [
@@ -1040,6 +1131,7 @@
       "c": 0
     },
     {
+      "id": 92,
       "type": "mcq",
       "q": "Dữ liệu dạng chữ và số thường lưu trong tệp có phần mở rộng là?",
       "o": [
@@ -1051,6 +1143,7 @@
       "c": 1
     },
     {
+      "id": 93,
       "type": "mcq",
       "q": "Đáp án nào dưới đây thể hiện sự phát triển của các công cụ giao tiếp người - máy tính?",
       "o": [
@@ -1062,6 +1155,7 @@
       "c": 3
     },
     {
+      "id": 94,
       "type": "mcq",
       "q": "Hành vi vi phạm đạo đức và thiếu văn hóa là?",
       "o": [
@@ -1073,6 +1167,7 @@
       "c": 3
     },
     {
+      "id": 95,
       "type": "mcq",
       "q": "Việc gì đang là một thách thức cho người tìm kiếm thông tin?",
       "o": [
@@ -1084,6 +1179,7 @@
       "c": 2
     },
     {
+      "id": 96,
       "type": "mcq",
       "q": "Đâu không là đặc điểm của thông tin số?",
       "o": [
@@ -1095,6 +1191,7 @@
       "c": 2
     },
     {
+      "id": 97,
       "type": "mcq",
       "q": "Sản phẩm số là",
       "o": [
@@ -1106,6 +1203,7 @@
       "c": 3
     },
     {
+      "id": 98,
       "type": "mcq",
       "q": "Thông tin số có thể thể hiện dưới dạng nào?",
       "o": [
@@ -1117,6 +1215,7 @@
       "c": 3
     },
     {
+      "id": 99,
       "type": "mcq",
       "q": "Vì sao thông tin số chiếm tỉ lệ rất lớn?",
       "o": [
@@ -1128,6 +1227,7 @@
       "c": 0
     },
     {
+      "id": 100,
       "type": "mcq",
       "q": "Năm thế hệ của máy tính điện tử được đánh dấu bởi?",
       "o": [
@@ -1139,6 +1239,7 @@
       "c": 3
     },
     {
+      "id": 101,
       "type": "mcq",
       "q": "Vì sao thông tin số rất đa dạng?",
       "o": [
@@ -1150,6 +1251,7 @@
       "c": 0
     },
     {
+      "id": 102,
       "type": "mcq",
       "q": "Vì sao thông tin số có độ tin cậy khác nhau?",
       "o": [
@@ -1161,6 +1263,7 @@
       "c": 0
     },
     {
+      "id": 103,
       "type": "mcq",
       "q": "Chiếc máy tính cơ học đầu tiên của loài người có tên là gì?",
       "o": [
@@ -1172,6 +1275,7 @@
       "c": 3
     },
     {
+      "id": 104,
       "type": "mcq",
       "q": "Máy tính ENIAC đại diện cho thế hệ máy tính nào?",
       "o": [
@@ -1183,6 +1287,7 @@
       "c": 2
     },
     {
+      "id": 105,
       "type": "mcq",
       "q": "Bàn tính gẩy (Abacus) – một trong những công cụ tính toán sớm nhất của con người – đã xuất hiện từ thời điểm nào?",
       "o": [
@@ -1194,6 +1299,7 @@
       "c": 0
     },
     {
+      "id": 106,
       "type": "mcq",
       "q": "Nhà bác học Blaise Pascal (người Pháp) đã sáng chế ra chiếc máy tính cơ học Pascaline vào năm nào?",
       "o": [
@@ -1205,6 +1311,7 @@
       "c": 1
     },
     {
+      "id": 107,
       "type": "mcq",
       "q": "Động cơ ban đầu thúc đẩy Blaise Pascal phát minh ra chiếc máy tính cơ học Pascaline là gì?",
       "o": [
@@ -1216,6 +1323,7 @@
       "c": 0
     },
     {
+      "id": 108,
       "type": "mcq",
       "q": "Năm 1833, nhà khoa học Charles Babbage (người Anh) đã thiết kế cỗ máy tính cơ học nào có cấu trúc tương đồng với máy tính hiện đại?",
       "o": [
@@ -1227,6 +1335,7 @@
       "c": 2
     },
     {
+      "id": 109,
       "type": "mcq",
       "q": "Ai được vinh danh là nữ lập trình viên đầu tiên trong lịch sử nhờ việc viết thuật toán cho cỗ máy tính đa năng của Charles Babbage?",
       "o": [
@@ -1238,6 +1347,7 @@
       "c": 1
     },
     {
+      "id": 110,
       "type": "mcq",
       "q": "Chiếc máy tính điện tử đầu tiên trên thế giới mang tên ENIAC được hoàn thành ra đời vào khoảng thời gian nào?",
       "o": [
@@ -1249,6 +1359,7 @@
       "c": 2
     },
     {
+      "id": 111,
       "type": "mcq",
       "q": "Kiến trúc Von Neumann làm nền tảng cấu tạo cho máy tính điện tử hiện đại gồm có mấy thành phần chính?",
       "o": [
@@ -1260,6 +1371,7 @@
       "c": 2
     },
     {
+      "id": 112,
       "type": "mcq",
       "q": "Ý tưởng nổi bật nhất trong phát minh máy tính cơ học Pascaline của Blaise Pascal đóng vai trò quan trọng gì đối với lịch sử tính toán?",
       "o": [
@@ -1271,6 +1383,7 @@
       "c": 1
     },
     {
+      "id": 113,
       "type": "mcq",
       "q": "Điểm cải tiến vượt trội mang tính đột phá của cỗ máy Babbage so với máy tính Pascaline là gì?",
       "o": [
@@ -1282,6 +1395,7 @@
       "c": 2
     },
     {
+      "id": 114,
       "type": "mcq",
       "q": "Thế hệ máy tính điện tử thứ nhất (1945–1955) sử dụng linh kiện điện tử cốt lõi nào?",
       "o": [
@@ -1293,6 +1407,7 @@
       "c": 2
     },
     {
+      "id": 115,
       "type": "mcq",
       "q": "Nhờ vào sự tiến bộ nào của công nghệ điện tử mà các thế hệ máy tính ngày càng trở nên nhỏ gọn, xử lý nhanh hơn và lưu trữ khổng lồ?",
       "o": [
@@ -1304,6 +1419,7 @@
       "c": 0
     },
     {
+      "id": 116,
       "type": "mcq",
       "q": "Máy tính cá nhân (PC - Personal Computer) sử dụng bộ vi xử lý bắt đầu xuất hiện phổ biến ở thế hệ máy tính điện tử thứ mấy?",
       "o": [
@@ -1315,6 +1431,7 @@
       "c": 3
     },
     {
+      "id": 117,
       "type": "mcq",
       "q": "Chiếc máy tính điện tử Minsk 22 xuất hiện ở Việt Nam vào năm 1968 thuộc thế hệ máy tính điện tử thứ mấy?",
       "o": [
@@ -1326,6 +1443,7 @@
       "c": 1
     },
     {
+      "id": 118,
       "type": "mcq",
       "q": "Kỹ sư gốc Việt Trương Trọng Thi nổi tiếng thế giới với phát minh máy tính cá nhân nào vào năm 1973 dựa trên bộ vi xử lý 8008?",
       "o": [
@@ -1337,6 +1455,7 @@
       "c": 1
     },
     {
+      "id": 119,
       "type": "mcq",
       "q": "Nguyên lý \"Chương trình được lưu trữ\" trong bộ nhớ của kiến trúc Von Neumann mang lại lợi ích quan trọng nhất nào?",
       "o": [
@@ -1348,6 +1467,7 @@
       "c": 1
     },
     {
+      "id": 120,
       "type": "mcq",
       "q": "Khái niệm nào sau đây mô tả đúng nhất về thông tin số?",
       "o": [
@@ -1359,6 +1479,7 @@
       "c": 1
     },
     {
+      "id": 121,
       "type": "mcq",
       "q": "Nguồn thông tin số khổng lồ, phổ dụng và được truy cập nhiều nhất hiện nay là gì?",
       "o": [
@@ -1370,6 +1491,7 @@
       "c": 0
     },
     {
+      "id": 122,
       "type": "mcq",
       "q": "Đặc điểm nào sau đây KHÔNG phải là đặc điểm chính của thông tin trong môi trường số?",
       "o": [
@@ -1381,6 +1503,7 @@
       "c": 2
     },
     {
+      "id": 123,
       "type": "mcq",
       "q": "Khi thông tin số đã được lưu trữ trên môi trường mạng Internet, đặc điểm truy cập của nó là gì?",
       "o": [
@@ -1392,6 +1515,7 @@
       "c": 1
     },
     {
+      "id": 124,
       "type": "mcq",
       "q": "Yếu tố quan trọng nhất khi lựa chọn và sử dụng thông tin trong môi trường số để đưa ra quyết định là gì?",
       "o": [
@@ -1403,6 +1527,7 @@
       "c": 0
     },
     {
+      "id": 125,
       "type": "mcq",
       "q": "Phương tiện nào sau đây KHÔNG phải là thiết bị số dùng để lưu trữ hoặc truyền tải thông tin số?",
       "o": [
@@ -1414,6 +1539,7 @@
       "c": 2
     },
     {
+      "id": 126,
       "type": "mcq",
       "q": "Khi công khai chia sẻ thông tin trên môi trường số, người sử dụng cần thể hiện thái độ và trách nhiệm như thế nào?",
       "o": [
@@ -1425,6 +1551,7 @@
       "c": 1
     },
     {
+      "id": 127,
       "type": "mcq",
       "q": "Tại sao một bức ảnh số hoặc bài viết khi đã đăng tải công khai trên mạng xã hội lại rất khó xóa bỏ hoàn toàn?",
       "o": [
@@ -1436,6 +1563,7 @@
       "c": 0
     },
     {
+      "id": 128,
       "type": "mcq",
       "q": "Nguồn thông tin nào sau đây trên môi trường số thường có độ tin cậy cao nhất?",
       "o": [
@@ -1447,6 +1575,7 @@
       "c": 1
     },
     {
+      "id": 129,
       "type": "mcq",
       "q": "Biểu hiện nào sau đây thể hiện tôn trọng tính bản quyền của thông tin số?",
       "o": [
@@ -1458,6 +1587,7 @@
       "c": 0
     },
     {
+      "id": 130,
       "type": "mcq",
       "q": "Tại sao chúng ta cần sử dụng các công cụ tìm kiếm và kỹ năng lọc thông tin khi khai thác Internet?",
       "o": [
@@ -1469,6 +1599,7 @@
       "c": 0
     },
     {
+      "id": 131,
       "type": "mcq",
       "q": "Hành vi phát tán thông tin sai sự thật (tin giả - fake news) trên môi trường số có thể dẫn đến hậu quả nghiêm trọng nào?",
       "o": [
@@ -1480,6 +1611,7 @@
       "c": 0
     },
     {
+      "id": 132,
       "type": "mcq",
       "q": "Bạn An muốn tìm hiểu thông tin thời tiết để chuẩn bị cho chuyến dã ngoại lớp. An nên lựa chọn nguồn tin số nào để đảm bảo độ tin cậy?",
       "o": [
@@ -1491,6 +1623,7 @@
       "c": 0
     },
     {
+      "id": 133,
       "type": "mcq",
       "q": "Giải pháp nào giúp học sinh bảo vệ an toàn thông tin cá nhân trên môi trường số?",
       "o": [
@@ -1502,6 +1635,7 @@
       "c": 0
     },
     {
+      "id": 134,
       "type": "mcq",
       "q": "Khi trích dẫn một đoạn văn bản từ trang web uy tín vào bài tập làm văn, học sinh cần làm gì để đảm bảo tính văn hóa số?",
       "o": [
@@ -1513,6 +1647,7 @@
       "c": 0
     },
     {
+      "id": 135,
       "type": "mcq",
       "q": "Công cụ phần mềm nào sau đây giúp người dùng tìm kiếm thông tin trên các trang web thông qua từ khóa?",
       "o": [
@@ -1524,6 +1659,7 @@
       "c": 0
     },
     {
+      "id": 136,
       "type": "mcq",
       "q": "Từ khóa (Keyword) trong thao tác tìm kiếm thông tin số được hiểu là gì?",
       "o": [
@@ -1535,6 +1671,7 @@
       "c": 1
     },
     {
+      "id": 137,
       "type": "mcq",
       "q": "Kỹ thuật nào sau đây giúp thu hẹp kết quả tìm kiếm, yêu cầu máy tìm kiếm trả về các trang chứa chính xác cụm từ?",
       "o": [
@@ -1546,6 +1683,7 @@
       "c": 0
     },
     {
+      "id": 138,
       "type": "mcq",
       "q": "Nguồn thông tin số nào sau đây được xem là tin cậy khi thu thập tư liệu làm bài trình chiếu học tập?",
       "o": [
@@ -1557,6 +1695,7 @@
       "c": 0
     },
     {
+      "id": 139,
       "type": "mcq",
       "q": "Tiêu chí nào sau đây KHÔNG thuộc các tiêu chí cơ bản để đánh giá chất lượng thông tin tìm được?",
       "o": [
@@ -1568,6 +1707,7 @@
       "c": 2
     },
     {
+      "id": 140,
       "type": "mcq",
       "q": "Khi thu thập tư liệu từ Internet để làm bài thuyết trình, việc ghi chép lại nguồn trích dẫn có tác dụng gì?",
       "o": [
@@ -1579,6 +1719,7 @@
       "c": 0
     },
     {
+      "id": 141,
       "type": "mcq",
       "q": "Khi gõ cụm từ từ khóa: năng lượng tái tạo (không dùng dấu ngoặc kép) vào Google, kết quả trả về là gì?",
       "o": [
@@ -1590,6 +1731,7 @@
       "c": 0
     },
     {
+      "id": 142,
       "type": "mcq",
       "q": "Khi gõ cụm từ từ khóa: \"năng lượng tái tạo\" (có dùng dấu ngoặc kép) vào Google, kết quả có điểm gì khác biệt?",
       "o": [
@@ -1601,6 +1743,7 @@
       "c": 0
     },
     {
+      "id": 143,
       "type": "mcq",
       "q": "Tại sao thông tin khai thác trên các trang blog cá nhân không chính thức lại cần phải kiểm chứng cẩn thận?",
       "o": [
@@ -1612,6 +1755,7 @@
       "c": 0
     },
     {
+      "id": 144,
       "type": "mcq",
       "q": "Công đoạn \"Biên tập nội dung\" bài trình chiếu sau khi thu thập thông tin trên mạng bao gồm công việc gì?",
       "o": [
@@ -1623,6 +1767,7 @@
       "c": 0
     },
     {
+      "id": 145,
       "type": "mcq",
       "q": "Đánh giá \"Lợi ích của thông tin\" tìm được trong giải quyết vấn đề thực tế nghĩa là gì?",
       "o": [
@@ -1634,6 +1779,7 @@
       "c": 0
     },
     {
+      "id": 146,
       "type": "mcq",
       "q": "Thao tác chia sẻ sản phẩm số (bài trình chiếu) nhóm cho giáo viên và các bạn qua mạng cần lưu ý điều gì?",
       "o": [
@@ -1645,6 +1791,7 @@
       "c": 0
     },
     {
+      "id": 147,
       "type": "mcq",
       "q": "Nhóm học sinh cần tìm thông tin về \"Thực trạng sử dụng điện mặt trời tại Việt Nam\". Từ khóa nào sau đây giúp tìm kiếm hiệu quả nhất?",
       "o": [
@@ -1656,6 +1803,7 @@
       "c": 0
     },
     {
+      "id": 148,
       "type": "mcq",
       "q": "Khi tìm thấy hai con số thống kê chênh lệch nhau về sản lượng điện gió trên hai trang web khác nhau, em nên làm gì?",
       "o": [
@@ -1667,6 +1815,7 @@
       "c": 0
     },
     {
+      "id": 149,
       "type": "mcq",
       "q": "Bạn Bình chép nguyên văn 5 trang web dài vào các slide trình chiếu khiến bài thuyết trình tràn ngập chữ. Nhận xét nào sau đây đúng về sản phẩm của Bình?",
       "o": [
@@ -1678,6 +1827,7 @@
       "c": 0
     },
     {
+      "id": 150,
       "type": "tf",
       "q": "Charles Babbage, một nhà toán học người Anh, được coi là \"cha đẻ của máy tính\" với những ý tưởng tiên phong về máy tính cơ học. Nguyên lí thiết kế máy tính của Babbage giống như máy tính ngày nay. Đó là loại máy đa năng, thực hiện tính toán tự động và có những ứng dụng ngoài tính toán thuần túy. Vì vậy, mặc dù dự án của ông không được hoàn thành do hạn chế về công nghệ, ông vẫn được coi là cha đẻ của công nghệ máy tính. Hãy đánh giá tính đúng đắn của các nhận định sau liên quan đến dự án máy tính của Babbage:",
       "statements": [
@@ -1694,6 +1844,7 @@
       ]
     },
     {
+      "id": 151,
       "type": "tf",
       "q": "Máy tính cơ học Pascaline, được phát minh bởi Blaise Pascal vào năm 1642, là một trong những chiếc máy tính cơ học đầu tiên trên thế giới. Pascaline được chế tạo từ các bánh răng và bánh xe bằng đồng thau. Nó đã chứng minh khả năng của máy móc trong việc thực hiện các phép tính số học. Hãy đánh giá tính đúng đắn của các nhận định sau liên quan đến Pascaline:",
       "statements": [
@@ -1710,6 +1861,7 @@
       ]
     },
     {
+      "id": 152,
       "type": "tf",
       "q": "Máy tính điện-cơ kết hợp cả các yếu tố cơ học và điện tử. Kiến trúc Von Neumann là một trong những kiến trúc máy tính phổ biến nhất, được coi là một trong những kiến trúc máy tính được sử dụng rộng rãi nhất. John von Neumann đã trình bày nguyên lí hoạt động của máy tính với khái niệm “chương trình được lưu trữ”. Hãy đánh giá tính đúng đắn của các nhận định sau liên quan đến máy tính điện-cơ và kiến trúc Von Neumann:",
       "statements": [
@@ -1726,6 +1878,7 @@
       ]
     },
     {
+      "id": 153,
       "type": "tf",
       "q": "Máy tính thế hệ thứ nhất đánh dấu một bước ngoặt quan trọng trong lịch sử phát triển máy tính. Mặc dù còn hạn chế so với máy tính hiện đại, máy tính thế hệ thứ nhất đã có thể thực hiện các phép tính phức tạp và các ứng dụng khoa học. Máy tính thế hệ thứ nhất thường rất cồng kềnh và tỏa nhiệt nhiều. Hãy đánh giá tính đúng đắn của các nhận định sau liên quan đến máy tính thế hệ thứ nhất:",
       "statements": [
@@ -1742,6 +1895,7 @@
       ]
     },
     {
+      "id": 154,
       "type": "tf",
       "q": "Máy tính thế hệ thứ năm là một bước tiến lớn trong lịch sử phát triển máy tính, mở ra kỷ nguyên của trí tuệ nhân tạo. Trong đó, ULSI là nền tảng công nghệ chính của máy tính thế hệ thứ năm. Máy tính thế hệ thứ năm có một số khả năng xử lí thông tin trong thế giới thực giống con người như: cảm nhận, suy luận, tương tác… Hãy đánh giá tính đúng đắn của các nhận định sau liên quan đến máy tính thế hệ thứ năm:",
       "statements": [
@@ -1759,6 +1913,7 @@
       "explain": "VLSI (mạch tích hợp cỡ rất lớn) là của thế hệ thứ tư, còn ULSI (mạch tích hợp cỡ siêu lớn) mới là của thế hệ thứ năm."
     },
     {
+      "id": 155,
       "type": "tf",
       "q": "Thông tin số là dạng thông tin được biểu diễn dưới dạng số, có thể được xử lý, lưu trữ và truyền tải bằng các thiết bị điện tử. Thông tin số có nhiều ưu điểm so với thông tin dạng khác, như dễ dàng sao chép, chia sẻ và chỉnh sửa. Tuy nhiên, thông tin số cũng tiềm ẩn một số rủi ro như bị mất mát, bị tấn công hoặc bị giả mạo. Hãy đánh giá tính đúng sai của các nhận định sau dựa trên đoạn thông tin trên:",
       "statements": [
@@ -1775,6 +1930,7 @@
       ]
     },
     {
+      "id": 156,
       "type": "tf",
       "q": "Thông tin đáng tin cậy là thông tin chính xác, khách quan và có thể kiểm chứng được, đóng vai trò quan trọng trong việc ra quyết định và hình thành kiến thức. Để đánh giá tính đáng tin cậy của một nguồn thông tin, chúng ta cần xem xét nhiều yếu tố như nguồn gốc, mục đích, bằng chứng và sự đồng thuận trong cộng đồng. Hãy đánh giá tính đúng sai của các nhận định sau dựa trên đoạn thông tin trên:",
       "statements": [
@@ -1791,6 +1947,7 @@
       ]
     },
     {
+      "id": 157,
       "type": "tf",
       "q": "Trong thời đại thông tin phát triển như hiện nay, việc xác định nguồn thông tin đáng tin cậy là vô cùng quan trọng. Để đánh giá độ tin cậy của một nguồn thông tin, chúng ta cần xem xét nhiều yếu tố như: nguồn gốc thông tin, mục đích của người cung cấp thông tin, bằng chứng có rõ ràng và cụ thể, tính khách quan của vấn đề… Hãy đánh giá tính đúng sai của các nhận định sau dựa trên đoạn thông tin trên:",
       "statements": [
@@ -1807,6 +1964,7 @@
       ]
     },
     {
+      "id": 158,
       "type": "tf",
       "q": "Tính thời sự của thông tin là yếu tố quan trọng để đánh giá giá trị của một thông tin. Thông tin thời sự là thông tin mới, cập nhật, liên quan đến các sự kiện đang diễn ra và thu hút sự quan tâm của công chúng. Để đánh giá tính thời sự của một thông tin, chúng ta cần xem xét thời điểm thông tin được tạo ra, sự liên quan của thông tin đến các sự kiện hiện tại và mức độ quan tâm của công chúng. Hãy đánh giá tính đúng sai của các nhận định sau dựa trên đoạn thông tin trên:",
       "statements": [
@@ -1823,6 +1981,7 @@
       ]
     },
     {
+      "id": 159,
       "type": "tf",
       "q": "Ý kiến và sự kiện là hai khái niệm thường bị nhầm lẫn với nhau. Sự kiện là những gì đã xảy ra, có thể được kiểm chứng và chứng minh. Trong khi đó, ý kiến là quan điểm, đánh giá của một cá nhân hoặc nhóm người về một vấn đề nào đó. Ý kiến có thể dựa trên sự kiện, nhưng cũng có thể mang tính chủ quan và cảm xúc. Hãy đánh giá tính đúng sai của các nhận định sau dựa trên đoạn thông tin trên:",
       "statements": [
@@ -1839,6 +1998,7 @@
       ]
     },
     {
+      "id": 160,
       "type": "tf",
       "q": "Công nghệ kỹ thuật số đã và đang thay đổi sâu sắc cuộc sống của chúng ta. Với khả năng xử lý thông tin nhanh chóng, chính xác và lưu trữ dữ liệu khổng lồ, công nghệ số mang đến nhiều lợi ích to lớn trong mọi lĩnh vực. Từ việc kết nối con người trên toàn cầu, tự động hóa các quy trình sản xuất đến việc tạo ra những sản phẩm và dịch vụ mới, công nghệ số đã trở thành một phần không thể thiếu trong cuộc sống hiện đại. Hãy đánh giá tính đúng của các nhận định sau dựa trên đoạn thông tin trên:",
       "statements": [
@@ -1855,6 +2015,7 @@
       ]
     },
     {
+      "id": 161,
       "type": "tf",
       "q": "Công nghệ kỹ thuật số mang lại nhiều tiện ích cho cuộc sống nhưng cũng đi kèm với những thách thức về đạo đức và pháp luật. Việc sử dụng công nghệ không đúng cách có thể dẫn đến nhiều hậu quả nghiêm trọng như xâm phạm quyền riêng tư, lan truyền thông tin sai lệch, hoặc thậm chí là các hành vi phạm pháp. Hãy đánh giá tính đúng của các nhận định sau dựa trên đoạn thông tin trên:",
       "statements": [
@@ -1871,6 +2032,7 @@
       ]
     },
     {
+      "id": 162,
       "type": "tf",
       "q": "Trong thời đại số, việc sử dụng công nghệ kỹ thuật số ngày càng trở nên phổ biến. Tuy nhiên, đi kèm với những tiện ích, việc sử dụng công nghệ không đúng cách cũng có thể dẫn đến nhiều hậu quả nghiêm trọng. Để tránh vi phạm pháp luật và đạo đức, chúng ta cần lưu ý một số điều sau: Không sao chép, chia sẻ hoặc sử dụng trái phép các tác phẩm có bản quyền, hạn chế chia sẻ thông tin cá nhân trên các nền tảng mạng xã hội, đặc biệt là những thông tin nhạy cảm, tránh đăng tải những nội dung khiêu khích, bạo lực, phân biệt đối xử, hoặc vi phạm pháp luật… Hãy đánh giá tính đúng của các nhận định sau dựa trên đoạn thông tin trên:",
       "statements": [
@@ -1887,6 +2049,7 @@
       ]
     },
     {
+      "id": 163,
       "type": "tf",
       "q": "Việc tạo ra sản phẩm số không chỉ đơn thuần là quá trình kỹ thuật mà còn đòi hỏi sự tuân thủ các nguyên tắc đạo đức và văn hóa. Một sản phẩm số được tạo ra một cách có đạo đức sẽ góp phần xây dựng một xã hội tốt đẹp hơn. Để tạo ra sản phẩm số có giá trị, người tạo ra sản phẩm cần phải: tôn trọng bản quyền, đảm bảo rằng thông tin cá nhân của người dùng được bảo mật và không bị sử dụng trái phép, tránh nội dung độc hại,… Hãy đánh giá tính đúng của các nhận định sau dựa trên đoạn thông tin trên:",
       "statements": [
@@ -1903,6 +2066,7 @@
       ]
     },
     {
+      "id": 164,
       "type": "tf",
       "q": "Trong thời đại số, việc sử dụng công nghệ kỹ thuật số trở nên phổ biến hơn bao giờ hết. Tuy nhiên, đi kèm với những tiện ích, việc sử dụng công nghệ không đúng cách có thể dẫn đến nhiều hậu quả nghiêm trọng. Để sử dụng công nghệ một cách văn minh, chúng ta cần nhận biết được những hành vi đúng và sai. Các hành vi tuân thủ đạo đức, pháp luật và văn hóa khi sử dụng công nghệ bao gồm: tôn trọng bản quyền, không tiết lộ thông tin cá nhân cho người lạ, không truy cập trái phép vào tài khoản của người khác, sử dụng mạng xã hội một cách văn minh, tránh phát tán tin giả… Hãy đánh giá tính đúng của các nhận định sau dựa trên thông tin trên:",
       "statements": [
@@ -1919,6 +2083,7 @@
       ]
     },
     {
+      "id": 165,
       "type": "tf",
       "q": "Khi tìm hiểu về các công cụ tính toán cơ học thời kỳ đầu, xét tính Đúng/Sai của các nhận định sau:",
       "statements": [
@@ -1935,6 +2100,7 @@
       ]
     },
     {
+      "id": 166,
       "type": "tf",
       "q": "Khi đánh giá về cỗ máy tính của Charles Babbage và đóng góp của Ada Lovelace, xét tính Đúng/Sai của các nhận định sau:",
       "statements": [
@@ -1951,6 +2117,7 @@
       ]
     },
     {
+      "id": 167,
       "type": "tf",
       "q": "Tìm hiểu về các thế hệ máy tính điện tử từ năm 1945 đến nay, xét tính Đúng/Sai của các nhận định sau:",
       "statements": [
@@ -1967,6 +2134,7 @@
       ]
     },
     {
+      "id": 168,
       "type": "tf",
       "q": "Về kiến trúc Von Neumann và nguyên lý hoạt động của máy tính hiện đại, xét tính Đúng/Sai của các nhận định sau:",
       "statements": [
@@ -1983,6 +2151,7 @@
       ]
     },
     {
+      "id": 169,
       "type": "tf",
       "q": "Nghiên cứu về lịch sử máy tính điện tử tại Việt Nam, xét tính Đúng/Sai của các nhận định sau:",
       "statements": [
@@ -1999,6 +2168,7 @@
       ]
     },
     {
+      "id": 170,
       "type": "tf",
       "q": "Đánh giá về sự phát triển công cụ tính toán và tác động đối với xã hội loài người, xét tính Đúng/Sai của các nhận định sau:",
       "statements": [
@@ -2015,6 +2185,7 @@
       ]
     },
     {
+      "id": 171,
       "type": "tf",
       "q": "Về chức năng của các thành phần chính trong kiến trúc máy tính, xét tính Đúng/Sai của các nhận định sau:",
       "statements": [
@@ -2031,6 +2202,7 @@
       ]
     },
     {
+      "id": 172,
       "type": "tf",
       "q": "Khi tìm hiểu khái niệm và đặc điểm của thông tin số, xét tính Đúng/Sai của các nhận định sau:",
       "statements": [
@@ -2047,6 +2219,7 @@
       ]
     },
     {
+      "id": 173,
       "type": "tf",
       "q": "Về tính chất lưu trữ, lan truyền và truy cập của thông tin số, xét tính Đúng/Sai của các nhận định sau:",
       "statements": [
@@ -2063,6 +2236,7 @@
       ]
     },
     {
+      "id": 174,
       "type": "tf",
       "q": "Đánh giá về độ tin cậy và tính bản quyền của thông tin trong môi trường số, xét tính Đúng/Sai của các nhận định sau:",
       "statements": [
@@ -2079,6 +2253,7 @@
       ]
     },
     {
+      "id": 175,
       "type": "tf",
       "q": "Khi khai thác nguồn thông tin đáng tin cậy trong môi trường số, xét tính Đúng/Sai của các nhận định sau:",
       "statements": [
@@ -2095,6 +2270,7 @@
       ]
     },
     {
+      "id": 176,
       "type": "tf",
       "q": "Về trách nhiệm và văn hóa ứng xử của học sinh trên môi trường số, xét tính Đúng/Sai của các nhận định sau:",
       "statements": [
@@ -2111,6 +2287,7 @@
       ]
     },
     {
+      "id": 177,
       "type": "tf",
       "q": "Đánh giá tác động của môi trường số đối với việc học tập và mở rộng tri thức, xét tính Đúng/Sai của các nhận định sau:",
       "statements": [
@@ -2127,6 +2304,7 @@
       ]
     },
     {
+      "id": 178,
       "type": "tf",
       "q": "Khi phân biệt thông tin thật và thông tin sai lệch (tin giả) trên mạng, xét tính Đúng/Sai của các nhận định sau:",
       "statements": [
@@ -2143,6 +2321,7 @@
       ]
     },
     {
+      "id": 179,
       "type": "tf",
       "q": "Về sử dụng máy tìm kiếm và kỹ thuật đặt từ khóa tìm kiếm, xét tính Đúng/Sai của các nhận định sau:",
       "statements": [
@@ -2159,6 +2338,7 @@
       ]
     },
     {
+      "id": 180,
       "type": "tf",
       "q": "Về quy trình thu thập và ghi chép tư liệu số phục vụ học tập, xét tính Đúng/Sai của các nhận định sau:",
       "statements": [
@@ -2175,6 +2355,7 @@
       ]
     },
     {
+      "id": 181,
       "type": "tf",
       "q": "Khi đánh giá chất lượng và lợi ích của thông tin tìm được trên mạng, xét tính Đúng/Sai của các nhận định sau:",
       "statements": [
@@ -2191,6 +2372,7 @@
       ]
     },
     {
+      "id": 182,
       "type": "tf",
       "q": "Khi thực hiện công đoạn biên tập nội dung bài trình chiếu từ tư liệu số, xét tính Đúng/Sai của các nhận định sau:",
       "statements": [
@@ -2207,6 +2389,7 @@
       ]
     },
     {
+      "id": 183,
       "type": "tf",
       "q": "Về tuân thủ quy tắc bản quyền và chia sẻ sản phẩm số học tập, xét tính Đúng/Sai của các nhận định sau:",
       "statements": [
@@ -2223,6 +2406,7 @@
       ]
     },
     {
+      "id": 184,
       "type": "tf",
       "q": "Thực hành khai thác thông tin số về chủ đề \"Năng lượng tái tạo ở Việt Nam\", xét tính Đúng/Sai của các nhận định sau:",
       "statements": [
@@ -2239,6 +2423,7 @@
       ]
     },
     {
+      "id": 185,
       "type": "tf",
       "q": "Về phát triển kỹ năng số và thái độ khi hợp tác làm việc nhóm trong môi trường số, xét tính Đúng/Sai của các nhận định sau:",
       "statements": [

@@ -2,6 +2,7 @@
   "fullName": "ÔN HÓA 4.5.26",
   "questions": [
     {
+      "id": 1,
       "type": "mcq",
       "q": "Cho hình mô phỏng hạt hợp thành của một số phân tử. Phân tử được tạo thành từ một nguyên tố hóa học là",
       "o": [
@@ -14,6 +15,7 @@
       "c": 1
     },
     {
+      "id": 2,
       "type": "mcq",
       "q": "Phát biểu nào sau đây đúng?",
       "o": [
@@ -25,6 +27,7 @@
       "c": 3
     },
     {
+      "id": 3,
       "type": "mcq",
       "q": "Đá vôi có thành phần chính là calcium carbonate. Phân tử calcium carbonate gồm một nguyên tử calcium, một nguyên tử carbon và ba nguyên tử oxygen. Khối lượng phân tử calcium carbonate là? (biết khối lượng nguyên tử của các nguyên tố: Ca = 40 amu, C = 12 amu, O = 16 amu)",
       "o": [
@@ -36,6 +39,7 @@
       "c": 2
     },
     {
+      "id": 4,
       "type": "mcq",
       "q": "Cho mô hình phân tử ethanol. Số lượng nguyên tử của mỗi nguyên tố có trong phân tử ethanol là bao nhiêu?",
       "o": [
@@ -48,6 +52,7 @@
       "c": 0
     },
     {
+      "id": 5,
       "type": "mcq",
       "q": "Cho hình mô phỏng hạt hợp thành của một số chất. Hình mô phỏng hợp chất là",
       "o": [
@@ -60,6 +65,7 @@
       "c": 0
     },
     {
+      "id": 6,
       "type": "mcq",
       "q": "Cho các chất dưới đây: (1) Khí ammonia tạo nên từ N và H. (2) Phosphorus đỏ tạo nên từ P. (3) Hydrochloric acid tạo nên từ H và Cl. (4) Glucose tạo nên từ C, H và O. (5) Kim loại sodium tạo nên từ Na. Trong số các chất trên, có bao nhiêu đơn chất?",
       "o": [
@@ -71,6 +77,7 @@
       "c": 3
     },
     {
+      "id": 7,
       "type": "mcq",
       "q": "Cho mô hình phân tử calcium hydroxide. Nhận định nào sau đây sai?",
       "o": [
@@ -83,6 +90,7 @@
       "c": 2
     },
     {
+      "id": 8,
       "type": "mcq",
       "q": "Cho các chất: Methane (gồm 1 C và 4 H). Nước (gồm 1 O và 2 H). Biết rằng khối lượng nguyên tử của các nguyên tố: C = 12 amu, H = 1 amu và O = 16 amu. Phân tử nước nặng hơn hay nhẹ hơn phân tử methane bao nhiêu lần?",
       "o": [
@@ -94,6 +102,7 @@
       "c": 1
     },
     {
+      "id": 9,
       "type": "mcq",
       "q": "Đá khô hay còn gọi là băng khô là một dạng rắn của carbon dioxide. Cho khối lượng phân tử của carbon dioxide là 44 amu, khối lượng nguyên tử của các nguyên tố: C = 12 amu và O = 16 amu. Số lượng nguyên tử carbon có trong carbon dioxide là (biết rằng phân tử carbon dioxide có hai nguyên tử oxygen)",
       "o": [
@@ -105,6 +114,7 @@
       "c": 0
     },
     {
+      "id": 10,
       "type": "mcq",
       "q": "Baking soda là một loại muối được ứng dụng rộng rãi trong nhiều ngành như thực phẩm, dược phẩm, công nghiệp hóa chất. Cho khối lượng phân tử của baking soda là 84 amu, khối lượng nguyên tử của các nguyên tố: C = 12 amu, H = 1 amu và O = 16 amu. Khối lượng nguyên tử của nguyên tố X và X là nguyên tố",
       "o": [
@@ -117,6 +127,7 @@
       "c": 3
     },
     {
+      "id": 11,
       "type": "mcq",
       "q": "Hợp chất là",
       "o": [
@@ -128,6 +139,7 @@
       "c": 0
     },
     {
+      "id": 12,
       "type": "mcq",
       "q": "Phát biểu đúng là",
       "o": [
@@ -139,6 +151,7 @@
       "c": 3
     },
     {
+      "id": 13,
       "type": "mcq",
       "q": "Phân tử là",
       "o": [
@@ -150,6 +163,7 @@
       "c": 2
     },
     {
+      "id": 14,
       "type": "mcq",
       "q": "Khối lượng phân tử là",
       "o": [
@@ -161,6 +175,7 @@
       "c": 2
     },
     {
+      "id": 15,
       "type": "mcq",
       "q": "Phân tử (X) được tạo bởi nguyên tố carbon và nguyên tố oxygen. Khối lượng phân tử (X) là",
       "o": [
@@ -172,6 +187,7 @@
       "c": 1
     },
     {
+      "id": 16,
       "type": "mcq",
       "q": "Đơn chất là",
       "o": [
@@ -183,6 +199,7 @@
       "c": 3
     },
     {
+      "id": 17,
       "type": "mcq",
       "q": "Cho các chất sau: (1) Khí nitrogen do nguyên tố N tạo nên; (2) Khí carbon dioxide do 2 nguyên tố C và O tạo nên; (3) Sodium hydroxide do 3 nguyên tố Na, O và H tạo nên; (4) Sulfur do nguyên tố S tạo nên. Trong những chất trên, chất nào là hợp chất?",
       "o": [
@@ -194,6 +211,7 @@
       "c": 1
     },
     {
+      "id": 18,
       "type": "mcq",
       "q": "Trong các chất sau đây chất nào là đơn chất?",
       "o": [
@@ -205,6 +223,7 @@
       "c": 1
     },
     {
+      "id": 19,
       "type": "mcq",
       "q": "Cho các chất sau: (1) Khí nitrogen do nguyên tố N tạo nên. (2) Khí carbon dioxide do 2 nguyên tố C và O tạo nên. (3) Sodium hydroxide do 3 nguyên tố Na, O và H tạo nên. (4) Sulfur do nguyên tố S tạo nên. Trong những chất trên, đơn chất là",
       "o": [
@@ -216,6 +235,7 @@
       "c": 3
     },
     {
+      "id": 20,
       "type": "mcq",
       "q": "Khối lượng phân tử của phân tử iron (II) sulfate tạo bởi 1 nguyên tử Fe, 1 nguyên tử S và 4 nguyên tử O là",
       "o": [
@@ -227,6 +247,7 @@
       "c": 1
     },
     {
+      "id": 21,
       "type": "mcq",
       "q": "Đơn chất là chất tạo nên từ",
       "o": [
@@ -238,6 +259,7 @@
       "c": 1
     },
     {
+      "id": 22,
       "type": "mcq",
       "q": "Biết rằng phosphoric acid gồm 3H, 1P và 4O. Khối lượng phân tử của phosphoric acid là",
       "o": [
@@ -249,6 +271,7 @@
       "c": 2
     },
     {
+      "id": 23,
       "type": "mcq",
       "q": "Có các phát biểu sau: (a) Các đơn chất kim loại đều có tên gọi trùng với tên của nguyên tố kim loại. (b) Hợp chất là các chất ở thể lỏng. (c) Hợp chất và đơn chất đều có chứa nguyên tố kim loại. (d) Trong không khí chỉ chứa các đơn chất. (e) Các đơn chất kim loại đều ở thể rắn. Số phát biểu đúng là:",
       "o": [
@@ -260,6 +283,7 @@
       "c": 0
     },
     {
+      "id": 24,
       "type": "mcq",
       "q": "Từ một nguyên tố hoá học có thể tạo nên bao nhiêu đơn chất?",
       "o": [
@@ -271,6 +295,7 @@
       "c": 2
     },
     {
+      "id": 25,
       "type": "mcq",
       "q": "Hợp chất là chất tạo nên từ",
       "o": [
@@ -282,6 +307,7 @@
       "c": 2
     },
     {
+      "id": 26,
       "type": "mcq",
       "q": "Để tạo thành phân tử của một hợp chất tối thiểu cần có bao nhiêu loại nguyên tố?",
       "o": [
@@ -293,6 +319,7 @@
       "c": 1
     },
     {
+      "id": 27,
       "type": "mcq",
       "q": "Dựa vào dấu hiệu nào sau đây để phân biệt phân tử đơn chất với phân tử hợp chất?",
       "o": [
@@ -304,6 +331,7 @@
       "c": 3
     },
     {
+      "id": 28,
       "type": "mcq",
       "q": "Chất được chia thành hai loại lớn là",
       "o": [
@@ -315,6 +343,7 @@
       "c": 3
     },
     {
+      "id": 29,
       "type": "mcq",
       "q": "Cho các phát biểu sau: (a) Water (H₂O) gồm 2 nguyên tố là hydrogen và oxygen. (b) Sodium chloride (NaCl) do nguyên tố sodium và nguyên tố chlorine tạo nên. (c) Khí carbon dioxide (CO₂) gồm 2 đơn chất carbon và oxygen. (d) Sulfuric acid (H₂SO₄) do 3 nguyên tố hydrogen, sulfur và oxygen tạo nên. (e) Hydrochloric acid gồm 2 chất là hydrogen và chlorine. Những phát biểu sai là",
       "o": [
@@ -326,6 +355,7 @@
       "c": 3
     },
     {
+      "id": 30,
       "type": "mcq",
       "q": "Trường hợp nào sau đây là đơn chất?",
       "o": [
@@ -337,6 +367,7 @@
       "c": 0
     },
     {
+      "id": 31,
       "type": "mcq",
       "q": "Trường hợp nào sau đây là hợp chất?",
       "o": [
@@ -348,6 +379,7 @@
       "c": 3
     },
     {
+      "id": 32,
       "type": "mcq",
       "q": "Cho biết mỗi phân tử potassium carbonate tạo bởi 2 nguyên tử K, 1 nguyên tử C và 3 nguyên tử O. Khối lượng của 3 phân tử potassium carbonate là",
       "o": [
@@ -359,6 +391,7 @@
       "c": 3
     },
     {
+      "id": 33,
       "type": "mcq",
       "q": "Khối lượng phân tử của potassium permanganate tạo bởi 1 nguyên tử K, 1 nguyên tử Mn và 4 nguyên tử O là",
       "o": [
@@ -370,6 +403,7 @@
       "c": 0
     },
     {
+      "id": 34,
       "type": "mcq",
       "q": "Cho biết mỗi phân tử copper (II) chloride tạo bởi 1 nguyên tử Cu, 2 nguyên tử Cl. Khối lượng của 4 phân tử copper (II) chloride là",
       "o": [
@@ -381,6 +415,7 @@
       "c": 0
     },
     {
+      "id": 35,
       "type": "mcq",
       "q": "Cho các dữ kiện sau: (1) Khí hydrogen do nguyên tố H tạo nên; (2) Khí carbon dioxide do 2 nguyên tố C và O tạo nên; (3) Khí sulfur dioxide do 2 nguyên tố S và O tạo nên; (4) Sulfur do nguyên tố S tạo nên. Hãy chọn thông tin đúng:",
       "o": [
@@ -392,6 +427,7 @@
       "c": 1
     },
     {
+      "id": 36,
       "type": "mcq",
       "q": "Trong phân tử oxygen, khi hai nguyên tử oxygen liên kết với nhau, chúng",
       "o": [
@@ -403,6 +439,7 @@
       "c": 2
     },
     {
+      "id": 37,
       "type": "mcq",
       "q": "Liên kết giữa các nguyên tử trong phân tử nước là liên kết",
       "o": [
@@ -414,6 +451,7 @@
       "c": 2
     },
     {
+      "id": 38,
       "type": "mcq",
       "q": "Trong phân tử MgO, nguyên tử Mg (magnesium) và nguyên tử O (oxygen) liên kết với nhau bằng liên kết",
       "o": [
@@ -425,6 +463,7 @@
       "c": 1
     },
     {
+      "id": 39,
       "type": "mcq",
       "q": "Phát biểu nào sau đây đúng?",
       "o": [
@@ -436,6 +475,7 @@
       "c": 2
     },
     {
+      "id": 40,
       "type": "mcq",
       "q": "Hãy chọn phát biểu đúng để hoàn thành câu sau: Để có số electron ở lớp ngoài cùng giống nguyên tử của nguyên tố khí hiếm, các nguyên tử của các nguyên tố có khuynh hướng",
       "o": [
@@ -447,6 +487,7 @@
       "c": 3
     },
     {
+      "id": 41,
       "type": "mcq",
       "q": "Nguyên tử của các nguyên tố có xu hướng tham gia liên kết hóa học để đạt được lớp electron ngoài cùng giống",
       "o": [
@@ -458,6 +499,7 @@
       "c": 1
     },
     {
+      "id": 42,
       "type": "mcq",
       "q": "Nguyên tử của các nguyên tố khác khí hiếm có xu hướng tham gia liên kết hóa học để lớp electron ngoài cùng đạt",
       "o": [
@@ -469,6 +511,7 @@
       "c": 3
     },
     {
+      "id": 43,
       "type": "mcq",
       "q": "Nguyên tử của các nguyên tố không thể đạt được lớp electron ngoài cùng giống khí hiếm bằng cách",
       "o": [
@@ -480,6 +523,7 @@
       "c": 3
     },
     {
+      "id": 44,
       "type": "mcq",
       "q": "Nhận định nào sau đây sai?",
       "o": [
@@ -491,6 +535,7 @@
       "c": 3
     },
     {
+      "id": 45,
       "type": "mcq",
       "q": "Khẳng định nào sau đây là sai?",
       "o": [
@@ -502,6 +547,7 @@
       "c": 0
     },
     {
+      "id": 46,
       "type": "mcq",
       "q": "Phát biểu nào sau đây đúng?",
       "o": [
@@ -513,6 +559,7 @@
       "c": 3
     },
     {
+      "id": 47,
       "type": "mcq",
       "q": "Phát biểu nào sau đây đúng?",
       "o": [
@@ -524,6 +571,7 @@
       "c": 0
     },
     {
+      "id": 48,
       "type": "mcq",
       "q": "Nguyên tử kim loại nhường electron sẽ trở thành",
       "o": [
@@ -535,6 +583,7 @@
       "c": 0
     },
     {
+      "id": 49,
       "type": "mcq",
       "q": "Nguyên tử phi kim nhận electron sẽ trở thành",
       "o": [
@@ -546,6 +595,7 @@
       "c": 1
     },
     {
+      "id": 50,
       "type": "mcq",
       "q": "Liên kết ion được hình thành nhờ",
       "o": [
@@ -557,6 +607,7 @@
       "c": 0
     },
     {
+      "id": 51,
       "type": "mcq",
       "q": "Liên kết cộng hóa trị tạo nên giữa hai nguyên tử bằng",
       "o": [
@@ -568,6 +619,7 @@
       "c": 2
     },
     {
+      "id": 52,
       "type": "mcq",
       "q": "Nguyên tử F khi nhận thêm một electron thì tạo thành ion nào?",
       "o": [
@@ -579,6 +631,7 @@
       "c": 2
     },
     {
+      "id": 53,
       "type": "mcq",
       "q": "Nguyên tử K khi nhường đi một electron thì tạo thành ion nào?",
       "o": [
@@ -590,6 +643,7 @@
       "c": 0
     },
     {
+      "id": 54,
       "type": "mcq",
       "q": "Nguyên tử O khi nhận thêm 2 electron thì tạo thành ion nào?",
       "o": [
@@ -601,6 +655,7 @@
       "c": 3
     },
     {
+      "id": 55,
       "type": "mcq",
       "q": "Nguyên tử Ba khi nhường đi 2 electron thì tạo thành ion nào?",
       "o": [
@@ -612,6 +667,7 @@
       "c": 1
     },
     {
+      "id": 56,
       "type": "mcq",
       "q": "Nguyên tử Cl trở thành ion Cl⁻ khi",
       "o": [
@@ -623,6 +679,7 @@
       "c": 0
     },
     {
+      "id": 57,
       "type": "mcq",
       "q": "Nguyên tử Mg trở thành ion Mg²⁺ khi",
       "o": [
@@ -634,6 +691,7 @@
       "c": 3
     },
     {
+      "id": 58,
       "type": "mcq",
       "q": "Nguyên tử S trở thành ion S²⁻ khi",
       "o": [
@@ -645,6 +703,7 @@
       "c": 1
     },
     {
+      "id": 59,
       "type": "mcq",
       "q": "Nguyên tử Al trở thành ion Al³⁺ khi",
       "o": [
@@ -656,6 +715,7 @@
       "c": 3
     },
     {
+      "id": 60,
       "type": "mcq",
       "q": "Chất nào sau đây có liên kết ion?",
       "o": [
@@ -667,6 +727,7 @@
       "c": 1
     },
     {
+      "id": 61,
       "type": "mcq",
       "q": "Chất nào sau đây là chất cộng hóa trị?",
       "o": [
@@ -678,6 +739,7 @@
       "c": 2
     },
     {
+      "id": 62,
       "type": "mcq",
       "q": "Trong công thức NaCl, sau khi tạo liên kết với chlorine thì sodium trở thành ion có số electron lớp ngoài cùng là",
       "o": [
@@ -689,6 +751,7 @@
       "c": 3
     },
     {
+      "id": 63,
       "type": "mcq",
       "q": "Trong công thức sodium chloride, sau khi tạo liên kết với chlorine thì sodium trở thành ion có số electron là",
       "o": [
@@ -700,6 +763,7 @@
       "c": 1
     },
     {
+      "id": 64,
       "type": "mcq",
       "q": "Số electron ở lớp ngoài cùng của nguyên tử khí hiếm (trừ He) là",
       "o": [
@@ -711,6 +775,7 @@
       "c": 3
     },
     {
+      "id": 65,
       "type": "mcq",
       "q": "Cho các phân tử sau: KCl, CaO, N₂, Cl₂, HCl. Số phân tử có chứa liên kết cộng hoá trị là",
       "o": [
@@ -722,6 +787,7 @@
       "c": 2
     },
     {
+      "id": 66,
       "type": "mcq",
       "q": "Trong các phản ứng hóa học, nguyên tử kim loại có khuynh hướng",
       "o": [
@@ -733,6 +799,7 @@
       "c": 2
     },
     {
+      "id": 67,
       "type": "mcq",
       "q": "Ở điều kiện thường, đơn chất tồn tại dưới dạng đơn nguyên tử bền vững là",
       "o": [
@@ -744,6 +811,7 @@
       "c": 1
     },
     {
+      "id": 68,
       "type": "mcq",
       "q": "Ở điều kiện thường, đơn chất có lớp electron ngoài cùng chứa 8 electron là",
       "o": [
@@ -755,6 +823,7 @@
       "c": 1
     },
     {
+      "id": 69,
       "type": "mcq",
       "q": "Trong các phản ứng hóa học, nguyên tử phi kim có khuynh hướng",
       "o": [
@@ -766,6 +835,7 @@
       "c": 0
     },
     {
+      "id": 70,
       "type": "mcq",
       "q": "Cho các ion: K⁺, Mg²⁺, SO₄²⁻, Cl⁻, NH₄⁺, NO₃⁻. Có bao nhiêu ion dương?",
       "o": [
@@ -777,6 +847,7 @@
       "c": 0
     },
     {
+      "id": 71,
       "type": "mcq",
       "q": "Cho các ion: Na⁺, SO₄²⁻, Fe³⁺, Cl⁻, NH₄⁺, NO₃⁻. Có bao nhiêu ion âm?",
       "o": [
@@ -788,6 +859,7 @@
       "c": 0
     },
     {
+      "id": 72,
       "type": "mcq",
       "q": "Cho các hợp chất: NH₃, H₂O, K₂S, MgCl₂, Na₂O, CH₄. Chất có liên kết ion là",
       "o": [
@@ -799,6 +871,7 @@
       "c": 3
     },
     {
+      "id": 73,
       "type": "mcq",
       "q": "Liên kết ion là liên kết được hình thành bởi:",
       "o": [
@@ -810,6 +883,7 @@
       "c": 2
     },
     {
+      "id": 74,
       "type": "mcq",
       "q": "Trong công thức NaCl, sau khi tạo liên kết với sodium thì chlorine trở thành ion có số electron lớp ngoài cùng là",
       "o": [
@@ -821,6 +895,7 @@
       "c": 3
     },
     {
+      "id": 75,
       "type": "mcq",
       "q": "Nhóm hợp chất nào sau đây đều là hợp chất ion?",
       "o": [
@@ -832,6 +907,7 @@
       "c": 2
     },
     {
+      "id": 76,
       "type": "mcq",
       "q": "Ở điều kiện thường, phát biểu nào sau đây đúng?",
       "o": [
@@ -843,6 +919,7 @@
       "c": 3
     },
     {
+      "id": 77,
       "type": "mcq",
       "q": "Phát biểu nào sau đây không đúng?",
       "o": [
@@ -854,6 +931,7 @@
       "c": 3
     },
     {
+      "id": 78,
       "type": "mcq",
       "q": "Phát biểu nào sau đây đúng?",
       "o": [
@@ -865,6 +943,7 @@
       "c": 3
     },
     {
+      "id": 79,
       "type": "mcq",
       "q": "Có các phát biểu sau: (a) Tất cả các chất ion đều ở thể rắn. (b) Tất cả các chất ion đều tan trong nước tạo thành dung dịch có khả năng dẫn điện. (c) Khi đun sodium chloride rắn ở nhiệt độ cao sẽ được sodium chloride lỏng dẫn điện. (d) Đường tinh luyện và muối ăn đều là chất rắn tan được trong nước tạo dung dịch dẫn điện. Số phát biểu đúng là",
       "o": [
@@ -876,6 +955,7 @@
       "c": 1
     },
     {
+      "id": 80,
       "type": "mcq",
       "q": "Có các phát biểu sau: (a) Ở điều kiện thường, các chất ion đều ở thể rắn. (b) Ở điều kiện thường, các hợp chất ở thể lỏng đều là chất cộng hoá trị. (c) Hợp chất của kim loại khó bay hơi, khó nóng chảy, tạo dung dịch dẫn được điện. (d) Hợp chất chỉ gồm các nguyên tố phi kim thường dễ bay hơi, kém bền với nhiệt. (e) Hợp chất tan được trong nước thành dung dịch không dẫn điện thường là chất cộng hoá trị. Số phát biểu đúng là",
       "o": [
@@ -887,6 +967,7 @@
       "c": 0
     },
     {
+      "id": 81,
       "type": "mcq",
       "q": "Có các phát biểu sau: (a) Trong hợp chất, kim loại luôn nhường electron, phi kim luôn nhận electron. (b) Để có 8 electron ở lớp vỏ ngoài cùng thì nguyên tử aluminium hoặc nhường 3 electron hoặc nhận 5 electron. (c) Liên kết trong hợp chất tạo bởi magnesium và chlorine là liên kết ion. (d) Trong phân tử, hợp chất gồm các nguyên tố C, H, O chỉ có liên kết cộng hoá trị. (e) Khi tạo liên kết hoá học, nguyên tử chlorine chỉ tạo ion âm bằng cách nhận thêm 1 electron. Số phát biểu đúng là",
       "o": [
@@ -898,6 +979,7 @@
       "c": 1
     },
     {
+      "id": 82,
       "type": "mcq",
       "q": "Công thức hoá học của calcium chloride đúng, biết hoá trị calcium và chlorine lần lượt là II và I",
       "o": [
@@ -909,6 +991,7 @@
       "c": 0
     },
     {
+      "id": 83,
       "type": "mcq",
       "q": "Chọn câu trả lời đúng nhất:",
       "o": [
@@ -920,6 +1003,7 @@
       "c": 2
     },
     {
+      "id": 84,
       "type": "mcq",
       "q": "Cho công thức của ethanol là C₂H₅OH. Số nguyên tử H có trong ethanol bằng",
       "o": [
@@ -931,6 +1015,7 @@
       "c": 3
     },
     {
+      "id": 85,
       "type": "mcq",
       "q": "Có các phát biểu sau: (a) Trong hợp chất gồm các nguyên tố C, H, O thì O luôn có hóa trị bằng II. (b) Tuỳ thuộc vào nguyên tử liên kết với nguyên tố P mà hóa trị của P có thể bằng III và bằng V. (c) Trong các hợp chất gồm nguyên tố S và nguyên tố O thì S luôn có 1 hóa trị. (d) Nguyên tố H và nguyên tố Cl đều có hóa trị bằng I trong các hợp chất. Số phát biểu đúng là",
       "o": [
@@ -942,6 +1027,7 @@
       "c": 2
     },
     {
+      "id": 86,
       "type": "mcq",
       "q": "Biết hydroxide (OH) có hóa trị I, công thức hóa học nào đây là sai",
       "o": [
@@ -953,6 +1039,7 @@
       "c": 1
     },
     {
+      "id": 87,
       "type": "mcq",
       "q": "Phát biểu nào sau đây đúng",
       "o": [
@@ -964,6 +1051,7 @@
       "c": 1
     },
     {
+      "id": 88,
       "type": "mcq",
       "q": "Iron có hóa trị III trong công thức nào?",
       "o": [
@@ -975,6 +1063,7 @@
       "c": 0
     },
     {
+      "id": 89,
       "type": "mcq",
       "q": "Nguyên tử P có hóa trị V trong hợp chất nào?",
       "o": [
@@ -986,6 +1075,7 @@
       "c": 3
     },
     {
+      "id": 90,
       "type": "mcq",
       "q": "Hóa trị của một nguyên tố là con số biểu thị khả năng liên kết của nguyên tử nguyên tố này với",
       "o": [
@@ -997,6 +1087,7 @@
       "c": 2
     },
     {
+      "id": 91,
       "type": "mcq",
       "q": "Cho kim loại X tạo ra hợp chất XSO₄. Biết phân tử khối là 120 amu. Biết nguyên tử khối S = 32 amu; O = 16 amu. Xác định tên kim loại X",
       "o": [
@@ -1008,6 +1099,7 @@
       "c": 0
     },
     {
+      "id": 92,
       "type": "mcq",
       "q": "Có các phát biểu sau: (a) Công thức hóa học của kim loại trùng với kí hiệu nguyên tố vì mỗi phân tử kim loại chỉ gồm 1 nguyên tử kim loại. (b) Các nguyên tố khí hiếm không kết hợp với nguyên tố khác hoặc với chính nó vì chúng trơ về mặt hóa học. Do đó, công thức hóa học của nó trùng với kí hiệu nguyên tố. (c) Nguyên tố oxygen thường xếp cuối công thức hóa học. (d) Nguyên tố kim loại luôn xếp ở đầu công thức hóa học. (e) Trong công thức hóa học, tỉ lệ số nguyên tử của các nguyên tố bằng tỉ lệ hóa trị của các nguyên tố tương ứng. Số phát biểu không đúng là",
       "o": [
@@ -1019,6 +1111,7 @@
       "c": 3
     },
     {
+      "id": 93,
       "type": "mcq",
       "q": "Nguyên tử iron (Fe) có hóa trị II trong công thức nào",
       "o": [
@@ -1030,6 +1123,7 @@
       "c": 3
     },
     {
+      "id": 94,
       "type": "mcq",
       "q": "Phân tử CaCO₃ có số nguyên tử là",
       "o": [
@@ -1041,6 +1135,7 @@
       "c": 2
     },
     {
+      "id": 95,
       "type": "mcq",
       "q": "Phát biểu nào sau đây không đúng?",
       "o": [
@@ -1052,6 +1147,7 @@
       "c": 3
     },
     {
+      "id": 96,
       "type": "mcq",
       "q": "Có các phát biểu sau: (a) Cách biểu diễn công thức hoá học của kim loại và khí hiếm giống nhau. (b) Công thức hoá học của các đơn chất phi kim trùng với kí hiệu nguyên tố hoá học. (c) Dựa vào công thức hoá học, ta luôn xác định được hoá trị các nguyên tố. (d) Các chất có cùng khối lượng phân tử thì có cùng công thức hoá học. Số phát biểu đúng là",
       "o": [
@@ -1063,6 +1159,7 @@
       "c": 0
     },
     {
+      "id": 97,
       "type": "mcq",
       "q": "Phân tử khối của phân tử CuSO₄, biết Cu = 64 amu, S = 32 amu, O = 16 amu, là",
       "o": [
@@ -1074,6 +1171,7 @@
       "c": 0
     },
     {
+      "id": 98,
       "type": "mcq",
       "q": "Một phân tử của hợp chất X chứa một nguyên tử carbon và hai nguyên tử oxygen. Công thức hóa học hợp chất X là",
       "o": [
@@ -1085,6 +1183,7 @@
       "c": 0
     },
     {
+      "id": 99,
       "type": "mcq",
       "q": "Calcium carbonate có công thức hóa học là CaCO₃ là thành phần chính của đá vôi. Nhận định nào sau đây sai về calcium carbonate?",
       "o": [
@@ -1096,6 +1195,7 @@
       "c": 2
     },
     {
+      "id": 100,
       "type": "mcq",
       "q": "Đơn chất nitrogen gồm hai nguyên tử nitrogen liên kết với nhau. Công thức hóa học của đơn chất nitrogen là",
       "o": [
@@ -1107,6 +1207,7 @@
       "c": 2
     },
     {
+      "id": 101,
       "type": "mcq",
       "q": "Hóa trị của nguyên tố Aluminium (Al) trong hợp chất Al₂O₃ là",
       "o": [
@@ -1118,6 +1219,7 @@
       "c": 2
     },
     {
+      "id": 102,
       "type": "mcq",
       "q": "Cr có hóa trị II trong hợp chất nào?",
       "o": [
@@ -1129,6 +1231,7 @@
       "c": 0
     },
     {
+      "id": 103,
       "type": "mcq",
       "q": "Nguyên tử N có hoá trị III trong phân tử chất nào?",
       "o": [
@@ -1140,6 +1243,7 @@
       "c": 3
     },
     {
+      "id": 104,
       "type": "mcq",
       "q": "Hợp chất Alₓ(NO₃)₃ có phân tử khối 213 amu. Biết Al = 27, N = 14, O = 16. Giá trị của x là",
       "o": [
@@ -1151,6 +1255,7 @@
       "c": 2
     },
     {
+      "id": 105,
       "type": "mcq",
       "q": "Silicon dioxide có công thức hóa học là SiO₂ là thành phần chính của cát thạch anh. Hóa trị của Si trong silicon dioxide là (biết trong silicon dioxide O có hóa trị II)",
       "o": [
@@ -1162,6 +1267,7 @@
       "c": 2
     },
     {
+      "id": 106,
       "type": "mcq",
       "q": "Nguyên tử S có hoá trị VI trong phân tử chất nào?",
       "o": [
@@ -1173,6 +1279,7 @@
       "c": 2
     },
     {
+      "id": 107,
       "type": "mcq",
       "q": "Cho các chất sau: NO; N₂O₅; NH₃; N₂O; NO₂; N₂O₃. Hóa trị của N tương ứng trong các hợp chất là:",
       "o": [
@@ -1184,6 +1291,7 @@
       "c": 3
     },
     {
+      "id": 108,
       "type": "mcq",
       "q": "Trong chất cộng hoá trị, phát biểu nào sau đây đúng?",
       "o": [
@@ -1195,6 +1303,7 @@
       "c": 0
     },
     {
+      "id": 109,
       "type": "mcq",
       "q": "Nguyên tử S có hoá trị IV trong phân tử chất nào?",
       "o": [
@@ -1206,6 +1315,7 @@
       "c": 0
     },
     {
+      "id": 110,
       "type": "mcq",
       "q": "Nguyên tố aluminium có hóa trị III và gốc SO₄ có hóa trị 2. Công thức của muối sulfate với Al là",
       "o": [
@@ -1217,6 +1327,7 @@
       "c": 2
     },
     {
+      "id": 111,
       "type": "mcq",
       "q": "Thành phần phần trăm khối lượng của nguyên tố Na có trong Na₂SO₄ là",
       "o": [
@@ -1228,6 +1339,7 @@
       "c": 1
     },
     {
+      "id": 112,
       "type": "mcq",
       "q": "Khi xác định hóa trị, hóa trị của nguyên tố nào được lấy làm đơn vị?",
       "o": [
@@ -1239,6 +1351,7 @@
       "c": 0
     },
     {
+      "id": 113,
       "type": "mcq",
       "q": "Copper có hóa trị II. Chọn công thức đúng?",
       "o": [
@@ -1250,6 +1363,7 @@
       "c": 0
     },
     {
+      "id": 114,
       "type": "mcq",
       "q": "Trong công thức hóa học SO₂, S có hóa trị mấy?",
       "o": [
@@ -1261,6 +1375,7 @@
       "c": 3
     },
     {
+      "id": 115,
       "type": "mcq",
       "q": "Xác định công thức hóa học của sulfur trioxit có cấu tạo từ S hóa trị VI và O.",
       "o": [
@@ -1272,6 +1387,7 @@
       "c": 1
     },
     {
+      "id": 116,
       "type": "mcq",
       "q": "Thành phần phần trăm khối lượng của oxi trong hợp chất Fe₂O₃ là?",
       "o": [
@@ -1283,6 +1399,7 @@
       "c": 0
     },
     {
+      "id": 117,
       "type": "mcq",
       "q": "Fe có hóa trị III trong công thức nào?",
       "o": [
@@ -1294,6 +1411,7 @@
       "c": 1
     },
     {
+      "id": 118,
       "type": "mcq",
       "q": "Trong hợp chất",
       "o": [
@@ -1305,6 +1423,7 @@
       "c": 3
     },
     {
+      "id": 119,
       "type": "mcq",
       "q": "Dựa vào hóa trị và quy tắc hóa trị cho biết mỗi nguyên tử Al có thể liên kết được với bao nhiêu nguyên tử Cl",
       "o": [
@@ -1316,6 +1435,7 @@
       "c": 1
     },
     {
+      "id": 120,
       "type": "mcq",
       "q": "Dựa vào hóa trị và quy tắc hóa trị cho biết mỗi nguyên tử Ca có thể liên kết được với bao nhiêu nhóm nguyên tử OH",
       "o": [
@@ -1327,6 +1447,7 @@
       "c": 2
     },
     {
+      "id": 121,
       "type": "mcq",
       "q": "Cho công thức hóa học của calcium nitrate là: Ca(NO₃)₂. Số nguyên tử của mỗi nguyên tố trong phân tử là",
       "o": [
@@ -1338,6 +1459,7 @@
       "c": 3
     },
     {
+      "id": 122,
       "type": "mcq",
       "q": "Phần trăm khối lượng của nguyên tố O trong hợp chất SO₃ là",
       "o": [
@@ -1349,6 +1471,7 @@
       "c": 0
     },
     {
+      "id": 123,
       "type": "mcq",
       "q": "Đơn chất là những chất được tạo nên từ bao nhiêu nguyên tố hoá học?",
       "o": [
@@ -1360,6 +1483,7 @@
       "c": 3
     },
     {
+      "id": 124,
       "type": "mcq",
       "q": "Hợp chất là những chất được tạo nên từ bao nhiêu nguyên tố hoá học?",
       "o": [
@@ -1371,6 +1495,7 @@
       "c": 3
     },
     {
+      "id": 125,
       "type": "mcq",
       "q": "Từ công thức hóa học của aluminium sulfate là Al₂(SO₄)₃. Cho biết ý nào sau đây không đúng?",
       "o": [
@@ -1382,6 +1507,7 @@
       "c": 3
     },
     {
+      "id": 126,
       "type": "mcq",
       "q": "Cho các chất sau: (1) Khí ozone có phân tử gồm 3O liên kết với nhau. (2) Sulfuric acid có phân tử gồm 2H, 1S và 4O liên kết với nhau. (3) Sodium carbonate có phân tử gồm 2Na, 1C và 3O liên kết với nhau. (4) Khí nitrogen có phân tử gồm 2N liên kết với nhau. (5) Glucose có phân tử gồm 6C, 12H và 6O liên kết với nhau. Số đơn chất và hợp chất lần lượt là",
       "o": [
@@ -1393,6 +1519,7 @@
       "c": 1
     },
     {
+      "id": 127,
       "type": "mcq",
       "q": "Trong các chất sau hãy cho biết dãy nào chỉ gồm toàn đơn chất?",
       "o": [
@@ -1404,6 +1531,7 @@
       "c": 1
     },
     {
+      "id": 128,
       "type": "mcq",
       "q": "Phân tử khối của kim loại đồng Cu gấp bao nhiêu lần phân tử khối của khí oxygen?",
       "o": [
@@ -1415,6 +1543,7 @@
       "c": 2
     },
     {
+      "id": 129,
       "type": "mcq",
       "q": "Liên kết giữa các nguyên tử trong phân tử muối ăn (gồm 1 nguyên tử sodium liên kết với 1 nguyên tử chlorine) là liên kết",
       "o": [
@@ -1426,6 +1555,7 @@
       "c": 1
     },
     {
+      "id": 130,
       "type": "mcq",
       "q": "Liên kết hoá học giữa các nguyên tử oxygen và hydrogen trong phân tử nước được hình thành bằng cách",
       "o": [
@@ -1437,6 +1567,7 @@
       "c": 2
     },
     {
+      "id": 131,
       "type": "mcq",
       "q": "Liên kết cộng hóa trị được hình thành do",
       "o": [
@@ -1448,6 +1579,7 @@
       "c": 1
     },
     {
+      "id": 132,
       "type": "mcq",
       "q": "Trong phân tử potassium chloride, nguyên tử K (potassium) và nguyên tử Cl (chlorine) liên kết với nhau bằng liên kết",
       "o": [
@@ -1459,6 +1591,7 @@
       "c": 1
     },
     {
+      "id": 133,
       "type": "mcq",
       "q": "Khi hình thành phân tử calcium chloride, nguyên tử Ca (calcium)",
       "o": [
@@ -1470,6 +1603,7 @@
       "c": 0
     },
     {
+      "id": 134,
       "type": "mcq",
       "q": "Để hình thành liên kết ion trong phân tử sodium sulfide, nguyên tử S (sulfur)",
       "o": [
@@ -1481,6 +1615,7 @@
       "c": 2
     },
     {
+      "id": 135,
       "type": "mcq",
       "q": "Cho biết phân tử calcium chloride được tạo thành 1 nguyên tử Ca và 2 nguyên tử Cl. Liên kết ion trong phân tử hình thành từ ion nào sau đây?",
       "o": [
@@ -1492,6 +1627,7 @@
       "c": 2
     },
     {
+      "id": 136,
       "type": "mcq",
       "q": "Dãy các hợp chất có nhiệt độ nóng chảy và nhiệt độ sôi thấp là:",
       "o": [
@@ -1503,6 +1639,7 @@
       "c": 0
     },
     {
+      "id": 137,
       "type": "mcq",
       "q": "Trong hợp chất, nguyên tố hydrogen có hóa trị là",
       "o": [
@@ -1514,6 +1651,7 @@
       "c": 0
     },
     {
+      "id": 138,
       "type": "mcq",
       "q": "Muối ăn (sodium chloride) được tạo nên từ 2 nguyên tố hóa học là sodium và chlorine (hóa trị I). Công thức hóa học của muối ăn là",
       "o": [
@@ -1525,6 +1663,7 @@
       "c": 0
     },
     {
+      "id": 139,
       "type": "mcq",
       "q": "Kim loại X có hóa trị III, công thức muối sulfate của X là",
       "o": [
@@ -1536,6 +1675,7 @@
       "c": 2
     },
     {
+      "id": 140,
       "type": "mcq",
       "q": "Trong hợp chất NO₂, N có hóa trị là",
       "o": [
@@ -1547,6 +1687,7 @@
       "c": 3
     },
     {
+      "id": 141,
       "type": "mcq",
       "q": "Trong hợp calcium carbonate (CaCO₃), phần trăm khối lượng của nguyên tố calcium là",
       "o": [
@@ -1558,6 +1699,7 @@
       "c": 3
     },
     {
+      "id": 142,
       "type": "mcq",
       "q": "Công thức hoá học của sulfur (hóa trị IV) với oxygen là",
       "o": [
@@ -1569,6 +1711,7 @@
       "c": 2
     },
     {
+      "id": 143,
       "type": "mcq",
       "q": "Oxide của nguyên tố R có công thức hoá học là RO₂, trong đó mỗi nguyên tố chiếm 50% khối lượng. Khối lượng nguyên tử của R bằng",
       "o": [
@@ -1580,6 +1723,7 @@
       "c": 1
     },
     {
+      "id": 144,
       "type": "mcq",
       "q": "Hợp chất trong đó nguyên tố iron (sắt) chiếm 70% khối lượng là",
       "o": [
@@ -1591,6 +1735,7 @@
       "c": 1
     },
     {
+      "id": 145,
       "type": "mcq",
       "q": "Những chất dùng làm phân bón hoá học sau đây, chất nào có phần trăm khối lượng nitrogen (còn gọi hàm lượng đạm) cao nhất?",
       "o": [
@@ -1602,6 +1747,7 @@
       "c": 3
     },
     {
+      "id": 146,
       "type": "mcq",
       "q": "Dãy các công thức hóa học được viết đúng là",
       "o": [
@@ -1613,6 +1759,7 @@
       "c": 0
     },
     {
+      "id": 147,
       "type": "mcq",
       "q": "Biết Cr hoá trị III và O hoá trị II. Công thức hóa học phù hợp là",
       "o": [
@@ -1624,6 +1771,7 @@
       "c": 1
     },
     {
+      "id": 148,
       "type": "mcq",
       "q": "Hợp chất của nguyên tố X với nhóm PO₄ hoá trị III là XPO₄. Hợp chất của nguyên tố Y với H là H₃Y. Vậy hợp chất của X với Y có công thức là",
       "o": [
@@ -1635,6 +1783,7 @@
       "c": 0
     },
     {
+      "id": 149,
       "type": "mcq",
       "q": "Hợp chất của nguyên tố X với O là X₂O₃ và hợp chất của nguyên tố Y với H là YH₂. Công thức hoá học hợp chất của X với Y là",
       "o": [
@@ -1646,6 +1795,7 @@
       "c": 3
     },
     {
+      "id": 150,
       "type": "mcq",
       "q": "Một oxide của chromium là Cr₂O₃. Muối sulfate trong đó chromium có hóa trị tương ứng là",
       "o": [
@@ -1657,6 +1807,7 @@
       "c": 1
     },
     {
+      "id": 151,
       "type": "mcq",
       "q": "Hợp chất của nguyên tố X với S là X₂S₃ và hợp chất của nguyên tố Y với H là YH₃. Công thức hoá học hợp chất của X với Y là",
       "o": [
@@ -1668,6 +1819,7 @@
       "c": 0
     },
     {
+      "id": 152,
       "type": "mcq",
       "q": "Có các phát biểu sau: (a) Trong hợp chất ion, kim loại luôn nhường electron, phi kim luôn nhận electron. (b) Để có 8 electron ở lớp vỏ ngoài cùng thì nguyên tử aluminium hoặc nhường 3 electron hoặc nhận 5 electron. (c) Liên kết trong hợp chất tạo bởi hydrogen và chlorine là liên kết ion. (d) Trong phân tử, hợp chất gồm các nguyên tố C, H, O chỉ có liên kết cộng hoá trị. (e) Khi tạo liên kết ion, nguyên tử chlorine chỉ tạo ion âm bằng cách nhận thêm 1 electron. Số phát biểu đúng là",
       "o": [
