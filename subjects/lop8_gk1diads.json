@@ -188,6 +188,240 @@
         false
       ],
       "explain": "Tháng 4 (hơn 100 mm một chút) đến tháng 9 mưa trên 100 mm; tháng 10 – 3 mưa dưới 100 mm. Mưa nhiều nhất vào tháng 7 – 8; tháng 1 mưa ít và lạnh nhất."
+    },
+    {
+      "id": 11,
+      "type": "tf",
+      "q": "Khi nói về vùng núi Đông Bắc, em hãy chọn ra đâu là ý đúng, đâu là ý sai?",
+      "statements": [
+        "Vùng Đông Bắc là vùng đồi núi thấp nằm ở phía bờ trái của sông Hồng.",
+        "Vùng Đông Bắc kéo dài từ dãy núi Con Voi đến vùng đồi núi ven biển Quảng Ninh.",
+        "Độ cao trung bình phổ biến của vùng Đông Bắc là trên 2 000 m.",
+        "Vùng Đông Bắc nằm giữa sông Hồng và sông Cả."
+      ],
+      "answers": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "explain": "Độ cao trung bình phổ biến của vùng Đông Bắc là dưới 1 000 m. Vùng nằm giữa sông Hồng và sông Cả là vùng Tây Bắc."
+    },
+    {
+      "id": 12,
+      "type": "tf",
+      "q": "Khi nói về vùng núi Đông Bắc, em hãy chọn ra đâu là ý đúng, đâu là ý sai?",
+      "statements": [
+        "Đặc trưng của vùng núi Đông Bắc là những cánh cung núi lớn: Sông Gâm, Ngân Sơn, Bắc Sơn, Đông Triều.",
+        "Vùng đồi (trung du) ở Đông Bắc phát triển mở rộng, như ở Phú Thọ, Bắc Ninh.",
+        "Địa hình các-xtơ rất hiếm gặp ở vùng Đông Bắc.",
+        "Hồ Ba Bể và vịnh Hạ Long là những cảnh quan đẹp do địa hình các-xtơ tạo nên."
+      ],
+      "answers": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "explain": "Ở vùng Đông Bắc, địa hình các-xtơ khá phổ biến, tạo nên những cảnh quan đẹp như hồ Ba Bể, vịnh Hạ Long."
+    },
+    {
+      "id": 13,
+      "type": "tf",
+      "q": "Khi nói về vùng núi Tây Bắc, em hãy chọn ra đâu là ý đúng, đâu là ý sai?",
+      "statements": [
+        "Vùng núi Tây Bắc nằm giữa sông Hồng và sông Cả.",
+        "Tây Bắc có địa hình thấp nhất trong các vùng đồi núi nước ta.",
+        "Độ cao trung bình của vùng Tây Bắc là 1 000 – 2 000 m, có nhiều đỉnh cao trên 2 000 m.",
+        "Các dãy núi cao và cao nguyên ở Tây Bắc chạy song song, kéo dài theo hướng vòng cung."
+      ],
+      "answers": [
+        true,
+        false,
+        true,
+        false
+      ],
+      "explain": "Tây Bắc có địa hình cao nhất nước ta. Các dãy núi cao và cao nguyên ở đây chạy song song, kéo dài theo hướng tây bắc – đông nam."
+    },
+    {
+      "id": 14,
+      "type": "tf",
+      "q": "Khi nói về vùng núi Tây Bắc, em hãy chọn ra đâu là ý đúng, đâu là ý sai?",
+      "statements": [
+        "Dãy Hoàng Liên Sơn và dãy Pu Đen Đinh thuộc vùng núi Tây Bắc.",
+        "Đặc trưng của địa hình Tây Bắc là ít bị chia cắt, bề mặt bằng phẳng.",
+        "Xen giữa các vùng núi đá vôi ở Tây Bắc là các cánh đồng, thung lũng các-xtơ.",
+        "Các cao nguyên ở vùng Tây Bắc bằng phẳng, dễ đi lại."
+      ],
+      "answers": [
+        true,
+        false,
+        true,
+        false
+      ],
+      "explain": "Đặc trưng của địa hình Tây Bắc là bị chia cắt mạnh; các cao nguyên ở đây là những cao nguyên hiểm trở."
+    },
+    {
+      "id": 15,
+      "type": "tf",
+      "q": "Khi nói về đỉnh Phan-xi-păng, em hãy chọn ra đâu là ý đúng, đâu là ý sai?",
+      "statements": [
+        "Phan-xi-păng là đỉnh núi cao nhất Việt Nam, được mệnh danh là “nóc nhà Đông Dương”.",
+        "Theo số liệu mới nhất (năm 2019), đỉnh Phan-xi-păng cao 3 147 m.",
+        "Độ cao 3 143 m của Phan-xi-păng là số liệu đo mới nhất năm 2019.",
+        "Đỉnh Phan-xi-păng thuộc dãy Pu Đen Đinh."
+      ],
+      "answers": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "explain": "3 143 m là độ cao đo năm 1909; số liệu mới nhất năm 2019 là 3 147 m. Phan-xi-păng thuộc dãy Hoàng Liên Sơn."
+    },
+    {
+      "id": 16,
+      "type": "tf",
+      "q": "Khi nói về vùng núi Trường Sơn Bắc, em hãy chọn ra đâu là ý đúng, đâu là ý sai?",
+      "statements": [
+        "Vùng núi Trường Sơn Bắc kéo dài khoảng 600 km từ phía nam sông Cả tới dãy Bạch Mã.",
+        "Trường Sơn Bắc có độ cao trung bình khoảng 1 000 m.",
+        "Vùng Trường Sơn Bắc có nhiều đỉnh cao trên 3 000 m.",
+        "Pu Xai Lai Leng (2 711 m) và Rào Cỏ (2 235 m) là các đỉnh núi thuộc vùng Trường Sơn Bắc."
+      ],
+      "answers": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "explain": "Trường Sơn Bắc chỉ có một số ít đỉnh cao trên 2 000 m như Pu Xai Lai Leng (2 711 m), Rào Cỏ (2 235 m)."
+    },
+    {
+      "id": 17,
+      "type": "tf",
+      "q": "Khi nói về vùng núi Trường Sơn Bắc, em hãy chọn ra đâu là ý đúng, đâu là ý sai?",
+      "statements": [
+        "Trường Sơn Bắc chạy theo hướng tây bắc – đông nam.",
+        "Trường Sơn Bắc có một số nhánh núi đâm ngang ra biển.",
+        "Các nhánh núi đâm ngang ra biển chia cắt đồng bằng duyên hải miền Trung.",
+        "Vùng núi Trường Sơn Bắc kéo dài từ phía nam dãy Bạch Mã tới Đông Nam Bộ."
+      ],
+      "answers": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "explain": "Trường Sơn Bắc kéo dài từ phía nam sông Cả tới dãy Bạch Mã. Từ phía nam dãy Bạch Mã tới Đông Nam Bộ là vùng Trường Sơn Nam."
+    },
+    {
+      "id": 18,
+      "type": "tf",
+      "q": "Khi nói về dãy Bạch Mã, em hãy chọn ra đâu là ý đúng, đâu là ý sai?",
+      "statements": [
+        "Dãy Bạch Mã là một nhánh núi thuộc dãy Trường Sơn.",
+        "Dãy Bạch Mã có độ cao trung bình khoảng 1 200 – 1 300 m.",
+        "Dãy Bạch Mã chạy theo hướng bắc – nam.",
+        "Dãy Bạch Mã là ranh giới tự nhiên quan trọng nhất tạo nên sự phân hoá khí hậu theo chiều bắc – nam ở nước ta."
+      ],
+      "answers": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "explain": "Dãy Bạch Mã chạy theo hướng tây – đông, lan ra sát biển."
+    },
+    {
+      "id": 19,
+      "type": "tf",
+      "q": "Khi nói về vùng núi Trường Sơn Nam, em hãy chọn ra đâu là ý đúng, đâu là ý sai?",
+      "statements": [
+        "Địa hình vùng Trường Sơn Nam chủ yếu là núi và cao nguyên.",
+        "Trường Sơn Nam có độ cao trung bình thấp hơn vùng Trường Sơn Bắc.",
+        "Địa hình Trường Sơn Nam có hướng vòng cung.",
+        "Hai sườn đông và tây của Trường Sơn Nam đối xứng nhau."
+      ],
+      "answers": [
+        true,
+        false,
+        true,
+        false
+      ],
+      "explain": "Trường Sơn Nam có độ cao trung bình lớn hơn vùng Trường Sơn Bắc; hai sườn đông và tây không đối xứng."
+    },
+    {
+      "id": 20,
+      "type": "tf",
+      "q": "Khi nói về vùng núi Trường Sơn Nam, em hãy chọn ra đâu là ý đúng, đâu là ý sai?",
+      "statements": [
+        "Dạng địa hình nổi bật của Trường Sơn Nam là các cao nguyên rộng lớn, xếp tầng.",
+        "Bề mặt các cao nguyên ở Trường Sơn Nam phủ đất đỏ badan.",
+        "Các khối núi cao của Trường Sơn Nam tập trung ở giữa vùng.",
+        "Ngọc Linh (2 598 m), Chư Yang Sin (2 405 m), Lang Biang (2 167 m) là các đỉnh núi thuộc vùng Trường Sơn Nam."
+      ],
+      "answers": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "explain": "Các khối núi cao nằm ở phía bắc và phía nam của vùng Trường Sơn Nam."
+    },
+    {
+      "id": 21,
+      "type": "tf",
+      "q": "Khi nói về vùng núi Trường Sơn Nam, em hãy chọn ra đâu là ý đúng, đâu là ý sai?",
+      "statements": [
+        "Chuyển tiếp giữa miền núi, cao nguyên với miền đồng bằng là địa hình bán bình nguyên Đông Nam Bộ.",
+        "Bán bình nguyên Đông Nam Bộ có những thềm phù sa cổ, có nơi cao tới 200 m.",
+        "Cao nguyên Lâm Viên thuộc vùng Trường Sơn Bắc.",
+        "Cao nguyên Lâm Viên có độ cao trung bình khoảng 1 500 m, diện tích khoảng 1 080 km²."
+      ],
+      "answers": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "explain": "Cao nguyên Lâm Viên thuộc vùng Trường Sơn Nam."
+    },
+    {
+      "id": 22,
+      "type": "tf",
+      "q": "Khi nói về các vùng đồi núi nước ta, em hãy chọn ra đâu là ý đúng, đâu là ý sai?",
+      "statements": [
+        "Vùng Tây Bắc có địa hình cao nhất nước ta.",
+        "Cánh cung Đông Triều thuộc vùng núi Tây Bắc.",
+        "Trong bốn vùng đồi núi, chỉ có vùng Đông Bắc có địa hình các-xtơ.",
+        "Vùng Đông Bắc và vùng Trường Sơn Nam đều có địa hình hướng vòng cung."
+      ],
+      "answers": [
+        true,
+        false,
+        false,
+        true
+      ],
+      "explain": "Cánh cung Đông Triều thuộc vùng Đông Bắc. Vùng Tây Bắc cũng có địa hình các-xtơ (cánh đồng, thung lũng các-xtơ xen giữa các vùng núi đá vôi)."
+    },
+    {
+      "id": 23,
+      "type": "tf",
+      "q": "Khi nói về các vùng đồi núi nước ta, em hãy chọn ra đâu là ý đúng, đâu là ý sai?",
+      "statements": [
+        "Vùng Tây Bắc và vùng Trường Sơn Bắc đều có hướng núi tây bắc – đông nam.",
+        "Sông Cả là ranh giới giữa vùng Tây Bắc và vùng Trường Sơn Bắc.",
+        "Sông Đà là ranh giới giữa vùng Đông Bắc và vùng Tây Bắc.",
+        "Dãy Bạch Mã là ranh giới giữa vùng Trường Sơn Bắc và vùng Trường Sơn Nam."
+      ],
+      "answers": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "explain": "Vùng Đông Bắc nằm ở bờ trái sông Hồng, vùng Tây Bắc nằm giữa sông Hồng và sông Cả, nên ranh giới giữa hai vùng là sông Hồng."
     }
   ]
 }
