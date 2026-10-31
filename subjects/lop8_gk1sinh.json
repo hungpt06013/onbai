@@ -707,18 +707,6 @@
     {
       "id": 62,
       "type": "mcq",
-      "q": "Đặc điểm nào dưới đây không có ở hồng cầu người?",
-      "o": [
-        "Hình đĩa, lõm hai mặt.",
-        "Nhiều nhân, nhân nhỏ và nằm phân tán.",
-        "Màu đỏ hồng.",
-        "Tham gia vào chức năng vận chuyển khí."
-      ],
-      "c": 1
-    },
-    {
-      "id": 63,
-      "type": "mcq",
       "q": "Các tế bào máu ở người được phân chia thành mấy loại chính?",
       "o": [
         "5 loại.",
@@ -729,7 +717,7 @@
       "c": 2
     },
     {
-      "id": 64,
+      "id": 63,
       "type": "mcq",
       "q": "Huyết tương không bao gồm thành phần nào dưới đây?",
       "o": [
@@ -741,7 +729,7 @@
       "c": 2
     },
     {
-      "id": 65,
+      "id": 64,
       "type": "mcq",
       "q": "Trong máu, huyết tương chiếm tỉ lệ bao nhiêu về thể tích?",
       "o": [
@@ -753,7 +741,7 @@
       "c": 3
     },
     {
-      "id": 66,
+      "id": 65,
       "type": "mcq",
       "q": "Máu bao gồm",
       "o": [
@@ -765,7 +753,7 @@
       "c": 1
     },
     {
-      "id": 67,
+      "id": 66,
       "type": "mcq",
       "q": "Khi bị mất máu nhiều, nhanh có thể gây tử vong vì",
       "o": [
@@ -777,7 +765,7 @@
       "c": 1
     },
     {
-      "id": 68,
+      "id": 67,
       "type": "mcq",
       "q": "Chức năng của tiểu cầu là",
       "o": [
@@ -789,7 +777,7 @@
       "c": 2
     },
     {
-      "id": 69,
+      "id": 68,
       "type": "mcq",
       "q": "Loại mạch nào dưới đây vận chuyển máu giàu oxygen?",
       "o": [
@@ -801,7 +789,7 @@
       "c": 3
     },
     {
-      "id": 70,
+      "id": 69,
       "type": "mcq",
       "q": "Tâm thất trái nối liền trực tiếp với loại mạch nào dưới đây?",
       "o": [
@@ -813,7 +801,7 @@
       "c": 2
     },
     {
-      "id": 71,
+      "id": 70,
       "type": "mcq",
       "q": "Tĩnh mạch phổi đổ máu trực tiếp vào ngăn tim nào?",
       "o": [
@@ -825,19 +813,7 @@
       "c": 1
     },
     {
-      "id": 72,
-      "type": "mcq",
-      "q": "Mao mạch có điểm gì đặc biệt để tăng hiệu quả trao đổi chất với tế bào?",
-      "o": [
-        "Vận tốc dòng máu chảy rất chậm.",
-        "Thành mạch chỉ được cấu tạo bởi một lớp biểu bì.",
-        "Phân nhánh dày đặc đến từng tế bào.",
-        "Tất cả các phương án còn lại."
-      ],
-      "c": 3
-    },
-    {
-      "id": 73,
+      "id": 71,
       "type": "mcq",
       "q": "Loại mạch máu nào dưới đây có chức năng nuôi dưỡng tim?",
       "o": [
@@ -849,7 +825,7 @@
       "c": 2
     },
     {
-      "id": 74,
+      "id": 72,
       "type": "mcq",
       "q": "Trong hệ nhóm máu ABO, khi lần lượt để các nhóm máu truyền chéo nhau thì sẽ có tất cả bao nhiêu trường hợp gây kết dính hồng cầu?",
       "o": [
@@ -862,7 +838,7 @@
       "explain": "4 nhóm máu truyền chéo cho nhau có 4 × 3 = 12 trường hợp. Chỉ 5 trường hợp không gây kết dính: O → A, O → B, O → AB, A → AB, B → AB. Vậy có 12 − 5 = 7 trường hợp gây kết dính hồng cầu."
     },
     {
-      "id": 75,
+      "id": 73,
       "type": "mcq",
       "q": "Trong hoạt động miễn dịch của cơ thể người, sự kết hợp của cặp nhân tố nào dưới đây diễn ra theo cơ chế chìa khoá và ổ khoá?",
       "o": [
@@ -874,7 +850,7 @@
       "c": 0
     },
     {
-      "id": 76,
+      "id": 74,
       "type": "mcq",
       "q": "Vòng tuần hoàn lớn không đi qua cơ quan nào dưới đây?",
       "o": [
@@ -886,7 +862,7 @@
       "c": 2
     },
     {
-      "id": 77,
+      "id": 75,
       "type": "mcq",
       "q": "Người mang nhóm máu AB có thể truyền máu cho người mang nhóm máu nào mà không xảy ra sự kết dính hồng cầu?",
       "o": [
@@ -898,7 +874,7 @@
       "c": 1
     },
     {
-      "id": 78,
+      "id": 76,
       "type": "mcq",
       "q": "Đâu không phải bệnh về máu và tim mạch?",
       "o": [
@@ -910,7 +886,7 @@
       "c": 3
     },
     {
-      "id": 79,
+      "id": 77,
       "type": "mcq",
       "q": "Khi được tiêm phòng vaccine thuỷ đậu, chúng ta sẽ không bị mắc căn bệnh này trong tương lai. Đây là dạng miễn dịch nào?",
       "o": [
@@ -922,7 +898,7 @@
       "c": 1
     },
     {
-      "id": 80,
+      "id": 78,
       "type": "mcq",
       "q": "Hồng cầu của nhóm máu nào dưới đây không có kháng nguyên A và cũng không có kháng nguyên B?",
       "o": [
@@ -934,7 +910,7 @@
       "c": 0
     },
     {
-      "id": 81,
+      "id": 79,
       "type": "mcq",
       "q": "Khi chúng ta bị ong chích thì nọc độc của ong được xem là",
       "o": [
