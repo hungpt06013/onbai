@@ -659,18 +659,6 @@
     {
       "id": 58,
       "type": "mcq",
-      "q": "Ở người bình thường có 75 ml máu/kg cơ thể, một người có khối lượng cơ thể là 50 kg thì thể tích máu trong cơ thể là:",
-      "o": [
-        "3,75 lít.",
-        "4,75 lít.",
-        "5,5 lít.",
-        "5 lít."
-      ],
-      "c": 0
-    },
-    {
-      "id": 59,
-      "type": "mcq",
       "q": "Chức năng của huyết tương là:",
       "o": [
         "Tham gia vận chuyển các chất dinh dưỡng, hoocmôn, kháng thể và các chất khoáng, các chất thải.",
@@ -681,7 +669,7 @@
       "c": 3
     },
     {
-      "id": 60,
+      "id": 59,
       "type": "mcq",
       "q": "Khả năng vận chuyển khí của hồng cầu có được là nhờ loại sắc tố nào?",
       "o": [
@@ -693,7 +681,7 @@
       "c": 2
     },
     {
-      "id": 61,
+      "id": 60,
       "type": "mcq",
       "q": "Khi hồng cầu kết hợp với chất khí nào thì máu sẽ có màu đỏ tươi?",
       "o": [
@@ -705,7 +693,7 @@
       "c": 2
     },
     {
-      "id": 62,
+      "id": 61,
       "type": "mcq",
       "q": "Vai trò của hồng cầu là",
       "o": [
@@ -717,7 +705,7 @@
       "c": 1
     },
     {
-      "id": 63,
+      "id": 62,
       "type": "mcq",
       "q": "Đặc điểm nào dưới đây không có ở hồng cầu người?",
       "o": [
@@ -729,7 +717,7 @@
       "c": 1
     },
     {
-      "id": 64,
+      "id": 63,
       "type": "mcq",
       "q": "Các tế bào máu ở người được phân chia thành mấy loại chính?",
       "o": [
@@ -741,7 +729,7 @@
       "c": 2
     },
     {
-      "id": 65,
+      "id": 64,
       "type": "mcq",
       "q": "Huyết tương không bao gồm thành phần nào dưới đây?",
       "o": [
@@ -753,7 +741,7 @@
       "c": 2
     },
     {
-      "id": 66,
+      "id": 65,
       "type": "mcq",
       "q": "Trong máu, huyết tương chiếm tỉ lệ bao nhiêu về thể tích?",
       "o": [
@@ -765,7 +753,7 @@
       "c": 3
     },
     {
-      "id": 67,
+      "id": 66,
       "type": "mcq",
       "q": "Máu bao gồm",
       "o": [
@@ -777,7 +765,7 @@
       "c": 1
     },
     {
-      "id": 68,
+      "id": 67,
       "type": "mcq",
       "q": "Khi bị mất máu nhiều, nhanh có thể gây tử vong vì",
       "o": [
@@ -789,7 +777,7 @@
       "c": 1
     },
     {
-      "id": 69,
+      "id": 68,
       "type": "mcq",
       "q": "Chức năng của tiểu cầu là",
       "o": [
@@ -801,19 +789,7 @@
       "c": 2
     },
     {
-      "id": 70,
-      "type": "mcq",
-      "q": "Bạch cầu được phân chia thành mấy loại chính?",
-      "o": [
-        "3 loại.",
-        "4 loại.",
-        "5 loại.",
-        "6 loại."
-      ],
-      "c": 2
-    },
-    {
-      "id": 71,
+      "id": 69,
       "type": "mcq",
       "q": "Loại mạch nào dưới đây vận chuyển máu giàu oxygen?",
       "o": [
@@ -825,7 +801,7 @@
       "c": 3
     },
     {
-      "id": 72,
+      "id": 70,
       "type": "mcq",
       "q": "Tâm thất trái nối liền trực tiếp với loại mạch nào dưới đây?",
       "o": [
@@ -837,43 +813,7 @@
       "c": 2
     },
     {
-      "id": 73,
-      "type": "mcq",
-      "q": "Phát biểu nào dưới đây là đúng?",
-      "o": [
-        "Huyết thanh khi loại bỏ chất sinh tơ máu thì còn lại nước mô.",
-        "Huyết thanh khi loại bỏ chất sinh tơ máu thì còn lại huyết tương.",
-        "Huyết tương khi loại bỏ chất sinh tơ máu thì còn lại huyết thanh.",
-        "Nước mô khi loại bỏ chất sinh tơ máu thì còn lại huyết tương."
-      ],
-      "c": 2
-    },
-    {
-      "id": 74,
-      "type": "mcq",
-      "q": "Ở tim người, tại vị trí nào dưới đây không xuất hiện van?",
-      "o": [
-        "Giữa tĩnh mạch chủ và tâm nhĩ phải.",
-        "Giữa tâm nhĩ trái và tâm thất trái.",
-        "Giữa tâm nhĩ phải và tâm thất phải.",
-        "Giữa tâm thất trái và động mạch chủ."
-      ],
-      "c": 0
-    },
-    {
-      "id": 75,
-      "type": "mcq",
-      "q": "Các pha trong mỗi chu kì tim diễn ra theo trình tự trước sau như thế nào?",
-      "o": [
-        "Pha thất co – pha dãn chung – pha nhĩ co.",
-        "Pha dãn chung – pha thất co – pha nhĩ co.",
-        "Pha thất co – pha nhĩ co – pha dãn chung.",
-        "Pha nhĩ co – pha thất co – pha dãn chung."
-      ],
-      "c": 3
-    },
-    {
-      "id": 76,
+      "id": 71,
       "type": "mcq",
       "q": "Tĩnh mạch phổi đổ máu trực tiếp vào ngăn tim nào?",
       "o": [
@@ -885,7 +825,7 @@
       "c": 1
     },
     {
-      "id": 77,
+      "id": 72,
       "type": "mcq",
       "q": "Mao mạch có điểm gì đặc biệt để tăng hiệu quả trao đổi chất với tế bào?",
       "o": [
@@ -897,7 +837,7 @@
       "c": 3
     },
     {
-      "id": 78,
+      "id": 73,
       "type": "mcq",
       "q": "Loại mạch máu nào dưới đây có chức năng nuôi dưỡng tim?",
       "o": [
@@ -909,7 +849,7 @@
       "c": 2
     },
     {
-      "id": 79,
+      "id": 74,
       "type": "mcq",
       "q": "Trong hệ nhóm máu ABO, khi lần lượt để các nhóm máu truyền chéo nhau thì sẽ có tất cả bao nhiêu trường hợp gây kết dính hồng cầu?",
       "o": [
@@ -922,31 +862,7 @@
       "explain": "4 nhóm máu truyền chéo cho nhau có 4 × 3 = 12 trường hợp. Chỉ 5 trường hợp không gây kết dính: O → A, O → B, O → AB, A → AB, B → AB. Vậy có 12 − 5 = 7 trường hợp gây kết dính hồng cầu."
     },
     {
-      "id": 80,
-      "type": "mcq",
-      "q": "Ở Việt Nam, số lượng hồng cầu trung bình của nam giới là",
-      "o": [
-        "4,4 – 4,6 triệu/ml máu.",
-        "3,9 – 4,1 triệu/ml máu.",
-        "5,4 – 5,6 triệu/ml máu.",
-        "4,8 – 5 triệu/ml máu."
-      ],
-      "c": 0
-    },
-    {
-      "id": 81,
-      "type": "mcq",
-      "q": "Khi nói về hoạt động tim mạch, phát biểu nào dưới đây là đúng?",
-      "o": [
-        "Van 3 lá luôn đóng, chỉ mở khi tâm thất trái co.",
-        "Van động mạch luôn mở, chỉ đóng khi tâm thất co.",
-        "Khi tâm thất trái co, van hai lá sẽ đóng lại.",
-        "Khi tâm thất phải co, van 3 lá sẽ mở ra."
-      ],
-      "c": 2
-    },
-    {
-      "id": 82,
+      "id": 75,
       "type": "mcq",
       "q": "Trong hoạt động miễn dịch của cơ thể người, sự kết hợp của cặp nhân tố nào dưới đây diễn ra theo cơ chế chìa khoá và ổ khoá?",
       "o": [
@@ -958,7 +874,7 @@
       "c": 0
     },
     {
-      "id": 83,
+      "id": 76,
       "type": "mcq",
       "q": "Vòng tuần hoàn lớn không đi qua cơ quan nào dưới đây?",
       "o": [
@@ -970,7 +886,7 @@
       "c": 2
     },
     {
-      "id": 84,
+      "id": 77,
       "type": "mcq",
       "q": "Người mang nhóm máu AB có thể truyền máu cho người mang nhóm máu nào mà không xảy ra sự kết dính hồng cầu?",
       "o": [
@@ -982,7 +898,7 @@
       "c": 1
     },
     {
-      "id": 85,
+      "id": 78,
       "type": "mcq",
       "q": "Đâu không phải bệnh về máu và tim mạch?",
       "o": [
@@ -994,32 +910,7 @@
       "c": 3
     },
     {
-      "id": 86,
-      "type": "mcq",
-      "q": "Ở người bình thường, thời gian tâm thất nghỉ trong mỗi chu kì tim là bao lâu?",
-      "o": [
-        "0,6 giây.",
-        "0,4 giây.",
-        "0,5 giây.",
-        "0,3 giây."
-      ],
-      "c": 2,
-      "explain": "Mỗi chu kì tim kéo dài 0,8 giây: tâm nhĩ co 0,1 giây, tâm thất co 0,3 giây, dãn chung 0,4 giây. Tâm thất nghỉ 0,8 − 0,3 = 0,5 giây."
-    },
-    {
-      "id": 87,
-      "type": "mcq",
-      "q": "Ở người bình thường, trung bình mỗi phút tim đập bao nhiêu lần?",
-      "o": [
-        "85 lần.",
-        "75 lần.",
-        "60 lần.",
-        "90 lần."
-      ],
-      "c": 1
-    },
-    {
-      "id": 88,
+      "id": 79,
       "type": "mcq",
       "q": "Khi được tiêm phòng vaccine thuỷ đậu, chúng ta sẽ không bị mắc căn bệnh này trong tương lai. Đây là dạng miễn dịch nào?",
       "o": [
@@ -1031,7 +922,7 @@
       "c": 1
     },
     {
-      "id": 89,
+      "id": 80,
       "type": "mcq",
       "q": "Hồng cầu của nhóm máu nào dưới đây không có kháng nguyên A và cũng không có kháng nguyên B?",
       "o": [
@@ -1043,19 +934,7 @@
       "c": 0
     },
     {
-      "id": 90,
-      "type": "mcq",
-      "q": "Nhịp tim sẽ tăng lên trong trường hợp nào sau đây?",
-      "o": [
-        "Khi bị khuyết tật tim (hẹp hoặc hở van tim, xơ phổi, mạch máu xơ cứng…).",
-        "Khi sử dụng các chất kích thích như thuốc lá, rượu, heroin,…",
-        "Khi cơ thể trải qua cú sốc nào đó: sốt cao, mất máu, mất nước hoặc lo lắng, sợ hãi kéo dài.",
-        "Tất cả các đáp án còn lại."
-      ],
-      "c": 3
-    },
-    {
-      "id": 91,
+      "id": 81,
       "type": "mcq",
       "q": "Khi chúng ta bị ong chích thì nọc độc của ong được xem là",
       "o": [
