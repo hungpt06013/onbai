@@ -659,18 +659,6 @@
     {
       "id": 58,
       "type": "mcq",
-      "q": "Chúng ta sẽ bị mất nhiều nước trong trường hợp nào sau đây?",
-      "o": [
-        "Tiêu chảy.",
-        "Lao động nặng.",
-        "Sốt cao.",
-        "Tất cả các phương án còn lại."
-      ],
-      "c": 3
-    },
-    {
-      "id": 59,
-      "type": "mcq",
       "q": "Ở người bình thường có 75 ml máu/kg cơ thể, một người có khối lượng cơ thể là 50 kg thì thể tích máu trong cơ thể là:",
       "o": [
         "3,75 lít.",
@@ -681,79 +669,7 @@
       "c": 0
     },
     {
-      "id": 60,
-      "type": "mcq",
-      "q": "Môi trường trong liên hệ với môi trường ngoài",
-      "o": [
-        "Thông qua các hệ cơ quan như hệ tiêu hoá, hệ hô hấp, hệ bài tiết, da.",
-        "Thông qua huyết tương trong máu.",
-        "Thông qua hệ bạch huyết.",
-        "Thông qua cả các hệ cơ quan (tiêu hoá, hô hấp, bài tiết, da) và huyết tương trong máu."
-      ],
-      "c": 0
-    },
-    {
-      "id": 61,
-      "type": "mcq",
-      "q": "Khi cơ thể bị mất nước nhiều thì",
-      "o": [
-        "Máu có thể lưu thông dễ dàng.",
-        "Máu khó lưu thông.",
-        "Mạch máu bị co lại.",
-        "Cả hai ý “máu có thể lưu thông dễ dàng” và “máu khó lưu thông”."
-      ],
-      "c": 1
-    },
-    {
-      "id": 62,
-      "type": "mcq",
-      "q": "Môi trường trong cơ thể có vai trò chính là",
-      "o": [
-        "Giúp tế bào thường xuyên trao đổi chất với môi trường ngoài.",
-        "Giúp tế bào có hình dạng ổn định.",
-        "Giúp tế bào không bị xâm nhập bởi các tác nhân gây hại.",
-        "Sinh tổng hợp các chất cần thiết cho tế bào."
-      ],
-      "c": 0
-    },
-    {
-      "id": 63,
-      "type": "mcq",
-      "q": "Nước mô không bao gồm thành phần nào dưới đây?",
-      "o": [
-        "Huyết tương.",
-        "Hồng cầu.",
-        "Bạch cầu.",
-        "Tiểu cầu."
-      ],
-      "c": 1
-    },
-    {
-      "id": 64,
-      "type": "mcq",
-      "q": "Trong cơ thể sống, tế bào nằm chìm ngập trong loại dịch nào?",
-      "o": [
-        "Nước mô.",
-        "Máu.",
-        "Dịch bạch huyết.",
-        "Dịch nhân."
-      ],
-      "c": 0
-    },
-    {
-      "id": 65,
-      "type": "mcq",
-      "q": "Môi trường trong cơ thể được tạo thành bởi",
-      "o": [
-        "Nước mô.",
-        "Máu.",
-        "Bạch huyết.",
-        "Cả nước mô, máu và bạch huyết."
-      ],
-      "c": 3
-    },
-    {
-      "id": 66,
+      "id": 59,
       "type": "mcq",
       "q": "Chức năng của huyết tương là:",
       "o": [
@@ -765,7 +681,7 @@
       "c": 3
     },
     {
-      "id": 67,
+      "id": 60,
       "type": "mcq",
       "q": "Khả năng vận chuyển khí của hồng cầu có được là nhờ loại sắc tố nào?",
       "o": [
@@ -777,7 +693,7 @@
       "c": 2
     },
     {
-      "id": 68,
+      "id": 61,
       "type": "mcq",
       "q": "Khi hồng cầu kết hợp với chất khí nào thì máu sẽ có màu đỏ tươi?",
       "o": [
@@ -789,7 +705,7 @@
       "c": 2
     },
     {
-      "id": 69,
+      "id": 62,
       "type": "mcq",
       "q": "Vai trò của hồng cầu là",
       "o": [
@@ -801,7 +717,7 @@
       "c": 1
     },
     {
-      "id": 70,
+      "id": 63,
       "type": "mcq",
       "q": "Đặc điểm nào dưới đây không có ở hồng cầu người?",
       "o": [
@@ -813,7 +729,7 @@
       "c": 1
     },
     {
-      "id": 71,
+      "id": 64,
       "type": "mcq",
       "q": "Các tế bào máu ở người được phân chia thành mấy loại chính?",
       "o": [
@@ -825,7 +741,7 @@
       "c": 2
     },
     {
-      "id": 72,
+      "id": 65,
       "type": "mcq",
       "q": "Huyết tương không bao gồm thành phần nào dưới đây?",
       "o": [
@@ -837,7 +753,7 @@
       "c": 2
     },
     {
-      "id": 73,
+      "id": 66,
       "type": "mcq",
       "q": "Trong máu, huyết tương chiếm tỉ lệ bao nhiêu về thể tích?",
       "o": [
@@ -849,7 +765,7 @@
       "c": 3
     },
     {
-      "id": 74,
+      "id": 67,
       "type": "mcq",
       "q": "Máu bao gồm",
       "o": [
@@ -861,7 +777,7 @@
       "c": 1
     },
     {
-      "id": 75,
+      "id": 68,
       "type": "mcq",
       "q": "Khi bị mất máu nhiều, nhanh có thể gây tử vong vì",
       "o": [
@@ -873,7 +789,7 @@
       "c": 1
     },
     {
-      "id": 76,
+      "id": 69,
       "type": "mcq",
       "q": "Chức năng của tiểu cầu là",
       "o": [
@@ -885,7 +801,7 @@
       "c": 2
     },
     {
-      "id": 77,
+      "id": 70,
       "type": "mcq",
       "q": "Bạch cầu được phân chia thành mấy loại chính?",
       "o": [
@@ -897,7 +813,7 @@
       "c": 2
     },
     {
-      "id": 78,
+      "id": 71,
       "type": "mcq",
       "q": "Loại mạch nào dưới đây vận chuyển máu giàu oxygen?",
       "o": [
@@ -909,7 +825,7 @@
       "c": 3
     },
     {
-      "id": 79,
+      "id": 72,
       "type": "mcq",
       "q": "Tâm thất trái nối liền trực tiếp với loại mạch nào dưới đây?",
       "o": [
@@ -921,7 +837,7 @@
       "c": 2
     },
     {
-      "id": 80,
+      "id": 73,
       "type": "mcq",
       "q": "Phát biểu nào dưới đây là đúng?",
       "o": [
@@ -933,7 +849,7 @@
       "c": 2
     },
     {
-      "id": 81,
+      "id": 74,
       "type": "mcq",
       "q": "Ở tim người, tại vị trí nào dưới đây không xuất hiện van?",
       "o": [
@@ -945,7 +861,7 @@
       "c": 0
     },
     {
-      "id": 82,
+      "id": 75,
       "type": "mcq",
       "q": "Các pha trong mỗi chu kì tim diễn ra theo trình tự trước sau như thế nào?",
       "o": [
@@ -957,7 +873,7 @@
       "c": 3
     },
     {
-      "id": 83,
+      "id": 76,
       "type": "mcq",
       "q": "Tĩnh mạch phổi đổ máu trực tiếp vào ngăn tim nào?",
       "o": [
@@ -969,7 +885,7 @@
       "c": 1
     },
     {
-      "id": 84,
+      "id": 77,
       "type": "mcq",
       "q": "Mao mạch có điểm gì đặc biệt để tăng hiệu quả trao đổi chất với tế bào?",
       "o": [
@@ -981,7 +897,7 @@
       "c": 3
     },
     {
-      "id": 85,
+      "id": 78,
       "type": "mcq",
       "q": "Loại mạch máu nào dưới đây có chức năng nuôi dưỡng tim?",
       "o": [
@@ -993,7 +909,7 @@
       "c": 2
     },
     {
-      "id": 86,
+      "id": 79,
       "type": "mcq",
       "q": "Trong hệ nhóm máu ABO, khi lần lượt để các nhóm máu truyền chéo nhau thì sẽ có tất cả bao nhiêu trường hợp gây kết dính hồng cầu?",
       "o": [
@@ -1006,7 +922,7 @@
       "explain": "4 nhóm máu truyền chéo cho nhau có 4 × 3 = 12 trường hợp. Chỉ 5 trường hợp không gây kết dính: O → A, O → B, O → AB, A → AB, B → AB. Vậy có 12 − 5 = 7 trường hợp gây kết dính hồng cầu."
     },
     {
-      "id": 87,
+      "id": 80,
       "type": "mcq",
       "q": "Ở Việt Nam, số lượng hồng cầu trung bình của nam giới là",
       "o": [
@@ -1018,7 +934,7 @@
       "c": 0
     },
     {
-      "id": 88,
+      "id": 81,
       "type": "mcq",
       "q": "Khi nói về hoạt động tim mạch, phát biểu nào dưới đây là đúng?",
       "o": [
@@ -1030,7 +946,7 @@
       "c": 2
     },
     {
-      "id": 89,
+      "id": 82,
       "type": "mcq",
       "q": "Trong hoạt động miễn dịch của cơ thể người, sự kết hợp của cặp nhân tố nào dưới đây diễn ra theo cơ chế chìa khoá và ổ khoá?",
       "o": [
@@ -1042,19 +958,7 @@
       "c": 0
     },
     {
-      "id": 90,
-      "type": "mcq",
-      "q": "Trong hệ bạch huyết của người, phân hệ nhỏ thu bạch huyết ở",
-      "o": [
-        "nửa trên bên phải cơ thể.",
-        "nửa dưới bên phải cơ thể.",
-        "nửa trên bên trái và phần dưới cơ thể.",
-        "nửa dưới bên phải và phần trên cơ thể."
-      ],
-      "c": 0
-    },
-    {
-      "id": 91,
+      "id": 83,
       "type": "mcq",
       "q": "Vòng tuần hoàn lớn không đi qua cơ quan nào dưới đây?",
       "o": [
@@ -1066,7 +970,7 @@
       "c": 2
     },
     {
-      "id": 92,
+      "id": 84,
       "type": "mcq",
       "q": "Người mang nhóm máu AB có thể truyền máu cho người mang nhóm máu nào mà không xảy ra sự kết dính hồng cầu?",
       "o": [
@@ -1078,7 +982,7 @@
       "c": 1
     },
     {
-      "id": 93,
+      "id": 85,
       "type": "mcq",
       "q": "Đâu không phải bệnh về máu và tim mạch?",
       "o": [
@@ -1090,7 +994,7 @@
       "c": 3
     },
     {
-      "id": 94,
+      "id": 86,
       "type": "mcq",
       "q": "Ở người bình thường, thời gian tâm thất nghỉ trong mỗi chu kì tim là bao lâu?",
       "o": [
@@ -1103,7 +1007,7 @@
       "explain": "Mỗi chu kì tim kéo dài 0,8 giây: tâm nhĩ co 0,1 giây, tâm thất co 0,3 giây, dãn chung 0,4 giây. Tâm thất nghỉ 0,8 − 0,3 = 0,5 giây."
     },
     {
-      "id": 95,
+      "id": 87,
       "type": "mcq",
       "q": "Ở người bình thường, trung bình mỗi phút tim đập bao nhiêu lần?",
       "o": [
@@ -1115,7 +1019,7 @@
       "c": 1
     },
     {
-      "id": 96,
+      "id": 88,
       "type": "mcq",
       "q": "Khi được tiêm phòng vaccine thuỷ đậu, chúng ta sẽ không bị mắc căn bệnh này trong tương lai. Đây là dạng miễn dịch nào?",
       "o": [
@@ -1127,7 +1031,7 @@
       "c": 1
     },
     {
-      "id": 97,
+      "id": 89,
       "type": "mcq",
       "q": "Hồng cầu của nhóm máu nào dưới đây không có kháng nguyên A và cũng không có kháng nguyên B?",
       "o": [
@@ -1139,7 +1043,7 @@
       "c": 0
     },
     {
-      "id": 98,
+      "id": 90,
       "type": "mcq",
       "q": "Nhịp tim sẽ tăng lên trong trường hợp nào sau đây?",
       "o": [
@@ -1151,7 +1055,7 @@
       "c": 3
     },
     {
-      "id": 99,
+      "id": 91,
       "type": "mcq",
       "q": "Khi chúng ta bị ong chích thì nọc độc của ong được xem là",
       "o": [
