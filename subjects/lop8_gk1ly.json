@@ -1,0 +1,1322 @@
+{
+  "fullName": "GK1 LÝ - Bài 13, 14, 15 KHTN",
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "q": "Cho biết 13,5 kg nhôm có thể tích là 5 dm³. Khối lượng riêng của nhôm bằng bao nhiêu?",
+      "o": [
+        "2700 kg/m³.",
+        "2700 kg/dm³.",
+        "260 kg/m³.",
+        "270 kg/m³."
+      ],
+      "c": 0
+    },
+    {
+      "id": 2,
+      "type": "mcq",
+      "q": "Mỗi hòn gạch \"hai lỗ\" có khối lượng 1,6 kg. Hòn gạch có thể tích 1200 cm³. Mỗi lỗ có thể tích 192 cm³. Tính trọng lượng riêng của gạch.",
+      "o": [
+        "13270 N/m³.",
+        "12654 N/m³.",
+        "42608 N/m³.",
+        "19608 N/m³."
+      ],
+      "c": 3
+    },
+    {
+      "id": 3,
+      "type": "mcq",
+      "q": "Cho biết 1kg nước có thể tích 1 lít còn 1kg dầu hỏa có thể tích 5/4 lít. Phát biểu nào sau đây là đúng?",
+      "o": [
+        "1 lít dầu hỏa có khối lượng lớn hơn 1 lít nước.",
+        "1 lít nước có thể tích lớn hơn 1 lít dầu hỏa.",
+        "Khối lượng riêng của nước bằng 5/4 khối lượng riêng của dầu hỏa.",
+        "Khối lượng riêng của dầu hỏa bằng 5/4 khối lượng riêng của dầu hỏa."
+      ],
+      "c": 2
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "q": "Người ta thường nói đồng nặng hơn nhôm. Câu giải thích nào sau đây là không đúng?",
+      "o": [
+        "Vì trọng lượng của đồng lớn hơn trọng lượng của nhôm.",
+        "Vì khối lượng riêng của đồng lớn hơn khối lượng riêng của nhôm.",
+        "Vì trọng lượng riêng của miếng đồng lớn hơn trọng lượng của miếng nhôm có cùng thể tích.",
+        "Vì trọng lượng riêng của đồng lớn hơn trọng lượng riêng của nhôm."
+      ],
+      "c": 0
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "q": "Một hộp sữa Ông Thọ có khối lượng 397g và có thể tích 320cm³. Hãy tính khối lượng riêng của sữa trong hộp theo đơn vị kg/m³.",
+      "o": [
+        "1240,6 kg/m³.",
+        "1740,6 kg/m³.",
+        "1440,6 kg/m³.",
+        "1300,6 kg/m³."
+      ],
+      "c": 0
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "q": "Một vật bằng sắt có khối lượng riêng là 7800 kg/m³; thể tích 50 dm³. Khối lượng của vật là:",
+      "o": [
+        "312 kg.",
+        "390 kg.",
+        "390000 kg.",
+        "156 kg."
+      ],
+      "c": 1
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "q": "Muốn đo khối lượng riêng của các hòn bi thủy tinh, ta cần dùng những dụng cụ gì? Hãy chọn câu trả lời đúng.",
+      "o": [
+        "Cần dùng một cái cân và một cái bình chia độ.",
+        "Chỉ cần dùng một cái bình chia độ.",
+        "Chỉ cần dùng một cái lực kế.",
+        "Chỉ cần dùng một cái cân."
+      ],
+      "c": 0
+    },
+    {
+      "id": 8,
+      "type": "mcq",
+      "q": "Biết 10 lít cát có khối lượng 15 kg. Tính trọng lượng của một đống cát 3 m³.",
+      "o": [
+        "60000 N.",
+        "30000 N.",
+        "50000 N.",
+        "45000 N."
+      ],
+      "c": 3
+    },
+    {
+      "id": 9,
+      "type": "mcq",
+      "q": "Biết 10 lít cát có khối lượng 15 kg. Tính thể tích của 1 tấn cát.",
+      "o": [
+        "0,667 m⁴.",
+        "0,778 m³.",
+        "0,667 m³.",
+        "0,778 m⁴."
+      ],
+      "c": 2
+    },
+    {
+      "id": 10,
+      "type": "mcq",
+      "q": "1kg kem giặt VISO có thể tích 900cm³. Tính khối lượng riêng của kem giặt VISO và so sánh với khối lượng riêng của nước.",
+      "o": [
+        "1240 kg/m³.",
+        "1200 kg/m³.",
+        "1111,1 kg/m³.",
+        "1000 kg/m³."
+      ],
+      "c": 2
+    },
+    {
+      "id": 11,
+      "type": "mcq",
+      "q": "Khối lượng riêng của sắt là 7800 kg/m³. Vậy, 1kg sắt sẽ có thể tích vào khoảng",
+      "o": [
+        "12,8 cm³.",
+        "128 cm³.",
+        "1.280 cm³.",
+        "12.800 cm³."
+      ],
+      "c": 1
+    },
+    {
+      "id": 12,
+      "type": "mcq",
+      "q": "Công thức nào dưới đây tính trọng lượng riêng của một chất theo trọng lượng và thể tích?",
+      "o": [
+        "d = V.D.",
+        "D = V.P.",
+        "D = P.V.",
+        "d = P/V."
+      ],
+      "c": 3
+    },
+    {
+      "id": 13,
+      "type": "mcq",
+      "q": "Khối lượng riêng của nhôm là bao nhiêu?",
+      "o": [
+        "1300,6 kg/m³.",
+        "2700 N.",
+        "2700 kg/m³.",
+        "2700 N/m³."
+      ],
+      "c": 2
+    },
+    {
+      "id": 14,
+      "type": "mcq",
+      "q": "Khối lượng riêng của dầu ăn vào khoảng 800 kg/m³. Do đó, 2 lít dầu ăn sẽ có trọng lượng khoảng",
+      "o": [
+        "1,6 N.",
+        "16 N.",
+        "160 N.",
+        "1600 N."
+      ],
+      "c": 1
+    },
+    {
+      "id": 15,
+      "type": "mcq",
+      "q": "Để xác định khối lượng riêng của các viên sỏi, ba bạn Sử, Sen, Anh đưa ra ý kiến như sau:\nSử: Mình chỉ cần một cái cân là đủ.\nSen: Theo mình, cần một bình chia độ mới đúng.\nAnh: Sai bét, phải cần một cái cân và một bình chia độ mới xác định được chứ.\nTheo em, ý kiến nào đúng.",
+      "o": [
+        "Sử đúng.",
+        "Sen đúng.",
+        "Anh đúng.",
+        "Cả ba bạn cùng sai."
+      ],
+      "c": 2
+    },
+    {
+      "id": 16,
+      "type": "mcq",
+      "q": "Đun nóng một lượng nước đá từ 0°C đến 100°C. Khối lượng của lượng nước đó thay đổi như thế nào?",
+      "o": [
+        "tăng lên.",
+        "giảm xuống.",
+        "tăng/giảm 50%.",
+        "không đổi."
+      ],
+      "c": 3
+    },
+    {
+      "id": 17,
+      "type": "mcq",
+      "q": "Quan sát cân như hình vẽ sau:",
+      "img": "https://i.postimg.cc/L87HLt6g/image.png",
+      "o": [
+        "Khối lượng riêng của nước nặng hơn dầu.",
+        "Khối lượng riêng của dầu nặng hơn nước.",
+        "Khối lượng riêng của nước và của dầu bằng nhau.",
+        "Chưa đủ yếu tố để xác định."
+      ],
+      "c": 0
+    },
+    {
+      "id": 18,
+      "type": "mcq",
+      "q": "Cho 3 thỏi đồng, nhôm, thủy tinh có thể tích bằng nhau. Khối lượng của chúng được sắp xếp theo khối lượng giảm dần như sau: (chọn câu đúng). Cho biết D(đồng) = 8900 kg/m³; D(nhôm) = 2700 kg/m³; D(thủy tinh) = 2500 kg/m³.",
+      "o": [
+        "m(đồng) > m(nhôm) > m(thủy tinh).",
+        "m(thủy tinh) > m(nhôm) > m(đồng).",
+        "m(nhôm) > m(đồng) > m(thủy tinh).",
+        "m(nhôm) > m(thủy tinh) > m(đồng)."
+      ],
+      "c": 0
+    },
+    {
+      "id": 19,
+      "type": "mcq",
+      "q": "Đơn vị đo khối lượng hợp pháp của nước Việt Nam là",
+      "o": [
+        "tấn (kí hiệu: t).",
+        "miligram (kí hiệu: mg).",
+        "kilogram (kí hiệu: kg).",
+        "gram (kí hiệu: g)."
+      ],
+      "c": 2
+    },
+    {
+      "id": 20,
+      "type": "mcq",
+      "q": "Để đo khối lượng người ta dùng dụng cụ gì?",
+      "o": [
+        "Thước.",
+        "Bình chia độ.",
+        "Cân.",
+        "Ca đong."
+      ],
+      "c": 2
+    },
+    {
+      "id": 21,
+      "type": "mcq",
+      "q": "Khối lượng riêng của nước là",
+      "o": [
+        "998 kg/m³.",
+        "996 kg/m³.",
+        "997 kg/m³.",
+        "995 kg/m³."
+      ],
+      "c": 0
+    },
+    {
+      "id": 22,
+      "type": "mcq",
+      "q": "Trên vỏ các chai nước giải khát có ghi các số liệu (ví dụ 330ml). Số liệu đó chỉ",
+      "o": [
+        "thể tích của cả chai nước.",
+        "thể tích của nước trong chai.",
+        "khối lượng của cả chai nước.",
+        "khối lượng của nước trong chai."
+      ],
+      "c": 1
+    },
+    {
+      "id": 23,
+      "type": "mcq",
+      "q": "Bức tượng phật Di Lạc tại chùa Vĩnh Tràng (Mỹ Tho, Tiền Giang) là một trong những bức tượng phật khổng lồ nổi tiếng trên thế giới. Tượng cao 20 m, nặng 250 tấn. Thể tích đồng được dùng để đúc bức tượng trên có giá trị là bao nhiêu? Biết khối lượng riêng của đồng là 8900 kg/m³.",
+      "o": [
+        "28,08 m³.",
+        "2808 m³.",
+        "2,808 m³.",
+        "280,8 m³."
+      ],
+      "c": 0
+    },
+    {
+      "id": 24,
+      "type": "mcq",
+      "q": "Gọi d và D lần lượt là trọng lượng riêng và khối lượng riêng. Mối liên hệ giữa d và D là:",
+      "o": [
+        "D = 10d.",
+        "d = 10D.",
+        "d = 10/D.",
+        "D + d = 10."
+      ],
+      "c": 1
+    },
+    {
+      "id": 25,
+      "type": "mcq",
+      "q": "Đổi đơn vị nào dưới đây đúng?",
+      "o": [
+        "100 kg/m³ = 1 g/cm³.",
+        "10 kg/m³ = 0,01 g/cm³.",
+        "100 kg/m³ = 10 g/mL.",
+        "1 kg/m³ = 0,01 g/mL."
+      ],
+      "c": 1
+    },
+    {
+      "id": 26,
+      "type": "mcq",
+      "q": "Một khối hình hộp chữ nhật có kích thước 3 cm × 4 cm × 5 cm, khối lượng 48g. Khối lượng riêng của vật liệu làm khối hình hộp là",
+      "o": [
+        "0,8 g/cm³.",
+        "0,48 g/cm³.",
+        "0,6 g/cm³.",
+        "2,88 g/cm³."
+      ],
+      "c": 0
+    },
+    {
+      "id": 27,
+      "type": "mcq",
+      "q": "Một người khiêng một khúc gỗ tròn dài 1 m đường kính 20 cm. Khối lượng riêng của gỗ vào khoảng 800 kg/m³. Trọng lượng khối gỗ đặt lên vai người đó là khoảng",
+      "o": [
+        "250 N.",
+        "300 N.",
+        "400 N.",
+        "500 N."
+      ],
+      "c": 0
+    },
+    {
+      "id": 28,
+      "type": "mcq",
+      "q": "Người ta đo được khối lượng của 200 ml nước là 200 g. Khối lượng riêng của nước tính theo đơn vị g/L là",
+      "o": [
+        "D = 1 000 g/L.",
+        "D = 1 g/L.",
+        "D = 4 g/L.",
+        "D = 4 000 g/L."
+      ],
+      "c": 0
+    },
+    {
+      "id": 29,
+      "type": "mcq",
+      "q": "Dầu nổi trên mặt nước vì",
+      "o": [
+        "khối lượng riêng của dầu bằng khối lượng riêng của nước.",
+        "khối lượng riêng của dầu nhỏ hơn khối lượng riêng của nước.",
+        "khối lượng riêng của dầu lớn hơn khối lượng riêng của nước.",
+        "thể tích của dầu nhỏ hơn thể tích của nước."
+      ],
+      "c": 1
+    },
+    {
+      "id": 30,
+      "type": "mcq",
+      "q": "Muốn đo khối lượng riêng của quả cầu bằng sắt người ta dùng dụng cụ gì?",
+      "o": [
+        "Chỉ cần dùng một cái cân.",
+        "Chỉ cần dùng một lực kế.",
+        "Cần dùng một cái cân và bình chia độ.",
+        "Chỉ cần dùng một bình chia độ."
+      ],
+      "c": 2
+    },
+    {
+      "id": 31,
+      "type": "mcq",
+      "q": "Biết rằng trọng lượng của vật càng giảm khi đưa vật lên càng cao so với mặt đất. Khi đưa một vật lên cao dần, kết luận nào sau đây là đúng? Coi trong suốt quá trình đó vật không bị biến dạng.",
+      "o": [
+        "Khối lượng riêng của vật càng tăng.",
+        "Trọng lượng riêng của vật giảm dần.",
+        "Trọng lượng riêng của vật càng tăng.",
+        "Khối lượng riêng của vật càng giảm."
+      ],
+      "c": 1
+    },
+    {
+      "id": 32,
+      "type": "mcq",
+      "q": "Cho khối lượng riêng của nhôm, sắt, chì, đá lần lượt là 2700 kg/m³, 7800 kg/m³, 11300 kg/m³, 2600 kg/m³. Một khối đồng chất có thể tích 300 cm³, nặng 810g đó là",
+      "o": [
+        "nhôm.",
+        "sắt.",
+        "chì.",
+        "đá."
+      ],
+      "c": 0
+    },
+    {
+      "id": 33,
+      "type": "mcq",
+      "q": "Cho hai khối kim loại chì và sắt. Sắt có khối lượng gấp đôi chì. Biết khối lượng riêng của sắt và chì lần lượt là D₁ = 7800 kg/m³, D₂ = 11300 kg/m³. Tỉ lệ thể tích giữa sắt và chì gần nhất với giá trị nào sau đây?",
+      "o": [
+        "0,69.",
+        "2,9.",
+        "1,38.",
+        "3,2."
+      ],
+      "c": 1
+    },
+    {
+      "id": 34,
+      "type": "mcq",
+      "q": "Nếu sữa trong một hộp sữa có khối lượng tịnh 387 g và thể tích 0,314 lít thì trọng lượng riêng của sữa gần nhất với giá trị nào sau đây?",
+      "o": [
+        "1,264 N/m³.",
+        "0,791 N/m³.",
+        "12643 N/m³.",
+        "1264 N/m³."
+      ],
+      "c": 2
+    },
+    {
+      "id": 35,
+      "type": "mcq",
+      "q": "Xét hiện tượng sau: Nước đựng trong khay làm đá có bề mặt thoáng phẳng. Khi nước đông lại thành đá trong tủ lạnh, nước đá có mặt khum vồng cao lên. Như vậy khối lượng riêng của nước đá nhỏ hơn khối lượng riêng của nước ở nhiệt độ thường.\nGiải thích: Vì bề mặt nước đá bị khum lên, nên chứng tỏ thể tích của nó tăng mà khối lượng của nước thì không đổi. Vậy theo công thức D = m/V ta suy ra khối lượng riêng của nước đá giảm đi (bé hơn) khối lượng riêng của nước ở nhiệt bình thường.",
+      "o": [
+        "Hiện tượng đúng; Lời giải thích đúng.",
+        "Hiện tượng đúng; Lời giải thích sai.",
+        "Hiện tượng sai; Lời giải thích đúng.",
+        "Hiện tượng sai; Lời giải thích sai."
+      ],
+      "c": 0
+    },
+    {
+      "id": 36,
+      "type": "mcq",
+      "q": "Khối lượng riêng của dầu ăn vào khoảng 800 kg/m³. Do đó, 2 lít dầu ăn sẽ có trọng lượng khoảng bao nhiêu?",
+      "o": [
+        "16N.",
+        "160N.",
+        "1,6N.",
+        "61N."
+      ],
+      "c": 0
+    },
+    {
+      "id": 37,
+      "type": "mcq",
+      "q": "Cho biết 1kg nước có thể tích 1 lít còn 1kg dầu hỏa có thể tích 5/4 lít. Phát biểu nào sau đây đúng?",
+      "o": [
+        "1 lít nước có thể tích lớn hơn 1 lít dầu hỏa.",
+        "1 lít dầu hỏa có khối lượng hơn 1 khối nước.",
+        "khối lượng của dầu hỏa bằng 5/4 thể tích của dầu hỏa.",
+        "khối lượng riêng của nước bằng 5/4 khối lượng riêng của dầu hỏa."
+      ],
+      "c": 3
+    },
+    {
+      "id": 38,
+      "type": "mcq",
+      "q": "Tính khối lượng của một khối đá hoa cương dạng hình hộp chữ nhật có kích thước 2,0 m x 3,0 m x 1,5 m. Biết khối lượng riêng của đá hoa cương là ρ = 2750 kg/m³.",
+      "o": [
+        "2475 kg.",
+        "24750 kg.",
+        "275 kg.",
+        "2750 kg."
+      ],
+      "c": 1
+    },
+    {
+      "id": 39,
+      "type": "mcq",
+      "q": "Khi nói \"Khối lượng riêng của sắt là 7800 kg/m³\" có nghĩa là",
+      "o": [
+        "7800 kg sắt bằng 1 m³ sắt.",
+        "1 m³ sắt có khối lượng riêng là 7800 kg.",
+        "1 m³ sắt có khối lượng là 7800 kg.",
+        "1 m³ sắt có trọng lượng là 7800 kg."
+      ],
+      "c": 2
+    },
+    {
+      "id": 40,
+      "type": "mcq",
+      "q": "Điền vào chỗ trống cụm từ thích hợp: Để xác định khối lượng riêng của một chất, ta cần đo …(1)… và …(2)… vật làm bằng chất đó, sau đó chia …(3)…",
+      "o": [
+        "(1) khối lượng; (2) thể tích; (3) khối lượng cho thể tích.",
+        "(1) thể tích; (2) khối lượng riêng; (3) thể tích cho khối lượng.",
+        "(1) khối lượng riêng; (2) thể tích; (3) khối lượng cho thể tích.",
+        "(1) thể tích; (2) khối lượng; (3) thể tích cho khối lượng."
+      ],
+      "c": 0
+    },
+    {
+      "id": 41,
+      "type": "mcq",
+      "q": "Khi sử dụng lực kế để đo trọng lượng của một vật, kim trên lực kế chỉ 5,4N. Khi đó khối lượng của vật nặng là",
+      "o": [
+        "5,4g.",
+        "54 kg.",
+        "0,54 kg.",
+        "0,054 kg."
+      ],
+      "c": 2
+    },
+    {
+      "id": 42,
+      "type": "mcq",
+      "q": "Khối lượng riêng của chì vào khoảng 11300 kg/m³. Do đó 2 lít chì sẽ có khối lượng bằng",
+      "o": [
+        "2,26 kg.",
+        "22,6 kg.",
+        "226 kg.",
+        "2260 kg."
+      ],
+      "c": 1
+    },
+    {
+      "id": 43,
+      "type": "mcq",
+      "q": "Đơn vị của trọng lượng là",
+      "o": [
+        "N.",
+        "m².",
+        "kg/m³.",
+        "N/cm³."
+      ],
+      "c": 0
+    },
+    {
+      "id": 44,
+      "type": "mcq",
+      "q": "Trong các đơn vị sau đơn vị nào không phải là đơn vị của khối lượng riêng?",
+      "o": [
+        "g/cm³.",
+        "dag/cm³.",
+        "N/cm³.",
+        "kg/m³."
+      ],
+      "c": 2
+    },
+    {
+      "id": 45,
+      "type": "mcq",
+      "q": "Ở thể lỏng dưới áp suất thường, khối lượng riêng của nước có giá trị lớn nhất ở nhiệt độ:",
+      "o": [
+        "0 °C.",
+        "100 °C.",
+        "20 °C.",
+        "4 °C."
+      ],
+      "c": 3
+    },
+    {
+      "id": 46,
+      "type": "mcq",
+      "q": "Đọc đoạn thông tin sau:\nTrong cuộc sống, việc hiểu và xác định khối lượng riêng của các vật liệu là rất quan trọng. Khối lượng riêng cho biết mức độ \"nặng nhẹ\" của một vật chất trong cùng một thể tích. Ví dụ, khối lượng riêng của nước ở 4°C là khoảng 1.000 kg/m³, trong khi khối lượng riêng của sắt khoảng 7.800 kg/m³. Điều này lý giải vì sao cùng một thể tích, sắt nặng hơn nước rất nhiều.\nTrong thực tế, kỹ thuật viên xây dựng cần biết khối lượng riêng của các vật liệu như bê tông, thép, gỗ để tính toán tải trọng công trình. Hoặc trong ngành dầu khí, việc xác định khối lượng riêng giúp phân biệt dầu thô với nước lẫn trong giếng khoan. Để đo khối lượng riêng, ta cần đo khối lượng (m) và thể tích (V) của vật thể, sau đó áp dụng công thức: D = m/V.\nVới chất rắn có hình dạng đều như khối hộp chữ nhật, thể tích được tính bằng tích ba chiều dài, rộng, cao. Đối với vật có hình dạng bất kỳ, ta có thể dùng phương pháp đo dịch chuyển thể tích nước trong ống đong. Còn với chất lỏng, người ta đo khối lượng của ống đong rỗng và ống đong chứa chất lỏng, rồi trừ đi để tìm ra khối lượng của chất lỏng. Khối lượng riêng sau đó là khối lượng chia cho thể tích đã đo được. Việc xác định đúng khối lượng riêng giúp ứng dụng trong sản xuất, xây dựng, vận chuyển và nghiên cứu khoa học một cách chính xác và hiệu quả.\n\nKhối lượng riêng cho biết điều gì về một chất?",
+      "o": [
+        "Thể tích của chất đó",
+        "Khối lượng chất đó",
+        "Khả năng dẫn điện của chất đó",
+        "Khối lượng của một đơn vị thể tích chất đó"
+      ],
+      "c": 3
+    },
+    {
+      "id": 47,
+      "type": "mcq",
+      "q": "Đọc đoạn thông tin sau:\nTrong cuộc sống, việc hiểu và xác định khối lượng riêng của các vật liệu là rất quan trọng. Khối lượng riêng cho biết mức độ \"nặng nhẹ\" của một vật chất trong cùng một thể tích. Ví dụ, khối lượng riêng của nước ở 4°C là khoảng 1.000 kg/m³, trong khi khối lượng riêng của sắt khoảng 7.800 kg/m³. Điều này lý giải vì sao cùng một thể tích, sắt nặng hơn nước rất nhiều.\nTrong thực tế, kỹ thuật viên xây dựng cần biết khối lượng riêng của các vật liệu như bê tông, thép, gỗ để tính toán tải trọng công trình. Hoặc trong ngành dầu khí, việc xác định khối lượng riêng giúp phân biệt dầu thô với nước lẫn trong giếng khoan. Để đo khối lượng riêng, ta cần đo khối lượng (m) và thể tích (V) của vật thể, sau đó áp dụng công thức: D = m/V.\nVới chất rắn có hình dạng đều như khối hộp chữ nhật, thể tích được tính bằng tích ba chiều dài, rộng, cao. Đối với vật có hình dạng bất kỳ, ta có thể dùng phương pháp đo dịch chuyển thể tích nước trong ống đong. Còn với chất lỏng, người ta đo khối lượng của ống đong rỗng và ống đong chứa chất lỏng, rồi trừ đi để tìm ra khối lượng của chất lỏng. Khối lượng riêng sau đó là khối lượng chia cho thể tích đã đo được. Việc xác định đúng khối lượng riêng giúp ứng dụng trong sản xuất, xây dựng, vận chuyển và nghiên cứu khoa học một cách chính xác và hiệu quả.\n\nVì sao sắt cùng thể tích với nước lại có khối lượng lớn hơn?",
+      "o": [
+        "Sắt có thể tích lớn hơn nước",
+        "Sắt có khối lượng riêng lớn hơn nước",
+        "Nước nặng hơn sắt",
+        "Sắt có diện tích tiếp xúc lớn hơn nước"
+      ],
+      "c": 1
+    },
+    {
+      "id": 48,
+      "type": "mcq",
+      "q": "Đọc đoạn thông tin sau:\nTrong cuộc sống, việc hiểu và xác định khối lượng riêng của các vật liệu là rất quan trọng. Khối lượng riêng cho biết mức độ \"nặng nhẹ\" của một vật chất trong cùng một thể tích. Ví dụ, khối lượng riêng của nước ở 4°C là khoảng 1.000 kg/m³, trong khi khối lượng riêng của sắt khoảng 7.800 kg/m³. Điều này lý giải vì sao cùng một thể tích, sắt nặng hơn nước rất nhiều.\nTrong thực tế, kỹ thuật viên xây dựng cần biết khối lượng riêng của các vật liệu như bê tông, thép, gỗ để tính toán tải trọng công trình. Hoặc trong ngành dầu khí, việc xác định khối lượng riêng giúp phân biệt dầu thô với nước lẫn trong giếng khoan. Để đo khối lượng riêng, ta cần đo khối lượng (m) và thể tích (V) của vật thể, sau đó áp dụng công thức: D = m/V.\nVới chất rắn có hình dạng đều như khối hộp chữ nhật, thể tích được tính bằng tích ba chiều dài, rộng, cao. Đối với vật có hình dạng bất kỳ, ta có thể dùng phương pháp đo dịch chuyển thể tích nước trong ống đong. Còn với chất lỏng, người ta đo khối lượng của ống đong rỗng và ống đong chứa chất lỏng, rồi trừ đi để tìm ra khối lượng của chất lỏng. Khối lượng riêng sau đó là khối lượng chia cho thể tích đã đo được. Việc xác định đúng khối lượng riêng giúp ứng dụng trong sản xuất, xây dựng, vận chuyển và nghiên cứu khoa học một cách chính xác và hiệu quả.\n\nĐể đo khối lượng riêng của một viên đá hình dạng bất kỳ, phương pháp hợp lí nhất là:",
+      "o": [
+        "Đo thể tích của viên đá bằng thước kẹp",
+        "Đo thể tích nước thay đổi khi thả viên đá vào ống đong",
+        "Đo trọng lượng viên đá bằng cân lò xo",
+        "Tính diện tích bề mặt của viên đá"
+      ],
+      "c": 1
+    },
+    {
+      "id": 49,
+      "type": "mcq",
+      "q": "Đọc đoạn thông tin sau:\nTrong cuộc sống, việc hiểu và xác định khối lượng riêng của các vật liệu là rất quan trọng. Khối lượng riêng cho biết mức độ \"nặng nhẹ\" của một vật chất trong cùng một thể tích. Ví dụ, khối lượng riêng của nước ở 4°C là khoảng 1.000 kg/m³, trong khi khối lượng riêng của sắt khoảng 7.800 kg/m³. Điều này lý giải vì sao cùng một thể tích, sắt nặng hơn nước rất nhiều.\nTrong thực tế, kỹ thuật viên xây dựng cần biết khối lượng riêng của các vật liệu như bê tông, thép, gỗ để tính toán tải trọng công trình. Hoặc trong ngành dầu khí, việc xác định khối lượng riêng giúp phân biệt dầu thô với nước lẫn trong giếng khoan. Để đo khối lượng riêng, ta cần đo khối lượng (m) và thể tích (V) của vật thể, sau đó áp dụng công thức: D = m/V.\nVới chất rắn có hình dạng đều như khối hộp chữ nhật, thể tích được tính bằng tích ba chiều dài, rộng, cao. Đối với vật có hình dạng bất kỳ, ta có thể dùng phương pháp đo dịch chuyển thể tích nước trong ống đong. Còn với chất lỏng, người ta đo khối lượng của ống đong rỗng và ống đong chứa chất lỏng, rồi trừ đi để tìm ra khối lượng của chất lỏng. Khối lượng riêng sau đó là khối lượng chia cho thể tích đã đo được. Việc xác định đúng khối lượng riêng giúp ứng dụng trong sản xuất, xây dựng, vận chuyển và nghiên cứu khoa học một cách chính xác và hiệu quả.\n\nNếu bạn rót dầu ăn vào một ống đong và thấy thể tích là 200 mL, đồng thời cân nặng tăng thêm 184 g, thì khối lượng riêng của dầu ăn (theo g/mL) là gần đúng:",
+      "o": [
+        "0,92 g/mL",
+        "1,10 g/mL",
+        "1,08 g/mL",
+        "0,82 g/mL"
+      ],
+      "c": 0
+    },
+    {
+      "id": 50,
+      "type": "mcq",
+      "q": "Đọc đoạn thông tin sau:\nTrong cuộc sống, việc hiểu và xác định khối lượng riêng của các vật liệu là rất quan trọng. Khối lượng riêng cho biết mức độ \"nặng nhẹ\" của một vật chất trong cùng một thể tích. Ví dụ, khối lượng riêng của nước ở 4°C là khoảng 1.000 kg/m³, trong khi khối lượng riêng của sắt khoảng 7.800 kg/m³. Điều này lý giải vì sao cùng một thể tích, sắt nặng hơn nước rất nhiều.\nTrong thực tế, kỹ thuật viên xây dựng cần biết khối lượng riêng của các vật liệu như bê tông, thép, gỗ để tính toán tải trọng công trình. Hoặc trong ngành dầu khí, việc xác định khối lượng riêng giúp phân biệt dầu thô với nước lẫn trong giếng khoan. Để đo khối lượng riêng, ta cần đo khối lượng (m) và thể tích (V) của vật thể, sau đó áp dụng công thức: D = m/V.\nVới chất rắn có hình dạng đều như khối hộp chữ nhật, thể tích được tính bằng tích ba chiều dài, rộng, cao. Đối với vật có hình dạng bất kỳ, ta có thể dùng phương pháp đo dịch chuyển thể tích nước trong ống đong. Còn với chất lỏng, người ta đo khối lượng của ống đong rỗng và ống đong chứa chất lỏng, rồi trừ đi để tìm ra khối lượng của chất lỏng. Khối lượng riêng sau đó là khối lượng chia cho thể tích đã đo được. Việc xác định đúng khối lượng riêng giúp ứng dụng trong sản xuất, xây dựng, vận chuyển và nghiên cứu khoa học một cách chính xác và hiệu quả.\n\nMột chiếc bè gỗ nổi trên mặt nước. Nguyên nhân chính nào sau đây giải thích đúng hiện tượng này?",
+      "o": [
+        "Khối lượng của gỗ nhỏ hơn khối lượng của nước.",
+        "Lực đẩy Ác-si-mét tác dụng lên bè lớn hơn trọng lượng của bè.",
+        "Bè gỗ được buộc cố định vào bờ nên không chìm.",
+        "Diện tích bè gỗ lớn nên làm tăng lực hấp dẫn của nước."
+      ],
+      "c": 1
+    },
+    {
+      "id": 51,
+      "type": "mcq",
+      "q": "Công thức suy ra để tính thể tích V của một vật khi biết khối lượng m và khối lượng riêng D là:",
+      "o": [
+        "V = m/D.",
+        "V = m.D.",
+        "V = D/m.",
+        "V = 10.m/D."
+      ],
+      "c": 0
+    },
+    {
+      "id": 52,
+      "type": "mcq",
+      "q": "Phát biểu nào sau đây đúng khi nói về khối lượng riêng?",
+      "o": [
+        "Khối lượng riêng thay đổi theo khối lượng của vật.",
+        "Khối lượng riêng là đại lượng đặc trưng cho từng chất ở điều kiện xác định.",
+        "Vật có thể tích càng lớn thì khối lượng riêng càng lớn.",
+        "Đơn vị của khối lượng riêng giống hệt đơn vị trọng lượng."
+      ],
+      "c": 1
+    },
+    {
+      "id": 53,
+      "type": "mcq",
+      "q": "Giá trị khối lượng riêng 1 kg/m³ tương ứng bằng bao nhiêu g/cm³?",
+      "o": [
+        "0,001 g/cm³.",
+        "1000 g/cm³.",
+        "100 g/cm³.",
+        "0,01 g/cm³."
+      ],
+      "c": 0
+    },
+    {
+      "id": 54,
+      "type": "mcq",
+      "q": "Trọng lượng của một vật có khối lượng m được tính theo công thức gần đúng ở bề mặt Trái Đất là:",
+      "o": [
+        "P = 10.m.",
+        "P = m/10.",
+        "P = D/m.",
+        "P = 10.D.m."
+      ],
+      "c": 0
+    },
+    {
+      "id": 55,
+      "type": "mcq",
+      "q": "Để đo thể tích một vật rắn không thấm nước có hình dạng bất kỳ chìm trong nước, người ta thả vật vào bình chia độ đựng nước. Thể tích của vật bằng:",
+      "o": [
+        "Thể tích nước có sẵn trong bình chia độ.",
+        "Mực nước dâng lên sau khi thả vật.",
+        "Hiệu số giữa mực nước sau khi thả vật chìm hoàn toàn và mực nước ban đầu.",
+        "Tổng mực nước ban đầu và mực nước sau khi thả vật."
+      ],
+      "c": 2
+    },
+    {
+      "id": 56,
+      "type": "mcq",
+      "q": "Cho khối lượng riêng của xăng là D = 700 kg/m³. Trọng lượng riêng của xăng là:",
+      "o": [
+        "70 N/m³.",
+        "700 N/m³.",
+        "7000 N/m³.",
+        "70000 N/m³."
+      ],
+      "c": 2
+    },
+    {
+      "id": 57,
+      "type": "mcq",
+      "q": "Hai khối đặc, một khối bằng chì (D = 11300 kg/m³) và một khối bằng nhôm (D = 2700 kg/m³) có cùng khối lượng m. So sánh thể tích V₁ của chì và V₂ của nhôm:",
+      "o": [
+        "V₁ > V₂.",
+        "V₁ < V₂.",
+        "V₁ = V₂.",
+        "Không đủ dữ kiện để so sánh."
+      ],
+      "c": 1
+    },
+    {
+      "id": 58,
+      "type": "mcq",
+      "q": "Một quả cầu bằng sắt đặc có khối lượng m. Nếu đem đúc thành quả cầu sắt rỗng bên trong có cùng bán kính ngoài thì khối lượng riêng trung bình của quả cầu rỗng sẽ:",
+      "o": [
+        "Tăng lên.",
+        "Giảm đi.",
+        "Không đổi.",
+        "Bằng 0."
+      ],
+      "c": 1
+    },
+    {
+      "id": 59,
+      "type": "mcq",
+      "q": "Một hòn đá có khối lượng m = 260 g. Khi thả vào bình chia độ làm nước dâng lên 100 cm³. Khối lượng riêng của đá là:",
+      "o": [
+        "2600 kg/m³.",
+        "26 g/cm³.",
+        "0,26 g/cm³.",
+        "260 g/cm³."
+      ],
+      "c": 0
+    },
+    {
+      "id": 60,
+      "type": "mcq",
+      "q": "Đơn vị đo áp suất là",
+      "o": [
+        "N/m².",
+        "N/m³.",
+        "kg/m³.",
+        "N."
+      ],
+      "c": 0
+    },
+    {
+      "id": 61,
+      "type": "mcq",
+      "q": "Đơn vị của áp lực là",
+      "o": [
+        "N/m².",
+        "Pa.",
+        "N.",
+        "N/cm²."
+      ],
+      "c": 2
+    },
+    {
+      "id": 62,
+      "type": "mcq",
+      "q": "Lực nào dưới đây đóng vai trò là áp lực?",
+      "o": [
+        "Lực kéo của con ngựa lên xe.",
+        "Trọng lượng của người ngồi trên giường.",
+        "Lực ma sát tác dụng lên vật.",
+        "Trọng lượng của đèn treo trên sợi dây."
+      ],
+      "c": 1
+    },
+    {
+      "id": 63,
+      "type": "mcq",
+      "q": "Đơn vị đo áp suất là",
+      "o": [
+        "niuton (N).",
+        "mét vuông (m²).",
+        "kilô paxcan (kPa).",
+        "kilôgam trên mét khối (kg/m³)."
+      ],
+      "c": 2
+    },
+    {
+      "id": 64,
+      "type": "mcq",
+      "q": "Áp suất tăng khi",
+      "o": [
+        "Áp lực tăng còn diện tích lực tác dụng được giữ nguyên không đổi.",
+        "Diện tích tăng và áp lực không đổi.",
+        "Áp lực và diện tích tăng theo cùng tỉ lệ.",
+        "Áp lực và diện tích giảm theo cùng tỉ lệ."
+      ],
+      "c": 0
+    },
+    {
+      "id": 65,
+      "type": "mcq",
+      "q": "Chọn phương án sai.",
+      "o": [
+        "Áp suất tỉ lệ với diện tích bị ép (khi áp lực không đổi).",
+        "Áp lực là lực ép có phương vuông góc với mặt bị ép.",
+        "Áp suất tỉ lệ với áp lực (khi diện tích bị ép là không đổi).",
+        "Áp suất là độ lớn áp lực trên một đơn vị diện tích bị ép."
+      ],
+      "c": 0
+    },
+    {
+      "id": 66,
+      "type": "mcq",
+      "q": "Chọn câu đúng.",
+      "o": [
+        "Áp suất có số đo bằng độ lớn của áp lực trên một đơn vị diện tích.",
+        "Áp suất và áp lực có cùng đơn vị đo.",
+        "Áp lực là lực ép vuông góc với mặt bị ép, áp suất là lực ép không vuông góc với mặt bị ép.",
+        "Giữa áp suất và áp lực không có mối quan hệ nào."
+      ],
+      "c": 0
+    },
+    {
+      "id": 67,
+      "type": "mcq",
+      "q": "Đơn vị của áp suất là",
+      "o": [
+        "niu tơn (N).",
+        "paxcan (Pa).",
+        "mét/giây (m/s).",
+        "kilôgam (kg)."
+      ],
+      "c": 1
+    },
+    {
+      "id": 68,
+      "type": "mcq",
+      "q": "Độ lớn áp lực của nước biển tác dụng lên một người thợ lặn đang lặn ở đáy biển được tính theo đơn vị",
+      "o": [
+        "niu tơn (N).",
+        "paxcan (Pa).",
+        "kilôgam (kg).",
+        "mét (m)."
+      ],
+      "c": 0
+    },
+    {
+      "id": 69,
+      "type": "mcq",
+      "q": "Mối liên hệ giữa áp lực F, diện tích bị ép S và áp suất p là",
+      "o": [
+        "p = F.S.",
+        "S = p.F.",
+        "p = F/S.",
+        "F = p/S."
+      ],
+      "c": 2
+    },
+    {
+      "id": 70,
+      "type": "mcq",
+      "q": "Áp lực là",
+      "o": [
+        "lực ép có phương vuông góc với mặt bị ép.",
+        "lực ép có phương song song với mặt bị ép.",
+        "lực ép có phương tạo với mặt bị ép một góc bất kì.",
+        "lực ép có phương trùng với mặt bị ép."
+      ],
+      "c": 0
+    },
+    {
+      "id": 71,
+      "type": "mcq",
+      "q": "Cùng một lực như nhau tác dụng lên hai vật khác nhau. Diện tích tác dụng của lực lên vật A lớn gấp đôi diện tích lực tác dụng lên vật B. Phát biểu nào sau đây là đúng?",
+      "o": [
+        "Áp suất tác dụng lên vật A lớn gấp đôi áp suất tác dụng lên vật B.",
+        "Áp suất tác dụng lên vật B lớn gấp đôi áp suất tác dụng lên vật A.",
+        "Áp suất tác dụng lên hai vật bằng nhau.",
+        "Áp suất tác dụng lên vật A bằng bình phương áp suất tác dụng lên vật B."
+      ],
+      "c": 1
+    },
+    {
+      "id": 72,
+      "type": "mcq",
+      "q": "Cách làm thay đổi áp suất nào sau đây là không đúng?",
+      "o": [
+        "Tăng áp suất bằng cách tăng áp lực và giảm diện tích bị ép.",
+        "Tăng áp suất bằng cách giảm áp lực và tăng diện tích bị ép.",
+        "Giảm áp suất bằng cách giảm áp lực và giữ nguyên diện tích bị ép.",
+        "Giảm áp suất bằng cách tăng diện tích bị ép."
+      ],
+      "c": 1
+    },
+    {
+      "id": 73,
+      "type": "mcq",
+      "q": "Muốn tăng áp suất thì",
+      "o": [
+        "giảm diện tích mặt bị ép và giảm áp lực theo cùng tỉ lệ.",
+        "giảm diện tích mặt bị ép và tăng áp lực.",
+        "tăng diện tích mặt bị ép và tăng áp lực theo cùng tỉ lệ.",
+        "tăng diện tích mặt bị ép và giảm áp lực."
+      ],
+      "c": 1
+    },
+    {
+      "id": 74,
+      "type": "mcq",
+      "q": "Chọn câu không đúng. Để tăng áp suất lên một mặt tiếp xúc, ta có thể:",
+      "o": [
+        "Giữ nguyên áp lực, giảm diện tích mặt bị ép.",
+        "Giữ nguyên diện tích mặt bị ép, tăng áp lực.",
+        "Đồng thời tăng áp lực và giảm diện tích mặt bị ép.",
+        "Tăng diện tích mặt bị ép, giảm áp lực."
+      ],
+      "c": 3,
+      "explain": "Tăng diện tích bị ép và giảm áp lực thì áp suất giảm, nên đây là câu không đúng.<br>Đề in phương án D là “Giảm diện tích mặt bị ép, tăng áp lực.”, cũng là một cách tăng áp suất (giống C), nên cả 4 phương án đều đúng. Đã sửa D để câu hỏi có đáp án."
+    },
+    {
+      "id": 75,
+      "type": "mcq",
+      "q": "Để tăng áp suất tác dụng lên một mặt tiếp xúc, ta có thể:",
+      "o": [
+        "Giữ nguyên áp lực, giảm diện tích mặt bị ép.",
+        "Tăng diện tích mặt bị ép, tăng áp lực.",
+        "Đồng thời giảm áp lực và giảm diện tích mặt bị ép.",
+        "Tăng diện tích mặt bị ép, giảm áp lực."
+      ],
+      "c": 0,
+      "explain": "Giữ nguyên áp lực F mà giảm diện tích bị ép S thì p = F/S tăng.<br>Đề in phương án D là “Giảm diện tích mặt bị ép, tăng áp lực.”, cũng đúng (trùng đáp án với A). Đã sửa D để câu hỏi chỉ có 1 đáp án."
+    },
+    {
+      "id": 76,
+      "type": "mcq",
+      "q": "Để tăng áp suất tác dụng lên một mặt tiếp xúc, ta có thể:",
+      "o": [
+        "Giữ nguyên áp lực, tăng diện tích mặt bị ép.",
+        "Giữ nguyên diện tích mặt bị ép, tăng áp lực.",
+        "Đồng thời tăng áp lực và tăng diện tích mặt bị ép.",
+        "Tăng diện tích mặt bị ép, tăng áp lực."
+      ],
+      "c": 1
+    },
+    {
+      "id": 77,
+      "type": "mcq",
+      "q": "Để đo áp suất người ta có thể dùng",
+      "o": [
+        "Áp kế.",
+        "Ampe kế.",
+        "Vôn kế.",
+        "Nhiệt kế."
+      ],
+      "c": 0
+    },
+    {
+      "id": 78,
+      "type": "mcq",
+      "q": "Trong các trường hợp sau, trường hợp nào áp suất lớn nhất?",
+      "o": [
+        "Khi bạn Hoa xách cặp đứng bằng hai chân trên bục giảng.",
+        "Khi bạn Hoa xách cặp đứng co một chân.",
+        "Khi bạn Hoa không xách cặp đứng co một chân và nhón chân còn lại.",
+        "Khi bạn Hoa xách cặp đứng co một chân và nhón chân còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "id": 79,
+      "type": "mcq",
+      "q": "Tác dụng của áp lực phụ thuộc vào:",
+      "o": [
+        "phương của lực.",
+        "chiều của lực.",
+        "điểm đặt của lực.",
+        "độ lớn của áp lực và diện tích mặt bị ép."
+      ],
+      "c": 3
+    },
+    {
+      "id": 80,
+      "type": "mcq",
+      "q": "Trường hợp nào sau đây áp lực của người lên mặt sàn là lớn nhất?",
+      "o": [
+        "Người đứng cả hai chân.",
+        "Người đứng bằng một chân.",
+        "Người đứng bằng cả hai chân nhưng tay cầm quả tạ.",
+        "Người đứng cả hai chân nhưng cúi gập xuống."
+      ],
+      "c": 2
+    },
+    {
+      "id": 81,
+      "type": "mcq",
+      "q": "Điền vào chỗ trống cụm từ thích hợp: Học sinh đứng trên sân trường, ô tô trong bãi đỗ xe, bàn ghế đặt trong lớp học, máy móc trong nhà xưởng... đều tác dụng lực ép có phương vuông góc với mặt sàn. Những lực này gọi là ………",
+      "o": [
+        "Áp suất.",
+        "Áp lực.",
+        "Hiệu áp.",
+        "Trọng lực."
+      ],
+      "c": 1
+    },
+    {
+      "id": 82,
+      "type": "mcq",
+      "q": "Điền vào chỗ trống cụm từ thích hợp: Trên cùng một diện tích mặt bị ép, áp lực …(1)… thì tác dụng của áp lực lên mặt bị ép …(2)…",
+      "o": [
+        "(1) càng lớn; (2) càng lớn.",
+        "(1) càng lớn; (2) càng nhỏ.",
+        "(1) càng nhỏ; (2) không đổi.",
+        "(1) không đổi; (2) càng lớn."
+      ],
+      "c": 0
+    },
+    {
+      "id": 83,
+      "type": "mcq",
+      "q": "Điền vào chỗ trống cụm từ thích hợp: Tác dụng của áp lực lên mặt bị ép phụ thuộc vào độ lớn của áp lực tác dụng lên một đơn vị diện tích mặt bị ép, giá trị này được gọi là ………",
+      "o": [
+        "Áp suất.",
+        "Lực đẩy.",
+        "Hiệu áp.",
+        "Trọng lực."
+      ],
+      "c": 0
+    },
+    {
+      "id": 84,
+      "type": "mcq",
+      "q": "Điền vào chỗ trống cụm từ thích hợp: Áp lực là …(1)… có phương …(2)… với mặt bị ép.",
+      "o": [
+        "(1) trọng lực; (2) vuông góc.",
+        "(1) lực ép; (2) vuông góc.",
+        "(1) lực ép; (2) song song.",
+        "(1) lực nâng; (2) trùng."
+      ],
+      "c": 1
+    },
+    {
+      "id": 85,
+      "type": "mcq",
+      "q": "Cho các hình vẽ sau, trường hợp nào áp suất tác dụng lên sàn lớn nhất?",
+      "img": "",
+      "o": [
+        "Hình 1.",
+        "Hình 2.",
+        "Hình 3.",
+        "Hình 4."
+      ],
+      "c": 3
+    },
+    {
+      "id": 86,
+      "type": "mcq",
+      "q": "Khi đóng đinh vào tường ta thường đóng mũi đinh vào tường mà không đóng mũ (tai) đinh vào? Tại sao vậy?",
+      "o": [
+        "Đóng mũi đinh vào tường để tăng áp lực tác dụng nên đinh dễ vào hơn.",
+        "Mũi đinh có diện tích nhỏ nên với cùng áp lực thì có thể gây ra áp suất lớn nên đinh dễ vào hơn.",
+        "Mũ đinh có diện tích lớn nên áp lực nhỏ vì vậy đinh khó vào hơn.",
+        "Đóng mũi đinh vào tường là do thói quen còn đóng đầu nào cũng được."
+      ],
+      "c": 1
+    },
+    {
+      "id": 87,
+      "type": "mcq",
+      "q": "Khi nằm trên đệm mút ta thấy êm hơn khi nằm trên phản gỗ. Tại sao vậy?",
+      "img": "",
+      "o": [
+        "Vì đệm mút mềm hơn phản gỗ nên áp suất tác dụng lên người giảm.",
+        "Vì đệm mút dầy hơn phản gỗ nên áp suất tác dụng lên người giảm.",
+        "Vì đệm mút dễ biến dạng để tăng diện tích tiếp xúc vì vậy giảm áp suất tác dụng lên thân người.",
+        "Vì lực tác dụng của phản gỗ vào thân người lớn hơn."
+      ],
+      "c": 2
+    },
+    {
+      "id": 88,
+      "type": "mcq",
+      "q": "Khi nhúng một khối lập phương vào nước, mặt nào của khối lập phương chịu áp lực lớn nhất của nước?",
+      "o": [
+        "Áp lực như nhau ở cả 6 mặt.",
+        "Mặt trên.",
+        "Mặt dưới.",
+        "Các mặt bên."
+      ],
+      "c": 2
+    },
+    {
+      "id": 89,
+      "type": "mcq",
+      "q": "Trường hợp nào sau đây áp suất của người tác dụng lên mặt sàn là lớn nhất?",
+      "o": [
+        "Đi giày cao gót và đứng cả hai chân.",
+        "Đi giày cao gót và đứng co một chân.",
+        "Đi giày đế bằng và đứng cả hai chân.",
+        "Đi giày đế bằng và đứng co một chân."
+      ],
+      "c": 1
+    },
+    {
+      "id": 90,
+      "type": "mcq",
+      "q": "Áp suất tăng khi",
+      "o": [
+        "diện tích bị ép S không đổi, áp lực tác dụng lên diện tích bị ép S tăng.",
+        "diện tích bị ép S tăng, áp lực tác dụng lên diện tích bị ép S không đổi.",
+        "diện tích bị ép S không đổi, áp lực tác dụng lên diện tích bị ép S giảm.",
+        "áp lực tăng bao nhiêu lần thì diện tích bị ép S cũng tăng lên bấy nhiêu lần."
+      ],
+      "c": 0
+    },
+    {
+      "id": 91,
+      "type": "mcq",
+      "q": "Có bốn khối tam giác có khối lượng bằng nhau đặt trên mặt sàn như hình. Khối tam giác ở hình nào tác dụng áp suất lớn nhất lên sàn?",
+      "img": "",
+      "o": [
+        "Hình A.",
+        "Hình B.",
+        "Hình C.",
+        "Hình D."
+      ],
+      "c": 1
+    },
+    {
+      "id": 92,
+      "type": "mcq",
+      "q": "Một ôtô có khối lượng 1,5 tấn. Xe có bốn bánh. Mỗi bánh có diện tích tiếp xúc với mặt đất bằng 100 cm². Áp suất tác dụng lên mặt đất dưới các lốp xe là",
+      "o": [
+        "6 000 Pa.",
+        "375 Pa.",
+        "375 000 Pa.",
+        "1 462 Pa."
+      ],
+      "c": 2
+    },
+    {
+      "id": 93,
+      "type": "mcq",
+      "q": "Người ta tác dụng một áp lực có độ lớn 600 N vào một thiết bị đo áp suất thì đo được áp suất là 3 000 N/m². Diện tích bị ép có độ lớn là bao nhiêu?",
+      "o": [
+        "0,2 m².",
+        "0,4 m².",
+        "0,1 m².",
+        "2 m²."
+      ],
+      "c": 0
+    },
+    {
+      "id": 94,
+      "type": "mcq",
+      "q": "Một người tác dụng lên mặt sàn một áp suất 1,9.10⁴ N/m². Diện tích của hai bàn chân tiếp xúc với mặt sàn là 0,03 m². Hỏi khối lượng của người đó là bao nhiêu?",
+      "o": [
+        "45 kg.",
+        "57 kg.",
+        "67 kg.",
+        "75 kg."
+      ],
+      "c": 1
+    },
+    {
+      "id": 95,
+      "type": "mcq",
+      "q": "Chiếc tủ lạnh gây ra một áp suất 1 400 Pa lên sàn nhà. Biết diện tích tiếp xúc của tủ và sàn nhà là 0,5 m². Hãy tính khối lượng của chiếc tủ lạnh?",
+      "o": [
+        "45 kg.",
+        "70 kg.",
+        "67 kg.",
+        "75 kg."
+      ],
+      "c": 1
+    },
+    {
+      "id": 96,
+      "type": "mcq",
+      "q": "Một áp lực 9 N tác dụng lên một diện tích 3 m² gây ra áp suất là",
+      "o": [
+        "12 N/m².",
+        "3 N/m².",
+        "27 N/m².",
+        "0,33 N/m²."
+      ],
+      "c": 1
+    },
+    {
+      "id": 97,
+      "type": "mcq",
+      "q": "Một áp lực 500 N gây ra áp suất 2 500 N/m² lên diện tích bị ép. Diện tích mặt bị ép là",
+      "o": [
+        "200 cm².",
+        "2 000 cm².",
+        "500 cm².",
+        "125 cm²."
+      ],
+      "c": 1
+    },
+    {
+      "id": 98,
+      "type": "mcq",
+      "q": "Hai người có khối lượng lần lượt là m₁ và m₂. Người thứ nhất đứng trên tấm ván diện tích S₁, người thứ hai đứng trên tấm ván diện tích S₂. Nếu m₂ = 1,2m₁ và S₁ = 1,2S₂ thì khi so sánh áp suất hai người tác dụng lên mặt đất, ta có:",
+      "o": [
+        "p₁ = p₂.",
+        "p₁ = 1,2p₂.",
+        "p₂ = 1,44p₁.",
+        "p₂ = 1,2p₁."
+      ],
+      "c": 2
+    },
+    {
+      "id": 99,
+      "type": "mcq",
+      "q": "Người ta dùng một cái đột để đục lỗ trên một tấm tôn. Nếu diện tích của mũi đột là 0,4 mm², áp lực búa tác dụng vào đột là 60 N, thì áp suất do mũi đột tác dụng lên tấm tôn là",
+      "o": [
+        "15 N/m².",
+        "15.10⁷ N/m².",
+        "15.10³ N/m².",
+        "15.10⁴ N/m²."
+      ],
+      "c": 1
+    },
+    {
+      "id": 100,
+      "type": "mcq",
+      "q": "Đặt một bao gạo 60 kg lên một ghế 4 chân có khối lượng 4 kg. Diện tích tiếp xúc với mặt đất của mỗi chân ghế là 8 cm². Áp suất mà gạo và ghế tác dụng lên mặt đất là",
+      "o": [
+        "p = 20 000 N/m².",
+        "p = 2 000 000 N/m².",
+        "p = 200 000 N/m².",
+        "Là một giá trị khác."
+      ],
+      "c": 2
+    },
+    {
+      "id": 101,
+      "type": "mcq",
+      "q": "Một bao gạo nặng 50 kg được đặt lên một cái bàn ghế 5 kg, ghế có 4 chân. Diện tích tiếp xúc của mỗi chân với mặt đất là 2 cm². Tính áp lực mà bao gạo và ghế tác dụng lên mặt đất?",
+      "img": "",
+      "o": [
+        "550 N.",
+        "350 N.",
+        "500 N.",
+        "650 N."
+      ],
+      "c": 0
+    },
+    {
+      "id": 102,
+      "type": "mcq",
+      "q": "Biết thầy An có khối lượng 60 kg, diện tích một bàn chân là 30 cm². Tính áp suất thầy An tác dụng lên sàn khi đứng cả hai chân?",
+      "o": [
+        "1 Pa.",
+        "2 Pa.",
+        "10 Pa.",
+        "100 000 Pa."
+      ],
+      "c": 3
+    },
+    {
+      "id": 103,
+      "type": "mcq",
+      "q": "Một khối sắt đặc hình hộp chữ nhật, có kích thước các cạnh tương ứng là 50 cm × 30 cm × 15 cm. Hỏi người ta phải đặt khối sắt đó như thế nào để áp suất của nó gây lên mặt sàn là 39 000 N/m². Biết khối lượng riêng của sắt là 7 800 kg/m³.",
+      "o": [
+        "Đặt thẳng đứng với mặt đáy có các cạnh là 30 cm × 15 cm.",
+        "Đặt nằm ngang với mặt đáy có các cạnh là 50 cm × 30 cm.",
+        "Đặt nằm ngang với mặt đáy có các cạnh là 50 cm × 15 cm.",
+        "Không có cách nào thỏa mãn."
+      ],
+      "c": 0
+    },
+    {
+      "id": 104,
+      "type": "mcq",
+      "q": "Một máy cày ruộng có khối lượng 1 tấn, để máy chạy được trên nền đất ruộng thì áp suất máy tác dụng lên đất là 10 000 Pa. Hỏi diện tích bánh của máy cày phải tiếp xúc với ruộng là",
+      "o": [
+        "1 m².",
+        "0,5 m².",
+        "10 000 cm.",
+        "10 m²."
+      ],
+      "c": 0
+    },
+    {
+      "id": 105,
+      "type": "mcq",
+      "q": "Một viên gạch dạng hình hộp chữ nhật có kích thước các chiều dài, rộng, cao lần lượt là 20 cm; 10 cm; 5 cm. Biết viên gạch nặng 1,2 kg. Đặt viên gạch trên mặt bàn nằm ngang thì áp suất nhỏ nhất mà viên gạch tác dụng vào mặt bàn là:",
+      "o": [
+        "12 N/m².",
+        "240 N/m².",
+        "600 N/m².",
+        "840 N/m²."
+      ],
+      "c": 2
+    },
+    {
+      "id": 106,
+      "type": "mcq",
+      "q": "Một bao gạo nặng 50 kg được đặt lên một cái bàn ghế 5 kg, ghế có 4 chân. Diện tích tiếp xúc của mỗi chân với mặt đất là 2 cm². Tính áp suất của các chân ghế đặt lên mặt đất?",
+      "o": [
+        "687 500 N/m².",
+        "65 780 N/m².",
+        "567 800 N/m².",
+        "785 600 N/m²."
+      ],
+      "c": 0
+    },
+    {
+      "id": 107,
+      "type": "mcq",
+      "q": "Một cái nhà gạch có khối lượng 120 tấn. Mặt đất ở nơi cất nhà chỉ chịu được áp suất tối đa là 10⁵ N/m². Diện tích tối thiểu của móng là",
+      "o": [
+        "0,083 m².",
+        "0,83 m².",
+        "1,2 m².",
+        "12 m²."
+      ],
+      "c": 3,
+      "explain": "F = 10.m = 1 200 000 N; S = F : p = 1 200 000 : 100 000 = 12 m².<br>Đề in ghi áp suất tối đa là “10 N/m” (in thiếu số mũ và đơn vị). Bài gốc là 100 000 N/m² = 10⁵ N/m², khớp với đáp án 12 m²."
+    },
+    {
+      "id": 108,
+      "type": "mcq",
+      "q": "Một mặt đất có thể chịu được một áp suất tối đa là 2.10⁴ N/m². Hỏi một ô tô có khối lượng 1 000 kg, diện tích bánh xe là 0,025 m² có thể đi qua được hay không?",
+      "o": [
+        "Không qua được vì áp suất do ô tô tạo ra lớn hơn áp suất tối đa mà mặt đất có thể chịu được.",
+        "Đi qua được vì áp suất do ô tô tạo ra nhỏ hơn áp suất tối đa mà mặt đất có thể chịu được.",
+        "Không qua được vì áp suất do ô tô tạo ra nhỏ hơn áp suất tối đa mà mặt đất có thể chịu được.",
+        "Đi qua được vì áp suất do ô tô tạo ra lớn hơn áp suất tối đa mà mặt đất có thể chịu được."
+      ],
+      "c": 0,
+      "explain": "p = 10 000 : 0,025 = 400 000 N/m² > 2.10⁴ N/m² nên ô tô không qua được.<br>Đề in ghi “2.104 N/m²” và “0,025 m” (in lỗi số mũ, thiếu ²)."
+    },
+    {
+      "id": 109,
+      "type": "mcq",
+      "q": "Biết trọng lượng riêng trung bình của gạch và vữa là 2.10⁴ N/m³. Chiều cao giới hạn của một tường gạch nếu áp suất lớn nhất mà móng có thể chịu được là 10⁶ N/m² là",
+      "o": [
+        "50 m.",
+        "0,02 m.",
+        "5 m.",
+        "0,2 m."
+      ],
+      "c": 0
+    }
+  ]
+}
