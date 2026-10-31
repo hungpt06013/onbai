@@ -124,6 +124,14 @@
     "icon": "M13 10V3L4 14h7v7l9-11h-7z"
   },
   {
+    "id": "lop8_gk1sinh",
+    "label": "GK1 SINH",
+    "subtitle": "Bài 32, 33 KHTN",
+    "gradient": "from-lime-500 to-green-600",
+    "hoverGradient": "hover:from-lime-600 hover:to-green-700",
+    "icon": "M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+  },
+  {
     "id": "lop8_luutru",
     "type": "folder",
     "label": "LƯU TRỮ",

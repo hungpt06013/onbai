@@ -1,0 +1,1166 @@
+{
+  "fullName": "GK1 SINH - Bài 32, 33 KHTN",
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "q": "Nhu cầu dinh dưỡng phụ thuộc vào yếu tố nào?",
+      "o": [
+        "Giới tính, lứa tuổi.",
+        "Khả năng lao động.",
+        "Môi trường, khí hậu.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "id": 2,
+      "type": "mcq",
+      "q": "Hoạt động đầu tiên của quá trình tiêu hóa xảy ra ở đâu?",
+      "o": [
+        "Miệng.",
+        "Thực quản.",
+        "Dạ dày.",
+        "Ruột non."
+      ],
+      "c": 0
+    },
+    {
+      "id": 3,
+      "type": "mcq",
+      "q": "Tuyến nào dưới đây là tuyến tiêu hóa?",
+      "o": [
+        "Tuyến nước bọt.",
+        "Tuyến vị.",
+        "Tuyến ruột.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "q": "Bữa ăn hợp lí dựa trên nhu cầu dinh dưỡng của cơ thể nhằm đáp ứng yêu cầu nào?",
+      "o": [
+        "Cung cấp cho cơ thể đủ các chất dinh dưỡng theo nhu cầu, lứa tuổi, khả năng lao động, môi trường, khí hậu.",
+        "Đảm bảo bữa ăn hằng ngày cân đối, đủ dinh dưỡng để phát triển tốt thể lực và trí lực, có sức khỏe để lao động.",
+        "Thức ăn phải đảm bảo an toàn vệ sinh, không được là nguồn lây bệnh.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "q": "Trong hệ tiêu hóa ở người, bộ phận nào tiếp nhận thức ăn từ dạ dày?",
+      "o": [
+        "Tá tràng.",
+        "Thực quản.",
+        "Hậu môn.",
+        "Kết tràng."
+      ],
+      "c": 0
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "q": "Trong ống tiêu hóa ở người, vai trò hấp thụ chất dinh dưỡng chủ yếu thuộc về cơ quan nào?",
+      "o": [
+        "Ruột thừa.",
+        "Ruột già.",
+        "Ruột non.",
+        "Dạ dày."
+      ],
+      "c": 2
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "q": "Điều gì sẽ xảy ra khi cơ thể không đủ chất dinh dưỡng?",
+      "o": [
+        "Suy dinh dưỡng.",
+        "Đau dạ dày.",
+        "Giảm thị lực.",
+        "Tiêu hóa kém."
+      ],
+      "c": 0
+    },
+    {
+      "id": 8,
+      "type": "mcq",
+      "q": "Tiêu hóa thức ăn bao gồm các hoạt động nào?",
+      "o": [
+        "Tiêu hóa lí học (cơ học).",
+        "Tiêu hóa hóa học.",
+        "Tiết dịch tiêu hóa.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "id": 9,
+      "type": "mcq",
+      "q": "Thế nào là tiêu hóa thức ăn?",
+      "o": [
+        "Biến đổi thức ăn thành các chất dinh dưỡng.",
+        "Cơ thể hấp thụ chất dinh dưỡng qua thành ruột.",
+        "Thải bỏ các chất thừa không hấp thụ được.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "id": 10,
+      "type": "mcq",
+      "q": "Tại ruột già xảy ra hoạt động nào dưới đây?",
+      "o": [
+        "Hấp thụ lại nước.",
+        "Tiêu hóa thức ăn.",
+        "Hấp thụ chất dinh dưỡng.",
+        "Nghiền nát thức ăn."
+      ],
+      "c": 0
+    },
+    {
+      "id": 11,
+      "type": "mcq",
+      "q": "Dịch tụy và dịch mật đổ vào bộ phận nào của ống tiêu hóa?",
+      "o": [
+        "Tá tràng.",
+        "Manh tràng.",
+        "Hỗng tràng.",
+        "Hồi tràng."
+      ],
+      "c": 0
+    },
+    {
+      "id": 12,
+      "type": "mcq",
+      "q": "Ở người, dịch tiêu hóa từ tuyến tụy sẽ đổ vào bộ phận nào?",
+      "o": [
+        "Thực quản.",
+        "Ruột già.",
+        "Dạ dày.",
+        "Ruột non."
+      ],
+      "c": 3
+    },
+    {
+      "id": 13,
+      "type": "mcq",
+      "q": "Đặc điểm nào của ruột non giúp tăng hiệu quả hấp thụ chất dinh dưỡng?",
+      "o": [
+        "Hệ thống mao mạch máu và mao mạch bạch huyết dày đặc, phân bố tới từng lông ruột.",
+        "Lớp niêm mạc gấp nếp, trên đó có các lông ruột dày đặc giúp làm tăng diện tích bề mặt bên trong ruột non.",
+        "Kích thước rất dài (2,8 – 3 mét).",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "id": 14,
+      "type": "mcq",
+      "q": "Thành phần nào dưới đây của thức ăn hầu như không bị tiêu hóa trong khoang miệng?",
+      "o": [
+        "Nước.",
+        "Lipid.",
+        "Vitamin.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "id": 15,
+      "type": "mcq",
+      "q": "Chất nào dưới đây bị biến đổi thành chất khác qua quá trình tiêu hóa?",
+      "o": [
+        "Vitamin.",
+        "Ion khoáng.",
+        "Carbohydrate (gluxit).",
+        "Nước."
+      ],
+      "c": 2
+    },
+    {
+      "id": 16,
+      "type": "mcq",
+      "q": "Vi khuẩn Helicobacter pylori – thủ phạm gây viêm loét dạ dày – kí sinh ở đâu trên thành dạ dày?",
+      "o": [
+        "Lớp dưới niêm mạc.",
+        "Lớp niêm mạc.",
+        "Lớp cơ.",
+        "Lớp màng bọc."
+      ],
+      "c": 1
+    },
+    {
+      "id": 17,
+      "type": "mcq",
+      "q": "Cho các hoạt động sau:\n(1) Tiết dịch vị.\n(2) Tiết nước bọt.\n(3) Tạo viên thức ăn.\n(4) Biến đổi lí học của thức ăn nhờ sự co bóp của dạ dày.\n(5) Nuốt.\n(6) Biến đổi hóa học của thức ăn nhờ các enzyme.\n(7) Đẩy thức ăn xuống ruột.\nNhững hoạt động tiêu hóa diễn ra ở dạ dày là",
+      "o": [
+        "(1), (2), (4), (6).",
+        "(1), (4), (6), (7).",
+        "(2), (4), (5), (7).",
+        "(1), (3), (5), (7)."
+      ],
+      "c": 1
+    },
+    {
+      "id": 18,
+      "type": "mcq",
+      "q": "Bệnh đau dạ dày có thể phát sinh từ nguyên nhân nào dưới đây?",
+      "o": [
+        "Nhiễm vi khuẩn Helicobacter pylori.",
+        "Căng thẳng thần kinh kéo dài.",
+        "Ăn các loại thức ăn thô cứng hoặc quá cay nóng.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "id": 19,
+      "type": "mcq",
+      "q": "Sâu răng là tình trạng tổn thương phần mô cứng của răng do",
+      "o": [
+        "có sâu trong miệng.",
+        "không đánh răng thường xuyên.",
+        "tế bào răng bị mòn đi vì hoạt động nhai.",
+        "vi khuẩn gây ra, hình thành các lỗ nhỏ trên răng."
+      ],
+      "c": 3
+    },
+    {
+      "id": 20,
+      "type": "mcq",
+      "q": "Khi lỗ sâu răng lan sâu và rộng thì",
+      "o": [
+        "gây đau, thức ăn dễ bị nhét vào lỗ sâu gây khó chịu.",
+        "răng tự liền lại.",
+        "răng trắng sáng hơn.",
+        "không ảnh hưởng gì."
+      ],
+      "c": 0
+    },
+    {
+      "id": 21,
+      "type": "mcq",
+      "q": "Biện pháp nào giúp phòng chống sâu răng?",
+      "o": [
+        "Giữ vệ sinh răng miệng đúng cách.",
+        "Hạn chế đồ ngọt.",
+        "Khám răng định kì.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "id": 22,
+      "type": "mcq",
+      "q": "Chất dinh dưỡng là",
+      "o": [
+        "các chất có trong thức ăn mà cơ thể sử dụng làm nguyên liệu cấu tạo cơ thể và cung cấp năng lượng cho các hoạt động sống.",
+        "quá trình thu nhận và biến đổi thức ăn.",
+        "các chất cơ thể thải ra ngoài.",
+        "các enzyme tiêu hóa."
+      ],
+      "c": 0
+    },
+    {
+      "id": 23,
+      "type": "mcq",
+      "q": "Dinh dưỡng là",
+      "o": [
+        "quá trình thu nhận, biến đổi và sử dụng chất dinh dưỡng để duy trì sự sống của cơ thể.",
+        "các chất có trong thức ăn.",
+        "quá trình thải phân.",
+        "lượng thức ăn ăn trong một ngày."
+      ],
+      "c": 0
+    },
+    {
+      "id": 24,
+      "type": "mcq",
+      "q": "Các nhóm chất dinh dưỡng cần thiết cho cơ thể gồm",
+      "o": [
+        "carbohydrate, protein, chất béo, vitamin và chất khoáng.",
+        "chỉ carbohydrate, protein và chất béo.",
+        "chỉ vitamin và chất khoáng.",
+        "protein, enzyme và hormone."
+      ],
+      "c": 0
+    },
+    {
+      "id": 25,
+      "type": "mcq",
+      "q": "Hoạt động của hệ tiêu hóa giúp",
+      "o": [
+        "biến đổi thức ăn thành các chất dinh dưỡng cung cấp cho cơ thể.",
+        "vận chuyển máu đi nuôi cơ thể.",
+        "trao đổi khí với môi trường.",
+        "lọc máu, tạo nước tiểu."
+      ],
+      "c": 0
+    },
+    {
+      "id": 26,
+      "type": "mcq",
+      "q": "Các cơ quan trong ống tiêu hóa gồm",
+      "o": [
+        "miệng, thực quản, dạ dày, gan, ruột non, ruột già.",
+        "miệng, hầu, thực quản, dạ dày, tụy, ruột non, ruột già.",
+        "miệng, hầu, thực quản, dạ dày, ruột non, ruột già.",
+        "miệng, thực quản, dạ dày, túi mật, ruột non, ruột già."
+      ],
+      "c": 2
+    },
+    {
+      "id": 27,
+      "type": "mcq",
+      "q": "Cơ quan nào dưới đây không phải là bộ phận của hệ tiêu hóa?",
+      "o": [
+        "Thanh quản.",
+        "Thực quản.",
+        "Dạ dày.",
+        "Gan."
+      ],
+      "c": 0
+    },
+    {
+      "id": 28,
+      "type": "mcq",
+      "q": "Cơ quan nào có chức năng chứa, nghiền bóp và nhào trộn thức ăn cho ngấm dịch vị?",
+      "o": [
+        "Dạ dày.",
+        "Thực quản.",
+        "Ruột non.",
+        "Ruột già."
+      ],
+      "c": 0
+    },
+    {
+      "id": 29,
+      "type": "mcq",
+      "q": "Enzyme trong nước bọt giúp biến đổi tinh bột chín là",
+      "o": [
+        "amylase.",
+        "pepsin.",
+        "lipase.",
+        "trypsin."
+      ],
+      "c": 0
+    },
+    {
+      "id": 30,
+      "type": "mcq",
+      "q": "Ở khoang miệng, enzyme amylase biến đổi một phần tinh bột chín thành",
+      "o": [
+        "đường maltose.",
+        "amino acid.",
+        "glycerol và acid béo.",
+        "protein."
+      ],
+      "c": 0
+    },
+    {
+      "id": 31,
+      "type": "mcq",
+      "q": "Ở dạ dày, enzyme pepsin giúp biến đổi một phần chất nào trong thức ăn?",
+      "o": [
+        "Protein.",
+        "Tinh bột.",
+        "Lipid.",
+        "Cellulose."
+      ],
+      "c": 0
+    },
+    {
+      "id": 32,
+      "type": "mcq",
+      "q": "Ở ruột già, một số vi khuẩn phân hủy những chất còn lại của protein, carbohydrate, lên men tạo thành",
+      "o": [
+        "phân.",
+        "dịch mật.",
+        "nước bọt.",
+        "dịch vị."
+      ],
+      "c": 0
+    },
+    {
+      "id": 33,
+      "type": "mcq",
+      "q": "Triệu chứng của bệnh viêm loét dạ dày – tá tràng là",
+      "o": [
+        "đau vùng bụng trên rốn, đầy bụng, khó tiêu, ợ hơi, ợ chua.",
+        "đau răng, chảy máu chân răng.",
+        "ho, khó thở.",
+        "đau khớp gối."
+      ],
+      "c": 0
+    },
+    {
+      "id": 34,
+      "type": "mcq",
+      "q": "Để phòng bệnh viêm loét dạ dày – tá tràng cần",
+      "o": [
+        "ăn uống hợp lí, nghỉ ngơi và sinh hoạt điều độ, giữ tinh thần thoải mái.",
+        "thường xuyên uống rượu bia.",
+        "bỏ bữa sáng, ăn khuya.",
+        "để căng thẳng kéo dài."
+      ],
+      "c": 0
+    },
+    {
+      "id": 35,
+      "type": "mcq",
+      "q": "Lượng thức ăn cung cấp cho cơ thể trong một ngày được gọi là",
+      "o": [
+        "khẩu phần ăn.",
+        "nhu cầu dinh dưỡng.",
+        "chế độ dinh dưỡng.",
+        "năng lượng."
+      ],
+      "c": 0
+    },
+    {
+      "id": 36,
+      "type": "mcq",
+      "q": "Nguyên tắc xây dựng khẩu phần ăn là",
+      "o": [
+        "đảm bảo đủ lượng thức ăn phù hợp với nhu cầu dinh dưỡng của cơ thể.",
+        "cân đối thành phần các chất dinh dưỡng.",
+        "cung cấp đủ năng lượng cho cơ thể.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "id": 37,
+      "type": "mcq",
+      "q": "Trẻ em có nhu cầu dinh dưỡng cao hơn người cao tuổi vì",
+      "o": [
+        "ngoài năng lượng cho các hoạt động còn cần nguyên liệu để xây dựng cơ thể, giúp cơ thể lớn lên.",
+        "trẻ em ít vận động.",
+        "trẻ em tiêu hóa kém.",
+        "người cao tuổi không cần năng lượng."
+      ],
+      "c": 0
+    },
+    {
+      "id": 38,
+      "type": "mcq",
+      "q": "An toàn vệ sinh thực phẩm là",
+      "o": [
+        "giữ cho thực phẩm không bị nhiễm khuẩn, nhiễm độc và biến chất.",
+        "ăn thật nhiều thực phẩm.",
+        "chỉ ăn thực phẩm đắt tiền.",
+        "nấu thật nhiều món."
+      ],
+      "c": 0
+    },
+    {
+      "id": 39,
+      "type": "mcq",
+      "q": "Thực phẩm nào sau đây là thực phẩm không an toàn?",
+      "o": [
+        "Thực phẩm nhiễm vi sinh vật và độc tố của chúng.",
+        "Thức ăn ôi thiu, biến chất.",
+        "Thực phẩm nhiễm chì, formaldehyde.",
+        "Tất cả các ý còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "id": 40,
+      "type": "mcq",
+      "q": "Mầm khoai tây có chứa chất độc nào?",
+      "o": [
+        "Solanine.",
+        "Tetrodotoxin.",
+        "Histamine.",
+        "Formaldehyde."
+      ],
+      "c": 0
+    },
+    {
+      "id": 41,
+      "type": "mcq",
+      "q": "Cá nóc có chứa chất độc nào?",
+      "o": [
+        "Solanine.",
+        "Tetrodotoxin.",
+        "Histamine.",
+        "Formaldehyde."
+      ],
+      "c": 1
+    },
+    {
+      "id": 42,
+      "type": "mcq",
+      "q": "Ăn phải thực phẩm không an toàn có thể gây ra",
+      "o": [
+        "ngộ độc thực phẩm, rối loạn tiêu hóa (đầy hơi, đau bụng, tiêu chảy).",
+        "tăng chiều cao.",
+        "xương chắc khỏe.",
+        "tăng sức đề kháng."
+      ],
+      "c": 0
+    },
+    {
+      "id": 43,
+      "type": "mcq",
+      "q": "Việc nào sau đây không giúp giữ an toàn vệ sinh thực phẩm?",
+      "o": [
+        "Để lẫn thực phẩm ăn sống với thực phẩm cần nấu chín.",
+        "Bảo quản lạnh rau, quả, cá, thịt tươi.",
+        "Chỉ dùng đồ hộp còn hạn sử dụng.",
+        "Che đậy thực phẩm sau khi chế biến."
+      ],
+      "c": 0
+    },
+    {
+      "id": 44,
+      "type": "mcq",
+      "q": "Thói quen ăn uống nào sau đây không tốt cho hệ tiêu hóa?",
+      "o": [
+        "Dự trữ thức ăn quá lâu và đun lại nhiều lần.",
+        "Ăn nhiều rau củ, trái cây.",
+        "Tránh chất béo, chất kích thích vào bữa tối.",
+        "Ăn uống vui vẻ, thoải mái."
+      ],
+      "c": 0
+    },
+    {
+      "id": 45,
+      "type": "text",
+      "q": "Quan sát Hình 32.1 (cấu tạo hệ tiêu hoá ở người). Cơ quan được đánh số 1 là gì?",
+      "img": "https://i.postimg.cc/0Q8B1DmW/image.png",
+      "a": [
+        "Tuyến nước bọt"
+      ]
+    },
+    {
+      "id": 46,
+      "type": "text",
+      "q": "Quan sát Hình 32.1 (cấu tạo hệ tiêu hoá ở người). Cơ quan được đánh số 2 là gì?",
+      "img": "https://i.postimg.cc/0Q8B1DmW/image.png",
+      "a": [
+        "Hầu",
+        "Họng",
+        "Hầu họng"
+      ]
+    },
+    {
+      "id": 47,
+      "type": "text",
+      "q": "Quan sát Hình 32.1 (cấu tạo hệ tiêu hoá ở người). Cơ quan được đánh số 3 là gì?",
+      "img": "https://i.postimg.cc/0Q8B1DmW/image.png",
+      "a": [
+        "Thực quản"
+      ]
+    },
+    {
+      "id": 48,
+      "type": "text",
+      "q": "Quan sát Hình 32.1 (cấu tạo hệ tiêu hoá ở người). Cơ quan được đánh số 4 là gì?",
+      "img": "https://i.postimg.cc/0Q8B1DmW/image.png",
+      "a": [
+        "Dạ dày"
+      ]
+    },
+    {
+      "id": 49,
+      "type": "text",
+      "q": "Quan sát Hình 32.1 (cấu tạo hệ tiêu hoá ở người). Cơ quan được đánh số 5 là gì?",
+      "img": "https://i.postimg.cc/0Q8B1DmW/image.png",
+      "a": [
+        "Tuyến tụy",
+        "Tụy"
+      ]
+    },
+    {
+      "id": 50,
+      "type": "text",
+      "q": "Quan sát Hình 32.1 (cấu tạo hệ tiêu hoá ở người). Cơ quan được đánh số 6 là gì?",
+      "img": "https://i.postimg.cc/0Q8B1DmW/image.png",
+      "a": [
+        "Ruột non"
+      ]
+    },
+    {
+      "id": 51,
+      "type": "text",
+      "q": "Quan sát Hình 32.1 (cấu tạo hệ tiêu hoá ở người). Cơ quan được đánh số 7 là gì?",
+      "img": "https://i.postimg.cc/0Q8B1DmW/image.png",
+      "a": [
+        "Ruột già"
+      ]
+    },
+    {
+      "id": 52,
+      "type": "text",
+      "q": "Quan sát Hình 32.1 (cấu tạo hệ tiêu hoá ở người). Cơ quan được đánh số 8 là gì?",
+      "img": "https://i.postimg.cc/0Q8B1DmW/image.png",
+      "a": [
+        "Hậu môn"
+      ]
+    },
+    {
+      "id": 53,
+      "type": "text",
+      "q": "Quan sát Hình 32.1 (cấu tạo hệ tiêu hoá ở người). Cơ quan được đánh số 9 là gì?",
+      "img": "https://i.postimg.cc/0Q8B1DmW/image.png",
+      "a": [
+        "Túi mật"
+      ]
+    },
+    {
+      "id": 54,
+      "type": "text",
+      "q": "Quan sát Hình 32.1 (cấu tạo hệ tiêu hoá ở người). Cơ quan được đánh số 10 là gì?",
+      "img": "https://i.postimg.cc/0Q8B1DmW/image.png",
+      "a": [
+        "Gan"
+      ]
+    },
+    {
+      "id": 55,
+      "type": "text",
+      "q": "Quan sát Hình 32.1 (cấu tạo hệ tiêu hoá ở người). Cơ quan được đánh số 11 là gì?",
+      "img": "https://i.postimg.cc/0Q8B1DmW/image.png",
+      "a": [
+        "Khoang miệng",
+        "Miệng"
+      ]
+    },
+    {
+      "id": 56,
+      "type": "mcq",
+      "q": "Một đĩa tiết đông để ngoài môi trường một thời gian, thấy trên mặt có màu đỏ sậm là do:",
+      "o": [
+        "Hemoglobin của hồng cầu kết hợp với khí CO có trong không khí.",
+        "Hemoglobin của hồng cầu kết hợp với khí O₂ có trong không khí.",
+        "Hemoglobin của hồng cầu kết hợp với khí CO₂ có trong không khí.",
+        "Hemoglobin của hồng cầu kết hợp với khí N₂ có trong không khí."
+      ],
+      "c": 2
+    },
+    {
+      "id": 57,
+      "type": "mcq",
+      "q": "Huyết tương có đặc điểm",
+      "o": [
+        "Màu hồng, hình đĩa lõm 2 mặt, không có nhân.",
+        "Trong suốt, có nhân.",
+        "Là các mảnh chất tế bào của tế bào sinh tiểu cầu.",
+        "Là phần lỏng (màu vàng nhạt), có chứa các chất dinh dưỡng, muối khoáng..."
+      ],
+      "c": 3
+    },
+    {
+      "id": 58,
+      "type": "mcq",
+      "q": "Chúng ta sẽ bị mất nhiều nước trong trường hợp nào sau đây?",
+      "o": [
+        "Tiêu chảy.",
+        "Lao động nặng.",
+        "Sốt cao.",
+        "Tất cả các phương án còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "id": 59,
+      "type": "mcq",
+      "q": "Ở người bình thường có 75 ml máu/kg cơ thể, một người có khối lượng cơ thể là 50 kg thì thể tích máu trong cơ thể là:",
+      "o": [
+        "3,75 lít.",
+        "4,75 lít.",
+        "5,5 lít.",
+        "5 lít."
+      ],
+      "c": 0
+    },
+    {
+      "id": 60,
+      "type": "mcq",
+      "q": "Môi trường trong liên hệ với môi trường ngoài",
+      "o": [
+        "Thông qua các hệ cơ quan như hệ tiêu hoá, hệ hô hấp, hệ bài tiết, da.",
+        "Thông qua huyết tương trong máu.",
+        "Thông qua hệ bạch huyết.",
+        "Thông qua cả các hệ cơ quan (tiêu hoá, hô hấp, bài tiết, da) và huyết tương trong máu."
+      ],
+      "c": 0
+    },
+    {
+      "id": 61,
+      "type": "mcq",
+      "q": "Khi cơ thể bị mất nước nhiều thì",
+      "o": [
+        "Máu có thể lưu thông dễ dàng.",
+        "Máu khó lưu thông.",
+        "Mạch máu bị co lại.",
+        "Cả hai ý “máu có thể lưu thông dễ dàng” và “máu khó lưu thông”."
+      ],
+      "c": 1
+    },
+    {
+      "id": 62,
+      "type": "mcq",
+      "q": "Môi trường trong cơ thể có vai trò chính là",
+      "o": [
+        "Giúp tế bào thường xuyên trao đổi chất với môi trường ngoài.",
+        "Giúp tế bào có hình dạng ổn định.",
+        "Giúp tế bào không bị xâm nhập bởi các tác nhân gây hại.",
+        "Sinh tổng hợp các chất cần thiết cho tế bào."
+      ],
+      "c": 0
+    },
+    {
+      "id": 63,
+      "type": "mcq",
+      "q": "Nước mô không bao gồm thành phần nào dưới đây?",
+      "o": [
+        "Huyết tương.",
+        "Hồng cầu.",
+        "Bạch cầu.",
+        "Tiểu cầu."
+      ],
+      "c": 1
+    },
+    {
+      "id": 64,
+      "type": "mcq",
+      "q": "Trong cơ thể sống, tế bào nằm chìm ngập trong loại dịch nào?",
+      "o": [
+        "Nước mô.",
+        "Máu.",
+        "Dịch bạch huyết.",
+        "Dịch nhân."
+      ],
+      "c": 0
+    },
+    {
+      "id": 65,
+      "type": "mcq",
+      "q": "Môi trường trong cơ thể được tạo thành bởi",
+      "o": [
+        "Nước mô.",
+        "Máu.",
+        "Bạch huyết.",
+        "Cả nước mô, máu và bạch huyết."
+      ],
+      "c": 3
+    },
+    {
+      "id": 66,
+      "type": "mcq",
+      "q": "Chức năng của huyết tương là:",
+      "o": [
+        "Tham gia vận chuyển các chất dinh dưỡng, hoocmôn, kháng thể và các chất khoáng, các chất thải.",
+        "Môi trường chuyển hóa của các quá trình trao đổi chất.",
+        "Tiêu hủy các chất thải, thừa do tế bào đưa ra.",
+        "Cả tham gia vận chuyển các chất (dinh dưỡng, hoocmôn, kháng thể, chất khoáng, chất thải) và là môi trường chuyển hóa của các quá trình trao đổi chất."
+      ],
+      "c": 3
+    },
+    {
+      "id": 67,
+      "type": "mcq",
+      "q": "Khả năng vận chuyển khí của hồng cầu có được là nhờ loại sắc tố nào?",
+      "o": [
+        "Hemerythrin.",
+        "Hemocyanin.",
+        "Hemoglobin.",
+        "Myoglobin."
+      ],
+      "c": 2
+    },
+    {
+      "id": 68,
+      "type": "mcq",
+      "q": "Khi hồng cầu kết hợp với chất khí nào thì máu sẽ có màu đỏ tươi?",
+      "o": [
+        "N₂.",
+        "CO₂.",
+        "O₂.",
+        "CO."
+      ],
+      "c": 2
+    },
+    {
+      "id": 69,
+      "type": "mcq",
+      "q": "Vai trò của hồng cầu là",
+      "o": [
+        "Vận chuyển chất dinh dưỡng đi nuôi cơ thể.",
+        "Vận chuyển O₂ và CO₂.",
+        "Vận chuyển các chất thải.",
+        "Vận chuyển chất dinh dưỡng, O₂, CO₂ và các chất thải."
+      ],
+      "c": 1
+    },
+    {
+      "id": 70,
+      "type": "mcq",
+      "q": "Đặc điểm nào dưới đây không có ở hồng cầu người?",
+      "o": [
+        "Hình đĩa, lõm hai mặt.",
+        "Nhiều nhân, nhân nhỏ và nằm phân tán.",
+        "Màu đỏ hồng.",
+        "Tham gia vào chức năng vận chuyển khí."
+      ],
+      "c": 1
+    },
+    {
+      "id": 71,
+      "type": "mcq",
+      "q": "Các tế bào máu ở người được phân chia thành mấy loại chính?",
+      "o": [
+        "5 loại.",
+        "4 loại.",
+        "3 loại.",
+        "2 loại."
+      ],
+      "c": 2
+    },
+    {
+      "id": 72,
+      "type": "mcq",
+      "q": "Huyết tương không bao gồm thành phần nào dưới đây?",
+      "o": [
+        "Nước.",
+        "Muối khoáng.",
+        "Bạch cầu.",
+        "Kháng thể."
+      ],
+      "c": 2
+    },
+    {
+      "id": 73,
+      "type": "mcq",
+      "q": "Trong máu, huyết tương chiếm tỉ lệ bao nhiêu về thể tích?",
+      "o": [
+        "75%.",
+        "60%.",
+        "45%.",
+        "55%."
+      ],
+      "c": 3
+    },
+    {
+      "id": 74,
+      "type": "mcq",
+      "q": "Máu bao gồm",
+      "o": [
+        "Hồng cầu và tiểu cầu.",
+        "Huyết tương và các tế bào máu.",
+        "Bạch cầu và hồng cầu.",
+        "Hồng cầu, bạch cầu và tiểu cầu."
+      ],
+      "c": 1
+    },
+    {
+      "id": 75,
+      "type": "mcq",
+      "q": "Khi bị mất máu nhiều, nhanh có thể gây tử vong vì",
+      "o": [
+        "Làm cơ thể mất nước nhiều.",
+        "Không vận chuyển được khí.",
+        "Làm cơ thể mất kiểm soát các cơ quan.",
+        "Làm tim không đập nữa."
+      ],
+      "c": 1
+    },
+    {
+      "id": 76,
+      "type": "mcq",
+      "q": "Chức năng của tiểu cầu là",
+      "o": [
+        "Vận chuyển oxygen và carbon dioxide.",
+        "Bảo vệ cơ thể.",
+        "Bảo vệ cơ thể nhờ cơ chế làm đông máu.",
+        "Tất cả các đáp án còn lại."
+      ],
+      "c": 2
+    },
+    {
+      "id": 77,
+      "type": "mcq",
+      "q": "Bạch cầu được phân chia thành mấy loại chính?",
+      "o": [
+        "3 loại.",
+        "4 loại.",
+        "5 loại.",
+        "6 loại."
+      ],
+      "c": 2
+    },
+    {
+      "id": 78,
+      "type": "mcq",
+      "q": "Loại mạch nào dưới đây vận chuyển máu giàu oxygen?",
+      "o": [
+        "Động mạch chủ.",
+        "Động mạch vành tim.",
+        "Tĩnh mạch phổi.",
+        "Tất cả các đáp án còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "id": 79,
+      "type": "mcq",
+      "q": "Tâm thất trái nối liền trực tiếp với loại mạch nào dưới đây?",
+      "o": [
+        "Tĩnh mạch phổi.",
+        "Động mạch phổi.",
+        "Động mạch chủ.",
+        "Tĩnh mạch chủ."
+      ],
+      "c": 2
+    },
+    {
+      "id": 80,
+      "type": "mcq",
+      "q": "Phát biểu nào dưới đây là đúng?",
+      "o": [
+        "Huyết thanh khi loại bỏ chất sinh tơ máu thì còn lại nước mô.",
+        "Huyết thanh khi loại bỏ chất sinh tơ máu thì còn lại huyết tương.",
+        "Huyết tương khi loại bỏ chất sinh tơ máu thì còn lại huyết thanh.",
+        "Nước mô khi loại bỏ chất sinh tơ máu thì còn lại huyết tương."
+      ],
+      "c": 2
+    },
+    {
+      "id": 81,
+      "type": "mcq",
+      "q": "Ở tim người, tại vị trí nào dưới đây không xuất hiện van?",
+      "o": [
+        "Giữa tĩnh mạch chủ và tâm nhĩ phải.",
+        "Giữa tâm nhĩ trái và tâm thất trái.",
+        "Giữa tâm nhĩ phải và tâm thất phải.",
+        "Giữa tâm thất trái và động mạch chủ."
+      ],
+      "c": 0
+    },
+    {
+      "id": 82,
+      "type": "mcq",
+      "q": "Các pha trong mỗi chu kì tim diễn ra theo trình tự trước sau như thế nào?",
+      "o": [
+        "Pha thất co – pha dãn chung – pha nhĩ co.",
+        "Pha dãn chung – pha thất co – pha nhĩ co.",
+        "Pha thất co – pha nhĩ co – pha dãn chung.",
+        "Pha nhĩ co – pha thất co – pha dãn chung."
+      ],
+      "c": 3
+    },
+    {
+      "id": 83,
+      "type": "mcq",
+      "q": "Tĩnh mạch phổi đổ máu trực tiếp vào ngăn tim nào?",
+      "o": [
+        "Tâm thất phải.",
+        "Tâm nhĩ trái.",
+        "Tâm nhĩ phải.",
+        "Tâm thất trái."
+      ],
+      "c": 1
+    },
+    {
+      "id": 84,
+      "type": "mcq",
+      "q": "Mao mạch có điểm gì đặc biệt để tăng hiệu quả trao đổi chất với tế bào?",
+      "o": [
+        "Vận tốc dòng máu chảy rất chậm.",
+        "Thành mạch chỉ được cấu tạo bởi một lớp biểu bì.",
+        "Phân nhánh dày đặc đến từng tế bào.",
+        "Tất cả các phương án còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "id": 85,
+      "type": "mcq",
+      "q": "Loại mạch máu nào dưới đây có chức năng nuôi dưỡng tim?",
+      "o": [
+        "Động mạch dưới đòn.",
+        "Động mạch dưới cằm.",
+        "Động mạch vành.",
+        "Động mạch cảnh trong."
+      ],
+      "c": 2
+    },
+    {
+      "id": 86,
+      "type": "mcq",
+      "q": "Trong hệ nhóm máu ABO, khi lần lượt để các nhóm máu truyền chéo nhau thì sẽ có tất cả bao nhiêu trường hợp gây kết dính hồng cầu?",
+      "o": [
+        "7 trường hợp.",
+        "3 trường hợp.",
+        "2 trường hợp.",
+        "6 trường hợp."
+      ],
+      "c": 0,
+      "explain": "4 nhóm máu truyền chéo cho nhau có 4 × 3 = 12 trường hợp. Chỉ 5 trường hợp không gây kết dính: O → A, O → B, O → AB, A → AB, B → AB. Vậy có 12 − 5 = 7 trường hợp gây kết dính hồng cầu."
+    },
+    {
+      "id": 87,
+      "type": "mcq",
+      "q": "Ở Việt Nam, số lượng hồng cầu trung bình của nam giới là",
+      "o": [
+        "4,4 – 4,6 triệu/ml máu.",
+        "3,9 – 4,1 triệu/ml máu.",
+        "5,4 – 5,6 triệu/ml máu.",
+        "4,8 – 5 triệu/ml máu."
+      ],
+      "c": 0
+    },
+    {
+      "id": 88,
+      "type": "mcq",
+      "q": "Khi nói về hoạt động tim mạch, phát biểu nào dưới đây là đúng?",
+      "o": [
+        "Van 3 lá luôn đóng, chỉ mở khi tâm thất trái co.",
+        "Van động mạch luôn mở, chỉ đóng khi tâm thất co.",
+        "Khi tâm thất trái co, van hai lá sẽ đóng lại.",
+        "Khi tâm thất phải co, van 3 lá sẽ mở ra."
+      ],
+      "c": 2
+    },
+    {
+      "id": 89,
+      "type": "mcq",
+      "q": "Trong hoạt động miễn dịch của cơ thể người, sự kết hợp của cặp nhân tố nào dưới đây diễn ra theo cơ chế chìa khoá và ổ khoá?",
+      "o": [
+        "Kháng nguyên – kháng thể.",
+        "Kháng nguyên – kháng sinh.",
+        "Kháng sinh – kháng thể.",
+        "Vi khuẩn – protein độc."
+      ],
+      "c": 0
+    },
+    {
+      "id": 90,
+      "type": "mcq",
+      "q": "Trong hệ bạch huyết của người, phân hệ nhỏ thu bạch huyết ở",
+      "o": [
+        "nửa trên bên phải cơ thể.",
+        "nửa dưới bên phải cơ thể.",
+        "nửa trên bên trái và phần dưới cơ thể.",
+        "nửa dưới bên phải và phần trên cơ thể."
+      ],
+      "c": 0
+    },
+    {
+      "id": 91,
+      "type": "mcq",
+      "q": "Vòng tuần hoàn lớn không đi qua cơ quan nào dưới đây?",
+      "o": [
+        "Dạ dày.",
+        "Gan.",
+        "Phổi.",
+        "Não."
+      ],
+      "c": 2
+    },
+    {
+      "id": 92,
+      "type": "mcq",
+      "q": "Người mang nhóm máu AB có thể truyền máu cho người mang nhóm máu nào mà không xảy ra sự kết dính hồng cầu?",
+      "o": [
+        "Nhóm máu O.",
+        "Nhóm máu AB.",
+        "Nhóm máu A.",
+        "Nhóm máu B."
+      ],
+      "c": 1
+    },
+    {
+      "id": 93,
+      "type": "mcq",
+      "q": "Đâu không phải bệnh về máu và tim mạch?",
+      "o": [
+        "Thiếu máu.",
+        "Huyết áp cao.",
+        "Xơ vữa động mạch.",
+        "Sốt xuất huyết."
+      ],
+      "c": 3
+    },
+    {
+      "id": 94,
+      "type": "mcq",
+      "q": "Ở người bình thường, thời gian tâm thất nghỉ trong mỗi chu kì tim là bao lâu?",
+      "o": [
+        "0,6 giây.",
+        "0,4 giây.",
+        "0,5 giây.",
+        "0,3 giây."
+      ],
+      "c": 2,
+      "explain": "Mỗi chu kì tim kéo dài 0,8 giây: tâm nhĩ co 0,1 giây, tâm thất co 0,3 giây, dãn chung 0,4 giây. Tâm thất nghỉ 0,8 − 0,3 = 0,5 giây."
+    },
+    {
+      "id": 95,
+      "type": "mcq",
+      "q": "Ở người bình thường, trung bình mỗi phút tim đập bao nhiêu lần?",
+      "o": [
+        "85 lần.",
+        "75 lần.",
+        "60 lần.",
+        "90 lần."
+      ],
+      "c": 1
+    },
+    {
+      "id": 96,
+      "type": "mcq",
+      "q": "Khi được tiêm phòng vaccine thuỷ đậu, chúng ta sẽ không bị mắc căn bệnh này trong tương lai. Đây là dạng miễn dịch nào?",
+      "o": [
+        "Miễn dịch tự nhiên.",
+        "Miễn dịch nhân tạo.",
+        "Miễn dịch tập nhiễm.",
+        "Miễn dịch bẩm sinh."
+      ],
+      "c": 1
+    },
+    {
+      "id": 97,
+      "type": "mcq",
+      "q": "Hồng cầu của nhóm máu nào dưới đây không có kháng nguyên A và cũng không có kháng nguyên B?",
+      "o": [
+        "Nhóm máu O.",
+        "Nhóm máu A.",
+        "Nhóm máu B.",
+        "Nhóm máu AB."
+      ],
+      "c": 0
+    },
+    {
+      "id": 98,
+      "type": "mcq",
+      "q": "Nhịp tim sẽ tăng lên trong trường hợp nào sau đây?",
+      "o": [
+        "Khi bị khuyết tật tim (hẹp hoặc hở van tim, xơ phổi, mạch máu xơ cứng…).",
+        "Khi sử dụng các chất kích thích như thuốc lá, rượu, heroin,…",
+        "Khi cơ thể trải qua cú sốc nào đó: sốt cao, mất máu, mất nước hoặc lo lắng, sợ hãi kéo dài.",
+        "Tất cả các đáp án còn lại."
+      ],
+      "c": 3
+    },
+    {
+      "id": 99,
+      "type": "mcq",
+      "q": "Khi chúng ta bị ong chích thì nọc độc của ong được xem là",
+      "o": [
+        "chất kháng sinh.",
+        "kháng thể.",
+        "kháng nguyên.",
+        "protein độc."
+      ],
+      "c": 2
+    }
+  ]
+}
