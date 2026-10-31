@@ -1,0 +1,221 @@
+{
+  "fullName": "GK1 ĐỊA - Bài 1, 2, 3, 4 ĐL",
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "q": "Theo Niên giám Thống kê năm 2024, diện tích của vùng đất Việt Nam là hơn",
+      "o": [
+        "331,3 nghìn km².",
+        "441,3 nghìn km².",
+        "1 triệu km².",
+        "632,4 nghìn km²."
+      ],
+      "c": 0
+    },
+    {
+      "id": 2,
+      "type": "mcq",
+      "q": "Việt Nam có đường biên giới trên đất liền tiếp giáp với bao nhiêu quốc gia?",
+      "o": [
+        "2.",
+        "3.",
+        "4.",
+        "5."
+      ],
+      "c": 1
+    },
+    {
+      "id": 3,
+      "type": "mcq",
+      "q": "Trên đất liền, Việt Nam không tiếp giáp với quốc gia nào sau đây?",
+      "o": [
+        "Trung Quốc.",
+        "Lào.",
+        "Phi-lip-pin.",
+        "Campuchia."
+      ],
+      "c": 2
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "q": "Đường bờ biển nước ta dài khoảng",
+      "o": [
+        "2 630 km.",
+        "3 620 km.",
+        "3 260 km.",
+        "2 360 km."
+      ],
+      "c": 2
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "q": "Đường bờ biển nước ta kéo dài từ",
+      "o": [
+        "Quảng Ninh đến Cà Mau.",
+        "Lạng Sơn đến Cà Mau.",
+        "Quảng Ninh đến An Giang.",
+        "Hải Phòng đến An Giang."
+      ],
+      "c": 2
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "q": "Hai quần đảo lớn của Việt Nam gồm",
+      "o": [
+        "Hoàng Sa và Trường Sa.",
+        "Phú Quốc và Cát Bà.",
+        "Phú Quốc và Hoàng Sa.",
+        "Trường Sa và Cát Bà."
+      ],
+      "c": 0
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "q": "Phát biểu nào sau đây đúng khi nói về đặc điểm địa hình đồi núi ở nước ta?",
+      "o": [
+        "Kéo dài từ vùng núi Tây Bắc đến Đông Nam Bộ.",
+        "Địa hình chủ yếu là núi trung bình và núi cao.",
+        "Núi cao trên 2000 m chiếm 15% diện tích cả nước.",
+        "Hướng chính của địa hình đồi núi là hướng bắc - nam."
+      ],
+      "c": 0
+    },
+    {
+      "id": 8,
+      "type": "mcq",
+      "q": "Hai hướng chính của địa hình đồi núi nước ta là",
+      "o": [
+        "tây bắc - đông nam và vòng cung.",
+        "đông bắc - tây nam và tây - đông.",
+        "vòng cung và đông bắc - tây nam.",
+        "tây - đông và tây bắc - đông nam."
+      ],
+      "c": 0
+    },
+    {
+      "id": 9,
+      "type": "mcq",
+      "q": "Phát biểu nào không phải đặc điểm địa hình mang tính chất nhiệt đới ẩm gió mùa?",
+      "o": [
+        "Địa hình bị cắt xẻ.",
+        "Quá trình xâm thực và xói mòn diễn ra mạnh mẽ.",
+        "Dạng địa hình các-xtơ đặc trưng.",
+        "Địa hình được phân thành các bậc kế tiếp nhau."
+      ],
+      "c": 3
+    },
+    {
+      "id": 10,
+      "type": "mcq",
+      "q": "Phạm vi của khu vực vùng núi Đông Bắc là:",
+      "o": [
+        "Từ dãy núi con Voi đến vùng đồi núi ven biển Quảng Ninh.",
+        "Nằm giữa sông Hồng và sông Cả.",
+        "Từ phía nam sông Cả đến dãy Bạch Mã.",
+        "Từ phía nam dãy Bạch Mã đến Đông Nam Bộ."
+      ],
+      "c": 0
+    },
+    {
+      "id": 11,
+      "type": "mcq",
+      "q": "Phạm vi của khu vực vùng núi Tây Bắc là:",
+      "o": [
+        "Từ dãy núi con Voi đến vùng đồi núi ven biển Quảng Ninh.",
+        "Nằm giữa sông Hồng và sông Cả.",
+        "Từ phía nam sông Cả đến dãy Bạch Mã.",
+        "Từ phía nam dãy Bạch Mã đến Đông Nam Bộ."
+      ],
+      "c": 1
+    },
+    {
+      "id": 12,
+      "type": "mcq",
+      "q": "Phạm vi của khu vực vùng núi Trường Sơn Bắc là:",
+      "o": [
+        "Từ dãy núi con Voi đến vùng đồi núi ven biển Quảng Ninh.",
+        "Nằm giữa sông Hồng và sông Cả.",
+        "Từ phía nam sông Cả đến dãy Bạch Mã.",
+        "Từ phía nam dãy Bạch Mã đến Đông Nam Bộ."
+      ],
+      "c": 2
+    },
+    {
+      "id": 13,
+      "type": "mcq",
+      "q": "Đá vôi phân bố chủ yếu ở",
+      "o": [
+        "vùng núi phía Bắc và Bắc Trung Bộ.",
+        "thềm lục địa phía nam.",
+        "khu vực Đông Bắc.",
+        "khu vực duyên hải Nam Trung Bộ và Tây Nguyên."
+      ],
+      "c": 0
+    },
+    {
+      "id": 14,
+      "type": "mcq",
+      "q": "Dầu mỏ và khí tự nhiên phân bố chủ yếu ở",
+      "o": [
+        "vùng núi phía Bắc và Bắc Trung Bộ.",
+        "thềm lục địa phía nam.",
+        "khu vực Đông Bắc.",
+        "khu vực duyên hải Nam Trung Bộ và Tây Nguyên."
+      ],
+      "c": 1
+    },
+    {
+      "id": 15,
+      "type": "mcq",
+      "q": "Bô-xít phân bố chủ yếu ở",
+      "o": [
+        "vùng núi phía Bắc và Bắc Trung Bộ.",
+        "thềm lục địa phía nam.",
+        "khu vực Đông Bắc.",
+        "khu vực duyên hải Nam Trung Bộ và Tây Nguyên."
+      ],
+      "c": 3
+    },
+    {
+      "id": 16,
+      "type": "mcq",
+      "q": "Ý nào không phải đặc điểm khí hậu mang tính chất nhiệt đới của nước ta?",
+      "o": [
+        "Số giờ nắng khoảng 1400 - 3000 giờ/năm.",
+        "Nhiệt độ trung bình năm trên 20°C.",
+        "Cán cân bức xạ luôn dương.",
+        "Độ ẩm không khí trên 80%."
+      ],
+      "c": 3
+    },
+    {
+      "id": 17,
+      "type": "mcq",
+      "q": "Tính chất ẩm của khí hậu nước ta thể hiện qua các yếu tố nào?",
+      "o": [
+        "Lượng mưa và độ ẩm.",
+        "Nhiệt độ và độ ẩm.",
+        "Lượng mưa và bức xạ.",
+        "Nhiệt độ và số giờ nắng."
+      ],
+      "c": 0
+    },
+    {
+      "id": 18,
+      "type": "mcq",
+      "q": "Đặc điểm khí hậu của miền Bắc vào nửa sau mùa đông là",
+      "o": [
+        "nóng, khô.",
+        "nóng, ẩm.",
+        "lạnh, khô.",
+        "lạnh, ẩm."
+      ],
+      "c": 3
+    }
+  ]
+}

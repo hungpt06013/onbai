@@ -635,6 +635,66 @@
     {
       "id": 56,
       "type": "mcq",
+      "q": "Sản phẩm được tạo ra nhờ hoạt động biến đổi thức ăn ở khoang miệng là",
+      "o": [
+        "glycerol.",
+        "đường maltose.",
+        "protein chuỗi ngắn.",
+        "acid béo."
+      ],
+      "c": 1
+    },
+    {
+      "id": 57,
+      "type": "mcq",
+      "q": "Các hoạt động nào sau đây giúp bảo vệ hệ tiêu hoá khoẻ mạnh?\n(1) Rửa tay trước khi ăn.\n(2) Ăn thịt, cá tái để không bị mất chất dinh dưỡng trong quá trình chế biến.\n(3) Không ăn thức ăn đã bị ôi thiu.\n(4) Vừa ăn vừa tranh thủ đọc sách và xem ti vi để tiết kiệm thời gian.\n(5) Ăn tối muộn để cung cấp chất dinh dưỡng cho cơ thể khi ngủ.",
+      "o": [
+        "(1), (2), (3), (4), (5).",
+        "(1), (3), (4), (5).",
+        "(1), (3).",
+        "(1), (2), (3), (5)."
+      ],
+      "c": 2
+    },
+    {
+      "id": 58,
+      "type": "mcq",
+      "q": "Loại thực phẩm nào cung cấp nhiều chất bột đường?",
+      "o": [
+        "Thịt, cá.",
+        "Rau, củ, quả.",
+        "Ngũ cốc.",
+        "Sữa và sản phẩm từ sữa."
+      ],
+      "c": 2
+    },
+    {
+      "id": 59,
+      "type": "mcq",
+      "q": "Bệnh nào dưới đây không phải là bệnh của hệ tiêu hóa?",
+      "o": [
+        "Trào ngược acid.",
+        "Hội chứng IBS.",
+        "Không dung nạp lactose.",
+        "Viêm thanh quản."
+      ],
+      "c": 3
+    },
+    {
+      "id": 60,
+      "type": "mcq",
+      "q": "Hoạt động co bóp của dạ dày giúp thức ăn được nhuyễn và thấm đều dịch vị chứa",
+      "o": [
+        "hydrochloric acid, dịch tụy, dịch mật.",
+        "enzyme trypsin, enzyme lipase, enzyme lactase.",
+        "enzyme lipase, enzyme pepsin, hydrochloric acid.",
+        "enzyme lipase, enzyme pepsin, enzyme amylase."
+      ],
+      "c": 2
+    },
+    {
+      "id": 61,
+      "type": "mcq",
       "q": "Một đĩa tiết đông để ngoài môi trường một thời gian, thấy trên mặt có màu đỏ sậm là do:",
       "o": [
         "Hemoglobin của hồng cầu kết hợp với khí CO có trong không khí.",
@@ -645,7 +705,7 @@
       "c": 2
     },
     {
-      "id": 57,
+      "id": 62,
       "type": "mcq",
       "q": "Huyết tương có đặc điểm",
       "o": [
@@ -657,7 +717,7 @@
       "c": 3
     },
     {
-      "id": 58,
+      "id": 63,
       "type": "mcq",
       "q": "Chức năng của huyết tương là:",
       "o": [
@@ -669,7 +729,7 @@
       "c": 3
     },
     {
-      "id": 59,
+      "id": 64,
       "type": "mcq",
       "q": "Khả năng vận chuyển khí của hồng cầu có được là nhờ loại sắc tố nào?",
       "o": [
@@ -681,7 +741,7 @@
       "c": 2
     },
     {
-      "id": 60,
+      "id": 65,
       "type": "mcq",
       "q": "Khi hồng cầu kết hợp với chất khí nào thì máu sẽ có màu đỏ tươi?",
       "o": [
@@ -693,7 +753,7 @@
       "c": 2
     },
     {
-      "id": 61,
+      "id": 66,
       "type": "mcq",
       "q": "Vai trò của hồng cầu là",
       "o": [
@@ -705,7 +765,7 @@
       "c": 1
     },
     {
-      "id": 62,
+      "id": 67,
       "type": "mcq",
       "q": "Các tế bào máu ở người được phân chia thành mấy loại chính?",
       "o": [
@@ -717,7 +777,7 @@
       "c": 2
     },
     {
-      "id": 63,
+      "id": 68,
       "type": "mcq",
       "q": "Huyết tương không bao gồm thành phần nào dưới đây?",
       "o": [
@@ -729,7 +789,7 @@
       "c": 2
     },
     {
-      "id": 64,
+      "id": 69,
       "type": "mcq",
       "q": "Trong máu, huyết tương chiếm tỉ lệ bao nhiêu về thể tích?",
       "o": [
@@ -741,7 +801,7 @@
       "c": 3
     },
     {
-      "id": 65,
+      "id": 70,
       "type": "mcq",
       "q": "Máu bao gồm",
       "o": [
@@ -753,7 +813,7 @@
       "c": 1
     },
     {
-      "id": 66,
+      "id": 71,
       "type": "mcq",
       "q": "Khi bị mất máu nhiều, nhanh có thể gây tử vong vì",
       "o": [
@@ -765,7 +825,7 @@
       "c": 1
     },
     {
-      "id": 67,
+      "id": 72,
       "type": "mcq",
       "q": "Chức năng của tiểu cầu là",
       "o": [
@@ -777,7 +837,7 @@
       "c": 2
     },
     {
-      "id": 68,
+      "id": 73,
       "type": "mcq",
       "q": "Loại mạch nào dưới đây vận chuyển máu giàu oxygen?",
       "o": [
@@ -789,7 +849,7 @@
       "c": 3
     },
     {
-      "id": 69,
+      "id": 74,
       "type": "mcq",
       "q": "Tâm thất trái nối liền trực tiếp với loại mạch nào dưới đây?",
       "o": [
@@ -801,7 +861,7 @@
       "c": 2
     },
     {
-      "id": 70,
+      "id": 75,
       "type": "mcq",
       "q": "Tĩnh mạch phổi đổ máu trực tiếp vào ngăn tim nào?",
       "o": [
@@ -813,7 +873,7 @@
       "c": 1
     },
     {
-      "id": 71,
+      "id": 76,
       "type": "mcq",
       "q": "Loại mạch máu nào dưới đây có chức năng nuôi dưỡng tim?",
       "o": [
@@ -825,7 +885,7 @@
       "c": 2
     },
     {
-      "id": 72,
+      "id": 77,
       "type": "mcq",
       "q": "Trong hệ nhóm máu ABO, khi lần lượt để các nhóm máu truyền chéo nhau thì sẽ có tất cả bao nhiêu trường hợp gây kết dính hồng cầu?",
       "o": [
@@ -838,7 +898,7 @@
       "explain": "4 nhóm máu truyền chéo cho nhau có 4 × 3 = 12 trường hợp. Chỉ 5 trường hợp không gây kết dính: O → A, O → B, O → AB, A → AB, B → AB. Vậy có 12 − 5 = 7 trường hợp gây kết dính hồng cầu."
     },
     {
-      "id": 73,
+      "id": 78,
       "type": "mcq",
       "q": "Trong hoạt động miễn dịch của cơ thể người, sự kết hợp của cặp nhân tố nào dưới đây diễn ra theo cơ chế chìa khoá và ổ khoá?",
       "o": [
@@ -850,7 +910,7 @@
       "c": 0
     },
     {
-      "id": 74,
+      "id": 79,
       "type": "mcq",
       "q": "Vòng tuần hoàn lớn không đi qua cơ quan nào dưới đây?",
       "o": [
@@ -862,7 +922,7 @@
       "c": 2
     },
     {
-      "id": 75,
+      "id": 80,
       "type": "mcq",
       "q": "Người mang nhóm máu AB có thể truyền máu cho người mang nhóm máu nào mà không xảy ra sự kết dính hồng cầu?",
       "o": [
@@ -874,7 +934,7 @@
       "c": 1
     },
     {
-      "id": 76,
+      "id": 81,
       "type": "mcq",
       "q": "Đâu không phải bệnh về máu và tim mạch?",
       "o": [
@@ -886,7 +946,7 @@
       "c": 3
     },
     {
-      "id": 77,
+      "id": 82,
       "type": "mcq",
       "q": "Khi được tiêm phòng vaccine thuỷ đậu, chúng ta sẽ không bị mắc căn bệnh này trong tương lai. Đây là dạng miễn dịch nào?",
       "o": [
@@ -898,7 +958,7 @@
       "c": 1
     },
     {
-      "id": 78,
+      "id": 83,
       "type": "mcq",
       "q": "Hồng cầu của nhóm máu nào dưới đây không có kháng nguyên A và cũng không có kháng nguyên B?",
       "o": [
@@ -910,7 +970,7 @@
       "c": 0
     },
     {
-      "id": 79,
+      "id": 84,
       "type": "mcq",
       "q": "Khi chúng ta bị ong chích thì nọc độc của ong được xem là",
       "o": [

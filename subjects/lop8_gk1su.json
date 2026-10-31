@@ -1,0 +1,246 @@
+{
+  "fullName": "GK1 SỬ - Bài 1, 2, 3 LS",
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "q": "Cuộc nội chiến (1642 - 1649) ở Anh diễn ra giữa các thế lực nào?",
+      "o": [
+        "Vua Sác-lơ I với quý tộc mới.",
+        "Vua Sác-lơ I với Nghị viện.",
+        "Quý tộc mới với nông dân.",
+        "Tư sản với địa chủ phong kiến."
+      ],
+      "c": 1
+    },
+    {
+      "id": 2,
+      "type": "mcq",
+      "q": "Sau cách mạng tư sản, nước Anh phát triển theo chế độ nào?",
+      "o": [
+        "Chế độ quân chủ lập hiến.",
+        "Cộng hòa liên bang.",
+        "Quân chủ chuyên chế.",
+        "Xã hội chủ nghĩa."
+      ],
+      "c": 0
+    },
+    {
+      "id": 3,
+      "type": "mcq",
+      "q": "Nguyên nhân quan trọng về xã hội làm bùng nổ cuộc đấu tranh giành độc lập của các thuộc địa Anh ở Bắc Mỹ là mâu thuẫn giữa",
+      "o": [
+        "nông dân với địa chủ phong kiến.",
+        "cư dân Bắc Mỹ với thực dân Anh.",
+        "tư sản Bắc Mỹ với nông dân.",
+        "nô lệ với chủ nô trong lãnh địa."
+      ],
+      "c": 1
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "q": "Thực dân Anh đã có hành động gì sau đây trước sự phát triển của kinh tế tư bản chủ nghĩa tại 13 thuộc địa Anh ở Bắc Mỹ?",
+      "o": [
+        "Tìm mọi cách ngăn cản sự phát triển của công thương nghiệp.",
+        "Đầu tư phát triển công, thương nghiệp thuộc địa để thu lợi nhuận.",
+        "Mở thêm nhiều hải cảng để thúc đẩy giao lưu, trao đổi hàng hóa.",
+        "Thực hiện nhiều chính sách khuyến khích công thương nghiệp phát triển."
+      ],
+      "c": 0
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "q": "Nhận xét nào sau đây là đúng về tính chất của bản Tuyên ngôn Độc lập (04/7/1776) của nước Mỹ?",
+      "o": [
+        "Dân chủ, tự do và thấm nhuần tư tưởng tiến bộ của thời đại.",
+        "Bình đẳng giữa các dân tộc, mang lại quyền lợi cho người nô lệ da đen.",
+        "Độc lập, tự do và thấm nhuần tư tưởng của cách mạng tư sản Pháp.",
+        "Độc lập, bình đẳng giữa người da trắng với người da đen."
+      ],
+      "c": 0
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "q": "Nội dung nào sau đây phản ánh điểm tương đồng cơ bản giữa cách mạng tư sản Anh và Chiến tranh giành độc lập của 13 thuộc địa ở Bắc Mỹ?",
+      "o": [
+        "Lực lượng lãnh đạo cách mạng.",
+        "Hình thức của cuộc cách mạng.",
+        "Mục tiêu chống chế độ phong kiến.",
+        "Tính chất của cuộc cách mạng."
+      ],
+      "c": 3
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "q": "Tuyên ngôn Độc lập của nước Mỹ (4/7/1776) có viết: “Tất cả mọi người sinh ra đều có quyền bình đẳng. Tạo hóa cho họ những quyền không ai có thể xâm phạm được. Trong những quyền ấy, có quyền được sống, quyền tự do và quyền mưu cầu hạnh phúc”. Đoạn trích đó đã được vận dụng trong văn kiện lịch sử nào sau đây?",
+      "o": [
+        "Tuyên ngôn Nhân quyền và dân quyền của nước Pháp (1789).",
+        "Cương lĩnh chính trị đầu tiên của Đảng Cộng sản Việt Nam (1930).",
+        "Tuyên ngôn Độc lập của nước Việt Nam Dân chủ Cộng hòa (1945).",
+        "Tuyên ngôn độc lập của nước In-đô-nê-xi-a (1945)."
+      ],
+      "c": 2
+    },
+    {
+      "id": 8,
+      "type": "mcq",
+      "q": "Trước cách mạng năm 1789, Pháp là một nước theo thể chế",
+      "o": [
+        "cộng hòa dân chủ.",
+        "quân chủ lập hiến.",
+        "quân chủ chuyên chế.",
+        "cộng hòa liên bang."
+      ],
+      "c": 2
+    },
+    {
+      "id": 9,
+      "type": "mcq",
+      "q": "Đẳng cấp thứ ba trong xã hội Pháp thế kỉ XVIII bao gồm các giai cấp và tầng lớp nào sau đây?",
+      "o": [
+        "Tư sản, nông dân, nô lệ.",
+        "Địa chủ, nông dân, nô lệ.",
+        "Tư sản, nông dân, bình dân thành thị.",
+        "Địa chủ, công dân, bình dân thành thị."
+      ],
+      "c": 2
+    },
+    {
+      "id": 10,
+      "type": "mcq",
+      "q": "Cuộc đấu tranh của giai cấp tư sản Pháp chống lại chế độ quân chủ chuyên chế trong lĩnh vực văn hóa, tư tưởng ở thế kỉ XVII – XVIII thể hiện trong trào lưu nào?",
+      "o": [
+        "Văn hóa Phục hưng.",
+        "Cải cách văn hóa.",
+        "Cải cách nông nô.",
+        "Triết học Ánh sáng."
+      ],
+      "c": 3
+    },
+    {
+      "id": 11,
+      "type": "mcq",
+      "q": "Các nhà tư tưởng tiêu biểu của trào lưu Triết học Ánh sáng là",
+      "o": [
+        "S.Mông-te-xki-ơ, Ô-oen và Phu-ri-ê.",
+        "Ô-oen, Phu-ri-ê và Xanh Xi-mông.",
+        "S.Mông-te-xki-ơ, G.G. Rút-xô và Vôn-te.",
+        "G.G. Rút-xô, Vôn-te và Xanh Xi-mông."
+      ],
+      "c": 2
+    },
+    {
+      "id": 12,
+      "type": "mcq",
+      "q": "Nội dung nào sau đây là đúng về ý nghĩa của Cách mạng tư sản Pháp?",
+      "o": [
+        "Cổ vũ phong trào chống phong kiến ở châu Á.",
+        "Thúc đẩy các cuộc cách mạng tư sản ở châu Á.",
+        "Ảnh hưởng sâu sắc đến nhiều nước trên thế giới.",
+        "Thiết lập chính thể dân chủ nhân dân ở nước Pháp."
+      ],
+      "c": 2
+    },
+    {
+      "id": 13,
+      "type": "mcq",
+      "q": "Cuộc cách mạng công nghiệp diễn ra đầu tiên ở quốc gia nào?",
+      "o": [
+        "Anh.",
+        "Mỹ.",
+        "Pháp.",
+        "Đức."
+      ],
+      "c": 0
+    },
+    {
+      "id": 14,
+      "type": "mcq",
+      "q": "Người phát minh ra máy kéo sợi Gien-ni vào năm 1764 là ai?",
+      "o": [
+        "Gien-ni.",
+        "Ác-crai-tơ.",
+        "Giêm Oát.",
+        "Giêm Ha-gri-vơ."
+      ],
+      "c": 3
+    },
+    {
+      "id": 15,
+      "type": "mcq",
+      "q": "Đến giữa thế kỉ XIX, nước Anh được mệnh danh là",
+      "o": [
+        "“nước có nền công nghiệp phát triển nhất thế giới”.",
+        "“nước công nghiệp hiện đại”.",
+        "“công xưởng của thế giới”.",
+        "“nước đi tiên phong trong công nghiệp”."
+      ],
+      "c": 2
+    },
+    {
+      "id": 16,
+      "type": "mcq",
+      "q": "Phát minh nào sau đây ở Anh đã khắc phục được tình trạng máy dệt phải ngừng hoạt động vì nước đóng băng vào mùa đông?",
+      "o": [
+        "Máy kéo sợi chạy bằng sức nước.",
+        "Máy dệt chạy bằng sức nước.",
+        "Máy hơi nước.",
+        "Máy kéo sợi Gien-ni."
+      ],
+      "c": 2
+    },
+    {
+      "id": 17,
+      "type": "mcq",
+      "q": "Vì sao sau khi tiến hành cách mạng công nghiệp, Anh được coi là “công xưởng của thế giới”?",
+      "o": [
+        "Anh đã tiến hành cuộc cách mạng công nghiệp và sản xuất ra nhiều máy móc.",
+        "Cách mạng công nghiệp đã làm cho sản xuất phát triển, của cải làm ra dồi dào.",
+        "Anh từ một nước nông nghiệp trở thành nước công nghiệp phát triển nhất thế giới.",
+        "Công nghiệp hóa diễn ra đầu tiên ở Anh."
+      ],
+      "c": 0
+    },
+    {
+      "id": 18,
+      "type": "mcq",
+      "q": "Vì sao máy móc được sử dụng nhiều trong giao thông vận tải ở Anh đầu thế kỉ XIX?",
+      "o": [
+        "Nhu cầu vận chuyển nguyên vật liệu, hàng hóa.",
+        "Đường sắt đầu tiên được khánh thành ở Anh.",
+        "Anh là nước khởi đầu cách mạng công nghiệp.",
+        "Anh công nghiệp hóa việc sản xuất."
+      ],
+      "c": 0
+    },
+    {
+      "id": 19,
+      "type": "mcq",
+      "q": "Điều kiện cần và đủ để nước Anh tiến hành cách mạng công nghiệp là",
+      "o": [
+        "tư bản, nhân công.",
+        "tư bản, nhân công, kĩ thuật.",
+        "vốn, đội ngũ công nhân làm thuê.",
+        "tư bản và các thiết bị máy móc."
+      ],
+      "c": 2,
+      "explain": "Đáp án của đề là “vốn, đội ngũ công nhân làm thuê”. Phương án “tư bản, nhân công” có nghĩa gần giống nhưng không phải đáp án của đề."
+    },
+    {
+      "id": 20,
+      "type": "mcq",
+      "q": "Nội dung nào sau đây không phải là tác động của cách mạng công nghiệp (nửa sau thế kỉ XVIII – giữa thế kỉ XIX)?",
+      "o": [
+        "Cách mạng công nghiệp đã làm thay đổi căn bản bộ mặt của các nước tư bản.",
+        "Cách mạng công nghiệp đã đưa loài người bước sang nền văn minh nông nghiệp.",
+        "Cách mạng công nghiệp đã đưa loài người bước sang nền văn minh công nghiệp.",
+        "Cách mạng công nghiệp đã làm hình thành hai giai cấp cơ bản của xã hội tư bản."
+      ],
+      "c": 1
+    }
+  ]
+}

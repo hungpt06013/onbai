@@ -132,6 +132,22 @@
     "icon": "M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
   },
   {
+    "id": "lop8_gk1su",
+    "label": "GK1 SỬ",
+    "subtitle": "Bài 1, 2, 3 LS",
+    "gradient": "from-rose-600 to-red-700",
+    "hoverGradient": "hover:from-rose-700 hover:to-red-800",
+    "icon": "M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
+  },
+  {
+    "id": "lop8_gk1dia",
+    "label": "GK1 ĐỊA",
+    "subtitle": "Bài 1, 2, 3, 4 ĐL",
+    "gradient": "from-teal-500 to-cyan-700",
+    "hoverGradient": "hover:from-teal-600 hover:to-cyan-800",
+    "icon": "M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+  },
+  {
     "id": "lop8_luutru",
     "type": "folder",
     "label": "LƯU TRỮ",
