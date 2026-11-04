@@ -195,7 +195,7 @@
       "type": "tf",
       "q": "Trong các đặc điểm sau, đâu là ý đúng, đâu là ý sai khi nói về ý nghĩa của cuộc cách mạng tư sản Pháp (cuối thế kỉ XVIII)?",
       "statements": [
-        "Tư tưởng Tự do, Bình đẳng, Chủ quyền được truyền bá rộng rãi.",
+        "Tư tưởng Tự do, Bình đẳng, Bác ái được truyền bá rộng rãi.",
         "Mở đường cho chủ nghĩa tư bản phát triển mạnh mẽ ở Pháp.",
         "Để lại nhiều bài học kinh nghiệm cho phong trào cách mạng các nước.",
         "Đưa giai cấp công nhân và nhân dân lao động Pháp lên nắm chính quyền."
@@ -266,7 +266,7 @@
         "Xóa bỏ chế độ quân chủ chuyên chế; thiết lập nền cộng hòa ở Pháp.",
         "Đưa giai cấp công nhân lên nắm quyền.",
         "Khẳng định các quyền tự do dân chủ của công dân.",
-        "Tư tưởng Tự do, Bình đẳng, Chủ quyền được truyền bá rộng rãi."
+        "Tư tưởng Tự do, Bình đẳng, Bác ái được truyền bá rộng rãi."
       ],
       "answers": [
         true,
@@ -274,7 +274,7 @@
         true,
         false
       ],
-      "explain": "“Tư tưởng Tự do, Bình đẳng, Chủ quyền được truyền bá rộng rãi” là ý nghĩa, không phải kết quả của cách mạng tư sản Pháp."
+      "explain": "“Tư tưởng Tự do, Bình đẳng, Bác ái được truyền bá rộng rãi” là ý nghĩa, không phải kết quả của cách mạng tư sản Pháp."
     },
     {
       "id": 17,
@@ -284,7 +284,7 @@
         "Mở đường cho sự phát triển mạnh mẽ của chủ nghĩa tư bản ở Pháp.",
         "Để lại nhiều bài học kinh nghiệm cho phong trào cách mạng các nước.",
         "Đưa giai cấp công nhân lên nắm quyền.",
-        "Tư tưởng Tự do, Bình đẳng, Chủ quyền được truyền bá rộng rãi."
+        "Tư tưởng Tự do, Bình đẳng, Bác ái được truyền bá rộng rãi."
       ],
       "answers": [
         true,
