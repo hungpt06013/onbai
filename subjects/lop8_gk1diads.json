@@ -40,8 +40,8 @@
     {
       "id": 3,
       "type": "tf",
-      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Láng (Hà Nội). Các ý sau đây đúng hay sai?",
-      "img": "",
+      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Láng (Hà Nội) (màu xanh: lượng mưa, màu đỏ: nhiệt độ). Các ý sau đây đúng hay sai?",
+      "img": "https://i.postimg.cc/ZKvB5C4L/image.png",
       "statements": [
         "Nhiệt độ cao nhất khoảng 29°C, vào khoảng tháng 6 – 7.",
         "Nhiệt độ thấp nhất khoảng 16 – 17°C, vào tháng 1.",
@@ -59,8 +59,8 @@
     {
       "id": 4,
       "type": "tf",
-      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Láng (Hà Nội) (tháng mưa nhiều: lượng mưa trên 100 mm; tháng mưa ít: dưới 100 mm). Các ý sau đây đúng hay sai?",
-      "img": "",
+      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Láng (Hà Nội) (màu xanh: lượng mưa, màu đỏ: nhiệt độ). Các ý sau đây đúng hay sai?",
+      "img": "https://i.postimg.cc/ZKvB5C4L/image.png",
       "statements": [
         "Các tháng mưa nhiều kéo dài từ tháng 5 đến tháng 10.",
         "Các tháng mưa ít là từ tháng 4 đến tháng 9.",
@@ -78,8 +78,8 @@
     {
       "id": 5,
       "type": "tf",
-      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Tân Sơn Hoà (Thành phố Hồ Chí Minh). Các ý sau đây đúng hay sai?",
-      "img": "",
+      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Tân Sơn Hoà (Thành phố Hồ Chí Minh) (màu xanh: lượng mưa, màu đỏ: nhiệt độ). Các ý sau đây đúng hay sai?",
+      "img": "https://i.postimg.cc/HkVggyg6/image.png",
       "statements": [
         "Nhiệt độ cao nhất khoảng 30°C, vào tháng 4.",
         "Nhiệt độ thấp nhất khoảng 20°C, vào tháng 7.",
@@ -97,8 +97,8 @@
     {
       "id": 6,
       "type": "tf",
-      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Tân Sơn Hoà (Thành phố Hồ Chí Minh) (tháng mưa nhiều: lượng mưa trên 100 mm; tháng mưa ít: dưới 100 mm). Các ý sau đây đúng hay sai?",
-      "img": "",
+      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Tân Sơn Hoà (Thành phố Hồ Chí Minh) (màu xanh: lượng mưa, màu đỏ: nhiệt độ). Các ý sau đây đúng hay sai?",
+      "img": "https://i.postimg.cc/HkVggyg6/image.png",
       "statements": [
         "Các tháng mưa nhiều là từ tháng 5 đến tháng 11.",
         "Các tháng mưa ít là tháng 12, 1, 2, 3 và 4.",
@@ -116,8 +116,8 @@
     {
       "id": 7,
       "type": "tf",
-      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Móng Cái (Quảng Ninh). Các ý sau đây đúng hay sai?",
-      "img": "",
+      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Móng Cái (Quảng Ninh) (màu xanh: lượng mưa, màu đỏ: nhiệt độ). Các ý sau đây đúng hay sai?",
+      "img": "https://i.postimg.cc/0QqRDXw2/image.png",
       "statements": [
         "Nhiệt độ cao nhất khoảng 28°C, vào khoảng tháng 6 – 7.",
         "Nhiệt độ thấp nhất khoảng 15°C, vào tháng 1.",
@@ -135,8 +135,8 @@
     {
       "id": 8,
       "type": "tf",
-      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Móng Cái (Quảng Ninh) (tháng mưa nhiều: lượng mưa trên 100 mm; tháng mưa ít: dưới 100 mm). Các ý sau đây đúng hay sai?",
-      "img": "",
+      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Móng Cái (Quảng Ninh) (màu xanh: lượng mưa, màu đỏ: nhiệt độ). Các ý sau đây đúng hay sai?",
+      "img": "https://i.postimg.cc/0QqRDXw2/image.png",
       "statements": [
         "Các tháng mưa nhiều là từ tháng 4 đến tháng 10.",
         "Các tháng mưa ít là tháng 11, 12, 1, 2 và 3.",
@@ -154,8 +154,8 @@
     {
       "id": 9,
       "type": "tf",
-      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Điện Biên (Điện Biên). Các ý sau đây đúng hay sai?",
-      "img": "",
+      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Điện Biên (Điện Biên) (màu xanh: lượng mưa, màu đỏ: nhiệt độ). Các ý sau đây đúng hay sai?",
+      "img": "https://i.postimg.cc/h4sWQrPc/image.png",
       "statements": [
         "Nhiệt độ cao nhất khoảng 26°C, vào khoảng tháng 6.",
         "Nhiệt độ thấp nhất khoảng 16°C, vào tháng 12 và tháng 1.",
@@ -173,8 +173,8 @@
     {
       "id": 10,
       "type": "tf",
-      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Điện Biên (Điện Biên) (tháng mưa nhiều: lượng mưa trên 100 mm; tháng mưa ít: dưới 100 mm). Các ý sau đây đúng hay sai?",
-      "img": "",
+      "q": "Quan sát biểu đồ nhiệt độ và lượng mưa của trạm khí tượng Điện Biên (Điện Biên) (màu xanh: lượng mưa, màu đỏ: nhiệt độ). Các ý sau đây đúng hay sai?",
+      "img": "https://i.postimg.cc/h4sWQrPc/image.png",
       "statements": [
         "Các tháng mưa nhiều là từ tháng 4 đến tháng 9.",
         "Các tháng mưa ít là từ tháng 10 đến tháng 3 năm sau.",
