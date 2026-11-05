@@ -980,6 +980,366 @@
         "protein độc."
       ],
       "c": 2
+    },
+    {
+      "id": 85,
+      "type": "mcq",
+      "q": "Chức năng của bạch cầu là",
+      "o": [
+        "Vận chuyển O₂ và CO₂ đến các tế bào trong cơ thể.",
+        "Bảo vệ cơ thể, tham gia phản ứng của hệ miễn dịch.",
+        "Bảo vệ cơ thể, tham gia vào quá trình làm đông máu.",
+        "Duy trì máu ở trạng thái lỏng, vận chuyển các chất."
+      ],
+      "c": 1
+    },
+    {
+      "id": 86,
+      "type": "mcq",
+      "q": "Miễn dịch là",
+      "o": [
+        "Khả năng cơ thể tạo ra kháng sinh để tiêu diệt mầm bệnh khi chúng đã vào cơ thể.",
+        "Khả năng cơ thể làm đông máu để ngăn mầm bệnh xâm nhập qua các vết thương.",
+        "Khả năng cơ thể nhận biết, ngăn cản mầm bệnh xâm nhập và tiêu diệt mầm bệnh khi đã vào cơ thể.",
+        "Khả năng cơ thể đào thải mầm bệnh ra ngoài qua hệ bài tiết và hệ tiêu hóa."
+      ],
+      "c": 2
+    },
+    {
+      "id": 87,
+      "type": "mcq",
+      "q": "Kháng thể là",
+      "o": [
+        "Phân tử protein do tế bào lympho B tạo ra.",
+        "Phân tử protein do tế bào hồng cầu tạo ra.",
+        "Phân tử protein do vi khuẩn, virus tạo ra.",
+        "Chất kháng sinh do tế bào lympho B tạo ra."
+      ],
+      "c": 0
+    },
+    {
+      "id": 88,
+      "type": "mcq",
+      "q": "Tế bào trực tiếp tiết ra kháng thể là",
+      "o": [
+        "Hồng cầu.",
+        "Tiểu cầu.",
+        "Tế bào nhớ.",
+        "Tương bào."
+      ],
+      "c": 3
+    },
+    {
+      "id": 89,
+      "type": "mcq",
+      "q": "Khi bị nhiễm lại cùng một loại mầm bệnh, cơ thể phản ứng nhanh và mạnh hơn lần đầu là nhờ",
+      "o": [
+        "Các tương bào.",
+        "Các tế bào nhớ.",
+        "Các tiểu cầu.",
+        "Các hồng cầu."
+      ],
+      "c": 1
+    },
+    {
+      "id": 90,
+      "type": "mcq",
+      "q": "Vaccine được tạo ra từ",
+      "o": [
+        "Kháng thể hoặc huyết thanh lấy từ người đã khỏi bệnh.",
+        "Kháng sinh hoặc thuốc có tác dụng tiêu diệt mầm bệnh.",
+        "Kháng nguyên hoặc mầm bệnh đã bất hoạt hay giảm độc lực.",
+        "Mầm bệnh còn sống và vẫn giữ nguyên độc lực ban đầu."
+      ],
+      "c": 2
+    },
+    {
+      "id": 91,
+      "type": "mcq",
+      "q": "Tiêm vaccine có vai trò gì trong phòng bệnh?",
+      "o": [
+        "Kích thích cơ thể tự tạo kháng thể để chủ động phòng bệnh.",
+        "Cung cấp sẵn kháng thể giúp cơ thể tiêu diệt mầm bệnh.",
+        "Tiêu diệt toàn bộ mầm bệnh đang có sẵn trong cơ thể.",
+        "Kích thích cơ thể tạo hồng cầu để tăng sức đề kháng."
+      ],
+      "c": 0
+    },
+    {
+      "id": 92,
+      "type": "mcq",
+      "q": "Nhóm máu trong hệ ABO được xác định dựa vào",
+      "o": [
+        "Kháng thể có trên màng hồng cầu.",
+        "Kháng nguyên có trên màng hồng cầu.",
+        "Kháng nguyên có trên màng bạch cầu.",
+        "Kháng nguyên có trong huyết tương."
+      ],
+      "c": 1
+    },
+    {
+      "id": 93,
+      "type": "mcq",
+      "q": "Hệ nhóm máu ABO gồm mấy nhóm máu?",
+      "o": [
+        "2 nhóm.",
+        "3 nhóm.",
+        "4 nhóm.",
+        "5 nhóm."
+      ],
+      "c": 2
+    },
+    {
+      "id": 94,
+      "type": "mcq",
+      "q": "Trong hệ nhóm máu ABO, kháng thể α và β có ở đâu?",
+      "o": [
+        "Trên màng hồng cầu.",
+        "Trên màng bạch cầu.",
+        "Trong tế bào tiểu cầu.",
+        "Trong huyết tương."
+      ],
+      "c": 3
+    },
+    {
+      "id": 95,
+      "type": "mcq",
+      "q": "Kháng thể α gây kết dính hồng cầu mang kháng nguyên nào?",
+      "o": [
+        "Kháng nguyên A.",
+        "Kháng nguyên B.",
+        "Cả kháng nguyên A và B.",
+        "Không gây kết dính hồng cầu nào."
+      ],
+      "c": 0
+    },
+    {
+      "id": 96,
+      "type": "mcq",
+      "q": "Một người mang nhóm máu A cần được truyền máu. Người này có thể nhận máu của những nhóm máu nào?",
+      "o": [
+        "Nhóm A và nhóm B.",
+        "Nhóm A và nhóm AB.",
+        "Nhóm A và nhóm O.",
+        "Nhóm O và nhóm AB."
+      ],
+      "c": 2
+    },
+    {
+      "id": 97,
+      "type": "mcq",
+      "q": "Nếu truyền máu không đúng nhóm máu sẽ xảy ra hiện tượng gì?",
+      "o": [
+        "Bạch cầu của máu truyền bị kết dính và phá hủy.",
+        "Hồng cầu của máu truyền bị kết dính và phá hủy.",
+        "Huyết tương của máu truyền bị đông lại thành cục.",
+        "Hồng cầu của người nhận tăng lên quá mức."
+      ],
+      "c": 1
+    },
+    {
+      "id": 98,
+      "type": "mcq",
+      "q": "Nguyên tắc cần đảm bảo khi truyền máu là",
+      "o": [
+        "Kháng nguyên trong máu người nhận không gây kết dính kháng thể trong máu được truyền.",
+        "Kháng thể trong máu người nhận không gây kết dính kháng nguyên trong máu được truyền.",
+        "Bạch cầu trong máu người nhận không tiêu diệt bạch cầu trong máu được truyền.",
+        "Tiểu cầu trong máu người nhận không làm đông tiểu cầu trong máu được truyền."
+      ],
+      "c": 1
+    },
+    {
+      "id": 99,
+      "type": "mcq",
+      "q": "Hệ tuần hoàn của người gồm",
+      "o": [
+        "Tim và phổi.",
+        "Phổi và hệ mạch.",
+        "Tim, phổi và hệ mạch.",
+        "Tim và hệ mạch."
+      ],
+      "c": 3
+    },
+    {
+      "id": 100,
+      "type": "mcq",
+      "q": "Trong hệ tuần hoàn, tim có vai trò",
+      "o": [
+        "Như một chiếc bơm, vừa hút vừa đẩy máu.",
+        "Là nơi trao đổi chất và khí giữa máu với tế bào.",
+        "Là nơi máu nhận O₂ và thải CO₂ ra ngoài.",
+        "Là nơi sản xuất ra các tế bào máu."
+      ],
+      "c": 0
+    },
+    {
+      "id": 101,
+      "type": "mcq",
+      "q": "Sự trao đổi chất và khí giữa máu với tế bào diễn ra ở",
+      "o": [
+        "Động mạch.",
+        "Tĩnh mạch.",
+        "Mao mạch.",
+        "Tim."
+      ],
+      "c": 2
+    },
+    {
+      "id": 102,
+      "type": "mcq",
+      "q": "Phát biểu nào đúng về chức năng của động mạch và tĩnh mạch?",
+      "o": [
+        "Động mạch dẫn máu từ tim đến mao mạch; tĩnh mạch dẫn máu từ mao mạch về tim.",
+        "Động mạch dẫn máu từ mao mạch về tim; tĩnh mạch dẫn máu từ tim đến mao mạch.",
+        "Cả động mạch và tĩnh mạch đều dẫn máu từ tim đến mao mạch.",
+        "Cả động mạch và tĩnh mạch đều dẫn máu từ mao mạch về tim."
+      ],
+      "c": 0
+    },
+    {
+      "id": 103,
+      "type": "mcq",
+      "q": "Vòng tuần hoàn nhỏ bắt đầu từ ngăn tim nào?",
+      "o": [
+        "Tâm nhĩ phải.",
+        "Tâm nhĩ trái.",
+        "Tâm thất trái.",
+        "Tâm thất phải."
+      ],
+      "c": 3
+    },
+    {
+      "id": 104,
+      "type": "mcq",
+      "q": "Khi đi qua phổi trong vòng tuần hoàn nhỏ, máu biến đổi như thế nào?",
+      "o": [
+        "Từ máu giàu O₂ thành máu giàu CO₂.",
+        "Từ máu giàu CO₂ thành máu giàu O₂.",
+        "Từ máu giàu chất dinh dưỡng thành máu giàu chất thải.",
+        "Từ máu giàu O₂ thành máu giàu chất dinh dưỡng."
+      ],
+      "c": 1
+    },
+    {
+      "id": 105,
+      "type": "mcq",
+      "q": "Vòng tuần hoàn lớn kết thúc ở ngăn tim nào?",
+      "o": [
+        "Tâm nhĩ phải.",
+        "Tâm nhĩ trái.",
+        "Tâm thất phải.",
+        "Tâm thất trái."
+      ],
+      "c": 0
+    },
+    {
+      "id": 106,
+      "type": "mcq",
+      "q": "Động mạch phổi vận chuyển loại máu nào?",
+      "o": [
+        "Máu giàu O₂, màu đỏ tươi.",
+        "Máu giàu O₂ và chất dinh dưỡng.",
+        "Máu giàu CO₂, màu đỏ thẫm.",
+        "Máu giàu chất dinh dưỡng, màu đỏ tươi."
+      ],
+      "c": 2
+    },
+    {
+      "id": 107,
+      "type": "mcq",
+      "q": "Thiếu máu là tình trạng",
+      "o": [
+        "Số lượng bạch cầu hoặc hàm lượng kháng thể trong máu giảm.",
+        "Số lượng tiểu cầu trong máu giảm khiến máu khó đông.",
+        "Lượng huyết tương giảm khiến máu bị đặc lại.",
+        "Số lượng hồng cầu hoặc hàm lượng hemoglobin trong máu giảm."
+      ],
+      "c": 3
+    },
+    {
+      "id": 108,
+      "type": "mcq",
+      "q": "Nguyên nhân phổ biến gây bệnh thiếu máu là",
+      "o": [
+        "Thiếu sắt trong khẩu phần ăn hoặc bị mất máu.",
+        "Ăn nhiều muối, đường trong thời gian dài.",
+        "Thừa cholesterol trong máu do ít vận động.",
+        "Thiếu calcium và vitamin D trong khẩu phần ăn."
+      ],
+      "c": 0
+    },
+    {
+      "id": 109,
+      "type": "mcq",
+      "q": "Biểu hiện thường gặp ở người bị thiếu máu là",
+      "o": [
+        "Đau đầu, chóng mặt, chảy máu cam.",
+        "Sốt cao, nổi ban đỏ, đau nhức cơ.",
+        "Mệt mỏi, da xanh xao, tim đập nhanh.",
+        "Ho kéo dài, đau họng, sổ mũi."
+      ],
+      "c": 2
+    },
+    {
+      "id": 110,
+      "type": "mcq",
+      "q": "Thói quen ăn uống nào làm tăng nguy cơ mắc bệnh huyết áp cao?",
+      "o": [
+        "Ăn nhiều rau xanh và trái cây tươi.",
+        "Ăn nhạt, hạn chế đồ chiên rán.",
+        "Ăn nhiều cá, uống đủ nước.",
+        "Ăn nhiều muối, đường và chất béo."
+      ],
+      "c": 3
+    },
+    {
+      "id": 111,
+      "type": "mcq",
+      "q": "Huyết áp cao kéo dài sẽ gây ra hậu quả gì?",
+      "o": [
+        "Làm giảm số lượng hồng cầu trong máu.",
+        "Làm tăng số lượng bạch cầu trong máu.",
+        "Làm tổn thương cấu trúc thành động mạch.",
+        "Làm tiểu cầu mất khả năng đông máu."
+      ],
+      "c": 2
+    },
+    {
+      "id": 112,
+      "type": "mcq",
+      "q": "Bệnh xơ vữa động mạch xảy ra khi",
+      "o": [
+        "Cholesterol trong máu tăng cao, kết hợp với Ca²⁺ lắng đọng trên thành mạch.",
+        "Số lượng hồng cầu giảm, kết hợp với thiếu sắt kéo dài trong khẩu phần ăn.",
+        "Glucose trong máu tăng cao, kết hợp với Na⁺ lắng đọng trên thành mạch.",
+        "Vi khuẩn xâm nhập vào máu, bám vào và phá hủy thành mạch máu."
+      ],
+      "c": 0
+    },
+    {
+      "id": 113,
+      "type": "mcq",
+      "q": "Xơ vữa động mạch xảy ra ở động mạch vành có thể gây ra",
+      "o": [
+        "Đột quỵ.",
+        "Thiếu máu.",
+        "Suy thận.",
+        "Đau tim."
+      ],
+      "c": 3
+    },
+    {
+      "id": 114,
+      "type": "mcq",
+      "q": "Biện pháp nào dưới đây không giúp bảo vệ hệ tuần hoàn?",
+      "o": [
+        "Ăn đủ thực phẩm giàu sắt và vitamin.",
+        "Hạn chế ăn mặn và đồ nhiều dầu mỡ.",
+        "Hút thuốc lá, uống nhiều rượu bia.",
+        "Tập thể dục vừa sức, đều đặn."
+      ],
+      "c": 2
     }
   ]
 }
